@@ -1,0 +1,9 @@
+{
+  "category": [
+    {
+      "name": "ecology",
+      "labelText": "tab.ecology",
+      "icon": "textures/items/apple_pie"
+    }
+  ]
+}
