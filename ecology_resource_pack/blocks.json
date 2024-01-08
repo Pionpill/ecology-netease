@@ -1,0 +1,19 @@
+{
+  "format_version": [1, 1, 0],
+  "ham:herb_stage_0": {
+    "netease_model": "ham:herb_stage_0",
+    "sound": "grass"
+  },
+  "ham:herb_stage_1": {
+    "netease_model": "ham:herb_stage_1",
+    "sound": "grass"
+  },
+  "ham:herb_stage_2": {
+    "netease_model": "ham:herb_stage_2",
+    "sound": "grass"
+  },
+  "ham:herb_stage_3": {
+    "netease_model": "ham:herb_stage_3",
+    "sound": "grass"
+  }
+}

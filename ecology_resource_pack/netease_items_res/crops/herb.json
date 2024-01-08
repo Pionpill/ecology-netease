@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:herb"
+    },
+    "components": {
+      "minecraft:icon": "ham:herb",
+      "minecraft:hover_text_color": "green"
+    }
+  }
+}

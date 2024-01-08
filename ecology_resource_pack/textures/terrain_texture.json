@@ -1,0 +1,18 @@
+{
+  "resource_pack_name": "ecology_resource_pack",
+  "texture_data": {
+    "ham:herb_stage_0": {
+      "textures": "textures/blocks/herb_stage_0"
+    },
+    "ham:herb_stage_1": {
+      "textures": "textures/blocks/herb_stage_1"
+    },
+    "ham:herb_stage_2": {
+      "textures": "textures/blocks/herb_stage_2"
+    },
+    "ham:herb_stage_3": {
+      "textures": "textures/blocks/herb_stage_3"
+    }
+  },
+  "texture_name": "atlas.terrain"
+}

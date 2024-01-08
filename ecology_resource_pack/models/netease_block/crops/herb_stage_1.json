@@ -1,0 +1,56 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "cubes": [
+          {
+            "origin": [-16, -1, 4],
+            "pivot": [-8, 0, 8],
+            "rotation": [0, 0, 0],
+            "size": [16, 16, 8],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 16]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 16]
+              }
+            }
+          },
+          {
+            "origin": [-16, -1, 4],
+            "pivot": [-8, 0, 8],
+            "rotation": [0, -90, 0],
+            "size": [16, 16, 8],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 16]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 16]
+              }
+            }
+          }
+        ],
+        "name": "herb_stage",
+        "pivot": [-8, 0, 8],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:herb_stage_1",
+      "item_texture": "ham:herb_stage_1",
+      "textures": ["ham:herb_stage_1"],
+      "use_ao": true
+    }
+  }
+}
