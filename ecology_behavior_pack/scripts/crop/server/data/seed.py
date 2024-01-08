@@ -1,0 +1,1 @@
+SEED_DATA = ['ham:herb_seeds']
