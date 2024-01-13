@@ -1,0 +1,505 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "name": "bamboo_steamer",
+        "pivot": [0, -16, 0],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-15, 13.5, 6.5],
+            "pivot": [0, -4, 0],
+            "rotation": [0, 0, 0],
+            "size": [1, 1.0, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [1, 3],
+                "uv_size": [-1, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              }
+            }
+          },
+          {
+            "origin": [-14, 12, 2],
+            "pivot": [0, -4, 0],
+            "rotation": [0, 0, 0],
+            "size": [12, 4, 12],
+            "uv": {
+              "down": {
+                "texture": 1,
+                "uv": [0.5, 0.5],
+                "uv_size": [12.0, 12.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "up": {
+                "texture": 1,
+                "uv": [12.5, 12.5],
+                "uv_size": [-12.0, -12.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              }
+            }
+          },
+          {
+            "origin": [-2, 13.5, 6.5],
+            "pivot": [0, -4, 0],
+            "rotation": [0, 0, 0],
+            "size": [1, 1.0, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [1, 3],
+                "uv_size": [-1, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              }
+            }
+          }
+        ],
+        "name": "four",
+        "parent": "bamboo_steamer",
+        "pivot": [0, -4, 0],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-15, 9.5, 6.5],
+            "pivot": [0, -8, 0],
+            "rotation": [0, 0, 0],
+            "size": [1, 1.0, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [1, 3],
+                "uv_size": [-1, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              }
+            }
+          },
+          {
+            "origin": [-14, 8, 2],
+            "pivot": [0, -8, 0],
+            "rotation": [0, 0, 0],
+            "size": [12, 4, 12],
+            "uv": {
+              "down": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [12, 12]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "up": {
+                "texture": 1,
+                "uv": [12, 12],
+                "uv_size": [-12, -12]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              }
+            }
+          },
+          {
+            "origin": [-2, 9.5, 6.5],
+            "pivot": [0, -8, 0],
+            "rotation": [0, 0, 0],
+            "size": [1, 1.0, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [1, 3],
+                "uv_size": [-1, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              }
+            }
+          }
+        ],
+        "name": "three",
+        "parent": "bamboo_steamer",
+        "pivot": [0, -8, 0],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-15, 5.5, 6.5],
+            "pivot": [0, -12, 0],
+            "rotation": [0, 0, 0],
+            "size": [1, 1.0, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [1, 3],
+                "uv_size": [-1, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              }
+            }
+          },
+          {
+            "origin": [-14, 4, 2],
+            "pivot": [0, -12, 0],
+            "rotation": [0, 0, 0],
+            "size": [12, 4, 12],
+            "uv": {
+              "down": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [12, 12]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "up": {
+                "texture": 1,
+                "uv": [12, 12],
+                "uv_size": [-12, -12]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              }
+            }
+          },
+          {
+            "origin": [-2, 5.5, 6.5],
+            "pivot": [0, -12, 0],
+            "rotation": [0, 0, 0],
+            "size": [1, 1.0, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [1, 3],
+                "uv_size": [-1, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              }
+            }
+          }
+        ],
+        "name": "two",
+        "parent": "bamboo_steamer",
+        "pivot": [0, -12, 0],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-15, 1.5, 6.5],
+            "pivot": [0, -16, 0],
+            "rotation": [0, 0, 0],
+            "size": [1, 1.0, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [1, 3],
+                "uv_size": [-1, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              }
+            }
+          },
+          {
+            "origin": [-14, 0, 2],
+            "pivot": [0, -16, 0],
+            "rotation": [0, 0, 0],
+            "size": [12, 4, 12],
+            "uv": {
+              "down": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [12, 12]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              },
+              "up": {
+                "texture": 1,
+                "uv": [12, 12],
+                "uv_size": [-12, -12]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 3.5],
+                "uv_size": [12, 4.0]
+              }
+            }
+          },
+          {
+            "origin": [-2, 1.5, 6.5],
+            "pivot": [0, -16, 0],
+            "rotation": [0, 0, 0],
+            "size": [1, 1.0, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [1, 3],
+                "uv_size": [-1, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              }
+            }
+          }
+        ],
+        "name": "one",
+        "parent": "bamboo_steamer",
+        "pivot": [0, -16, 0],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:food_steamer",
+      "textures": ["ham:barrel_side", "ham:barrel_bottom"],
+      "use_ao": true
+    }
+  }
+}

@@ -1,11 +1,25 @@
 {
-    "group": [
-        {
-            "group_name": "group.ecology.pie",
-            "icon": "ham:apple_pie",
-            "list": [
-                "ham:apple_pie"
-            ]
-        }
-    ]
+  "group": [
+    {
+      "group_name": "group.ecology.pie",
+      "icon": "ham:apple_pie",
+      "list": ["ham:apple_pie"]
+    },
+    {
+      "group_name": "itemGroup.name.ham.workbench",
+      "icon": "ham:cooking_table",
+      "list": [
+        "ham:baking_furnace",
+        "ham:cooking_table",
+        "ham:food_steamer",
+        "ham:fryer",
+        "ham:grill",
+        "ham:mill",
+        "ham:pan",
+        "ham:squeezer",
+        "ham:stew_pot",
+        "ham:stove"
+      ]
+    }
+  ]
 }

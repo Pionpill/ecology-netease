@@ -1,6 +1,24 @@
 {
   "resource_pack_name": "ecology_resource_pack",
   "texture_data": {
+    "ham:anvil": {
+      "textures": "textures/blocks/anvil"
+    },
+    "ham:barrel_bottom": {
+      "textures": "textures/blocks/barrel_bottom"
+    },
+    "ham:barrel_side": {
+      "textures": "textures/blocks/barrel_side"
+    },
+    "ham:bricks": {
+      "textures": "textures/blocks/bricks"
+    },
+    "ham:cooking_table_above": {
+      "textures": "textures/blocks/cooking_table_above"
+    },
+    "ham:cooking_table_side": {
+      "textures": "textures/blocks/cooking_table_side"
+    },
     "ham:herb_stage_0": {
       "textures": "textures/blocks/herb_stage_0"
     },
@@ -12,6 +30,36 @@
     },
     "ham:herb_stage_3": {
       "textures": "textures/blocks/herb_stage_3"
+    },
+    "ham:mix_plank": {
+      "textures": "textures/blocks/mix_plank"
+    },
+    "ham:oak_planks": {
+      "textures": "textures/blocks/oak_planks"
+    },
+    "ham:oil": {
+      "textures": "textures/blocks/oil"
+    },
+    "ham:smooth_stone": {
+      "textures": "textures/blocks/smooth_stone"
+    },
+    "ham:spruce_planks": {
+      "textures": "textures/blocks/spruce_planks"
+    },
+    "ham:steel_pan_side": {
+      "textures": "textures/blocks/steel_pan_side"
+    },
+    "ham:stove_above": {
+      "textures": "textures/blocks/stove_above"
+    },
+    "ham:stove_front": {
+      "textures": "textures/blocks/stove_front"
+    },
+    "ham:stove_side": {
+      "textures": "textures/blocks/stove_side"
+    },
+    "ham:water": {
+      "textures": "textures/blocks/water"
     }
   },
   "texture_name": "atlas.terrain"

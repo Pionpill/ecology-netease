@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ham:stove"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["AA", "BB"],
+    "key": {
+      "A": {
+        "item": "minecraft:clay_ball"
+      },
+      "B": {
+        "item": "minecraft:brick"
+      }
+    },
+    "result": {
+      "item": "ham:stove",
+      "count": 1
+    }
+  }
+}

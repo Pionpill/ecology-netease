@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ham:grill"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["AAA", "A A"],
+    "key": {
+      "A": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "ham:grill",
+      "count": 1
+    }
+  }
+}

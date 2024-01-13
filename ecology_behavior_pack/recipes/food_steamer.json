@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ham:food_steamer"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["A A", "A A", "A A"],
+    "key": {
+      "A": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "ham:food_steamer",
+      "count": 1
+    }
+  }
+}

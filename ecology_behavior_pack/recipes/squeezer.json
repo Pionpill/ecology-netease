@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ham:squeezer"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" A ", " B ", "CCC"],
+    "key": {
+      "A": {
+        "item": "minecraft:fence"
+      },
+      "B": {
+        "item": "minecraft:barrel"
+      },
+      "C": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "ham:squeezer",
+      "count": 1
+    }
+  }
+}

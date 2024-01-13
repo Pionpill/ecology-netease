@@ -1,0 +1,59 @@
+{
+  "format_version": "1.16",
+  "minecraft:block": {
+    "description": {
+      "identifier": "ham:pan",
+      "register_to_creative_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:map_color": {
+        "color": "#515151"
+      },
+      "minecraft:block_light_emission": 0,
+      "minecraft:explosion_resistance": {
+        "value": 3
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/blocks/pan.json"
+      },
+      "minecraft:destroy_time": {
+        "value": 3
+      },
+      "netease:tier": {
+        "digger": "pickaxe",
+        "destroy_special": false,
+        "level": 0
+      },
+      "netease:fire_resistant": {
+        "value": true
+      },
+      "minecraft:block_light_absorption": {
+        "value": 0.0
+      },
+      "netease:aabb": {
+        "collision": {
+          "min": [0, 0, 0],
+          "max": [1, 0.25, 1]
+        },
+        "clip": {
+          "min": [0.0, 0.0, 0.0],
+          "max": [1.0, 0.25, 1.0]
+        }
+      },
+      "netease:face_directional": {
+        "type": "direction"
+      },
+      "netease:render_layer": {
+        "value": "alpha"
+      },
+      "netease:solid": {
+        "value": true
+      },
+      "netease:block_entity": {
+        "tick": true,
+        "movable": false
+      }
+    }
+  }
+}

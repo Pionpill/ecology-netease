@@ -15,5 +15,45 @@
   "ham:herb_stage_3": {
     "netease_model": "ham:herb_stage_3",
     "sound": "grass"
+  },
+  "ham:baking_furnace": {
+    "netease_model": "ham:baking_furnace",
+    "sound": "stone"
+  },
+  "ham:cooking_table": {
+    "netease_model": "ham:cooking_table",
+    "sound": "wood"
+  },
+  "ham:food_steamer": {
+    "netease_model": "ham:food_steamer",
+    "sound": "stone"
+  },
+  "ham:fryer": {
+    "netease_model": "ham:fryer",
+    "sound": "stone"
+  },
+  "ham:grill": {
+    "netease_model": "ham:grill",
+    "sound": "stone"
+  },
+  "ham:stove": {
+    "netease_model": "ham:stove",
+    "sound": "stone"
+  },
+  "ham:mill": {
+    "netease_model": "ham:mill",
+    "sound": "stone"
+  },
+  "ham:pan": {
+    "netease_model": "ham:pan",
+    "sound": "stone"
+  },
+  "ham:squeezer": {
+    "netease_model": "ham:squeezer",
+    "sound": "stone"
+  },
+  "ham:stew_pot": {
+    "netease_model": "ham:stew_pot",
+    "sound": "stone"
   }
 }

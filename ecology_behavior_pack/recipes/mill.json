@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ham:mill"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["AA", "BB"],
+    "key": {
+      "A": {
+        "item": "minecraft:stonebrick"
+      },
+      "B": {
+        "item": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "ham:mill",
+      "count": 1
+    }
+  }
+}

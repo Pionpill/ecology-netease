@@ -1,0 +1,307 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "cubes": [
+          {
+            "origin": [-16, 0, 0],
+            "pivot": [-8, 0, 8],
+            "rotation": [0, 0, 0],
+            "size": [16, 15, 16],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 16]
+              },
+              "east": {
+                "texture": 3,
+                "uv": [0, 0],
+                "uv_size": [16, 15]
+              },
+              "north": {
+                "texture": 3,
+                "uv": [0, 0],
+                "uv_size": [16, 15]
+              },
+              "south": {
+                "texture": 3,
+                "uv": [0, 0],
+                "uv_size": [16, 15]
+              },
+              "up": {
+                "texture": 4,
+                "uv": [16, 16],
+                "uv_size": [-16, -16]
+              },
+              "west": {
+                "texture": 3,
+                "uv": [0, 0],
+                "uv_size": [16, 15]
+              }
+            }
+          }
+        ],
+        "name": "cooking_table",
+        "pivot": [-8, 0, 8],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-14, 15, 6],
+            "pivot": [-8, 0, 7],
+            "rotation": [0, 0, 0],
+            "size": [3, 1, 5],
+            "uv": {
+              "down": {
+                "texture": 1,
+                "uv": [0, 5.5],
+                "uv_size": [3, 5.0]
+              },
+              "east": {
+                "texture": 1,
+                "uv": [0, 5.5],
+                "uv_size": [5, 1.0]
+              },
+              "north": {
+                "texture": 1,
+                "uv": [0, 5.5],
+                "uv_size": [3, 1.0]
+              },
+              "south": {
+                "texture": 1,
+                "uv": [0, 5.5],
+                "uv_size": [3, 1.0]
+              },
+              "up": {
+                "texture": 1,
+                "uv": [3, 10.5],
+                "uv_size": [-3, -5.0]
+              },
+              "west": {
+                "texture": 1,
+                "uv": [0, 5.5],
+                "uv_size": [5, 1.0]
+              }
+            }
+          },
+          {
+            "origin": [-14, 15, 4],
+            "pivot": [-8, 0, 7],
+            "rotation": [0, 0, 0],
+            "size": [1, 1, 2],
+            "uv": {
+              "down": {
+                "texture": 2,
+                "uv": [0, 0],
+                "uv_size": [1, 2]
+              },
+              "east": {
+                "texture": 2,
+                "uv": [0, 0],
+                "uv_size": [2, 1]
+              },
+              "north": {
+                "texture": 2,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "south": {
+                "texture": 2,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "up": {
+                "texture": 2,
+                "uv": [1, 2],
+                "uv_size": [-1, -2]
+              },
+              "west": {
+                "texture": 2,
+                "uv": [0, 0],
+                "uv_size": [2, 1]
+              }
+            }
+          }
+        ],
+        "name": "knife",
+        "parent": "cooking_table",
+        "pivot": [-8, 0, 7],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-9, 15, 4],
+            "pivot": [-8, 0, 8],
+            "rotation": [0, 0, 0],
+            "size": [8, 1, 10],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 2.5],
+                "uv_size": [8, 10.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [10, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [8, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [8, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [8, 12.5],
+                "uv_size": [-8, -10.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [10, 1]
+              }
+            }
+          },
+          {
+            "origin": [-9, 15, 3],
+            "pivot": [-8, 0, 8],
+            "rotation": [0, 0, 0],
+            "size": [3, 1, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [3, 1],
+                "uv_size": [-3, -1]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              }
+            }
+          },
+          {
+            "origin": [-9, 15, 2],
+            "pivot": [-8, 0, 8],
+            "rotation": [0, 0, 0],
+            "size": [8, 1, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [8, 1]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [8, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [8, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [8, 1],
+                "uv_size": [-8, -1]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              }
+            }
+          },
+          {
+            "origin": [-4, 15, 3],
+            "pivot": [-8, 0, 8],
+            "rotation": [0, 0, 0],
+            "size": [3, 1, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 1]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [3, 1],
+                "uv_size": [-3, -1]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [1, 1]
+              }
+            }
+          }
+        ],
+        "name": "chopping_block",
+        "parent": "cooking_table",
+        "pivot": [-8, 0, 8],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:cooking_table",
+      "textures": [
+        "ham:oak_planks",
+        "ham:steel_pan_side",
+        "ham:spruce_planks",
+        "ham:cooking_table_side",
+        "ham:cooking_table_above"
+      ],
+      "use_ao": true
+    }
+  }
+}

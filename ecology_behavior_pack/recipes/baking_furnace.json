@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ham:baking_furnace"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["AAA", "A A"],
+    "key": {
+      "A": {
+        "item": "minecraft:brick"
+      }
+    },
+    "result": {
+      "item": "ham:baking_furnace",
+      "count": 1
+    }
+  }
+}
