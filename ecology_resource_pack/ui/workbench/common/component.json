@@ -1,0 +1,1163 @@
+{
+  "border_img": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0.0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 1,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": ["default", "default"],
+    "texture": "textures/ui/item_cell",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "bowl_edge_img": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 4,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 16],
+    "texture": "textures/ui/bowl_edge",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "bowl_sketch": {
+    "alpha": 1,
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 10,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [-30, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [25, 25],
+    "texture": "textures/ui/bowl_sketch",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "bucket_edge_img": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 4,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 16],
+    "texture": "textures/ui/bucket_edge",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "button_label": {
+    "alpha": "$control_alpha",
+    "color": "$label_color",
+    "font_scale_factor": "$label_font_scale_factor",
+    "font_size": "$label_font_size",
+    "font_type": "smooth",
+    "layer": "$label_layer",
+    "max_size": ["100%", "100%"],
+    "offset": "$label_offset",
+    "shadow": false,
+    "text": "$label_text",
+    "text_alignment": "center",
+    "type": "label"
+  },
+  "cooking_oil_edge_img": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 4,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 16],
+    "texture": "textures/ui/cooking_oil_edge",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "count_label": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "color": [1, 1, 1],
+    "enabled": true,
+    "font_scale_factor": 0.9399999976158142,
+    "font_size": "normal",
+    "font_type": "default",
+    "layer": 7,
+    "line_padding": 0.0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [4, 5],
+    "priority": 0,
+    "propagate_alpha": false,
+    "shadow": true,
+    "size": [10, 9],
+    "text": "",
+    "text_alignment": "right",
+    "type": "label",
+    "visible": true
+  },
+  "flame_img": {
+    "alpha": 1,
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 1,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [2, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [14, 14],
+    "texture": "textures/ui/flame_empty_image",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "flame_mask": {
+    "alpha": 1,
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 1,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [2, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [14, 14],
+    "texture": "textures/ui/flame_full_image",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "furnace_arrow_img": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 1,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [24, 24],
+    "texture": "textures/ui/arrow_inactive",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "furnace_arrow_mask": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 1,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [24, 24],
+    "texture": "textures/ui/arrow_active",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "item_button@common.button": {
+    "$control_alpha": 0.6399999856948853,
+    "$default_alpha": 1.0,
+    "$default_texture": "textures/ui/item_cell",
+    "$hover_alpha": 1.0,
+    "$hover_texture": "textures/ui/item_cell",
+    "$is_new_nine_slice": false,
+    "$label_color": [1, 1, 1],
+    "$label_font_scale_factor": 1.0,
+    "$label_font_size": "large",
+    "$label_layer": 3,
+    "$label_offset": [0, 0],
+    "$label_text": "",
+    "$nine_slice_buttom": 0,
+    "$nine_slice_left": 0,
+    "$nine_slice_right": 0,
+    "$nine_slice_top": 0,
+    "$nineslice_size": [0, 0, 0, 0],
+    "$pressed_button_name": "%component.click",
+    "$pressed_texture": "textures/ui/item_cell",
+    "$texture_layer": 1,
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "bindings": [
+      {
+        "binding_collection_name": "",
+        "binding_condition": "always_when_visible",
+        "binding_type": "collection_details"
+      }
+    ],
+    "button_mappings": [],
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "default@component.item_button_default": {}
+      },
+      {
+        "hover@component.item_button_hover": {}
+      },
+      {
+        "pressed@component.item_button_pressed": {}
+      },
+      {
+        "button_label@component.button_label": {}
+      }
+    ],
+    "draggable": "not_draggable",
+    "enabled": true,
+    "is_handle_button_move_event": true,
+    "layer": 2,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": ["default", "default"],
+    "visible": true
+  },
+  "item_button_default": {
+    "alpha": "$default_alpha",
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": "$texture_layer",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$default_texture",
+    "type": "image"
+  },
+  "item_button_hover": {
+    "alpha": "$control_alpha",
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": "$texture_layer",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$hover_texture",
+    "type": "image"
+  },
+  "item_button_pressed": {
+    "alpha": "$default_alpha",
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": "$texture_layer",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$pressed_texture",
+    "type": "image"
+  },
+  "item_detail": {
+    "$offset|default": [0, "-16px"],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "item_detail_bg": {
+          "alpha": 0,
+          "controls": [
+            {
+              "item_detail_text": {
+                "alpha": 0,
+                "layer": 1,
+                "text": "",
+                "type": "label"
+              }
+            }
+          ],
+          "layer": 30,
+          "nineslice_size": 4,
+          "size": ["100%c + 8px", "100%c + 8px"],
+          "texture": "textures/ui/purpleBorder",
+          "type": "image"
+        }
+      }
+    ],
+    "layer": 30,
+    "offset": "$offset",
+    "size": ["100%c", "100%c"],
+    "type": "panel"
+  },
+  "item_image": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 1,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": ["default", "default"],
+    "texture": "textures/netease/common/image/default",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "item_renderer": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "enabled": true,
+    "layer": 5,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "property_bag": {
+      "#item_id_aux": 131072
+    },
+    "renderer": "inventory_item_renderer",
+    "size": [16, 16],
+    "type": "custom",
+    "visible": false
+  },
+  "item_slot": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "selected_image@component.selected_image": {}
+      },
+      {
+        "item_button@component.item_button": {}
+      },
+      {
+        "count_label@component.count_label": {}
+      },
+      {
+        "durability_bar@component.progress_bar": {
+          "offset": [0, 5],
+          "size": ["70.0%+0.0px", "7.0%+0.0px"]
+        }
+      },
+      {
+        "item_renderer@component.item_renderer": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [18, 18],
+    "type": "panel",
+    "visible": true
+  },
+  "item_slot_big": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "selected_image@component.selected_image": {}
+      },
+      {
+        "item_button@component.item_button": {}
+      },
+      {
+        "count_label@component.count_label": {}
+      },
+      {
+        "durability_bar@component.progress_bar": {
+          "offset": [0, 5],
+          "size": ["70.0%+0.0px", "7.0%+0.0px"]
+        }
+      },
+      {
+        "item_renderer@component.item_renderer": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [22, 22],
+    "type": "panel",
+    "visible": true
+  },
+  "item_slot_bowl": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "selected_image@component.selected_image": {}
+      },
+      {
+        "item_button@component.item_button": {}
+      },
+      {
+        "count_label@component.count_label": {}
+      },
+      {
+        "durability_bar@component.progress_bar": {
+          "offset": [0, 5],
+          "size": ["70.0%+0.0px", "7.0%+0.0px"]
+        }
+      },
+      {
+        "item_renderer@component.item_renderer": {}
+      },
+      {
+        "bowl_edge_img@component.bowl_edge_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [18, 18],
+    "type": "panel",
+    "visible": true
+  },
+  "item_slot_bucket": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "selected_image@component.selected_image": {}
+      },
+      {
+        "item_button@component.item_button": {}
+      },
+      {
+        "count_label@component.count_label": {}
+      },
+      {
+        "durability_bar@component.progress_bar": {
+          "offset": [0, 5],
+          "size": ["70.0%+0.0px", "7.0%+0.0px"]
+        }
+      },
+      {
+        "item_renderer@component.item_renderer": {}
+      },
+      {
+        "bucket_edge_img@component.bucket_edge_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [18, 18],
+    "type": "panel",
+    "visible": true
+  },
+  "item_slot_cooking_oil": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "selected_image@component.selected_image": {}
+      },
+      {
+        "item_button@component.item_button": {}
+      },
+      {
+        "count_label@component.count_label": {}
+      },
+      {
+        "durability_bar@component.progress_bar": {
+          "offset": [0, 5],
+          "size": ["70.0%+0.0px", "7.0%+0.0px"]
+        }
+      },
+      {
+        "item_renderer@component.item_renderer": {}
+      },
+      {
+        "cooking_oil_edge_img@component.cooking_oil_edge_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [18, 18],
+    "type": "panel",
+    "visible": true
+  },
+  "item_slot_salt": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "selected_image@component.selected_image": {}
+      },
+      {
+        "item_button@component.item_button": {}
+      },
+      {
+        "count_label@component.count_label": {}
+      },
+      {
+        "durability_bar@component.progress_bar": {
+          "offset": [0, 5],
+          "size": ["70.0%+0.0px", "7.0%+0.0px"]
+        }
+      },
+      {
+        "item_renderer@component.item_renderer": {}
+      },
+      {
+        "salt_edge_img@component.salt_edge_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [18, 18],
+    "type": "panel",
+    "visible": true
+  },
+  "item_slot_seasonings": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "selected_image@component.selected_image": {}
+      },
+      {
+        "item_button@component.item_button": {}
+      },
+      {
+        "count_label@component.count_label": {}
+      },
+      {
+        "durability_bar@component.progress_bar": {
+          "offset": [0, 5],
+          "size": ["70.0%+0.0px", "7.0%+0.0px"]
+        }
+      },
+      {
+        "item_renderer@component.item_renderer": {}
+      },
+      {
+        "seasonings_edge_img@component.seasonings_edge_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [18, 18],
+    "type": "panel",
+    "visible": true
+  },
+  "item_slot_sugar": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "selected_image@component.selected_image": {}
+      },
+      {
+        "item_button@component.item_button": {}
+      },
+      {
+        "count_label@component.count_label": {}
+      },
+      {
+        "durability_bar@component.progress_bar": {
+          "offset": [0, 5],
+          "size": ["70.0%+0.0px", "7.0%+0.0px"]
+        }
+      },
+      {
+        "item_renderer@component.item_renderer": {}
+      },
+      {
+        "sugar_edge_img@component.sugar_edge_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [18, 18],
+    "type": "panel",
+    "visible": true
+  },
+  "knife_img": {
+    "alpha": 1,
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 10,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [-30, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [25, 25],
+    "texture": "textures/ui/kitchen_knife",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "main": {
+    "absorbs_input": true,
+    "always_accepts_input": false,
+    "controls": [
+      {
+        "item_slot@component.item_slot": {}
+      }
+    ],
+    "force_render_below": false,
+    "is_showing_menu": true,
+    "render_game_behind": true,
+    "render_only_when_topmost": true,
+    "should_steal_mouse": false,
+    "type": "screen"
+  },
+  "meter_scale": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0.0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 10,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [14, 60],
+    "texture": "textures/ui/meter_scale",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "namespace": "component",
+  "oil_img": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "down",
+    "clip_offset": [0, 0],
+    "clip_ratio": 1.0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": true,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": false,
+    "layer": 5,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [14, 60],
+    "texture": "textures/ui/oil",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "oil_meter": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "border_img@component.border_img": {}
+      },
+      {
+        "meter_scale@component.meter_scale": {}
+      },
+      {
+        "liquid@component.oil_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 62],
+    "type": "panel",
+    "visible": true
+  },
+  "progress_bar": {
+    "$progressBarOffset|default": [0, 8],
+    "$progressBarSize|default": [18, 2],
+    "color": [0.3, 0.3, 0.3],
+    "controls": [
+      {
+        "bar_mask": {
+          "$barMaskSize|default": ["100.0%+0.0px", 1],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "clip_direction": "left",
+          "color": [0, 1, 0],
+          "layer": 21,
+          "nineslice_size": 1,
+          "offset": [0, 0],
+          "size": "$barMaskSize",
+          "texture": "textures/ui/white_bg",
+          "type": "image",
+          "visible": true
+        }
+      }
+    ],
+    "layer": 10,
+    "nineslice_size": 1,
+    "offset": "$progressBarOffset",
+    "size": "$progressBarSize",
+    "texture": "textures/ui/white_bg",
+    "type": "image",
+    "visible": false
+  },
+  "salt_edge_img": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0.0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 4,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 16],
+    "texture": "textures/ui/salt_edge",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "seasonings_edge_img": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 4,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 16],
+    "texture": "textures/ui/seasonings_edge",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "selected_image": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0.0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 5,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": 4,
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": ["100.0%+4.0px", "100.0%+4.0px"],
+    "texture": "textures/ui/pocket_ui_highlight_slot",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": false
+  },
+  "sugar_edge_img": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 4,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 16],
+    "texture": "textures/ui/sugar_edge",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "water_img": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "down",
+    "clip_offset": [0, 0],
+    "clip_ratio": 1.0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": true,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": false,
+    "layer": 5,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [14, 60],
+    "texture": "textures/ui/oil",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "water_meter": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "border_img@component.border_img": {}
+      },
+      {
+        "meter_scale@component.meter_scale": {}
+      },
+      {
+        "liquid@component.water_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 62],
+    "type": "panel",
+    "visible": true
+  }
+}

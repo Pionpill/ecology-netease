@@ -1,0 +1,15 @@
+{
+    "ui_defs": [
+        "ui/workbench/baking_furnace_screen.json",
+        "ui/workbench/cooking_table_screen.json",
+        "ui/workbench/food_steamer_screen.json",
+        "ui/workbench/fryer_screen.json",
+        "ui/workbench/grill_screen.json",
+        "ui/workbench/mill_screen.json",
+        "ui/workbench/pan_screen.json",
+        "ui/workbench/squeezer_screen.json",
+        "ui/workbench/stew_pot_screen.json",
+        "ui/workbench/common/component.json",
+        "ui/workbench/common/panel.json"
+    ]
+}
