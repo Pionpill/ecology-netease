@@ -163,3 +163,6 @@ __pycache__/
 world_icon.jpeg
 temp.*
 temp/
+pack_icon.jpg
+studio.json
+*.mcgui

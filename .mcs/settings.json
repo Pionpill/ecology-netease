@@ -1,13 +1,7 @@
 {
-  "Arena.Component.Namespace": "fxjty",
-  "FirstTabSetting": 0,
-  "ShortItemSettings": [
-    "ecology_resource_pack\\ui",
-    "ecology_behavior_pack\\Presets",
-    "ecology_behavior_pack\\Parts",
-    "ecology_behavior_pack\\BoxData",
-    "ecology_resource_pack\\effects",
-    "ecology_resource_pack\\models",
-    "ecology_resource_pack\\textures"
-  ]
+    "Arena.Component.Namespace": "fxjty",
+    "FirstTabSetting": 0,
+    "ShortItemSettings": [
+
+    ]
 }
