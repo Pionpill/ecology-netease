@@ -53,6 +53,9 @@
       "netease:block_entity": {
         "tick": true,
         "movable": false
+      },
+      "netease:listen_block_remove": {
+        "value": true
       }
     }
   }

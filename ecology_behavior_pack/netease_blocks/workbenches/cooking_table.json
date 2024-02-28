@@ -51,8 +51,11 @@
         "value": true
       },
       "netease:block_entity": {
-        "tick": true,
+        "tick": false,
         "movable": false
+      },
+      "netease:listen_block_remove": {
+        "value": true
       }
     }
   }
