@@ -13,6 +13,6 @@ CROP_SERVER_PATH = "scripts.crop.server.system.CropServerSystem"
 
 # 工作台系统
 WORKBENCH_SERVER_NAME = "WorkbenchServerSystem{}".format(ADDON_VERSION)
-WORKBENCH_SERVER_PATH = "scripts.workbench.server.system.CropServerSystem"
+WORKBENCH_SERVER_PATH = "scripts.workbench.server.system.WorkbenchServerSystem"
 WORKBENCH_CLIENT_NAME = "WorkbenchClientSystem{}".format(ADDON_VERSION)
-WORKBENCH_CLIENT_PATH = "scripts.workbench.server.system.CropServerSystem"
+WORKBENCH_CLIENT_PATH = "scripts.workbench.client.system.WorkbenchClientSystem"

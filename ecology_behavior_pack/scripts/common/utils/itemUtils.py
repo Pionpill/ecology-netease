@@ -1,6 +1,8 @@
 def IsSameItem(item1, item2):
     # type: (dict, dict) -> bool
     """判断是否为同一item，只有itemName和auxValue均相同才返回True"""
+    if item1 is None or item2 is None:
+        return item1 is None and item2 is None
     if item1.get("newItemName") != item2.get("newItemName"):
         return False
     if item1.get("newAuxValue") != item2.get("newAuxValue"):

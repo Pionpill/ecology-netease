@@ -45,8 +45,7 @@ class BiomeService(object):
         if (not rainfall_adjust) or rainfall_adjust < biomeInfo.rainfall:
             rainfall_adjust = biomeInfo.rainfall
             
-        brightness = blockInfoComp.GetBlockLightLevel(position, dimensionId)
-        return EcologyInfo(biomeInfo.name, biomeInfo.name_cn, biomeInfo.temperature, temperature_adjust, rainfall_adjust, biomeInfo.tags, brightness)
+        return EcologyInfo(biomeInfo.name, biomeInfo.name_cn, biomeInfo.temperature, temperature_adjust, rainfall_adjust, biomeInfo.tags)
         
     @staticmethod
     def __GetDayAdjustTemperature(dimensionId):
