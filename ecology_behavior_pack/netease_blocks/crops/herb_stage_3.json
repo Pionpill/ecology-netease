@@ -28,10 +28,6 @@
       },
       "netease:neighborchanged_sendto_script": {
         "value": true
-      },
-      "netease:block_entity": {
-        "tick": true,
-        "movable": false
       }
     }
   }
