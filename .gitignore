@@ -166,3 +166,4 @@ temp/
 pack_icon.jpg
 studio.json
 *.mcgui
+.VSCodeCounter
