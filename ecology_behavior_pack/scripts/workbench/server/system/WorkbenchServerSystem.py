@@ -124,6 +124,7 @@ class WorkbenchServerSystem(ServerSystem):
             self.NotifyToMultiClients(playerList, WorkbenchBlockUICloseEvent, args)
             for playerId in playerList:
                 WorkbenchService.DeletePlayerUsingBlock(playerId, position, dimensionId)
+                WorkbenchService.DeleteWorkbenchManager(position, dimensionId)
         workbenchMgr = WorkbenchService.GetWorkbenchMgr(position, dimensionId, blockName)
         slotData = workbenchMgr.GetAllSlotData()
         if (slotData is not None) and any(item is not None for item in slotData.values()):

@@ -48,8 +48,12 @@ class WorkbenchService(object):
         if len(playerList) == 0:
             del WorkbenchService.blockUsingMap[posKey]
         del WorkbenchService.playerUsingMap[playerId]
-        del WorkbenchService.workbenchMgrMap[posKey]
         
+    @staticmethod
+    def DeleteWorkbenchManager(position, dimensionId):
+        # type: (tuple, int) -> None
+        posKey = position + (dimensionId,)
+        del WorkbenchService.workbenchMgrMap[posKey]
     
     @staticmethod
     def GetBlockUsingPlayerList(position, dimensionId):
