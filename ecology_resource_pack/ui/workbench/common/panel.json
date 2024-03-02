@@ -1,1188 +1,1188 @@
 {
-   "bag_grid" : {
-      "alpha" : 1.0,
-      "anchor_from" : "top_middle",
-      "anchor_to" : "top_middle",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "collection_name" : "bag_collection",
-      "enabled" : true,
-      "grid_dimensions" : [ 9.0, 3.0 ],
-      "grid_item_template" : "component.item_slot",
-      "grid_rescaling_type" : "none",
-      "layer" : 1,
-      "max_size" : [ 0, 0 ],
-      "maximum_grid_items" : 0,
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : true,
-      "size" : [ 163, 54 ],
-      "type" : "grid",
-      "visible" : true
-   },
-   "butcher_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 9 ]
-            }
-         },
-         {
-            "material_slot1@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 9 ]
-            }
-         },
-         {
-            "material_slot2@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 9 ]
-            }
-         },
-         {
-            "material_slot3@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 27 ]
-            }
-         },
-         {
-            "material_slot4@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 27 ]
-            }
-         },
-         {
-            "material_slot5@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 27 ]
-            }
-         },
-         {
-            "material_slot6@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 45 ]
-            }
-         },
-         {
-            "material_slot7@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 45 ]
-            }
-         },
-         {
-            "material_slot8@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 45 ]
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "right_middle",
-               "anchor_to" : "right_middle",
-               "layer" : 2,
-               "offset" : [ -34, 0 ]
-            }
-         },
-         {
-            "arrow_image@component.knife_img" : {
-               "anchor_from" : "center",
-               "anchor_to" : "center",
-               "offset" : [ 0, 0 ]
-            }
-         },
-         {
-            "material_slot9@component.item_slot_salt" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right"
-            }
-         },
-         {
-            "material_slot10@component.item_slot_sugar" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ 0, 18 ]
-            }
-         },
-         {
-            "material_slot11@component.item_slot_cooking_oil" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ 0, 36 ]
-            }
-         },
-         {
-            "material_slot12@component.item_slot_seasonings" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ 0, 54 ]
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 150, 72 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "cooking_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 9 ]
-            }
-         },
-         {
-            "material_slot1@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 9 ]
-            }
-         },
-         {
-            "material_slot2@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 9 ]
-            }
-         },
-         {
-            "material_slot3@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 27 ]
-            }
-         },
-         {
-            "material_slot4@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 27 ]
-            }
-         },
-         {
-            "material_slot5@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 27 ]
-            }
-         },
-         {
-            "material_slot6@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 45 ]
-            }
-         },
-         {
-            "material_slot7@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 45 ]
-            }
-         },
-         {
-            "material_slot8@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 45 ]
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "right_middle",
-               "anchor_to" : "right_middle",
-               "layer" : 2,
-               "offset" : [ -34, 0 ]
-            }
-         },
-         {
-            "arrow_image@component.knife_img" : {
-               "anchor_from" : "center",
-               "anchor_to" : "center",
-               "offset" : [ 0, 0 ]
-            }
-         },
-         {
-            "material_slot9@component.item_slot_salt" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right"
-            }
-         },
-         {
-            "material_slot10@component.item_slot_sugar" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ 0, 18 ]
-            }
-         },
-         {
-            "material_slot11@component.item_slot_cooking_oil" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ 0, 36 ]
-            }
-         },
-         {
-            "material_slot12@component.item_slot_seasonings" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ 0, 54 ]
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 150, 72 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "crafting_grid" : {
-      "alpha" : 1.0,
-      "anchor_from" : "left_middle",
-      "anchor_to" : "left_middle",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "collection_name" : "test_grid",
-      "enabled" : true,
-      "grid_dimensions" : [ 3.0, 3.0 ],
-      "grid_item_template" : "component.item_slot",
-      "grid_rescaling_type" : "none",
-      "layer" : 1,
-      "max_size" : [ 0, 0 ],
-      "maximum_grid_items" : 0,
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : true,
-      "size" : [ 54, 54 ],
-      "type" : "grid",
-      "visible" : true
-   },
-   "crafting_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left"
-            }
-         },
-         {
-            "material_slot1@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 0 ]
-            }
-         },
-         {
-            "material_slot2@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 0 ]
-            }
-         },
-         {
-            "material_slot3@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 18 ]
-            }
-         },
-         {
-            "material_slot4@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 18 ]
-            }
-         },
-         {
-            "material_slot5@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 18 ]
-            }
-         },
-         {
-            "material_slot6@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 36 ]
-            }
-         },
-         {
-            "material_slot7@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 36 ]
-            }
-         },
-         {
-            "material_slot8@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 36 ]
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "right_middle",
-               "anchor_to" : "right_middle",
-               "layer" : 2
-            }
-         },
-         {
-            "arrow_image@component.knife_img" : {}
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 120, 54 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "food_steamer_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 54, 2 ]
-            }
-         },
-         {
-            "fuel_slot0@component.item_slot" : {
-               "anchor_from" : "bottom_left",
-               "anchor_to" : "bottom_left",
-               "offset" : [ 82, 0 ]
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right"
-            }
-         },
-         {
-            "flame_img@component.flame_img" : {
-               "offset" : [ 84, 0 ]
-            }
-         },
-         {
-            "flame_mask@component.flame_mask" : {
-               "layer" : 10,
-               "offset" : [ 84, 0 ]
-            }
-         },
-         {
-            "furnace_arrow_mask@component.furnace_arrow_mask" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "layer" : 10,
-               "offset" : [ 78, 0 ]
-            }
-         },
-         {
-            "furnace_arrow_img@component.furnace_arrow_img" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 78, 0 ]
-            }
-         },
-         {
-            "meter@component.water_meter" : {
-               "anchor_from" : "left_middle",
-               "anchor_to" : "left_middle",
-               "offset" : [ 25, 0 ]
-            }
-         },
-         {
-            "meter_material_slot@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left"
-            }
-         },
-         {
-            "meter_result_slot@component.item_slot" : {
-               "anchor_from" : "bottom_left",
-               "anchor_to" : "bottom_left",
-               "offset" : [ 0, 0 ]
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 130, 62 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "fryer_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 54, 2 ]
-            }
-         },
-         {
-            "fuel_slot0@component.item_slot" : {
-               "anchor_from" : "bottom_left",
-               "anchor_to" : "bottom_left",
-               "offset" : [ 82, 0 ]
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right"
-            }
-         },
-         {
-            "flame_img@component.flame_img" : {
-               "offset" : [ 84, 0 ]
-            }
-         },
-         {
-            "flame_mask@component.flame_mask" : {
-               "layer" : 10,
-               "offset" : [ 84, 0 ]
-            }
-         },
-         {
-            "furnace_arrow_mask@component.furnace_arrow_mask" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "layer" : 10,
-               "offset" : [ 78, 0 ]
-            }
-         },
-         {
-            "furnace_arrow_img@component.furnace_arrow_img" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 78, 0 ]
-            }
-         },
-         {
-            "meter@component.oil_meter" : {
-               "anchor_from" : "left_middle",
-               "anchor_to" : "left_middle",
-               "offset" : [ 25, 0 ]
-            }
-         },
-         {
-            "meter_material_slot@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left"
-            }
-         },
-         {
-            "meter_result_slot@component.item_slot" : {
-               "anchor_from" : "bottom_left",
-               "anchor_to" : "bottom_left"
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 130, 62 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "furnace_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left"
-            }
-         },
-         {
-            "fuel_slot0@component.item_slot" : {
-               "anchor_from" : "bottom_left",
-               "anchor_to" : "bottom_left"
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "right_middle",
-               "anchor_to" : "right_middle"
-            }
-         },
-         {
-            "flame_img@component.flame_img" : {}
-         },
-         {
-            "flame_mask@component.flame_mask" : {
-               "layer" : 10
-            }
-         },
-         {
-            "furnace_arrow_mask@component.furnace_arrow_mask" : {
-               "layer" : 10
-            }
-         },
-         {
-            "furnace_arrow_img@component.furnace_arrow_img" : {
-               "texture" : "textures/ui/arrow_inactive"
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 80, 54 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "grill_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "fuel_slot0@component.item_slot" : {
-               "anchor_from" : "bottom_middle",
-               "anchor_to" : "bottom_middle",
-               "offset" : [ 0, 0 ]
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right"
-            }
-         },
-         {
-            "flame_img@component.flame_img" : {
-               "anchor_from" : "center",
-               "anchor_to" : "center",
-               "offset" : [ 0, 0 ]
-            }
-         },
-         {
-            "flame_mask@component.flame_mask" : {
-               "anchor_from" : "center",
-               "anchor_to" : "center",
-               "layer" : 10,
-               "offset" : [ 0, 0 ]
-            }
-         },
-         {
-            "furnace_arrow_mask@component.furnace_arrow_mask" : {
-               "anchor_from" : "top_middle",
-               "anchor_to" : "top_middle",
-               "layer" : 10,
-               "offset" : [ 0, 0 ]
-            }
-         },
-         {
-            "furnace_arrow_img@component.furnace_arrow_img" : {
-               "anchor_from" : "top_middle",
-               "anchor_to" : "top_middle",
-               "offset" : [ 0, 0 ]
-            }
-         },
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 2 ]
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 80, 60 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "hand_grid" : {
-      "alpha" : 1.0,
-      "anchor_from" : "bottom_middle",
-      "anchor_to" : "bottom_middle",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "collection_name" : "hand_collection",
-      "enabled" : true,
-      "grid_dimensions" : [ 9.0, 1.0 ],
-      "grid_item_template" : "component.item_slot",
-      "grid_rescaling_type" : "none",
-      "layer" : 2,
-      "max_size" : [ 0, 0 ],
-      "maximum_grid_items" : 0,
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : true,
-      "size" : [ 163, 18 ],
-      "type" : "grid",
-      "visible" : true
-   },
-   "inventory_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "bag_grid@panel.bag_grid" : {}
-         },
-         {
-            "hand_grid@panel.hand_grid" : {}
-         },
-         {
-            "item_detail@component.item_detail" : {}
-         },
-         {
-            "progressive_bar@component.progress_bar" : {
-               "$barMaskSize" : [ "100.0%+0.0px", "100.0%+0.0px" ]
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 162, 75 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "main" : {
-      "absorbs_input" : true,
-      "always_accepts_input" : false,
-      "controls" : [
-         {
-            "stew_pot_panel@panel.stew_pot_panel" : {}
-         }
-      ],
-      "force_render_below" : false,
-      "is_showing_menu" : true,
-      "render_game_behind" : true,
-      "render_only_when_topmost" : true,
-      "should_steal_mouse" : false,
-      "type" : "screen"
-   },
-   "mill_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 2 ]
-            }
-         },
-         {
-            "fuel_slot0@component.item_slot" : {
-               "anchor_from" : "bottom_left",
-               "anchor_to" : "bottom_left",
-               "offset" : [ 28, 0 ]
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ -22, 0 ]
-            }
-         },
-         {
-            "result_slot1@component.item_slot_big" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right"
-            }
-         },
-         {
-            "flame_img@component.flame_img" : {
-               "offset" : [ 30, 0 ]
-            }
-         },
-         {
-            "flame_mask@component.flame_mask" : {
-               "layer" : 10,
-               "offset" : [ 30, 0 ]
-            }
-         },
-         {
-            "furnace_arrow_mask@component.furnace_arrow_mask" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "layer" : 10,
-               "offset" : [ 24, 0 ]
-            }
-         },
-         {
-            "furnace_arrow_img@component.furnace_arrow_img" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 24, 0 ]
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 100, 60 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "namespace" : "panel",
-   "pan_grid" : {
-      "alpha" : 1.0,
-      "anchor_from" : "left_middle",
-      "anchor_to" : "left_middle",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "collection_name" : "test_grid",
-      "enabled" : true,
-      "grid_dimensions" : [ 3.0, 3.0 ],
-      "grid_item_template" : "component.item_slot",
-      "grid_rescaling_type" : "none",
-      "layer" : 1,
-      "max_size" : [ 0, 0 ],
-      "maximum_grid_items" : 0,
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : true,
-      "size" : [ 54, 54 ],
-      "type" : "grid",
-      "visible" : true
-   },
-   "pan_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 9 ]
-            }
-         },
-         {
-            "material_slot1@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 9 ]
-            }
-         },
-         {
-            "material_slot2@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 9 ]
-            }
-         },
-         {
-            "material_slot3@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 27 ]
-            }
-         },
-         {
-            "material_slot4@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 27 ]
-            }
-         },
-         {
-            "material_slot5@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 27 ]
-            }
-         },
-         {
-            "material_slot9@component.item_slot_seasonings" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ 0, 54 ]
-            }
-         },
-         {
-            "material_slot8@component.item_slot_cooking_oil" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ 0, 36 ]
-            }
-         },
-         {
-            "material_slot7@component.item_slot_sugar" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ 0, 18 ]
-            }
-         },
-         {
-            "material_slot6@component.item_slot_salt" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right"
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "right_middle",
-               "anchor_to" : "right_middle",
-               "layer" : 2,
-               "offset" : [ -34.0, -9.0 ]
-            }
-         },
-         {
-            "flame_img@component.flame_img" : {
-               "offset" : [ 67, 9 ]
-            }
-         },
-         {
-            "flame_mask@component.flame_mask" : {
-               "layer" : 10,
-               "offset" : [ 67, 9 ]
-            }
-         },
-         {
-            "furnace_arrow_mask@component.furnace_arrow_mask" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "layer" : 10,
-               "offset" : [ 63, 15 ]
-            }
-         },
-         {
-            "furnace_arrow_img@component.furnace_arrow_img" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 63, 15 ]
-            }
-         },
-         {
-            "fuel_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 65.0, 54.0 ]
-            }
-         },
-         {
-            "material_slot10@component.item_slot_bowl" : {
-               "anchor_from" : "bottom_right",
-               "anchor_to" : "bottom_right",
-               "offset" : [ -114.0, 0.0 ]
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 150, 72 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "squeezer_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0, 2 ]
-            }
-         },
-         {
-            "material_slot1@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 18, 2 ]
-            }
-         },
-         {
-            "material_slot2@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 36, 2 ]
-            }
-         },
-         {
-            "fuel_slot0@component.item_slot" : {
-               "anchor_from" : "bottom_left",
-               "anchor_to" : "bottom_left",
-               "offset" : [ 68, 0 ]
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right"
-            }
-         },
-         {
-            "flame_img@component.flame_img" : {
-               "offset" : [ 70, 0 ]
-            }
-         },
-         {
-            "flame_mask@component.flame_mask" : {
-               "layer" : 10,
-               "offset" : [ 70, 0 ]
-            }
-         },
-         {
-            "furnace_arrow_mask@component.furnace_arrow_mask" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "layer" : 10,
-               "offset" : [ -30, 0 ]
-            }
-         },
-         {
-            "furnace_arrow_img@component.furnace_arrow_img" : {
-               "anchor_from" : "top_right",
-               "anchor_to" : "top_right",
-               "offset" : [ -30, 0 ]
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 120, 60 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "stew_pot_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "material_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 46, 0 ]
-            }
-         },
-         {
-            "material_slot1@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 64, 0 ]
-            }
-         },
-         {
-            "material_slot2@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 82, 0 ]
-            }
-         },
-         {
-            "material_slot3@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 46, 18 ]
-            }
-         },
-         {
-            "material_slot4@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 64, 18 ]
-            }
-         },
-         {
-            "material_slot5@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 82, 18 ]
-            }
-         },
-         {
-            "result_slot0@component.item_slot_big" : {
-               "anchor_from" : "right_middle",
-               "anchor_to" : "right_middle",
-               "layer" : 2,
-               "offset" : [ 0.0, -12.0 ]
-            }
-         },
-         {
-            "fuel_slot0@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 104.0, 44.0 ]
-            }
-         },
-         {
-            "material_slot6@component.item_slot_bowl" : {
-               "anchor_from" : "bottom_right",
-               "anchor_to" : "bottom_right",
-               "offset" : [ -68.0, 0.0 ]
-            }
-         },
-         {
-            "meter@component.water_meter" : {
-               "anchor_from" : "left_middle",
-               "anchor_to" : "left_middle",
-               "offset" : [ 22.0, 0.0 ]
-            }
-         },
-         {
-            "meter_material_slot@component.item_slot" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 0.0, 0.0 ]
-            }
-         },
-         {
-            "meter_result_slot@component.item_slot" : {
-               "anchor_from" : "bottom_left",
-               "anchor_to" : "bottom_left",
-               "offset" : [ 0.0, 0.0 ]
-            }
-         },
-         {
-            "flame_img@component.flame_img" : {
-               "offset" : [ 106, 3 ]
-            }
-         },
-         {
-            "flame_mask@component.flame_mask" : {
-               "layer" : 10,
-               "offset" : [ 106, 3 ]
-            }
-         },
-         {
-            "furnace_arrow_mask@component.furnace_arrow_mask" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "layer" : 10,
-               "offset" : [ 102, 6 ]
-            }
-         },
-         {
-            "furnace_arrow_img@component.furnace_arrow_img" : {
-               "anchor_from" : "top_left",
-               "anchor_to" : "top_left",
-               "offset" : [ 102, 6 ]
-            }
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 150, 62 ],
-      "type" : "panel",
-      "visible" : true
-   }
+  "bag_grid": {
+    "alpha": 1.0,
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "collection_name": "bag_collection",
+    "enabled": true,
+    "grid_dimensions": [9.0, 3.0],
+    "grid_item_template": "component.item_slot",
+    "grid_rescaling_type": "none",
+    "layer": 1,
+    "max_size": [0, 0],
+    "maximum_grid_items": 0,
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": true,
+    "size": [163, 54],
+    "type": "grid",
+    "visible": true
+  },
+  "butcher_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 9]
+        }
+      },
+      {
+        "material_slot1@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 9]
+        }
+      },
+      {
+        "material_slot2@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 9]
+        }
+      },
+      {
+        "material_slot3@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 27]
+        }
+      },
+      {
+        "material_slot4@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 27]
+        }
+      },
+      {
+        "material_slot5@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 27]
+        }
+      },
+      {
+        "material_slot6@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 45]
+        }
+      },
+      {
+        "material_slot7@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 45]
+        }
+      },
+      {
+        "material_slot8@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 45]
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "layer": 2,
+          "offset": [-34, 0]
+        }
+      },
+      {
+        "arrow_image@component.knife_img": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "offset": [0, 0]
+        }
+      },
+      {
+        "material_slot9@component.item_slot_salt": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      },
+      {
+        "material_slot10@component.item_slot_sugar": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [0, 18]
+        }
+      },
+      {
+        "material_slot11@component.item_slot_cooking_oil": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [0, 36]
+        }
+      },
+      {
+        "material_slot12@component.item_slot_seasonings": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [0, 54]
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [150, 72],
+    "type": "panel",
+    "visible": true
+  },
+  "cooking_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 9]
+        }
+      },
+      {
+        "material_slot1@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 9]
+        }
+      },
+      {
+        "material_slot2@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 9]
+        }
+      },
+      {
+        "material_slot3@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 27]
+        }
+      },
+      {
+        "material_slot4@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 27]
+        }
+      },
+      {
+        "material_slot5@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 27]
+        }
+      },
+      {
+        "material_slot6@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 45]
+        }
+      },
+      {
+        "material_slot7@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 45]
+        }
+      },
+      {
+        "material_slot8@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 45]
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "layer": 2,
+          "offset": [-34, 0]
+        }
+      },
+      {
+        "arrow_image@component.knife_img": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "offset": [0, 0]
+        }
+      },
+      {
+        "material_slot9@component.item_slot_salt": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      },
+      {
+        "material_slot10@component.item_slot_sugar": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [0, 18]
+        }
+      },
+      {
+        "material_slot11@component.item_slot_cooking_oil": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [0, 36]
+        }
+      },
+      {
+        "material_slot12@component.item_slot_seasonings": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [0, 54]
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [150, 72],
+    "type": "panel",
+    "visible": true
+  },
+  "crafting_grid": {
+    "alpha": 1.0,
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "collection_name": "test_grid",
+    "enabled": true,
+    "grid_dimensions": [3.0, 3.0],
+    "grid_item_template": "component.item_slot",
+    "grid_rescaling_type": "none",
+    "layer": 1,
+    "max_size": [0, 0],
+    "maximum_grid_items": 0,
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": true,
+    "size": [54, 54],
+    "type": "grid",
+    "visible": true
+  },
+  "crafting_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "material_slot1@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 0]
+        }
+      },
+      {
+        "material_slot2@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 0]
+        }
+      },
+      {
+        "material_slot3@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 18]
+        }
+      },
+      {
+        "material_slot4@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 18]
+        }
+      },
+      {
+        "material_slot5@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 18]
+        }
+      },
+      {
+        "material_slot6@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 36]
+        }
+      },
+      {
+        "material_slot7@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 36]
+        }
+      },
+      {
+        "material_slot8@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 36]
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "layer": 2
+        }
+      },
+      {
+        "arrow_image@component.knife_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [120, 54],
+    "type": "panel",
+    "visible": true
+  },
+  "food_steamer_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [54, 2]
+        }
+      },
+      {
+        "fuel_slot0@component.item_slot": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [82, 0]
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      },
+      {
+        "flame_img@component.flame_img": {
+          "offset": [84, 0]
+        }
+      },
+      {
+        "flame_mask@component.flame_mask": {
+          "layer": 10,
+          "offset": [84, 0]
+        }
+      },
+      {
+        "furnace_arrow_mask@component.furnace_arrow_mask": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "layer": 10,
+          "offset": [78, 0]
+        }
+      },
+      {
+        "furnace_arrow_img@component.furnace_arrow_img": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [78, 0]
+        }
+      },
+      {
+        "meter@component.water_meter": {
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": [25, 0]
+        }
+      },
+      {
+        "meter_material_slot@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "meter_result_slot@component.item_slot": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [0, 0]
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [130, 62],
+    "type": "panel",
+    "visible": true
+  },
+  "fryer_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [54, 2]
+        }
+      },
+      {
+        "fuel_slot0@component.item_slot": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [82, 0]
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      },
+      {
+        "flame_img@component.flame_img": {
+          "offset": [84, 0]
+        }
+      },
+      {
+        "flame_mask@component.flame_mask": {
+          "layer": 10,
+          "offset": [84, 0]
+        }
+      },
+      {
+        "furnace_arrow_mask@component.furnace_arrow_mask": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "layer": 10,
+          "offset": [78, 0]
+        }
+      },
+      {
+        "furnace_arrow_img@component.furnace_arrow_img": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [78, 0]
+        }
+      },
+      {
+        "meter@component.oil_meter": {
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": [25, 0]
+        }
+      },
+      {
+        "meter_material_slot@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "meter_result_slot@component.item_slot": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left"
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [130, 62],
+    "type": "panel",
+    "visible": true
+  },
+  "furnace_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "fuel_slot0@component.item_slot": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left"
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle"
+        }
+      },
+      {
+        "flame_img@component.flame_img": {}
+      },
+      {
+        "flame_mask@component.flame_mask": {
+          "layer": 10
+        }
+      },
+      {
+        "furnace_arrow_mask@component.furnace_arrow_mask": {
+          "layer": 10
+        }
+      },
+      {
+        "furnace_arrow_img@component.furnace_arrow_img": {
+          "texture": "textures/ui/arrow_inactive"
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [80, 54],
+    "type": "panel",
+    "visible": true
+  },
+  "grill_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "fuel_slot0@component.item_slot": {
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "offset": [0, 0]
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      },
+      {
+        "flame_img@component.flame_img": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "offset": [0, 0]
+        }
+      },
+      {
+        "flame_mask@component.flame_mask": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "layer": 10,
+          "offset": [0, 0]
+        }
+      },
+      {
+        "furnace_arrow_mask@component.furnace_arrow_mask": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "layer": 10,
+          "offset": [0, 0]
+        }
+      },
+      {
+        "furnace_arrow_img@component.furnace_arrow_img": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "offset": [0, 0]
+        }
+      },
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 2]
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [80, 60],
+    "type": "panel",
+    "visible": true
+  },
+  "hand_grid": {
+    "alpha": 1.0,
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "collection_name": "hand_collection",
+    "enabled": true,
+    "grid_dimensions": [9.0, 1.0],
+    "grid_item_template": "component.item_slot",
+    "grid_rescaling_type": "none",
+    "layer": 2,
+    "max_size": [0, 0],
+    "maximum_grid_items": 0,
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": true,
+    "size": [163, 18],
+    "type": "grid",
+    "visible": true
+  },
+  "inventory_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "bag_grid@panel.bag_grid": {}
+      },
+      {
+        "hand_grid@panel.hand_grid": {}
+      },
+      {
+        "item_detail@component.item_detail": {}
+      },
+      {
+        "progressive_bar@component.progress_bar": {
+          "$barMaskSize": ["100.0%+0.0px", "100.0%+0.0px"]
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [162, 75],
+    "type": "panel",
+    "visible": true
+  },
+  "main": {
+    "absorbs_input": true,
+    "always_accepts_input": false,
+    "controls": [
+      {
+        "stew_pot_panel@panel.stew_pot_panel": {}
+      }
+    ],
+    "force_render_below": false,
+    "is_showing_menu": true,
+    "render_game_behind": true,
+    "render_only_when_topmost": true,
+    "should_steal_mouse": false,
+    "type": "screen"
+  },
+  "mill_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 2]
+        }
+      },
+      {
+        "fuel_slot0@component.item_slot": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [28, 0]
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [-22, 0]
+        }
+      },
+      {
+        "result_slot1@component.item_slot_big": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      },
+      {
+        "flame_img@component.flame_img": {
+          "offset": [30, 0]
+        }
+      },
+      {
+        "flame_mask@component.flame_mask": {
+          "layer": 10,
+          "offset": [30, 0]
+        }
+      },
+      {
+        "furnace_arrow_mask@component.furnace_arrow_mask": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "layer": 10,
+          "offset": [24, 0]
+        }
+      },
+      {
+        "furnace_arrow_img@component.furnace_arrow_img": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [24, 0]
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [100, 60],
+    "type": "panel",
+    "visible": true
+  },
+  "namespace": "panel",
+  "pan_grid": {
+    "alpha": 1.0,
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "collection_name": "test_grid",
+    "enabled": true,
+    "grid_dimensions": [3.0, 3.0],
+    "grid_item_template": "component.item_slot",
+    "grid_rescaling_type": "none",
+    "layer": 1,
+    "max_size": [0, 0],
+    "maximum_grid_items": 0,
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": true,
+    "size": [54, 54],
+    "type": "grid",
+    "visible": true
+  },
+  "pan_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 9]
+        }
+      },
+      {
+        "material_slot1@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 9]
+        }
+      },
+      {
+        "material_slot2@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 9]
+        }
+      },
+      {
+        "material_slot3@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 27]
+        }
+      },
+      {
+        "material_slot4@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 27]
+        }
+      },
+      {
+        "material_slot5@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 27]
+        }
+      },
+      {
+        "material_slot9@component.item_slot_seasonings": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [0, 54]
+        }
+      },
+      {
+        "material_slot8@component.item_slot_cooking_oil": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [0, 36]
+        }
+      },
+      {
+        "material_slot7@component.item_slot_sugar": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [0, 18]
+        }
+      },
+      {
+        "material_slot6@component.item_slot_salt": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "layer": 2,
+          "offset": [-34.0, -9.0]
+        }
+      },
+      {
+        "flame_img@component.flame_img": {
+          "offset": [67, 9]
+        }
+      },
+      {
+        "flame_mask@component.flame_mask": {
+          "layer": 10,
+          "offset": [67, 9]
+        }
+      },
+      {
+        "furnace_arrow_mask@component.furnace_arrow_mask": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "layer": 10,
+          "offset": [63, 15]
+        }
+      },
+      {
+        "furnace_arrow_img@component.furnace_arrow_img": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [63, 15]
+        }
+      },
+      {
+        "fuel_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [65.0, 54.0]
+        }
+      },
+      {
+        "material_slot10@component.item_slot_bowl": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [-114.0, 0.0]
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [150, 72],
+    "type": "panel",
+    "visible": true
+  },
+  "squeezer_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 2]
+        }
+      },
+      {
+        "material_slot1@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [18, 2]
+        }
+      },
+      {
+        "material_slot2@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [36, 2]
+        }
+      },
+      {
+        "fuel_slot0@component.item_slot": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [68, 0]
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      },
+      {
+        "flame_img@component.flame_img": {
+          "offset": [70, 0]
+        }
+      },
+      {
+        "flame_mask@component.flame_mask": {
+          "layer": 10,
+          "offset": [70, 0]
+        }
+      },
+      {
+        "furnace_arrow_mask@component.furnace_arrow_mask": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "layer": 10,
+          "offset": [-30, 0]
+        }
+      },
+      {
+        "furnace_arrow_img@component.furnace_arrow_img": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [-30, 0]
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [120, 60],
+    "type": "panel",
+    "visible": true
+  },
+  "stew_pot_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [46, 0]
+        }
+      },
+      {
+        "material_slot1@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [64, 0]
+        }
+      },
+      {
+        "material_slot2@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [82, 0]
+        }
+      },
+      {
+        "material_slot3@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [46, 18]
+        }
+      },
+      {
+        "material_slot4@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [64, 18]
+        }
+      },
+      {
+        "material_slot5@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [82, 18]
+        }
+      },
+      {
+        "result_slot0@component.item_slot_big": {
+          "anchor_from": "right_middle",
+          "anchor_to": "right_middle",
+          "layer": 2,
+          "offset": [0.0, -12.0]
+        }
+      },
+      {
+        "fuel_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [104.0, 44.0]
+        }
+      },
+      {
+        "material_slot6@component.item_slot_bowl": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [-68.0, 0.0]
+        }
+      },
+      {
+        "meter@component.water_meter": {
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": [22.0, 0.0]
+        }
+      },
+      {
+        "meter_material_slot@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0.0, 0.0]
+        }
+      },
+      {
+        "meter_result_slot@component.item_slot": {
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "offset": [0.0, 0.0]
+        }
+      },
+      {
+        "flame_img@component.flame_img": {
+          "offset": [106, 3]
+        }
+      },
+      {
+        "flame_mask@component.flame_mask": {
+          "layer": 10,
+          "offset": [106, 3]
+        }
+      },
+      {
+        "furnace_arrow_mask@component.furnace_arrow_mask": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "layer": 10,
+          "offset": [102, 6]
+        }
+      },
+      {
+        "furnace_arrow_img@component.furnace_arrow_img": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [102, 6]
+        }
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [150, 62],
+    "type": "panel",
+    "visible": true
+  }
 }
