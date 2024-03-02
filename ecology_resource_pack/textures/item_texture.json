@@ -10,6 +10,9 @@
     },
     "ham:herb_seeds": {
       "textures": "textures/items/herb_seeds"
+    },
+    "ham:cooking_oil": {
+      "textures": "textures/items/cooking_oil"
     }
   }
 }

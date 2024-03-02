@@ -1,6 +1,7 @@
 craftingScreen.tab.ecology=生态
 group.ecology.pie=派类食品
 item.ham:apple_pie.name=苹果派
+item.ham:cooking_oil.name=食用油
 item.ham:herb_seeds.name=香草种子
 item.ham:herb.name=香草
 tab.ecology=生态
