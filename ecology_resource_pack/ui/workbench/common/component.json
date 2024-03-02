@@ -1126,7 +1126,7 @@
     "priority": 0,
     "propagate_alpha": false,
     "size": [14, 60],
-    "texture": "textures/ui/oil",
+    "texture": "textures/ui/water",
     "type": "image",
     "uv": [0, 0],
     "uv_size": [0, 0],

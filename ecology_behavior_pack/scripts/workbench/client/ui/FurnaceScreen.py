@@ -27,6 +27,7 @@ class FurnaceScreen(BaseInventoryScreen):
         self.furnacePanelPath = "/furnace_panel"
         self.flameMaskPath = self.furnacePanelPath + "/flame_mask"
         self.arrowMaskPath = self.furnacePanelPath + "/furnace_arrow_mask"
+        self.liquidPath = self.furnacePanelPath + "/meter/liquid"
 
     def __InitData(self):
         self.isBurning = False
@@ -39,8 +40,12 @@ class FurnaceScreen(BaseInventoryScreen):
     def Create(self):
         BaseInventoryScreen.Create(self)
         self.flameMaskControl = self.GetBaseUIControl(self.flameMaskPath).asImage()
-        self.arrowMaskControl = self.GetBaseUIControl(self.arrowMaskPath).asImage()
         self.flameMaskControl.SetClipDirection("fromTopToBottom")
+        self.arrowMaskControl = self.GetBaseUIControl(self.arrowMaskPath).asImage()
+        liquidControl = self.GetBaseUIControl(self.liquidPath)
+        if liquidControl:
+            self.liquidControl = liquidControl.asImage()
+            self.liquidControl.SetClipDirection("fromTopToBottom")
 
     def Update(self):
         if not self.isShow:
@@ -52,7 +57,7 @@ class FurnaceScreen(BaseInventoryScreen):
             self.flameMaskControl.SetSpriteClipRatio(1)
         else:
             self.burnProgress += 1
-            fireRatio = (self.burnProgress * 2.0) / (self.burnDuration * 3.0)
+            fireRatio = 0 if self.burnDuration == 0 else (self.burnProgress * 2.0) / (self.burnDuration * 3.0)
             self.flameMaskControl.SetSpriteClipRatio(fireRatio)
             if fireRatio == 1:
                 self.burnProgress = 0
@@ -80,6 +85,7 @@ class FurnaceScreen(BaseInventoryScreen):
     def UpdateUI(self, slotData, burnData):
         # type: (dict, dict) -> None
         """更新工作台数据"""
+        # 燃烧数据，在 tick 过程中更新
         for key, value in burnData.items():
             if key == "burnDuration" and value != self.burnDuration:
                 self.burnDuration = value
@@ -92,7 +98,14 @@ class FurnaceScreen(BaseInventoryScreen):
                 self.isProducing = value
             elif key == "produceProgress":
                 self.produceProgress = value
+        # 槽物品数据，就地更新
         for slotName, itemDict in slotData.items():
             slotPath = strUtils.JoinPath(self.furnacePanelPath, slotName)
             self.slotMgr.SetSlotInfo(slotName, slotPath, itemDict)
-            self.SetSlotUI(slotPath, itemDict)
+            try:
+                self.SetSlotUI(slotPath, itemDict)
+            except:
+                logger.error('{}槽更新物品出错: {}'.format(slotName, slotData))
+        # 液体数据，就地更新
+        if self.blockName in ["ham:food_steamer", "ham:fryer", "ham:stew_pot"]:
+            self.liquidControl.SetSpriteClipRatio(1.0 - burnData.get('liquid', 0) / 20.0)

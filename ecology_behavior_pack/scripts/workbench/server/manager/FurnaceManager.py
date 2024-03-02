@@ -14,33 +14,67 @@ class FurnaceManager(BaseWorkbenchManager):
         BaseWorkbenchManager.__init__(self, blockName, position, dimensionId)
         self.fuels = self.__GetFuels(blockName)
         self.burnInterval = 5 * 20
+        # FIXME 需要持久化，否则重启游戏会刷新数据
         self.burnTime = 0  # 剩余可燃烧时间，单位 tick
         self.burnDuration = 0  # 可燃烧总时间，单位 tick
         self.produceProgress = 0
+        self.shouldRefresh = False
+        if self.slotNum['liquid'] != 0 and self.blockEntityData['liquid'] is None:
+            self.blockEntityData['liquid'] = 0
 
     def Tick(self):
+        # type: () -> bool
+        self._ProduceTick()
+        self._MeterTick()
+        return self.shouldRefresh
+    
+    def _ProduceTick(self):
         # type: () -> None
-        shouldRefresh = False
+        """燃料燃烧与生产"""
+        self.shouldRefresh = False
         lastBurn = self.__IsBurning()
         # 更新燃烧进度
         if self.__IsBurning():
             self.burnTime -=1
         elif self.__CanBurn():
-            shouldRefresh = self.Burn()
+            self.shouldRefresh = self.Burn()
         # 更新生产进度
         if self.__IsBurning() and self.__CanProduce():
             self.produceProgress += 1
             if self.produceProgress == self.burnInterval:
                 self.Consume()
                 self.produceProgress = 0
-                shouldRefresh = True
+                self.shouldRefresh = True
         elif self.produceProgress > 0:
-            shouldRefresh = True
+            self.shouldRefresh = True
             self.produceProgress = 0
         # 燃料耗完
         if lastBurn != self.__IsBurning():
-            shouldRefresh = True
-        return shouldRefresh
+            self.shouldRefresh = True
+
+    def _MeterTick(self):
+        """液体更新"""
+        liquidMaterialDict = self.blockEntityData['liquid_slot0']
+        if self.slotNum['liquid'] == 0 or liquidMaterialDict is None or self.blockEntityData['liquid'] == 20:
+            return
+        
+        liquidCount = self.blockEntityData['liquid']
+        if self.blockName == 'ham:fryer' and liquidMaterialDict['newItemName'] == 'ham:cooking_oil':
+            # 油表更新
+            if liquidMaterialDict['count'] + liquidCount <= 20:
+                self._SetItem('liquid_slot0', None)
+                self.blockEntityData['liquid'] = liquidCount + liquidMaterialDict['count']
+            else:
+                liquidMaterialDict['count'] = liquidMaterialDict['count'] + liquidCount - 20
+                self._SetItem('liquid_slot0', liquidMaterialDict)
+                self.blockEntityData['liquid'] = 20
+            self.shouldRefresh = True
+        if self.blockName in ['ham:food_steamer', 'ham:stew_pot'] and liquidMaterialDict['newItemName'] == 'minecraft:water_bucket' and self.blockEntityData['liquid_slot1'] is None and liquidCount <= 15:
+            # 水表更新
+            self.blockEntityData['liquid'] = self.blockEntityData['liquid'] + 5
+            self._SetItem('liquid_slot0', None)
+            self._SetItem('liquid_slot1', itemUtils.GetItemDict('minecraft:bucket'))
+            self.shouldRefresh = True
 
     def __IsBurning(self):
         """判断是否处于燃烧状态"""
@@ -49,6 +83,8 @@ class FurnaceManager(BaseWorkbenchManager):
     def __CanProduce(self):
         """判断是否可以继续生产"""
         # 是否存在原材料
+        if self.slotNum['liquid'] != 0 and self.blockEntityData['liquid'] == 0:
+            return False
         materialItems = self.GetAllSlotData('material')
         if all(item is None for item in materialItems.values()):
             return False
@@ -58,6 +94,8 @@ class FurnaceManager(BaseWorkbenchManager):
         # type: () -> bool
         """燃料耗尽后是否继续燃烧"""
         # 是否存在燃料
+        if self.slotNum['liquid'] != 0 and self.blockEntityData['liquid'] == 0:
+            return False
         fuelItems = self.GetAllSlotData('fuel')
         if all(item is None or (item.get('newItemName') not in self.fuels.keys()) for item in fuelItems.values()):
             return False
@@ -122,6 +160,8 @@ class FurnaceManager(BaseWorkbenchManager):
             else:
                 recipeResultItem['count'] = recipeResultItem.get('count') + resultItem.get('count')
                 self._SetItem(slotName, recipeResultItem)
+        if self.slotNum['liquid'] != 0:
+            self.blockEntityData['liquid'] = self.blockEntityData['liquid'] - 1
 
     def GetRecipeResultSlotItemDict(self):
         """获取匹配的物品"""
@@ -131,13 +171,16 @@ class FurnaceManager(BaseWorkbenchManager):
         return self.proxy.MatchRecipe(materialSlotItemDict)
     
     def GetBurnData(self):
-        return {
+        burnData = {
             'burnDuration': self.burnDuration,
             'burnProgress': int((self.burnDuration - self.burnTime) * 3 / 2),
             'isBurning': self.burnTime > 0,
             'isProducing': self.burnTime > 0 and self.__CanProduce(),
             'produceProgress': int(self.produceProgress * 3 / 2),
         }
+        if self.slotNum['liquid'] != 0:
+            burnData['liquid'] = self.blockEntityData['liquid']
+        return burnData
 
     def Reset(self, playerId):
         pass
