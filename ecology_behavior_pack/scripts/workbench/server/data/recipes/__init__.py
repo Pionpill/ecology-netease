@@ -12,7 +12,7 @@ from scripts.workbench.server.data.recipes.stew import STEW_DATA
 WORKBENCH_MAP = {
     "ham:cooking_table": {
         "recipe": COOK_DATA,
-        "material": 13,
+        "material": 9,
         "fixed_material": 4,
         "fuel": 0,
         "result": 1,
@@ -35,6 +35,7 @@ WORKBENCH_MAP = {
     "ham:food_steamer": {
         "recipe": STEAMER_DATA,
         "material": 1,
+        "liquid": 2,
         "fuel": 1,
         "result": 1,
         "type": WorkbenchType.Furnace,
@@ -42,6 +43,7 @@ WORKBENCH_MAP = {
     "ham:fryer": {
         "recipe": FRYER_DATA,
         "material": 1,
+        "liquid": 2,
         "fuel": 1,
         "result": 1,
         "type": WorkbenchType.Furnace,
@@ -55,7 +57,7 @@ WORKBENCH_MAP = {
     },
     "ham:pan": {
         "recipe": PAN_DATA,
-        "material": 11,
+        "material": 6,
         "fixed_material": 5,
         "fuel": 1,
         "result": 1,
@@ -70,8 +72,9 @@ WORKBENCH_MAP = {
     },
     "ham:stew_pot": {
         "recipe": STEW_DATA,
-        "material": 7,
+        "material": 6,
         "fixed_material": 1,
+        "liquid": 2,
         "fuel": 1,
         "result": 1,
         "type": WorkbenchType.Furnace,

@@ -107,27 +107,27 @@
         }
       },
       {
-        "material_slot9@component.item_slot_salt": {
+        "fixed_material_slot0@component.item_slot_salt": {
           "anchor_from": "top_right",
           "anchor_to": "top_right"
         }
       },
       {
-        "material_slot10@component.item_slot_sugar": {
+        "fixed_material_slot1@component.item_slot_sugar": {
           "anchor_from": "top_right",
           "anchor_to": "top_right",
           "offset": [0, 18]
         }
       },
       {
-        "material_slot11@component.item_slot_cooking_oil": {
+        "fixed_material_slot2@component.item_slot_cooking_oil": {
           "anchor_from": "top_right",
           "anchor_to": "top_right",
           "offset": [0, 36]
         }
       },
       {
-        "material_slot12@component.item_slot_seasonings": {
+        "fixed_material_slot3@component.item_slot_seasonings": {
           "anchor_from": "top_right",
           "anchor_to": "top_right",
           "offset": [0, 54]
@@ -319,13 +319,13 @@
         }
       },
       {
-        "meter_material_slot@component.item_slot": {
+        "liquid_slot0@component.item_slot": {
           "anchor_from": "top_left",
           "anchor_to": "top_left"
         }
       },
       {
-        "meter_result_slot@component.item_slot": {
+        "liquid_slot1@component.item_slot": {
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
           "offset": [0, 0]
@@ -404,13 +404,13 @@
         }
       },
       {
-        "meter_material_slot@component.item_slot": {
+        "liquid_slot0@component.item_slot": {
           "anchor_from": "top_left",
           "anchor_to": "top_left"
         }
       },
       {
-        "meter_result_slot@component.item_slot": {
+        "liquid_slot1@component.item_slot": {
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left"
         }
@@ -766,30 +766,37 @@
         }
       },
       {
-        "material_slot9@component.item_slot_seasonings": {
+        "fixed_material_slot0@component.item_slot_salt": {
           "anchor_from": "top_right",
-          "anchor_to": "top_right",
-          "offset": [0, 54]
+          "anchor_to": "top_right"
         }
       },
       {
-        "material_slot8@component.item_slot_cooking_oil": {
-          "anchor_from": "top_right",
-          "anchor_to": "top_right",
-          "offset": [0, 36]
-        }
-      },
-      {
-        "material_slot7@component.item_slot_sugar": {
+        "fixed_material_slot1@component.item_slot_sugar": {
           "anchor_from": "top_right",
           "anchor_to": "top_right",
           "offset": [0, 18]
         }
       },
       {
-        "material_slot6@component.item_slot_salt": {
+        "fixed_material_slot2@component.item_slot_cooking_oil": {
           "anchor_from": "top_right",
-          "anchor_to": "top_right"
+          "anchor_to": "top_right",
+          "offset": [0, 36]
+        }
+      },
+      {
+        "fixed_material_slot3@component.item_slot_seasonings": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [0, 54]
+        }
+      },
+      {
+        "fixed_material_slot4@component.item_slot_bowl": {
+          "anchor_from": "bottom_right",
+          "anchor_to": "bottom_right",
+          "offset": [-114.0, 0.0]
         }
       },
       {
@@ -831,13 +838,6 @@
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": [65.0, 54.0]
-        }
-      },
-      {
-        "material_slot10@component.item_slot_bowl": {
-          "anchor_from": "bottom_right",
-          "anchor_to": "bottom_right",
-          "offset": [-114.0, 0.0]
         }
       }
     ],
@@ -996,7 +996,7 @@
         }
       },
       {
-        "material_slot6@component.item_slot_bowl": {
+        "fixed_material_slot0@component.item_slot_bowl": {
           "anchor_from": "bottom_right",
           "anchor_to": "bottom_right",
           "offset": [-68.0, 0.0]
@@ -1010,14 +1010,14 @@
         }
       },
       {
-        "meter_material_slot@component.item_slot": {
+        "liquid_slot0@component.item_slot": {
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": [0.0, 0.0]
         }
       },
       {
-        "meter_result_slot@component.item_slot": {
+        "liquid_slot1@component.item_slot": {
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
           "offset": [0.0, 0.0]

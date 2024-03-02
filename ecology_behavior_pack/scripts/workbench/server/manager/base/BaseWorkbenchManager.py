@@ -24,16 +24,22 @@ class BaseWorkbenchManager(object):
         self.slotNum = {
             'material': WORKBENCH_MAP[blockName]['material'],
             'fixed_material': WORKBENCH_MAP[blockName].get('fixed_material', 0),
+            'liquid': WORKBENCH_MAP[blockName].get('liquid', 0),
             'fuel': WORKBENCH_MAP[blockName].get('fuel', 0),
             'result': WORKBENCH_MAP[blockName]['result']
         }
         self.blockEntityData = blockEntityComp.GetBlockEntityData(self.dimensionId, self.position)
 
-    def GetAllSlotData(self, slotTypes = ['material', 'fuel', 'result']):
+    def GetAllSlotData(self, slotTypes = ['material', 'fuel', 'result', 'liquid']):
         # type：(list | str) => dict
-        """从方块实体中获取所有物品"""
+        """
+        从方块实体中获取所有物品
+        material 包括所有 fixed_material
+        """
         if isinstance(slotTypes, str):
             slotTypes = [slotTypes]
+        if 'material' in slotTypes:
+            slotTypes.append('fixed_material')
         slotData = {}
         for slotPrefix, slotNum in self.slotNum.items():
             if slotPrefix not in slotTypes:

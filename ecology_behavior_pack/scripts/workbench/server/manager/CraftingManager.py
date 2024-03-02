@@ -32,7 +32,7 @@ class CraftingManager(BaseWorkbenchManager):
     def Reset(self, playerId):
         # type: (int) -> None
         """重置工作台，将非固定材料槽物品返回"""
-        resetMaterialSlotNum = self.slotNum['material'] - self.slotNum['fixed_material']
+        resetMaterialSlotNum = self.slotNum['material']
         for i in range(resetMaterialSlotNum):
             slotKey = 'material_slot' + str(i)
             itemComp.SpawnItemToPlayerInv(self.GetSlotData(slotKey),  playerId)
