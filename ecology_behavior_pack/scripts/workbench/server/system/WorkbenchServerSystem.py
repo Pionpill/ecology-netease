@@ -91,12 +91,14 @@ class WorkbenchServerSystem(ServerSystem):
         position, dimensionId, playerId = args["position"], args["dimensionId"], args["playerId"]
         slotName, blockName = args["slotName"], args["blockName"]
         workbenchMgr = WorkbenchService.GetWorkbenchMgr(position, dimensionId)
-        resultItemDict = workbenchMgr._GetItem(slotName, playerId)
+        resultItemDict = None
         # 工作台消耗原材料
         if workbenchMgr.blockType == WorkbenchType.Crafting:
+            resultItemDict = workbenchMgr.GetRecipeResultSlotItemDict().get(slotName)
             workbenchMgr.Consume()
         # 熔炉更新数据
         if workbenchMgr.blockType == WorkbenchType.Furnace:
+            resultItemDict = workbenchMgr._GetItem(slotName, playerId)
             workbenchMgr._ItemReduce(slotName, resultItemDict.get('count'))
         # 物品更新到背包
         itemComp = compFactory.CreateItem(playerId)
