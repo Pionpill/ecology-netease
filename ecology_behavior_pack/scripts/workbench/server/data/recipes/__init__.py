@@ -81,4 +81,9 @@ WORKBENCH_MAP = {
     },
 }
 
-__all__ = [BAKE_DATA, COOK_DATA, FRYER_DATA, GRILL_DATA, MILL_DATA, PAN_DATA, SQUEEZER_DATA, STEAMER_DATA, STEW_DATA]
+FIXED_MATERIAL_ITEM = {
+    'ham:cooking_table': ('ham:salt', 'minecraft:sugar', 'ham:oil', 'ham:seasoning'),
+    'ham:pan': ('ham:salt', 'minecraft:sugar', 'ham:oil', 'ham:seasoning')
+}
+
+__all__ = [BAKE_DATA, COOK_DATA, FRYER_DATA, GRILL_DATA, MILL_DATA, PAN_DATA, SQUEEZER_DATA, STEAMER_DATA, STEW_DATA, FIXED_MATERIAL_ITEM]
