@@ -13,6 +13,12 @@
     },
     "ham:cooking_oil": {
       "textures": "textures/items/cooking_oil"
+    },
+    "ham:salt": {
+      "textures": "textures/items/salt"
+    },
+    "ham:seasoning": {
+      "textures": "textures/items/seasoning"
     }
   }
 }

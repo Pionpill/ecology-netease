@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:cooking_oil",
+      "identifier": "ham:salt",
       "register_to_create_menu": true,
       "category": "ecology"
     },
