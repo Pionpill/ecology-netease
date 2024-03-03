@@ -1,15 +1,13 @@
 from scripts.common import logger
 from scripts.common.utils import itemUtils
 from scripts.workbench.server.data import WORKBENCH_MAP
-from scripts.workbench.server.data.recipes import FIXED_MATERIAL_ITEM
 
 class Recipe(object):
     def __init__(self, blockName):
         # type: (str) -> None
         object.__init__(self)
-        self.blockName = blockName
         self.recipe = WORKBENCH_MAP[blockName]['recipe']
-        self.hasFixedRecipe = WORKBENCH_MAP[blockName].get('fixed_material') is not None
+        self.fixedMaterialItems = WORKBENCH_MAP[blockName].get('fixed_material_items')
 
     def GetAllRecipe(self):
         # type: () -> dict[str, dict]
@@ -50,10 +48,9 @@ class Recipe(object):
         if isinstance(materialOrResultDict, str):
             return {type + '_slot0': itemUtils.GetItemDict(materialOrResultDict)}
         outDict = {type + '_slot' + str(slotIndex) : itemUtils.GetItemDict(itemName = item) if isinstance(item, str) else itemUtils.GetItemDict(itemDict = item) for slotIndex, item in materialOrResultDict.items()}
-        if type == 'material' and self.hasFixedRecipe and recipe.get("fixed_material"):
-            fixedMaterialItems = FIXED_MATERIAL_ITEM.get(self.blockName)
+        if type == 'material' and self.fixedMaterialItems:
             for slotIndex, count in enumerate(recipe.get("fixed_material")):
                 if count == 0:
                     continue
-                outDict["fixed_material_slot"+str(slotIndex)] = itemUtils.GetItemDict(fixedMaterialItems[slotIndex], 0, count)
+                outDict["fixed_material_slot"+str(slotIndex)] = itemUtils.GetItemDict(self.fixedMaterialItems[slotIndex], 0, count)
         return outDict

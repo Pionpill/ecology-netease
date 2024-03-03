@@ -13,7 +13,7 @@ WORKBENCH_MAP = {
     "ham:cooking_table": {
         "recipe": COOK_DATA,
         "material": 9,
-        "fixed_material": 4,
+        "fixed_material_items": ('ham:salt', 'minecraft:sugar', 'ham:oil', 'ham:seasoning'),
         "fuel": 0,
         "result": 1,
         "type": WorkbenchType.Crafting,
@@ -58,7 +58,7 @@ WORKBENCH_MAP = {
     "ham:pan": {
         "recipe": PAN_DATA,
         "material": 6,
-        "fixed_material": 5,
+        "fixed_material_items": ('ham:salt', 'minecraft:sugar', 'ham:oil', 'ham:seasoning'),
         "fuel": 1,
         "result": 1,
         "type": WorkbenchType.Furnace,
@@ -73,7 +73,6 @@ WORKBENCH_MAP = {
     "ham:stew_pot": {
         "recipe": STEW_DATA,
         "material": 6,
-        "fixed_material": 1,
         "liquid": 2,
         "fuel": 1,
         "result": 1,
@@ -81,9 +80,4 @@ WORKBENCH_MAP = {
     },
 }
 
-FIXED_MATERIAL_ITEM = {
-    'ham:cooking_table': ('ham:salt', 'minecraft:sugar', 'ham:oil', 'ham:seasoning'),
-    'ham:pan': ('ham:salt', 'minecraft:sugar', 'ham:oil', 'ham:seasoning')
-}
-
-__all__ = [BAKE_DATA, COOK_DATA, FRYER_DATA, GRILL_DATA, MILL_DATA, PAN_DATA, SQUEEZER_DATA, STEAMER_DATA, STEW_DATA, FIXED_MATERIAL_ITEM]
+__all__ = [BAKE_DATA, COOK_DATA, FRYER_DATA, GRILL_DATA, MILL_DATA, PAN_DATA, SQUEEZER_DATA, STEAMER_DATA, STEW_DATA]

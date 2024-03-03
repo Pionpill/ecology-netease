@@ -23,7 +23,7 @@ class BaseWorkbenchManager(object):
         self.blockType = WORKBENCH_MAP[blockName]['type']
         self.slotNum = {
             'material': WORKBENCH_MAP[blockName]['material'],
-            'fixed_material': WORKBENCH_MAP[blockName].get('fixed_material', 0),
+            'fixed_material': len(WORKBENCH_MAP[blockName].get('fixed_material_items', ())),
             'liquid': WORKBENCH_MAP[blockName].get('liquid', 0),
             'fuel': WORKBENCH_MAP[blockName].get('fuel', 0),
             'result': WORKBENCH_MAP[blockName]['result']
