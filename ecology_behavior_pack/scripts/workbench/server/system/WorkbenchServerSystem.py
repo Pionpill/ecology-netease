@@ -99,7 +99,7 @@ class WorkbenchServerSystem(ServerSystem):
         # 熔炉更新数据
         if workbenchMgr.blockType == WorkbenchType.Furnace:
             resultItemDict = workbenchMgr._GetItem(slotName, playerId)
-            workbenchMgr._ItemReduce(slotName, resultItemDict.get('count'))
+            workbenchMgr.ReduceItem(slotName, resultItemDict.get('count'))
         # 物品更新到背包
         itemComp = compFactory.CreateItem(playerId)
         itemComp.SpawnItemToPlayerInv(resultItemDict, playerId)

@@ -24,11 +24,11 @@ class FurnaceManager(BaseWorkbenchManager):
 
     def Tick(self):
         # type: () -> bool
-        self._ProduceTick()
-        self._MeterTick()
+        self.__ProduceTick()
+        self.__MeterTick()
         return self.shouldRefresh
     
-    def _ProduceTick(self):
+    def __ProduceTick(self):
         # type: () -> None
         """燃料燃烧与生产"""
         self.shouldRefresh = False
@@ -37,7 +37,7 @@ class FurnaceManager(BaseWorkbenchManager):
         if self.__IsBurning():
             self.burnTime -=1
         elif self.__CanBurn():
-            self.shouldRefresh = self.Burn()
+            self.shouldRefresh = self._Burn()
         # 更新生产进度
         if self.__IsBurning() and self.__CanProduce():
             self.produceProgress += 1
@@ -52,7 +52,7 @@ class FurnaceManager(BaseWorkbenchManager):
         if lastBurn != self.__IsBurning():
             self.shouldRefresh = True
 
-    def _MeterTick(self):
+    def __MeterTick(self):
         """液体更新"""
         liquidMaterialDict = self.blockEntityData['liquid_slot0']
         if self.slotNum['liquid'] == 0 or liquidMaterialDict is None or self.blockEntityData['liquid'] == 20:
@@ -124,7 +124,7 @@ class FurnaceManager(BaseWorkbenchManager):
                 return False
         return True
 
-    def Burn(self):
+    def _Burn(self):
         """燃烧原材料"""
         # type: () -> bool
         # 目前所有的工作台只有一个燃料槽
@@ -135,7 +135,7 @@ class FurnaceManager(BaseWorkbenchManager):
         fuelName = fuelItemDict.get('newItemName')
         burnDuration = self.fuels.get(fuelName)
         if burnDuration:
-            self._ItemReduce('fuel_slot0')
+            self.ReduceItem('fuel_slot0')
             self.burnDuration = burnDuration * 20
             self.burnTime = burnDuration * 20
             return True
@@ -150,7 +150,7 @@ class FurnaceManager(BaseWorkbenchManager):
             if itemDict is None:
                 continue
             count = itemDict.get("count")
-            self._ItemReduce(slotName, count)
+            self.ReduceItem(slotName, count)
         matchedRecipeResult = self.proxy.matchedRecipeResult
         resultItems = self.GetAllSlotData('result')
         for slotName, recipeResultItem in matchedRecipeResult.items():
@@ -162,13 +162,6 @@ class FurnaceManager(BaseWorkbenchManager):
                 self._SetItem(slotName, recipeResultItem)
         if self.slotNum['liquid'] != 0:
             self.blockEntityData['liquid'] = self.blockEntityData['liquid'] - 1
-
-    def GetRecipeResultSlotItemDict(self):
-        """获取匹配的物品"""
-        materialSlotItemDict = self.GetAllSlotData('material')
-        if len(materialSlotItemDict) == 0 or all(value is None for value in materialSlotItemDict.values()):
-            return {'material_slot' + str(i): None for i in range(self.slotNum['result'])}
-        return self.proxy.MatchRecipe(materialSlotItemDict)
     
     def GetBurnData(self):
         burnData = {
@@ -181,9 +174,6 @@ class FurnaceManager(BaseWorkbenchManager):
         if self.slotNum['liquid'] != 0:
             burnData['liquid'] = self.blockEntityData['liquid']
         return burnData
-
-    def Reset(self, playerId):
-        pass
 
     def __GetFuels(self, blockName):
         if blockName in ["ham:mill"]:

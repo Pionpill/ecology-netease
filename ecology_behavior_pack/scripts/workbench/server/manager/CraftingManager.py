@@ -20,14 +20,7 @@ class CraftingManager(BaseWorkbenchManager):
             if itemDict is None:
                 continue
             count = itemDict.get("count")
-            self._ItemReduce(slotName, count)
-
-    def GetRecipeResultSlotItemDict(self):
-        """获取匹配的物品"""
-        materialSlotItemDict = self.GetAllSlotData(['material'])
-        if len(materialSlotItemDict) == 0 or all(value is None for value in materialSlotItemDict.values()):
-            return {'material_slot' + str(i): None for i in range(self.slotNum['result'])}
-        return self.proxy.MatchRecipe(materialSlotItemDict)
+            self.ReduceItem(slotName, count)
     
     def Reset(self, playerId):
         # type: (int) -> None
@@ -37,7 +30,3 @@ class CraftingManager(BaseWorkbenchManager):
             slotKey = 'material_slot' + str(i)
             itemComp.SpawnItemToPlayerInv(self.GetSlotData(slotKey),  playerId)
             self.blockEntityData[slotKey] = None
-
-    def GetBurnData(self):
-        """工作台没有熔炉数据"""
-        return {}

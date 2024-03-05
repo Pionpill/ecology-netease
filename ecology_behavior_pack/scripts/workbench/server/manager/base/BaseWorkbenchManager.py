@@ -54,19 +54,6 @@ class BaseWorkbenchManager(object):
         """从方块实体中获取指定槽的物品"""
         return self.blockEntityData[slotName]
 
-    def _ItemReduce(self, slotName, count = 1):
-        # type: (str, int) -> None
-        """物品消耗"""
-        itemDict = self.GetSlotData(slotName)
-        if not itemDict:
-            logger.warn("槽 {} 没有物品".format(slotName))
-        elif itemDict["count"] < count:
-            logger.error("物品自减失败，实际物品数量小于需要减去的数量")
-        elif itemDict["count"] == count:
-            self.blockEntityData[slotName] = None
-        else:
-            self.blockEntityData[slotName]['count'] -= count
-    
     def SwapItem(self, args):
         # type: (dict) -> None
         """
@@ -108,6 +95,26 @@ class BaseWorkbenchManager(object):
             self._SetItem(fromSlotName, toItemDict, playerId)
             self._SetItem(toSlotName, fromItemDict, playerId)
 
+    def ReduceItem(self, slotName, count = 1):
+        # type: (str, int) -> None
+        """物品消耗"""
+        itemDict = self.GetSlotData(slotName)
+        if not itemDict:
+            logger.warn("槽 {} 没有物品".format(slotName))
+        elif itemDict["count"] < count:
+            logger.error("物品自减失败，实际物品数量小于需要减去的数量")
+        elif itemDict["count"] == count:
+            self.blockEntityData[slotName] = None
+        else:
+            self.blockEntityData[slotName]['count'] -= count
+
+    def GetRecipeResultSlotItemDict(self):
+        """获取匹配的物品"""
+        materialSlotItemDict = self.GetAllSlotData('material')
+        if len(materialSlotItemDict) == 0 or all(value is None for value in materialSlotItemDict.values()):
+            return {'material_slot' + str(i): None for i in range(self.slotNum['result'])}
+        return self.proxy.MatchRecipe(materialSlotItemDict)
+
     def _GetItem(self, slotName, playerId):
         """
         获取实体物品
@@ -133,27 +140,20 @@ class BaseWorkbenchManager(object):
             }
             itemComp.SetPlayerAllItems(itemsDictMap)
 
+    def GetBurnData(self):
+        """获取熔炉数据"""
+        return {}
+
+    def Reset(self, playerId):
+        """关闭 UI 时重置一些物品"""
+        pass
+
+    def Tick(self):
+        """进行 tick"""
+        pass
+
     @abstractmethod
     def Consume(self):
         """消耗原材料合成/烧制物品"""
         raise NotImplementedError
-
-    @abstractmethod
-    def GetRecipeResultSlotItemDict(self):
-        """通过配方获取结果槽物品"""
-        raise NotImplementedError
-
-    @abstractmethod
-    def Reset(self, playerId):
-        """关闭 UI 时重置一些物品"""
-        raise NotImplementedError
     
-    @abstractmethod
-    def GetBurnData(self):
-        """获取熔炉数据"""
-        raise NotImplementedError
-    
-    @abstractmethod
-    def Tick(self):
-        """进行 tick"""
-        raise NotImplementedError
