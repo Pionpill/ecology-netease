@@ -142,15 +142,15 @@
             "main_panel@food_steamer_screen.main_panel" : {}
          },
          {
-            "inventory_panel@panel.inventory_panel" : {
-               "layer" : 7,
-               "offset" : [ 0, 52 ]
-            }
-         },
-         {
             "furnace_panel@panel.food_steamer_panel" : {
                "layer" : 8,
                "offset" : [ 0, -35 ]
+            }
+         },
+         {
+            "inventory_panel@panel.inventory_panel" : {
+               "layer" : 7,
+               "offset" : [ 0, 52 ]
             }
          }
       ],
