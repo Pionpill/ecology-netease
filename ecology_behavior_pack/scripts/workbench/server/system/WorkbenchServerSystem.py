@@ -126,7 +126,6 @@ class WorkbenchServerSystem(ServerSystem):
             self.NotifyToMultiClients(playerList, WorkbenchBlockUICloseEvent, args)
             for playerId in playerList:
                 WorkbenchService.DeletePlayerUsingBlock(playerId, position, dimensionId)
-                WorkbenchService.DeleteWorkbenchManager(position, dimensionId)
         workbenchMgr = WorkbenchService.GetWorkbenchMgr(position, dimensionId, blockName)
         slotData = workbenchMgr.GetAllSlotData()
         if (slotData is not None) and any(item is not None for item in slotData.values()):
@@ -134,6 +133,7 @@ class WorkbenchServerSystem(ServerSystem):
             for itemDict in slotData.values():
                 if itemDict:
                     itemComp.SpawnItemToLevel(itemDict, dimensionId, position)
+        WorkbenchService.DeleteWorkbenchManager(position, dimensionId)
 
     def __RefreshWorkbenchUI(self, position, dimensionId, blockName):
         # type: (tuple, int, str) -> None
