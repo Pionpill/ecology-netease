@@ -112,6 +112,8 @@ class FurnaceManager(BaseWorkbenchManager):
     def __CanAddResultItems(self):
         """原材料是否可以匹配结果"""
         matchResultItems = self.GetRecipeResultSlotItemDict()
+        if all(item is None for item in matchResultItems.values()):
+            return False
         resultItems = self.GetAllSlotData('result')
         for slotName, resultItem in resultItems.items():
             matchResultItem = matchResultItems.get(slotName)
