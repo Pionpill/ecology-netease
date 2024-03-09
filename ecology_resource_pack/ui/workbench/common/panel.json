@@ -293,7 +293,7 @@
       {
         "flame_mask@component.flame_mask": {
           "layer": 10,
-          "offset": [84, 0]
+          "offset": [86, -1]
         }
       },
       {
@@ -378,7 +378,7 @@
       {
         "flame_mask@component.flame_mask": {
           "layer": 10,
-          "offset": [84, 0]
+          "offset": [86, -1]
         }
       },
       {
@@ -457,7 +457,8 @@
       },
       {
         "flame_mask@component.flame_mask": {
-          "layer": 10
+          "layer": 10,
+          "offset": [4, -1]
         }
       },
       {
@@ -466,9 +467,7 @@
         }
       },
       {
-        "furnace_arrow_img@component.furnace_arrow_img": {
-          "texture": "textures/ui/arrow_inactive"
-        }
+        "furnace_arrow_img@component.furnace_arrow_img": {}
       }
     ],
     "enabled": true,
@@ -492,14 +491,20 @@
       {
         "fuel_slot0@component.item_slot": {
           "anchor_from": "bottom_middle",
-          "anchor_to": "bottom_middle",
-          "offset": [0, 0]
+          "anchor_to": "bottom_middle"
         }
       },
       {
         "result_slot0@component.item_slot_big": {
           "anchor_from": "top_right",
           "anchor_to": "top_right"
+        }
+      },
+      {
+        "material_slot0@component.item_slot": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [0, 2]
         }
       },
       {
@@ -514,29 +519,20 @@
           "anchor_from": "center",
           "anchor_to": "center",
           "layer": 10,
-          "offset": [0, 0]
+          "offset": [0, -1]
         }
       },
       {
         "furnace_arrow_mask@component.furnace_arrow_mask": {
           "anchor_from": "top_middle",
           "anchor_to": "top_middle",
-          "layer": 10,
-          "offset": [0, 0]
+          "layer": 10
         }
       },
       {
         "furnace_arrow_img@component.furnace_arrow_img": {
           "anchor_from": "top_middle",
-          "anchor_to": "top_middle",
-          "offset": [0, 0]
-        }
-      },
-      {
-        "material_slot0@component.item_slot": {
-          "anchor_from": "top_left",
-          "anchor_to": "top_left",
-          "offset": [0, 2]
+          "anchor_to": "top_middle"
         }
       }
     ],
@@ -611,7 +607,7 @@
     "always_accepts_input": false,
     "controls": [
       {
-        "pan_panel@panel.pan_panel": {}
+        "furnace_panel@panel.furnace_panel": {}
       }
     ],
     "force_render_below": false,
@@ -663,7 +659,7 @@
       {
         "flame_mask@component.flame_mask": {
           "layer": 10,
-          "offset": [30, 0]
+          "offset": [32, -1]
         }
       },
       {
@@ -834,7 +830,7 @@
       {
         "flame_mask@component.flame_mask": {
           "layer": 10,
-          "offset": [29, 27]
+          "offset": [31, 26]
         }
       },
       {
@@ -913,7 +909,7 @@
       {
         "flame_mask@component.flame_mask": {
           "layer": 10,
-          "offset": [70, 0]
+          "offset": [72, -1]
         }
       },
       {
@@ -1055,7 +1051,7 @@
       {
         "flame_mask@component.flame_mask": {
           "layer": 10,
-          "offset": [78, 22]
+          "offset": [80, 21]
         }
       },
       {

@@ -142,15 +142,15 @@
             "main_panel@grill_screen.main_panel" : {}
          },
          {
-            "inventory_panel@panel.inventory_panel" : {
-               "layer" : 7,
-               "offset" : [ 0, 52 ]
-            }
-         },
-         {
             "furnace_panel@panel.grill_panel" : {
                "layer" : 8,
                "offset" : [ 0, -35 ]
+            }
+         },
+         {
+            "inventory_panel@panel.inventory_panel" : {
+               "layer" : 7,
+               "offset" : [ 0, 52 ]
             }
          }
       ],

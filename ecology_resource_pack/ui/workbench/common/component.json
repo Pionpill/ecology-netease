@@ -248,7 +248,7 @@
     "offset": [2, 0],
     "priority": 0,
     "propagate_alpha": false,
-    "size": [14, 14],
+    "size": [10, 12],
     "texture": "textures/ui/stove_flame_mask",
     "type": "image",
     "uv": [0, 0],
@@ -513,7 +513,7 @@
       "#item_id_aux": 131072
     },
     "renderer": "inventory_item_renderer",
-    "size": [16, 16],
+    "size": [14, 14],
     "type": "custom",
     "visible": false
   },
@@ -534,7 +534,7 @@
       "#item_id_aux": 131072
     },
     "renderer": "inventory_item_renderer",
-    "size": [16, 16],
+    "size": [14, 14],
     "type": "custom",
     "visible": false
   },
@@ -751,7 +751,7 @@
       },
       {
         "item_cell_mask@component.pan_img_mask": {
-          "size": [28, 28]
+          "offset": [0, -5]
         }
       }
     ],
@@ -782,9 +782,7 @@
         }
       },
       {
-        "item_cell_mask@component.pot_img_mask": {
-          "size": [28, 28]
-        }
+        "item_cell_mask@component.pot_img_mask": {}
       }
     ],
     "enabled": true,
@@ -954,7 +952,7 @@
     "always_accepts_input": false,
     "controls": [
       {
-        "pan_ware_img@component.pan_ware_img": {}
+        "item_slot_pan@component.item_slot_pan": {}
       }
     ],
     "force_render_below": false,
@@ -1068,7 +1066,7 @@
     "grayscale": false,
     "is_new_nine_slice": false,
     "keep_ratio": false,
-    "layer": 5,
+    "layer": 3,
     "max_size": [0, 0],
     "min_size": [0, 0],
     "nine_slice_buttom": 0,
@@ -1099,7 +1097,7 @@
     "grayscale": false,
     "is_new_nine_slice": false,
     "keep_ratio": false,
-    "layer": 5,
+    "layer": 4,
     "max_size": [0, 0],
     "min_size": [0, 0],
     "nine_slice_buttom": 0,
@@ -1110,7 +1108,7 @@
     "offset": [0, 0],
     "priority": 0,
     "propagate_alpha": false,
-    "size": [14, 60],
+    "size": [20, 16],
     "texture": "textures/ui/pan_item_cell_mask",
     "type": "image",
     "uv": [0, 0],
@@ -1161,7 +1159,7 @@
     "grayscale": false,
     "is_new_nine_slice": false,
     "keep_ratio": false,
-    "layer": 5,
+    "layer": 3,
     "max_size": [0, 0],
     "min_size": [0, 0],
     "nine_slice_buttom": 0,
@@ -1192,7 +1190,7 @@
     "grayscale": false,
     "is_new_nine_slice": false,
     "keep_ratio": false,
-    "layer": 5,
+    "layer": 4,
     "max_size": [0, 0],
     "min_size": [0, 0],
     "nine_slice_buttom": 0,
@@ -1203,7 +1201,7 @@
     "offset": [0, 0],
     "priority": 0,
     "propagate_alpha": false,
-    "size": [14, 60],
+    "size": [26, 26],
     "texture": "textures/ui/pot_item_cell_mask",
     "type": "image",
     "uv": [0, 0],
