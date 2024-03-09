@@ -1,6 +1,6 @@
 import mod.server.extraServerApi as serverApi
 from scripts.common.utils import positionUtils
-from scripts.ecology.server.data import BIOME_DATA
+from scripts.common.data.biome import BIOME_DATA
 from scripts.ecology.server.entity import Biome
     
 levelId = serverApi.GetLevelId()

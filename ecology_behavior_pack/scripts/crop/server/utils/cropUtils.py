@@ -1,4 +1,4 @@
-from scripts.crop.server.data import CROP_DATA
+from scripts.common.data.crop.crop import CROP_DATA
 
 def IsCrop(blockOrItemName):
     # type: (str) -> bool

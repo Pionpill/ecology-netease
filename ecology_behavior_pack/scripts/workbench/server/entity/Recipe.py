@@ -1,13 +1,13 @@
+from scripts.common.data.workbench import SLOT_DATA
 from scripts.common import logger
 from scripts.common.utils import itemUtils
-from scripts.workbench.server.data import WORKBENCH_MAP
 
 class Recipe(object):
     def __init__(self, blockName):
         # type: (str) -> None
         object.__init__(self)
-        self.recipe = WORKBENCH_MAP[blockName]['recipe']
-        self.fixedMaterialItems = WORKBENCH_MAP[blockName].get('fixed_material_items')
+        self.recipe = SLOT_DATA[blockName]['recipe']
+        self.fixedMaterialItems = SLOT_DATA[blockName].get('fixed_material_items')
 
     def GetAllRecipe(self):
         # type: () -> dict[str, dict]

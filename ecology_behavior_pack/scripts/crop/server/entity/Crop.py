@@ -1,5 +1,5 @@
+from scripts.common.data.crop.crop import CROP_DATA
 from scripts.common import logger
-from scripts.crop.server.data import CROP_DATA
 
 class Crop(object):
     def __init__(self, plantInfo, growInfo):

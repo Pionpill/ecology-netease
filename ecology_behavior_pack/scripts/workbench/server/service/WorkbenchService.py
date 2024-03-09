@@ -1,6 +1,6 @@
 from scripts.workbench.common.enum import WorkbenchType
 from scripts.common import logger
-from scripts.workbench.server.data import WORKBENCH_MAP
+from scripts.common.data.workbench import SLOT_DATA
 from scripts.workbench.server.manager import CraftingManager, FurnaceManager
 from scripts.workbench.server.manager.base import BaseWorkbenchManager
 
@@ -13,8 +13,8 @@ class WorkbenchService(object):
     def IsWorkbenchBlock(blockName, type = None):
         # type: (str, None | str) -> bool
         if type is None:
-            return blockName in WORKBENCH_MAP.keys()
-        blockInfo = WORKBENCH_MAP.get(blockName)
+            return blockName in SLOT_DATA.keys()
+        blockInfo = SLOT_DATA.get(blockName)
         if blockInfo:
             return blockInfo['type'] == type
         return False
@@ -75,7 +75,7 @@ class WorkbenchService(object):
             logger.error('传入 blockName 以创建管理实例')
         
         
-        if WORKBENCH_MAP[blockName]['type'] == WorkbenchType.Crafting:
+        if SLOT_DATA[blockName]['type'] == WorkbenchType.Crafting:
             workbenchMgr = CraftingManager(blockName, position, dimensionId)
         else:
             workbenchMgr = FurnaceManager(blockName, position, dimensionId)

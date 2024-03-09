@@ -1,10 +1,9 @@
 from abc import abstractmethod
 import copy
 import mod.server.extraServerApi as serverApi
+from scripts.common.data.workbench import SLOT_DATA
 from scripts.common.utils import itemUtils
-from scripts.workbench.common.enum import WorkbenchType
 from scripts.common import logger
-from scripts.workbench.server.data.recipes import WORKBENCH_MAP
 from scripts.workbench.server.proxy import RecipeProxy
 
 minecraftEnum = serverApi.GetMinecraftEnum()
@@ -21,16 +20,16 @@ class BaseWorkbenchManager(object):
         self.position = position
         self.dimensionId = dimensionId
         self.proxy = RecipeProxy(blockName)
-        self.blockType = WORKBENCH_MAP[blockName]['type']
+        self.blockType = SLOT_DATA[blockName]['type']
         self.slotNum = {
-            'material': WORKBENCH_MAP[blockName]['material'],
-            'fixed_material': len(WORKBENCH_MAP[blockName].get('fixed_material_items', ())),
-            'liquid': WORKBENCH_MAP[blockName].get('liquid', 0),
-            'fuel': WORKBENCH_MAP[blockName].get('fuel', 0),
-            'result': WORKBENCH_MAP[blockName]['result']
+            'material': SLOT_DATA[blockName]['material'],
+            'fixed_material': len(SLOT_DATA[blockName].get('fixed_material_items', ())),
+            'liquid': SLOT_DATA[blockName].get('liquid', 0),
+            'fuel': SLOT_DATA[blockName].get('fuel', 0),
+            'result': SLOT_DATA[blockName]['result']
         }
-        self.wareItem = WORKBENCH_MAP[blockName].get('ware')
-        self.resultWareCount = WORKBENCH_MAP[blockName].get('result_ware_count')
+        self.wareItem = SLOT_DATA[blockName].get('ware')
+        self.resultWareCount = SLOT_DATA[blockName].get('result_ware_count')
         self.blockEntityData = blockEntityComp.GetBlockEntityData(self.dimensionId, self.position)
 
     def GetAllSlotData(self, slotTypes = ['material', 'fuel', 'result', 'result_ware', 'liquid', 'ware']):

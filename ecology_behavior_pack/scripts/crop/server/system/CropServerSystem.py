@@ -1,8 +1,8 @@
 import mod.server.extraServerApi as serverApi
 
+from scripts.common.data.crop.seed import SEED_LIST
 from scripts.common import logger
 from scripts.common.utils import engineUtils, positionUtils
-from scripts.crop.server.data import SEED_DATA
 from scripts.crop.server.service import CropService
 from scripts.crop.server.utils import cropUtils, entityUtils
 from scripts.ecology.server.facade import EcologyFacade
@@ -31,7 +31,7 @@ class CropServerSystem(ServerSystem):
         if not engineUtils.coolDown(args['entityId']):
             return
         # 作物种植
-        if args['itemDict']['newItemName'] in SEED_DATA:
+        if args['itemDict']['newItemName'] in SEED_LIST:
             self.__HandlePlantCrop(args)
 
     def OnBlockNeighborChanged(self, args):
@@ -43,7 +43,6 @@ class CropServerSystem(ServerSystem):
         # 作物生长
         if cropUtils.IsCrop(args['blockName']):
             self.__HandleCropStageTick(args)
-
 
     def __HandlePlantCrop(self, args):
         """种植作物"""

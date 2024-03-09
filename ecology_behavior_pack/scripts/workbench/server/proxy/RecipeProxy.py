@@ -1,4 +1,4 @@
-from scripts.workbench.server.data.recipes import WORKBENCH_MAP
+from scripts.common.data.workbench import SLOT_DATA
 from scripts.common import logger
 from scripts.common.utils import itemUtils
 from scripts.workbench.server.entity import Recipe
@@ -10,7 +10,7 @@ class RecipeProxy(object):
         self.matchedRecipeKey = None
         self.matchedRecipeMaterial = None
         self.matchedRecipeResult = None
-        self.resultSlotNum = WORKBENCH_MAP[blockName]['result']
+        self.resultSlotNum = SLOT_DATA[blockName]['result']
 
     def GetLastUsedRecipeMaterial(self):
         # type: () -> dict[str, dict]

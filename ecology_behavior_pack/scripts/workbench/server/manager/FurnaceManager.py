@@ -1,6 +1,6 @@
 import copy
 import mod.server.extraServerApi as serverApi
-from scripts.workbench.server.data.fuel import FUEL_DATA
+from scripts.common.data.workbench import FUEL_DATA
 from scripts.common.utils import itemUtils
 from scripts.common import logger
 from scripts.workbench.server.manager.base import BaseWorkbenchManager

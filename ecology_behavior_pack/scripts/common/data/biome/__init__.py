@@ -504,3 +504,5 @@ BIOME_DATA = {
         "tags": ["overworld"] 
     }
 }
+
+__all__ = [BIOME_DATA]

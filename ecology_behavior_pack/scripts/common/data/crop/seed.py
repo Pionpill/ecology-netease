@@ -1,0 +1,1 @@
+SEED_LIST = ['ham:herb_seeds']

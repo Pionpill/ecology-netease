@@ -1,15 +1,16 @@
+from scripts.common.data.workbench.bake import BAKE_DATA
+from scripts.common.data.workbench.fryer import FRYER_DATA
+from scripts.common.data.workbench.grill import GRILL_DATA
+from scripts.common.data.workbench.mill import MILL_DATA
+from scripts.common.data.workbench.pan import PAN_DATA
+from scripts.common.data.workbench.squeezer import SQUEEZER_DATA
+from scripts.common.data.workbench.steamer import STEAMER_DATA
+from scripts.common.data.workbench.stew import STEW_DATA
+from scripts.common.data.workbench.cook import COOK_DATA
 from scripts.workbench.common.enum import WorkbenchType
-from scripts.workbench.server.data.recipes.bake import BAKE_DATA
-from scripts.workbench.server.data.recipes.cook import COOK_DATA
-from scripts.workbench.server.data.recipes.fryer import FRYER_DATA
-from scripts.workbench.server.data.recipes.grill import GRILL_DATA
-from scripts.workbench.server.data.recipes.mill import MILL_DATA
-from scripts.workbench.server.data.recipes.pan import PAN_DATA
-from scripts.workbench.server.data.recipes.squeezer import SQUEEZER_DATA
-from scripts.workbench.server.data.recipes.steamer import STEAMER_DATA
-from scripts.workbench.server.data.recipes.stew import STEW_DATA
 
-WORKBENCH_MAP = {
+
+SLOT_DATA = {
     "ham:cooking_table": {
         "recipe": COOK_DATA,
         "material": 9,
@@ -83,5 +84,3 @@ WORKBENCH_MAP = {
         "type": WorkbenchType.Furnace,
     },
 }
-
-__all__ = [BAKE_DATA, COOK_DATA, FRYER_DATA, GRILL_DATA, MILL_DATA, PAN_DATA, SQUEEZER_DATA, STEAMER_DATA, STEW_DATA]
