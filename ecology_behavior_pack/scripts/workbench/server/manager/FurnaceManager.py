@@ -1,3 +1,4 @@
+import copy
 import mod.server.extraServerApi as serverApi
 from scripts.workbench.server.data.fuel import FUEL_DATA
 from scripts.common.utils import itemUtils
@@ -26,6 +27,7 @@ class FurnaceManager(BaseWorkbenchManager):
         # type: () -> bool
         self.__ProduceTick()
         self.__MeterTick()
+        self.__ResultWareTick()
         return self.shouldRefresh
     
     def __ProduceTick(self):
@@ -43,6 +45,7 @@ class FurnaceManager(BaseWorkbenchManager):
             self.produceProgress += 1
             if self.produceProgress == self.burnInterval:
                 self.Consume()
+                self.Produce()
                 self.produceProgress = 0
                 self.shouldRefresh = True
         elif self.produceProgress > 0:
@@ -75,6 +78,27 @@ class FurnaceManager(BaseWorkbenchManager):
             self._SetItem('liquid_slot0', None)
             self._SetItem('liquid_slot1', itemUtils.GetItemDict('minecraft:bucket'))
             self.shouldRefresh = True
+
+    def __ResultWareTick(self):
+        resultWareItem = self.blockEntityData['result_ware_slot']
+        wareItem = self.blockEntityData['ware_slot']
+        if not self.resultWareCount or not resultWareItem or not wareItem:
+            return
+        resultItem = self.blockEntityData['result_slot0']
+
+        maxStackSize = itemComp.GetItemBasicInfo(resultItem["newItemName"], resultItem["newAuxValue"]).get("maxStackSize") if resultItem else 64
+        if resultItem and resultItem['count'] >= maxStackSize:
+            return
+        produceCount = min(wareItem['count'], resultWareItem['count'], maxStackSize - resultWareItem['count'])
+        if resultItem:
+            self.IncreaseItem('result_slot0', produceCount)
+        else:
+            realResultWareItem = copy.deepcopy(resultWareItem)
+            realResultWareItem['count'] = produceCount
+            self._SetItem('result_slot0', realResultWareItem)
+        self.ReduceItem('result_ware_slot', produceCount)
+        self.ReduceItem('ware_slot', produceCount)
+        self.shouldRefresh = True
 
     def __IsBurning(self):
         """判断是否处于燃烧状态"""
@@ -114,14 +138,15 @@ class FurnaceManager(BaseWorkbenchManager):
         matchResultItems = self.GetRecipeResultSlotItemDict()
         if all(item is None for item in matchResultItems.values()):
             return False
-        resultItems = self.GetAllSlotData('result')
+        # 如果使用容器结果槽，只有一个
+        resultItems = self.GetAllSlotData('result_ware') if self.resultWareCount else self.GetAllSlotData('result')
         for slotName, resultItem in resultItems.items():
-            matchResultItem = matchResultItems.get(slotName)
+            matchResultItem = matchResultItems.get('result_slot0' if self.resultWareCount else slotName)
             if resultItem is None:
                 continue
             if not itemUtils.IsSameItem(resultItem, matchResultItem):
                 return False
-            maxStackSize = itemComp.GetItemBasicInfo(resultItem["newItemName"], resultItem["newAuxValue"]).get("maxStackSize")
+            maxStackSize = self.resultWareCount or itemComp.GetItemBasicInfo(resultItem["newItemName"], resultItem["newAuxValue"]).get("maxStackSize")
             if matchResultItem.get('count') + resultItem.get('count') > maxStackSize:
                 return False
         return True
@@ -144,7 +169,7 @@ class FurnaceManager(BaseWorkbenchManager):
         return False
 
     def Consume(self):
-        """熔炉烧制物品"""
+        """消耗原材料"""
         materialSlotItemDict = self.proxy.matchedRecipeMaterial
         if materialSlotItemDict is None:
             return
@@ -153,15 +178,19 @@ class FurnaceManager(BaseWorkbenchManager):
                 continue
             count = itemDict.get("count")
             self.ReduceItem(slotName, count)
+
+    def Produce(self):
+        """生产物品"""
         matchedRecipeResult = self.proxy.matchedRecipeResult
-        resultItems = self.GetAllSlotData('result')
+        resultItems = self.GetAllSlotData('result_ware') if self.resultWareCount else self.GetAllSlotData('result')
         for slotName, recipeResultItem in matchedRecipeResult.items():
-            resultItem = resultItems.get(slotName)
+            realSlotName = 'result_ware_slot' if self.resultWareCount else slotName
+            resultItem = resultItems.get(realSlotName)
             if resultItem is None:
-                self._SetItem(slotName, recipeResultItem)
+                self._SetItem(realSlotName, recipeResultItem)
             else:
                 recipeResultItem['count'] = recipeResultItem.get('count') + resultItem.get('count')
-                self._SetItem(slotName, recipeResultItem)
+                self._SetItem(realSlotName, recipeResultItem)
         if self.slotNum['liquid'] != 0:
             self.blockEntityData['liquid'] = self.blockEntityData['liquid'] - 1
     

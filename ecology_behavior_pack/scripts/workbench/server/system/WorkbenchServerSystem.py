@@ -127,7 +127,7 @@ class WorkbenchServerSystem(ServerSystem):
             for playerId in playerList:
                 WorkbenchService.DeletePlayerUsingBlock(playerId, position, dimensionId)
         workbenchMgr = WorkbenchService.GetWorkbenchMgr(position, dimensionId, blockName)
-        slotData = workbenchMgr.GetAllSlotData()
+        slotData = workbenchMgr.GetAllSlotData(['material', 'fuel', 'result', 'liquid', 'ware'])
         if (slotData is not None) and any(item is not None for item in slotData.values()):
             itemComp = compFactory.CreateItem(levelId)
             for itemDict in slotData.values():

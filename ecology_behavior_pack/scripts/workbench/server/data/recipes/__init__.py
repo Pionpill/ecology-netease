@@ -59,6 +59,8 @@ WORKBENCH_MAP = {
         "recipe": PAN_DATA,
         "material": 6,
         "fixed_material_items": ('ham:salt', 'minecraft:sugar', 'ham:oil', 'ham:seasoning'),
+        "ware": "minecraft:bowl",
+        "result_ware_count": 3,
         "fuel": 1,
         "result": 1,
         "type": WorkbenchType.Furnace,
@@ -73,6 +75,8 @@ WORKBENCH_MAP = {
     "ham:stew_pot": {
         "recipe": STEW_DATA,
         "material": 6,
+        "ware": "minecraft:bowl",
+        "result_ware_count": 5,
         "liquid": 2,
         "fuel": 1,
         "result": 1,

@@ -11,6 +11,7 @@ minecraftEnum = serverApi.GetMinecraftEnum()
 compFactory = serverApi.GetEngineCompFactory()
 levelId = serverApi.GetLevelId()
 blockEntityComp = compFactory.CreateBlockEntityData(levelId)
+itemComp = compFactory.CreateItem(levelId)
 
 class BaseWorkbenchManager(object):
     def __init__(self, blockName, position, dimensionId):
@@ -28,9 +29,11 @@ class BaseWorkbenchManager(object):
             'fuel': WORKBENCH_MAP[blockName].get('fuel', 0),
             'result': WORKBENCH_MAP[blockName]['result']
         }
+        self.wareItem = WORKBENCH_MAP[blockName].get('ware')
+        self.resultWareCount = WORKBENCH_MAP[blockName].get('result_ware_count')
         self.blockEntityData = blockEntityComp.GetBlockEntityData(self.dimensionId, self.position)
 
-    def GetAllSlotData(self, slotTypes = ['material', 'fuel', 'result', 'liquid']):
+    def GetAllSlotData(self, slotTypes = ['material', 'fuel', 'result', 'result_ware', 'liquid', 'ware']):
         # type：(list | str) => dict
         """
         从方块实体中获取所有物品
@@ -47,6 +50,10 @@ class BaseWorkbenchManager(object):
             for i in range(slotNum):
                 slotKey = slotPrefix + '_slot' + str(i)
                 slotData[slotKey] = self.blockEntityData[slotKey]
+        if self.wareItem and 'ware' in slotTypes:
+            slotData['ware_slot'] = self.blockEntityData['ware_slot']
+        if self.resultWareCount and 'result_ware' in slotTypes:
+            slotData['result_ware_slot'] = self.blockEntityData['result_ware_slot']
         return slotData
     
     def GetSlotData(self, slotName):
@@ -71,7 +78,7 @@ class BaseWorkbenchManager(object):
             swapCount = int(fromItemDict.get('count') * takePercent)
             itemComp = compFactory.CreateItem(playerId)
             maxStackSize = itemComp.GetItemBasicInfo(toItemDict["newItemName"], toItemDict["newAuxValue"]).get("maxStackSize")
-            if toItemDict.get('count') == maxStackSize:
+            if toItemDict.get('count') >= maxStackSize:
                 return
             if (swapCount + toItemDict.get('count')) > maxStackSize:
                 fromItemCount = fromItemDict['count'] + toItemDict.get('count') - maxStackSize
@@ -95,11 +102,24 @@ class BaseWorkbenchManager(object):
             self._SetItem(fromSlotName, toItemDict, playerId)
             self._SetItem(toSlotName, fromItemDict, playerId)
 
+    def IncreaseItem(self, slotName, count = 1):
+        # type: (str, int) -> None
+        itemDict = self.GetSlotData(slotName)
+        if itemDict is None:
+            logger.warn("槽 {} 没有物品".format(slotName))
+            return
+        itemDict = self.blockEntityData[slotName]
+        maxStackSize = itemComp.GetItemBasicInfo(itemDict["newItemName"], itemDict["newAuxValue"]).get("maxStackSize")
+        if itemDict["count"] + count > maxStackSize:
+            logger.error("物品增加失败，超过最大堆叠值")
+        else:
+            self.blockEntityData[slotName]['count'] += count
+
     def ReduceItem(self, slotName, count = 1):
         # type: (str, int) -> None
         """物品消耗"""
         itemDict = self.GetSlotData(slotName)
-        if not itemDict:
+        if itemDict is None:
             logger.warn("槽 {} 没有物品".format(slotName))
         elif itemDict["count"] < count:
             logger.error("物品自减失败，实际物品数量小于需要减去的数量")

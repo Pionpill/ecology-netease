@@ -14,6 +14,11 @@ levelId = clientApi.GetLevelId()
 engineCompFactory = clientApi.GetEngineCompFactory()
 itemComp = engineCompFactory.CreateItem(playerId)
 
+maxResultWareMap = {
+    "ham:pan": 3.0,
+    "ham:stew_pot": 5.0
+}
+
 """
 UI 必须包含如下结构
 |- main
@@ -241,41 +246,63 @@ class BaseInventoryScreen(BaseBlockScreen):
         # type: (str, dict) -> None
         """设置 slotPath 槽物品的UI"""
         if itemDict and itemDict.get('count'):
-            # 计算耐久值
-            durabilityRatio = 1
-            basicInfo = self._GetItemBasicInfoFromSlotItemDict(itemDict)
-            currentDurability = itemDict.get("durability")
-            maxDurability = basicInfo.get("maxDurability", 0)
-            if maxDurability != 0:
-                durabilityRatio = currentDurability * 1.0 / maxDurability
-    
-            # 设置耐久条
-            barImagePath = slotPath + "/durability_bar/bar_mask"
-            barImageControl = self.GetBaseUIControl(barImagePath).asImage()
-            barControl = self.GetBaseUIControl(slotPath + "/durability_bar")
-            if durabilityRatio != 1:
-                barImageControl.SetSpriteColor(
-                    (1 - durabilityRatio, durabilityRatio, 0))
-                barImageControl.SetSpriteClipRatio(1 - durabilityRatio)
-                barControl.SetVisible(True)
-            else:
-                barControl.SetVisible(False)
-
-            # 显示物品
-            isEnchant = bool(itemDict.get('enchantData'))
-            userData = itemDict.get('userData')
-            itemRenderer = self.GetBaseUIControl(slotPath + "/item_renderer").asItemRenderer()
-            itemRenderer.SetUiItem(itemDict["newItemName"],itemDict["newAuxValue"], isEnchant, userData)
-
-            self.GetBaseUIControl(slotPath + "/item_renderer").SetVisible(True)
-            countLabelControl = self.GetBaseUIControl(slotPath + "/count_label").asLabel()
-            countLabelControl.SetText(str(itemDict["count"]))
-            countVisible = bool(itemDict["count"] > 1)
-            countLabelControl.SetVisible(countVisible)
+            if 'result_ware_slot' not in slotPath:
+                self.__SetDurabilityUI(slotPath, itemDict)
+            self.__SetItemRendererUI(slotPath, itemDict, 'result_ware_slot' not in slotPath)
         else:
+            if 'result_ware_slot' not in slotPath:
+                self.GetBaseUIControl(slotPath + "/count_label").SetVisible(False)
+                self.GetBaseUIControl(slotPath + "/durability_bar").SetVisible(False)
             self.GetBaseUIControl(slotPath + "/item_renderer").SetVisible(False)
-            self.GetBaseUIControl(slotPath + "/count_label").SetVisible(False)
-            self.GetBaseUIControl(slotPath + "/durability_bar").SetVisible(False)
+        if 'result_ware_slot' in slotPath:
+            self.__SetResultWareUI(slotPath, itemDict)
+
+    def __SetDurabilityUI(self, slotPath, itemDict):
+        # 计算耐久值
+        durabilityRatio = 1
+        basicInfo = self._GetItemBasicInfoFromSlotItemDict(itemDict)
+        currentDurability = itemDict.get("durability")
+        maxDurability = basicInfo.get("maxDurability", 0)
+        if maxDurability != 0:
+            durabilityRatio = currentDurability * 1.0 / maxDurability
+
+        # 设置耐久条
+        barImagePath = slotPath + "/durability_bar/bar_mask"
+        barImageControl = self.GetBaseUIControl(barImagePath).asImage()
+        barControl = self.GetBaseUIControl(slotPath + "/durability_bar")
+        if durabilityRatio != 1:
+            barImageControl.SetSpriteColor(
+                (1 - durabilityRatio, durabilityRatio, 0))
+            barImageControl.SetSpriteClipRatio(1 - durabilityRatio)
+            barControl.SetVisible(True)
+        else:
+            barControl.SetVisible(False)
+
+    def __SetResultWareUI(self, slotPath, itemDict):
+        # 设置容器结果槽 UI
+        maxResultWareCount = maxResultWareMap.get(self.blockName)
+        if not maxResultWareCount:
+            logger.error('{}不存在容器结果槽'.format(self.blockName))
+        maskPath = slotPath + "/item_cell_mask"
+        maskControl = self.GetBaseUIControl(maskPath).asImage()
+        ratio = 1.0 if itemDict is None else 1 - itemDict.get('count') / maxResultWareCount
+        maskControl.SetSpriteClipRatio(ratio)
+
+    def __SetItemRendererUI(self, slotPath, itemDict, setCount = True):
+        # 显示物品
+        isEnchant = bool(itemDict.get('enchantData'))
+        userData = itemDict.get('userData')
+        itemRenderer = self.GetBaseUIControl(slotPath + "/item_renderer").asItemRenderer()
+        itemRenderer.SetUiItem(itemDict["newItemName"],itemDict["newAuxValue"], isEnchant, userData)
+        self.GetBaseUIControl(slotPath + "/item_renderer").SetVisible(True)
+
+        # 显示数量
+        if not setCount:
+            return
+        countLabelControl = self.GetBaseUIControl(slotPath + "/count_label").asLabel()
+        countLabelControl.SetText(str(itemDict["count"]))
+        countVisible = bool(itemDict["count"] > 1)
+        countLabelControl.SetVisible(countVisible)
 
     def _GetItemBasicInfoFromSlotItemDict(self, itemDict):
         # type: (dict) -> dict
@@ -290,6 +317,9 @@ class BaseInventoryScreen(BaseBlockScreen):
 
     def __RegisterButtonCallback(self):
         for path in self.slotMgr.GetAllSlotPath():
+            # 容器结果槽禁止交互
+            if 'result_ware_slot' in path:
+                continue
             buttonPath = strUtils.JoinPath(path, "item_button")
             buttonControl = self.GetBaseUIControl(buttonPath).asButton()
             buttonControl.AddTouchEventParams({"isSwallow": True})
