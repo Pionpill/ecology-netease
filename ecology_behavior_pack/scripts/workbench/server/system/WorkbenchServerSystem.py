@@ -112,7 +112,7 @@ class WorkbenchServerSystem(ServerSystem):
         args = self.CreateEventData()
         if blockInfo:
             self.NotifyToClient(playerId, WorkbenchBlockUICloseEvent, args)
-        WorkbenchService.DeletePlayerUsingBlock(playerId, blockInfo['position'], blockInfo['dimensionId'])
+            WorkbenchService.DeletePlayerUsingBlock(playerId, blockInfo['position'], blockInfo['dimensionId'])
 
     def OnBlockRemove(self, args):
         blockName = args['fullName']
