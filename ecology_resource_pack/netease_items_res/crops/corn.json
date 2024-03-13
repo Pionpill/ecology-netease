@@ -2,11 +2,11 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:herb"
+      "identifier": "ham:corn"
     },
     "components": {
-      "minecraft:icon": "ham:herb",
-      "minecraft:hover_text_color": "white"
+      "minecraft:icon": "ham:corn",
+      "minecraft:hover_text_color": "yellow"
     }
   }
 }

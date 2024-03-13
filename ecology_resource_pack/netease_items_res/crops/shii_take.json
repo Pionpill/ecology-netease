@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:shii_take"
+    },
+    "components": {
+      "minecraft:icon": "ham:shii_take",
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

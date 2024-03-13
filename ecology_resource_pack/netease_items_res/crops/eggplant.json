@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:eggplant"
+    },
+    "components": {
+      "minecraft:icon": "ham:eggplant",
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

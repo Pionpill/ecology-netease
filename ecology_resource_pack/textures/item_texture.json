@@ -5,11 +5,35 @@
     "ham:apple_pie": {
       "textures": "textures/items/foods/apple_pie"
     },
-    "ham:herb": {
-      "textures": "textures/items/crops/herb"
+    "ham:banana": {
+      "textures": "textures/items/crops/banana"
+    },
+    "ham:corn": {
+      "textures": "textures/items/crops/corn"
+    },
+    "ham:eggplant": {
+      "textures": "textures/items/crops/eggplant"
     },
     "ham:herb_seeds": {
       "textures": "textures/items/crops/herb_seeds"
+    },
+    "ham:herb": {
+      "textures": "textures/items/crops/herb"
+    },
+    "ham:onion": {
+      "textures": "textures/items/crops/onion"
+    },
+    "ham:pepper": {
+      "textures": "textures/items/crops/pepper"
+    },
+    "ham:rice": {
+      "textures": "textures/items/crops/rice"
+    },
+    "ham:shii_take": {
+      "textures": "textures/items/crops/shii_take"
+    },
+    "ham:tomato": {
+      "textures": "textures/items/crops/tomato"
     },
     "ham:cooking_oil": {
       "textures": "textures/items/materials/cooking_oil"

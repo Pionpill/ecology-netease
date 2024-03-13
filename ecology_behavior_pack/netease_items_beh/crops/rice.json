@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:rice",
+      "register_to_create_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:max_stack_size": 32,
+      "minecraft:use_duration": 32,
+      "netease:customtips": {
+        "value": "§f--------------------\n§6§l种子\n§r§3温度: §525↔35\n§r§3土壤: §570\n§f--------------------\n§a+ 土壤敏感度高\n§c- 极怕旱，怕寒\n§7· 需要种在水中"
+      }
+    }
+  }
+}
