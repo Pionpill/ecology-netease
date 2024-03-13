@@ -6,7 +6,7 @@
       "textures": "textures/items/foods/apple_pie"
     },
     "ham:herb": {
-      "textures": "textures/items/materials/herb"
+      "textures": "textures/items/crops/herb"
     },
     "ham:herb_seeds": {
       "textures": "textures/items/crops/herb_seeds"
