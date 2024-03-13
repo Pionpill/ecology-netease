@@ -2,64 +2,64 @@
   "resource_pack_name": "ecology_resource_pack",
   "texture_data": {
     "ham:anvil": {
-      "textures": "textures/blocks/anvil"
+      "textures": "textures/blocks/workbenches/anvil"
     },
     "ham:barrel_bottom": {
-      "textures": "textures/blocks/barrel_bottom"
+      "textures": "textures/blocks/workbenches/barrel_bottom"
     },
     "ham:barrel_side": {
-      "textures": "textures/blocks/barrel_side"
+      "textures": "textures/blocks/workbenches/barrel_side"
     },
     "ham:bricks": {
-      "textures": "textures/blocks/bricks"
+      "textures": "textures/blocks/workbenches/bricks"
     },
     "ham:cooking_table_above": {
-      "textures": "textures/blocks/cooking_table_above"
+      "textures": "textures/blocks/workbenches/cooking_table_above"
     },
     "ham:cooking_table_side": {
-      "textures": "textures/blocks/cooking_table_side"
+      "textures": "textures/blocks/workbenches/cooking_table_side"
     },
     "ham:herb_stage_0": {
-      "textures": "textures/blocks/herb_stage_0"
+      "textures": "textures/blocks/crops/herb/herb_stage_0"
     },
     "ham:herb_stage_1": {
-      "textures": "textures/blocks/herb_stage_1"
+      "textures": "textures/blocks/crops/herb/herb_stage_1"
     },
     "ham:herb_stage_2": {
-      "textures": "textures/blocks/herb_stage_2"
+      "textures": "textures/blocks/crops/herb/herb_stage_2"
     },
     "ham:herb_stage_3": {
-      "textures": "textures/blocks/herb_stage_3"
+      "textures": "textures/blocks/crops/herb/herb_stage_3"
     },
     "ham:mix_plank": {
-      "textures": "textures/blocks/mix_plank"
+      "textures": "textures/blocks/workbenches/mix_plank"
     },
     "ham:oak_planks": {
-      "textures": "textures/blocks/oak_planks"
+      "textures": "textures/blocks/workbenches/oak_planks"
     },
     "ham:oil": {
-      "textures": "textures/blocks/oil"
+      "textures": "textures/blocks/workbenches/oil"
     },
     "ham:smooth_stone": {
-      "textures": "textures/blocks/smooth_stone"
+      "textures": "textures/blocks/workbenches/smooth_stone"
     },
     "ham:spruce_planks": {
-      "textures": "textures/blocks/spruce_planks"
+      "textures": "textures/blocks/workbenches/spruce_planks"
     },
     "ham:steel_pan_side": {
-      "textures": "textures/blocks/steel_pan_side"
+      "textures": "textures/blocks/workbenches/steel_pan_side"
     },
     "ham:stove_above": {
-      "textures": "textures/blocks/stove_above"
+      "textures": "textures/blocks/workbenches/stove_above"
     },
     "ham:stove_front": {
-      "textures": "textures/blocks/stove_front"
+      "textures": "textures/blocks/workbenches/stove_front"
     },
     "ham:stove_side": {
-      "textures": "textures/blocks/stove_side"
+      "textures": "textures/blocks/workbenches/stove_side"
     },
     "ham:water": {
-      "textures": "textures/blocks/water"
+      "textures": "textures/blocks/workbenches/water"
     }
   },
   "texture_name": "atlas.terrain"

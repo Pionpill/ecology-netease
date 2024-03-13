@@ -3,22 +3,22 @@
   "texture_name": "atlas.items",
   "texture_data": {
     "ham:apple_pie": {
-      "textures": "textures/items/apple_pie"
+      "textures": "textures/items/foods/apple_pie"
     },
     "ham:herb": {
-      "textures": "textures/items/herb"
+      "textures": "textures/items/materials/herb"
     },
     "ham:herb_seeds": {
-      "textures": "textures/items/herb_seeds"
+      "textures": "textures/items/crops/herb_seeds"
     },
     "ham:cooking_oil": {
-      "textures": "textures/items/cooking_oil"
+      "textures": "textures/items/materials/cooking_oil"
     },
     "ham:salt": {
-      "textures": "textures/items/salt"
+      "textures": "textures/items/materials/salt"
     },
     "ham:seasoning": {
-      "textures": "textures/items/seasoning"
+      "textures": "textures/items/materials/seasoning"
     }
   }
 }

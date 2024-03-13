@@ -3,7 +3,7 @@
     {
       "name": "ecology",
       "labelText": "tab.ecology",
-      "icon": "textures/items/apple_pie"
+      "icon": "textures/items/foods/apple_pie"
     }
   ]
 }
