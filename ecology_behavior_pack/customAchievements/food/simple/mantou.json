@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-food-mantou",
+  "parent_node": "ham-ecology-food-simple",
+  "depend_parent": false,
+  "title": "馒头",
+  "unfinished_icon": "textures/items/foods/simple/mantou",
+  "finished_icon": "textures/items/foods/simple/mantou",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "馒头",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

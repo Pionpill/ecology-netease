@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-food-noodles",
+  "parent_node": "ham-ecology-food",
+  "depend_parent": false,
+  "title": "面",
+  "unfinished_icon": "textures/items/foods/noodles/plain_noodles",
+  "finished_icon": "textures/items/foods/noodles/plain_noodles",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "面",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

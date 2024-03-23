@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-food-tomato_egg_noodles",
+  "parent_node": "ham-ecology-food-plain_noodles",
+  "depend_parent": false,
+  "title": "番茄鸡蛋面",
+  "unfinished_icon": "textures/items/foods/noodles/tomato_egg_noodles",
+  "finished_icon": "textures/items/foods/noodles/tomato_egg_noodles",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "番茄鸡蛋面",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

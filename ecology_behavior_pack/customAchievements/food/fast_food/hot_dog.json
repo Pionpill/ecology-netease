@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-food-hot_dog",
+  "parent_node": "ham-ecology-food-burger_simple",
+  "depend_parent": false,
+  "title": "热狗",
+  "unfinished_icon": "textures/items/foods/fast_food/hot_dog",
+  "finished_icon": "textures/items/foods/fast_food/hot_dog",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "热狗",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

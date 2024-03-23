@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-material-mill",
+  "parent_node": "ham-ecology-material",
+  "depend_parent": false,
+  "title": "石磨",
+  "unfinished_icon": "textures/blocks/icon/mill_icon",
+  "finished_icon": "textures/blocks/icon/mill_icon",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "石磨",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

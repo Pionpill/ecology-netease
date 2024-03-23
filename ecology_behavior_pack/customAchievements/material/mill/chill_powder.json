@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-material-chill_powder",
+  "parent_node": "ham-ecology-material-seasoning",
+  "depend_parent": false,
+  "title": "辣椒粉",
+  "unfinished_icon": "textures/items/materials/chill_powder",
+  "finished_icon": "textures/items/materials/chill_powder",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "辣椒粉",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

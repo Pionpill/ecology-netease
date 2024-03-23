@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-food-pork_sauce_noodles",
+  "parent_node": "ham-ecology-food-plain_noodles",
+  "depend_parent": false,
+  "title": "肉酱面",
+  "unfinished_icon": "textures/items/foods/noodles/pork_sauce_noodles",
+  "finished_icon": "textures/items/foods/noodles/pork_sauce_noodles",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "肉酱面",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

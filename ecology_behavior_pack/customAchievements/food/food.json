@@ -1,0 +1,22 @@
+{
+  "node_ID": "ham-ecology-food",
+  "title": "图签-食物",
+  "unfinished_icon": "textures/items/foods/pie/apple_pie",
+  "finished_icon": "textures/items/foods/pie/apple_pie",
+  "use_default_icon_background": true,
+  "window_background": "textures/blocks/brick",
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "§r解锁: §c种植任意模组植株",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 20,
+        "string": "发掘作物"
+      }
+    }
+  ],
+  "is_hidden": false
+}

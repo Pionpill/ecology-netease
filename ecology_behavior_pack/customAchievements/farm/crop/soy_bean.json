@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-soy_bean",
+  "parent_node": "ham-ecology-farm-crop",
+  "depend_parent": false,
+  "title": "黄豆",
+  "unfinished_icon": "textures/items/crops/crop/soy_bean",
+  "finished_icon": "textures/items/crops/crop/soy_bean",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "黄豆",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:soy_bean",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

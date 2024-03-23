@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-food-cooked_rice",
+  "parent_node": "ham-ecology-food-rice",
+  "depend_parent": false,
+  "title": "熟米饭",
+  "unfinished_icon": "textures/items/foods/rice/cooked_rice",
+  "finished_icon": "textures/items/foods/rice/cooked_rice",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "熟米饭",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

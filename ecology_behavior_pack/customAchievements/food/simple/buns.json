@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-food-buns",
+  "parent_node": "ham-ecology-food-mantou",
+  "depend_parent": false,
+  "title": "包子",
+  "unfinished_icon": "textures/items/foods/simple/buns",
+  "finished_icon": "textures/items/foods/simple/buns",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "包子",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

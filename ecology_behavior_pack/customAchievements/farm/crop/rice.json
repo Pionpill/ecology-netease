@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-rice_plant",
+  "parent_node": "ham-ecology-farm-corn",
+  "depend_parent": false,
+  "title": "稻米",
+  "unfinished_icon": "textures/items/crops/crop/rice_plant",
+  "finished_icon": "textures/items/crops/crop/rice_plant",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "稻米",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:rice",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}
