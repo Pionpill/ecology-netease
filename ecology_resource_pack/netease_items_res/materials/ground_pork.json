@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:ground_pork"
+    },
+    "components": {
+      "minecraft:icon": "ham:ground_pork",
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

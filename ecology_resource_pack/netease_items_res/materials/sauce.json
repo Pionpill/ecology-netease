@@ -2,11 +2,11 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:salt"
+      "identifier": "ham:sauce"
     },
     "components": {
-      "minecraft:icon": "ham:salt",
-      "minecraft:hover_text_color": "white"
+      "minecraft:icon": "ham:sauce",
+      "minecraft:hover_text_color": "aqua"
     }
   }
 }

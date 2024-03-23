@@ -6,7 +6,7 @@
     },
     "components": {
       "minecraft:icon": "ham:cooking_oil",
-      "minecraft:hover_text_color": "green"
+      "minecraft:hover_text_color": "white"
     }
   }
 }

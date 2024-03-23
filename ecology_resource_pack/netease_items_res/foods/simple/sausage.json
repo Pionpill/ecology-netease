@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:sausage"
+    },
+    "components": {
+      "minecraft:icon": "ham:sausage",
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

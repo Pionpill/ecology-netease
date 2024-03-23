@@ -2,10 +2,10 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:seasoning"
+      "identifier": "ham:lettuce"
     },
     "components": {
-      "minecraft:icon": "ham:seasoning",
+      "minecraft:icon": "ham:lettuce",
       "minecraft:hover_text_color": "white"
     }
   }

@@ -2,10 +2,10 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:seasoning"
+      "identifier": "ham:onion"
     },
     "components": {
-      "minecraft:icon": "ham:seasoning",
+      "minecraft:icon": "ham:onion",
       "minecraft:hover_text_color": "white"
     }
   }
