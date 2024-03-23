@@ -1,217 +1,217 @@
 {
-   "background_image" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_direction" : "left",
-      "clip_offset" : [ 0, 0 ],
-      "clip_ratio" : 0.0,
-      "clips_children" : false,
-      "enabled" : true,
-      "fill" : false,
-      "grayscale" : false,
-      "is_new_nine_slice" : false,
-      "keep_ratio" : true,
-      "layer" : 1,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "nine_slice_buttom" : 0,
-      "nine_slice_left" : 0,
-      "nine_slice_right" : 0,
-      "nine_slice_top" : 0,
-      "nineslice_size" : [ 0, 0, 0, 0 ],
-      "offset" : [ 0.0, -1.0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ "default", "default" ],
-      "texture" : "textures/ui/dialog_background_opaque",
-      "type" : "image",
-      "uv" : [ 0, 0 ],
-      "uv_size" : [ 0, 0 ],
-      "visible" : true
-   },
-   "close_button@common.button" : {
-      "$control_alpha" : 1.0,
-      "$default_texture" : "textures/ui/close_button_default",
-      "$hover_texture" : "textures/ui/close_button_hover_light",
-      "$is_new_nine_slice" : false,
-      "$label_color" : [ 0.0, 0.0, 0.0 ],
-      "$label_font_scale_factor" : 1.409999966621399,
-      "$label_font_size" : "normal",
-      "$label_layer" : 3,
-      "$label_offset" : [ 0, 0 ],
-      "$label_text" : "",
-      "$nine_slice_buttom" : 0,
-      "$nine_slice_left" : 0,
-      "$nine_slice_right" : 0,
-      "$nine_slice_top" : 0,
-      "$nineslice_size" : [ 0, 0, 0, 0 ],
-      "$pressed_button_name" : "%stew_pot_screen.click",
-      "$pressed_texture" : "textures/ui/close_button_pressed_light",
-      "$texture_layer" : 2,
-      "alpha" : 1.0,
-      "anchor_from" : "top_right",
-      "anchor_to" : "top_right",
-      "bindings" : [
-         {
-            "binding_collection_name" : "",
-            "binding_condition" : "always_when_visible",
-            "binding_type" : "collection_details"
-         }
-      ],
-      "button_mappings" : [],
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "default@stew_pot_screen.default" : {}
-         },
-         {
-            "hover@stew_pot_screen.hover" : {}
-         },
-         {
-            "pressed@stew_pot_screen.pressed" : {}
-         }
-      ],
-      "draggable" : "not_draggable",
-      "enabled" : true,
-      "is_handle_button_move_event" : true,
-      "layer" : 3,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ -4.0, 4.0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 16, 16 ],
-      "visible" : true
-   },
-   "default" : {
-      "alpha" : "$control_alpha",
-      "is_new_nine_slice" : "$is_new_nine_slice",
-      "layer" : "$texture_layer",
-      "nine_slice_buttom" : "$nine_slice_buttom",
-      "nine_slice_left" : "$nine_slice_left",
-      "nine_slice_right" : "$nine_slice_right",
-      "nine_slice_top" : "$nine_slice_top",
-      "nineslice_size" : "$nineslice_size",
-      "texture" : "$default_texture",
-      "type" : "image"
-   },
-   "hover" : {
-      "alpha" : "$control_alpha",
-      "is_new_nine_slice" : "$is_new_nine_slice",
-      "layer" : "$texture_layer",
-      "nine_slice_buttom" : "$nine_slice_buttom",
-      "nine_slice_left" : "$nine_slice_left",
-      "nine_slice_right" : "$nine_slice_right",
-      "nine_slice_top" : "$nine_slice_top",
-      "nineslice_size" : "$nineslice_size",
-      "texture" : "$hover_texture",
-      "type" : "image"
-   },
-   "main" : {
-      "absorbs_input" : true,
-      "always_accepts_input" : false,
-      "controls" : [
-         {
-            "main_panel@stew_pot_screen.main_panel" : {}
-         },
-         {
-            "furnace_panel@panel.stew_pot_panel" : {
-               "layer" : 8,
-               "offset" : [ 0.0, -36.0 ]
-            }
-         },
-         {
-            "inventory_panel@panel.inventory_panel" : {
-               "layer" : 7,
-               "offset" : [ 0, 52 ]
-            }
-         }
-      ],
-      "force_render_below" : false,
-      "is_showing_menu" : true,
-      "render_game_behind" : true,
-      "render_only_when_topmost" : true,
-      "should_steal_mouse" : false,
-      "type" : "screen"
-   },
-   "main_panel" : {
-      "alpha" : 1.0,
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "controls" : [
-         {
-            "background_image@stew_pot_screen.background_image" : {}
-         },
-         {
-            "close_button@stew_pot_screen.close_button" : {}
-         },
-         {
-            "stew_pot_title@stew_pot_screen.stew_pot_title" : {}
-         }
-      ],
-      "enabled" : true,
-      "layer" : 0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 0 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "size" : [ 174, 192 ],
-      "type" : "panel",
-      "visible" : true
-   },
-   "namespace" : "stew_pot_screen",
-   "netease_editor_template_image" : {
-      "anchor_from" : "center",
-      "anchor_to" : "center",
-      "layer" : 1,
-      "offset" : [ 0, 0 ],
-      "size" : [ "50%", "50%" ],
-      "texture" : "textures/netease/common/image/default",
-      "type" : "image",
-      "uv" : [ 0, 0 ],
-      "uv_size" : [ 107, 107 ],
-      "visible" : true
-   },
-   "pressed" : {
-      "alpha" : "$control_alpha",
-      "is_new_nine_slice" : "$is_new_nine_slice",
-      "layer" : "$texture_layer",
-      "nine_slice_buttom" : "$nine_slice_buttom",
-      "nine_slice_left" : "$nine_slice_left",
-      "nine_slice_right" : "$nine_slice_right",
-      "nine_slice_top" : "$nine_slice_top",
-      "nineslice_size" : "$nineslice_size",
-      "texture" : "$pressed_texture",
-      "type" : "image"
-   },
-   "stew_pot_title" : {
-      "alpha" : 1.0,
-      "anchor_from" : "top_middle",
-      "anchor_to" : "top_middle",
-      "clip_offset" : [ 0, 0 ],
-      "clips_children" : false,
-      "color" : [ 0.0, 0.0, 0.0 ],
-      "enabled" : true,
-      "font_scale_factor" : 1.0,
-      "font_size" : "normal",
-      "font_type" : "default",
-      "layer" : 1,
-      "line_padding" : 0.0,
-      "max_size" : [ 0, 0 ],
-      "min_size" : [ 0, 0 ],
-      "offset" : [ 0, 7 ],
-      "priority" : 0,
-      "propagate_alpha" : false,
-      "shadow" : false,
-      "size" : [ 100, 11 ],
-      "text" : "炖锅",
-      "text_alignment" : "center",
-      "type" : "label",
-      "visible" : true
-   }
+  "background_image": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0.0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 1,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0.0, -1.0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": ["default", "default"],
+    "texture": "textures/ui/dialog_background_opaque",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "close_button@common.button": {
+    "$control_alpha": 1.0,
+    "$default_texture": "textures/ui/close_button_default",
+    "$hover_texture": "textures/ui/close_button_hover_light",
+    "$is_new_nine_slice": false,
+    "$label_color": [0.0, 0.0, 0.0],
+    "$label_font_scale_factor": 1.409999966621399,
+    "$label_font_size": "normal",
+    "$label_layer": 3,
+    "$label_offset": [0, 0],
+    "$label_text": "",
+    "$nine_slice_buttom": 0,
+    "$nine_slice_left": 0,
+    "$nine_slice_right": 0,
+    "$nine_slice_top": 0,
+    "$nineslice_size": [0, 0, 0, 0],
+    "$pressed_button_name": "%stew_pot_screen.click",
+    "$pressed_texture": "textures/ui/close_button_pressed_light",
+    "$texture_layer": 2,
+    "alpha": 1.0,
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "bindings": [
+      {
+        "binding_collection_name": "",
+        "binding_condition": "always_when_visible",
+        "binding_type": "collection_details"
+      }
+    ],
+    "button_mappings": [],
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "default@stew_pot_screen.default": {}
+      },
+      {
+        "hover@stew_pot_screen.hover": {}
+      },
+      {
+        "pressed@stew_pot_screen.pressed": {}
+      }
+    ],
+    "draggable": "not_draggable",
+    "enabled": true,
+    "is_handle_button_move_event": true,
+    "layer": 3,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [-4.0, 4.0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 16],
+    "visible": true
+  },
+  "default": {
+    "alpha": "$control_alpha",
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": "$texture_layer",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$default_texture",
+    "type": "image"
+  },
+  "hover": {
+    "alpha": "$control_alpha",
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": "$texture_layer",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$hover_texture",
+    "type": "image"
+  },
+  "main": {
+    "absorbs_input": true,
+    "always_accepts_input": false,
+    "controls": [
+      {
+        "main_panel@stew_pot_screen.main_panel": {}
+      },
+      {
+        "furnace_panel@panel.stew_pot_panel": {
+          "layer": 8,
+          "offset": [0.0, -36.0]
+        }
+      },
+      {
+        "inventory_panel@panel.inventory_panel": {
+          "layer": 7,
+          "offset": [0, 52]
+        }
+      }
+    ],
+    "force_render_below": false,
+    "is_showing_menu": true,
+    "render_game_behind": true,
+    "render_only_when_topmost": true,
+    "should_steal_mouse": false,
+    "type": "screen"
+  },
+  "main_panel": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "background_image@stew_pot_screen.background_image": {}
+      },
+      {
+        "close_button@stew_pot_screen.close_button": {}
+      },
+      {
+        "stew_pot_title@stew_pot_screen.stew_pot_title": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [174, 192],
+    "type": "panel",
+    "visible": true
+  },
+  "namespace": "stew_pot_screen",
+  "netease_editor_template_image": {
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 1,
+    "offset": [0, 0],
+    "size": ["50%", "50%"],
+    "texture": "textures/netease/common/image/default",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [107, 107],
+    "visible": true
+  },
+  "pressed": {
+    "alpha": "$control_alpha",
+    "is_new_nine_slice": "$is_new_nine_slice",
+    "layer": "$texture_layer",
+    "nine_slice_buttom": "$nine_slice_buttom",
+    "nine_slice_left": "$nine_slice_left",
+    "nine_slice_right": "$nine_slice_right",
+    "nine_slice_top": "$nine_slice_top",
+    "nineslice_size": "$nineslice_size",
+    "texture": "$pressed_texture",
+    "type": "image"
+  },
+  "stew_pot_title": {
+    "alpha": 1.0,
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "color": [0.0, 0.0, 0.0],
+    "enabled": true,
+    "font_scale_factor": 1.0,
+    "font_size": "normal",
+    "font_type": "default",
+    "layer": 1,
+    "line_padding": 0.0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 7],
+    "priority": 0,
+    "propagate_alpha": false,
+    "shadow": false,
+    "size": [100, 11],
+    "text": "煮锅",
+    "text_alignment": "center",
+    "type": "label",
+    "visible": true
+  }
 }
