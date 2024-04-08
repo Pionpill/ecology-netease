@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-farm-pepper",
-  "parent_node": "ham-ecology-farm-herb_seeds",
+  "parent_node": "ham-ecology-farm-herb",
   "depend_parent": false,
   "title": "辣椒",
   "unfinished_icon": "textures/items/crops/seasoning/pepper",
