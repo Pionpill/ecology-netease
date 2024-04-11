@@ -47,19 +47,24 @@ class CropServerSystem(ServerSystem):
     def __HandlePlantCrop(self, args):
         """种植作物"""
         # 判断土地上方是否为空气
-        position = (args["x"], args["y"], args["z"])
-        dimensionId = args["dimensionId"]
+        position = (args["x"], args["y"], args["z"])    # type: tuple[int, int, int]
+        dimensionId = args["dimensionId"]   # type: int
         abovePosition = positionUtils.GetAbovePosition(position)
-        aboveBlockName = blockInfoComp.GetBlockNew(abovePosition, dimensionId).get('name')
-        if aboveBlockName != "minecraft:air":
+        aboveBlockName = blockInfoComp.GetBlockNew(abovePosition, dimensionId).get('name')  # type: str | None
+        if aboveBlockName is None or aboveBlockName != "minecraft:air":
+            return
+        
+        belowPosition = positionUtils.GetBelowPosition(position)
+        belowBlockName = blockInfoComp.GetBlockNew(belowPosition, dimensionId).get('name')  # type: str | None
+        if belowBlockName is None:
             return
         
         # 判断生态是否可以种植
-        blockName = args['blockName']
-        itemName = args['itemDict']['newItemName']
-        entityId = args['entityId']
+        blockName = args['blockName']   # type: str
+        itemName = args['itemDict']['newItemName']  # type: str
+        entityId = args['entityId']     # type: str
         ecologyInfo = EcologyFacade.GetEcologyInfo(position, dimensionId)
-        canPlantResult = CropService.CanPlant(itemName, blockName, ecologyInfo.temperature, ecologyInfo.rainfall)
+        canPlantResult = CropService.CanPlant(itemName, belowBlockName, ecologyInfo.temperature, ecologyInfo.rainfall)
         if canPlantResult is not True:
             msgComp = engineCompFactory.CreateMsg(entityId)
             if canPlantResult == 'block' and blockName in ["minecraft:grass"]:
@@ -108,7 +113,7 @@ class CropServerSystem(ServerSystem):
 
         # 作物生长
         weather = 'rain' if weatherComp.IsRaining else None
-        growTicks = CropService.GetGrowTick(blockName, ecologyInfo, brightness, weather)
+        growTicks = CropService.CalculateGrowTick(blockName, ecologyInfo, brightness, weather)
         blockTick = blockEntityData['tick'] or 0
         tickCount = CropService.GetStageTickCount(blockName)
         nextTick = growTicks + blockTick

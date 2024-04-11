@@ -1,4 +1,5 @@
-from scripts.common.data.crop.crop import CROP_DATA
+from scripts.common.data.crop import CROP_DATA
+
 
 def IsCrop(blockOrItemName):
     # type: (str) -> bool
@@ -8,6 +9,7 @@ def IsCrop(blockOrItemName):
 def GetSeedKey(blockOrItemName):
     # type: (str) -> str
     """获取作物块/种子对应的seed键名"""
+    # FIXME 这样写有问题
     key = blockOrItemName.split('_')[0]
     return key if 'ham:' in key else 'ham:' + key
 

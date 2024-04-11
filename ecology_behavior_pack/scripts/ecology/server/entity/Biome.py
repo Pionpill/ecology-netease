@@ -6,7 +6,7 @@ class Biome(object):
         self.temperature = temperature * 20
         self.rainfall = rainfall
         self.tags = tags
-        
+
     @staticmethod
     def FromData(biomeData, biomeName = None):
         # type: (dict, str) -> Biome
