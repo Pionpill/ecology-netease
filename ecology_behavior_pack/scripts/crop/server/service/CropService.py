@@ -54,7 +54,7 @@ class CropService(object):
     
     @staticmethod
     def GetStageTickCount(blockName):
-        # type: (str) -> int
+        # type: (str) -> int | None
         """获取作物块进入下一阶段所需要 tick 总数"""
         crop = CropService.__GetCrop(blockName)
         stageId = CropService.__GetStageId(blockName)

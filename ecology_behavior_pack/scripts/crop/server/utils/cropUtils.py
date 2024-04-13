@@ -19,6 +19,6 @@ def GetBlockStageName(blockOrItemName, stageId):
     return blockOrItemName.split('_')[0] + '_stage_' + str(stageId)
 
 def GetBlockStageDict(blockOrItemName, stageId):
-    # type: (str, int) -> str
+    # type: (str, int) -> dict
     """获取种植后作物方块字典"""
     return {"name": blockOrItemName.split('_')[0] + '_stage_' + str(stageId), "aux": 0}

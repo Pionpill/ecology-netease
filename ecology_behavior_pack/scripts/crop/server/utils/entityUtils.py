@@ -1,8 +1,11 @@
+from mod.server.blockEntityData import BlockEntityData
+
 from scripts.common.params import BiomeInfo
 from scripts.ecology.server.facade import EcologyFacade
 
+
 def SetBiomeInfoToBlockEntityData(blockEntityData, biomeInfo):
-    # type: (dict, BiomeInfo) -> None
+    # type: (BlockEntityData, BiomeInfo) -> None
     blockEntityData['biome_name'] = biomeInfo.name
     blockEntityData['biome_name_cn'] = biomeInfo.name_cn
     blockEntityData['biome_rainfall'] = biomeInfo.rainfall
@@ -10,7 +13,7 @@ def SetBiomeInfoToBlockEntityData(blockEntityData, biomeInfo):
     blockEntityData['biome_tags'] = biomeInfo.tags
 
 def GetBiomeInfoFromBlockEntityData(blockEntityData):
-    # type: (dict) -> BiomeInfo
+    # type: (BlockEntityData) -> BiomeInfo
     biomeData = {
         "name": blockEntityData['biome_name'],
         "name_cn": blockEntityData['biome_name_cn'],

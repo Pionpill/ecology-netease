@@ -1,5 +1,6 @@
 import mod.server.extraServerApi as serverApi
 
+from scripts.common.modConfig import __DEV__
 from scripts.common.data.crop.seed import SEED_LIST
 from scripts.common import logger
 from scripts.common.utils import engineUtils, positionUtils
@@ -13,6 +14,7 @@ levelId = serverApi.GetLevelId()
 engineCompFactory = serverApi.GetEngineCompFactory()
 blockInfoComp = engineCompFactory.CreateBlockInfo(levelId)
 weatherComp = engineCompFactory.CreateWeather(levelId)
+blockEntityDataComp = engineCompFactory.CreateBlockEntityData(levelId)
 
 class CropServerSystem(ServerSystem):
     def __init__(self, namespace, systemName):
@@ -54,17 +56,12 @@ class CropServerSystem(ServerSystem):
         if aboveBlockName is None or aboveBlockName != "minecraft:air":
             return
         
-        belowPosition = positionUtils.GetBelowPosition(position)
-        belowBlockName = blockInfoComp.GetBlockNew(belowPosition, dimensionId).get('name')  # type: str | None
-        if belowBlockName is None:
-            return
-        
         # 判断生态是否可以种植
         blockName = args['blockName']   # type: str
         itemName = args['itemDict']['newItemName']  # type: str
         entityId = args['entityId']     # type: str
         ecologyInfo = EcologyFacade.GetEcologyInfo(position, dimensionId)
-        canPlantResult = CropService.CanPlant(itemName, belowBlockName, ecologyInfo.temperature, ecologyInfo.rainfall)
+        canPlantResult = CropService.CanPlant(itemName, blockName, ecologyInfo.temperature, ecologyInfo.rainfall)
         if canPlantResult is not True:
             msgComp = engineCompFactory.CreateMsg(entityId)
             if canPlantResult == 'block' and blockName in ["minecraft:grass"]:
@@ -76,12 +73,15 @@ class CropServerSystem(ServerSystem):
             return
         
         # 种植作物
-        plantBlockDict = cropUtils.GetBlockStageDict(itemName, 0)
-        blockInfoComp.SetBlockNew(abovePosition, plantBlockDict, dimensionId=dimensionId)
         itemComp = engineCompFactory.CreateItem(entityId)
         slotId = itemComp.GetSelectSlotId()
-        carriedItemCount = itemComp.GetPlayerItem(minecraftEnum.ItemPosType.CARRIED,
-                                          0).get("count")
+        carriedItemCount = itemComp.GetPlayerItem(minecraftEnum.ItemPosType.CARRIED, 0).get("count")
+        if carriedItemCount is None:
+            msgComp = engineCompFactory.CreateMsg(entityId)
+            msgComp.NotifyOneMessage(entityId, '玩家手上不存在种子，这是一个系统 bug，请报告给开发者群：712936357', '§c')
+            return
+        plantBlockDict = cropUtils.GetBlockStageDict(itemName, 0)
+        result = blockInfoComp.SetBlockNew(abovePosition, plantBlockDict, dimensionId = dimensionId)
         itemComp.SetInvItemNum(slotId, carriedItemCount - 1)
 
     def __HandleCropBelowBlockChange(self, args):
@@ -90,13 +90,18 @@ class CropServerSystem(ServerSystem):
             blockInfoComp.SetBlockNew(position, {'name': 'minecraft:air', 'aux': 0}, dimensionId=args["dimensionId"])
 
     def __HandleCropStageTick(self, args):
-        blockName = args['blockName']
-        position = (args['posX'], args['posY'], args['posZ'])
-        dimensionId = args['dimensionId']
+        """作物tick生长"""
+        blockName = args['blockName']   # type: str
+        position = (args['posX'], args['posY'], args['posZ']) # type: tuple[int, int, int]
+        dimensionId = args['dimensionId']   # type: int
 
         # 从作物方块中获取生物群系信息，减少重复计算(空间换时间)
-        blockEntityData = engineCompFactory.CreateBlockEntityData(levelId).GetBlockEntityData(dimensionId, position)
+        blockEntityData = blockEntityDataComp.GetBlockEntityData(dimensionId, position)
         if blockEntityData is None:
+            logger.error('不存在作物 {} 实体数据'.format(blockName))
+            return
+        tickCount = CropService.GetStageTickCount(blockName)
+        if tickCount is None:
             return
         if blockEntityData['biome_name'] is None:
             biomeInfo = EcologyFacade.GetBiomeInfo(position, dimensionId)
@@ -108,6 +113,9 @@ class CropServerSystem(ServerSystem):
         brightness = blockInfoComp.GetBlockLightLevel(position, dimensionId)
         belowPosition = positionUtils.GetBelowPosition(position)
         plantBlockName = blockInfoComp.GetBlockNew(belowPosition, dimensionId).get('name')
+        if plantBlockName is None:
+            blockInfoComp.SetBlockNew(position, {'name': 'minecraft:air', 'aux': 0}, dimensionId)
+            return
         if not CropService.CanGrow(blockName, ecologyInfo, brightness, plantBlockName):
             return
 
@@ -115,7 +123,6 @@ class CropServerSystem(ServerSystem):
         weather = 'rain' if weatherComp.IsRaining else None
         growTicks = CropService.CalculateGrowTick(blockName, ecologyInfo, brightness, weather)
         blockTick = blockEntityData['tick'] or 0
-        tickCount = CropService.GetStageTickCount(blockName)
         nextTick = growTicks + blockTick
         if nextTick <= tickCount:
             blockEntityData['tick'] = nextTick
@@ -125,6 +132,9 @@ class CropServerSystem(ServerSystem):
             blockNameList[-1] = str(int(blockNameList[-1]) + 1)
             nextBlock = {"name": "_".join(blockNameList), "aux": 0}
             blockInfoComp.SetBlockNew(position, nextBlock, dimensionId=dimensionId)
-            newBlockEntityData = engineCompFactory.CreateBlockEntityData(levelId).GetBlockEntityData(dimensionId, position)
+            newBlockEntityData = blockEntityDataComp.GetBlockEntityData(dimensionId, position)
+            if newBlockEntityData is None:
+                logger.error('生长后 {} 无法获取实体数据'.format(nextBlock.get('name', blockName)))
+                return
             entityUtils.SetBiomeInfoToBlockEntityData(newBlockEntityData, entityBiomeInfo)
             newBlockEntityData['tick'] = nextTick - tickCount
