@@ -10,7 +10,7 @@ LAND_DATA = {
         "fertility": 110,
         "tag": ("dirt", "fungi"),
     },
-    "minecraft:grass_block": {
+    "minecraft:grass": {
         "fertility": 100,
         "tag": ("dirt"),
     },
