@@ -44,8 +44,8 @@ class LootInfo(object):
 class Crop(object):
     def __init__(self, seedKey):
         # type: (str) -> None 
-        data = CROP_DATA.get(seedKey)
         self.seedName = seedKey
+        data = CROP_DATA.get(seedKey)
         if data is None:
             raise AddonDataError('{}: 不存在对应的作物数据'.format(seedKey))
         self.__data = data
@@ -55,18 +55,18 @@ class Crop(object):
     def IsBeta(self):
         # type: () -> bool
         """判断是否beta上线"""
-        return self.__GetField("beta", False)
+        return self._GetField("beta", False)
     
     def GetSeedName(self):
         # type: () -> str
         """获取对应的种子名称"""
-        return self.__GetField("seed")
+        return self._GetField("seed")
     
     def GetGrowStageTuple(self):
         # type: () -> tuple[GrowStageInfo, ...]
         """获取生长状态元组"""
         if self.growStageTuple is None:
-            stages = self.__GetField(("grow", "stage")) # type: tuple[dict]
+            stages = self._GetField(("grow", "stage")) # type: tuple[dict]
             result = [] # list[GrowStageInfo, ...]
             for index, stage in enumerate(stages):
                 result.append(GrowStageInfo.FromData(stage, self.seedName, index))
@@ -84,11 +84,6 @@ class Crop(object):
         stageLength = self.GetGrowStageLength()
         return stage == (stageLength - 1)
     
-    def CanGrow(self):
-        # type: () -> bool
-        """判断能否生长"""
-        return self.GetGrowStageLength() > 1
-    
     def GetGrowStageInfo(self, stage):
         # type: (int) -> GrowStageInfo
         """获取总的状态数"""
@@ -100,18 +95,18 @@ class Crop(object):
     def GetGrowHarvestCount(self):
         # type: () -> int
         """获取可收获次数"""
-        return self.__GetField(("grow", "harvest", "count"), 1)
+        return self._GetField(("grow", "harvest", "count"), 1)
 
     def GetGrowHarvestStage(self):
         # type: () -> tuple[int]
         """获取可收获的状态，返回一个元组"""
-        stage = self.__GetField(("grow", "harvest", "stage"))
+        stage = self._GetField(("grow", "harvest", "stage"))
         return stage if isinstance(stage, tuple) else (stage)
 
     def GetGrowHarvestReturn(self):
         # type: () -> int
         """获取收获后返回的状态数"""
-        return self.__GetField(("grow", "harvest", "return"))
+        return self._GetField(("grow", "harvest", "return"))
     
     def GetGrowTemperature(self, type = 'can'):
         # type: (str) -> tuple[int, int]
@@ -119,7 +114,7 @@ class Crop(object):
         
         :param type: 范围类型 can, suit
         """
-        return self.__GetField(("grow", "temperature", type))
+        return self._GetField(("grow", "temperature", type))
 
     def GetGrowRainfall(self, type = 'can'):
         # type: (str) -> tuple[int, int]
@@ -127,7 +122,7 @@ class Crop(object):
         
         :param type: 范围类型 can, suit
         """
-        return self.__GetField(("grow", "rainfall", type))
+        return self._GetField(("grow", "rainfall", type))
 
     def GetGrowBrightness(self, type = 'can'):
         # type: (str) -> tuple[int, int]
@@ -135,31 +130,31 @@ class Crop(object):
         
         :param type: 范围类型 can, suit
         """
-        return self.__GetField(("grow", "brightness", type))
+        return self._GetField(("grow", "brightness", type))
     
     def GetGrowRainMultiply(self):
         # type: () -> float
         """获取生长温度"""
-        return self.__GetField(("grow", "rain_multiply"))
+        return self._GetField(("grow", "rain_multiply"))
 
     def GetGrowFertilityMin(self):
         """获取最低土地肥沃度要求"""
-        return self.__GetField(("grow", "fertility", "min"))
+        return self._GetField(("grow", "fertility", "min"))
     
     def GetGrowFertilitySensitivity(self):
         # type: () -> int
         """获取土地肥沃灵敏度"""
-        return self.__GetField(("grow", "fertility", "sensitivity"))
+        return self._GetField(("grow", "fertility", "sensitivity"))
     
     def GetGrowLandType(self):
         # type: () -> tuple[str, ...]
         """获取可种植的土地类型"""
-        return self.__GetField(("grow", "fertility", "type"))
+        return self._GetField(("grow", "fertility", "type"))
     
     def GetLoots(self, stage = None):
         # type: (int | None) -> tuple[LootInfo, ...] | None
         """获取某一状态的掉落物表"""
-        lootField = self.__GetField("loot") # type: tuple[dict] | None
+        lootField = self._GetField("loot") # type: tuple[dict] | None
         lastStage = self.GetGrowStageLength() - 1
         if isinstance(lootField, tuple) and (stage is None or self.IsLastStage(stage)):
             if self.lootsMap.get(lastStage) is None:
@@ -176,7 +171,7 @@ class Crop(object):
         raise AddonDataError('{} 凋落物数据异常'.format(self.seedName))
         return None
     
-    def __GetField(self, key, defaultValue = None, data = None):
+    def _GetField(self, key, defaultValue = None, data = None):
         """获取字段值，支持递归获取
         
         :param key: 键, str 或可迭代 str 容器

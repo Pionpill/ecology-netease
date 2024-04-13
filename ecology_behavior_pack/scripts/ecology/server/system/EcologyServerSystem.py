@@ -34,12 +34,10 @@ class EcologyServerSystem(ServerSystem):
         playerId = args["playerId"]
         itemComp = engineCompFactory.CreateItem(playerId)
         carriedItem = itemComp.GetPlayerItem(serverApi.GetMinecraftEnum().ItemPosType.CARRIED)
-        if not carriedItem:
-            return
-        if carriedItem.get('newItemName') != 'minecraft:shears':
+        if not carriedItem or carriedItem.get('newItemName') != 'minecraft:shears':
             return
 
-        x,y,z = args["x"], args["y"], args["z"]
-        ecologyInfo = BiomeService.GetEcologyInfo((x,y,z), args["dimensionId"])
+        position = (args["x"], args["y"], args["z"])
+        ecologyInfo = BiomeService.GetDynamicEcologyInfo(position, args["dimensionId"])
         msgComp = engineCompFactory.CreateMsg(args["playerId"])
         msgComp.NotifyOneMessage(playerId, str(ecologyInfo), "§2")

@@ -1,4 +1,4 @@
 from scripts.ecology.server.service.BiomeService import BiomeService
-from scripts.ecology.server.service.TimeService import TimeService
+from scripts.ecology.server.service.FrameService import FrameService
 
-__all__ = [BiomeService, TimeService]
+__all__ = [BiomeService, FrameService]

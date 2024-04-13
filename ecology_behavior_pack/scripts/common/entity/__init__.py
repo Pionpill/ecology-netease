@@ -6,6 +6,7 @@ entity 的数据都是只读的，且相同的数据使用单例模式返回实�
 """
 
 # 作物表，防止每次都需要 new Crop
+from scripts.common.entity.Biome import Biome
 from scripts.common.entity.Land import Land
 from scripts.common.error import AddonDataError
 from scripts.common.entity.Crop import Crop
@@ -46,4 +47,21 @@ def GetLand(blockName):
         landMap[blockName] = land
         return land
 
-__all__ = [GetCrop, GetLand]
+biomeMap = {} # type: dict[str, Biome]
+
+def GetBiome(biomeName):
+    # type: (str) -> Biome | None
+    """获取生态实例，单例模式"""
+    biome = biomeMap.get(biomeName)
+    if biome is not None:
+        return biome
+    try:
+        biome = Biome.FromBiomeName(biomeName)
+    except AddonDataError as e:
+        logger.warn(e.message)
+        return None
+    else:
+        biomeMap[biomeName] = biome
+        return biome
+
+__all__ = [GetCrop, GetLand, GetBiome]

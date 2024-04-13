@@ -16,15 +16,15 @@ class Land(object):
         # type: (int | None) -> int
         """获取土壤肥沃度"""
         key = ('aux', 'fertility') if aux else 'fertility'
-        return self.__GetField(key)
+        return self._GetField(key)
 
     def GetTags(self):
-        # type: () -> tuple[LandTag, ...]
+        # type: () -> tuple[LandTag]
         """获取土壤标签"""
-        tag = self.__GetField('tag')    
+        tag = self._GetField('tag')    
         return (tag,) if isinstance(tag, str) else tag  # type: ignore
 
-    def __GetField(self, key, defaultValue = None, data = None):
+    def _GetField(self, key, defaultValue = None, data = None):
         """获取字段值，支持递归获取
         
         :param key: 键, str 或可迭代 str 容器

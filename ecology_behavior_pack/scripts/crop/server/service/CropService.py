@@ -1,36 +1,38 @@
 import math
 import random
+from scripts.ecology.server.entity.Ecology import DynamicEcology
 from scripts.common import logger
 from scripts.common.error import AddonDevelopError
 from scripts.common.entity import Crop, GetCrop, GetLand
 from scripts.crop.server.utils import cropUtils
-from scripts.common.params import EcologyInfo
 from scripts.common.utils import mathUtils
 
 class CropService(object):
     @staticmethod
-    def CanPlant(itemName, plantBlockName, blockAux, temperature, rainfall):
-        # type: (str, str, int | None, int, float) -> str | bool
+    def CanPlant(itemName, landBlockName, blockAux, ecology):
+        # type: (str, str, int, DynamicEcology) -> str | bool
         """判断是否可以种植，返回 True 表示可种植，字符串(biome, block)表示不可种植原因"""
         crop = CropService.__GetCrop(itemName)
-        if not CropService.CanPlantOnBlock(itemName, plantBlockName, blockAux):
+        if not CropService.CanPlantOnBlock(itemName, landBlockName, blockAux):
             return 'block'
-        elif not mathUtils.between(temperature, crop.GetGrowTemperature('can')):
+        elif not mathUtils.between(ecology.GetAdjustTemperature(), crop.GetGrowTemperature('can')):
             return 'temperature'
-        elif not mathUtils.between(rainfall, crop.GetGrowRainfall('can')):
+        elif not mathUtils.between(ecology.GetAdjustRainfall(), crop.GetGrowRainfall('can')):
             return 'rainfall'
         return True
 
     @staticmethod
-    def CanGrow(blockOrItemName, ecology, brightness, plantBlockName, blockAux):
-        # type: (str, EcologyInfo, int, str, int | None) -> bool
+    def CanGrow(cropBlockName, landBlockName, blockAux, ecology, brightness):
+        # type: (str, str, int, DynamicEcology, int) -> bool
         """判断作物能否生长"""
-        crop = CropService.__GetCrop(blockOrItemName)
-        temperature = ecology.temperature
-        rainfall = ecology.rainfall
+        crop = CropService.__GetCrop(cropBlockName)
+        temperature = ecology.GetAdjustTemperature()
+        rainfall = ecology.GetAdjustRainfall()
 
         # 生长过程中，土地可能变化
-        if not CropService.CanPlantOnBlock(blockOrItemName, plantBlockName, blockAux):
+        if CropService.IsLastStage(cropBlockName):
+            return False
+        if not CropService.CanPlantOnBlock(cropBlockName, landBlockName, blockAux):
             return False
         if not mathUtils.between(temperature, crop.GetGrowTemperature('can')):
             return False
@@ -41,11 +43,11 @@ class CropService(object):
         return True
 
     @staticmethod
-    def CanPlantOnBlock(blockOrItemName, plantBlockName, blockAux = None):
+    def CanPlantOnBlock(blockOrItemName, landBlockName, blockAux = None):
         # type: (str, str, int | None) -> bool
         """判断某个作物(块)能否种植在方块上"""
         crop = CropService.__GetCrop(blockOrItemName)
-        land = GetLand(plantBlockName)
+        land = GetLand(landBlockName)
         if land is None:
             return False
         fertility = land.GetFertility(blockAux)
@@ -70,15 +72,15 @@ class CropService(object):
 
     @staticmethod
     def CalculateGrowTick(blockName, ecology, brightness, weather = None):
-        # type: (str, EcologyInfo, int, str | None) -> int
+        # type: (str, DynamicEcology, int, str | None) -> int
         """
         计算 tick 时生长的速度
         
         :param weather: 天气，rain, snow
         """
         crop = CropService.__GetCrop(blockName)
-        temperature = ecology.temperature
-        rainfall = ecology.rainfall
+        temperature = ecology.GetAdjustTemperature()
+        rainfall = ecology.GetAdjustRainfall()
         
         tickCount = 1
         tickCount *= CropService.__CalculateAbleTickRatio(temperature, crop.GetGrowTemperature('suit'), crop.GetGrowTemperature('can'))
