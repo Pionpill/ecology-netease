@@ -6,9 +6,19 @@ from scripts.common import logger
 class GrowStageInfo(object):
     """某状态的作物信息"""
     def __init__(self, tick, height):
-        # type: (int, tuple[int, int]) -> None
+        # type: (int | None, tuple[int, int]) -> None
         self.tick = tick
         self.height = height
+
+    @staticmethod
+    def FromData(data, seedName, index = None):
+        # type: (dict, str, int | None) -> GrowStageInfo
+        tick = data.get('tick')
+        height = data.get('height')
+        if height is None:
+            indexMsg = index or '最终'
+            raise AddonDataError('{}: 不存在状态 {} 对应的 height 数据'.format(seedName, indexMsg))
+        return GrowStageInfo(tick, height)
 
 class LootInfo(object):
     """凋落物信息"""
@@ -17,6 +27,19 @@ class LootInfo(object):
         self.itemName = itemName 
         self.chance = chance
         self.count = count
+    
+    @staticmethod
+    def FromData(data, seedName, index = None):
+        # type: (dict, str, int | None) -> LootInfo
+        indexMsg = index or '最终'
+        itemName = data.get('itemName')
+        if itemName is None:
+            raise AddonDataError('{}: 不存在 {} 状态的凋落物品名称'.format(seedName, indexMsg))
+        chance = data.get('chance', 100)
+        count = data.get('count')
+        if count is None:
+            raise AddonDataError('{}: 不存在 {} 状态的凋落物品数量'.format(seedName, indexMsg))
+        return LootInfo(itemName, chance, count)
 
 class Crop(object):
     def __init__(self, seedKey):
@@ -26,6 +49,8 @@ class Crop(object):
         if data is None:
             raise AddonDataError('{}: 不存在对应的作物数据'.format(seedKey))
         self.__data = data
+        self.growStageTuple = None # type: tuple[GrowStageInfo, ...] | None
+        self.lootsMap = {} # type: dict[int, tuple[LootInfo, ...]]
         
     def IsBeta(self):
         # type: () -> bool
@@ -40,7 +65,13 @@ class Crop(object):
     def GetGrowStageTuple(self):
         # type: () -> tuple[GrowStageInfo, ...]
         """获取生长状态元组"""
-        return self.__GetField(("grow", "stage"))
+        if self.growStageTuple is None:
+            stages = self.__GetField(("grow", "stage")) # type: tuple[dict]
+            result = [] # list[GrowStageInfo, ...]
+            for index, stage in enumerate(stages):
+                result.append(GrowStageInfo.FromData(stage, self.seedName, index))
+            self.growStageTuple = tuple(result)
+        return self.growStageTuple
     
     def GetGrowStageLength(self):
         # type: () -> int
@@ -63,8 +94,7 @@ class Crop(object):
         """获取总的状态数"""
         growStageTuple = self.GetGrowStageTuple()
         if stage >= len(growStageTuple):
-            logger.error('{} 没有状态 {}'.format(self.seedName, stage))
-            raise 
+            raise AddonDataError('{} 没有状态 {}'.format(self.seedName, stage))
         return growStageTuple[stage]
     
     def GetGrowHarvestCount(self):
@@ -127,13 +157,23 @@ class Crop(object):
         return self.__GetField(("grow", "fertility", "type"))
     
     def GetLoots(self, stage = None):
-        # type: (int | None) -> tuple[LootInfo] | None
+        # type: (int | None) -> tuple[LootInfo, ...] | None
         """获取某一状态的掉落物表"""
-        lootField = self.__GetField("loot")
+        lootField = self.__GetField("loot") # type: tuple[dict] | None
+        lastStage = self.GetGrowStageLength() - 1
         if isinstance(lootField, tuple) and (stage is None or self.IsLastStage(stage)):
-            return lootField
+            if self.lootsMap.get(lastStage) is None:
+                self.lootsMap[lastStage] = tuple(LootInfo.FromData(lootInfo, self.seedName, stage) for lootInfo in lootField)
+            return self.lootsMap[lastStage]
         if isinstance(lootField, dict):
-            return lootField.get(stage)
+            realStage = stage or lastStage
+            loots = lootField.get(realStage)
+            if loots is None:
+                raise AddonDataError('{} 没有状态 {} 的掉落物'.format(self.seedName, stage))
+            if self.lootsMap.get(realStage) is None:
+                self.lootsMap[realStage] = tuple(LootInfo.FromData(lootInfo, self.seedName, stage) for lootInfo in loots)
+            return self.lootsMap[realStage]
+        raise AddonDataError('{} 凋落物数据异常'.format(self.seedName))
         return None
     
     def __GetField(self, key, defaultValue = None, data = None):
