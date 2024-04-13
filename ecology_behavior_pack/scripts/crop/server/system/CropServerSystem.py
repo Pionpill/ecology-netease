@@ -48,9 +48,9 @@ class CropServerSystem(ServerSystem):
 
     def __HandlePlantCrop(self, args):
         """种植作物"""
-        # 判断土地上方是否为空气
         position = (args["x"], args["y"], args["z"])    # type: tuple[int, int, int]
         dimensionId = args["dimensionId"]   # type: int
+        # 判断土地上方是否为空气
         abovePosition = positionUtils.GetAbovePosition(position)
         aboveBlockName = blockInfoComp.GetBlockNew(abovePosition, dimensionId).get('name')  # type: str | None
         if aboveBlockName is None or aboveBlockName != "minecraft:air":
@@ -60,16 +60,17 @@ class CropServerSystem(ServerSystem):
         blockName = args['blockName']   # type: str
         itemName = args['itemDict']['newItemName']  # type: str
         entityId = args['entityId']     # type: str
+        blockAux = args['blockAuxValue']
         ecologyInfo = EcologyFacade.GetEcologyInfo(position, dimensionId)
-        canPlantResult = CropService.CanPlant(itemName, blockName, ecologyInfo.temperature, ecologyInfo.rainfall)
+        canPlantResult = CropService.CanPlant(itemName, blockName, blockAux, ecologyInfo.temperature, ecologyInfo.rainfall)
         if canPlantResult is not True:
             msgComp = engineCompFactory.CreateMsg(entityId)
-            if canPlantResult == 'block' and blockName in ["minecraft:grass"]:
-                msgComp.NotifyOneMessage(entityId, '该作物不能种植在当前方块上', '§e')
+            if canPlantResult == 'block':
+                msgComp.NotifyOneMessage(entityId, '{} 不能种植在 {} 上'.format(itemName, blockName), '§e')
             if canPlantResult == 'temperature':
-                msgComp.NotifyOneMessage(entityId, '该作物种植温度不适宜', '§e')
+                msgComp.NotifyOneMessage(entityId, '{} 种植温度不适宜'.format(itemName), '§e')
             if canPlantResult == 'rainfall':
-                msgComp.NotifyOneMessage(entityId, '该作物种植湿度不适宜', '§e')
+                msgComp.NotifyOneMessage(entityId, '{} 种植湿度不适宜'.format(itemName), '§e')
             return
         
         # 种植作物
@@ -85,7 +86,7 @@ class CropServerSystem(ServerSystem):
         itemComp.SetInvItemNum(slotId, carriedItemCount - 1)
 
     def __HandleCropBelowBlockChange(self, args):
-        if not CropService.CanPlantOnBlock(args['blockName'], args['toBlockName']):
+        if not CropService.CanPlantOnBlock(args['blockName'], args['toBlockName'], args['auxValue']):
             position = (args['posX'], args['posY'], args['posZ'])
             blockInfoComp.SetBlockNew(position, {'name': 'minecraft:air', 'aux': 0}, dimensionId=args["dimensionId"])
 
@@ -112,11 +113,13 @@ class CropServerSystem(ServerSystem):
         ecologyInfo = EcologyFacade.GetEcologyInfo(position, dimensionId, biomeInfo)
         brightness = blockInfoComp.GetBlockLightLevel(position, dimensionId)
         belowPosition = positionUtils.GetBelowPosition(position)
-        plantBlockName = blockInfoComp.GetBlockNew(belowPosition, dimensionId).get('name')
+        plantBlockDict = blockInfoComp.GetBlockNew(belowPosition, dimensionId)
+        plantBlockName = plantBlockDict.get('name')
+        plantBlockAux = plantBlockDict.get('aux')
         if plantBlockName is None:
             blockInfoComp.SetBlockNew(position, {'name': 'minecraft:air', 'aux': 0}, dimensionId)
             return
-        if not CropService.CanGrow(blockName, ecologyInfo, brightness, plantBlockName):
+        if not CropService.CanGrow(blockName, ecologyInfo, brightness, plantBlockName, plantBlockAux):
             return
 
         # 作物生长

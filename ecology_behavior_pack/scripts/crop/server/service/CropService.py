@@ -9,11 +9,11 @@ from scripts.common.utils import mathUtils
 
 class CropService(object):
     @staticmethod
-    def CanPlant(itemName, plantBlockName, temperature, rainfall):
-        # type: (str, str, int, float) -> str | bool
+    def CanPlant(itemName, plantBlockName, blockAux, temperature, rainfall):
+        # type: (str, str, int | None, int, float) -> str | bool
         """判断是否可以种植，返回 True 表示可种植，字符串(biome, block)表示不可种植原因"""
         crop = CropService.__GetCrop(itemName)
-        if not CropService.CanPlantOnBlock(itemName, plantBlockName):
+        if not CropService.CanPlantOnBlock(itemName, plantBlockName, blockAux):
             return 'block'
         elif not mathUtils.between(temperature, crop.GetGrowTemperature('can')):
             return 'temperature'
@@ -22,15 +22,15 @@ class CropService(object):
         return True
 
     @staticmethod
-    def CanGrow(blockOrItemName, ecology, brightness, plantBlockName):
-        # type: (str, EcologyInfo, int, str) -> bool
+    def CanGrow(blockOrItemName, ecology, brightness, plantBlockName, blockAux):
+        # type: (str, EcologyInfo, int, str, int | None) -> bool
         """判断作物能否生长"""
         crop = CropService.__GetCrop(blockOrItemName)
         temperature = ecology.temperature
         rainfall = ecology.rainfall
 
         # 生长过程中，土地可能变化
-        if not CropService.CanPlantOnBlock(blockOrItemName, plantBlockName):
+        if not CropService.CanPlantOnBlock(blockOrItemName, plantBlockName, blockAux):
             return False
         if not mathUtils.between(temperature, crop.GetGrowTemperature('can')):
             return False
@@ -41,14 +41,14 @@ class CropService(object):
         return True
 
     @staticmethod
-    def CanPlantOnBlock(blockOrItemName, plantBlockName):
-        # type: (str, str) -> bool
+    def CanPlantOnBlock(blockOrItemName, plantBlockName, blockAux = None):
+        # type: (str, str, int | None) -> bool
         """判断某个作物(块)能否种植在方块上"""
         crop = CropService.__GetCrop(blockOrItemName)
         land = GetLand(plantBlockName)
         if land is None:
             return False
-        fertility = land.GetFertility()
+        fertility = land.GetFertility(blockAux)
         tags = land.GetTags()
         return crop.GetGrowFertilityMin() <= fertility and mathUtils.hasCommonElements(tags, crop.GetGrowLandType())
     
