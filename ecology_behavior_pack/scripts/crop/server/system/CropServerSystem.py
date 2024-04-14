@@ -113,6 +113,9 @@ class CropServerSystem(ServerSystem):
         """作物tick生长"""
         position = (args['posX'], args['posY'], args['posZ']) # type: tuple[int, int, int]
         dimensionId = args['dimensionId']   # type: int
+        blockName = blockInfoComp.GetBlockNew(position, dimensionId).get('name')
+        if blockName == 'minecraft:air':
+            return
         cropManager = CropService.GetCropManager(position, dimensionId)
         cropManager.Grow()
 
