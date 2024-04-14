@@ -15,6 +15,8 @@ blockInfoComp = engineCompFactory.CreateBlockInfo(levelId)
 weatherComp = engineCompFactory.CreateWeather(levelId)
 blockEntityDataComp = engineCompFactory.CreateBlockEntityData(levelId)
 
+blockRemoveCoolDownDict = {} # type: dict[tuple[int, int, int, int], float]
+
 class CropServerSystem(ServerSystem):
     def __init__(self, namespace, systemName):
         ServerSystem.__init__(self, namespace, systemName)
@@ -26,6 +28,7 @@ class CropServerSystem(ServerSystem):
         self.ListenForEvent(engineNamespace, engineSystemName, "ServerItemUseOnEvent", self, self.OnServerItemUse)
         self.ListenForEvent(engineNamespace, engineSystemName, "BlockNeighborChangedServerEvent", self, self.OnBlockNeighborChanged)
         self.ListenForEvent(engineNamespace, engineSystemName, "BlockRandomTickServerEvent", self, self.OnBlockRandomTick)
+        self.ListenForEvent(engineNamespace, engineSystemName, "BlockRemoveServerEvent", self, self.OnBlockRemove)
 
     def OnServerItemUse(self, args):
         if not engineUtils.coolDown(args['entityId']):
@@ -43,6 +46,14 @@ class CropServerSystem(ServerSystem):
         # 作物生长
         if cropUtils.IsCrop(args['blockName']):
             self.__HandleCropStageTick(args)
+
+    def OnBlockRemove(self, args):
+        posKey = (args['x'], args['y'], args['z'], args['dimension']) # type: tuple[int, int, int, int]
+        if not engineUtils.coolDown(posKey, 0.2, blockRemoveCoolDownDict):
+            return
+        # 作物销毁
+        if cropUtils.IsCrop(args['fullName']):
+            self.__HandleCropRemove(args)
 
     def __HandlePlantCrop(self, args):
         """种植作物"""
@@ -91,7 +102,6 @@ class CropServerSystem(ServerSystem):
         position = (args['posX'], args['posY'], args['posZ'])
         dimensionId = args["dimensionId"]
         canPlantOnLand = CropService.CanPlantOnLand(args['blockName'], args['toBlockName'], args['auxValue'])
-        logger.debug(canPlantOnLand)
         if isinstance(canPlantOnLand, str):
             blockInfoComp.SetBlockNew(position, {'name': 'minecraft:air', 'aux': 0}, dimensionId=dimensionId)
             CropService.DeleteCropManager(position, dimensionId)
@@ -105,3 +115,11 @@ class CropServerSystem(ServerSystem):
         dimensionId = args['dimensionId']   # type: int
         cropManager = CropService.GetCropManager(position, dimensionId)
         cropManager.Grow()
+
+    def __HandleCropRemove(self, args):
+        """作物被销毁"""
+        position = (args['x'], args['y'], args['z']) # type: tuple[int, int, int]
+        dimensionId = args['dimension']   # type: int
+        cropManager = CropService.GetCropManager(position, dimensionId)
+        if cropManager.Harvest(True):
+            CropService.DeleteCropManager(position, dimensionId)

@@ -2,14 +2,15 @@ from time import time
 
 defaultCollDownDict = {}
 
-def coolDown(playerId, coolTime=0.2, coolDict = defaultCollDownDict):
-    # type: (int, float, dict) -> bool
+def coolDown(playerId = None, coolTime=0.2, coolDict = defaultCollDownDict):
+    # type: (int | tuple | None, float, dict) -> bool
     """交互冷却"""
-    if not coolDict.get(playerId):
-        coolDict[playerId] = time()
+    key = playerId or 'default'
+    if not coolDict.get(key):
+        coolDict[key] = time()
         return True
-    elif time() - coolDict[playerId] < coolTime:
+    elif time() - coolDict[key] < coolTime:
         return False
     else:
-        coolDict[playerId] = time()
+        coolDict[key] = time()
         return True

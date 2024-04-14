@@ -1,3 +1,5 @@
+from scripts.common import logger
+
 def IsSameItem(item1, item2):
     # type: (dict, dict) -> bool
     """判断是否为同一item，只有itemName和auxValue均相同才返回True"""
@@ -14,7 +16,7 @@ def IsSameItem(item1, item2):
     return True
 
 def GetItemDict(itemName=None, auxValue=0, count=1, itemDict=None):
-    # type: (str, int, int, dict[str, str|int]) -> dict[str, str|int]
+    # type: (str | None, int, int, dict | None) -> dict
     if itemName is not None:
         return {
             'newItemName': itemName,
@@ -31,3 +33,5 @@ def GetItemDict(itemName=None, auxValue=0, count=1, itemDict=None):
             'newAuxValue': newAuxValue,
             'count': count,
         }
+    logger.error('获取物品字典时为传入有效信息')
+    return {}

@@ -23,7 +23,7 @@ class GrowStageInfo(object):
 class LootInfo(object):
     """凋落物信息"""
     def __init__(self, itemName, chance, count):
-        # type: (str, int, float) -> None
+        # type: (str, int, int) -> None
         self.itemName = itemName 
         self.chance = chance
         self.count = count
@@ -32,7 +32,7 @@ class LootInfo(object):
     def FromData(data, seedName, index = None):
         # type: (dict, str, int | None) -> LootInfo
         indexMsg = index or '最终'
-        itemName = data.get('itemName')
+        itemName = data.get('name')
         if itemName is None:
             raise AddonDataError('{}: 不存在 {} 状态的凋落物品名称'.format(seedName, indexMsg))
         chance = data.get('chance', 100)
@@ -98,15 +98,15 @@ class Crop(object):
         return self._GetField(("grow", "harvest", "count"), 1)
 
     def GetGrowHarvestStage(self):
-        # type: () -> tuple[int]
+        # type: () -> tuple[int, ...]
         """获取可收获的状态，返回一个元组"""
         stage = self._GetField(("grow", "harvest", "stage"))
-        return stage if isinstance(stage, tuple) else (stage)
+        return stage if isinstance(stage, tuple) else (stage,)
 
     def GetGrowHarvestReturn(self):
-        # type: () -> int
+        # type: () -> int | None
         """获取收获后返回的状态数"""
-        return self._GetField(("grow", "harvest", "return"))
+        return self._GetField(("grow", "harvest", "return"), None)
     
     def GetGrowTemperature(self, type = 'can'):
         # type: (str) -> tuple[int, int]
@@ -169,8 +169,7 @@ class Crop(object):
             if self.lootsMap.get(realStage) is None:
                 self.lootsMap[realStage] = tuple(LootInfo.FromData(lootInfo, self.seedName, stage) for lootInfo in loots)
             return self.lootsMap[realStage]
-        raise AddonDataError('{} 凋落物数据异常'.format(self.seedName))
-        return None
+        raise AddonDataError('{} 凋落物数据结构异常'.format(self.seedName))
     
     def _GetField(self, key, defaultValue = None, data = None):
         """获取字段值，支持递归获取

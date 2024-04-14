@@ -3,7 +3,7 @@ import mod.server.extraServerApi as serverApi
 from scripts.common import logger
 from scripts.common.entity import Crop, GetCrop, GetLand
 from scripts.common.error import AddonDevelopError
-from scripts.common.utils import positionUtils, mathUtils
+from scripts.common.utils import mathUtils
 from scripts.crop.server.manager import CropManager
 from scripts.crop.server.utils import cropUtils
 from scripts.ecology.server.entity.Ecology import DynamicEcology
