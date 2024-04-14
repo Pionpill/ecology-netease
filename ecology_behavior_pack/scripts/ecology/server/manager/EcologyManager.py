@@ -25,7 +25,7 @@ TEMPERATURE_RANGE_DAY = 10
 MIDDLE_HEIGHT = 128
 
 class EcologyManager(object):
-    """生态类，本质上是封装后的 Biome，没有加其他数据，主要用于提供 pylance 类型区别"""
+    """生态类管理类"""
     def __init__(self, position, dimensionId):
         # type: (tuple[int, int, int], int) -> None
         object.__init__(self)
@@ -46,8 +46,8 @@ class EcologyManager(object):
     
     def GetDynamicEcology(self):
         """获取动态生态信息"""
-        adjustTemperature = self.fixedEcologyInfo.GetAvgTemperature() + self.__CalculateAdjustTemperature()
-        adjustRainfall = self.fixedEcologyInfo.GetAvgRainfall() + self.__CalculateAdjustRainfall()
+        adjustTemperature = self.fixedEcologyInfo.GetAvgTemperature() * 20 + self.__CalculateAdjustTemperature()
+        adjustRainfall = max(self.fixedEcologyInfo.GetAvgRainfall(), self.__CalculateAdjustRainfall())
         data = {
             'name': self.biomeName,
             'name_cn': self.biome.GetCNName(),
@@ -163,9 +163,9 @@ class EcologyManager(object):
         belowPosition = positionUtils.GetBelowPosition(self.position)
         blockState = blockStateComp.GetBlockStates(belowPosition, self.dimensionId)
         if blockState.get("name") == 'minecraft:farmland' and blockState.get("axu") == 1:
-            return 0.8
+            return 0.6
         return 0
     
     def __GetAdjustRainfallOfWeather(self):
         """根据天气获取湿度"""
-        return 1 if weatherComp.IsRaining() else 0
+        return 0.8 if weatherComp.IsRaining() else 0
