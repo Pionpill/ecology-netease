@@ -138,6 +138,7 @@ class Crop(object):
         return self._GetField(("grow", "rain_multiply"))
 
     def GetGrowFertilityMin(self):
+        # type: () -> int
         """获取最低土地肥沃度要求"""
         return self._GetField(("grow", "fertility", "min"))
     

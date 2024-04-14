@@ -1,119 +1,71 @@
-import math
-import random
-from scripts.ecology.server.entity.Ecology import DynamicEcology
+import mod.server.extraServerApi as serverApi
+
 from scripts.common import logger
-from scripts.common.error import AddonDevelopError
 from scripts.common.entity import Crop, GetCrop, GetLand
+from scripts.common.error import AddonDevelopError
+from scripts.common.utils import positionUtils, mathUtils
+from scripts.crop.server.manager import CropManager
 from scripts.crop.server.utils import cropUtils
-from scripts.common.utils import mathUtils
+from scripts.ecology.server.entity.Ecology import DynamicEcology
+from scripts.ecology.server.facade import EcologyFacade
+
+levelId = serverApi.GetLevelId()
+engineCompFactory = serverApi.GetEngineCompFactory()
+blockInfoComp = engineCompFactory.CreateBlockInfo(levelId)
 
 class CropService(object):
+    cropMgrDict = {} # type: dict[tuple[int, int, int, int], CropManager]
+
     @staticmethod
-    def CanPlant(itemName, landBlockName, blockAux, ecology):
-        # type: (str, str, int, DynamicEcology) -> str | bool
-        """判断是否可以种植，返回 True 表示可种植，字符串(biome, block)表示不可种植原因"""
+    def GetCropManager(position, dimensionId, crop = None, ecology = None):
+        # type: (tuple[int, int, int], int, Crop | None, DynamicEcology | None) -> CropManager
+        posKey = position + (dimensionId,)
+        cropMgr = CropService.cropMgrDict.get(posKey)
+        if cropMgr is not None:
+            return cropMgr
+        cropMgr = CropManager(position, dimensionId, crop, ecology)
+        CropService.cropMgrDict[posKey] = cropMgr
+        return cropMgr
+    
+    @staticmethod
+    def DeleteCropManager(position, dimensionId):
+        # type: (tuple[int, int, int], int) -> None
+        posKey = position + (dimensionId,)
+        del CropService.cropMgrDict[posKey]
+
+    @staticmethod
+    def CanPlant(itemName, landPosition, dimensionId):
+        # type: (str, tuple[int, int, int], int) -> str | bool
+        landBlockInfo = blockInfoComp.GetBlockNew(landPosition, dimensionId)
+        landName = landBlockInfo.get('name')
+        if landName is None:
+            return 'air'
+        landCheckResult = CropService.CanPlantOnLand(itemName, landName, landBlockInfo.get('aux', 0))
+        if isinstance(landCheckResult, str):
+            return landCheckResult
         crop = CropService.__GetCrop(itemName)
-        if not CropService.CanPlantOnBlock(itemName, landBlockName, blockAux):
-            return 'block'
-        elif not mathUtils.between(ecology.GetAdjustTemperature(), crop.GetGrowTemperature('can')):
+        ecology = EcologyFacade.GetEcologyInfo(landPosition, dimensionId)
+        if not mathUtils.between(ecology.GetAdjustTemperature(), crop.GetGrowTemperature('can')):
             return 'temperature'
-        elif not mathUtils.between(ecology.GetAdjustRainfall(), crop.GetGrowRainfall('can')):
+        if not mathUtils.between(ecology.GetAdjustRainfall(), crop.GetGrowRainfall('can')):
             return 'rainfall'
         return True
 
     @staticmethod
-    def CanGrow(cropBlockName, landBlockName, blockAux, ecology, brightness):
-        # type: (str, str, int, DynamicEcology, int) -> bool
-        """判断作物能否生长"""
-        crop = CropService.__GetCrop(cropBlockName)
-        temperature = ecology.GetAdjustTemperature()
-        rainfall = ecology.GetAdjustRainfall()
-
-        # 生长过程中，土地可能变化
-        if CropService.IsLastStage(cropBlockName):
-            return False
-        if not CropService.CanPlantOnBlock(cropBlockName, landBlockName, blockAux):
-            return False
-        if not mathUtils.between(temperature, crop.GetGrowTemperature('can')):
-            return False
-        if not mathUtils.between(rainfall, crop.GetGrowRainfall('can')):
-            return False
-        if not mathUtils.between(brightness, crop.GetGrowBrightness('can')):
-            return False
-        return True
-
-    @staticmethod
-    def CanPlantOnBlock(blockOrItemName, landBlockName, blockAux = None):
-        # type: (str, str, int | None) -> bool
+    def CanPlantOnLand(blockOrItemName, landBlockName, blockAux = None):
+        # type: (str, str, int | None) -> str | bool
         """判断某个作物(块)能否种植在方块上"""
         crop = CropService.__GetCrop(blockOrItemName)
         land = GetLand(landBlockName)
         if land is None:
-            return False
+            return 'land'
         fertility = land.GetFertility(blockAux)
         tags = land.GetTags()
-        return crop.GetGrowFertilityMin() <= fertility and mathUtils.hasCommonElements(tags, crop.GetGrowLandType())
-    
-    @staticmethod
-    def GetStageTickCount(blockName):
-        # type: (str) -> int | None
-        """获取作物块进入下一阶段所需要 tick 总数"""
-        crop = CropService.__GetCrop(blockName)
-        stageId = CropService.__GetStageId(blockName)
-        return crop.GetGrowStageInfo(stageId).tick
-
-    @staticmethod
-    def IsLastStage(blockName):
-        # type: (str) -> bool
-        """判断是否为最终生长阶段"""
-        crop = CropService.__GetCrop(blockName)
-        stageId = CropService.__GetStageId(blockName)
-        return crop.IsLastStage(stageId)
-
-    @staticmethod
-    def CalculateGrowTick(blockName, ecology, brightness, weather = None):
-        # type: (str, DynamicEcology, int, str | None) -> int
-        """
-        计算 tick 时生长的速度
-        
-        :param weather: 天气，rain, snow
-        """
-        crop = CropService.__GetCrop(blockName)
-        temperature = ecology.GetAdjustTemperature()
-        rainfall = ecology.GetAdjustRainfall()
-        
-        tickCount = 1
-        tickCount *= CropService.__CalculateAbleTickRatio(temperature, crop.GetGrowTemperature('suit'), crop.GetGrowTemperature('can'))
-        tickCount *= CropService.__CalculateAbleTickRatio(rainfall, crop.GetGrowRainfall('suit'), crop.GetGrowRainfall('can'))
-        tickCount *= CropService.__CalculateAbleTickRatio(brightness, crop.GetGrowBrightness('suit'), crop.GetGrowBrightness('can'))
-        if weather == 'rain':
-            tickCount *= crop.GetGrowRainMultiply()
-
-        floor = math.floor(tickCount)
-        ceil = math.ceil(tickCount)
-        return ceil if random.random() < (tickCount - floor) else floor
-
-    @staticmethod
-    def CanHarvest(blockName):
-        # type: (str) -> bool
-        """判断是否可以收获"""
-        crop = CropService.__GetCrop(blockName)
-        stage = CropService.__GetStageId(blockName)
-        harvestStages = crop.GetGrowHarvestStage()
-        return stage in harvestStages
-    
-    @staticmethod
-    def GetHarvestStage(blockOrItemName):
-        # type: (str) -> int
-        """获取收获后返回的状态"""
-        crop = CropService.__GetCrop(blockOrItemName)
-        return crop.GetGrowHarvestReturn()
-
-    @staticmethod
-    def __GetStageId(blockName):
-        # type: (str) -> int
-        """获取作物快的状态 id"""
-        return int(blockName.split("_")[-1])
+        if crop.GetGrowFertilityMin() > fertility:
+            return 'fertility'
+        if not mathUtils.hasCommonElements(tags, crop.GetGrowLandType()):
+            return 'landType'
+        return True
 
     @staticmethod
     def __GetCrop(blockOrItemName):
@@ -124,14 +76,3 @@ class CropService(object):
         if crop is None:
             raise AddonDevelopError('自定义作物 {} 未找到对应的数据'.format(blockOrItemName))
         return crop
-
-    @staticmethod
-    def __CalculateAbleTickRatio(value, suitRange, canRange):
-        # type: (int | float, tuple[float, float], tuple[float, float]) -> float
-        """获取温度，降水，光照的适宜度"""
-        if mathUtils.between(value, suitRange):
-            return 1.0
-        if value < suitRange[0]:
-            return (float(value) - canRange[0]) / (suitRange[0] - canRange[0])
-        else:
-            return (suitRange[1] - float(value)) / (canRange[1] - suitRange[1])

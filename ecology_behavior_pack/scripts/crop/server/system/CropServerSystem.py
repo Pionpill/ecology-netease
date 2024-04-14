@@ -6,7 +6,6 @@ from scripts.common import logger
 from scripts.common.utils import engineUtils, positionUtils
 from scripts.crop.server.service import CropService
 from scripts.crop.server.utils import cropUtils
-from scripts.ecology.server.facade import EcologyFacade
 
 minecraftEnum = serverApi.GetMinecraftEnum()
 ServerSystem = serverApi.GetServerSystemCls()
@@ -27,7 +26,6 @@ class CropServerSystem(ServerSystem):
         self.ListenForEvent(engineNamespace, engineSystemName, "ServerItemUseOnEvent", self, self.OnServerItemUse)
         self.ListenForEvent(engineNamespace, engineSystemName, "BlockNeighborChangedServerEvent", self, self.OnBlockNeighborChanged)
         self.ListenForEvent(engineNamespace, engineSystemName, "BlockRandomTickServerEvent", self, self.OnBlockRandomTick)
-        
 
     def OnServerItemUse(self, args):
         if not engineUtils.coolDown(args['entityId']):
@@ -48,24 +46,23 @@ class CropServerSystem(ServerSystem):
 
     def __HandlePlantCrop(self, args):
         """种植作物"""
-        position = (args["x"], args["y"], args["z"])    # type: tuple[int, int, int]
+        landPosition = (args["x"], args["y"], args["z"])    # type: tuple[int, int, int]
         dimensionId = args["dimensionId"]   # type: int
-        # 判断土地上方是否为空气
-        abovePosition = positionUtils.GetAbovePosition(position)
-        aboveBlockName = blockInfoComp.GetBlockNew(abovePosition, dimensionId).get('name')  # type: str | None
-        if aboveBlockName is None or aboveBlockName != "minecraft:air":
-            return
         
-        # 判断生态是否可以种植
+        # 判断能否种植
         blockName = args['blockName']   # type: str
         itemName = args['itemDict']['newItemName']  # type: str
         entityId = args['entityId']     # type: str
-        blockAux = args['blockAuxValue']
-        ecology = EcologyFacade.GetEcologyInfo(position, dimensionId)
-        canPlantResult = CropService.CanPlant(itemName, blockName, blockAux, ecology)
+        canPlantResult = CropService.CanPlant(itemName, landPosition, dimensionId)
         if canPlantResult is not True:
             msgComp = engineCompFactory.CreateMsg(entityId)
-            if canPlantResult == 'block':
+            if canPlantResult == 'air':
+                msgComp.NotifyOneMessage(entityId, '{} 不能种植在空气上'.format(itemName), '§e')
+            if canPlantResult == 'fertility':
+                msgComp.NotifyOneMessage(entityId, '{} 土地肥力不足'.format(blockName), '§e')
+            if canPlantResult == 'landType':
+                msgComp.NotifyOneMessage(entityId, '{} 土地类型无法种植 {}'.format(blockName, itemName), '§e')
+            if canPlantResult == 'land':
                 msgComp.NotifyOneMessage(entityId, '{} 不能种植在 {} 上'.format(itemName, blockName), '§e')
             if canPlantResult == 'temperature':
                 msgComp.NotifyOneMessage(entityId, '{} 种植温度不适宜'.format(itemName), '§e')
@@ -76,63 +73,35 @@ class CropServerSystem(ServerSystem):
         # 种植作物
         itemComp = engineCompFactory.CreateItem(entityId)
         slotId = itemComp.GetSelectSlotId()
-        carriedItemCount = itemComp.GetPlayerItem(minecraftEnum.ItemPosType.CARRIED, 0).get("count")
+        carriedItemCount = itemComp.GetPlayerItem(minecraftEnum.ItemPosType.CARRIED, 0).get("count") # type: int | None
         if carriedItemCount is None:
             msgComp = engineCompFactory.CreateMsg(entityId)
             msgComp.NotifyOneMessage(entityId, '玩家手上不存在种子，这是一个系统 bug，请报告给开发者群：712936357', '§c')
             return
         plantBlockDict = cropUtils.GetBlockStageDict(itemName, 0)
+        abovePosition = positionUtils.GetAbovePosition(landPosition)
         result = blockInfoComp.SetBlockNew(abovePosition, plantBlockDict, dimensionId = dimensionId)
+        if not result:
+            msgComp = engineCompFactory.CreateMsg(entityId)
+            msgComp.NotifyOneMessage(entityId, '种植作物失败', '§c')
+            return
         itemComp.SetInvItemNum(slotId, carriedItemCount - 1)
 
     def __HandleCropBelowBlockChange(self, args):
-        if not CropService.CanPlantOnBlock(args['blockName'], args['toBlockName'], args['auxValue']):
-            position = (args['posX'], args['posY'], args['posZ'])
-            blockInfoComp.SetBlockNew(position, {'name': 'minecraft:air', 'aux': 0}, dimensionId=args["dimensionId"])
+        position = (args['posX'], args['posY'], args['posZ'])
+        dimensionId = args["dimensionId"]
+        canPlantOnLand = CropService.CanPlantOnLand(args['blockName'], args['toBlockName'], args['auxValue'])
+        logger.debug(canPlantOnLand)
+        if isinstance(canPlantOnLand, str):
+            blockInfoComp.SetBlockNew(position, {'name': 'minecraft:air', 'aux': 0}, dimensionId=dimensionId)
+            CropService.DeleteCropManager(position, dimensionId)
+        else:
+            cropManager = CropService.GetCropManager(position, dimensionId)
+            cropManager.RenewLandInfo()
 
     def __HandleCropStageTick(self, args):
         """作物tick生长"""
-        blockName = args['blockName']   # type: str
         position = (args['posX'], args['posY'], args['posZ']) # type: tuple[int, int, int]
         dimensionId = args['dimensionId']   # type: int
-
-        # 从作物方块中获取生物群系信息，减少重复计算(空间换时间)
-        blockEntityData = blockEntityDataComp.GetBlockEntityData(dimensionId, position)
-        if blockEntityData is None:
-            logger.error('不存在作物 {} 实体数据'.format(blockName))
-            return
-        tickCount = CropService.GetStageTickCount(blockName)
-        if tickCount is None:
-            return
-
-        # 判断作物能否生长
-        ecology = EcologyFacade.GetEcologyInfo(position, dimensionId)
-        logger.debug(ecology)
-        brightness = blockInfoComp.GetBlockLightLevel(position, dimensionId)
-        belowPosition = positionUtils.GetBelowPosition(position)
-        plantBlockDict = blockInfoComp.GetBlockNew(belowPosition, dimensionId)
-        plantBlockName = plantBlockDict.get('name')
-        plantBlockAux = plantBlockDict.get('aux', 0)
-        if plantBlockName is None:
-            blockInfoComp.SetBlockNew(position, {'name': 'minecraft:air', 'aux': 0}, dimensionId)
-            return
-        if not CropService.CanGrow(blockName, plantBlockName, plantBlockAux, ecology, brightness):
-            return
-
-        # 作物生长
-        weather = 'rain' if weatherComp.IsRaining else None
-        growTicks = CropService.CalculateGrowTick(blockName, ecology, brightness, weather)
-        blockTick = blockEntityData['tick'] or 0
-        nextTick = growTicks + blockTick
-        if nextTick <= tickCount:
-            blockEntityData['tick'] = nextTick
-        elif not CropService.IsLastStage(blockName):
-            blockNameList = blockName.split("_")
-            blockNameList[-1] = str(int(blockNameList[-1]) + 1)
-            nextBlock = {"name": "_".join(blockNameList), "aux": 0}
-            blockInfoComp.SetBlockNew(position, nextBlock, dimensionId=dimensionId)
-            newBlockEntityData = blockEntityDataComp.GetBlockEntityData(dimensionId, position)
-            if newBlockEntityData is None:
-                logger.error('生长后 {} 无法获取实体数据'.format(nextBlock.get('name', blockName)))
-                return
-            newBlockEntityData['tick'] = nextTick - tickCount
+        cropManager = CropService.GetCropManager(position, dimensionId)
+        cropManager.Grow()
