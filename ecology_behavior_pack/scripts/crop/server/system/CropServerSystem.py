@@ -69,11 +69,11 @@ class CropServerSystem(ServerSystem):
             msgComp = engineCompFactory.CreateMsg(entityId)
             if canPlantResult == 'air':
                 msgComp.NotifyOneMessage(entityId, '{} 不能种植在空气上'.format(itemName), '§e')
-            if canPlantResult == 'fertility':
-                msgComp.NotifyOneMessage(entityId, '{} 土地肥力不足'.format(blockName), '§e')
             if canPlantResult == 'landType':
                 msgComp.NotifyOneMessage(entityId, '{} 土地类型无法种植 {}'.format(blockName, itemName), '§e')
-            if canPlantResult == 'land':
+            if canPlantResult == 'fertility':
+                msgComp.NotifyOneMessage(entityId, '{} 土地肥力不足'.format(blockName), '§e')
+            if canPlantResult == 'land' and 'stage' not in blockName:
                 msgComp.NotifyOneMessage(entityId, '{} 不能种植在 {} 上'.format(itemName, blockName), '§e')
             if canPlantResult == 'temperature':
                 msgComp.NotifyOneMessage(entityId, '{} 种植温度不适宜'.format(itemName), '§e')

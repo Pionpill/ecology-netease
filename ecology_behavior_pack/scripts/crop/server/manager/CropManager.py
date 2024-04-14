@@ -61,8 +61,8 @@ class CropManager(object):
     
     def Grow(self):
         """作物生长"""
-        blockEntityData = blockEntityDataComp.GetBlockEntityData(self.dimensionId, self.position)
-        if not self.cropBlockName or not blockEntityData:
+        cropEntityData = self.__GetCropEntityData()
+        if not self.cropBlockName or not cropEntityData:
             logger.error('不存在作物 {} 实体数据'.format(self.cropBlockName))
             return
         
@@ -73,21 +73,26 @@ class CropManager(object):
             return
 
         growTicks = self.__CalculateGrowTick()
-        blockTick = blockEntityData['tick'] or 0
+        blockTick = cropEntityData['tick'] or 0
+        blockTickCount = cropEntityData['tickCount'] or 0
+        blockFertility = cropEntityData['fertility'] or 0
         nextTick = growTicks + blockTick
-        if nextTick <= tickCount:
-            blockEntityData['tick'] = nextTick
+        if nextTick < tickCount:
+            cropEntityData['tick'] = nextTick
+            cropEntityData['tickCount'] = blockTickCount + 1
+            cropEntityData['fertility'] = blockFertility + self.__GetGrowFertility()
             return
-
         cropBlockNameList = self.cropBlockName.split("_")
         cropBlockNameList[-1] = str(int(cropBlockNameList[-1]) + 1)
         nextBlock = {"name": "_".join(cropBlockNameList), "aux": 0}
         blockInfoComp.SetBlockNew(self.position, nextBlock, dimensionId=self.dimensionId)
-        blockEntityData = blockEntityDataComp.GetBlockEntityData(self.dimensionId, self.position)
-        if blockEntityData is None:
+        cropEntityData = self.__GetCropEntityData()
+        if cropEntityData is None:
             logger.error('生长后 {} 无法获取实体数据'.format(nextBlock.get('name', self.cropBlockName)))
             return
-        blockEntityData['tick'] = nextTick - tickCount
+        cropEntityData['tick'] = nextTick - tickCount
+        cropEntityData['tickCount'] = blockTickCount + 1
+        cropEntityData['fertility'] = blockFertility + self.__GetGrowFertility()
         self.RenewCropInfo()
 
     def Harvest(self, remove = False, loot = True):
@@ -104,7 +109,10 @@ class CropManager(object):
         stage = self.__GetStage()
         if stage not in harvestStages:
             return False
-        
+
+        if loot:
+            self.SpawnLoots()
+
         if remove:
             result = blockInfoComp.SetBlockNew(self.position, {'name': 'minecraft:air', 'aux': 0}, dimensionId = self.dimensionId)
             if not result:
@@ -116,13 +124,23 @@ class CropManager(object):
                 return False
             cropBlockNameList = self.cropBlockName.split("_")
             cropBlockNameList[-1] = str(returnStage)
+
             newBlockDict = {"name": "_".join(cropBlockNameList), "aux": 0}
+            cropEntityData = self.__GetCropEntityData()
+            if cropEntityData is None:
+                return False
+            blockTickCount = cropEntityData['tickCount'] or 0
+            blockFertility = cropEntityData['fertility'] or 0
             result = blockInfoComp.SetBlockNew(self.position, newBlockDict, dimensionId = self.dimensionId)
+            cropEntityData = self.__GetCropEntityData()
+            if cropEntityData is None:
+                return False
+            self.RenewCropInfo()
+            cropEntityData['tickCount'] = blockTickCount
+            cropEntityData['fertility'] = blockFertility
             if not result:
                 logger.error('发生了不可能出现的错误，收获作物失败')
                 return False
-        if loot:
-            self.SpawnLoots()
         return True
 
     def SpawnLoots(self):
@@ -132,7 +150,13 @@ class CropManager(object):
         for loot in loots:
             if random.random() * 100 > loot.chance:
                 return
-            count = mathUtils.GetRandomInteger(loot.count)
+            cropEntityData = self.__GetCropEntityData()
+            if cropEntityData is None:
+                return
+            fertility = cropEntityData['fertility']
+            tickCount = cropEntityData['tickCount']
+            avgFertility = 1 + (fertility / tickCount) / 100 if fertility and tickCount else 1
+            count = mathUtils.GetRandomInteger(loot.count * avgFertility)
             itemDict = itemUtils.GetItemDict(loot.itemName, 0, count)
             itemComp.SpawnItemToLevel(itemDict,  self.dimensionId, self.position)
         
@@ -195,6 +219,21 @@ class CropManager(object):
             tickCount *= self.crop.GetGrowRainMultiply()
 
         return mathUtils.GetRandomInteger(tickCount)
+
+    def __GetGrowFertility(self):
+        if self.land is None:
+            return False
+        cropMinFertility = self.crop.GetGrowFertilityMin()
+        cropSensitivityFertility = self.crop.GetGrowFertilitySensitivity()
+        landFertility = self.land.GetFertility()
+        fertility = 1 + (landFertility - cropMinFertility) * cropSensitivityFertility / cropMinFertility
+        return mathUtils.GetRandomInteger(fertility)
+
+    def __GetCropEntityData(self):
+        cropEntityData = blockEntityDataComp.GetBlockEntityData(self.dimensionId, self.position)
+        if not cropEntityData:
+            logger.error('不存在作物 {} 实体数据'.format(self.cropBlockName))
+        return cropEntityData
 
     def __GetStage(self):
         if self.cropBlockName is None:
