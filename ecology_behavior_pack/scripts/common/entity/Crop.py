@@ -1,3 +1,4 @@
+from scripts.common.enum import Period
 from scripts.common.data.crop import CROP_DATA
 from scripts.common.error import AddonDataError
 from scripts.common.utils import dataUtils
@@ -136,6 +137,10 @@ class Crop(object):
         # type: () -> float
         """获取生长温度"""
         return self._GetField(("grow", "rain_multiply"))
+
+    def GetGrowPeriod(self):
+        # type: () -> Period
+        return self._GetField(("grow", "period"), Period.DAY)
 
     def GetGrowFertilityMin(self):
         # type: () -> int

@@ -40,7 +40,8 @@ HERB = {
             "sensitivity": 10,
             "type": ["dirt", "stone"]
         },
-        "rain_multiply": 1.5
+        "rain_multiply": 1.5,
+        "period": "sun"
     },
     "loot": (
         {

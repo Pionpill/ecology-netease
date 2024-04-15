@@ -32,3 +32,13 @@ class EcologyFacade():
         """判断是否出月亮"""
         # type: (int) -> bool
         return FrameService.HasMoon(dimensionId)
+    
+    @staticmethod
+    def IsDay(dimensionId):
+        """判断是否是白天"""
+        return FrameService.IsDay(dimensionId)
+    
+    @staticmethod
+    def IsNight(dimensionId):
+        """判断是否是白天"""
+        return FrameService.IsNight(dimensionId)

@@ -1,6 +1,7 @@
 import random
 import mod.server.extraServerApi as serverApi
 
+from scripts.common.enum import Period
 from scripts.common import logger
 from scripts.common.entity import Crop
 from scripts.common.entity import GetCrop, GetLand
@@ -10,6 +11,7 @@ from scripts.common.utils import positionUtils
 from scripts.crop.server.utils import cropUtils
 from scripts.ecology.server.entity import DynamicEcology
 from scripts.ecology.server.facade import EcologyFacade
+from scripts.ecology.server.service import FrameService
 
 levelId = serverApi.GetLevelId()
 engineCompFactory = serverApi.GetEngineCompFactory()
@@ -45,6 +47,8 @@ class CropManager(object):
     def CanGrow(self):
         """判断能否生长"""
         if self.crop.IsLastStage(self.cropStage):
+            return False
+        if not self.__CanPlantDuringPeriod():
             return False
         if not self.__CanPlantOnBlock():
             return False
@@ -193,6 +197,20 @@ class CropManager(object):
         self.landName = landInfo.get('name')
         self.landAux = landInfo.get('aux')
         self.land = GetLand(self.landName) if self.landName else None
+
+    def __CanPlantDuringPeriod(self):
+        cropPeriod = self.crop.GetGrowPeriod()
+        if cropPeriod == Period.NONE:
+            return True
+        if cropPeriod == Period.SUN and FrameService.HasSun(self.dimensionId):
+            return True
+        if cropPeriod == Period.MOON and FrameService.HasMoon(self.dimensionId):
+            return True
+        if cropPeriod == Period.DAY and FrameService.IsDay(self.dimensionId):
+            return True
+        if cropPeriod == Period.NIGHT and FrameService.IsNight(self.dimensionId):
+            return True
+        return False
 
     def __CanPlantOnBlock(self):
         """判断能否种植在土地上"""

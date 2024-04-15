@@ -25,6 +25,10 @@ class FrameService(object):
         return "%s:%02d" % (str(deltaHour - 18).rjust(2), deltaMinute)
     
     @staticmethod
+    def GetDayPeriod(dimensionId):
+        dayFrame = FrameService.GetDayFrame(dimensionId)
+
+    @staticmethod
     def HasSun(dimensionId):
         # type: (int) -> bool
         """判断是否存在太阳"""
@@ -37,3 +41,15 @@ class FrameService(object):
         """判断是否存在月亮"""
         dayFrame = FrameService.GetDayFrame(dimensionId)
         return dayFrame >= 11000
+    
+    @staticmethod
+    def IsDay(dimensionId):
+        """判断是否是白天"""
+        dayFrame = FrameService.GetDayFrame(dimensionId)
+        return dayFrame <= 12000
+    
+    @staticmethod
+    def IsNight(dimensionId):
+        """判断是否是白天"""
+        dayFrame = FrameService.GetDayFrame(dimensionId)
+        return dayFrame >= 12000
