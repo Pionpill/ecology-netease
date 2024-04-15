@@ -27,11 +27,11 @@ class Biome(object):
         return self._GetField('name_cn')
     
     def GetTemperature(self):
-        # type: () -> float
+        # type: () -> int
         return self._GetField('temperature')
 
     def GetRainfall(self):
-        # type: () -> float
+        # type: () -> int
         return self._GetField('rainfall')
     
     def GetDimension(self):

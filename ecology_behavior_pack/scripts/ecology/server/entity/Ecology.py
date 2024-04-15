@@ -18,7 +18,7 @@ class FixedEcology(Biome):
         return self._GetField('rainfall_avg')
     
     def __str__(self):
-        return "=================\n固定生态: {0} ({1})\n温度: {2}\n湿度: {3}\n=================".format(self.biomeName, self.GetCNName(), round(self.GetAvgTemperature(),2), round(self.GetAvgRainfall(),2))
+        return "固定生态: {0} ({1})\n温度: {2}℃\n湿度: {3}".format(self.biomeName, self.GetCNName(), round(self.GetAvgTemperature(),2), round(self.GetAvgRainfall(),2))
 
 class DynamicEcology(Biome):
     """动态生态数据"""
@@ -29,7 +29,6 @@ class DynamicEcology(Biome):
 
     def GetAdjustTemperature(self):
         # type: () -> float
-        """注意这里给出的是 * 20 后的结果"""
         return self._GetField('temperature_adjust')
 
     def GetAdjustRainfall(self):
@@ -37,4 +36,4 @@ class DynamicEcology(Biome):
         return self._GetField('rainfall_adjust')
     
     def __str__(self):
-        return "=================\n生态: {0} ({1})\n温度: {2}\n湿度: {3}\n=================".format(self.biomeName, self.GetCNName(), round(self.GetAdjustTemperature(),2), round(self.GetAdjustRainfall(), 2))
+        return "生态: {0} ({1})\n温度: {2}℃\n湿度: {3}".format(self.biomeName, self.GetCNName(), round(self.GetAdjustTemperature(),2), round(self.GetAdjustRainfall(), 2))

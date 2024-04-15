@@ -46,7 +46,7 @@ class EcologyManager(object):
     
     def GetDynamicEcology(self):
         """获取动态生态信息"""
-        adjustTemperature = self.fixedEcologyInfo.GetAvgTemperature() * 20 + self.__CalculateAdjustTemperature()
+        adjustTemperature = self.fixedEcologyInfo.GetAvgTemperature() + self.__CalculateAdjustTemperature()
         adjustRainfall = max(self.fixedEcologyInfo.GetAvgRainfall(), self.__CalculateAdjustRainfall())
         data = {
             'name': self.biomeName,

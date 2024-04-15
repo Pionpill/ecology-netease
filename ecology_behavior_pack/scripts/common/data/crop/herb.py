@@ -28,8 +28,8 @@ HERB = {
             "can": (-15, 50)
         },
         "rainfall": {
-            "suit": (0, 1),
-            "can": (0.15, 1)
+            "suit": (30, 100),
+            "can": (10, 100)
         },
         "brightness": {
             "suit": (9, 15),
