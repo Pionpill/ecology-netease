@@ -27,6 +27,8 @@ def IsSeed(itemName):
 
 def IsCropBlock(blockName):
     # type: (str) -> bool
+    if len(seedPrefixList) == 0:
+        __InitSeedList()
     blockPrefix = __GetBlockPrefix(blockName)
     return blockPrefix in seedPrefixList
 
