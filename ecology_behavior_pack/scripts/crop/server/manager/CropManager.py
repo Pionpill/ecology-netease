@@ -86,9 +86,8 @@ class CropManager(object):
             cropEntityData['tickCount'] = blockTickCount + 1
             cropEntityData['fertility'] = blockFertility + self.__GetGrowFertility()
             return
-        cropBlockNameList = self.cropBlockName.split("_")
-        cropBlockNameList[-1] = str(int(cropBlockNameList[-1]) + 1)
-        nextBlock = {"name": "_".join(cropBlockNameList), "aux": 0}
+        blockName = self.GetCropBlockName(self.__GetStage() + 1)
+        nextBlock = {"name": blockName, "aux": 0}
         blockInfoComp.SetBlockNew(self.position, nextBlock, dimensionId=self.dimensionId)
         cropEntityData = self.__GetCropEntityData()
         if cropEntityData is None:
@@ -126,10 +125,8 @@ class CropManager(object):
             returnStage = self.crop.GetGrowHarvestReturn()
             if returnStage is None:
                 return False
-            cropBlockNameList = self.cropBlockName.split("_")
-            cropBlockNameList[-1] = str(returnStage)
-
-            newBlockDict = {"name": "_".join(cropBlockNameList), "aux": 0}
+            newBlockName = self.GetCropBlockName(returnStage)
+            newBlockDict = {"name": newBlockName, "aux": 0}
             cropEntityData = self.__GetCropEntityData()
             if cropEntityData is None:
                 return False
@@ -179,6 +176,11 @@ class CropManager(object):
         """获取收获后返回的状态"""
         return self.crop.GetGrowHarvestReturn()
         
+    def GetCropBlockName(self, stage):
+        # type: (int) -> str
+        blockPrefix = self.crop.GetBlockPrefix()
+        return blockPrefix + '_stage_' + str(stage)
+
     def RenewCropInfo(self):
         """更新作物信息：作物生长，收获时调用"""
         blockInfo = blockInfoComp.GetBlockNew(self.position, self.dimensionId)

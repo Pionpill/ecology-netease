@@ -1,24 +1,50 @@
+from scripts.common import logger
 from scripts.common.data.crop import CROP_DATA
 
+seedList = [] # type: list[str]
+seedPrefixList = [] # type: list[str]
 
-def IsCrop(blockOrItemName):
+def __InitSeedList():
+    def GetDefaultPrefix(seedName):
+        # type: (str) -> str
+        defaultValue = seedName
+        for suffix in ['_seeds', '_seed']:
+            defaultValue = defaultValue.replace(suffix, '')
+        return defaultValue
+    for cropInfo in CROP_DATA.values():
+        seedName = cropInfo.get('seed')
+        if seedName is None:
+            # seedName 是主键，不可能不存在
+            continue
+        seedList.append(seedName)
+        seedPrefixList.append(cropInfo.get('blockPrefix', GetDefaultPrefix(seedName))) # 
+
+def IsSeed(itemName):
     # type: (str) -> bool
-    seedKey = GetSeedKey(blockOrItemName)
-    return CROP_DATA.get(seedKey) is not None
+    if len(seedList) == 0:
+        __InitSeedList()
+    return itemName in seedList
+
+def IsCropBlock(blockName):
+    # type: (str) -> bool
+    blockPrefix = __GetBlockPrefix(blockName)
+    return blockPrefix in seedPrefixList
 
 def GetSeedKey(blockOrItemName):
     # type: (str) -> str
     """获取作物块/种子对应的seed键名"""
-    # FIXME 这样写有问题
-    key = blockOrItemName.split('_')[0]
-    return key if 'ham:' in key else 'ham:' + key
-
-def GetBlockStageName(blockOrItemName, stageId):
-    # type: (str, int) -> str
-    """获取种植后作物方块名"""
-    return blockOrItemName.split('_')[0] + '_stage_' + str(stageId)
+    if 'seed' in blockOrItemName:
+        for suffix in ['_seeds', '_seed']:
+            blockOrItemName = blockOrItemName.replace(suffix, '')
+        return blockOrItemName
+    else:
+        return __GetBlockPrefix(blockOrItemName)
 
 def GetBlockStageDict(blockOrItemName, stageId):
     # type: (str, int) -> dict
     """获取种植后作物方块字典"""
-    return {"name": blockOrItemName.split('_')[0] + '_stage_' + str(stageId), "aux": 0}
+    return {"name": GetSeedKey(blockOrItemName) + '_stage_' + str(stageId), "aux": 0}
+
+def __GetBlockPrefix(blockName):
+    # type: (str) -> str
+    return '_'.join(blockName.split('_')[:-2])

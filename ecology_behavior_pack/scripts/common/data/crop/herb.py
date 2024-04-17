@@ -1,6 +1,7 @@
 HERB = {
     "beta": True,
     "seed": 'ham:herb_seeds',
+    "blockPrefix": 'ham:herb',
     "grow": {
         "stage": (
             {

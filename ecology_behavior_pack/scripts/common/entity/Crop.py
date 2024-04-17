@@ -63,6 +63,17 @@ class Crop(object):
         """获取对应的种子名称"""
         return self._GetField("seed")
     
+    def GetBlockPrefix(self):
+        # type: () -> str
+        """获取作物方块的前缀"""
+        def GetDefaultPrefix():
+            seedName = self.GetSeedName()
+            defaultValue = seedName
+            for suffix in ['_seeds', '_seed']:
+                defaultValue = defaultValue.replace(suffix, '')
+            return defaultValue
+        return self._GetField("blockPrefix", GetDefaultPrefix)
+    
     def GetGrowStageTuple(self):
         # type: () -> tuple[GrowStageInfo, ...]
         """获取生长状态元组"""

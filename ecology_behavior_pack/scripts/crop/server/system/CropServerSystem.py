@@ -1,7 +1,6 @@
 import mod.server.extraServerApi as serverApi
 
 from scripts.common.modConfig import __DEV__
-from scripts.common.data.crop.seed import SEED_LIST
 from scripts.common import logger
 from scripts.common.utils import engineUtils, positionUtils
 from scripts.crop.server.service import CropService
@@ -34,17 +33,17 @@ class CropServerSystem(ServerSystem):
         if not engineUtils.coolDown(args['entityId']):
             return
         # 作物种植
-        if args['itemDict']['newItemName'] in SEED_LIST:
+        if cropUtils.IsSeed(args['itemDict']['newItemName']):
             self.__HandlePlantCrop(args)
 
     def OnBlockNeighborChanged(self, args):
         # 植被下方作物变化
-        if cropUtils.IsCrop(args['blockName']) and args['posX'] == args['neighborPosX'] and args['posY'] == args['neighborPosY'] + 1 and args['posZ'] == args['neighborPosZ']:
+        if cropUtils.IsCropBlock(args['blockName']) and args['posX'] == args['neighborPosX'] and args['posY'] == args['neighborPosY'] + 1 and args['posZ'] == args['neighborPosZ']:
             self.__HandleCropBelowBlockChange(args)
 
     def OnBlockRandomTick(self, args):
         # 作物生长
-        if cropUtils.IsCrop(args['blockName']):
+        if cropUtils.IsCropBlock(args['fullName']):
             self.__HandleCropStageTick(args)
 
     def OnBlockRemove(self, args):
@@ -52,7 +51,7 @@ class CropServerSystem(ServerSystem):
         if not engineUtils.coolDown(posKey, 0.2, blockRemoveCoolDownDict):
             return
         # 作物销毁
-        if cropUtils.IsCrop(args['fullName']):
+        if cropUtils.IsCropBlock(args['fullName']):
             self.__HandleCropRemove(args)
 
     def __HandlePlantCrop(self, args):
