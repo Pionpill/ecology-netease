@@ -16,6 +16,22 @@
     "netease_model": "ham:herb_stage_3",
     "sound": "grass"
   },
+  "ham:corn_stage_0": {
+    "netease_model": "ham:corn_stage_0",
+    "sound": "grass"
+  },
+  "ham:corn_stage_1": {
+    "netease_model": "ham:corn_stage_1",
+    "sound": "grass"
+  },
+  "ham:corn_stage_2": {
+    "netease_model": "ham:corn_stage_2",
+    "sound": "grass"
+  },
+  "ham:corn_stage_3": {
+    "netease_model": "ham:corn_stage_3",
+    "sound": "grass"
+  },
   "ham:baking_furnace": {
     "netease_model": "ham:baking_furnace",
     "sound": "stone"

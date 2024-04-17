@@ -19,6 +19,15 @@
     "ham:cooking_table_side": {
       "textures": "textures/blocks/workbenches/cooking_table_side"
     },
+    "ham:corn_leaf": {
+      "textures": "textures/blocks/crops/corn/corn_leaf"
+    },
+    "ham:corn_flower": {
+      "textures": "textures/blocks/crops/corn/corn_flower"
+    },
+    "ham:corn_fruit": {
+      "textures": "textures/blocks/crops/corn/corn_fruit"
+    },
     "ham:herb_stage_0": {
       "textures": "textures/blocks/crops/herb/herb_stage_0"
     },
