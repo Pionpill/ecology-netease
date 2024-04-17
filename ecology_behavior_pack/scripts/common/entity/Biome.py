@@ -53,7 +53,7 @@ class Biome(object):
         return dataUtils.GetField(key, realData, self.biomeName, defaultValue)
 
     def __str__(self):
-        return "=================\n生物群系信息: {0} ({1})\n温度: {2}\n湿度: {3}\n=================".format(self.biomeName, self.GetCNName(), self.GetTemperature(), self.GetRainfall())
+        return "=================\n生物群系信息: {0} ({1})\n温度: {2}℃\n湿度: {3}%\n=================".format(self.biomeName, self.GetCNName(), self.GetTemperature(), self.GetRainfall())
 
     @staticmethod
     def FromBiomeName(biomeName):
