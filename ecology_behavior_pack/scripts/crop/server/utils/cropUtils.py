@@ -37,8 +37,10 @@ def GetSeedKey(blockOrItemName):
         for suffix in ['_seeds', '_seed']:
             blockOrItemName = blockOrItemName.replace(suffix, '')
         return blockOrItemName
-    else:
+    elif 'stage' in blockOrItemName:
         return __GetBlockPrefix(blockOrItemName)
+    else:
+        return blockOrItemName
 
 def GetBlockStageDict(blockOrItemName, stageId):
     # type: (str, int) -> dict
