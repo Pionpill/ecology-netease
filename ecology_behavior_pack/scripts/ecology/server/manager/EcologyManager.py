@@ -15,7 +15,7 @@ engineCompFactory = serverApi.GetEngineCompFactory()
 biomeComp = engineCompFactory.CreateBiome(levelId)
 blockInfoComp = engineCompFactory.CreateBlockInfo(levelId)
 weatherComp = engineCompFactory.CreateWeather(levelId)
-blockStateComp = engineCompFactory.CreateBlockState(levelId)
+blockStateComp = engineCompFactory.CreateBlockInfo(levelId)
 
 # 温度偏移帧，将每日最低温设置在早上 7 时，最高温设置在，下午 1 时
 TEMPERATURE_ADJUST_FRAME = 1000
@@ -161,7 +161,9 @@ class EcologyManager(object):
     def __GetAdjustRainfallOfLand(self):
         """根据底部方块获取湿度"""
         belowPosition = positionUtils.GetBelowPosition(self.position)
-        blockState = blockStateComp.GetBlockStates(belowPosition, self.dimensionId)
+        blockState = blockStateComp.GetBlockNew(belowPosition, self.dimensionId)
+        if blockState is None:
+            return 0
         if blockState.get("name") == 'minecraft:farmland' and blockState.get("axu") == 1:
             return 0.6
         return 0
