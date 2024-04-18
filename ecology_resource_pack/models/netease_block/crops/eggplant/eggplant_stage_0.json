@@ -1,0 +1,165 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "cubes": [
+          {
+            "origin": [-12, -1, 8],
+            "pivot": [-8, -1, 8],
+            "rotation": [0, 0, 0],
+            "size": [8, 8, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 16]
+              }
+            }
+          },
+          {
+            "origin": [-12, -1, 8],
+            "pivot": [-8, -1, 8],
+            "rotation": [0, -90, 0],
+            "size": [8, 8, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 16]
+              }
+            }
+          }
+        ],
+        "name": "root",
+        "pivot": [-8, -1, 8],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-9.75, 1, 7],
+            "pivot": [-8, 1, 8],
+            "rotation": [-90, 0, 0],
+            "size": [3.5, 3, 0],
+            "uv": {
+              "north": {
+                "texture": 2,
+                "uv": [0, 6],
+                "uv_size": [7, 6]
+              }
+            }
+          },
+          {
+            "origin": [-9.75, 2.000000000000001, 11],
+            "pivot": [-8, 2.000000000000001, 11],
+            "rotation": [-115, 0, 0],
+            "size": [3.5, 2.999999999999999, 0],
+            "uv": {
+              "north": {
+                "texture": 2,
+                "uv": [0, 0],
+                "uv_size": [7, 6]
+              }
+            }
+          }
+        ],
+        "name": "leaf_small_1",
+        "parent": "root",
+        "pivot": [-8, 2, 8],
+        "rotation": [14.999999999999996, 45, -9.181470507576436e-16]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-10.25, 0, 7.75],
+            "pivot": [-7.75, 0, 7.75],
+            "rotation": [90, 0, 0],
+            "size": [4.5, 4, 0.0],
+            "uv": {
+              "north": {
+                "texture": 1,
+                "uv": [0, 8],
+                "uv_size": [9, 8]
+              }
+            }
+          },
+          {
+            "origin": [-10.25, 2.6645352591003757e-15, 3.7499999999999982],
+            "pivot": [-7.75, 2.6645352591003757e-15, 3.7499999999999982],
+            "rotation": [120, 0, 0],
+            "size": [4.5, 4.000000000000001, 0.0],
+            "uv": {
+              "north": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [9, 8]
+              }
+            }
+          }
+        ],
+        "name": "leaf_2",
+        "parent": "root",
+        "pivot": [-7.75, 0, 7.75],
+        "rotation": [165, 59.999999999999936, 180]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-10.25, 1, 8],
+            "pivot": [-7.75, 1, 8],
+            "rotation": [90, 0, 0],
+            "size": [4.5, 4, 0],
+            "uv": {
+              "north": {
+                "texture": 1,
+                "uv": [0, 8],
+                "uv_size": [9, 8]
+              }
+            }
+          },
+          {
+            "origin": [-10.25, 1.0000000000000027, 3.9999999999999982],
+            "pivot": [-7.75, 1.0000000000000027, 3.9999999999999982],
+            "rotation": [120, 0, 0],
+            "size": [4.5, 4.000000000000001, 0.0],
+            "uv": {
+              "north": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [9, 8]
+              }
+            }
+          }
+        ],
+        "name": "leaf_1",
+        "parent": "root",
+        "pivot": [-7.75, 1, 8],
+        "rotation": [-15, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:eggplant_stage_0",
+      "textures": [
+        "ham:eggplant_stage_0",
+        "ham:eggplant_leaf",
+        "ham:eggplant_leaf_small"
+      ],
+      "textures_descriptions": [
+        {
+          "length": 16,
+          "width": 16
+        },
+        {
+          "length": 16,
+          "width": 16
+        },
+        {
+          "length": 16,
+          "width": 16
+        }
+      ],
+      "use_ao": true
+    }
+  }
+}

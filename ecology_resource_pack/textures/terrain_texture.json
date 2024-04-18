@@ -28,6 +28,36 @@
     "ham:corn_fruit": {
       "textures": "textures/blocks/crops/corn/corn_fruit"
     },
+    "ham:eggplant_branch": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_branch"
+    },
+    "ham:eggplant_fruit": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_fruit"
+    },
+    "ham:eggplant_leaf_big": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_leaf_big"
+    },
+    "ham:eggplant_leaf_die": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_leaf_die"
+    },
+    "ham:eggplant_leaf_small": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_leaf_small"
+    },
+    "ham:eggplant_leaf_small_die": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_leaf_small_die"
+    },
+    "ham:eggplant_leaf_tiny": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_leaf_tiny"
+    },
+    "ham:eggplant_leaf_tiny_die": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_leaf_tiny_die"
+    },
+    "ham:eggplant_leaf": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_leaf"
+    },
+    "ham:eggplant_stage_0": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_stage_0"
+    },
     "ham:herb_stage_0": {
       "textures": "textures/blocks/crops/herb/herb_stage_0"
     },
