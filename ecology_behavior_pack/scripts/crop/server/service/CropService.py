@@ -31,7 +31,8 @@ class CropService(object):
     def DeleteCropManager(position, dimensionId):
         # type: (tuple[int, int, int], int) -> None
         posKey = position + (dimensionId,)
-        del CropService.cropMgrDict[posKey]
+        if CropService.cropMgrDict[posKey]:
+            del CropService.cropMgrDict[posKey]
 
     @staticmethod
     def CanPlant(itemName, landPosition, dimensionId):

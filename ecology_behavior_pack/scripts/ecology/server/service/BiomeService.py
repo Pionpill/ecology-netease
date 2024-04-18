@@ -43,7 +43,7 @@ class BiomeService(object):
             now = int(time.time())
             lastGetTime = ecologyMgrTuple[1]
             # 超过 10 分钟就删除管理类
-            if now - lastGetTime > 600:
+            if now - lastGetTime > 600 and BiomeService.ecologyMgrDict[posKey]:
                 del BiomeService.ecologyMgrDict[posKey]
 
     @staticmethod
