@@ -1,3 +1,4 @@
+import math
 import random
 import mod.server.extraServerApi as serverApi
 
@@ -81,13 +82,19 @@ class CropManager(object):
         blockTickCount = cropEntityData['tickCount'] or 0
         blockFertility = cropEntityData['fertility'] or 0
         nextTick = growTicks + blockTick
+
+        # 生长，但不进入下一阶段
         if nextTick < tickCount:
             cropEntityData['tick'] = nextTick
             cropEntityData['tickCount'] = blockTickCount + 1
-            cropEntityData['fertility'] = blockFertility + self.__GetGrowFertility()
+            cropEntityData['fertility'] = blockFertility + self.__GetGrowFertility() * growTicks
             return
-        blockName = self.GetCropBlockName(self.__GetStage() + 1)
-        nextBlock = {"name": blockName, "aux": 0}
+        
+        if not self.CanGrowToNextStage():
+            return
+
+        nextBlockName = self.GetCropBlockName(self.__GetStage() + 1)
+        nextBlock = {"name": nextBlockName, "aux": 0}
         blockInfoComp.SetBlockNew(self.position, nextBlock, dimensionId=self.dimensionId)
         cropEntityData = self.__GetCropEntityData()
         if cropEntityData is None:
@@ -165,6 +172,18 @@ class CropManager(object):
         """获取作物块进入下一阶段所需要 tick 总数"""
         stageId = self.__GetStage()
         return self.crop.GetGrowStageInfo(stageId).tick
+
+    def CanGrowToNextStage(self):
+        """能否进入下一阶段：上方是否有遮挡物"""
+        nextStageInfo = self.crop.GetGrowStageInfo(self.__GetStage() + 1)
+        nextStageHeightTuple = nextStageInfo.height
+        nextStageHeight = int(math.ceil(float(nextStageHeightTuple[0]) / nextStageHeightTuple[1]))
+        for offset in range(1, nextStageHeight):
+            position = positionUtils.GetAbovePosition(self.position, offset)
+            blockName = blockInfoComp.GetBlockNew(position, self.dimensionId).get('name')
+            if blockName != 'minecraft:air':
+                return False
+        return True
 
     def CanHarvest(self):
         """判断是否可以收获"""

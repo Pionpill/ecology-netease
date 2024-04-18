@@ -1,12 +1,12 @@
-def GetBelowPosition(position):
-    # type: (tuple[int, int, int]) -> tuple[int, int, int]
+def GetBelowPosition(position, offset = 1):
+    # type: (tuple[int, int, int], int) -> tuple[int, int, int]
     """获取某个位置下方的位置"""
-    return (position[0], position[1] - 1, position[2])
+    return (position[0], position[1] - offset, position[2])
 
-def GetAbovePosition(position):
-    # type: (tuple[int, int, int]) -> tuple[int, int, int]
+def GetAbovePosition(position, offset = 1):
+    # type: (tuple[int, int, int], int) -> tuple[int, int, int]
     """获取某个位置上方的位置"""
-    return (position[0], position[1] + 1, position[2])
+    return (position[0], position[1] + offset, position[2])
 
 def GetNearbyPosition(position, distance, mode = 'cube', type = "point"):
     # type: (tuple[int, int, int], int, str, str) -> tuple[tuple[int, int, int]]
