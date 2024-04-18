@@ -90,7 +90,7 @@ class CropManager(object):
             cropEntityData['fertility'] = blockFertility + self.__GetGrowFertility() * growTicks
             return
         
-        if not self.CanGrowToNextStage():
+        if not self.CanGrowToStage(self.__GetStage() + 1):
             return
 
         nextBlockName = self.GetCropBlockName(self.__GetStage() + 1)
@@ -173,15 +173,17 @@ class CropManager(object):
         stageId = self.__GetStage()
         return self.crop.GetGrowStageInfo(stageId).tick
 
-    def CanGrowToNextStage(self):
+    def CanGrowToStage(self, stage = None):
+        # type: (int | None) -> bool
         """能否进入下一阶段：上方是否有遮挡物"""
-        nextStageInfo = self.crop.GetGrowStageInfo(self.__GetStage() + 1)
+        stage = stage or self.__GetStage()
+        nextStageInfo = self.crop.GetGrowStageInfo(stage)
         nextStageHeightTuple = nextStageInfo.height
         nextStageHeight = int(math.ceil(float(nextStageHeightTuple[0]) / nextStageHeightTuple[1]))
         for offset in range(1, nextStageHeight):
             position = positionUtils.GetAbovePosition(self.position, offset)
             blockName = blockInfoComp.GetBlockNew(position, self.dimensionId).get('name')
-            if blockName != 'minecraft:air':
+            if blockName is not None and blockName != 'minecraft:air':
                 return False
         return True
 

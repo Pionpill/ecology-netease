@@ -37,9 +37,15 @@ class CropServerSystem(ServerSystem):
             self.__HandlePlantCrop(args)
 
     def OnBlockNeighborChanged(self, args):
-        # 植被下方作物变化
-        if cropUtils.IsCropBlock(args['blockName']) and args['posX'] == args['neighborPosX'] and args['posY'] == args['neighborPosY'] + 1 and args['posZ'] == args['neighborPosZ']:
-            self.__HandleCropBelowBlockChange(args)
+        position = (args['posX'], args['posY'], args['posZ']) # type: tuple[int, int, int]
+        neighPosition = (args['neighborPosX'], args['neighborPosY'], args['neighborPosZ']) # type: tuple[int, int, int]
+        if cropUtils.IsCropBlock(args['blockName']) and positionUtils.IsOnSamePlain(position, neighPosition):
+            if args['posY'] == args['neighborPosY'] + 1:
+                # 植被土地变化
+                self.__HandleCropLandChange(args)
+            if args['neighborPosY'] > args['posY']:
+                # 植被上方方块变化
+                self.__HandleCropAboveBlockChange(args)
 
     def OnBlockRandomTick(self, args):
         # 作物生长
@@ -97,7 +103,7 @@ class CropServerSystem(ServerSystem):
             return
         itemComp.SetInvItemNum(slotId, carriedItemCount - 1)
 
-    def __HandleCropBelowBlockChange(self, args):
+    def __HandleCropLandChange(self, args):
         position = (args['posX'], args['posY'], args['posZ'])
         dimensionId = args["dimensionId"]
         canPlantOnLand = CropService.CanPlantOnLand(args['blockName'], args['toBlockName'], args['auxValue'])
@@ -107,6 +113,20 @@ class CropServerSystem(ServerSystem):
         else:
             cropManager = CropService.GetCropManager(position, dimensionId)
             cropManager.RenewLandInfo()
+
+    def __HandleCropAboveBlockChange(self, args):
+        neighPosition = (args['neighborPosX'], args['neighborPosY'], args['neighborPosZ'])
+        dimensionId = args["dimensionId"] # type: int
+        blockName = blockInfoComp.GetBlockNew(neighPosition, dimensionId).get('name')
+        if blockName is None or blockName == 'minecraft:air':
+            return
+        position = (args['posX'], args['posY'], args['posZ']) # type: tuple[int, int, int]
+        crop = CropService.GetCropManager(position, dimensionId)
+        if not crop.CanGrowToStage():
+            result = blockInfoComp.SetBlockNew(position, {'name': 'minecraft:air', 'aux': 0}, dimensionId = dimensionId)
+            if not result:
+                logger.error('删除位置：{} 的作物失败，这是一个系统 bug'.format(position))
+            CropService.DeleteCropManager(position, dimensionId)
 
     def __HandleCropStageTick(self, args):
         """作物tick生长"""

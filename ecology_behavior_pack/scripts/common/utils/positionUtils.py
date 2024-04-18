@@ -8,8 +8,13 @@ def GetAbovePosition(position, offset = 1):
     """获取某个位置上方的位置"""
     return (position[0], position[1] + offset, position[2])
 
+def IsOnSamePlain(position1, position2):
+    # type: (tuple[int, int, int], tuple[int, int, int]) -> bool
+    """两个坐标是否在同一平面（仅y轴不同）"""
+    return position1[0] == position2[0] and position1[2] == position2[2]
+
 def GetNearbyPosition(position, distance, mode = 'cube', type = "point"):
-    # type: (tuple[int, int, int], int, str, str) -> tuple[tuple[int, int, int]]
+    # type: (tuple[int, int, int], int, str, str) -> tuple[tuple[int, int, int], ...]
     """获取一定距离的位置，返回一个包含所有满足距离条件的元素 TODO 需要补全功能
 
     Args:
