@@ -5,15 +5,15 @@ CORN = {
     "grow": {
         "stage": (
             {
-                "tick": 4,
+                "tick": 20,
                 "height": (26, 32)
             },
             {
-                "tick": 4,
+                "tick": 20,
                 "height": (42, 32)
             },
             {
-                "tick": 6,
+                "tick": 20,
                 "height": (64, 32)
             },
             {

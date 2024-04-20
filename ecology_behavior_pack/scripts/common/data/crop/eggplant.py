@@ -5,15 +5,15 @@ EGGPLANT = {
     "grow": {
         "stage": (
             {
-                "tick": 3,
+                "tick": 10,
                 "height": (13, 32)
             },
             {
-                "tick": 3,
+                "tick": 10,
                 "height": (24, 32)
             },
             {
-                "tick": 3,
+                "tick": 14,
                 "height": (37, 32)
             },
             {

@@ -5,15 +5,15 @@ HERB = {
     "grow": {
         "stage": (
             {
-                "tick": 8,
+                "tick": 6,
                 "height": (5, 32)
             },
             {
-                "tick": 9,
+                "tick": 6,
                 "height": (14, 32)
             },
             {
-                "tick": 9,
+                "tick": 6,
                 "height": (26, 32)
             },
             {
@@ -48,7 +48,7 @@ HERB = {
         {
             "name": "ham:herb",
             "chance": 100,
-            "count": 7
+            "count": 4
         },
         {
             "name": "ham:herb_seeds",
