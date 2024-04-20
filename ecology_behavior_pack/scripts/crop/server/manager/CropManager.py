@@ -1,5 +1,6 @@
 import math
 import random
+from time import time
 import mod.server.extraServerApi as serverApi
 
 from scripts.common.enum import Period
@@ -44,6 +45,8 @@ class CropManager(object):
                 return
             self.crop = crop
         self.ecology = ecology or EcologyFacade.GetEcologyInfo(position, dimensionId)
+        # 右键和左键方块都可以收获作物，该变量用于防止收获多次
+        self.lastHarvestTime = None
 
     def CanGrow(self):
         """判断能否生长"""
@@ -115,6 +118,10 @@ class CropManager(object):
         :param remove: 是否删除作物，否则尝试多次收获 TODO 多次收获功能未实装
         :param loot: 是否生成凋落物
         """
+        now = time()
+        # 防止重复收获
+        if self.lastHarvestTime is not None and now - self.lastHarvestTime < 1:
+            return False
         if self.cropBlockName is None:
             return False
         harvestStages = self.crop.GetGrowHarvestStage()
@@ -122,6 +129,7 @@ class CropManager(object):
         if stage not in harvestStages:
             return False
 
+        self.lastHarvestTime = now
         if loot:
             self.SpawnLoots()
 
