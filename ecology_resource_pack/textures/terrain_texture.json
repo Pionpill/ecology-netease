@@ -19,20 +19,23 @@
     "ham:cooking_table_side": {
       "textures": "textures/blocks/workbenches/cooking_table_side"
     },
-    "ham:corn_leaf": {
-      "textures": "textures/blocks/crops/corn/corn_leaf"
-    },
     "ham:corn_flower": {
       "textures": "textures/blocks/crops/corn/corn_flower"
     },
     "ham:corn_fruit": {
       "textures": "textures/blocks/crops/corn/corn_fruit"
     },
+    "ham:corn_leaf": {
+      "textures": "textures/blocks/crops/corn/corn_leaf"
+    },
     "ham:eggplant_branch": {
       "textures": "textures/blocks/crops/eggplant/eggplant_branch"
     },
     "ham:eggplant_fruit": {
       "textures": "textures/blocks/crops/eggplant/eggplant_fruit"
+    },
+    "ham:eggplant_leaf": {
+      "textures": "textures/blocks/crops/eggplant/eggplant_leaf"
     },
     "ham:eggplant_leaf_big": {
       "textures": "textures/blocks/crops/eggplant/eggplant_leaf_big"
@@ -52,9 +55,6 @@
     "ham:eggplant_leaf_tiny_die": {
       "textures": "textures/blocks/crops/eggplant/eggplant_leaf_tiny_die"
     },
-    "ham:eggplant_leaf": {
-      "textures": "textures/blocks/crops/eggplant/eggplant_leaf"
-    },
     "ham:eggplant_stage_0": {
       "textures": "textures/blocks/crops/eggplant/eggplant_stage_0"
     },
@@ -69,6 +69,18 @@
     },
     "ham:herb_stage_3": {
       "textures": "textures/blocks/crops/herb/herb_stage_3"
+    },
+    "ham:lettuce_core": {
+      "textures": "textures/blocks/crops/lettuce/lettuce_core"
+    },
+    "ham:lettuce_leaf_big": {
+      "textures": "textures/blocks/crops/lettuce/lettuce_leaf_big"
+    },
+    "ham:lettuce_leaf_small": {
+      "textures": "textures/blocks/crops/lettuce/lettuce_leaf_small"
+    },
+    "ham:lettuce_leaf": {
+      "textures": "textures/blocks/crops/lettuce/lettuce_leaf"
     },
     "ham:mix_plank": {
       "textures": "textures/blocks/workbenches/mix_plank"
