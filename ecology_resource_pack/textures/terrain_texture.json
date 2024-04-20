@@ -82,6 +82,9 @@
     "ham:lettuce_leaf": {
       "textures": "textures/blocks/crops/lettuce/lettuce_leaf"
     },
+    "ham:onion_core": {
+      "textures": "textures/blocks/crops/onion/onion_core"
+    },
     "ham:mix_plank": {
       "textures": "textures/blocks/workbenches/mix_plank"
     },
