@@ -31,7 +31,7 @@ class CropService(object):
     def DeleteCropManager(position, dimensionId):
         # type: (tuple[int, int, int], int) -> None
         posKey = position + (dimensionId,)
-        if CropService.cropMgrDict[posKey]:
+        if CropService.cropMgrDict.get(posKey):
             del CropService.cropMgrDict[posKey]
 
     @staticmethod

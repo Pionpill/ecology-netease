@@ -93,6 +93,7 @@ class CropManager(object):
         if not self.CanGrowToStage(self.__GetStage() + 1):
             return
 
+        blockHarvestCount = cropEntityData['harvestCount'] or 0
         nextBlockName = self.GetCropBlockName(self.__GetStage() + 1)
         nextBlock = {"name": nextBlockName, "aux": 0}
         blockInfoComp.SetBlockNew(self.position, nextBlock, dimensionId=self.dimensionId)
@@ -103,6 +104,7 @@ class CropManager(object):
         cropEntityData['tick'] = nextTick - tickCount
         cropEntityData['tickCount'] = blockTickCount + 1
         cropEntityData['fertility'] = blockFertility + self.__GetGrowFertility()
+        cropEntityData['harvestCount'] = blockHarvestCount
         self.RenewCropInfo()
 
     def Harvest(self, remove = False, loot = True):
@@ -130,13 +132,16 @@ class CropManager(object):
                 return False
         else:
             returnStage = self.crop.GetGrowHarvestReturn()
-            if returnStage is None:
-                return False
-            newBlockName = self.GetCropBlockName(returnStage)
-            newBlockDict = {"name": newBlockName, "aux": 0}
+            harvestCount = self.crop.GetGrowHarvestCount()
             cropEntityData = self.__GetCropEntityData()
             if cropEntityData is None:
                 return False
+            blockHarvestCount = cropEntityData['harvestCount'] or 0
+            if returnStage < 0 or blockHarvestCount + 1 == harvestCount:
+                blockInfoComp.SetBlockNew(self.position, {"name": "minecraft:air", "aux": 0}, dimensionId = self.dimensionId)
+                return True
+
+            newBlockDict = {"name": self.GetCropBlockName(returnStage), "aux": 0}
             blockTickCount = cropEntityData['tickCount'] or 0
             blockFertility = cropEntityData['fertility'] or 0
             result = blockInfoComp.SetBlockNew(self.position, newBlockDict, dimensionId = self.dimensionId)
@@ -146,6 +151,7 @@ class CropManager(object):
             self.RenewCropInfo()
             cropEntityData['tickCount'] = blockTickCount
             cropEntityData['fertility'] = blockFertility
+            cropEntityData['harvestCount'] = blockHarvestCount + 1
             if not result:
                 logger.error('发生了不可能出现的错误，收获作物失败')
                 return False

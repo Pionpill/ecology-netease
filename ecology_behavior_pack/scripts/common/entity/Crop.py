@@ -116,9 +116,9 @@ class Crop(object):
         return stage if isinstance(stage, tuple) else (stage,)
 
     def GetGrowHarvestReturn(self):
-        # type: () -> int | None
-        """获取收获后返回的状态数"""
-        return self._GetField(("grow", "harvest", "return"), None)
+        # type: () -> int
+        """获取收获后返回的状态数，返回 -1 表示只能收获一次"""
+        return self._GetField(("grow", "harvest", "return"), -1)
     
     def GetGrowTemperature(self, type = 'can'):
         # type: (str) -> tuple[int, int]
