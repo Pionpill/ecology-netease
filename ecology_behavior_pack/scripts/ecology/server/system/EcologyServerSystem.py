@@ -11,15 +11,7 @@ engineCompFactory = serverApi.GetEngineCompFactory()
 class EcologyServerSystem(ServerSystem):
     def __init__(self, namespace, systemName):
         ServerSystem.__init__(self, namespace, systemName)
-        self.InitEvents()
         self.ListenEvents()
-        
-    def InitEvents(self):
-        self.__InitServerBlockUseEvent()
-        
-    def __InitServerBlockUseEvent(self):
-        blockUseEventWhiteList = engineCompFactory.CreateBlockUseEventWhiteList(levelId)
-        blockUseEventWhiteList.AddBlockItemListenForUseEvent("minecraft:grass")
         
     def ListenEvents(self):
         engineNamespace = serverApi.GetEngineNamespace()
@@ -27,7 +19,7 @@ class EcologyServerSystem(ServerSystem):
         self.ListenForEvent(engineNamespace, engineSystemName, "ServerBlockUseEvent", self, self.OnServerBlockUse)
         
     def OnServerBlockUse(self, args):
-        """玩家持有剪刀右键草地时显示生态信息"""
+        """玩家持有剪刀右键作物时显示生态信息"""
         if not engineUtils.coolDown(args['playerId'], 1):
             return
         
