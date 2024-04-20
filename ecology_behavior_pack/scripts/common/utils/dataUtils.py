@@ -12,10 +12,9 @@ def GetField(key, data, dataKey = None, defaultValue = None):
     :raises AddonDataFieldError: 获取数据字段错误
     """
     keyTuple = (key, ) if isinstance(key, str) else key
-    
     field = data.get(keyTuple[0])
     if field is None:
-        if defaultValue:
+        if defaultValue is not None:
             return defaultValue() if callable(defaultValue) else defaultValue
         raise AddonDataFieldError('{} 没有对应字段 {}'.format(dataKey, keyTuple[0]))
-    return field if len(keyTuple) == 1 else GetField(keyTuple[1:], field, dataKey)
+    return field if len(keyTuple) == 1 else GetField(keyTuple[1:], field, dataKey, defaultValue)
