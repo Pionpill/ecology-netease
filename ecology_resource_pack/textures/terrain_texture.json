@@ -100,6 +100,9 @@
     "ham:rice_stage_3": {
       "textures": "textures/blocks/crops/rice/rice_stage_3"
     },
+    "ham:scallion_core": {
+      "textures": "textures/blocks/crops/scallion/scallion_core"
+    },
     "ham:mix_plank": {
       "textures": "textures/blocks/workbenches/mix_plank"
     },
