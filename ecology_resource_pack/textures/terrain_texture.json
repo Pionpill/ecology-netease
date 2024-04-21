@@ -85,6 +85,21 @@
     "ham:onion_core": {
       "textures": "textures/blocks/crops/onion/onion_core"
     },
+    "ham:rice_leaf": {
+      "textures": "textures/blocks/crops/rice/rice_leaf"
+    },
+    "ham:rice_stage_0": {
+      "textures": "textures/blocks/crops/rice/rice_stage_0"
+    },
+    "ham:rice_stage_1": {
+      "textures": "textures/blocks/crops/rice/rice_stage_1"
+    },
+    "ham:rice_stage_2": {
+      "textures": "textures/blocks/crops/rice/rice_stage_2"
+    },
+    "ham:rice_stage_3": {
+      "textures": "textures/blocks/crops/rice/rice_stage_3"
+    },
     "ham:mix_plank": {
       "textures": "textures/blocks/workbenches/mix_plank"
     },

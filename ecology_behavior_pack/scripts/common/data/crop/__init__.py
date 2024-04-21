@@ -3,6 +3,7 @@ from scripts.common.data.crop.eggplant import EGGPLANT
 from scripts.common.data.crop.herb import HERB
 from scripts.common.data.crop.lettuce import LETTUCE
 from scripts.common.data.crop.onion import ONION
+from scripts.common.data.crop.rice import RICE
 
 CROP_DATA = {
     "ham:herb": HERB,
@@ -10,6 +11,7 @@ CROP_DATA = {
     "ham:eggplant": EGGPLANT,
     "ham:lettuce": LETTUCE,
     "ham:onion": ONION,
+    "ham:rice": RICE,
 }
 
 __all__ = [CROP_DATA]
