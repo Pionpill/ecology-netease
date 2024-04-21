@@ -1,0 +1,1075 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "name": "lentinula_mushroom",
+        "pivot": [-16, 0, 16],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "name": "left2",
+        "parent": "lentinula_mushroom",
+        "pivot": [-8, 0, 8],
+        "rotation": [0, 180, 0]
+      },
+      {
+        "name": "mushroom2",
+        "parent": "left2",
+        "pivot": [-16, 0, 16],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-12.434314575050763, 1.5656854249492387, 4],
+            "pivot": [-18, -3, 7],
+            "rotation": [0, 0, 0],
+            "size": [1.0, 2.0, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-12.934314575050763, 3.5656854249492387, 3.5],
+            "pivot": [-18, -3, 7],
+            "rotation": [0, 0, 0],
+            "size": [2.0, 0.9999999999999982, 2.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 2.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [5.5, 5.5],
+                "uv_size": [-2.0, -2.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              }
+            }
+          }
+        ],
+        "name": "9",
+        "parent": "mushroom2",
+        "pivot": [-12.5, 1, 11.5],
+        "rotation": [0, 0, -45]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-12, 2.4999999999999996, 7.5],
+            "pivot": [-17, -1.5000000000000004, 10.5],
+            "rotation": [0, 0, 0],
+            "size": [1, 2.000000000000002, 1.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-13, 4.500000000000002, 6.5],
+            "pivot": [-11.5, 2.4999999999999996, 8],
+            "rotation": [0, 0, 0],
+            "size": [3, 2.0, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [6.5, 11],
+                "uv_size": [-3.0, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              }
+            }
+          }
+        ],
+        "name": "8",
+        "parent": "mushroom2",
+        "pivot": [-11.5, 2.4999999999999996, 8],
+        "rotation": [0, 0, 10]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-12.5, 2.4999999999999996, 13.5],
+            "pivot": [-17.5, -1.5000000000000004, 16.5],
+            "rotation": [0, 0, 0],
+            "size": [1.0, 2.000000000000002, 1.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-13.5, 4.500000000000002, 12.5],
+            "pivot": [-12, 2.4999999999999996, 14],
+            "rotation": [0, 0, 0],
+            "size": [3.0, 2.0, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [6.5, 11],
+                "uv_size": [-3.0, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              }
+            }
+          }
+        ],
+        "name": "13",
+        "parent": "mushroom2",
+        "pivot": [-12, 2.4999999999999996, 14],
+        "rotation": [0, 0, -15]
+      },
+      {
+        "name": "12",
+        "parent": "mushroom2",
+        "pivot": [-12.5, 2, 5.5],
+        "rotation": [0, 0, -45]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-13, 1, 11],
+            "pivot": [-18, -3, 14],
+            "rotation": [0, 0, 0],
+            "size": [1, 2, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-13.5, 3, 10.5],
+            "pivot": [-18, -3, 14],
+            "rotation": [0, 0, 0],
+            "size": [2.0, 1, 2.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 2.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [5.5, 5.5],
+                "uv_size": [-2.0, -2.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              }
+            }
+          }
+        ],
+        "name": "11",
+        "parent": "mushroom2",
+        "pivot": [-12.5, 1, 11.5],
+        "rotation": [0, 0, -45]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-11.5, 3, 2.5],
+            "pivot": [-16.5, -1, 5.5],
+            "rotation": [0, 0, 0],
+            "size": [1.0, 2, 1.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-12.5, 5, 1.5],
+            "pivot": [-11, 3, 3],
+            "rotation": [0, 0, 0],
+            "size": [3.0, 2, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [6.5, 11],
+                "uv_size": [-3.0, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              }
+            }
+          }
+        ],
+        "name": "7",
+        "parent": "mushroom2",
+        "pivot": [-11, 3, 3],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-13, 0, 0],
+            "pivot": [-16, 0, 16],
+            "rotation": [0, 0, 0],
+            "size": [3, 3, 16],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3, 0],
+                "uv_size": [-3, 16]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 16]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              }
+            }
+          }
+        ],
+        "name": "mushroom_wood2",
+        "parent": "left2",
+        "pivot": [-16, 0, 16],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "name": "left",
+        "parent": "lentinula_mushroom",
+        "pivot": [-16, 0, 16],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "name": "mushroom",
+        "parent": "left",
+        "pivot": [-16, 0, 16],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-13, 1.8000000000000007, 4.500000000000002],
+            "pivot": [-18, -2.1999999999999993, 7.500000000000002],
+            "rotation": [0, 0, 0],
+            "size": [1, 2.0, 1.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-13.5, 3.8000000000000007, 4.000000000000002],
+            "pivot": [-18, -2.1999999999999993, 7.500000000000002],
+            "rotation": [0, 0, 0],
+            "size": [2.0, 0.9999999999999964, 2.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 2.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [5.5, 5.5],
+                "uv_size": [-2.0, -2.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              }
+            }
+          }
+        ],
+        "name": "10",
+        "parent": "mushroom",
+        "pivot": [-12.5, 1.8000000000000007, 5.000000000000002],
+        "rotation": [0, 0, -20]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-10.5, 2, 13],
+            "pivot": [-15.5, -2, 16],
+            "rotation": [0, 0, 0],
+            "size": [1.0, 2, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-11.5, 4, 12],
+            "pivot": [-10, 2, 13.5],
+            "rotation": [0, 0, 0],
+            "size": [3.0, 2, 3],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [6.5, 11],
+                "uv_size": [-3.0, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              }
+            }
+          }
+        ],
+        "name": "2",
+        "parent": "mushroom",
+        "pivot": [-10, 4, 13.5],
+        "rotation": [0, 0, 20]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-11.5, 3, 2.5],
+            "pivot": [-16.5, -1, 5.5],
+            "rotation": [0, 0, 0],
+            "size": [1.0, 2, 1.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-12.5, 5, 1.5],
+            "pivot": [-11, 3, 3],
+            "rotation": [0, 0, 0],
+            "size": [3.0, 2, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [6.5, 11],
+                "uv_size": [-3.0, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              }
+            }
+          }
+        ],
+        "name": "3",
+        "parent": "mushroom",
+        "pivot": [-11, 3, 3],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "name": "6",
+        "parent": "mushroom",
+        "pivot": [-12.5, 2, 5.5],
+        "rotation": [0, 0, -45]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-13, 1, 11],
+            "pivot": [-18, -3, 14],
+            "rotation": [0, 0, 0],
+            "size": [1, 2, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-13.5, 3, 10.5],
+            "pivot": [-18, -3, 14],
+            "rotation": [0, 0, 0],
+            "size": [2.0, 1, 2.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 2.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [5.5, 5.5],
+                "uv_size": [-2.0, -2.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              }
+            }
+          }
+        ],
+        "name": "5",
+        "parent": "mushroom",
+        "pivot": [-12.5, 1, 11.5],
+        "rotation": [0, 0, -45]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-11, 2, 10.000000000000002],
+            "pivot": [-16, -2, 13.000000000000002],
+            "rotation": [0, 0, 0],
+            "size": [1, 2, 1.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-11.5, 4, 9.500000000000002],
+            "pivot": [-16, -2, 13.000000000000002],
+            "rotation": [0, 0, 0],
+            "size": [2.0, 1, 2.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 2.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [5.5, 5.5],
+                "uv_size": [-2.0, -2.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [2.0, 1.0]
+              }
+            }
+          }
+        ],
+        "name": "4",
+        "parent": "mushroom",
+        "pivot": [-10.5, 2, 10.500000000000002],
+        "rotation": [0, 0, 30]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-11.5, 3, 7.5],
+            "pivot": [-16.5, -1, 10.5],
+            "rotation": [0, 0, 0],
+            "size": [1.0, 2, 1.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 1.0]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [4.5, 4.5],
+                "uv_size": [-1.0, -1.0]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 3.5],
+                "uv_size": [1.0, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-12.5, 5, 6.5],
+            "pivot": [-11, 3, 8],
+            "rotation": [0, 0, 0],
+            "size": [3.0, 2, 3.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 3]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [6.5, 11],
+                "uv_size": [-3.0, -3]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [3.5, 8],
+                "uv_size": [3.0, 2]
+              }
+            }
+          }
+        ],
+        "name": "1",
+        "parent": "mushroom",
+        "pivot": [-11, 3, 8],
+        "rotation": [0, 0, -15]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-13, 0, 0],
+            "pivot": [-16, 0, 16],
+            "rotation": [0, 0, 0],
+            "size": [3, 3, 16],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3, 0],
+                "uv_size": [-3, 16]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 16]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              }
+            }
+          }
+        ],
+        "name": "mushroom_wood",
+        "parent": "left",
+        "pivot": [-16, 0, 16],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:lentinula_stage_3",
+      "textures": ["ham:lentinula_core"],
+      "textures_descriptions": [
+        {
+          "length": 32,
+          "width": 32
+        }
+      ],
+      "use_ao": true
+    }
+  }
+}

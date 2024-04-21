@@ -139,8 +139,8 @@
     "ham:seasoning": {
       "textures": "textures/items/materials/seasoning"
     },
-    "ham:shii_take": {
-      "textures": "textures/items/crops/mushroom/shii_take"
+    "ham:lentinula": {
+      "textures": "textures/items/crops/mushroom/lentinula"
     },
     "ham:soy_bean": {
       "textures": "textures/items/crops/crop/soy_bean"

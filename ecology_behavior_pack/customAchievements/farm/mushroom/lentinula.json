@@ -1,10 +1,10 @@
 {
-  "node_ID": "ham-ecology-farm-shii_take",
+  "node_ID": "ham-ecology-farm-lentinula",
   "parent_node": "ham-ecology-farm-mushroom",
   "depend_parent": false,
   "title": "菌类",
-  "unfinished_icon": "textures/items/crops/mushroom/shii_take",
-  "finished_icon": "textures/items/crops/mushroom/shii_take",
+  "unfinished_icon": "textures/items/crops/mushroom/lentinula",
+  "finished_icon": "textures/items/crops/mushroom/lentinula",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,

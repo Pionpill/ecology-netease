@@ -2,10 +2,10 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:shii_take"
+      "identifier": "ham:lentinula"
     },
     "components": {
-      "minecraft:icon": "ham:shii_take",
+      "minecraft:icon": "ham:lentinula",
       "minecraft:hover_text_color": "white"
     }
   }
