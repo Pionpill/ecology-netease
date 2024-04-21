@@ -1,10 +1,10 @@
 {
-  "node_ID": "ham-ecology-farm-pepper",
+  "node_ID": "ham-ecology-farm-chili",
   "parent_node": "ham-ecology-farm-herb",
   "depend_parent": false,
   "title": "辣椒",
-  "unfinished_icon": "textures/items/crops/seasoning/pepper",
-  "finished_icon": "textures/items/crops/seasoning/pepper",
+  "unfinished_icon": "textures/items/crops/seasoning/chili",
+  "finished_icon": "textures/items/crops/seasoning/chili",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,

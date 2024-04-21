@@ -1,3 +1,4 @@
+from scripts.common.data.crop.chili import CHILI
 from scripts.common.data.crop.corn import CORN
 from scripts.common.data.crop.eggplant import EGGPLANT
 from scripts.common.data.crop.herb import HERB
@@ -11,6 +12,7 @@ from scripts.common.data.crop.tomato import TOMATO
 
 CROP_DATA = {
     "ham:herb": HERB,
+    "ham:chili": CHILI,
     "ham:corn": CORN,
     "ham:eggplant": EGGPLANT,
     "ham:lentinula": LENTINULA,

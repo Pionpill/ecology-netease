@@ -49,7 +49,7 @@ MILL_DATA = {
     },
     "ham:chill_powder": {
         "material": {
-            0: "ham:pepper"
+            0: "ham:chili"
         },
         "result": {
             0: "ham:chill_powder"

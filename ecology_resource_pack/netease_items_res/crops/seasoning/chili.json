@@ -2,10 +2,10 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:pepper"
+      "identifier": "ham:chili"
     },
     "components": {
-      "minecraft:icon": "ham:pepper",
+      "minecraft:icon": "ham:chili",
       "minecraft:hover_text_color": "yellow"
     }
   }

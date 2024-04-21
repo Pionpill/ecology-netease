@@ -85,8 +85,8 @@
     "ham:onion": {
       "textures": "textures/items/crops/vegetable/onion"
     },
-    "ham:pepper": {
-      "textures": "textures/items/crops/seasoning/pepper"
+    "ham:chili": {
+      "textures": "textures/items/crops/seasoning/chili"
     },
     "ham:plain_noodles": {
       "textures": "textures/items/foods/noodles/plain_noodles"

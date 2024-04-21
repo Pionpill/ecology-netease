@@ -19,6 +19,15 @@
     "ham:cooking_table_side": {
       "textures": "textures/blocks/workbenches/cooking_table_side"
     },
+    "ham:chili_branch": {
+      "textures": "textures/blocks/crops/chili/chili_branch"
+    },
+    "ham:chili_leaf": {
+      "textures": "textures/blocks/crops/chili/chili_leaf"
+    },
+    "ham:chili_stage_0": {
+      "textures": "textures/blocks/crops/chili/chili_stage_0"
+    },
     "ham:corn_flower": {
       "textures": "textures/blocks/crops/corn/corn_flower"
     },
