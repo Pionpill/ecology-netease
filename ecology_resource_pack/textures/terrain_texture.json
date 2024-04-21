@@ -115,6 +115,21 @@
     "ham:scallion_core": {
       "textures": "textures/blocks/crops/scallion/scallion_core"
     },
+    "ham:tomato_branch": {
+      "textures": "textures/blocks/crops/tomato/tomato_branch"
+    },
+    "ham:tomato_core": {
+      "textures": "textures/blocks/crops/tomato/tomato_core"
+    },
+    "ham:tomato_leaf_big": {
+      "textures": "textures/blocks/crops/tomato/tomato_leaf_big"
+    },
+    "ham:tomato_leaf": {
+      "textures": "textures/blocks/crops/tomato/tomato_leaf"
+    },
+    "ham:tomato_stage_0": {
+      "textures": "textures/blocks/crops/tomato/tomato_stage_0"
+    },
     "ham:mix_plank": {
       "textures": "textures/blocks/workbenches/mix_plank"
     },

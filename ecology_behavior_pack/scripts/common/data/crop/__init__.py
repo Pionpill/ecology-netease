@@ -6,6 +6,7 @@ from scripts.common.data.crop.onion import ONION
 from scripts.common.data.crop.rice import RICE
 from scripts.common.data.crop.scallion import SCALLION
 from scripts.common.data.crop.soy_bean import SOYBEAN
+from scripts.common.data.crop.tomato import TOMATO
 
 CROP_DATA = {
     "ham:herb": HERB,
@@ -16,6 +17,7 @@ CROP_DATA = {
     "ham:rice": RICE,
     "ham:scallion": SCALLION,
     "ham:soy_bean": SOYBEAN,
+    "ham:tomato": TOMATO,
 }
 
 __all__ = [CROP_DATA]
