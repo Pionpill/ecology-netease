@@ -64,6 +64,10 @@
     "netease_model": "ham:onion_stage_3",
     "sound": "grass"
   },
+  "ham:rotten_wood": {
+    "netease_model": "ham:rotten_wood",
+    "sound": "wood"
+  },
   "ham:scallion_stage_0": {
     "netease_model": "ham:scallion_stage_0",
     "sound": "grass"

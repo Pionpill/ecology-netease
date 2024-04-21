@@ -1,0 +1,101 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "cubes": [
+          {
+            "origin": [-13, 0, 0],
+            "pivot": [-16, 0, 16],
+            "rotation": [0, 0, 0],
+            "size": [3, 3, 16],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3, 0],
+                "uv_size": [-3, 16]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 16]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              }
+            }
+          },
+          {
+            "origin": [-6, 0, 0],
+            "pivot": [-16, 0, 16],
+            "rotation": [0, 0, 0],
+            "size": [3, 3, 16],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [3, 0],
+                "uv_size": [-3, 16]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3, 16]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              }
+            }
+          }
+        ],
+        "name": "rotten_wood",
+        "pivot": [-16, 0, 16],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:rotten_wood",
+      "textures": ["ham:lentinula_core"],
+      "textures_descriptions": [
+        {
+          "length": 32,
+          "width": 32
+        }
+      ],
+      "use_ao": true
+    }
+  }
+}
