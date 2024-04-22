@@ -52,9 +52,9 @@ class CropManager(object):
         """判断能否生长"""
         if self.crop.IsLastStage(self.cropStage):
             return False
-        if not self.__CanPlantDuringPeriod():
+        if not self.__CanGrowDuringPeriod():
             return False
-        if not self.__CanPlantOnBlock():
+        if not self.__CanGrowOnBlock():
             return False
         temperature = self.ecology.GetAdjustTemperature()
         if not mathUtils.between(temperature, self.crop.GetGrowTemperature('can')):
@@ -235,7 +235,7 @@ class CropManager(object):
         self.landAux = landInfo.get('aux')
         self.land = GetLand(self.landName) if self.landName else None
 
-    def __CanPlantDuringPeriod(self):
+    def __CanGrowDuringPeriod(self):
         cropPeriod = self.crop.GetGrowPeriod()
         if cropPeriod == Period.NONE:
             return True
@@ -249,7 +249,7 @@ class CropManager(object):
             return True
         return False
 
-    def __CanPlantOnBlock(self):
+    def __CanGrowOnBlock(self):
         """判断能否种植在土地上"""
         if self.land is None:
             return False

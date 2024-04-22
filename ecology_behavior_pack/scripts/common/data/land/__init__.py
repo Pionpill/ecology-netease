@@ -32,7 +32,7 @@ LAND_DATA = {
     },
     "minecraft:mycelium": {
         "fertility": 100,
-        "tag": ("dirt", "fungi"),
+        "tag": ("fungi"),
     },
     "minecraft:moss_block": {
         "fertility": 90,

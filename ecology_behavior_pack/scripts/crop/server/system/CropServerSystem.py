@@ -74,24 +74,9 @@ class CropServerSystem(ServerSystem):
         dimensionId = args["dimensionId"]   # type: int
         
         # 判断能否种植
-        blockName = args['blockName']   # type: str
         itemName = args['itemDict']['newItemName']  # type: str
         entityId = args['entityId']     # type: str
-        canPlantResult = CropService.CanPlant(itemName, landPosition, dimensionId)
-        if canPlantResult is not True:
-            msgComp = engineCompFactory.CreateMsg(entityId)
-            if canPlantResult == 'air':
-                msgComp.NotifyOneMessage(entityId, '{} 不能种植在空气上'.format(itemName), '§e')
-            if canPlantResult == 'landType':
-                msgComp.NotifyOneMessage(entityId, '{} 土地类型无法种植 {}'.format(blockName, itemName), '§e')
-            if canPlantResult == 'fertility':
-                msgComp.NotifyOneMessage(entityId, '{} 土地肥力不足'.format(blockName), '§e')
-            if canPlantResult == 'land' and 'stage' not in blockName:
-                msgComp.NotifyOneMessage(entityId, '{} 不能种植在 {} 上'.format(itemName, blockName), '§e')
-            if canPlantResult == 'temperature':
-                msgComp.NotifyOneMessage(entityId, '{} 种植温度不适宜'.format(itemName), '§e')
-            if canPlantResult == 'rainfall':
-                msgComp.NotifyOneMessage(entityId, '{} 种植湿度不适宜'.format(itemName), '§e')
+        if not CropService.CanPlant(itemName, landPosition, dimensionId, entityId):
             return
         
         # 种植作物

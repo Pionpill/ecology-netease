@@ -1,4 +1,3 @@
-from scripts.common.enum import BiomeTag
 from scripts.common.entity.Biome import Biome
 
 

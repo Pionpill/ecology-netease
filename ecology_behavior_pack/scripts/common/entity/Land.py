@@ -1,5 +1,4 @@
 from scripts.common.error import AddonDataError
-from scripts.common.enum.LandTag import LandTag
 from scripts.common.utils import dataUtils
 from scripts.common.data.land import LAND_DATA
 
@@ -19,7 +18,7 @@ class Land(object):
         return self._GetField(key)
 
     def GetTags(self):
-        # type: () -> tuple[LandTag]
+        # type: () -> tuple[str, ...]
         """获取土壤标签"""
         tag = self._GetField('tag')    
         return (tag,) if isinstance(tag, str) else tag  # type: ignore

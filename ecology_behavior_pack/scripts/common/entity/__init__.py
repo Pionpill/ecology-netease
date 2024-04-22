@@ -34,7 +34,7 @@ landMap = {} # type: dict[str, Land]
 
 def GetLand(blockName):
     # type: (str) -> Land | None
-    """获取作物实例，单例模式"""
+    """获取土地实例，单例模式"""
     land = landMap.get(blockName)
     if land is not None:
         return land

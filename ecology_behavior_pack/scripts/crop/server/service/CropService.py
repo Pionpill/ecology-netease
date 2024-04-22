@@ -4,7 +4,8 @@ from scripts.common import logger
 from scripts.common.entity import Crop, GetCrop, GetLand
 from scripts.common.error import AddonDevelopError
 from scripts.common.utils import mathUtils
-from scripts.crop.server.manager import CropManager
+from scripts.crop.server.manager import CropManager, CropMsgManager
+from scripts.crop.server.service.enum import PlantFailReason
 from scripts.crop.server.utils import cropUtils
 from scripts.ecology.server.entity.Ecology import DynamicEcology
 from scripts.ecology.server.facade import EcologyFacade
@@ -15,6 +16,7 @@ blockInfoComp = engineCompFactory.CreateBlockInfo(levelId)
 
 class CropService(object):
     cropMgrDict = {} # type: dict[tuple[int, int, int, int], CropManager]
+    msgMgrDict = {} # type: dict[str, CropMsgManager]
 
     @staticmethod
     def GetCropManager(position, dimensionId, crop = None, ecology = None):
@@ -35,37 +37,58 @@ class CropService(object):
             del CropService.cropMgrDict[posKey]
 
     @staticmethod
-    def CanPlant(itemName, landPosition, dimensionId):
-        # type: (str, tuple[int, int, int], int) -> str | bool
+    def GetMsgManager(playerId):
+        # type: (str) -> CropMsgManager
+        msgManger = CropService.msgMgrDict.get(playerId)
+        if msgManger:
+            return msgManger
+        msgManger = CropMsgManager(playerId)
+        CropService.msgMgrDict[playerId] = msgManger
+        return msgManger
+
+    @staticmethod
+    def DeleteMsgManager(playerId):
+        # type: (str) -> None
+        if CropService.msgMgrDict.get(playerId):
+            del CropService.msgMgrDict[playerId]
+
+    @staticmethod
+    def CanPlant(itemName, landPosition, dimensionId, playerId = None):
+        # type: (str, tuple[int, int, int], int, str | None) -> str | bool
         landBlockInfo = blockInfoComp.GetBlockNew(landPosition, dimensionId)
         landName = landBlockInfo.get('name')
         if landName is None:
-            return 'air'
-        landCheckResult = CropService.CanPlantOnLand(itemName, landName, landBlockInfo.get('aux', 0))
-        if isinstance(landCheckResult, str):
-            return landCheckResult
+            return False
+        if not CropService.CanPlantOnLand(itemName, landName, landBlockInfo.get('aux', 0), playerId):
+            return False
         crop = CropService.__GetCrop(itemName)
         ecology = EcologyFacade.GetEcologyInfo(landPosition, dimensionId)
-        if not mathUtils.between(ecology.GetAdjustTemperature(), crop.GetGrowTemperature('can')):
-            return 'temperature'
-        if not mathUtils.between(ecology.GetAdjustRainfall(), crop.GetGrowRainfall('can')):
-            return 'rainfall'
+        ecologyTemperature = ecology.GetAdjustTemperature()
+        cropTemperatureTuple = crop.GetGrowTemperature('can')
+        if not mathUtils.between(ecologyTemperature, cropTemperatureTuple):
+            return CropService.__NotifyPlantFailMsg(playerId, PlantFailReason.ECOLOGY_TEMPERATURE, {"crop": cropTemperatureTuple, 'ecology': ecologyTemperature})
+        ecologyRainfall = ecology.GetAdjustRainfall()
+        cropRainfallTuple = crop.GetGrowRainfall('can')
+        if not mathUtils.between(ecologyRainfall, cropRainfallTuple):
+            return CropService.__NotifyPlantFailMsg(playerId, PlantFailReason.ECOLOGY_RAINFALL, {"crop": cropRainfallTuple, 'ecology': ecologyRainfall})
         return True
 
     @staticmethod
-    def CanPlantOnLand(blockOrItemName, landBlockName, blockAux = None):
-        # type: (str, str, int | None) -> str | bool
+    def CanPlantOnLand(blockOrItemName, landBlockName, blockAux = 0, playerId = None):
+        # type: (str, str, int, str | None) -> str | bool
         """判断某个作物(块)能否种植在方块上"""
         crop = CropService.__GetCrop(blockOrItemName)
         land = GetLand(landBlockName)
         if land is None:
-            return 'land'
+            return CropService.__NotifyPlantFailMsg(playerId, PlantFailReason.LAND_UNABLE)
+        cropTags = crop.GetGrowLandType()
+        landTags = land.GetTags()
+        if not mathUtils.hasCommonElements(landTags, cropTags):
+            return CropService.__NotifyPlantFailMsg(playerId, PlantFailReason.LAND_TYPE, {'crop': cropTags, 'land': landTags})
         fertility = land.GetFertility(blockAux)
-        tags = land.GetTags()
-        if crop.GetGrowFertilityMin() > fertility:
-            return 'fertility'
-        if not mathUtils.hasCommonElements(tags, crop.GetGrowLandType()):
-            return 'landType'
+        minFertility =  crop.GetGrowFertilityMin()
+        if minFertility > fertility:
+            return CropService.__NotifyPlantFailMsg(playerId, PlantFailReason.LAND_FERTILITY, {"crop": minFertility, 'land': fertility})
         return True
 
     @staticmethod
@@ -77,3 +100,11 @@ class CropService(object):
         if crop is None:
             raise AddonDevelopError('自定义作物 {} 未找到对应的数据'.format(blockOrItemName))
         return crop
+
+    @staticmethod
+    def __NotifyPlantFailMsg(playerId, reason, params = {}):
+        # type: (str | None, str, dict) -> bool
+        if playerId:
+            msgMgr = CropService.GetMsgManager(playerId)
+            msgMgr.NotifyPlantFailMessage(reason, params)
+        return False
