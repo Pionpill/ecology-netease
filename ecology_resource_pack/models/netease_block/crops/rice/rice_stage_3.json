@@ -51,7 +51,7 @@
               "south": {
                 "texture": 2,
                 "uv": [0, 0],
-                "uv_size": [16, 24]
+                "uv_size": [32, 48]
               }
             }
           },
@@ -64,7 +64,7 @@
               "south": {
                 "texture": 2,
                 "uv": [0, 0],
-                "uv_size": [16, 24]
+                "uv_size": [32, 48]
               }
             }
           },
@@ -77,7 +77,7 @@
               "south": {
                 "texture": 2,
                 "uv": [0, 0],
-                "uv_size": [16, 24]
+                "uv_size": [32, 48]
               }
             }
           }
