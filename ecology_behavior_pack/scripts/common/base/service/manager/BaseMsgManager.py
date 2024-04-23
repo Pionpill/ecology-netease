@@ -12,6 +12,10 @@ class BaseMsgManager(object):
         self.playerId = playerId
         self.msgComp = engineCompFactory.CreateMsg(playerId)
 
+    def NotifyErrorMessage(self, msg):
+        realMsg = msg + '请报告给开发者群: 712936357'
+        return self._NotifyOneErrorMessage(realMsg)
+
     def _NotifyOneMessage(self, msg, color):
         # type: (str, str) -> None
         self.msgComp.NotifyOneMessage(self.playerId, msg, color)

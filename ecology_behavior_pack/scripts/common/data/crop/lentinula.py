@@ -38,18 +38,24 @@ LENTINULA = {
             "can": (0, 12)
         },
         "fertility": {
-            "min": 0,
-            "sensitivity": 0,
+            "min": 100,
+            "sensitivity": 60,
             "type": ["fungi"]
         },
         "rain_multiply": 1,
-        "period": "none"
+        "period": "none",
+        "replace_block": "ham:rotten_wood"
     },
     "loot": (
         {
             "name": "ham:lentinula",
             "chance": 100,
             "count": 5
+        },
+        {
+            "name": "ham:rotten_wood",
+            "chance": 75,
+            "count": 1
         },
     )
 }

@@ -1,4 +1,5 @@
 from scripts.common.enum import Period
+from scripts.common.error import AddonDataFieldError
 from scripts.common.data.crop import CROP_DATA
 from scripts.common.error import AddonDataError
 from scripts.common.utils import dataUtils
@@ -167,6 +168,14 @@ class Crop(object):
         # type: () -> tuple[str, ...]
         """获取可种植的土地类型"""
         return self._GetField(("grow", "fertility", "type"))
+    
+    def GetPlantReplaceBlock(self):
+        # type: () -> str | None
+        """获取种植时替换的方块"""
+        try:
+            return self._GetField(("grow", "replace_block"))
+        except AddonDataFieldError:
+            return None
     
     def GetLoots(self, stage = None):
         # type: (int | None) -> tuple[LootInfo, ...] | None

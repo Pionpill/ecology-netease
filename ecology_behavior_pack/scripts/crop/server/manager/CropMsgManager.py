@@ -14,6 +14,9 @@ class CropMsgManager(BaseMsgManager):
 
     def NotifyPlantFailMessage(self, reason, params = {}):
         # type: (str, dict) -> None
+        if reason == PlantFailReason.REPLACE_BLOCK:
+            self._NotifyOneWarningMessage('必须种植在 {} 上'.format(params.get('crop')))
+            return
         if reason == PlantFailReason.LAND_UNABLE:
             self._NotifyOneWarningMessage('方块不可种植任何作物')
             return

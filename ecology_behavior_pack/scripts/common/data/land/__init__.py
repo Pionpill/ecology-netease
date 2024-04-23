@@ -7,11 +7,11 @@ LAND_DATA = {
         }
     },
     "minecraft:podzol": {
-        "fertility": 110,
+        "fertility": 100,
         "tag": ("dirt", "fungi"),
     },
     "minecraft:grass": {
-        "fertility": 100,
+        "fertility": 90,
         "tag": ("dirt"),
     },
     "minecraft:grass_path": {
@@ -24,14 +24,14 @@ LAND_DATA = {
     },
     "minecraft:sand": {
         "fertility": 40,
-        "tag": ("dirt"),
+        "tag": ("sand"),
     },
     "minecraft:red_sand": {
         "fertility": 30,
-        "tag": ("dirt"),
+        "tag": ("sand"),
     },
     "minecraft:mycelium": {
-        "fertility": 100,
+        "fertility": 130,
         "tag": ("fungi"),
     },
     "minecraft:moss_block": {

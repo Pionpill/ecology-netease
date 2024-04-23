@@ -35,7 +35,13 @@ class CropServerSystem(ServerSystem):
             return
         # 作物种植
         if cropUtils.IsSeed(args['itemDict']['newItemName']):
-            self.__HandlePlantCrop(args)
+            params = {
+                'position': (args["x"], args["y"], args["z"]),
+                'dimensionId': args["dimensionId"],
+                'seedName': args['itemDict']['newItemName'],
+                'playerId': args['entityId']
+            }
+            self.__HandlePlantCrop(params)
 
     def OnBlockNeighborChanged(self, args):
         position = (args['posX'], args['posY'], args['posZ']) # type: tuple[int, int, int]
@@ -64,37 +70,29 @@ class CropServerSystem(ServerSystem):
     def OnServerBlockUse(self, args):
         if not engineUtils.coolDown(args['playerId']):
             return
+        blockName = args['blockName']
         # 作物收获
-        if cropUtils.IsCropBlock(args['blockName']):
+        if cropUtils.IsCropBlock(blockName):
             self.__HandleHarvestCrop(args)
+        # 种植在自定义可替换方块上
+        if cropUtils.GetSeedByReplaceBlock(blockName):
+            params = {
+                'position': (args["x"], args["y"], args["z"]),
+                'dimensionId': args["dimensionId"],
+                'seedName': args['itemDict']['newItemName'],
+                'playerId': args['playerId']
+            }
+            self.__HandlePlantCrop(params)
 
-    def __HandlePlantCrop(self, args):
-        """种植作物"""
-        landPosition = (args["x"], args["y"], args["z"])    # type: tuple[int, int, int]
-        dimensionId = args["dimensionId"]   # type: int
-        
-        # 判断能否种植
-        itemName = args['itemDict']['newItemName']  # type: str
-        entityId = args['entityId']     # type: str
-        if not CropService.CanPlant(itemName, landPosition, dimensionId, entityId):
+    def __HandlePlantCrop(self, params):
+        """种植作物，需包含特定的参数"""
+        selectPosition = params["position"]    # type: tuple[int, int, int]
+        dimensionId = params["dimensionId"]   # type: int
+        seedName = params['seedName']  # type: str
+        playerId = params['playerId']     # type: str
+        if not CropService.CanPlant(seedName, selectPosition, dimensionId, playerId):
             return
-        
-        # 种植作物
-        itemComp = engineCompFactory.CreateItem(entityId)
-        slotId = itemComp.GetSelectSlotId()
-        carriedItemCount = itemComp.GetPlayerItem(minecraftEnum.ItemPosType.CARRIED, 0).get("count") # type: int | None
-        if carriedItemCount is None:
-            msgComp = engineCompFactory.CreateMsg(entityId)
-            msgComp.NotifyOneMessage(entityId, '玩家手上不存在种子，这是一个系统 bug，请报告给开发者群：712936357', '§c')
-            return
-        plantBlockDict = cropUtils.GetBlockStageDict(itemName, 0)
-        abovePosition = positionUtils.GetAbovePosition(landPosition)
-        result = blockInfoComp.SetBlockNew(abovePosition, plantBlockDict, dimensionId = dimensionId)
-        if not result:
-            msgComp = engineCompFactory.CreateMsg(entityId)
-            msgComp.NotifyOneMessage(entityId, '种植作物失败', '§c')
-            return
-        itemComp.SetInvItemNum(slotId, carriedItemCount - 1)
+        CropService.Plant(seedName, selectPosition, dimensionId, playerId)
 
     def __HandleCropLandChange(self, args):
         position = (args['posX'], args['posY'], args['posZ'])

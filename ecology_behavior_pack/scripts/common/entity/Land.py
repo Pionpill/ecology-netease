@@ -1,3 +1,4 @@
+from scripts.common import logger
 from scripts.common.error import AddonDataError
 from scripts.common.utils import dataUtils
 from scripts.common.data.land import LAND_DATA
@@ -14,7 +15,7 @@ class Land(object):
     def GetFertility(self, aux = None):
         # type: (int | None) -> int
         """获取土壤肥沃度"""
-        key = ('aux', 'fertility') if aux else 'fertility'
+        key = ('aux', 'fertility') if aux and aux > 1 else 'fertility'
         return self._GetField(key)
 
     def GetTags(self):

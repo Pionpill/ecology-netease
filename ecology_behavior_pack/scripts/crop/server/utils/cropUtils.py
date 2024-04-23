@@ -1,8 +1,12 @@
+from scripts.common.utils.collection import BiList
+from scripts.common.error import AddonDataFieldError
+from scripts.common.utils import dataUtils
 from scripts.common import logger
 from scripts.common.data.crop import CROP_DATA
 
 seedList = [] # type: list[str]
 seedPrefixList = [] # type: list[str]
+seedPlaceBlockDict = BiList()
 
 def __InitSeedList():
     def GetDefaultPrefix(seedName):
@@ -17,13 +21,30 @@ def __InitSeedList():
             # seedName 是主键，不可能不存在
             continue
         seedList.append(seedName)
-        seedPrefixList.append(cropInfo.get('blockPrefix', GetDefaultPrefix(seedName))) # 
+        seedPrefixList.append(cropInfo.get('blockPrefix', GetDefaultPrefix(seedName)))
+        try:
+            placeBlock = dataUtils.GetField(('grow', 'replace_block'), cropInfo)
+        except AddonDataFieldError:
+            continue
+        seedPlaceBlockDict.Set(seedName, placeBlock)
 
 def IsSeed(itemName):
     # type: (str) -> bool
     if len(seedList) == 0:
         __InitSeedList()
     return itemName in seedList
+
+def GetReplaceBlock(seedName):
+    # type: (str) -> str | None
+    if len(seedPlaceBlockDict) == 0:
+        __InitSeedList()
+    return seedPlaceBlockDict.Get(seedName)
+
+def GetSeedByReplaceBlock(blockName):
+    # type: (str) -> str | None
+    if len(seedPlaceBlockDict) == 0:
+        __InitSeedList()
+    return seedPlaceBlockDict.GetByValue(blockName)
 
 def IsCropBlock(blockName):
     # type: (str) -> bool
