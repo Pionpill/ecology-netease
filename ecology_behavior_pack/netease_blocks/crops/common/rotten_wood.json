@@ -4,7 +4,8 @@
     "description": {
       "identifier": "ham:rotten_wood",
       "register_to_creative_menu": true,
-      "category": "ecology"
+      "category": "ecology",
+      "base_block": "custom_crop_block"
     },
     "components": {
       "minecraft:map_color": {

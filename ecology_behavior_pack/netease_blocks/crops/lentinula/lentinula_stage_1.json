@@ -3,7 +3,8 @@
   "minecraft:block": {
     "description": {
       "identifier": "ham:lentinula_stage_1",
-      "register_to_creative_menu": false
+      "register_to_creative_menu": false,
+      "base_block": "custom_crop_block"
     },
     "components": {
       "netease:render_layer": {
