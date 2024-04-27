@@ -2,9 +2,9 @@ import time
 import mod.server.extraServerApi as serverApi
 
 from scripts.ecology.server.entity.Ecology import DynamicEcology
+from scripts.ecology.server.manager import EcologyManager
 from scripts.common import logger
 from scripts.common.entity import Biome
-from scripts.ecology.server.manager import EcologyManager
     
 levelId = serverApi.GetLevelId()
 biomeComp = serverApi.GetEngineCompFactory().CreateBiome(levelId)

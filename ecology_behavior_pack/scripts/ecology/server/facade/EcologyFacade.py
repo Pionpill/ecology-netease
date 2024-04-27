@@ -16,6 +16,11 @@ class EcologyFacade():
         return BiomeService.GetDynamicEcologyInfo(position, dimensionId)
     
     @staticmethod
+    def GetEcologyManager(position, dimensionId):
+        """获取某一位置的生态管理类"""
+        return BiomeService.GetEcologyManager(position, dimensionId)
+
+    @staticmethod
     def GetFormatDayTime(dimensionId):
         # type: (int) -> str
         """获取当前天的格式化时间"""

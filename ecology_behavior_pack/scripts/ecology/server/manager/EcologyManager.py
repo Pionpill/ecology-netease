@@ -43,7 +43,7 @@ class EcologyManager(object):
     def GetBiomeInfo(self):
         """获取生物群系信息"""
         return self.biome
-    
+
     def GetDynamicEcology(self):
         """获取动态生态信息"""
         adjustTemperature = self.fixedEcologyInfo.GetAvgTemperature() + self.__CalculateAdjustTemperature()

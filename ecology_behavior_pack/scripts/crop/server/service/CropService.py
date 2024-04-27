@@ -20,13 +20,13 @@ class CropService(object):
     msgMgrDict = {} # type: dict[str, CropMsgManager]
 
     @staticmethod
-    def GetCropManager(position, dimensionId, crop = None, ecology = None):
-        # type: (tuple[int, int, int], int, Crop | None, DynamicEcology | None) -> CropManager
+    def GetCropManager(position, dimensionId):
+        # type: (tuple[int, int, int], int) -> CropManager
         posKey = position + (dimensionId,)
         cropMgr = CropService.cropMgrDict.get(posKey)
         if cropMgr is not None:
             return cropMgr
-        cropMgr = CropManager(position, dimensionId, crop, ecology)
+        cropMgr = CropManager(position, dimensionId)
         CropService.cropMgrDict[posKey] = cropMgr
         return cropMgr
     

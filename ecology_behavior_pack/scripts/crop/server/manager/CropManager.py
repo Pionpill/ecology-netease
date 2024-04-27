@@ -11,7 +11,6 @@ from scripts.common.utils import itemUtils
 from scripts.common.utils import mathUtils
 from scripts.common.utils import positionUtils
 from scripts.crop.server.utils import cropUtils
-from scripts.ecology.server.entity import DynamicEcology
 from scripts.ecology.server.facade import EcologyFacade
 from scripts.ecology.server.service import FrameService
 
@@ -25,8 +24,8 @@ weatherComp = engineCompFactory.CreateWeather(levelId)
 
 class CropManager(object):
     """作物管理类"""
-    def __init__(self, position, dimensionId, crop = None, ecology = None):
-        # type: (tuple[int, int, int], int, Crop | None, DynamicEcology | None) -> None
+    def __init__(self, position, dimensionId):
+        # type: (tuple[int, int, int], int) -> None
         object.__init__(self)
         self.position = position
         self.dimensionId = dimensionId
@@ -34,17 +33,13 @@ class CropManager(object):
         self.RenewLandInfo()
         if not self.cropBlockName:
             return
-        
-        if crop:
-            self.crop = crop
-        else:
-            cropKey = cropUtils.GetSeedKey(self.cropBlockName)
-            crop = GetCrop(cropKey)
-            if crop is None:
-                logger.error('无法通过 {} 获取作物实例'.format(cropKey))
-                return
-            self.crop = crop
-        self.ecology = ecology or EcologyFacade.GetEcologyInfo(position, dimensionId)
+        cropKey = cropUtils.GetSeedKey(self.cropBlockName)
+        crop = GetCrop(cropKey)
+        if crop is None:
+            logger.error('无法通过 {} 获取作物实例'.format(cropKey))
+            return
+        self.crop = crop
+        self.ecology = EcologyFacade.GetEcologyManager(position, dimensionId)
         # 右键和左键方块都可以收获作物，该变量用于防止收获多次
         self.lastHarvestTime = None
 
@@ -56,10 +51,11 @@ class CropManager(object):
             return False
         if not self.__CanGrowOnBlock():
             return False
-        temperature = self.ecology.GetAdjustTemperature()
+        ecologyInfo = self.ecology.GetDynamicEcology()
+        temperature = ecologyInfo.GetAdjustTemperature()
         if not mathUtils.between(temperature, self.crop.GetGrowTemperature('can')):
             return False
-        rainfall = self.ecology.GetAdjustRainfall()
+        rainfall = ecologyInfo.GetAdjustRainfall()
         if not mathUtils.between(rainfall, self.crop.GetGrowRainfall('can')):
             return False
         brightness = blockInfoComp.GetBlockLightLevel(self.position, self.dimensionId)
@@ -85,6 +81,10 @@ class CropManager(object):
         blockTickCount = cropEntityData['tickCount'] or 0
         blockFertility = cropEntityData['fertility'] or 0
         nextTick = growTicks + blockTick
+        logger.debug('----------------------')
+        logger.debug(nextTick)
+        logger.debug(tickCount)
+        logger.debug('----------------------')
 
         # 生长，但不进入下一阶段
         if nextTick < tickCount:
@@ -115,7 +115,7 @@ class CropManager(object):
         """
         收获作物
         
-        :param remove: 是否删除作物，否则尝试多次收获 TODO 多次收获功能未实装
+        :param remove: 是否删除作物，否则尝试多次收获
         :param loot: 是否生成凋落物
         """
         now = time()
@@ -261,11 +261,11 @@ class CropManager(object):
 
     def __CalculateGrowTick(self):
         """计算生长可获得 tick 数"""
-        temperature = self.ecology.GetAdjustTemperature()
-        rainfall = self.ecology.GetAdjustRainfall()
+        ecologyInfo = self.ecology.GetDynamicEcology()
+        temperature = ecologyInfo.GetAdjustTemperature()
+        rainfall = ecologyInfo.GetAdjustRainfall()
         brightness = blockInfoComp.GetBlockLightLevel(self.position, self.dimensionId)
         tickCount = 1
-
         tickCount *= mathUtils.calculateAbleTickRatio(temperature, self.crop.GetGrowTemperature('suit'), self.crop.GetGrowTemperature('can'))
         tickCount *= mathUtils.calculateAbleTickRatio(rainfall, self.crop.GetGrowRainfall('suit'), self.crop.GetGrowRainfall('can'))
         tickCount *= mathUtils.calculateAbleTickRatio(brightness, self.crop.GetGrowBrightness('suit'), self.crop.GetGrowBrightness('can'))
