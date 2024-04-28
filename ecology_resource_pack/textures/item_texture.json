@@ -156,6 +156,15 @@
     },
     "ham:yangzhou_fried_rice": {
       "textures": "textures/items/foods/rice/yangzhou_fried_rice"
+    },
+    "ham:cooking_book": {
+      "textures": "textures/items/books/cooking_book"
+    },
+    "ham:guide_book": {
+      "textures": "textures/items/books/guide_book"
+    },
+    "ham:crop_book": {
+      "textures": "textures/items/books/crop_book"
     }
   },
   "texture_name": "atlas.items"
