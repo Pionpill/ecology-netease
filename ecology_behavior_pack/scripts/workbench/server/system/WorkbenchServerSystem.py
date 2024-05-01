@@ -12,6 +12,8 @@ levelId = serverApi.GetLevelId()
 ServerSystem = serverApi.GetServerSystemCls()
 blockEntityComp = compFactory.CreateBlockEntityData(levelId)
 
+blockBenchCoolDownDict = {}
+
 class WorkbenchServerSystem(ServerSystem):
     def __init__(self, namespace, systemName):
         ServerSystem.__init__(self, namespace, systemName)
@@ -37,7 +39,7 @@ class WorkbenchServerSystem(ServerSystem):
         playerId = args['playerId']
         if (not WorkbenchService.IsWorkbenchBlock(blockName)) or WorkbenchService.GetPlayerUsingBlock(playerId):
             return
-        if not engineUtils.coolDown(playerId):
+        if not engineUtils.coolDown(playerId, 1, blockBenchCoolDownDict):
             return
         
         logger.info('打开工作台: {}'.format(blockName))

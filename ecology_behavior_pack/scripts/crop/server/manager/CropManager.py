@@ -81,10 +81,6 @@ class CropManager(object):
         blockTickCount = cropEntityData['tickCount'] or 0
         blockFertility = cropEntityData['fertility'] or 0
         nextTick = growTicks + blockTick
-        logger.debug('----------------------')
-        logger.debug(nextTick)
-        logger.debug(tickCount)
-        logger.debug('----------------------')
 
         # 生长，但不进入下一阶段
         if nextTick < tickCount:
