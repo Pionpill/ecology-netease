@@ -1,12 +1,12 @@
-from scripts.common.data.workbench.bake import BAKE_DATA
-from scripts.common.data.workbench.fryer import FRYER_DATA
-from scripts.common.data.workbench.grill import GRILL_DATA
-from scripts.common.data.workbench.mill import MILL_DATA
-from scripts.common.data.workbench.pan import PAN_DATA
-from scripts.common.data.workbench.squeezer import SQUEEZER_DATA
-from scripts.common.data.workbench.steamer import STEAMER_DATA
-from scripts.common.data.workbench.stew import STEW_DATA
-from scripts.common.data.workbench.cook import COOK_DATA
+from scripts.common.data.workbench.recipe import BAKE_DATA
+from scripts.common.data.workbench.recipe import FRYER_DATA
+from scripts.common.data.workbench.recipe import GRILL_DATA
+from scripts.common.data.workbench.recipe import MILL_DATA
+from scripts.common.data.workbench.recipe import PAN_DATA
+from scripts.common.data.workbench.recipe import SQUEEZER_DATA
+from scripts.common.data.workbench.recipe import STEAMER_DATA
+from scripts.common.data.workbench.recipe import STEW_DATA
+from scripts.common.data.workbench.recipe import COOK_DATA
 from scripts.workbench.common.enum import WorkbenchType
 
 
