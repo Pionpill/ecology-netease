@@ -1,7 +1,7 @@
 from scripts.common import logger
 
 def IsSameItem(item1, item2):
-    # type: (dict, dict) -> bool
+    # type: (dict | None, dict | None) -> bool
     """判断是否为同一item，只有itemName和auxValue均相同才返回True"""
     if item1 is None or item2 is None:
         return item1 is None and item2 is None
@@ -16,7 +16,7 @@ def IsSameItem(item1, item2):
     return True
 
 def GetItemDict(itemName=None, auxValue=0, count=1, itemDict=None):
-    # type: (str | None, int, int, dict | None) -> dict
+    # type: (str | None, int, int, dict | None) -> dict | None
     if itemName is not None:
         return {
             'newItemName': itemName,
@@ -34,4 +34,9 @@ def GetItemDict(itemName=None, auxValue=0, count=1, itemDict=None):
             'count': count,
         }
     logger.error('获取物品字典时为传入有效信息')
-    return {}
+    return None
+
+def FilterDict(dict, filterTuple = ( None, )):
+    # type: (dict, tuple) -> dict
+    """过滤字典，将特定值删除"""
+    return { k:v for k,v in dict.items() if v not in filterTuple}

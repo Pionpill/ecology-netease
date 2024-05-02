@@ -176,7 +176,8 @@ class CropManager(object):
             avgFertility = 1 + (fertility / tickCount) / 100 if fertility and tickCount else 1
             count = mathUtils.GetRandomInteger(loot.count * avgFertility)
             itemDict = itemUtils.GetItemDict(loot.itemName, 0, count)
-            itemComp.SpawnItemToLevel(itemDict,  self.dimensionId, self.position)
+            if itemDict:
+                itemComp.SpawnItemToLevel(itemDict,  self.dimensionId, self.position)
         
     def GetStageTickCount(self):
         """获取作物块进入下一阶段所需要 tick 总数"""

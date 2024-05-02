@@ -13,17 +13,17 @@ class CraftingManager(BaseWorkbenchManager):
 
     def Consume(self):
         """工作台合成物品"""
-        materialSlotItemDict = self.proxy.matchedRecipeMaterial
+        materialSlotItemDict = self.recipeManager.GetLastUsedRecipeMaterial()
         if materialSlotItemDict is None:
             return
         for slotName, itemDict in materialSlotItemDict.items():
             if itemDict is None:
                 continue
-            count = itemDict.get("count")
+            count = itemDict.get("count", 0)
             self.ReduceItem(slotName, count)
     
     def Reset(self, playerId):
-        # type: (int) -> None
+        # type: (str) -> None
         """重置工作台，将非固定材料槽物品返回"""
         resetMaterialSlotNum = self.slotNum['material']
         for i in range(resetMaterialSlotNum):

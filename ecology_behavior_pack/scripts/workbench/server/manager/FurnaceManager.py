@@ -1,8 +1,9 @@
 import copy
 import mod.server.extraServerApi as serverApi
+
+from scripts.common import logger
 from scripts.common.data.workbench import FUEL_DATA
 from scripts.common.utils import itemUtils
-from scripts.common import logger
 from scripts.workbench.server.manager.base import BaseWorkbenchManager
 
 compFactory = serverApi.GetEngineCompFactory()
@@ -22,6 +23,11 @@ class FurnaceManager(BaseWorkbenchManager):
         self.shouldRefresh = False
         if self.slotNum['liquid'] != 0 and self.blockEntityData['liquid'] is None:
             self.blockEntityData['liquid'] = 0
+
+    def GetSlotData(self, slotName):
+        # type: (str) -> int
+        """从方块实体中获取指定槽的物品"""
+        return self.blockEntityData[slotName]   # type: ignore
 
     def Tick(self):
         # type: () -> bool
@@ -61,7 +67,9 @@ class FurnaceManager(BaseWorkbenchManager):
         if self.slotNum['liquid'] == 0 or liquidMaterialDict is None or self.blockEntityData['liquid'] == 20:
             return
         
-        liquidCount = self.blockEntityData['liquid']
+        liquidCount = self.GetSlotData('liquid')
+        if not isinstance(liquidCount, int):
+            return
         if self.blockName == 'ham:fryer' and liquidMaterialDict['newItemName'] == 'ham:cooking_oil':
             # 油表更新
             if liquidMaterialDict['count'] + liquidCount <= 20:
@@ -74,7 +82,7 @@ class FurnaceManager(BaseWorkbenchManager):
             self.shouldRefresh = True
         if self.blockName in ['ham:food_steamer', 'ham:stew_pot'] and liquidMaterialDict['newItemName'] == 'minecraft:water_bucket' and self.blockEntityData['liquid_slot1'] is None and liquidCount <= 15:
             # 水表更新
-            self.blockEntityData['liquid'] = self.blockEntityData['liquid'] + 5
+            self.blockEntityData['liquid'] = liquidCount + 5
             self._SetItem('liquid_slot0', None)
             self._SetItem('liquid_slot1', itemUtils.GetItemDict('minecraft:bucket'))
             self.shouldRefresh = True
@@ -142,7 +150,7 @@ class FurnaceManager(BaseWorkbenchManager):
         resultItems = self.GetAllSlotData('result_ware') if self.resultWareCount else self.GetAllSlotData('result')
         for slotName, resultItem in resultItems.items():
             matchResultItem = matchResultItems.get('result_slot0' if self.resultWareCount else slotName)
-            if resultItem is None:
+            if resultItem is None or matchResultItem is None:
                 continue
             if not itemUtils.IsSameItem(resultItem, matchResultItem):
                 return False
@@ -170,7 +178,7 @@ class FurnaceManager(BaseWorkbenchManager):
 
     def Consume(self):
         """消耗原材料"""
-        materialSlotItemDict = self.proxy.matchedRecipeMaterial
+        materialSlotItemDict = self.recipeManager.GetLastUsedRecipeMaterial
         if materialSlotItemDict is None:
             return
         for slotName, itemDict in materialSlotItemDict.items():
@@ -181,7 +189,7 @@ class FurnaceManager(BaseWorkbenchManager):
 
     def Produce(self):
         """生产物品"""
-        matchedRecipeResult = self.proxy.matchedRecipeResult
+        matchedRecipeResult = self.recipeManager.GetLastUsedRecipeResult
         resultItems = self.GetAllSlotData('result_ware') if self.resultWareCount else self.GetAllSlotData('result')
         for slotName, recipeResultItem in matchedRecipeResult.items():
             realSlotName = 'result_ware_slot' if self.resultWareCount else slotName
@@ -192,7 +200,7 @@ class FurnaceManager(BaseWorkbenchManager):
                 recipeResultItem['count'] = recipeResultItem.get('count') + resultItem.get('count')
                 self._SetItem(realSlotName, recipeResultItem)
         if self.slotNum['liquid'] != 0:
-            self.blockEntityData['liquid'] = self.blockEntityData['liquid'] - 1
+            self.blockEntityData['liquid'] = self.GetSlotData('liquid') - 1
     
     def GetBurnData(self):
         burnData = {
@@ -208,6 +216,6 @@ class FurnaceManager(BaseWorkbenchManager):
 
     def __GetFuels(self, blockName):
         if blockName in ["ham:mill"]:
-            return FUEL_DATA.get('gold')
+            return FUEL_DATA.get('gold', {})
         else:
-            return FUEL_DATA.get('coal')
+            return FUEL_DATA.get('coal', {})

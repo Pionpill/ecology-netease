@@ -1,10 +1,11 @@
 from abc import abstractmethod
 import copy
 import mod.server.extraServerApi as serverApi
+
+from scripts.common import logger
 from scripts.common.data.workbench import SLOT_DATA
 from scripts.common.utils import itemUtils
-from scripts.common import logger
-from scripts.workbench.server.proxy import RecipeProxy
+from scripts.workbench.server.manager.RecipeManager import RecipeManager
 
 minecraftEnum = serverApi.GetMinecraftEnum()
 compFactory = serverApi.GetEngineCompFactory()
@@ -16,10 +17,15 @@ class BaseWorkbenchManager(object):
     def __init__(self, blockName, position, dimensionId):
         # type: (str, tuple[int, int, int], int) -> None
         object.__init__(self)
+        blockEntityData = blockEntityComp.GetBlockEntityData(dimensionId, position)
+        if blockEntityData is None:
+            logger.error('工作台 {} 不存在实体数据，这是一个逻辑BUG'.format(blockName))
+            return
+        self.blockEntityData = blockEntityData
         self.blockName = blockName
         self.position = position
         self.dimensionId = dimensionId
-        self.proxy = RecipeProxy(blockName)
+        self.recipeManager = RecipeManager(blockName)
         self.blockType = SLOT_DATA[blockName]['type']
         self.slotNum = {
             'material': SLOT_DATA[blockName]['material'],
@@ -30,7 +36,6 @@ class BaseWorkbenchManager(object):
         }
         self.wareItem = SLOT_DATA[blockName].get('ware')
         self.resultWareCount = SLOT_DATA[blockName].get('result_ware_count')
-        self.blockEntityData = blockEntityComp.GetBlockEntityData(self.dimensionId, self.position)
 
     def GetAllSlotData(self, slotTypes = ['material', 'fuel', 'result', 'result_ware', 'liquid', 'ware']):
         # type：(list | str) => dict
@@ -58,7 +63,7 @@ class BaseWorkbenchManager(object):
     def GetSlotData(self, slotName):
         # type: (str) -> dict
         """从方块实体中获取指定槽的物品"""
-        return self.blockEntityData[slotName]
+        return self.blockEntityData[slotName]   # type: ignore
 
     def SwapItem(self, args):
         # type: (dict) -> None
@@ -77,10 +82,10 @@ class BaseWorkbenchManager(object):
             swapCount = int(fromItemDict.get('count') * takePercent)
             itemComp = compFactory.CreateItem(playerId)
             maxStackSize = itemComp.GetItemBasicInfo(toItemDict["newItemName"], toItemDict["newAuxValue"]).get("maxStackSize")
-            if toItemDict.get('count') >= maxStackSize:
+            if toItemDict.get('count', 0) >= maxStackSize:
                 return
-            if (swapCount + toItemDict.get('count')) > maxStackSize:
-                fromItemCount = fromItemDict['count'] + toItemDict.get('count') - maxStackSize
+            if (swapCount + toItemDict.get('count', 0)) > maxStackSize:
+                fromItemCount = fromItemDict['count'] + toItemDict.get('count', 0) - maxStackSize
                 toItemDict['count'] = maxStackSize
                 fromItemDict['count'] = fromItemCount
             else:
@@ -107,12 +112,13 @@ class BaseWorkbenchManager(object):
         if itemDict is None:
             logger.warn("槽 {} 没有物品".format(slotName))
             return
-        itemDict = self.blockEntityData[slotName]
+        itemDict = self.GetSlotData(slotName)
         maxStackSize = itemComp.GetItemBasicInfo(itemDict["newItemName"], itemDict["newAuxValue"]).get("maxStackSize")
-        if itemDict["count"] + count > maxStackSize:
+        if itemDict.get("count", 0) + count > maxStackSize:
             logger.error("物品增加失败，超过最大堆叠值")
         else:
-            self.blockEntityData[slotName]['count'] += count
+            slotItem = self.GetSlotData(slotName)
+            slotItem['count'] += count
 
     def ReduceItem(self, slotName, count = 1):
         # type: (str, int) -> None
@@ -125,16 +131,18 @@ class BaseWorkbenchManager(object):
         elif itemDict["count"] == count:
             self.blockEntityData[slotName] = None
         else:
-            self.blockEntityData[slotName]['count'] -= count
+            slotItem = self.GetSlotData(slotName)
+            slotItem['count'] -= count
 
     def GetRecipeResultSlotItemDict(self):
         """获取匹配的物品"""
         materialSlotItemDict = self.GetAllSlotData('material')
         if len(materialSlotItemDict) == 0 or all(value is None for value in materialSlotItemDict.values()):
             return {'material_slot' + str(i): None for i in range(self.slotNum['result'])}
-        return self.proxy.MatchRecipe(materialSlotItemDict)
+        return self.recipeManager.MatchRecipe(materialSlotItemDict)
 
     def _GetItem(self, slotName, playerId):
+        # type: (str | int, str) -> dict
         """
         获取实体物品
         客户端传来的物品数据并不准备，需要调用该方法获取真实物品数据
@@ -145,14 +153,14 @@ class BaseWorkbenchManager(object):
         return itemComp.GetPlayerItem(minecraftEnum.ItemPosType.INVENTORY, slotName)
 
     def _SetItem(self, slotName, itemDict, playerId = None):
-        # type: (str | int, dict, int) -> None
+        # type: (str | int, dict | None, str | None) -> None
         """设置实体物品"""
         if isinstance(slotName, str):
             if itemDict is None or itemDict.get('count') == 0:
                 self.blockEntityData[slotName] = None
             else:
                 self.blockEntityData[slotName] = itemDict
-        else:
+        elif playerId:
             itemComp = compFactory.CreateItem(playerId)
             itemsDictMap = {
                 (minecraftEnum.ItemPosType.INVENTORY, slotName): itemDict
