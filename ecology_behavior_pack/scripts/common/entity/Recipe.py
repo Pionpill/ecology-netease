@@ -59,6 +59,9 @@ class Recipe(object):
         # 槽值是 str，说明值就是结果物品，例如: "result": "ham:corn_pieces"
         if isinstance(materialOrResultDict, str):
             return {type + '_slot0': itemUtils.GetItemDict(materialOrResultDict)}
+        # 仅一个物品，默认槽位为 0
+        if materialOrResultDict.get('newItemName'):
+            return {type + '_slot0': itemUtils.GetItemDict(itemDict = materialOrResultDict)} # type: ignore
         outDict = {type + '_slot' + str(slotIndex) : itemUtils.GetItemDict(itemName = item) if isinstance(item, str) else itemUtils.GetItemDict(itemDict = item) for slotIndex, item in materialOrResultDict.items()}
         if type == 'material' and self.__fixedMaterialItems:
             fixedMaterial = recipe.get("fixed_material", tuple([0] * len(self.__fixedMaterialItems)))

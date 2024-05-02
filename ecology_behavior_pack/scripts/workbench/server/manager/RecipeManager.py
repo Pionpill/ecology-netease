@@ -28,8 +28,10 @@ class RecipeManager(object):
         materialSlotItemDict = itemUtils.FilterDict(materialSlotItemDict)
         for recipeKey, recipe in self.__recipe.GetAllRecipe().items():
             recipeMaterial = self.__recipe.GetRecipeMaterial(recipe)
-            # 物品字典长度不同，认为不匹配
-            if len(recipeMaterial) != len(materialSlotItemDict):
+            slotMaterialLength = sum(1 for key in materialSlotItemDict.keys() if 'fixed' not in key)
+            recipeMaterialLength = sum(1 for key in recipeMaterial.keys() if 'fixed' not in key and 'result' not in key)
+            # 非固定槽物品数量不同，认为不匹配
+            if slotMaterialLength != recipeMaterialLength:
                 continue
             matchCount = 0
             for slotName, recipeItemDict in recipeMaterial.items():
@@ -37,7 +39,7 @@ class RecipeManager(object):
                 workbenchItemDict = materialSlotItemDict.get(slotName)
                 if not self.__CanMatch(recipeItemDict, workbenchItemDict):
                     break
-                if matchCount == len(materialSlotItemDict):
+                if matchCount == len(recipeMaterial):
                     self.__matchedRecipeKey = recipeKey
                     return self.__recipe.GetRecipeResult(recipe)
         self.__matchedRecipeKey = None
