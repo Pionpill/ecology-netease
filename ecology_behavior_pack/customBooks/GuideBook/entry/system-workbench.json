@@ -1,0 +1,17 @@
+{
+  "parent": "system",
+  "sortnum": 3,
+  "icon": "textures/blocks/icon/cooking_table_icon.png",
+  "title": "工作台系统",
+  "pages": [
+    {
+      "type": "textPage",
+      "content": "§8● §r本模组两大功能性系统之一，完全重写原版的工作台\n§8● §r实现了绝大部分工作台交互功能，可能存在BUG\n§8● §r提供更多自定义槽，包括固定槽，容器槽，液体槽等\n§8● §r未来会加入更多功能，例如：下雨时自动收集雨水，烧制时间受环境温度影响"
+    },
+    {
+      "type": "textPage",
+      "subtitle": "槽位",
+      "content": "§8● §r普通槽：和原版合成表功能相同\n§8● §r固定槽：放置固定的物品，会存储在工作台中\n§8● §r器皿槽：放置器皿用于盛饭/汤\n§8● §r液体槽：一般为水，例如煮锅需要用水"
+    }
+  ]
+}
