@@ -1,0 +1,12 @@
+{
+  "parent": "system",
+  "sortnum": 4,
+  "icon": "textures/items/books/cooking_book.png",
+  "title": "书籍系统",
+  "pages": [
+    {
+      "type": "textPage",
+      "content": "§8● §r辅助性系统\n§8● §r为其他系统提供玩法描述\n§8● §r提供自定义配方页面\n§8● §r未来会与一键合成，成就系统结合提供更多功能"
+    }
+  ]
+}
