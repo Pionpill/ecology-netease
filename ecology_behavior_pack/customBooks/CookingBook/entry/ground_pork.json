@@ -1,0 +1,13 @@
+{
+  "parent": "cook",
+  "sortnum": 1,
+  "icon": "textures/items/materials/ground_pork.png",
+  "title": "肉糜",
+  "pages": [
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:ground_pork",
+      "content": "§8● §r§3类型: §5原材料\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●○"
+    }
+  ]
+}
