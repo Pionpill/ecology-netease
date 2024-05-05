@@ -1,0 +1,12 @@
+{
+  "item": "ham:cooking_book",
+  "title1": "烹饪指南",
+  "title2": "",
+  "content": "§l基础物品合成指南\n§r§8交流企鹅群：§8712936357",
+  "titleArea": {
+    "offset": [0, 4],
+    "textSize1": 13,
+    "textSize2": 8,
+    "padding": 1
+  }
+}

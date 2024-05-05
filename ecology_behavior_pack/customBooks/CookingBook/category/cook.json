@@ -1,0 +1,7 @@
+{
+  "title": "§l厨务台",
+  "content": "§r§8● §0厨务台合成配方\n§8● §r固定槽: 盐，糖，食用油，调料",
+  "isLocked": false,
+  "icon": "textures/blocks/icon/cooking_table_icon.png",
+  "sortnum": 1
+}
