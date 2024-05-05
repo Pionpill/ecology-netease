@@ -1,0 +1,18 @@
+{
+  "parent": "workbench",
+  "sortnum": 7,
+  "icon": "textures/blocks/icon/mill_icon.png",
+  "title": "石磨",
+  "pages": [
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "minecraft:apple",
+      "content": "§8● §r类型: 熔炉（需要燃料）\n§8● §r原料槽: 1个，结果槽: 2个\n§8● §r燃料槽: 金粒\n§8● §r有钱能使鬼推磨"
+    },
+    {
+      "type": "textPage",
+      "subtitle": "合成说明",
+      "content": "§8● §r主要合成：原材料\n§8● §r可将农作物研磨成粒，粉等"
+    }
+  ]
+}

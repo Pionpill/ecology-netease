@@ -1,0 +1,18 @@
+{
+  "parent": "workbench",
+  "sortnum": 8,
+  "icon": "textures/blocks/icon/squeezer_icon.png",
+  "title": "压制机",
+  "pages": [
+    {
+      "type": "ham:squeezerRecipePage",
+      "recipeId": "minecraft:apple",
+      "content": "§8● §r类型: 熔炉（需要燃料）\n§8● §r原料槽: 3个，结果槽: 1个\n§8● §r燃料槽: 金粒\n§8● §r有钱能使鬼推磨"
+    },
+    {
+      "type": "textPage",
+      "subtitle": "合成说明",
+      "content": "§8● §r主要合成：原材料\n§8● §r从农产品中提炼材料，例如食用油"
+    }
+  ]
+}

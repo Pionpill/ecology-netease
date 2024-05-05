@@ -1,0 +1,18 @@
+{
+  "parent": "workbench",
+  "sortnum": 6,
+  "icon": "textures/blocks/icon/food_steamer_icon.png",
+  "title": "蒸笼",
+  "pages": [
+    {
+      "type": "ham:steamerRecipePage",
+      "recipeId": "minecraft:apple",
+      "content": "§8● §r类型: 熔炉（需要燃料）\n§8● §r需要放在炉子上\n§8● §r原料槽: 1个，结果槽: 1个\n§8● §r燃料槽: 煤\n§8● §r液体槽: 水"
+    },
+    {
+      "type": "textPage",
+      "subtitle": "合成说明",
+      "content": "§8● §r主要合成：原材料\n§8● §r从农产品中提炼材料，例如食用油，奶酪，黄油"
+    }
+  ]
+}

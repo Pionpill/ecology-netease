@@ -1,0 +1,18 @@
+{
+  "parent": "workbench",
+  "sortnum": 1,
+  "icon": "textures/blocks/icon/cooking_table_icon.png",
+  "title": "厨务台",
+  "pages": [
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "minecraft:apple",
+      "content": "§8● §r类型: 合成台(无需燃料)\n§8● §r原料槽: 9个，结果槽: 1个\n§8● §r固定槽: 盐，糖，食用油，调料\n§8● §r固定槽中的物品会被保存在工作台中"
+    },
+    {
+      "type": "textPage",
+      "subtitle": "合成说明",
+      "content": "§8● §r主要合成：原材料，食物\n§8● §r原材料：将农/牧产品合成为简易食物，例如面条，肉饼\n§8● §r食物：可以合成快餐，或制成生食在其他工作台上加工"
+    }
+  ]
+}

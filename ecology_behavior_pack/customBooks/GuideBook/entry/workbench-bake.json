@@ -1,0 +1,18 @@
+{
+  "parent": "workbench",
+  "sortnum": 4,
+  "icon": "textures/blocks/icon/baking_clay_icon.png",
+  "title": "烘焙炉",
+  "pages": [
+    {
+      "type": "ham:bakeRecipePage",
+      "recipeId": "minecraft:apple",
+      "content": "§8● §r类型: 熔炉（需要燃料）\n§8● §r需要放在炉子上\n§8● §r原料槽: 1个，结果槽: 1个\n§8● §r燃料槽: 煤"
+    },
+    {
+      "type": "textPage",
+      "subtitle": "合成说明",
+      "content": "§8● §r主要合成：食物（烘焙）\n§8● §r一般需要在厨务台上合成生食再烧制"
+    }
+  ]
+}
