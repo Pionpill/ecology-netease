@@ -36,6 +36,9 @@ class Ecology(object):
         clientApi.RegisterSystem(modConfig.ADDON_NAME,
                                  modConfig.WORKBENCH_CLIENT_NAME,
                                  modConfig.WORKBENCH_CLIENT_PATH)
+        clientApi.RegisterSystem(modConfig.ADDON_NAME,
+                                 modConfig.BOOK_CLIENT_NAME,
+                                 modConfig.BOOK_CLIENT_PATH)
 
     @Mod.DestroyClient()
     def ClientDestroy(self):

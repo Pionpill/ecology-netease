@@ -30,3 +30,16 @@ def GetRandomInteger(value):
     floor = math.floor(value)
     ceil = math.ceil(value)
     return ceil if random.random() < (value - floor) else floor
+
+def addTuple(tuple1, tuple2, addExcess = True):
+    # type: (tuple[int, ...], tuple[int, ...], bool) -> tuple[int, ]
+    """将两个元组元素相加"""
+    longTuple = tuple1 if len(tuple1) >= len(tuple2) else tuple2
+    shortTuple = tuple1 if len(tuple1) < len(tuple2) else tuple2
+    resultList = []
+    for x in range(len(shortTuple)):
+        resultList.append(shortTuple[x] + longTuple[x])
+    if addExcess:
+        for x in range(len(shortTuple), len(longTuple)):
+            resultList.append(longTuple[x])
+    return tuple(resultList)

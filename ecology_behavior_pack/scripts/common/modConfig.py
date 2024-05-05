@@ -17,3 +17,7 @@ WORKBENCH_SERVER_NAME = "WorkbenchServerSystem{}".format(ADDON_VERSION)
 WORKBENCH_SERVER_PATH = "scripts.workbench.server.system.WorkbenchServerSystem"
 WORKBENCH_CLIENT_NAME = "WorkbenchClientSystem{}".format(ADDON_VERSION)
 WORKBENCH_CLIENT_PATH = "scripts.workbench.client.system.WorkbenchClientSystem"
+
+# 书籍系统
+BOOK_CLIENT_NAME = "BookClientSystem{}".format(ADDON_VERSION)
+BOOK_CLIENT_PATH = "scripts.book.client.system.BookClientSystem"

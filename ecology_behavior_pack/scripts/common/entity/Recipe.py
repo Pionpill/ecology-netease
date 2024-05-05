@@ -13,6 +13,44 @@ class Recipe(object):
             raise AddonDataError('不存在 {} 工作台数据'.format(blockName))
         self.__recipe = slotData.get('recipe', {})  # type: dict[str, dict]
         self.__fixedMaterialItems = slotData.get('fixed_material_items')
+        self.__slotNum = {
+            'material': slotData['material'],
+            'fixed_material': len(slotData.get('fixed_material_items', ())),
+            'liquid': slotData.get('liquid', 0),
+            'fuel': slotData.get('fuel', 0),
+            'result': slotData['result']
+        }
+        self.__type = slotData['type']
+
+    def GetSlotNum(self):
+        # type: () -> dict[str, int]
+        return self.__slotNum
+
+    def GetMaterialNum(self, fixedInclude=False):
+        # type: (bool) -> int
+        if fixedInclude:
+            return self.__slotNum['material'] + self.GetFixedMaterialNum()
+        return self.__slotNum['material']
+    
+    def GetFixedMaterialNum(self):
+        # type: () -> int
+        return self.__slotNum['fixed_material']
+    
+    def GetLiquidNum(self):
+        # type: () -> int
+        return self.__slotNum['liquid']
+
+    def GetFuelNum(self):
+        # type: () -> int
+        return self.__slotNum['fuel']
+
+    def GetResultNum(self):
+        # type: () -> int
+        return self.__slotNum['result']
+
+    def GetType(self):
+        # type: () -> str
+        return self.__type
 
     def GetAllRecipe(self):
         # type: () -> dict[str, dict]
@@ -22,6 +60,11 @@ class Recipe(object):
         # type: (str) -> dict[str, dict] | None
         return self.__recipe.get(recipeKey)
     
+    def GetFormatRecipe(self, recipeKey):
+        material = self.GetMaterialByKey(recipeKey)
+        result = self.GetResultByKey(recipeKey)
+        return {k: v for d in [material, result] for k, v in d.items()}
+
     def GetMaterialByKey(self, recipeKey):
         """通过配方键获取原材料"""
         recipe = self.GetRecipe(recipeKey)
