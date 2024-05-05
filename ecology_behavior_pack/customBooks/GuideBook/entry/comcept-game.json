@@ -1,0 +1,12 @@
+{
+  "parent": "concept",
+  "sortnum": 1,
+  "icon": "textures/items/books/guide_book.png",
+  "title": "玩法设计",
+  "pages": [
+    {
+      "type": "textPage",
+      "content": "§8● §r差异化: 所有的作物/工作台都有其独特的功能，你无法在同一个生态种植出所有的作物\n§8● §r可玩性: 你需要深入了解每种作物的生长环境，熟悉一些配方的制作流程\n§8● §r反馈: 新加入的食物会提供各种buff"
+    }
+  ]
+}

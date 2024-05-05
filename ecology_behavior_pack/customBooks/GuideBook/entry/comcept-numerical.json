@@ -1,0 +1,12 @@
+{
+  "parent": "concept",
+  "sortnum": 2,
+  "icon": "textures/items/books/guide_book.png",
+  "title": "数值设计",
+  "pages": [
+    {
+      "type": "textPage",
+      "content": "§8● §r避免作用相同的植物\n§8● §r同类别作物每天积累的饱食度平衡\n§8● §r对原版一些数值不平衡的作物做调整"
+    }
+  ]
+}
