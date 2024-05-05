@@ -101,7 +101,7 @@
       "textures": "textures/items/foods/pie/raw_apple_pie"
     },
     "ham:raw_beef_patties": {
-      "textures": "textures/items/food/simple/raw_beef_patties"
+      "textures": "textures/items/materials/raw_beef_patties"
     },
     "ham:raw_cheese_pie": {
       "textures": "textures/items/foods/pie/raw_cheese_pie"
@@ -110,7 +110,7 @@
       "textures": "textures/items/foods/pie/raw_corn_pie"
     },
     "ham:raw_sausage": {
-      "textures": "textures/items/foods/simple/raw_sausage"
+      "textures": "textures/items/materials/raw_sausage"
     },
     "ham:rice": {
       "textures": "textures/items/crops/crop/rice"

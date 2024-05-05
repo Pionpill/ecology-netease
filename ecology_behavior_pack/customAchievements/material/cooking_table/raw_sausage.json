@@ -1,14 +1,14 @@
 {
-  "node_ID": "ham-ecology-material-raw_beef_patties",
+  "node_ID": "ham-ecology-material-raw_sausage",
   "parent_node": "ham-ecology-material-ground_pork",
   "depend_parent": false,
-  "title": "生牛肉饼",
-  "unfinished_icon": "textures/items/foods/simple/raw_beef_patties",
-  "finished_icon": "textures/items/foods/simple/raw_beef_patties",
+  "title": "生香肠",
+  "unfinished_icon": "textures/items/materials/raw_sausage",
+  "finished_icon": "textures/items/materials/raw_sausage",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "生牛肉饼",
+  "node_description": "生香肠",
   "reward": [
     {
       "function_name": "",
