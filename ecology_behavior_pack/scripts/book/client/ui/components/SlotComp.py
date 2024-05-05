@@ -19,15 +19,13 @@ class SlotComp(BaseComp):
         self.__bgImg = ImageComp()
         self.__items = HighlightComp()
         self.__count = TextComp(bookConfig.TextAlign.Right)
-        self.__countShadow = TextComp(bookConfig.TextAlign.Right)
 
     def __iter__(self):
-        return iter((self.__bgImg, self.__items, self.__count, self.__countShadow))
+        return iter((self.__bgImg, self.__items, self.__count))
 
     def Show(self):
         self.__bgImg.Show()
         self.__count.Show()
-        self.__countShadow.Show()
         self.__items.Show()
         return self
     
@@ -39,7 +37,6 @@ class SlotComp(BaseComp):
         self.__bgImg.Hide()
         self.__items.Hide()
         self.__count.Hide()
-        self.__countShadow.Hide()
         return self
     
     def HideItem(self):
@@ -50,7 +47,6 @@ class SlotComp(BaseComp):
         self.__bgImg.Reset()
         self.__items.Reset()
         self.__count.Reset()
-        self.__countShadow.Reset()
         return self
 
     def GetPosition(self):    
@@ -71,7 +67,6 @@ class SlotComp(BaseComp):
         self.__bgImg.SetSize((16, 16))
         self.__items.SetSize((16, 16))
         self.__count.SetSize((10, 9))
-        self.__countShadow.SetSize((10, 9))
 
     def _InitDefaultStyle(self):
         self.SetColor((1.0,1.0,1.0,1.0))
@@ -84,9 +79,7 @@ class SlotComp(BaseComp):
         self.__bgImg.AlignCenterToX(center[0])
         self.__bgImg.AlignCenterToY(center[1])
         self.__count.AlignRightToX(countX)
-        self.__count.AlignBottomToY(countY)
-        self.__countShadow.AlignRightToX(countX+1)
-        self.__countShadow.AlignBottomToY(countY+1)
+        self.__count.AlignBottomToY(countY + 1)
 
     def _SetDefaultLayer(self):
         # type: () -> BaseComp
@@ -206,9 +199,8 @@ class SlotComp(BaseComp):
     def SetLayer(self, layer):
         # type: (int) -> BaseComp
         self.__bgImg.SetLayer(layer)
-        self.__items.SetLayer(layer + 2)
-        self.__countShadow.SetLayer(layer + 3)
-        self.__count.SetLayer(layer + 4)
+        self.__items.SetLayer(layer + 1)
+        self.__count.SetLayer(layer + 10)
         return self
     
     def Call(self, callbackDict):
@@ -222,7 +214,6 @@ class SlotComp(BaseComp):
         return self.__bgImg.SetAlpha(alpha)
     
     def SetCountAlpha(self, alpha):
-        self.__countShadow.SetAlpha(alpha)
         return self.__count.SetAlpha(alpha)
     
     def SetColor(self, color):
@@ -231,5 +222,4 @@ class SlotComp(BaseComp):
     def SetDataBeforeShow(self, itemData, count):
         self.__bgImg.SetDataBeforeShow('textures/ui/item_cell')
         self.__items.SetDataBeforeShow(itemData)
-        self.__count.SetDataBeforeShow(str(count), 8)
-        self.__countShadow.SetDataBeforeShow(str(count), 8)
+        self.__count.SetDataBeforeShow(str(count), 7)
