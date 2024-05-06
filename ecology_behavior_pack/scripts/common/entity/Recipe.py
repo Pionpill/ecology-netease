@@ -99,7 +99,7 @@ class Recipe(object):
             return {
                 type + '_slot0': itemUtils.GetItemDict(itemDict = recipe)
             }
-        # 槽值是 str，说明值就是结果物品，例如: "result": "ham:corn_pieces"
+        # 槽值是 str，说明值就是结果物品
         if isinstance(materialOrResultDict, str):
             return {type + '_slot0': itemUtils.GetItemDict(materialOrResultDict)}
         # 仅一个物品，默认槽位为 0

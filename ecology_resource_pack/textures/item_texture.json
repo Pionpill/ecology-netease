@@ -40,6 +40,9 @@
     "ham:cooking_oil": {
       "textures": "textures/items/materials/cooking_oil"
     },
+    "ham:straw": {
+      "textures": "textures/items/materials/straw"
+    },
     "ham:corn": {
       "textures": "textures/items/crops/crop/corn"
     },
