@@ -1,0 +1,16 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:raw_beef_patties",
+      "register_to_create_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "netease:customtips": {
+        "value": "§f--------------------\n§6§l原材料\n§r§3品质: §5●● §3饥饿: §5●○\n§f--------------------\n§r§a在平底锅上煎制"
+      }
+    }
+  }
+}
