@@ -178,18 +178,20 @@ class FurnaceManager(BaseWorkbenchManager):
 
     def Consume(self):
         """消耗原材料"""
-        materialSlotItemDict = self.recipeManager.GetLastUsedRecipeMaterial
+        materialSlotItemDict = self.recipeManager.GetLastUsedRecipeMaterial()
         if materialSlotItemDict is None:
             return
         for slotName, itemDict in materialSlotItemDict.items():
             if itemDict is None:
                 continue
-            count = itemDict.get("count")
+            count = itemDict.get("count", 1)
             self.ReduceItem(slotName, count)
 
     def Produce(self):
         """生产物品"""
-        matchedRecipeResult = self.recipeManager.GetLastUsedRecipeResult
+        matchedRecipeResult = self.recipeManager.GetLastUsedRecipeResult()
+        if matchedRecipeResult is None:
+            return
         resultItems = self.GetAllSlotData('result_ware') if self.resultWareCount else self.GetAllSlotData('result')
         for slotName, recipeResultItem in matchedRecipeResult.items():
             realSlotName = 'result_ware_slot' if self.resultWareCount else slotName
@@ -197,7 +199,7 @@ class FurnaceManager(BaseWorkbenchManager):
             if resultItem is None:
                 self._SetItem(realSlotName, recipeResultItem)
             else:
-                recipeResultItem['count'] = recipeResultItem.get('count') + resultItem.get('count')
+                recipeResultItem['count'] = recipeResultItem.get('count', 1) + resultItem.get('count')
                 self._SetItem(realSlotName, recipeResultItem)
         if self.slotNum['liquid'] != 0:
             self.blockEntityData['liquid'] = self.GetSlotData('liquid') - 1
