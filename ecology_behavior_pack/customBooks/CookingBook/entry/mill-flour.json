@@ -1,0 +1,13 @@
+{
+  "parent": "mill",
+  "sortnum": 11102,
+  "icon": "textures/items/materials/flour.png",
+  "title": "面粉",
+  "pages": [
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:flour",
+      "content": "§8● §r§3类型: §5原材料\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●●§r\n§8● §r小麦系食物最重要的材料之一"
+    }
+  ]
+}
