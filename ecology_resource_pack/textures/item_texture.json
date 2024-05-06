@@ -31,8 +31,8 @@
     "ham:cheese_pie": {
       "textures": "textures/items/foods/pie/cheese_pie"
     },
-    "ham:chill_powder": {
-      "textures": "textures/items/materials/chill_powder"
+    "ham:chili_powder": {
+      "textures": "textures/items/materials/chili_powder"
     },
     "ham:cooked_rice": {
       "textures": "textures/items/foods/rice/cooked_rice"

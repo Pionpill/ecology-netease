@@ -1,10 +1,10 @@
 {
-  "node_ID": "ham-ecology-material-chill_powder",
+  "node_ID": "ham-ecology-material-chili_powder",
   "parent_node": "ham-ecology-material-seasoning",
   "depend_parent": false,
   "title": "辣椒粉",
-  "unfinished_icon": "textures/items/materials/chill_powder",
-  "finished_icon": "textures/items/materials/chill_powder",
+  "unfinished_icon": "textures/items/materials/chili_powder",
+  "finished_icon": "textures/items/materials/chili_powder",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,

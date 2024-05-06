@@ -2,10 +2,10 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:chill_powder"
+      "identifier": "ham:chili_powder"
     },
     "components": {
-      "minecraft:icon": "ham:chill_powder",
+      "minecraft:icon": "ham:chili_powder",
       "minecraft:hover_text_color": "yellow"
     }
   }
