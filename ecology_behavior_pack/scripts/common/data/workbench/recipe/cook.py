@@ -39,5 +39,43 @@ COOK_DATA = {
             "newItemName": "ham:sweet_milk", 
             "count": 3,
         },
-    }
+    },
+    "ham:raw_sausage": {
+        "material": {
+            3: "ham:ground_pork",
+            4: "ham:starch",
+            5: "ham:ground_pork",
+        },
+        "fixed_material": (2, 0, 0, 3),
+        "result": {
+            "newItemName": "ham:raw_sausage", 
+            "count": 3,
+        },
+    },
+    "ham:noodle": {
+        "material": {
+            0: "ham:flour",
+            2: "ham:flour",
+            3: "ham:flour",
+            4: "minecraft:water_bucket",
+            5: "ham:flour",
+            6: "ham:flour",
+            8: "ham:flour",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:noodle", 
+            "count": 6,
+        },
+    },
+    "ham:salad": {
+        "material": {
+            4: "minecraft:egg",
+        },
+        "fixed_material": (0, 1, 3, 0),
+        "result": {
+            "newItemName": "ham:salad", 
+            "count": 6,
+        },
+    },
 }

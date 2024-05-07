@@ -14,7 +14,7 @@ SLOT_DATA = {
     "ham:cooking_table": {
         "recipe": COOK_DATA,
         "material": 9,
-        "fixed_material_items": ('ham:salt', 'minecraft:sugar', 'ham:oil', 'ham:seasoning'),
+        "fixed_material_items": ('ham:salt', 'minecraft:sugar', 'ham:cooking_oil', 'ham:seasoning'),
         "fuel": 0,
         "result": 1,
         "type": WorkbenchType.Crafting,
@@ -59,7 +59,7 @@ SLOT_DATA = {
     "ham:pan": {
         "recipe": PAN_DATA,
         "material": 6,
-        "fixed_material_items": ('ham:salt', 'minecraft:sugar', 'ham:oil', 'ham:seasoning'),
+        "fixed_material_items": ('ham:salt', 'minecraft:sugar', 'ham:cooking_oil', 'ham:seasoning'),
         "ware": "minecraft:bowl",
         "result_ware_count": 3,
         "fuel": 1,

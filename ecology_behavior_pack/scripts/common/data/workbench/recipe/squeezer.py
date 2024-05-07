@@ -24,4 +24,44 @@ SQUEEZER_DATA = {
             "count": 3,
         }
     },
+    "ham:cooking_oil-soy_bean": {
+        "material": {
+            0: {
+                "newItemName": "ham:soy_bean", 
+                "count": 2,
+            },
+            1: {
+                "newItemName": "ham:soy_bean", 
+                "count": 2,
+            },
+            2: {
+                "newItemName": "ham:soy_bean", 
+                "count": 2,
+            },
+        },
+        "result": {
+            "newItemName": "ham:cooking_oil", 
+            "count": 3,
+        }
+    },
+    "ham:cooking_oil-corn": {
+        "material": {
+            0: {
+                "newItemName": "ham:corn", 
+                "count": 2,
+            },
+            1: {
+                "newItemName": "ham:corn", 
+                "count": 2,
+            },
+            2: {
+                "newItemName": "ham:corn", 
+                "count": 2,
+            },
+        },
+        "result": {
+            "newItemName": "ham:cooking_oil", 
+            "count": 2,
+        }
+    },
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "cook",
+  "sortnum": 12103,
+  "icon": "textures/items/materials/raw_sausage.png",
+  "title": "生香肠",
+  "pages": [
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:raw_sausage",
+      "content": "§8● §r§3类型: §5原材料\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●§r"
+    }
+  ]
+}
