@@ -29,5 +29,15 @@ COOK_DATA = {
             "newItemName": "ham:raw_beef_patties", 
             "count": 6,
         },
+    },
+    "ham:sweet_milk": {
+        "material": {
+            4: "minecraft:milk_bucket",
+        },
+        "fixed_material": (0, 2, 0, 0),
+        "result": {
+            "newItemName": "ham:sweet_milk", 
+            "count": 3,
+        },
     }
 }

@@ -26,7 +26,7 @@
       "textures": "textures/items/materials/butter"
     },
     "ham:cheese": {
-      "textures": "textures/items/food/simple/cheese"
+      "textures": "textures/items/foods/simple/cheese"
     },
     "ham:cheese_pie": {
       "textures": "textures/items/foods/pie/cheese_pie"
@@ -81,6 +81,9 @@
     },
     "ham:mantou": {
       "textures": "textures/items/foods/simple/mantou"
+    },
+    "ham:sweet_milk": {
+      "textures": "textures/items/foods/simple/sweet_milk"
     },
     "ham:mapo_tofu": {
       "textures": "textures/items/foods/fry/mapo_tofu"

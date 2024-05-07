@@ -217,7 +217,7 @@ class FurnaceManager(BaseWorkbenchManager):
         return burnData
 
     def __GetFuels(self, blockName):
-        if blockName in ["ham:mill"]:
+        if blockName in ["ham:mill", 'ham:squeezer']:
             return FUEL_DATA.get('gold', {})
         else:
             return FUEL_DATA.get('coal', {})
