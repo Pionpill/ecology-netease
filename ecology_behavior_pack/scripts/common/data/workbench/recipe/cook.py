@@ -95,4 +95,22 @@ COOK_DATA = {
             "count": 6,
         },
     },
+    "ham:raw_buns": {
+        "material": {
+            0: "ham:dough",
+            1: "ham:dough",
+            2: "ham:dough",
+            3: "ham:scallion",
+            4: "ham:ground_pork",
+            5: "ham:scallion",
+            6: "ham:dough",
+            7: "ham:dough",
+            8: "ham:dough",
+        },
+        "fixed_material": (3, 2, 3, 3),
+        "result": {
+            "newItemName": "ham:raw_buns", 
+            "count": 9,
+        },
+    },
 }

@@ -2,10 +2,10 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:beef_patties"
+      "identifier": "ham:bread"
     },
     "components": {
-      "minecraft:icon": "ham:beef_patties",
+      "minecraft:icon": "ham:bread",
       "minecraft:use_animation": "eat",
       "minecraft:hover_text_color": "white"
     }

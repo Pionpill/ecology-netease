@@ -13,6 +13,9 @@
     "ham:bread": {
       "textures": "textures/items/foods/simple/bread"
     },
+    "ham:raw_buns": {
+      "textures": "textures/items/foods/simple/raw_buns"
+    },
     "ham:buns": {
       "textures": "textures/items/foods/simple/buns"
     },
