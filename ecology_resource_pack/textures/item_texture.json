@@ -58,6 +58,9 @@
     "ham:flour": {
       "textures": "textures/items/materials/flour"
     },
+    "ham:dough": {
+      "textures": "textures/items/materials/dough"
+    },
     "ham:starch": {
       "textures": "textures/items/materials/starch"
     },

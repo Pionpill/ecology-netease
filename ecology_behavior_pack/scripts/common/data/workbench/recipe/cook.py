@@ -52,20 +52,37 @@ COOK_DATA = {
             "count": 3,
         },
     },
-    "ham:noodle": {
+    "ham:dough": {
         "material": {
             0: "ham:flour",
+            1: "ham:flour",
             2: "ham:flour",
             3: "ham:flour",
             4: "minecraft:water_bucket",
             5: "ham:flour",
             6: "ham:flour",
+            7: "ham:flour",
             8: "ham:flour",
         },
         "fixed_material": (0, 0, 0, 0),
         "result": {
-            "newItemName": "ham:noodle", 
+            "newItemName": "ham:dough", 
             "count": 6,
+        },
+    },
+    "ham:noodle": {
+        "material": {
+            0: "ham:dough",
+            2: "ham:dough",
+            3: "ham:dough",
+            5: "ham:dough",
+            6: "ham:dough",
+            8: "ham:dough",
+        },
+        "fixed_material": (2, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:noodle", 
+            "count": 8,
         },
     },
     "ham:salad": {

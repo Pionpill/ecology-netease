@@ -2,14 +2,14 @@
   "format_version": "1.16.0",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:flour",
+      "identifier": "ham:dough",
       "register_to_create_menu": true,
       "category": "ecology"
     },
     "components": {
       "minecraft:max_stack_size": 64,
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l原材料\n§r§a小麦类最重要原材料"
+        "value": "§f--------------------\n§6§l原材料\n§r§a可以直接烘焙\n§r§a面类加工最重要原材料"
       }
     }
   }
