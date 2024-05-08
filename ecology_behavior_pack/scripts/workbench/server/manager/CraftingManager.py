@@ -1,4 +1,6 @@
 import mod.server.extraServerApi as serverApi
+from scripts.common.data.workbench import CONVERT_DATA
+from scripts.common.utils import itemUtils
 from scripts.common import logger
 from scripts.workbench.server.manager.base import BaseWorkbenchManager
 
@@ -11,7 +13,7 @@ class CraftingManager(BaseWorkbenchManager):
         # type: (str, tuple[int, int, int], int) -> None
         BaseWorkbenchManager.__init__(self, blockName, position, dimensionId)
 
-    def Consume(self):
+    def Consume(self, playerId):
         """工作台合成物品"""
         materialSlotItemDict = self.recipeManager.GetLastUsedRecipeMaterial()
         if materialSlotItemDict is None:
@@ -19,7 +21,13 @@ class CraftingManager(BaseWorkbenchManager):
         for slotName, itemDict in materialSlotItemDict.items():
             if itemDict is None:
                 continue
-            count = itemDict.get("count", 0)
+            itemName = itemDict.get('newItemName')
+            if itemName is None:
+                return
+            count = itemDict.get("count", 1)
+            convertItemName = CONVERT_DATA.get(itemName)
+            if convertItemName:
+                itemComp.SpawnItemToPlayerInv(itemUtils.GetItemDict(convertItemName, 0, count),  playerId)
             self.ReduceItem(slotName, count)
     
     def Reset(self, playerId):

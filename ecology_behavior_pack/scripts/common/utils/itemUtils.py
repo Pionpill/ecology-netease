@@ -1,3 +1,4 @@
+from scripts.common.error import AddonDataError
 from scripts.common import logger
 
 def IsSameItem(item1, item2):
@@ -16,7 +17,7 @@ def IsSameItem(item1, item2):
     return True
 
 def GetItemDict(itemName=None, auxValue=0, count=1, itemDict=None):
-    # type: (str | None, int, int, dict | None) -> dict | None
+    # type: (str | None, int, int, dict | None) -> dict
     if itemName is not None:
         return {
             'newItemName': itemName,
@@ -33,8 +34,7 @@ def GetItemDict(itemName=None, auxValue=0, count=1, itemDict=None):
             'newAuxValue': newAuxValue,
             'count': count,
         }
-    logger.error('获取物品字典时为传入有效信息')
-    return None
+    raise AddonDataError('获取物品字典时为传入有效信息')
 
 def FilterDict(dict, filterTuple = ( None, )):
     # type: (dict, tuple) -> dict

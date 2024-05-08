@@ -180,7 +180,7 @@ class BaseWorkbenchManager(object):
         pass
 
     @abstractmethod
-    def Consume(self):
+    def Consume(self, playerId = None):
         """消耗原材料合成/烧制物品"""
         raise NotImplementedError
     

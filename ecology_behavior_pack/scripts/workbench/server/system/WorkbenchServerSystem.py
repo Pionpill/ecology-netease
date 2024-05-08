@@ -97,7 +97,7 @@ class WorkbenchServerSystem(ServerSystem):
         # 工作台消耗原材料
         if workbenchMgr.blockType == WorkbenchType.Crafting:
             resultItemDict = workbenchMgr.GetRecipeResultSlotItemDict().get(slotName)
-            workbenchMgr.Consume()
+            workbenchMgr.Consume(playerId)
         # 熔炉更新数据
         if workbenchMgr.blockType == WorkbenchType.Furnace:
             resultItemDict = workbenchMgr._GetItem(slotName, playerId)
