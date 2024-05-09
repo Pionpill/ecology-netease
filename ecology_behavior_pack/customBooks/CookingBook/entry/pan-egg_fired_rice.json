@@ -1,0 +1,13 @@
+{
+  "parent": "pan",
+  "sortnum": 13100,
+  "icon": "textures/items/foods/rice/egg_fired_rice.png",
+  "title": "蛋炒饭",
+  "pages": [
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:egg_fired_rice",
+      "content": "§8● §r§3类型: §5原材料\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●●●◐§r"
+    }
+  ]
+}

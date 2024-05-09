@@ -1,0 +1,13 @@
+{
+  "parent": "steamer",
+  "sortnum": 11110,
+  "icon": "textures/items/foods/rice/cooked_rice.png",
+  "title": "熟米饭",
+  "pages": [
+    {
+      "type": "ham:steamerRecipePage",
+      "recipeId": "ham:cooked_rice",
+      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●§r"
+    }
+  ]
+}

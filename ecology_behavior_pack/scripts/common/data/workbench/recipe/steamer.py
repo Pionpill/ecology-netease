@@ -21,4 +21,8 @@ STEAMER_DATA = {
         }
     },
     "ham:sausage": "ham:raw_sausage",
+    "ham:cooked_rice": {
+        "material": "ham:rice",
+        "result": "ham:cooked_rice"
+    },
 }

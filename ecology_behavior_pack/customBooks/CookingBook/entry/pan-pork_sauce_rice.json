@@ -1,0 +1,13 @@
+{
+  "parent": "pan",
+  "sortnum": 13110,
+  "icon": "textures/items/foods/rice/pork_sauce_rice.png",
+  "title": "肉酱饭",
+  "pages": [
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:pork_sauce_rice",
+      "content": "§8● §r§3类型: §5原材料\n§8● §r§3品质: §5●●●§r\n§8● §r§3饥饿: §5●●●●●◐§r\n§8● §r§2下矿，下矿！"
+    }
+  ]
+}

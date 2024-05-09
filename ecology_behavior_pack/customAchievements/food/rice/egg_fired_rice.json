@@ -1,10 +1,10 @@
 {
-  "node_ID": "ham-ecology-food-egg_fried_rice",
+  "node_ID": "ham-ecology-food-egg_fired_rice",
   "parent_node": "ham-ecology-food-cooked_rice",
   "depend_parent": false,
   "title": "蛋炒饭",
-  "unfinished_icon": "textures/items/foods/rice/egg_fried_rice",
-  "finished_icon": "textures/items/foods/rice/egg_fried_rice",
+  "unfinished_icon": "textures/items/foods/rice/egg_fired_rice",
+  "finished_icon": "textures/items/foods/rice/egg_fired_rice",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,

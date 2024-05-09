@@ -21,5 +21,88 @@ PAN_DATA = {
             "newItemName": "ham:sausage", 
             "count": 1,
         }
+    },
+    "ham:egg_fired_rice": {
+        "material": {
+            1: {
+                "newItemName": "ham:scallion",
+                "count": 1,
+            },
+            3: {
+                "newItemName": "minecraft:egg",
+                "count": 1,
+            },
+            4: {
+                "newItemName": "ham:cooked_rice",
+                "count": 1,
+            },
+            5: {
+                "newItemName": "minecraft:egg",
+                "count": 1,
+            }
+        },
+        "fixed_material": (1, 0, 1, 1),
+        "result": {
+            "newItemName": "ham:egg_fired_rice", 
+            "count": 1,
+        }
+    },
+    "ham:pork_sauce_rice": {
+        "material": {
+            1: {
+                "newItemName": "ham:ground_pork",
+                "count": 1,
+            },
+            3: {
+                "newItemName": "ham:scallion",
+                "count": 1,
+            },
+            4: {
+                "newItemName": "ham:cooked_rice",
+                "count": 1,
+            },
+            5: {
+                "newItemName": "ham:lentinula",
+                "count": 1,
+            }
+        },
+        "fixed_material": (1, 0, 1, 1),
+        "result": {
+            "newItemName": "ham:pork_sauce_rice", 
+            "count": 1,
+        }
+    },
+    "ham:yangzhou_fried_rice": {
+        "material": {
+            0: {
+                "newItemName": "ham:lentinula",
+                "count": 1,
+            },
+            1: {
+                "newItemName": "ham:corn",
+                "count": 2,
+            },
+            2: {
+                "newItemName": "ham:scallion",
+                "count": 1,
+            },
+            3: {
+                "newItemName": "ham:sausage",
+                "count": 2,
+            },
+            4: {
+                "newItemName": "ham:cooked_rice",
+                "count": 2,
+            },
+            5: {
+                "newItemName": "minecraft:egg",
+                "count": 3,
+            }
+        },
+        "fixed_material": (1, 0, 1, 1),
+        "result": {
+            "newItemName": "ham:yangzhou_fried_rice", 
+            "count": 2,
+        }
     }
 }

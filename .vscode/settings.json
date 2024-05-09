@@ -1,5 +1,12 @@
 {
-  "cSpell.words": ["aabb", "levelname", "mantou", "molang", "sortnum"],
+  "cSpell.words": [
+    "aabb",
+    "levelname",
+    "mantou",
+    "molang",
+    "sortnum",
+    "yangzhou"
+  ],
   "editor.formatOnSave": true,
   "files.exclude": {
     "**/.git": true,
