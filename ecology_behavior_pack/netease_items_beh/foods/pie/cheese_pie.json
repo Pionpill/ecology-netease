@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:cheese_pie",
+      "register_to_create_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:max_stack_size": 32,
+      "minecraft:use_duration": 32,
+      "minecraft:food": {
+        "nutrition": 6,
+        "saturation_modifier": "good",
+        "can_always_eat": false
+      },
+      "netease:customtips": {
+        "value": "§f--------------------\n§6§l派类食品\n§r§3品质: §5●●●\n§3饥饿: §5●●●●"
+      }
+    }
+  }
+}

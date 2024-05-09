@@ -113,4 +113,63 @@ COOK_DATA = {
             "count": 9,
         },
     },
+    "ham:raw_cheese_pie": {
+        "material": {
+            1: "ham:butter",
+            3: "ham:cheese",
+            4: "minecraft:egg",
+            5: "ham:cheese",
+            6: "ham:dough",
+            7: "ham:dough",
+            8: "ham:dough",
+        },
+        "fixed_material": (1, 3, 1, 1),
+        "result": {
+            "newItemName": "ham:raw_cheese_pie", 
+            "count": 4, # 饥饿 6
+        },
+    },
+    "ham:raw_corn_pie": {
+        "material": {
+            1: "ham:cheese",
+            3: {
+                "newItemName": "ham:corn",
+                "count": 2
+            },
+            4: "ham:butter",
+            5: {
+                "newItemName": "ham:corn",
+                "count": 2
+            },
+            6: "ham:dough",
+            7: "ham:dough",
+            8: "ham:dough",
+        },
+        "fixed_material": (1, 3, 1, 1),
+        "result": {
+            "newItemName": "ham:raw_corn_pie", 
+            "count": 4, # 饥饿 5
+        },
+    },
+    "ham:raw_apple_pie": {
+        "material": {
+            0: "minecraft:egg",
+            1: "ham:butter",
+            2: "minecraft:egg",
+            3: "ham:cheese",
+            4: {
+                "newItemName": "minecraft:apple",
+                "count": 4
+            },
+            5: "ham:cheese",
+            6: "ham:dough",
+            7: "ham:dough",
+            8: "ham:dough",
+        },
+        "fixed_material": (1, 3, 1, 1),
+        "result": {
+            "newItemName": "ham:raw_apple_pie", 
+            "count": 4, # 饥饿 8
+        },
+    },
 }

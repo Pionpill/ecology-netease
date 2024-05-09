@@ -1,0 +1,19 @@
+{
+  "parent": "bake",
+  "sortnum": 15101,
+  "icon": "textures/items/foods/pie/corn_pie.png",
+  "title": "玉米派",
+  "pages": [
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:raw_corn_pie",
+      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●◐§r\n§8● §r可以生吃，烘焙更佳"
+    },
+    {
+      "subtitle": "烘焙",
+      "type": "ham:bakeRecipePage",
+      "recipeId": "ham:corn_pie",
+      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●●§r\n§8● §r§3饥饿: §5●●●◐§r"
+    }
+  ]
+}
