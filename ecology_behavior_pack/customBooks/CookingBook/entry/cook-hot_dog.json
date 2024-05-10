@@ -1,0 +1,13 @@
+{
+  "parent": "cook",
+  "sortnum": 21002,
+  "icon": "textures/items/foods/fast_food/hot_dog.png",
+  "title": "热狗",
+  "pages": [
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:hot_dog",
+      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●●●●●§r"
+    }
+  ]
+}

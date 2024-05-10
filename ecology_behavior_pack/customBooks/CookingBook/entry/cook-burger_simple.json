@@ -1,0 +1,13 @@
+{
+  "parent": "cook",
+  "sortnum": 21001,
+  "icon": "textures/items/foods/fast_food/burger_simple.png",
+  "title": "简易汉堡",
+  "pages": [
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:burger_simple",
+      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●●●●§r"
+    }
+  ]
+}

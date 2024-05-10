@@ -1,0 +1,7 @@
+{
+  "title": "§l炸锅",
+  "content": "§r§8● §0炸锅合成配方\n§r§8● §r炸锅需放置在炉子上\n§r§8● §r炸锅需要消耗油\n§r§8● §r燃料: 煤炭",
+  "isLocked": false,
+  "icon": "textures/blocks/icon/fryer_icon.png",
+  "sortnum": 7
+}

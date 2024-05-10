@@ -126,7 +126,7 @@ COOK_DATA = {
         "fixed_material": (1, 3, 1, 1),
         "result": {
             "newItemName": "ham:raw_cheese_pie", 
-            "count": 4, # 饥饿 6
+            "count": 4,
         },
     },
     "ham:raw_corn_pie": {
@@ -148,7 +148,7 @@ COOK_DATA = {
         "fixed_material": (1, 3, 1, 1),
         "result": {
             "newItemName": "ham:raw_corn_pie", 
-            "count": 4, # 饥饿 5
+            "count": 4,
         },
     },
     "ham:raw_apple_pie": {
@@ -169,7 +169,62 @@ COOK_DATA = {
         "fixed_material": (1, 3, 1, 1),
         "result": {
             "newItemName": "ham:raw_apple_pie", 
-            "count": 4, # 饥饿 8
+            "count": 4,
         },
+    },
+    "ham:burger_simple": {
+        "material": {
+            1: "ham:bread",
+            3: {
+                "newItemName": "ham:cheese",
+                "count": 2
+            },
+            4: {
+                "newItemName": "ham:beef_patties",
+                "count": 2
+            },
+            5: "ham:tomato",
+            7: "ham:bread",
+        },
+        "fixed_material": (1, 0, 0, 2),
+        "result": {
+            "newItemName": "ham:burger_simple", 
+            "count": 2, # 饥饿 10
+        },
+    },
+    "ham:burger": {
+        "material": {
+            0: "ham:lettuce",
+            1: "ham:bread",
+            2: "ham:onion",
+            3: {
+                "newItemName": "ham:cheese",
+                "count": 2
+            },
+            4: {
+                "newItemName": "ham:beef_patties",
+                "count": 2
+            },
+            5: "ham:tomato",
+            6: "ham:salad",
+            7: "ham:bread",
+            8: "ham:salad",
+        },
+        "fixed_material": (1, 0, 0, 2),
+        "result": {
+            "newItemName": "ham:burger", 
+            "count": 2, # 饥饿 14
+        },
+    },
+    "ham:hot_dog": {
+        "material": {
+            1: "ham:lettuce",
+            3: "ham:bread",
+            4: "ham:sausage",
+            5: "ham:bread",
+            7: "ham:salad",
+        },
+        "fixed_material": (1, 1, 0, 2),
+        "result": "ham:hot_dog", # 12
     },
 }

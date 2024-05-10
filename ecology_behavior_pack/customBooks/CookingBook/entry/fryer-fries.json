@@ -1,0 +1,13 @@
+{
+  "parent": "fryer",
+  "sortnum": 11110,
+  "icon": "textures/items/foods/fast_food/fries.png",
+  "title": "薯条",
+  "pages": [
+    {
+      "type": "ham:fryerRecipePage",
+      "recipeId": "ham:fries",
+      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●●§r"
+    }
+  ]
+}
