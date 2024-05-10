@@ -104,5 +104,23 @@ PAN_DATA = {
             "newItemName": "ham:yangzhou_fried_rice", 
             "count": 2,
         }
+    },
+    "ham:mapo_tofu": {
+        "material": {
+            0: "ham:starch",
+            1: "ham:ground_pork",
+            2: "ham:scallion",
+            3: "ham:chili",
+            4: {
+                "newItemName": "ham:tofu",
+                "count": 3,
+            },
+            5: "ham:chili",
+        },
+        "fixed_material": (1, 0, 1, 2),
+        "result": {
+            "newItemName": "ham:mapo_tofu", 
+            "count": 2, # 6
+        }
     }
 }

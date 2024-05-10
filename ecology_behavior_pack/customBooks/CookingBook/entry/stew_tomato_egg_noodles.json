@@ -1,0 +1,13 @@
+{
+  "parent": "stew",
+  "sortnum": 13001,
+  "icon": "textures/items/foods/noodles/tomato_egg_noodles.png",
+  "title": "番茄鸡蛋面",
+  "pages": [
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:tomato_egg_noodles",
+      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●●◐"
+    }
+  ]
+}

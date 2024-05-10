@@ -1,0 +1,13 @@
+{
+  "parent": "pan",
+  "sortnum": 13110,
+  "icon": "textures/items/foods/fry/mapo_tofu.png",
+  "title": "麻婆豆腐",
+  "pages": [
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:mapo_tofu",
+      "content": "§8● §r§3类型: §5原材料\n§8● §r§3品质: §5●●●§r\n§8● §r§3饥饿: §5●●●§r\n§8● §r§2辣到飞起"
+    }
+  ]
+}

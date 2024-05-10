@@ -1,0 +1,13 @@
+{
+  "parent": "stew",
+  "sortnum": 13002,
+  "icon": "textures/items/foods/noodles/pork_sauce_noodles.png",
+  "title": "肉酱面",
+  "pages": [
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:pork_sauce_noodles",
+      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●●§r\n§8● §r§3饥饿: §5●●●●§r\n§8● §r§2下矿，下矿！"
+    }
+  ]
+}
