@@ -176,6 +176,16 @@
     "netease_model": "ham:tomato_stage_3",
     "sound": "grass"
   },
+  "ham:weed": {
+    "netease_model": "ham:weed",
+    "sound": "grass",
+    "use_colormap": "textures/colormap/grass"
+  },
+  "ham:weed_tall": {
+    "netease_model": "ham:weed_tall",
+    "sound": "grass",
+    "use_colormap": "textures/colormap/grass"
+  },
   "ham:baking_furnace": {
     "netease_model": "ham:baking_furnace",
     "sound": "stone"

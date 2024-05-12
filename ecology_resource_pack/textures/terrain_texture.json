@@ -171,6 +171,18 @@
     },
     "ham:water": {
       "textures": "textures/blocks/workbenches/water"
+    },
+    "ham:weed": {
+      "textures": "textures/blocks/crops/weed/weed"
+    },
+    "ham:weed_half": {
+      "textures": "textures/blocks/crops/weed/weed_half"
+    },
+    "ham:weed_small": {
+      "textures": "textures/blocks/crops/weed/weed_small"
+    },
+    "ham:weed_huge": {
+      "textures": "textures/blocks/crops/weed/weed_huge"
     }
   },
   "texture_name": "atlas.terrain"

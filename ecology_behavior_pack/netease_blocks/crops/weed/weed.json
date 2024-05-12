@@ -1,0 +1,28 @@
+{
+  "format_version": "1.16",
+  "minecraft:block": {
+    "description": {
+      "identifier": "ham:weed",
+      "register_to_creative_menu": false,
+      "base_block": "custom_crop_block"
+    },
+    "components": {
+      "netease:render_layer": {
+        "value": "alpha"
+      },
+      "netease:aabb": {
+        "collision": {
+          "min": [0.0, 0.0, 0.0],
+          "max": [0.0, 0.0, 0.0]
+        },
+        "clip": {
+          "min": [0.0, 0.0, 0.0],
+          "max": [1.0, 1.0, 1.0]
+        }
+      },
+      "netease:redstone_property": {
+        "value": "break_on_push"
+      }
+    }
+  }
+}
