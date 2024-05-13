@@ -1,0 +1,13 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "ham:lentinula-block_feature"
+    },
+    "places_block": "ham:lentinula_stage_3",
+    "enforce_placement_rules": true,
+    "enforce_survivability_rules": true,
+    "may_place_on": ["minecraft:grass"],
+    "may_replace": ["minecraft:air"]
+  }
+}
