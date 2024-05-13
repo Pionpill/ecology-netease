@@ -6,7 +6,7 @@
     },
     "places_feature": "ham:weed_tall-block_feature",
     "iterations": 2,
-    "scatter_chance": 10.0,
+    "scatter_chance": 15.0,
     "x": {
       "distribution": "uniform",
       "extent": [0, 7]

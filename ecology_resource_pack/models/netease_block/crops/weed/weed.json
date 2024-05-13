@@ -13,7 +13,7 @@
               "north": {
                 "texture": 0,
                 "uv": [0, 0],
-                "uv_size": [16, 16]
+                "uv_size": [32, 32]
               }
             }
           },
@@ -26,7 +26,7 @@
               "north": {
                 "texture": 0,
                 "uv": [0, 0],
-                "uv_size": [16, 16]
+                "uv_size": [32, 32]
               }
             }
           },
@@ -39,7 +39,7 @@
               "north": {
                 "texture": 0,
                 "uv": [0, 0],
-                "uv_size": [16, 16]
+                "uv_size": [32, 32]
               }
             }
           },

@@ -6,7 +6,7 @@
     },
     "places_feature": "ham:weed-block_feature",
     "iterations": 10,
-    "scatter_chance": 10.0,
+    "scatter_chance": 20.0,
     "x": {
       "distribution": "uniform",
       "extent": [0, 7]

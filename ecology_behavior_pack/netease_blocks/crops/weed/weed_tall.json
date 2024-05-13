@@ -22,6 +22,9 @@
       },
       "netease:redstone_property": {
         "value": "break_on_push"
+      },
+      "netease:listen_block_remove": {
+        "value": true
       }
     }
   }

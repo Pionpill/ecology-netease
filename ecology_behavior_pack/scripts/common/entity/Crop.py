@@ -75,6 +75,13 @@ class Crop(object):
             return defaultValue
         return self._GetField("blockPrefix", GetDefaultPrefix)
     
+    def CanGrow(self):
+        # type: () -> bool
+        try:
+            return self._GetField(("grow")) is not None
+        except AddonDataFieldError:
+            return False
+
     def GetGrowStageTuple(self):
         # type: () -> tuple[GrowStageInfo, ...]
         """获取生长状态元组"""
@@ -181,6 +188,12 @@ class Crop(object):
         # type: (int | None) -> tuple[LootInfo, ...] | None
         """获取某一状态的掉落物表"""
         lootField = self._GetField("loot") # type: tuple[dict] | None
+        if not self.CanGrow():
+            if not lootField:
+                return ()
+            if self.lootsMap.get(0) is None:
+                self.lootsMap[0] = tuple(LootInfo.FromData(lootInfo, self.seedName, stage) for lootInfo in lootField)
+            return self.lootsMap[0]
         lastStage = self.GetGrowStageLength() - 1
         if isinstance(lootField, tuple) and (stage is None or self.IsLastStage(stage)):
             if self.lootsMap.get(lastStage) is None:

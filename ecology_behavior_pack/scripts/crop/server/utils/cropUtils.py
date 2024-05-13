@@ -72,4 +72,4 @@ def GetBlockStageDict(blockOrItemName, stageId):
 
 def __GetBlockPrefix(blockName):
     # type: (str) -> str
-    return '_'.join(blockName.split('_')[:-2])
+    return '_'.join(blockName.split('_')[:-2]) if 'stage' in blockName else blockName

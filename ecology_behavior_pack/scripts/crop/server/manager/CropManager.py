@@ -120,10 +120,11 @@ class CropManager(object):
             return False
         if self.cropBlockName is None:
             return False
-        harvestStages = self.crop.GetGrowHarvestStage()
-        stage = self.__GetStage()
-        if stage not in harvestStages:
-            return False
+        if self.crop.CanGrow():
+            harvestStages = self.crop.GetGrowHarvestStage()
+            stage = self.__GetStage()
+            if stage not in harvestStages:
+                return False
 
         self.lastHarvestTime = now
         if loot:
@@ -170,6 +171,10 @@ class CropManager(object):
                 return
             cropEntityData = self.__GetCropEntityData()
             if cropEntityData is None:
+                if not self.crop.CanGrow():
+                    count = mathUtils.GetRandomInteger(loot.count)
+                    itemDict = itemUtils.GetItemDict(loot.itemName, 0, count)
+                    itemComp.SpawnItemToLevel(itemDict,  self.dimensionId, self.position)
                 return
             fertility = cropEntityData['fertility']
             tickCount = cropEntityData['tickCount']
@@ -283,7 +288,7 @@ class CropManager(object):
 
     def __GetCropEntityData(self):
         cropEntityData = blockEntityDataComp.GetBlockEntityData(self.dimensionId, self.position)
-        if not cropEntityData:
+        if not cropEntityData and self.crop.CanGrow():
             logger.error('不存在作物 {} 实体数据'.format(self.cropBlockName))
         return cropEntityData
 
@@ -291,4 +296,4 @@ class CropManager(object):
         if self.cropBlockName is None:
             logger.error('空作物无法获取生长状态，这是一个逻辑bug')
             return 0
-        return int(self.cropBlockName.split("_")[-1])
+        return int(self.cropBlockName.split("_")[-1]) if "stage" in self.cropBlockName else 0
