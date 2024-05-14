@@ -8,5 +8,10 @@ WEED_TALL = {
             "chance": 20,
             "count": 1
         },
+        {
+            "name": "ham:corn",
+            "chance": 3,
+            "count": 1
+        },
     )
 }

@@ -1,0 +1,23 @@
+{
+  "parent": "seasoning",
+  "sortnum": 503,
+  "icon": "textures/items/crops/seasoning/scallion.png",
+  "title": "大葱",
+  "pages": [
+    {
+      "type": "highlightPage",
+      "itemData": [
+        {
+          "item": "ham:scallion",
+          "data": 0
+        }
+      ],
+      "content": "§8● §r生长时间: 2-3 ☀\n§8● §r温度(适宜): 15℃―25℃\n§8● §r温度(可以): 0℃―35℃\n§8● §r湿度(适宜): 40%-80%\n§8● §r湿度(可以): 15%-100%\n§8● §r土壤(最低): 60\n§8● §r土壤(敏感): 60\n§8● §r下雨生长速度: 150%\n§8● §r成熟植株高度：2"
+    },
+    {
+      "type": "textPage",
+      "subtitle": "获取与加工方式",
+      "content": "§8● §r野生：森林"
+    }
+  ]
+}

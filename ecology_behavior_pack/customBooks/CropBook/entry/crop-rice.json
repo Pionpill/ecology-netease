@@ -1,0 +1,28 @@
+{
+  "parent": "crop",
+  "sortnum": 100,
+  "icon": "textures/items/crops/crop/rice_plant.png",
+  "title": "稻米",
+  "pages": [
+    {
+      "type": "highlightPage",
+      "itemData": [
+        {
+          "item": "ham:rice_seeds",
+          "data": 0
+        },
+        {
+          "item": "ham:rice_plant",
+          "data": 0
+        }
+      ],
+      "content": "§8● §r生长时间: 3d ☀\n§8● §r温度(适宜): 20℃―35℃\n§8● §r温度(可以): 10℃―40℃\n§8● §r湿度(适宜): 60%-100%\n§8● §r湿度(可以): 40%-100%\n§8● §r土壤(最低): 120\n§8● §r土壤(敏感): 130\n§8● §r下雨生长速度: 200%\n§8● §r成熟植株高度：2"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "subtitle": "获取与加工方式",
+      "recipeId": "ham:rice",
+      "content": "§8● §r野草概率掉落种子\n§8● §r在石磨上研磨获取大米"
+    }
+  ]
+}

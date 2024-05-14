@@ -1,0 +1,23 @@
+{
+  "parent": "mushroom",
+  "sortnum": 300,
+  "icon": "textures/items/crops/mushroom/lentinula.png",
+  "title": "香菇",
+  "pages": [
+    {
+      "type": "highlightPage",
+      "itemData": [
+        {
+          "item": "ham:lentinula",
+          "data": 0
+        }
+      ],
+      "content": "§8● §r生长时间: 2-3~2d ⭑\n§8● §r温度(适宜): 20℃―25℃\n§8● §r温度(可以): 10℃―30℃\n§8● §r湿度(适宜): 80%-100%\n§8● §r湿度(可以): 40%-100%\n§8● §r生长只需要微光\n§8● §r消耗朽木"
+    },
+    {
+      "type": "textPage",
+      "subtitle": "获取与加工方式",
+      "content": "§8● §r野生：沼泽"
+    }
+  ]
+}
