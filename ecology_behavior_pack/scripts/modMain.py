@@ -25,6 +25,9 @@ class Ecology(object):
         serverApi.RegisterSystem(modConfig.ADDON_NAME,
                                  modConfig.WORKBENCH_SERVER_NAME,
                                  modConfig.WORKBENCH_SERVER_PATH)
+        serverApi.RegisterSystem(modConfig.ADDON_NAME,
+                                 modConfig.BOOK_SERVER_NAME,
+                                 modConfig.BOOK_SERVER_PATH)
 
     @Mod.DestroyServer()
     def ServerDestroy(self):
