@@ -183,6 +183,9 @@
     },
     "ham:weed_huge": {
       "textures": "textures/blocks/crops/weed/weed_huge"
+    },
+    "ham:salt_ore": {
+      "textures": "textures/blocks/ore/salt_ore"
     }
   },
   "texture_name": "atlas.terrain"

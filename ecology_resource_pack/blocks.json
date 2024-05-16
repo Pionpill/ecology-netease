@@ -225,5 +225,9 @@
   "ham:stew_pot": {
     "netease_model": "ham:stew_pot",
     "sound": "stone"
+  },
+  "ham:salt_ore": {
+    "textures": "ham:salt_ore",
+    "sound": "stone"
   }
 }

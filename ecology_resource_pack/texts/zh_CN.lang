@@ -61,6 +61,7 @@ item.ham:cooking_book.name=烹饪指南
 item.ham:crop_book.name=作物指南
 item.ham:guide_book.name=入门指南
 tab.ecology=生态
+tile.ham:salt_ore.name=盐矿
 tile.ham:baking_furnace.name=烘焙炉
 tile.ham:cooking_table.name=厨务台
 tile.ham:food_steamer.name=蒸笼
