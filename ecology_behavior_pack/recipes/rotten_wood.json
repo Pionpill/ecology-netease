@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ham:rotten_wood"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["A A", "A A"],
+    "key": {
+      "A": {
+        "item": "minecraft:wood"
+      }
+    },
+    "result": {
+      "item": "ham:rotten_wood",
+      "count": 8
+    }
+  }
+}
