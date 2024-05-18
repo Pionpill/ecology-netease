@@ -20,9 +20,9 @@ class BookServerSystem(ServerSystem):
     def OnFirstInit(self, args):
         # 将三本书给玩家
         itemNameList = (
+            "ham:guide_book",
             "ham:crop_book",
             "ham:cooking_book",
-            "ham:guide_book",
         )
         for itemName in itemNameList:
             itemDict = itemUtils.GetItemDict(itemName)
