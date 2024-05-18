@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-food-pork_sauce_rice",
-  "parent_node": "ham-ecology-food-cooked_rice",
+  "parent_node": "ham-ecology-food-rice",
   "depend_parent": false,
   "title": "肉酱饭",
   "unfinished_icon": "textures/items/foods/rice/pork_sauce_rice",

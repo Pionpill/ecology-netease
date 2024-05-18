@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-food-egg_fired_rice",
-  "parent_node": "ham-ecology-food-cooked_rice",
+  "parent_node": "ham-ecology-food-rice",
   "depend_parent": false,
   "title": "蛋炒饭",
   "unfinished_icon": "textures/items/foods/rice/egg_fired_rice",
