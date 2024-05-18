@@ -13,5 +13,10 @@ WEED_TALL = {
             "chance": 3,
             "count": 1
         },
+        {
+            "name": "ham:lentinula",
+            "chance": 2,
+            "count": 1
+        },
     )
 }
