@@ -1,0 +1,22 @@
+{
+  "parent": "seasoning",
+  "sortnum": 500,
+  "icon": "textures/items/materials/salt.png",
+  "title": "盐",
+  "pages": [
+    {
+      "type": "highlightPage",
+      "itemData": [
+        {
+          "item": "ham:salt_ore",
+          "data": 0
+        },
+        {
+          "item": "ham:salt",
+          "data": 0
+        }
+      ],
+      "content": "§8● §r下矿挖掘获取盐"
+    }
+  ]
+}
