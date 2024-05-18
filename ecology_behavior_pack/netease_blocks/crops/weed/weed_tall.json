@@ -25,6 +25,9 @@
       },
       "netease:listen_block_remove": {
         "value": true
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
       }
     }
   }
