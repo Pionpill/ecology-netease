@@ -120,7 +120,8 @@ class CropManager(object):
             return False
         if self.cropBlockName is None:
             return False
-        if self.crop.CanGrow():
+        canGrow = self.crop.CanGrow()
+        if canGrow:
             harvestStages = self.crop.GetGrowHarvestStage()
             stage = self.__GetStage()
             if stage not in harvestStages:
@@ -130,7 +131,7 @@ class CropManager(object):
         if loot:
             self.SpawnLoots()
 
-        if remove:
+        if remove or not canGrow:
             result = blockInfoComp.SetBlockNew(self.position, {'name': 'minecraft:air', 'aux': 0}, dimensionId = self.dimensionId)
             if not result:
                 logger.error('发生了不可能出现的错误，收获作物失败')
