@@ -1,25 +1,121 @@
 {
-  "group": [
+  "groups": [
     {
-      "group_name": "group.ecology.pie",
+      "group_name": "itemGroup.name.ham.book",
+      "icon": "ham:guide_book",
+      "list": ["ham:guide_book", "ham:crop_book", "ham:cooking_book"]
+    },
+    {
+      "group_name": "itemGroup.name.ham.pie",
       "icon": "ham:apple_pie",
-      "list": ["ham:apple_pie"]
+      "list": [
+        "ham:raw_cheese_pie",
+        "ham:cheese_pie",
+        "ham:raw_corn_pie",
+        "ham:corn_pie",
+        "ham:raw_apple_pie",
+        "ham:apple_pie"
+      ]
     },
     {
       "group_name": "itemGroup.name.ham.workbench",
       "icon": "ham:cooking_table",
       "list": [
-        "ham:baking_furnace",
         "ham:cooking_table",
+        "ham:stove",
+        "ham:stew_pot",
+        "ham:pan",
+        "ham:baking_furnace",
         "ham:food_steamer",
         "ham:fryer",
         "ham:grill",
         "ham:mill",
-        "ham:pan",
-        "ham:squeezer",
-        "ham:stew_pot",
-        "ham:stove"
+        "ham:squeezer"
       ]
+    },
+    {
+      "group_name": "itemGroup.name.ham.noodles",
+      "icon": "ham:tomato_egg_noodles",
+      "list": [
+        "ham:plain_noodles",
+        "ham:pork_sauce_noodles",
+        "ham:tomato_egg_noodles"
+      ]
+    },
+    {
+      "group_name": "itemGroup.name.ham.simple_food",
+      "icon": "ham:buns",
+      "list": [
+        "ham:cooked_rice",
+        "ham:bread",
+        "ham:cheese",
+        "ham:mantou",
+        "ham:raw_buns",
+        "ham:buns",
+        "ham:raw_sausage",
+        "ham:sausage",
+        "ham:raw_beef_patties",
+        "ham:beef_patties",
+        "ham:sweet_milk"
+      ]
+    },
+    {
+      "group_name": "itemGroup.name.ham.fast_food",
+      "icon": "ham:burger",
+      "list": ["ham:burger_simple", "ham:burger", "ham:fries", "ham:hot_dog"]
+    },
+    {
+      "group_name": "itemGroup.name.ham.fried_rice",
+      "icon": "ham:egg_fired_rice",
+      "list": [
+        "ham:egg_fired_rice",
+        "ham:pork_sauce_rice",
+        "ham:yangzhou_fried_rice"
+      ]
+    },
+    {
+      "group_name": "itemGroup.name.ham.seasoning_powder",
+      "icon": "ham:seasoning",
+      "list": ["ham:salt", "ham:seasoning", "ham:chili_powder"]
+    },
+    {
+      "group_name": "itemGroup.name.ham.crop",
+      "icon": "ham:rice_plant",
+      "list": ["ham:rice_plant", "ham:rice_seeds", "ham:corn", "ham:soy_bean"]
+    },
+    {
+      "group_name": "itemGroup.name.ham.vegetable",
+      "icon": "ham:tomato",
+      "list": ["ham:eggplant", "ham:lettuce", "ham:onion", "ham:tomato"]
+    },
+    {
+      "group_name": "itemGroup.name.ham.mushroom",
+      "icon": "ham:lentinula",
+      "list": ["ham:lentinula"]
+    },
+    {
+      "group_name": "itemGroup.name.ham.seasoning",
+      "icon": "ham:herb",
+      "list": ["ham:herb", "ham:herb_seeds", "ham:chili", "ham:scallion"]
+    },
+    {
+      "group_name": "itemGroup.name.ham.crop_product",
+      "icon": "ham:rice",
+      "list": [
+        "ham:rice",
+        "ham:dough",
+        "ham:cooking_oil",
+        "ham:flour",
+        "ham:noodle",
+        "ham:salad",
+        "ham:starch",
+        "ham:tofu"
+      ]
+    },
+    {
+      "group_name": "itemGroup.name.ham.animal_product",
+      "icon": "ham:ground_pork",
+      "list": ["ham:ground_pork", "ham:butter"]
     }
   ]
 }
