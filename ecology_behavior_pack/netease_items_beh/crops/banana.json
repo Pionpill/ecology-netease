@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "ham:banana",
-      "register_to_create_menu": true,
+      "register_to_create_menu": false,
       "category": "ecology"
     },
     "components": {
