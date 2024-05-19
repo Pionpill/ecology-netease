@@ -15,7 +15,7 @@
         "value": 3
       },
       "minecraft:loot": {
-        "table": "loot_tables/blocks/stove.json"
+        "table": "loot_tables/blocks/workbenches/stove.json"
       },
       "minecraft:destroy_time": {
         "value": 3

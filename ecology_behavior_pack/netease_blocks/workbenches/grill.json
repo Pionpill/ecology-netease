@@ -15,7 +15,7 @@
         "value": 3
       },
       "minecraft:loot": {
-        "table": "loot_tables/blocks/grill.json"
+        "table": "loot_tables/blocks/workbenches/grill.json"
       },
       "minecraft:destroy_time": {
         "value": 3

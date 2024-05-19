@@ -15,7 +15,7 @@
         "value": 3
       },
       "minecraft:loot": {
-        "table": "loot_tables/blocks/food_steamer.json"
+        "table": "loot_tables/blocks/workbenches/food_steamer.json"
       },
       "minecraft:destroy_time": {
         "value": 3
