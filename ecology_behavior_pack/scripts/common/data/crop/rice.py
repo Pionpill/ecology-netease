@@ -29,8 +29,8 @@ RICE = {
             "can": (10, 40)
         },
         "rainfall": {
-            "suit": (60, 100),
-            "can": (40, 100)
+            "suit": (40, 100),
+            "can": (20, 100)
         },
         "brightness": {
             "suit": (9, 15),
