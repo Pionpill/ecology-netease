@@ -169,14 +169,14 @@ class CropManager(object):
             return
         for loot in loots:
             if random.random() * 100 > loot.chance:
-                return
+                continue
             cropEntityData = self.__GetCropEntityData()
             if cropEntityData is None:
                 if not self.crop.CanGrow():
                     count = mathUtils.GetRandomInteger(loot.count)
                     itemDict = itemUtils.GetItemDict(loot.itemName, 0, count)
                     itemComp.SpawnItemToLevel(itemDict,  self.dimensionId, self.position)
-                return
+                continue
             fertility = cropEntityData['fertility']
             tickCount = cropEntityData['tickCount']
             avgFertility = 1 + (fertility / tickCount) / 100 if fertility and tickCount else 1
