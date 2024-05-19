@@ -1,6 +1,6 @@
 {
   "parent": "workbench",
-  "sortnum": 7,
+  "sortnum": 8,
   "icon": "textures/blocks/icon/mill_icon.png",
   "title": "石磨",
   "pages": [

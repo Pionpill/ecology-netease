@@ -1,6 +1,6 @@
 {
   "parent": "workbench",
-  "sortnum": 8,
+  "sortnum": 9,
   "icon": "textures/blocks/icon/squeezer_icon.png",
   "title": "压制机",
   "pages": [
