@@ -205,7 +205,8 @@ class Crop(object):
             if loots is None:
                 raise AddonDataError('{} 没有状态 {} 的掉落物'.format(self.seedName, stage))
             if self.lootsMap.get(realStage) is None:
-                self.lootsMap[realStage] = tuple(LootInfo.FromData(lootInfo, self.seedName, stage) for lootInfo in loots)
+                realLoots = loots if isinstance(loots, tuple) else (loots, )
+                self.lootsMap[realStage] = tuple(LootInfo.FromData(lootInfo, self.seedName, stage) for lootInfo in realLoots)
             return self.lootsMap[realStage]
         raise AddonDataError('{} 凋落物数据结构异常'.format(self.seedName))
     

@@ -18,7 +18,7 @@ LETTUCE = {
         ),
         "harvest": {
             "count": 1,
-            "stage": 2,
+            "stage": (1, 2),
         },
         "temperature": {
             "suit": (10, 25),
@@ -40,11 +40,16 @@ LETTUCE = {
         "rain_multiply": 1.5,
         "period": "none"
     },
-    "loot": (
-        {
+    "loot": {
+        1: {
+            "name": "ham:lettuce",
+            "chance": 100,
+            "count": 2
+        },
+        2: {
             "name": "ham:lettuce",
             "chance": 100,
             "count": 4
         },
-    )
+    }
 }

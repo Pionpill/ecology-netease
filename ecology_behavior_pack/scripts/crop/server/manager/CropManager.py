@@ -164,7 +164,8 @@ class CropManager(object):
         return True
 
     def SpawnLoots(self):
-        loots = self.crop.GetLoots()
+        stageId = self.__GetStage()
+        loots = self.crop.GetLoots(stageId)
         if loots is None:
             return
         for loot in loots:

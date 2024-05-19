@@ -22,7 +22,7 @@ SCALLION = {
         ),
         "harvest": {
             "count": 1,
-            "stage": 3
+            "stage": (2,3)
         },
         "temperature": {
             "suit": (15, 25),
@@ -44,11 +44,16 @@ SCALLION = {
         "rain_multiply": 1.5,
         "period": "sun"
     },
-    "loot": (
-        {
+    "loot": {
+        2: {
+            "name": "ham:scallion",
+            "chance": 100,
+            "count": 2
+        },
+        3: {
             "name": "ham:scallion",
             "chance": 100,
             "count": 4
         },
-    )
+    }
 }

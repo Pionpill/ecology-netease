@@ -22,7 +22,7 @@ ONION = {
         ),
         "harvest": {
             "count": 1,
-            "stage": 3,
+            "stage": (1, 2, 3),
         },
         "temperature": {
             "suit": (10, 25),
@@ -44,11 +44,21 @@ ONION = {
         "rain_multiply": 1.5,
         "period": "sun"
     },
-    "loot": (
-        {
+    "loot": {
+        1: {
+            "name": "ham:onion",
+            "chance": 100,
+            "count": 2
+        },
+        2: {
+            "name": "ham:onion",
+            "chance": 100,
+            "count": 5
+        },
+        3: {
             "name": "ham:onion",
             "chance": 100,
             "count": 10
         },
-    )
+    }
 }
