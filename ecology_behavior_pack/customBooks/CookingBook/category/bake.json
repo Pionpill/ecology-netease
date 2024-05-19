@@ -2,6 +2,6 @@
   "title": "§l烘焙炉",
   "content": "§r§8● §0烘焙炉合成配方\n§r§8● §r烘焙炉需放置在炉子上\n§r§8● §r燃料: 煤炭",
   "isLocked": false,
-  "icon": "textures/blocks/icon/baking_clay_icon.png",
+  "icon": "textures/blocks/icon/baking_furnace_icon.png",
   "sortnum": 4
 }

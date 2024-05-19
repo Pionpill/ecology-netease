@@ -1,7 +1,7 @@
 {
   "parent": "workbench",
   "sortnum": 4,
-  "icon": "textures/blocks/icon/baking_clay_icon.png",
+  "icon": "textures/blocks/icon/baking_furnace_icon.png",
   "title": "烘焙炉",
   "pages": [
     {
