@@ -28,4 +28,4 @@ CROP_DATA = {
     "ham:weed_tall": WEED_TALL,
 }
 
-__all__ = [CROP_DATA]
+__all__ = ['CROP_DATA']

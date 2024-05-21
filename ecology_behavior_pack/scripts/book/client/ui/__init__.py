@@ -8,5 +8,5 @@ from scripts.book.client.ui.SqueezerRecipePage import SqueezerRecipePage
 from scripts.book.client.ui.SteamerRecipePage import SteamerRecipePage
 from scripts.book.client.ui.StewRecipePage import StewRecipePage
 
-__all__ = [BakeRecipePage, CookRecipePage, FryerRecipePage, GrillRecipePage, MillRecipePage, PanRecipePage, SqueezerRecipePage, SteamerRecipePage, StewRecipePage]
+__all__ = ['BakeRecipePage', 'CookRecipePage', 'FryerRecipePage', 'GrillRecipePage', 'MillRecipePage', 'PanRecipePage', 'SqueezerRecipePage', 'SteamerRecipePage', 'StewRecipePage']
 

@@ -8,4 +8,4 @@ from scripts.common.data.workbench.recipe.steamer import STEAMER_DATA
 from scripts.common.data.workbench.recipe.stew import STEW_DATA
 from scripts.common.data.workbench.recipe.bake import BAKE_DATA
 
-__all__ = [BAKE_DATA, COOK_DATA, FRYER_DATA, GRILL_DATA, MILL_DATA, PAN_DATA, SQUEEZER_DATA, STEAMER_DATA, STEW_DATA]
+__all__ = ['BAKE_DATA', 'COOK_DATA', 'FRYER_DATA', 'GRILL_DATA', 'MILL_DATA', 'PAN_DATA', 'SQUEEZER_DATA', 'STEAMER_DATA', 'STEW_DATA']

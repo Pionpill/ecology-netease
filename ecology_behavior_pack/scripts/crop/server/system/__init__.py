@@ -1,3 +1,3 @@
 from scripts.crop.server.system.CropServerSystem import CropServerSystem
 
-__all__ = [CropServerSystem]
+__all__ = ['CropServerSystem']

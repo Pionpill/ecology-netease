@@ -1,6 +1,6 @@
 from scripts.workbench.common.enum import WorkbenchType
 from scripts.common import logger
-from scripts.common.data.workbench import SLOT_DATA
+from scripts.common.data.workbench.slot import SLOT_DATA
 from scripts.workbench.server.manager import CraftingManager, FurnaceManager
 from scripts.workbench.server.manager.base import BaseWorkbenchManager
 

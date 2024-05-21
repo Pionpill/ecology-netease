@@ -1,7 +1,6 @@
 import math
 import mod.client.extraClientApi as clientApi
 from mod.client.plugin.illustratedBook.comp.baseComp import BaseComp
-from mod.client.ui.controls.baseUIControl import BaseUIControl
 
 from scripts.common import logger
 
@@ -173,27 +172,22 @@ class SlotComp(BaseComp):
         return self.__items.HasRootUINode()    
     
     def SetNodeOffset(self, node, offset):
-        # type: (BaseUIControl, tuple[int, int]) -> BaseComp
         self.__items.SetNodeOffset(node, offset)
         return self
     
     def SetNodeSize(self, node, newSize):
-        # type: (BaseUIControl, tuple[int, int]) -> BaseComp
         self.__items.SetNodeSize(node, newSize)
         return self
     
     def SetNodeText(self, node, text):
-        # type: (BaseUIControl, str) -> BaseComp
         self.__items.SetNodeText(node, text)
         return self
 
     def SetNodeTextFontSize(self, node, originFontSize, newFontSize):
-        # type: (BaseUIControl, int, int) -> BaseComp
         self.__items.SetNodeTextFontSize(node, originFontSize, newFontSize)
         return self
     
     def GetNodeCenterGlobal(self, node):
-        # type: (BaseUIControl) -> tuple[int, int]
         return self.__items.GetNodeCenterGlobal(node)
     
     def SetLayer(self, layer):

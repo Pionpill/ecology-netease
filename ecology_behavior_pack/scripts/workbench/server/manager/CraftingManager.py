@@ -1,5 +1,5 @@
 import mod.server.extraServerApi as serverApi
-from scripts.common.data.workbench import CONVERT_DATA
+from scripts.common.data.workbench.convert import CONVERT_DATA
 from scripts.common.utils import itemUtils
 from scripts.common import logger
 from scripts.workbench.server.manager.base import BaseWorkbenchManager

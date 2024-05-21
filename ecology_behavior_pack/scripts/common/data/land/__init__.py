@@ -52,4 +52,4 @@ LAND_DATA = {
     }
 }
 
-__all__ = [LAND_DATA]
+__all__ = ['LAND_DATA']

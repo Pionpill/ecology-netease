@@ -141,9 +141,8 @@ class EcologyManager(object):
 
     def __GetAdjustTemperatureOfDay(self):
         """根据当前时间获取温度偏移量，晚上冷，中午热"""
-        # FIXME 编译器bug，需要深入一层
-        dayFrame = FrameService.FrameService.GetDayFrame(self.dimensionId)
-        sinValue = math.sin((2 * math.pi) *  ((dayFrame + TEMPERATURE_ADJUST_FRAME) / float(FrameService.FrameService.FRAME_PER_MC_DAY)))
+        dayFrame = FrameService.GetDayFrame(self.dimensionId)
+        sinValue = math.sin((2 * math.pi) *  ((dayFrame + TEMPERATURE_ADJUST_FRAME) / float(FrameService.FRAME_PER_MC_DAY)))
         return TEMPERATURE_RANGE_DAY * sinValue
     
     def __GetAdjustTemperatureOfWeather(self):

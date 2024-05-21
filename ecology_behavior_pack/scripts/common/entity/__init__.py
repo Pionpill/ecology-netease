@@ -81,4 +81,4 @@ def GetRecipe(blockName):
         recipeMap[blockName] = recipe
         return recipe
 
-__all__ = [GetBiome, GetCrop, GetLand, GetRecipe]
+__all__ = ['GetBiome', 'GetCrop', 'GetLand', 'GetRecipe']
