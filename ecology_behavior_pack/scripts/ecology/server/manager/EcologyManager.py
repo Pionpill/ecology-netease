@@ -4,7 +4,7 @@ from collections import Counter
 
 import mod.server.extraServerApi as serverApi
 
-from scripts.ecology.server.service import FrameService
+from scripts.ecology.server.service.FrameService import FrameService
 from scripts.common import logger
 from scripts.common.utils import positionUtils
 from scripts.common.entity import Biome, GetBiome

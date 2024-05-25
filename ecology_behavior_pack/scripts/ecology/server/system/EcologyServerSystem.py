@@ -1,7 +1,7 @@
 import mod.server.extraServerApi as serverApi
 
 from scripts.common.utils import engineUtils
-from scripts.ecology.server.service import BiomeService
+from scripts.ecology.server.service.BiomeService import BiomeService
 from scripts.common import logger
 
 ServerSystem = serverApi.GetServerSystemCls()

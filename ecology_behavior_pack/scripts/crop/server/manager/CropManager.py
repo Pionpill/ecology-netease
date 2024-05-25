@@ -12,7 +12,7 @@ from scripts.common.utils import mathUtils
 from scripts.common.utils import positionUtils
 from scripts.crop.server.utils import cropUtils
 from scripts.ecology.server.facade import EcologyFacade
-from scripts.ecology.server.service import FrameService
+from scripts.ecology.server.service.FrameService import FrameService
 
 levelId = serverApi.GetLevelId()
 engineCompFactory = serverApi.GetEngineCompFactory()

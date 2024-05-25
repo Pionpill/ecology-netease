@@ -1,6 +1,7 @@
 from scripts.common.entity.Biome import Biome
 from scripts.ecology.server.entity.Ecology import DynamicEcology
-from scripts.ecology.server.service import BiomeService, FrameService
+from scripts.ecology.server.service.BiomeService import BiomeService
+from scripts.ecology.server.service.FrameService import FrameService
 
 class EcologyFacade():
     @staticmethod
