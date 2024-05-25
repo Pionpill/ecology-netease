@@ -7,15 +7,10 @@
       "category": "ecology"
     },
     "components": {
-      "minecraft:map_color": {
-        "value": "#515151"
-      },
       "minecraft:block_light_absorption": {
         "value": 1.0
       },
-      "minecraft:block_light_emission": {
-        "value": 0.0
-      },
+      "minecraft:block_light_emission": 0,
       "minecraft:explosion_resistance": {
         "value": 3
       },
