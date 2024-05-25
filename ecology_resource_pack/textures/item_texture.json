@@ -142,9 +142,6 @@
     "ham:salt": {
       "textures": "textures/items/materials/salt"
     },
-    "ham:sauce": {
-      "textures": "textures/items/materials/sauce"
-    },
     "ham:sausage": {
       "textures": "textures/items/foods/simple/sausage"
     },
