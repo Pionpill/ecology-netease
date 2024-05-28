@@ -177,6 +177,9 @@
     },
     "ham:crop_book": {
       "textures": "textures/items/books/crop_book"
+    },
+    "ham:magnifier": {
+      "textures": "textures/items/tools/magnifier"
     }
   },
   "texture_name": "atlas.items"

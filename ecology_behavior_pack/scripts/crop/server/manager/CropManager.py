@@ -1,21 +1,24 @@
+from functools import reduce
 import math
+import operator
 import random
 from time import time
 import mod.server.extraServerApi as serverApi
 
 from scripts.common.enum import Period
 from scripts.common import logger
-from scripts.common.entity import Crop
 from scripts.common.entity import GetCrop, GetLand
 from scripts.common.utils import itemUtils
 from scripts.common.utils import mathUtils
 from scripts.common.utils import positionUtils
 from scripts.crop.server.utils import cropUtils
+from scripts.ecology.server.entity.Ecology import DynamicEcology
 from scripts.ecology.server.facade import EcologyFacade
 from scripts.ecology.server.service.FrameService import FrameService
 
 levelId = serverApi.GetLevelId()
 engineCompFactory = serverApi.GetEngineCompFactory()
+gameComp = engineCompFactory.CreateGame(levelId)
 blockEntityDataComp = engineCompFactory.CreateBlockEntityData(levelId)
 blockInfoComp = engineCompFactory.CreateBlockInfo(levelId)
 itemComp = engineCompFactory.CreateItem(levelId)
@@ -76,7 +79,10 @@ class CropManager(object):
         if not self.CanGrow():
             return
 
-        growTicks = self.__CalculateGrowTick()
+        ratioTuple = self.__CalculateRatio().values()
+        tickRatio = reduce(operator.mul, ratioTuple, 1)
+        growTicks = mathUtils.GetRandomInteger(tickRatio)
+
         blockTick = cropEntityData['tick'] or 0
         blockTickCount = cropEntityData['tickCount'] or 0
         blockFertility = cropEntityData['fertility'] or 0
@@ -239,6 +245,62 @@ class CropManager(object):
         self.landAux = landInfo.get('aux')
         self.land = GetLand(self.landName) if self.landName else None
 
+    def GetGrowInfo(self):
+        ecologyInfo =self.ecology.GetDynamicEcology()
+        ratioDict = self.__CalculateRatio(ecologyInfo)
+        ratioTuple = ratioDict.values()
+        tickRatio = reduce(operator.mul, ratioTuple, 1)
+
+        cropName = gameComp.GetChinese('item.' + self.crop.GetBlockPrefix() + '.name')
+
+        basicInfo = None
+        if not self.__CanGrowDuringPeriod():
+            periodName = Period.GetChinese(self.crop.GetGrowPeriod())
+            basicInfo = '{0} 休眠中(需要{1})\n'.format(cropName, periodName)
+        elif self.CanGrow():
+            basicInfo = '{0} 生长中 速度: {1}％\n'.format(cropName, round(tickRatio * 100))
+        else:
+            basicInfo = '{0} 休眠中(环境不适宜)\n'.format(cropName)
+
+        temperatureText = self.__FormatRatioText(ecologyInfo, 'temperature', ratioDict['temperature'])
+        rainfallText = self.__FormatRatioText(ecologyInfo, 'rainfall', ratioDict['rainfall'])
+        brightText = self.__FormatRatioText(ecologyInfo, 'bright', ratioDict['bright'])
+        weather = ratioDict['weather']
+        weatherText = '天气: {0}％\n'.format(weather * 100) if weather != 1 else ''
+        fertilityText = '预计收获: {0}％'.format(str(100 + self.__GetGrowFertility()))
+
+        return basicInfo + temperatureText + rainfallText + brightText + weatherText + fertilityText
+
+    def __FormatRatioText(self, ecologyInfo, type, ratio):
+        # type: (DynamicEcology, str, float) -> str
+        typeDict = {
+            'temperature': {
+                'cn': '温度',
+                'rangeFunc': self.crop.GetGrowTemperature,
+                'valueFunc': ecologyInfo.GetAdjustTemperature,
+            },
+            'rainfall': {
+                'cn': '湿度',
+                'rangeFunc': self.crop.GetGrowRainfall,
+                'valueFunc': ecologyInfo.GetAdjustRainfall,
+            },
+            'bright': {
+                'cn': '光照',
+                'rangeFunc': self.crop.GetGrowBrightness,
+                'valueFunc': None,
+            }
+        }
+        name = typeDict[type]['cn']
+        getRangeFunc = typeDict[type]['rangeFunc']
+        valueFunc = typeDict[type]['valueFunc']
+        value = valueFunc() if valueFunc else blockInfoComp.GetBlockLightLevel(self.position, self.dimensionId)
+        suitTuple = getRangeFunc('suit')
+        canTuple = getRangeFunc('can')
+        symbol = '℃' if type == 'temperature' else '％' if type == 'rainfall' else ''
+        suitText = '适宜: {0}{2}—{1}{2}'.format(suitTuple[0], suitTuple[1], symbol)
+        canText = '可行: {0}{2}—{1}{2}'.format(canTuple[0], canTuple[1], symbol)
+        return name + ': ' + str(round(ratio * 100)) + '％ (' + ('%.2f'% value + symbol if type != 'bright' else (str(value) + symbol)) + ') ' + suitText + ' ' + canText + '\n'
+
     def __CanGrowDuringPeriod(self):
         cropPeriod = self.crop.GetGrowPeriod()
         if cropPeriod == Period.NONE:
@@ -262,24 +324,45 @@ class CropManager(object):
         cropTags = self.crop.GetGrowLandType()
         landTags = self.land.GetTags()
         return minFertility <= landFertility and mathUtils.hasCommonElements(landTags, cropTags)
-
-    def __CalculateGrowTick(self):
-        """计算生长可获得 tick 数"""
-        ecologyInfo = self.ecology.GetDynamicEcology()
-        temperature = ecologyInfo.GetAdjustTemperature()
-        rainfall = ecologyInfo.GetAdjustRainfall()
-        brightness = blockInfoComp.GetBlockLightLevel(self.position, self.dimensionId)
-        tickCount = 1
-        tickCount *= mathUtils.calculateAbleTickRatio(temperature, self.crop.GetGrowTemperature('suit'), self.crop.GetGrowTemperature('can'))
-        tickCount *= mathUtils.calculateAbleTickRatio(rainfall, self.crop.GetGrowRainfall('suit'), self.crop.GetGrowRainfall('can'))
-        tickCount *= mathUtils.calculateAbleTickRatio(brightness, self.crop.GetGrowBrightness('suit'), self.crop.GetGrowBrightness('can'))
+    
+    def __CalculateRatio(self, ecologyInfo = None):
+        # type: (DynamicEcology | None) -> dict[str, float]
+        """计算生长概率，四个分别是"""
+        ecologyInfo = ecologyInfo or self.ecology.GetDynamicEcology()
+        temperatureRatio = self.__CalculateTemperatureRatio(ecologyInfo)
+        rainfallRatio = self.__CalculateRainfallRatio(ecologyInfo)
+        brightnessRatio = self.__CalculateBrightnessRatio()
+        weatherRatio = 1
         weather = 'rain' if weatherComp.IsRaining() else None
         if weather == 'rain':
-            tickCount *= self.crop.GetGrowRainMultiply()
+            weatherRatio *= self.crop.GetGrowRainMultiply()
+        return {
+            'temperature': temperatureRatio,
+            'rainfall': rainfallRatio,
+            'bright': brightnessRatio,
+            'weather': weatherRatio
+        }
 
-        return mathUtils.GetRandomInteger(tickCount)
+    def __CalculateTemperatureRatio(self, ecologyInfo):
+        # type: (DynamicEcology) -> float
+        """获取温度适宜比例"""
+        temperature = ecologyInfo.GetAdjustTemperature()
+        return mathUtils.calculateAbleTickRatio(temperature, self.crop.GetGrowTemperature('suit'), self.crop.GetGrowTemperature('can'))
+
+    def __CalculateRainfallRatio(self, ecologyInfo):
+        # type: (DynamicEcology) -> float
+        """获取湿度适宜比例"""
+        temperature = ecologyInfo.GetAdjustRainfall()
+        return mathUtils.calculateAbleTickRatio(temperature, self.crop.GetGrowRainfall('suit'), self.crop.GetGrowRainfall('can'))
+
+    def __CalculateBrightnessRatio(self):
+        # type: () -> float
+        """获取亮度适宜比例"""
+        brightness = blockInfoComp.GetBlockLightLevel(self.position, self.dimensionId)
+        return mathUtils.calculateAbleTickRatio(brightness, self.crop.GetGrowBrightness('suit'), self.crop.GetGrowBrightness('can'))
 
     def __GetGrowFertility(self):
+        """获取生长肥沃度"""
         if self.land is None:
             return False
         cropMinFertility = self.crop.GetGrowFertilityMin()

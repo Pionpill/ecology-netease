@@ -8,6 +8,8 @@ ServerSystem = serverApi.GetServerSystemCls()
 levelId = serverApi.GetLevelId()
 engineCompFactory = serverApi.GetEngineCompFactory()
 
+ecologyCoolDownDict = {} # type: dict[tuple[int, int, int, int], float]
+
 class EcologyServerSystem(ServerSystem):
     def __init__(self, namespace, systemName):
         ServerSystem.__init__(self, namespace, systemName)
@@ -16,20 +18,18 @@ class EcologyServerSystem(ServerSystem):
     def ListenEvents(self):
         engineNamespace = serverApi.GetEngineNamespace()
         engineSystemName = serverApi.GetEngineSystemName()
-        self.ListenForEvent(engineNamespace, engineSystemName, "ServerBlockUseEvent", self, self.OnServerBlockUse)
-        
-    def OnServerBlockUse(self, args):
-        """玩家持有剪刀右键作物时显示生态信息"""
-        if not engineUtils.coolDown(args['playerId'], 1):
-            return
-        
-        playerId = args["playerId"]
-        itemComp = engineCompFactory.CreateItem(playerId)
-        carriedItem = itemComp.GetPlayerItem(serverApi.GetMinecraftEnum().ItemPosType.CARRIED)
-        if not carriedItem or carriedItem.get('newItemName') != 'minecraft:shears':
-            return
+        self.ListenForEvent(engineNamespace, engineSystemName, "ServerItemUseOnEvent", self, self.OnServerItemUseOn)
 
-        position = (args["x"], args["y"], args["z"])
-        ecologyInfo = BiomeService.GetDynamicEcologyInfo(position, args["dimensionId"])
-        msgComp = engineCompFactory.CreateMsg(args["playerId"])
-        msgComp.NotifyOneMessage(playerId, str(ecologyInfo), "§2")
+    def OnServerItemUseOn(self, args):
+        """玩家持有放大镜右键原版方块时展示生态信息"""
+        playerId = args['entityId']
+        if not engineUtils.coolDown(playerId, 0.2, ecologyCoolDownDict):
+            return
+        
+        blockName = args['blockName'] # type: str
+        itemName = args['itemDict']['newItemName'] # type: str
+        if itemName == "ham:magnifier" and "minecraft" in blockName:
+            position = (args["x"], args["y"], args["z"])
+            ecologyInfo = BiomeService.GetDynamicEcologyInfo(position, args["dimensionId"])
+            msgComp = engineCompFactory.CreateMsg(playerId)
+            msgComp.NotifyOneMessage(playerId, str(ecologyInfo), "§2")

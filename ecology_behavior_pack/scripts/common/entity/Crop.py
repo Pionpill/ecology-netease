@@ -158,7 +158,7 @@ class Crop(object):
         return self._GetField(("grow", "rain_multiply"))
 
     def GetGrowPeriod(self):
-        # type: () -> Period
+        # type: () -> str
         return self._GetField(("grow", "period"), Period.DAY)
 
     def GetGrowFertilityMin(self):

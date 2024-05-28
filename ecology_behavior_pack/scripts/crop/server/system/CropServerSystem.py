@@ -15,6 +15,7 @@ weatherComp = engineCompFactory.CreateWeather(levelId)
 blockEntityDataComp = engineCompFactory.CreateBlockEntityData(levelId)
 
 blockRemoveCoolDownDict = {} # type: dict[tuple[int, int, int, int], float]
+cropCoolDownDict = {} # type: dict[tuple[int, int, int, int], float]
 
 class CropServerSystem(ServerSystem):
     def __init__(self, namespace, systemName):
@@ -31,17 +32,30 @@ class CropServerSystem(ServerSystem):
         self.ListenForEvent(engineNamespace, engineSystemName, "ServerBlockUseEvent", self, self.OnServerBlockUse)
 
     def OnServerItemUse(self, args):
-        if not engineUtils.coolDown(args['entityId']):
+        if not engineUtils.coolDown(args['entityId'], 0.2, cropCoolDownDict):
             return
+        
+        blockName = args['blockName'] # type: str
+        itemName = args['itemDict']['newItemName'] # type: str
+        position = (args["x"], args["y"], args["z"]) # tuple[int, int, int]
+        dimensionId = args["dimensionId"]
+        playerId = args['entityId']
+
         # 作物种植
-        if cropUtils.IsSeed(args['itemDict']['newItemName']):
+        if cropUtils.IsSeed(itemName):
             params = {
-                'position': (args["x"], args["y"], args["z"]),
-                'dimensionId': args["dimensionId"],
-                'seedName': args['itemDict']['newItemName'],
-                'playerId': args['entityId']
+                'position': position,
+                'dimensionId': dimensionId,
+                'seedName': itemName,
+                'playerId': playerId
             }
             self.__HandlePlantCrop(params)
+
+        # 放大镜显示作物生长信息
+        if itemName == "ham:magnifier" and cropUtils.IsCropBlock(blockName):
+            cropManager = CropService.GetCropManager(position, dimensionId)
+            msgComp = engineCompFactory.CreateMsg(playerId)
+            msgComp.NotifyOneMessage(playerId, cropManager.GetGrowInfo(), "§2")
 
     def OnBlockNeighborChanged(self, args):
         position = (args['posX'], args['posY'], args['posZ']) # type: tuple[int, int, int]

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:magnifier",
+      "register_to_create_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "netease:customtips": {
+        "value": "§f--------------------\n§6§l工具\n§r§a观察作物生长状态"
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import math
 import random
-
+from scripts.common import logger
 
 def hasCommonElements(list1, list2):
     # type: (tuple | list, tuple | list) -> bool
@@ -19,10 +19,12 @@ def calculateAbleTickRatio(value, suitRange, canRange):
     """获取温度，降水，光照的适宜度"""
     if between(value, suitRange):
         return 1.0
-    if value < suitRange[0]:
+    if value <= canRange[0] or value >= canRange[1]:
+        return 0
+    elif value < suitRange[0]:
         return (float(value) - canRange[0]) / (suitRange[0] - canRange[0])
     else:
-        return (suitRange[1] - float(value)) / (canRange[1] - suitRange[1])
+        return (canRange[1] - float(value)) / (canRange[1] - suitRange[1])
     
 def GetRandomInteger(value):
     # type: (float) -> int
