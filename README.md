@@ -1,6 +1,12 @@
 # ecology-netease
 生态模组，网易版
 
+## 更新内容
+
+| 版本 | 内容                                     |
+| ---- | ---------------------------------------- |
+| v1.0 | 生态系统，工作台系统，作物系统，书籍系统 |
+
 ## 提交规范
 
 使用 git emoji 提交，格式为: [emoji] message，例如: ✨ 增加生态系统。各个 emoji 的含义如下:
@@ -36,32 +42,58 @@
 
 ## 分支规范
 
-发布两个版本：beta/正式版，一共三个分支：
-- beta：开发功能，上线 beta 版本
-- rc: 只增加内容，不可以开发功能
-- main: rc 开发完后合并，上线正式版，不开发功能也不增加内容，只合并代码
+发布两个版本：beta/正式版，一共四个分支：
+| 分支    | 功能             | 合并               |
+| ------- | ---------------- | ------------------ |
+| develop | 开发功能         | 定期合并 beta 分支 |
+| beta    | 添加 beta 版内容 | 合并 develop 分支  |
+| rc      | 添加正式版内容   | 合并 beta 分支     |
+| main    | 发布正式版       | 合并 rc 分支       |
 
-在 beta 分支上开发功能，完成后发布 beta 版，合并到 rc 增加内容，最后合到 main 发布正式版
+各分支提交与合并规范如下:
 
 ```mermaid
-gitGraph LR:
-    commit
+gitGraph TB:
+    commit id: "init main"
     branch rc
-    commit
+    commit id: "init rc"
+    branch beta
+    commit id: "init beta"
     branch develop
-    commit
-    commit tag: "v1.0.0-beta.1"
-    checkout rc
+    commit id: "init develop"
+    commit id: "develop 1"
+    commit id: "develop 2" tag: "v1.0.0-alpha.1"
+    checkout beta
     merge develop
-    commit
-    commit
-    checkout main
-    merge rc tag: "v1.0.0"
+    commit id: "beta 1" tag: "v1.0.0-beta.1"
+    commit id: "beta 2" tag: "v1.0.0-beta.2"
     checkout develop
-    commit
-    commit tag: "v1.1.0-beta.1"
-    checkout rc
+    commit id: "develop 3" tag: "v1.0.1-alpha.2"
+    checkout beta
     merge develop
+    commit id: "develop 4" tag: "v1.0.1-beta.3"
+    checkout rc
+    merge beta
+    commit id: "rc 1"
+    commit id: "rc 2"
     checkout main
-    merge rc
+    merge rc tag: "v1.0.1"
+    checkout develop
+    merge beta
+    commit id: "develop 5"
+    commit id: "develop 6" tag: "v1.1.0-alpha.1"
+    checkout beta
+    merge develop
+    commit id: "beta 3" tag: "v1.1.0-beta.1"
+    checkout rc
+    merge beta
+    commit id: "rc3"
+    checkout main
+    merge rc tag: "1.1.0"
 ```
+
+每次发版分大中小三个版本：
+- 大版本 v1: 大功能，底层逻辑改进，网易发布新正式版
+- 中版本 v1.0: 在大版本基础上改进功能，网易发布新 beta 版
+- 小版本 v1.0.0: 部分内容改进，bug修复
+- 
