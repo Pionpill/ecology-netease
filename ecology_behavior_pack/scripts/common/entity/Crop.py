@@ -174,7 +174,7 @@ class Crop(object):
     def GetGrowLandType(self):
         # type: () -> tuple[str, ...]
         """获取可种植的土地类型"""
-        return self._GetField(("grow", "fertility", "type"))
+        return self._GetField(("grow", "fertility", "type"), ['dirt'])
     
     def GetPlantReplaceBlock(self):
         # type: () -> str | None

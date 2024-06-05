@@ -1,7 +1,7 @@
 import mod.client.extraClientApi as clientApi
 
 from scripts.book.common.events import BookFirstInitEvent
-from scripts.book.client.ui import BakeRecipePage, CookRecipePage, FryerRecipePage, GrillRecipePage, MillRecipePage, PanRecipePage, SqueezerRecipePage, SteamerRecipePage, StewRecipePage, CropGrowPage
+from scripts.book.client.ui import BakeRecipePage, CookRecipePage, FryerRecipePage, GrillRecipePage, MillRecipePage, PanRecipePage, SqueezerRecipePage, SteamerRecipePage, StewRecipePage, CropGrowPage, CropInfoPage
 from scripts.common import logger
 
 ClientSystem = clientApi.GetClientSystemCls()
@@ -24,6 +24,7 @@ class BookClientSystem(ClientSystem):
         bookManager.AddPageType("ham:steamerRecipePage", SteamerRecipePage)
         bookManager.AddPageType("ham:stewRecipePage", StewRecipePage)
         bookManager.AddPageType("ham:cropGrowPage", CropGrowPage)
+        bookManager.AddPageType("ham:cropInfoPage", CropInfoPage)
         self.ListenEvents()
 
     def ListenEvents(self):

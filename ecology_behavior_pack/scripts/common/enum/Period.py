@@ -5,7 +5,7 @@ class Period(object):
     MOON = 'moon'
     NONE = 'none'
 
-    CNNameDict = {
+    cnNameDict = {
         DAY: '白天',
         NIGHT: '晚上',
         SUN: '太阳',
@@ -15,4 +15,4 @@ class Period(object):
 
     @staticmethod
     def GetChinese(name):
-        return Period.CNNameDict.get(name, Period.SUN)
+        return Period.cnNameDict.get(name, Period.SUN)

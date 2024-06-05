@@ -8,7 +8,8 @@ from scripts.book.client.ui.SqueezerRecipePage import SqueezerRecipePage
 from scripts.book.client.ui.SteamerRecipePage import SteamerRecipePage
 from scripts.book.client.ui.StewRecipePage import StewRecipePage
 
-from ecology_behavior_pack.scripts.book.client.ui.CropGrowPage import CropGrowPage
+from scripts.book.client.ui.CropGrowPage import CropGrowPage
+from scripts.book.client.ui.CropInfoPage import CropInfoPage
 
-__all__ = ['BakeRecipePage', 'CookRecipePage', 'FryerRecipePage', 'GrillRecipePage', 'MillRecipePage', 'PanRecipePage', 'SqueezerRecipePage', 'SteamerRecipePage', 'StewRecipePage', 'CropGrowPage']
+__all__ = ['BakeRecipePage', 'CookRecipePage', 'FryerRecipePage', 'GrillRecipePage', 'MillRecipePage', 'PanRecipePage', 'SqueezerRecipePage', 'SteamerRecipePage', 'StewRecipePage', 'CropGrowPage', 'CropInfoPage']
 

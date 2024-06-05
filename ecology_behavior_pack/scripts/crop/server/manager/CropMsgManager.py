@@ -2,7 +2,7 @@ import mod.server.extraServerApi as serverApi
 
 from scripts.common import logger
 from scripts.common.base.service.manager import BaseMsgManager
-from scripts.common.enum.LandTag import landTagCnDict
+from scripts.common.enum import LandTag
 from scripts.crop.server.service.enum import PlantFailReason
 
 engineCompFactory = serverApi.GetEngineCompFactory()
@@ -24,8 +24,8 @@ class CropMsgManager(BaseMsgManager):
             self._NotifyOneWarningMessage('土地肥力不足\n土壤肥力: {}\n作物最低肥力要求: {}'.format(params.get('land'), params.get('crop')))
             return
         if reason == PlantFailReason.LAND_TYPE:
-            landTagCnTuple = self.__GetLandTagCnName(params.get('land', '土地'))
-            cropTagCnTuple = self.__GetLandTagCnName(params.get('crop', '土地'))
+            landTagCnTuple = LandTag.GetChinese(params.get('land', 'dirt'))
+            cropTagCnTuple = LandTag.GetChinese(params.get('crop', 'dirt'))
             self._NotifyOneWarningMessage('土地无法种植\n土壤可生长: {}\n作物需要: {}'.format(landTagCnTuple, cropTagCnTuple))
             return
         if reason == PlantFailReason.ECOLOGY_TEMPERATURE:
@@ -34,8 +34,3 @@ class CropMsgManager(BaseMsgManager):
         if reason == PlantFailReason.ECOLOGY_RAINFALL:
             self._NotifyOneWarningMessage('湿度不适宜\n生态湿度: {}\n作物可生长湿度: {}'.format(round(params.get('ecology', 0), 2), params.get('crop')))
             return
-
-    def __GetLandTagCnName(self, langTags):
-        # type: (tuple[str, ...]) -> str
-        cnTags = (landTagCnDict.get(x, '土地') for x in langTags)
-        return ','.join(cnTags)
