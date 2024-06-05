@@ -5,19 +5,13 @@
   "title": "番茄",
   "pages": [
     {
-      "type": "highlightPage",
-      "itemData": [
-        {
-          "item": "ham:tomato",
-          "data": 0
-        }
-      ],
-      "content": "§8● §r生长时间: 3-4~1d ☀\n§8● §r温度(适宜): 20℃―30℃\n§8● §r温度(可以): 10℃―35℃\n§8● §r湿度(适宜): 60%-80%\n§8● §r湿度(可以): 30%-100%\n§8● §r土壤(最低): 100\n§8● §r土壤(敏感): 80\n§8● §r下雨生长速度: 150%\n§8● §r成熟植株高度：1\n§8● §r收获次数：3"
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:tomato"
     },
     {
-      "type": "textPage",
-      "subtitle": "获取与加工方式",
-      "content": "§8● §r野草概率掉落种子\n§8● §r野生：山丘"
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:tomato"
     }
   ]
 }

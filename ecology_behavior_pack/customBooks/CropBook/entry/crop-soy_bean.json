@@ -5,19 +5,13 @@
   "title": "大豆",
   "pages": [
     {
-      "type": "highlightPage",
-      "itemData": [
-        {
-          "item": "ham:soy_bean",
-          "data": 0
-        }
-      ],
-      "content": "§8● §r生长时间: 5d ☀\n§8● §r温度(适宜): 15℃―25℃\n§8● §r温度(可以): 5℃―40℃\n§8● §r湿度(适宜): 15%-80%\n§8● §r湿度(可以): 50%-100%\n§8● §r土壤(最低): 80\n§8● §r土壤(敏感): 70\n§8● §r下雨生长速度: 150%\n§8● §r成熟植株高度：1"
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:soy_bean"
     },
     {
-      "type": "textPage",
-      "subtitle": "获取与加工方式",
-      "content": "§8● §r野草概率掉落种子\n§8● §r野生：山丘，竹林\n§8● §r可以加工成食用油，豆腐"
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:soy_bean"
     }
   ]
 }

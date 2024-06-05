@@ -1057,7 +1057,7 @@
       }
     ],
     "description": {
-      "identifier": "ham:lentinula_stage_3",
+      "identifier": "ham:lentinula_stage_2",
       "textures": ["ham:lentinula_core"],
       "textures_descriptions": [
         {
