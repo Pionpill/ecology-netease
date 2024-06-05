@@ -86,13 +86,12 @@ class CropGrowPage(TitlePage):
     def __SetShowPosition(self):
         contentTop = self.LayoutTitle()
         self._seedText.SetPosition((20, contentTop + 5))
-        self._seedHighlightComp.SetPosition((45, 42))
+        self._seedHighlightComp.SetSize((15, 15)).SetPosition((45, 42))
 
         self._fruitText.SetPosition((20, contentTop + 25))
         for i in range(self.__fruitIndex):
             comp = getattr(self, '_fruitHighlightComp' + str(i + 1))
-            comp.SetPosition((45 + i * 20, 63))
-            comp.SetSize((15, 15))
+            comp.SetSize((15, 15)).SetPosition((45 + i * 20, 63))
         for i in range(self.__fruitIndex, 4):
             comp = getattr(self, '_fruitHighlightComp' + str(i + 1))
             comp.Hide()
