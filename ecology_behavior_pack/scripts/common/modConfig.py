@@ -1,7 +1,7 @@
 ADDON_NAME = 'HammerEcology'
 ADDON_NAME_CN = '锤子生态'
 
-ADDON_VERSION = 'v1.0.0-alpha'
+ADDON_VERSION = 'v1.0.1'
 __DEV__ = True
 
 # 生态系统
