@@ -94,6 +94,9 @@
     "ham:onion_core": {
       "textures": "textures/blocks/crops/onion/onion_core"
     },
+    "ham:rotten_wood": {
+      "textures": "textures/blocks/crops/rotten_wood"
+    },
     "ham:lentinula_core": {
       "textures": "textures/blocks/crops/lentinula/lentinula_core"
     },
