@@ -1,7 +1,7 @@
 import mod.client.extraClientApi as clientApi
 
 from scripts.common import logger
-from scripts.common.entity import GetCrop
+from scripts.common.entity import GetCrop, GetLand, Land
 from scripts.common.error import AddonDataError
 
 bookManager = clientApi.GetBookManager()
@@ -42,9 +42,14 @@ class CropGrowPage(TitlePage):
         self._fruitHighlightComp3 = HighlightComp()
         self._fruitHighlightComp4 = HighlightComp()
         self._fruitText = TextComp()
+        self._landHighlightComp1 = HighlightComp()   # 土地轮播
+        self._landHighlightComp2 = HighlightComp()
+        self._landHighlightComp3 = HighlightComp()
+        self._landHighlightComp4 = HighlightComp()
+        self._landText = TextComp()
         self._cropHighlightComp = HighlightComp()   # 作物轮播
         self._cropText = TextComp() 
-        self.AddComps(self._seedHighlightComp, self._fruitHighlightComp1, self._fruitHighlightComp2, self._fruitHighlightComp3, self._fruitHighlightComp4, self._cropHighlightComp, self._seedText, self._fruitText, self._cropText)
+        self.AddComps(self._seedHighlightComp, self._fruitHighlightComp1, self._fruitHighlightComp2, self._fruitHighlightComp3, self._fruitHighlightComp4, self._cropHighlightComp, self._seedText, self._fruitText, self._cropText, self._landHighlightComp1, self._landHighlightComp2, self._landHighlightComp3, self._landHighlightComp4, self._landText)
 
     def __SetDataBeforeShow(self):
         """数据与UI绑定"""
@@ -83,6 +88,22 @@ class CropGrowPage(TitlePage):
         cropData = [{"item": seedKey + '_stage_' + str(x), "data": 0} for x in range(self._crop.GetGrowStageLength())]
         self._cropHighlightComp.SetDataBeforeShow(cropData) # type: ignore
 
+        self._landText.SetDataBeforeShow('土地:', bookConfig.TextSize.content)
+        landTypeList = self._crop.GetGrowLandType()
+        self.__landIndex = 0
+        for landType in landTypeList:
+            comp = getattr(self, '_landHighlightComp' + str(self.__landIndex + 1))
+            landData = []
+            for landName in Land.GetBlocksByTag(landType):
+                land = GetLand(landName)
+                if land is None:
+                    continue
+                if land.GetFertility() >= self._crop.GetGrowFertilityMin():
+                    landData.append({"item": landName, "data": 0})
+            if len(landData) > 0:
+                self.__landIndex += 1
+            comp.SetDataBeforeShow(landData)
+
     def __SetShowPosition(self):
         contentTop = self.LayoutTitle()
         self._seedText.SetPosition((20, contentTop + 5))
@@ -94,6 +115,14 @@ class CropGrowPage(TitlePage):
             comp.SetSize((15, 15)).SetPosition((45 + i * 20, 63))
         for i in range(self.__fruitIndex, 4):
             comp = getattr(self, '_fruitHighlightComp' + str(i + 1))
+            comp.Hide()
+
+        self._landText.SetPosition((20, contentTop + 45))
+        for i in range(self.__landIndex):
+            comp = getattr(self, '_landHighlightComp' + str(i + 1))
+            comp.SetSize((15, 15)).SetPosition((45 + i * 20, 83))
+        for i in range(self.__landIndex, 4):
+            comp = getattr(self, '_landHighlightComp' + str(i + 1))
             comp.Hide()
 
         self._cropHighlightComp.SetSize((60, 60))

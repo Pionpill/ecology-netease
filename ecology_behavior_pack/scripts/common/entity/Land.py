@@ -33,3 +33,7 @@ class Land(object):
         """
         realData = data or self.__data
         return dataUtils.GetField(key, realData, self.blockName, defaultValue)
+    
+    @staticmethod
+    def GetBlocksByTag(tag):
+        return [key for key, value in LAND_DATA.items() if tag in value["tag"]]

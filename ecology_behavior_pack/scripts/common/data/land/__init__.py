@@ -38,18 +38,18 @@ LAND_DATA = {
         "fertility": 90,
         "tag": ("dirt")
     },
-    "minecraft:rooted_dirt": {
-        "fertility": 60,
-        "tag": ("dirt")
-    },
+    # "minecraft:rooted_dirt": {
+    #     "fertility": 60,
+    #     "tag": ("dirt")
+    # },
     "minecraft:clay": {
         "fertility": 50,
         "tag": ("clay")
     },
-    "minecraft:coarse_dirt": {
-        "fertility": 70,
-        "tag": ("dirt")
-    }
+    # "minecraft:coarse_dirt": {
+    #     "fertility": 70,
+    #     "tag": ("dirt")
+    # }
 }
 
 __all__ = ['LAND_DATA']
