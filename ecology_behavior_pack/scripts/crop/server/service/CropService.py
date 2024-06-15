@@ -7,7 +7,6 @@ from scripts.common.utils import mathUtils, positionUtils
 from scripts.crop.server.manager import CropManager, CropMsgManager
 from scripts.crop.server.service.enum import PlantFailReason
 from scripts.crop.server.utils import cropUtils
-from scripts.ecology.server.entity.Ecology import DynamicEcology
 from scripts.ecology.server.facade import EcologyFacade
 
 levelId = serverApi.GetLevelId()
@@ -97,7 +96,7 @@ class CropService(object):
         if replaceBlockName:
             # 判断是否为需替换的方块
             selectBlockName = blockInfoComp.GetBlockNew(selectPosition, dimensionId).get('name')
-            if selectBlockName != replaceBlockName:
+            if selectBlockName != replaceBlockName and selectBlockName and seedName != cropUtils.GetSeedKey(selectBlockName):
                 return CropService.__NotifyPlantFailMsg(playerId, PlantFailReason.REPLACE_BLOCK, {'crop': replaceBlockName})
         landPosition = positionUtils.GetBelowPosition(selectPosition) if replaceBlockName else selectPosition
         landBlockInfo = blockInfoComp.GetBlockNew(landPosition, dimensionId)

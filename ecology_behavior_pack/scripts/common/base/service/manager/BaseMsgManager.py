@@ -1,5 +1,6 @@
 import mod.server.extraServerApi as serverApi
 
+from scripts.common import logger
 from scripts.common.base.service.manager.enum import MsgColor
 
 engineCompFactory = serverApi.GetEngineCompFactory()
