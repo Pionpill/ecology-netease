@@ -5,7 +5,9 @@ from scripts.common.base.service.manager import BaseMsgManager
 from scripts.common.enum import LandTag
 from scripts.crop.server.service.enum import PlantFailReason
 
+levelId = serverApi.GetLevelId()
 engineCompFactory = serverApi.GetEngineCompFactory()
+gameComp = engineCompFactory.CreateGame(levelId)
 
 class CropMsgManager(BaseMsgManager):
     def __init__(self, playerId):
@@ -15,7 +17,8 @@ class CropMsgManager(BaseMsgManager):
     def NotifyPlantFailMessage(self, reason, params = {}):
         # type: (str, dict) -> None
         if reason == PlantFailReason.REPLACE_BLOCK:
-            self._NotifyOneWarningMessage('必须种植在 {} 上'.format(params.get('crop')))
+            blockName = gameComp.GetChinese('tile.' + str(params.get('crop')) + '.name')
+            self._NotifyOneWarningMessage('必须种植在 §c{} §6上'.format(blockName))
             return
         if reason == PlantFailReason.LAND_UNABLE:
             self._NotifyOneWarningMessage('方块不可种植任何作物')
