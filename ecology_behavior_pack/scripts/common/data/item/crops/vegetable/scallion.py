@@ -4,14 +4,14 @@ from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, 
 SCALLION = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.BLOCK: ("ham:scallion")
+    ItemSource.CROP: ("ham:scallion",)
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.VEGETABLE, ItemTag.ALLIUM),
-  "hidden_effect": [EffectType.ABSORPTION],
+  "hidden_effect": (EffectType.ABSORPTION,),
   "food": {
     "nutrition": 0.5,
-    "saturation_modifier": FoodSaturation.LOW,
+    "saturation": FoodSaturation.LOW,
     "can_eat": True
   }
 }

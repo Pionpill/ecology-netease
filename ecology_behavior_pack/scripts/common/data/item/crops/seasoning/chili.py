@@ -4,14 +4,14 @@ from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, 
 CHILI = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.BLOCK: ("ham:chili")
+    ItemSource.CROP: ("ham:chili",)
   },
-  "category": (ItemCategory.CROPS),
+  "category": ItemCategory.CROPS,
   "tag": (ItemTag.SEASONING, ItemTag.CAPSICUM),
-  "hidden_effect": [EffectType.SPEED],
+  "hidden_effect": (EffectType.SPEED,),
   "food": {
     "nutrition": 0,
-    "saturation_modifier": FoodSaturation.POOR,
+    "saturation": FoodSaturation.POOR,
     "can_eat": True,
     "effect": (
       {
@@ -19,7 +19,7 @@ CHILI = {
         "chance": 1,
         "duration": 1,
         "amplifier": 0
-      }
+      },
     )
   }
 }

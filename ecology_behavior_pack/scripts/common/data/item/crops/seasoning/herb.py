@@ -4,14 +4,14 @@ from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, 
 HERB = {
   "quality": ItemQuality.COMMON,
   "source": {
-    ItemSource.BLOCK: ("ham:herb")
+    ItemSource.CROP: ("ham:herb",)
   },
-  "category": (ItemCategory.CROPS),
-  "tag": (ItemTag.SEASONING),
+  "category": ItemCategory.CROPS,
+  "tag": (ItemTag.SEASONING,),
   "hidden_effect": None,
   "food": {
     "nutrition": 0,
-    "saturation_modifier": FoodSaturation.POOR,
+    "saturation": FoodSaturation.POOR,
     "can_eat": False
   }
 }

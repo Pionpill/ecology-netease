@@ -4,14 +4,14 @@ from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, 
 EGGPLANT = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.BLOCK: ("ham:eggplant")
+    ItemSource.CROP: ("ham:eggplant",)
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.VEGETABLE, ItemTag.SOLANUM),
   "hidden_effect": [EffectType.POISON, EffectType.REGENERATION],
   "food": {
     "nutrition": 1.5,
-    "saturation_modifier": FoodSaturation.POOR,
+    "saturation": FoodSaturation.POOR,
     "can_eat": True,
     "effect": (
       {
@@ -19,7 +19,7 @@ EGGPLANT = {
         "chance": 0.2,
         "duration": 5,
         "amplifier": 0
-      }
+      },
     )
   }
 }

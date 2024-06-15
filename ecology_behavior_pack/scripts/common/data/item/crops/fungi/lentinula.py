@@ -4,14 +4,14 @@ from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, 
 LENTINULA = {
   "quality": ItemQuality.RARE,
   "source": {
-    ItemSource.BLOCK: ("ham:lentinula")
+    ItemSource.CROP: ("ham:lentinula",)
   },
-  "category": (ItemCategory.CROPS),
-  "tag": (ItemTag.FUNGI),
+  "category": ItemCategory.CROPS,
+  "tag": (ItemTag.FUNGI,),
   "hidden_effect": [EffectType.NAUSEA, EffectType.LEVITATION],
   "food": {
     "nutrition": 0.5,
-    "saturation_modifier": FoodSaturation.POOR,
+    "saturation": FoodSaturation.POOR,
     "can_eat": False
   }
 }

@@ -12,6 +12,11 @@
       "type": "ham:cropInfoPage",
       "subtitle": "生长条件",
       "seedKey": "ham:lentinula"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "香菇",
+      "itemName": "ham:lentinula"
     }
   ]
 }

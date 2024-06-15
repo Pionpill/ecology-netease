@@ -12,6 +12,11 @@
       "type": "ham:cropInfoPage",
       "subtitle": "生长条件",
       "seedKey": "ham:herb"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "香草",
+      "itemName": "ham:herb"
     }
   ]
 }

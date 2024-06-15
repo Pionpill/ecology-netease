@@ -1,7 +1,8 @@
 import math
+from scripts.common.entity import Effect
 from scripts.common.enum.Item import FoodSaturation
 from scripts.common.data.item import ITEM_DATA
-from scripts.common.error import AddonDataError
+from scripts.common.error import AddonDataFieldError
 from scripts.common.utils import dataUtils
 
 class Food(object):
@@ -11,16 +12,24 @@ class Food(object):
         self.__data = data
 
     def GetNutrition(self):
-        # type: () -> float
-        return self.__data.get('nutrition', 0)
+        # type: () -> float | None
+        return self.__data.get('nutrition')
     
     def GetEatNutrition(self):
-        # type: () -> int
-        return math.floor(self.GetNutrition())
+        # type: () -> int | None
+        nutrition = self.GetNutrition()
+        return math.trunc(math.floor(nutrition)) if nutrition else None
     
     def GetSaturationModifier(self):
         # type: () -> str
-        return self.__data.get('saturation_modifier', FoodSaturation.POOR)
+        return self.__data.get('saturation', FoodSaturation.POOR)
+    
+    def GetEffects(self):
+        try:
+            effects = self.__data.get('effect')
+            return [Effect(effect) for effect in effects] if effects else None
+        except AddonDataFieldError:
+            return None
     
     def CanEat(self):
         # type: () -> bool
@@ -33,15 +42,15 @@ class Item(object):
         self.name = name
         data = ITEM_DATA.get(self.name)
         if data is None:
-            raise AddonDataError('{}: 不存在对应的物品数据'.format(name))
+            raise AddonDataFieldError('{}: 不存在对应的物品数据'.format(name))
         self.__data = data
 
     def GetQuality(self):
         # type: () -> int
         return self._GetField('quality')
     
-    def GetSource(self, sourceType):
-        # type: (str | None) -> tuple[str, ...]
+    def GetSource(self, sourceType=None):
+        # type: (str | None) -> dict[str, tuple[str, ...]]
         key = ('source', sourceType) if sourceType else 'source'
         return self._GetField(key)
     
@@ -50,13 +59,24 @@ class Item(object):
         return self._GetField('category')
     
     def GetTags(self):
-        # type: () -> int
+        # type: () -> tuple[str,]
         return self._GetField('tag')
 
-    def GetHiddenEffectTypes(self):
-        # type: () -> int | None
-        return self._GetField('hidden_effect')
+    def GetHiddenEffects(self):
+        # type: () -> tuple[Effect,] | None
+        try:
+            return self._GetField('hidden_effect')
+        except AddonDataFieldError:
+            return None
     
+    def GetFood(self):
+        # type: () -> Food | None
+        try:
+            food = self._GetField('food')
+            return Food(self._GetField('food')) if food else None
+        except AddonDataFieldError:
+            return None
+
     def _GetField(self, key, defaultValue = None, data = None):
         """获取字段值，支持递归获取
         

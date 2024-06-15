@@ -8,6 +8,8 @@ entity 的数据都是只读的，且相同的数据使用单例模式返回实�
 # 作物表，防止每次都需要 new Crop
 from scripts.common.entity.Biome import Biome
 from scripts.common.entity.Crop import Crop
+from scripts.common.entity.Effect import Effect
+from scripts.common.entity.Item import Item
 from scripts.common.entity.Land import Land
 from scripts.common.entity.Recipe import Recipe
 from scripts.common.error import AddonDataError
@@ -26,9 +28,8 @@ def GetBiome(biomeName):
     except AddonDataError as e:
         logger.warn(e.message)
         return None
-    else:
-        biomeMap[biomeName] = biome
-        return biome
+    biomeMap[biomeName] = biome
+    return biome
 
 cropMap = {} # type: dict[str, Crop]
 
@@ -43,9 +44,8 @@ def GetCrop(seedKey):
     except AddonDataError as e:
         logger.error(e.message)
         return None
-    else:
-        cropMap[seedKey] = crop
-        return crop
+    cropMap[seedKey] = crop
+    return crop
     
 landMap = {} # type: dict[str, Land]
 
@@ -60,9 +60,8 @@ def GetLand(blockName):
     except AddonDataError as e:
         logger.warn(e.message)
         return None
-    else:
-        landMap[blockName] = land
-        return land
+    landMap[blockName] = land
+    return land
     
 recipeMap = {} # type: dict[str, Recipe]
 
@@ -77,8 +76,23 @@ def GetRecipe(blockName):
     except AddonDataError as e:
         logger.warn(e.message)
         return None
-    else:
-        recipeMap[blockName] = recipe
-        return recipe
+    recipeMap[blockName] = recipe
+    return recipe
+    
+itemMap = {} # type: dict[str, Item]
+
+def GetItem(itemName):
+    # type: (str) -> Item | None
+    """获取物品实例，单例模式"""
+    item = itemMap.get(itemName)
+    if item is not None:
+        return item
+    try:
+        item = Item(itemName)
+    except AddonDataError as e:
+        logger.warn(e.message)
+        return None
+    itemMap[itemName] = item
+    return item
 
 __all__ = ['GetBiome', 'GetCrop', 'GetLand', 'GetRecipe']

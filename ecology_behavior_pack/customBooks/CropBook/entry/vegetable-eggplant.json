@@ -12,6 +12,11 @@
       "type": "ham:cropInfoPage",
       "subtitle": "生长条件",
       "seedKey": "ham:eggplant"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "茄子",
+      "itemName": "ham:eggplant"
     }
   ]
 }

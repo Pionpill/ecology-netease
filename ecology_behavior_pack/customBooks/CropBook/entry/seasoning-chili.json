@@ -12,6 +12,11 @@
       "type": "ham:cropInfoPage",
       "subtitle": "生长条件",
       "seedKey": "ham:chili"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "辣椒",
+      "itemName": "ham:chili"
     }
   ]
 }

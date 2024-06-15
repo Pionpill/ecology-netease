@@ -12,6 +12,11 @@
       "type": "ham:cropInfoPage",
       "subtitle": "生长条件",
       "seedKey": "ham:scallion"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "大葱",
+      "itemName": "ham:scallion"
     }
   ]
 }

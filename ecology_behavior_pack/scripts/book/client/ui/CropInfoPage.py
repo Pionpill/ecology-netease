@@ -1,50 +1,22 @@
 import math
-import mod.client.extraClientApi as clientApi
 
+from scripts.book.client.ui.base import BaseTextPage
 from scripts.common import logger
 from scripts.common.enum import Period, LandTag
 from scripts.common.entity import Crop, GetCrop
 from scripts.common.error import AddonDataError
 
-bookManager = clientApi.GetBookManager()
-bookConfig = bookManager.GetBookConfig()
-TextComp = bookManager.GetTextCompCls()
-TitlePage = bookManager.GetTitlePageCls()
-HighlightComp = bookManager.GetHighlightCompCls()
 
-class CropInfoPage(TitlePage):
+class CropInfoPage(BaseTextPage):
     def __init__(self, size=None, position=None):
         # type: (tuple[int, int] | None, tuple[int, int] | None) -> None
         """
         抽象作物页，传入作物 key 即可
         """
-        TitlePage.__init__(self, size, position) # type: ignore
-        self._content = TextComp()
-        self.AddComps(self._content)
+        BaseTextPage.__init__(self, size, position) # type: ignore
 
-    def SetData(self, data):
-        self.data = data
-        return self
-    
-    def Show(self):
-        try:
-            self.__SetDataBeforeShow()
-            TitlePage.Show(self)
-            self.ResetCompsPosition()   
-            self.__SetShowPosition()
-        except AddonDataError as e:
-            logger.error(e)
-
-    def __SetDataBeforeShow(self):
-        """数据与UI绑定"""
-        if not self.data:
-            raise AddonDataError('页面不存在数据，这是一个程序BUG')
-        
-        self.SetTitleData()
-        self._content.SetDataBeforeShow(self.__GetContent(), bookConfig.TextSize.content)
-
-    def __GetContent(self):
-        """❗️根据数据获取描述"""
+    def _GetContent(self):
+        """❗️根据作物生长信息"""
         seedKey = self.data.get('seedKey')
         self._crop = GetCrop(seedKey) # type: Crop # type: ignore
         if not self._crop:
@@ -122,7 +94,3 @@ class CropInfoPage(TitlePage):
     def __GetContentOfWeather(self):
         rainMulti = self._crop.GetGrowRainMultiply() * 100
         return '降雨·§8加速§r: {0}％\n'.format(int(rainMulti)) if rainMulti != 100 else ''
-
-    def __SetShowPosition(self):
-        contentTop = self.LayoutTitle()
-        self._content.SetSize((self.GetSize()[0], 160)).SetPosition((20, contentTop + 5)).AlignLeftToX(self.Left()).AlignTopToY(contentTop + 5)

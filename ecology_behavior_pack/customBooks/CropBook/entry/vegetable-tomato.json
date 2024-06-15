@@ -12,6 +12,11 @@
       "type": "ham:cropInfoPage",
       "subtitle": "生长条件",
       "seedKey": "ham:tomato"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "番茄",
+      "itemName": "ham:tomato"
     }
   ]
 }

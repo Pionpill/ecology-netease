@@ -12,6 +12,11 @@
       "type": "ham:cropInfoPage",
       "subtitle": "生长条件",
       "seedKey": "ham:onion"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "洋葱",
+      "itemName": "ham:onion"
     }
   ]
 }

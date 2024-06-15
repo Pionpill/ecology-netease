@@ -4,14 +4,14 @@ from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, 
 TOMATO = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.BLOCK: ("ham:tomato")
+    ItemSource.CROP: ("ham:tomato",)
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.VEGETABLE, ItemTag.SOLANUM),
-  "hidden_effect": [EffectType.REGENERATION],
+  "hidden_effect": (EffectType.REGENERATION,),
   "food": {
     "nutrition": 1.5,
-    "saturation_modifier": FoodSaturation.NORMAL,
+    "saturation": FoodSaturation.NORMAL,
     "can_eat": True
   }
 }

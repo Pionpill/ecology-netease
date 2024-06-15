@@ -130,3 +130,5 @@ tile.ham:scallion_stage_0.name=葱·苗
 tile.ham:scallion_stage_1.name=葱·生长
 tile.ham:scallion_stage_2.name=葱·生长
 tile.ham:scallion_stage_3.name=葱·成熟
+tile.ham:weed.name=野草
+tile.ham:weed_tall.name=高野草
