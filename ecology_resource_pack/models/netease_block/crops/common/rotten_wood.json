@@ -88,7 +88,7 @@
     ],
     "description": {
       "identifier": "ham:rotten_wood",
-      "textures": ["ham:lentinula_core"],
+      "textures": ["ham:rotten_wood"],
       "textures_descriptions": [
         {
           "length": 32,
