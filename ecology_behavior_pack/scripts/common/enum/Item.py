@@ -41,6 +41,9 @@ class ItemTag(object):
     FUEL = 'fuel' # 燃料
     RICE = 'rice' # 米饭
     SIMPLE = 'simple' # 简易食物
+    BAKE = 'bake' # 烘焙工艺
+    PIE = 'pie' # 派
+    RAW = 'raw' # 生食
 
     cnNameDict = {
         CROP: '粮食',
@@ -65,6 +68,9 @@ class ItemTag(object):
         FUEL: '燃料',
         RICE: '米饭',
         SIMPLE: '简易食物',
+        BAKE: '烘焙工艺',
+        PIE: '派',
+        RAW: '生食'
     }
 
     @staticmethod

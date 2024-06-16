@@ -1,7 +1,7 @@
 from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
-SAUSAGE = {
+BEEF_PATTIES = {
   "quality": ItemQuality.RARE,
   "source": {
     ItemSource.WORKBENCH: ("ham:pan", "ham:food_steamer", "ham:grill"),
@@ -10,7 +10,7 @@ SAUSAGE = {
   "tag": (ItemTag.SIMPLE, ItemTag.MEAT),
   "hidden_effect": None,
   "food": {
-    "nutrition": 4,
+    "nutrition": 5,
     "saturation": FoodSaturation.GOOD,
     "can_eat": True,
     "effect": ({
@@ -22,7 +22,7 @@ SAUSAGE = {
   }
 }
 
-RAW_SAUSAGE = {
+RAW_BEEF_PATTIES = {
   "quality": ItemQuality.RARE,
   "source": {
     ItemSource.WORKBENCH: ("ham:cooking_table",),
@@ -31,7 +31,7 @@ RAW_SAUSAGE = {
   "tag": (ItemTag.SIMPLE, ItemTag.MEAT, ItemTag.RAW),
   "hidden_effect": None,
   "food": {
-    "nutrition": 4,
+    "nutrition": 5,
     "saturation": FoodSaturation.POOR,
     "can_eat": False,
   }

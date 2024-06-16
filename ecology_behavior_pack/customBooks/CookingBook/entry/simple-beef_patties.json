@@ -1,0 +1,22 @@
+{
+  "parent": "simple",
+  "sortnum": 12101,
+  "icon": "textures/items/materials/raw_beef_patties.png",
+  "title": "生牛肉饼",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:beef_patties"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:raw_beef_patties",
+      "subtitle": "制作·厨务台"
+    },
+    {
+      "type": "ham:grillRecipePage",
+      "recipeId": "ham:beef_patties",
+      "subtitle": "制作·烧烤架"
+    }
+  ]
+}

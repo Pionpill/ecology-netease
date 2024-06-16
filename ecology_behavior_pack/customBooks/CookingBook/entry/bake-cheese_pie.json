@@ -5,15 +5,18 @@
   "title": "起司派",
   "pages": [
     {
-      "type": "ham:cookRecipePage",
-      "recipeId": "ham:raw_cheese_pie",
-      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●●§r\n§8● §r可以生吃，烘焙更佳"
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:cheese_pie"
     },
     {
-      "subtitle": "烘焙",
+      "subtitle": "制作·生食",
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:raw_cheese_pie"
+    },
+    {
+      "subtitle": "制作·烘焙",
       "type": "ham:bakeRecipePage",
-      "recipeId": "ham:cheese_pie",
-      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●●§r\n§8● §r§3饥饿: §5●●●●§r"
+      "recipeId": "ham:cheese_pie"
     }
   ]
 }
