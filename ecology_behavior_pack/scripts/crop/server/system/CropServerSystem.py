@@ -60,7 +60,7 @@ class CropServerSystem(ServerSystem):
     def OnBlockNeighborChanged(self, args):
         position = (args['posX'], args['posY'], args['posZ']) # type: tuple[int, int, int]
         neighPosition = (args['neighborPosX'], args['neighborPosY'], args['neighborPosZ']) # type: tuple[int, int, int]
-        if cropUtils.IsCropBlock(args['blockName']) and positionUtils.IsOnSamePlain(position, neighPosition):
+        if cropUtils.IsCropBlock(args['blockName']) and positionUtils.IsOnSameLocation(position, neighPosition):
             if args['posY'] == args['neighborPosY'] + 1:
                 # 植被土地变化
                 self.__HandleCropLandChange(args)
@@ -112,7 +112,7 @@ class CropServerSystem(ServerSystem):
         position = (args['posX'], args['posY'], args['posZ'])
         dimensionId = args["dimensionId"]
         canPlantOnLand = CropService.CanPlantOnLand(args['blockName'], args['toBlockName'], args['auxValue'])
-        if isinstance(canPlantOnLand, str):
+        if isinstance(canPlantOnLand, str) or not canPlantOnLand:
             blockInfoComp.SetBlockNew(position, {'name': 'minecraft:air', 'aux': 0}, dimensionId=dimensionId)
             CropService.DeleteCropManager(position, dimensionId)
         else:
