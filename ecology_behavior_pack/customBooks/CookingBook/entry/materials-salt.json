@@ -1,0 +1,12 @@
+{
+  "parent": "materials",
+  "sortnum": 10000,
+  "icon": "textures/items/materials/salt.png",
+  "title": "盐",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:salt"
+    }
+  ]
+}

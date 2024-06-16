@@ -1,15 +1,15 @@
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
-SOY_BEAN = {
+BUTTER = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.CROP: ("ham:soy_bean",)
+    ItemSource.WORKBENCH: ("ham:squeezer",),
   },
-  "category": ItemCategory.CROPS,
-  "tag": (ItemTag.CROP, ItemTag.CEREAL, ItemTag.SOY),
+  "category": ItemCategory.MATERIAL,
+  "tag": (ItemTag.PRODUCT, ItemTag.DAIRY),
   "hidden_effect": None,
   "food": {
-    "nutrition": 1.5,
+    "nutrition": 0.5,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": False,
     "effect": None

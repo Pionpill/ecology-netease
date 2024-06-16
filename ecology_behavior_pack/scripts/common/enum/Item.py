@@ -3,9 +3,11 @@ from scripts.common.enum import FormatColor
 
 class ItemCategory(object):
     CROPS = 'crops'
+    MATERIAL = 'material'
 
     cnNameDict = {
         CROPS: '作物',
+        MATERIAL: '材料',
     }
 
     @staticmethod
@@ -16,6 +18,7 @@ class ItemTag(object):
     CROP = 'crop' # 粮食
     VEGETABLE = 'vegetable' # 蔬菜
     FUNGI = 'fungi' # 菌类
+    SPICES = 'spices' # 香料
     SEASONING = 'seasoning' # 调料
     CEREAL = 'cereal' # 谷物
     SOLANUM = 'solanum' # 茄属
@@ -23,11 +26,24 @@ class ItemTag(object):
     GREEN = 'green' # 青菜
     ALLIUM = 'allium' # 葱属
     WATER = 'water' # 水生
+    ORE = 'ore' # 矿物质
+    PRODUCT = 'product' # 农产品
+    DAIRY = 'dairy' # 乳制品
+    OIL = 'oil' # 油
+    SOY = 'soy' # 豆制品
+    WHEAT = 'wheat' # 谷物制品
+    PORK = 'pork' # 猪肉制品
+    MEAT = 'meat' # 肉食
+    SAUCES = 'sauces' # 酱料
+    RICE = 'rice' # 米制品
+    FUEL = 'fuel' # 燃料
+    RICE = 'rice' # 米饭
 
     cnNameDict = {
         CROP: '粮食',
         VEGETABLE: '蔬菜',
         FUNGI: '菌类',
+        SPICES: '香料',
         SEASONING: '调料',
         CEREAL: '谷物',
         SOLANUM: '茄属',
@@ -35,6 +51,16 @@ class ItemTag(object):
         GREEN: '青菜',
         ALLIUM: '葱属',
         WATER: '水生',
+        ORE: '矿物质',
+        PRODUCT: '农产品',
+        DAIRY: '乳制品',
+        SOY: '豆制品',
+        OIL: '油',
+        WHEAT: '谷物制品',
+        MEAT: '肉制品',
+        SAUCES: '酱料',
+        FUEL: '燃料',
+        RICE: '米饭'
     }
 
     @staticmethod

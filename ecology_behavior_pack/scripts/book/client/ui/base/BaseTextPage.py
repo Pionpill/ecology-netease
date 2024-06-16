@@ -40,7 +40,7 @@ class BaseTextPage(TitlePage):
     def _SetPositionAfterShow(self):
         self.ResetCompsPosition()   
         contentTop = self.LayoutTitle()
-        self._content.SetSize((self.GetSize()[0], 160)).SetPosition((20, contentTop + 5)).AlignLeftToX(self.Left()).AlignTopToY(contentTop + 5)
+        self._content.SetSize((self.GetSize()[0], 160)).SetPosition((self.Left(), contentTop + 5)).AlignLeftToX(self.Left()).AlignTopToY(contentTop + 5)
 
     def _GetContent(self):
         # 子类重载

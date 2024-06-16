@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 11110,
+  "icon": "textures/items/materials/dough.png",
+  "title": "面团",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:dough"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·厨务台",
+      "recipeId": "ham:dough"
+    }
+  ]
+}

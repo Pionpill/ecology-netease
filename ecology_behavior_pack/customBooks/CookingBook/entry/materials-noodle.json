@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 11111,
+  "icon": "textures/items/materials/noodle.png",
+  "title": "面条",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:noodle"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·厨务台",
+      "recipeId": "ham:noodle"
+    }
+  ]
+}

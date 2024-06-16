@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 11111,
+  "icon": "textures/items/materials/butter.png",
+  "title": "黄油",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:butter"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·压制机",
+      "recipeId": "ham:butter"
+    }
+  ]
+}

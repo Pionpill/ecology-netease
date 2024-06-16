@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 11402,
+  "icon": "textures/items/materials/chili_powder.png",
+  "title": "辣椒粉",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:chili_powder"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:chili_powder",
+      "subtitle": "制作·石磨"
+    }
+  ]
+}

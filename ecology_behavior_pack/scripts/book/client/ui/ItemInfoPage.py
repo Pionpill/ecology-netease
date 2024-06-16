@@ -37,8 +37,8 @@ class ItemInfoPage(BaseTextPage):
 
     def _SetPositionAfterShow(self):
         BaseTextPage._SetPositionAfterShow(self)
-        self._itemComp.SetSize((30, 30)).SetPosition((60, 45))
-        self._content.SetPosition((20, 80))
+        self._itemComp.SetSize((30, 30)).SetPosition((self.Left() + 40, 45))
+        self._content.SetPosition((self.Left(), 80))
 
     def _GetContent(self):
         """❗️根据物品信息"""

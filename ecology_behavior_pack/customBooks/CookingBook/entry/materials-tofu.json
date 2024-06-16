@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 12211,
+  "icon": "textures/items/materials/tofu.png",
+  "title": "豆腐",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:tofu"
+    },
+    {
+      "type": "ham:squeezerRecipePage",
+      "recipeId": "ham:tofu",
+      "subtitle": "制作·压制机"
+    }
+  ]
+}

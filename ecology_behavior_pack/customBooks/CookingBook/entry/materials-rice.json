@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 11101,
+  "icon": "textures/items/crops/crop/rice_plant.png",
+  "title": "大米",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:rice_plant"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:rice",
+      "subtitle": "制作·石磨"
+    }
+  ]
+}

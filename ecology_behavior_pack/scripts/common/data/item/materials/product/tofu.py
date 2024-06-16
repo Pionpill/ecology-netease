@@ -1,15 +1,16 @@
+from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
-SOY_BEAN = {
+TOFU = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.CROP: ("ham:soy_bean",)
+    ItemSource.WORKBENCH: ("ham:squeezer",),
   },
-  "category": ItemCategory.CROPS,
-  "tag": (ItemTag.CROP, ItemTag.CEREAL, ItemTag.SOY),
-  "hidden_effect": None,
+  "category": ItemCategory.MATERIAL,
+  "tag": (ItemTag.PRODUCT, ItemTag.SOY),
+  "hidden_effect": (EffectType.HASTE,),
   "food": {
-    "nutrition": 1.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": False,
     "effect": None

@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 11112,
+  "icon": "textures/items/materials/starch.png",
+  "title": "淀粉",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:starch"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:starch",
+      "subtitle": "制作·石磨"
+    }
+  ]
+}

@@ -16,7 +16,7 @@
     {
       "type": "ham:itemInfoPage",
       "subtitle": "大米",
-      "itemName": "ham:rice"
+      "itemName": "ham:rice_plant"
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 11401,
+  "icon": "textures/items/materials/seasoning.png",
+  "title": "调料",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:seasoning"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:seasoning",
+      "subtitle": "制作·石磨"
+    }
+  ]
+}

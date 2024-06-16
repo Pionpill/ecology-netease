@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 12202,
+  "icon": "textures/items/foods/simple/cheese.png",
+  "title": "奶酪",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:cheese"
+    },
+    {
+      "type": "ham:squeezerRecipePage",
+      "subtitle": "制作·压制机",
+      "recipeId": "ham:cheese"
+    }
+  ]
+}

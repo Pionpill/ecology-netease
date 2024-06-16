@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 13110,
+  "icon": "textures/items/materials/salad.png",
+  "title": "沙拉",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:salad"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·厨务台",
+      "recipeId": "ham:salad"
+    }
+  ]
+}
