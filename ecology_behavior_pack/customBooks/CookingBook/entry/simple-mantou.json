@@ -1,13 +1,17 @@
 {
-  "parent": "steamer",
+  "parent": "simple",
   "sortnum": 11101,
   "icon": "textures/items/foods/simple/mantou.png",
   "title": "馒头",
   "pages": [
     {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:mantou"
+    },
+    {
       "type": "ham:steamerRecipePage",
       "recipeId": "ham:mantou",
-      "content": "§8● §r§3类型: §5原材料\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●◐§r"
+      "subtitle": "制作·蒸笼"
     }
   ]
 }

@@ -2,10 +2,13 @@ from scripts.common.data.item.crops.crop import CORN, RICE_PLANT, SOY_BEAN
 from scripts.common.data.item.crops.fungi import LENTINULA
 from scripts.common.data.item.crops.spices import CHILI, HERB
 from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO
+
 from scripts.common.data.item.materials.fuel import STRAW
 from scripts.common.data.item.materials.ore import SALT
-from scripts.common.data.item.materials.product import BUTTER, COOKING_OIL, DOUGH, FLOUR, GROUND_PORK, NOODLE, SALAD, STARCH, TOFU, CHEESE, RICE
+from scripts.common.data.item.materials.product import BUTTER, COOKING_OIL, DOUGH, FLOUR, GROUND_PORK, NOODLE, SALAD, STARCH, TOFU, RICE
 from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING
+
+from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK
 
 
 ITEM_DATA = {
@@ -34,6 +37,15 @@ ITEM_DATA = {
     "ham:tofu": TOFU,
     "ham:chili_powder": CHILI_POWDER,
     "ham:seasoning": SEASONING,
-    "ham:cheese": CHEESE,
     "ham:rice": RICE,
+
+    "ham:cheese": CHEESE,
+    "ham:bread": BREAD,
+    "ham:buns": BUNS,
+    "ham:raw_buns": RAW_BUNS,
+    "ham:cooked_rice": COOKED_RICE,
+    "ham:mantou": MANTOU,
+    "ham:sausage": SAUSAGE,
+    "ham:raw_sausage": RAW_SAUSAGE,
+    "ham:sweet_milk": SWEET_MILK,
 }

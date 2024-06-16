@@ -4,10 +4,12 @@ from scripts.common.enum import FormatColor
 class ItemCategory(object):
     CROPS = 'crops'
     MATERIAL = 'material'
+    FOOD = 'food'
 
     cnNameDict = {
         CROPS: '作物',
         MATERIAL: '材料',
+        FOOD: '食物',
     }
 
     @staticmethod
@@ -31,13 +33,14 @@ class ItemTag(object):
     DAIRY = 'dairy' # 乳制品
     OIL = 'oil' # 油
     SOY = 'soy' # 豆制品
-    WHEAT = 'wheat' # 谷物制品
+    WHEAT = 'wheat' # 小麦制品
     PORK = 'pork' # 猪肉制品
     MEAT = 'meat' # 肉食
     SAUCES = 'sauces' # 酱料
     RICE = 'rice' # 米制品
     FUEL = 'fuel' # 燃料
     RICE = 'rice' # 米饭
+    SIMPLE = 'simple' # 简易食物
 
     cnNameDict = {
         CROP: '粮食',
@@ -60,7 +63,8 @@ class ItemTag(object):
         MEAT: '肉制品',
         SAUCES: '酱料',
         FUEL: '燃料',
-        RICE: '米饭'
+        RICE: '米饭',
+        SIMPLE: '简易食物',
     }
 
     @staticmethod

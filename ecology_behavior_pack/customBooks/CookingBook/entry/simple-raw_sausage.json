@@ -1,0 +1,32 @@
+{
+  "parent": "simple",
+  "sortnum": 12103,
+  "icon": "textures/items/foods/simple/sausage.png",
+  "title": "香肠",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:sausage"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:raw_sausage",
+      "subtitle": "制作·厨务台"
+    },
+    {
+      "type": "ham:grillRecipePage",
+      "recipeId": "ham:sausage",
+      "subtitle": "制作·烧烤架"
+    },
+    {
+      "type": "ham:steamerRecipePage",
+      "recipeId": "ham:sausage",
+      "subtitle": "制作·蒸笼"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:sausage",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

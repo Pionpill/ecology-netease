@@ -1,18 +1,17 @@
 from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
-CHEESE = {
+COOKED_RICE = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.WORKBENCH: ("ham:squeezer",),
+    ItemSource.WORKBENCH: ("ham:food_steamer",),
   },
-  "category": ItemCategory.MATERIAL,
-  "tag": (ItemTag.PRODUCT, ItemTag.DAIRY),
-  "hidden_effect": (EffectType.HASTE,),
+  "category": ItemCategory.FOOD,
+  "tag": (ItemTag.SIMPLE, ItemTag.RICE),
+  "hidden_effect": None,
   "food": {
-    "nutrition": 3,
+    "nutrition": 4,
     "saturation": FoodSaturation.NORMAL,
-    "can_eat": False,
-    "effect": None
+    "can_eat": True,
   }
 }

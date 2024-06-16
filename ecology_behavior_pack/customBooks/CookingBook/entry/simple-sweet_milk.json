@@ -1,13 +1,17 @@
 {
-  "parent": "cook",
+  "parent": "simple",
   "sortnum": 12201,
   "icon": "textures/items/foods/simple/sweet_milk.png",
   "title": "甜牛奶",
   "pages": [
     {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:sweet_milk"
+    },
+    {
       "type": "ham:cookRecipePage",
       "recipeId": "ham:sweet_milk",
-      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●§r\n§8● §r§3饥饿: §5○§r\n§8● §r更多地作为材料食用"
+      "subtitle": "制作·厨务台"
     }
   ]
 }
