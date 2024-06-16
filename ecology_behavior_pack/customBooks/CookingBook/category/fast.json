@@ -1,0 +1,7 @@
+{
+  "title": "§l快餐",
+  "content": "§r§8● §0经典快餐食物\n§r§8● §0提供大量饱食度\n§r§8● §0提供战斗增益",
+  "isLocked": false,
+  "icon": "textures/items/foods/fast_food/burger.png",
+  "sortnum": 400
+}

@@ -10,6 +10,7 @@ from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING
 
 from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK, BEEF_PATTIES, RAW_BEEF_PATTIES
 from scripts.common.data.item.food.bake import RAW_APPLE_PIE, APPLE_PIE, RAW_CORN_PIE, CORN_PIE, RAW_CHEESE_PIE, CHEESE_PIE
+from scripts.common.data.item.food.fast import FRIES, BURGER_SIMPLE, BURGER, HOT_DOG
 
 
 ITEM_DATA = {
@@ -58,4 +59,9 @@ ITEM_DATA = {
     "ham:cheese_pie": CHEESE_PIE,
     "ham:beef_patties": BEEF_PATTIES,
     "ham:raw_beef_patties": RAW_BEEF_PATTIES,
+
+    "ham:fries": FRIES,
+    "ham:burger_simple": BURGER_SIMPLE,
+    "ham:burger": BURGER,
+    "ham:hot_dog": HOT_DOG,
 }

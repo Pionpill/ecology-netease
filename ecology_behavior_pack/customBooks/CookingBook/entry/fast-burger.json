@@ -1,0 +1,17 @@
+{
+  "parent": "fast",
+  "sortnum": 301,
+  "icon": "textures/items/foods/fast_food/burger.png",
+  "title": "汉堡",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:burger"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:burger",
+      "subtitle": "制作·厨务台"
+    }
+  ]
+}

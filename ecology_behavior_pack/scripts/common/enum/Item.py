@@ -44,6 +44,8 @@ class ItemTag(object):
     BAKE = 'bake' # 烘焙工艺
     PIE = 'pie' # 派
     RAW = 'raw' # 生食
+    FAST = 'fast' # 快餐
+    BURGER = 'burger' # 汉堡
 
     cnNameDict = {
         CROP: '粮食',
@@ -70,7 +72,9 @@ class ItemTag(object):
         SIMPLE: '简易食物',
         BAKE: '烘焙工艺',
         PIE: '派',
-        RAW: '生食'
+        RAW: '生食',
+        FAST: '快餐',
+        BURGER: '汉堡',
     }
 
     @staticmethod

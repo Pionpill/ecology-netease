@@ -8,7 +8,7 @@ NOODLE = {
   },
   "category": ItemCategory.MATERIAL,
   "tag": (ItemTag.PRODUCT),
-  "hidden_effect": None,
+  "hidden_effect": (EffectType.STRENGTH,),
   "food": {
     "nutrition": 3,
     "saturation": FoodSaturation.NORMAL,

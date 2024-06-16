@@ -8,7 +8,7 @@ BEEF_PATTIES = {
   },
   "category": ItemCategory.FOOD,
   "tag": (ItemTag.SIMPLE, ItemTag.MEAT),
-  "hidden_effect": None,
+  "hidden_effect": (EffectType.STRENGTH,),
   "food": {
     "nutrition": 5,
     "saturation": FoodSaturation.GOOD,
