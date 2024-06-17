@@ -1,13 +1,17 @@
 {
-  "parent": "pan",
+  "parent": "rice",
   "sortnum": 13101,
   "icon": "textures/items/foods/rice/yangzhou_fried_rice.png",
   "title": "扬州炒饭",
   "pages": [
     {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:yangzhou_fried_rice"
+    },
+    {
       "type": "ham:panRecipePage",
       "recipeId": "ham:yangzhou_fried_rice",
-      "content": "§8● §r§3类型: §5原材料\n§8● §r§3品质: §5●●●§r\n§8● §r§3饥饿: §5●●●●●●●§r\n§8● §r§2吃饱才有力气打架"
+      "subtitle": "制作·平底锅"
     }
   ]
 }

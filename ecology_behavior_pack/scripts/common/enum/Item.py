@@ -37,7 +37,6 @@ class ItemTag(object):
     PORK = 'pork' # 猪肉制品
     MEAT = 'meat' # 肉食
     SAUCES = 'sauces' # 酱料
-    RICE = 'rice' # 米制品
     FUEL = 'fuel' # 燃料
     RICE = 'rice' # 米饭
     SIMPLE = 'simple' # 简易食物
@@ -46,6 +45,8 @@ class ItemTag(object):
     RAW = 'raw' # 生食
     FAST = 'fast' # 快餐
     BURGER = 'burger' # 汉堡
+    FRY = 'fry' # 炒菜
+    NOODLE = 'noodle' # 面食
 
     cnNameDict = {
         CROP: '粮食',
@@ -75,6 +76,8 @@ class ItemTag(object):
         RAW: '生食',
         FAST: '快餐',
         BURGER: '汉堡',
+        FRY: '炒菜',
+        NOODLE: '面食',
     }
 
     @staticmethod

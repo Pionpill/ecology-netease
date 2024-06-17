@@ -1,13 +1,17 @@
 {
-  "parent": "stew",
+  "parent": "noodles",
   "sortnum": 13000,
   "icon": "textures/items/foods/noodles/plain_noodles.png",
   "title": "素面",
   "pages": [
     {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:plain_noodles"
+    },
+    {
       "type": "ham:stewRecipePage",
       "recipeId": "ham:plain_noodles",
-      "content": "§8● §r§3类型: §5食物\n§8● §r§3品质: §5●●§r\n§8● §r§3饥饿: §5●●◐"
+      "subtitle": "制作·煮锅"
     }
   ]
 }

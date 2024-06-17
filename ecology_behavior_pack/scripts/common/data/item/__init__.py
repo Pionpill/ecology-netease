@@ -11,6 +11,9 @@ from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING
 from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK, BEEF_PATTIES, RAW_BEEF_PATTIES
 from scripts.common.data.item.food.bake import RAW_APPLE_PIE, APPLE_PIE, RAW_CORN_PIE, CORN_PIE, RAW_CHEESE_PIE, CHEESE_PIE
 from scripts.common.data.item.food.fast import FRIES, BURGER_SIMPLE, BURGER, HOT_DOG
+from scripts.common.data.item.food.fry import MAPO_TOFU
+from scripts.common.data.item.food.noodles import PLAIN_NOODLES, PORK_SAUCE_NOODLES, TOMATO_EGG_NOODLES
+from scripts.common.data.item.food.rice import EGG_FIRED_RICE, PORK_SAUCE_RICE, YANGZHOU_FRIED_RICE
 
 
 ITEM_DATA = {
@@ -64,4 +67,14 @@ ITEM_DATA = {
     "ham:burger_simple": BURGER_SIMPLE,
     "ham:burger": BURGER,
     "ham:hot_dog": HOT_DOG,
+
+    "ham:mapo_tofu": MAPO_TOFU,
+
+    "ham:plain_noodles": PLAIN_NOODLES,
+    "ham:pork_sauce_noodles": PORK_SAUCE_NOODLES,
+    "ham:tomato_egg_noodles": TOMATO_EGG_NOODLES,
+
+    "ham:egg_fired_rice": EGG_FIRED_RICE,
+    "ham:pork_sauce_rice": PORK_SAUCE_RICE,
+    "ham:yangzhou_fried_rice": YANGZHOU_FRIED_RICE
 }
