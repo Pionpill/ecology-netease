@@ -8,15 +8,15 @@ BEEF_PATTIES = {
   },
   "category": ItemCategory.FOOD,
   "tag": (ItemTag.SIMPLE, ItemTag.MEAT),
-  "hidden_effect": (EffectType.STRENGTH,),
+  "hidden_effect": None,
   "food": {
     "nutrition": 5,
-    "saturation": FoodSaturation.GOOD,
+    "saturation": FoodSaturation.MAX,
     "can_eat": True,
     "effect": ({
         "name": EffectType.STRENGTH,
         "chance": 1,
-        "duration": 30,
+        "duration": 20,
         "amplifier": 0
     },)
   }

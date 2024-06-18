@@ -11,7 +11,7 @@ CORN_PIE = {
   "hidden_effect": None,
   "food": {
     "nutrition": 7,
-    "saturation": FoodSaturation.GOOD,
+    "saturation": FoodSaturation.NORMAL,
     "can_eat": True,
   }
 }

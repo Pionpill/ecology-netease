@@ -1,6 +1,6 @@
 {
   "parent": "noodles",
-  "sortnum": 13000,
+  "sortnum": 100,
   "icon": "textures/items/foods/noodles/plain_noodles.png",
   "title": "素面",
   "pages": [

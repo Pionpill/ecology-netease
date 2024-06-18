@@ -1,6 +1,6 @@
 {
   "parent": "materials",
-  "sortnum": 11110,
+  "sortnum": 500,
   "icon": "textures/items/materials/dough.png",
   "title": "面团",
   "pages": [

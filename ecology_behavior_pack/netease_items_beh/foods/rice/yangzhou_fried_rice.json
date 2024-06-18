@@ -11,20 +11,20 @@
       "minecraft:use_duration": 32,
       "minecraft:food": {
         "nutrition": 14,
-        "saturation_modifier": "max",
+        "saturation_modifier": "good",
         "can_always_eat": false,
         "effects": [
           {
             "name": "strength",
             "chance": 1.0,
-            "duration": 240,
-            "amplifier": 0
+            "duration": 120,
+            "amplifier": 1
           }
         ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·炒饭\n§r§3品质: §5●●●\n§3饥饿: §5●●●●●●●\n§f--------------------\n§2■ 吃饱了才有力气打架"
+        "value": "§f--------------------\n§6§l食物·炒饭\n§r§3品质: §5\n§3饥饿: §5 X 14\n§r§f--------------------\n§a■ 力量Ⅰ 120s"
       }
     }
   }

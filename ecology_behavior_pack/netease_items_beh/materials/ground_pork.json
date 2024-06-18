@@ -7,9 +7,9 @@
       "category": "ecology"
     },
     "components": {
-      "minecraft:max_stack_size": 64,
+      "minecraft:max_stack_size": 32,
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l原材料\n§r§3品质: §5●● §3饥饿: §5●○\n§f--------------------\n§r§a猪肉糜，常与主食搭配"
+        "value": "§f--------------------\n§6§l原材料\n§r§3品质: §5\n§r§f--------------------\n§7猪肉糜，常与主食搭配"
       }
     }
   }

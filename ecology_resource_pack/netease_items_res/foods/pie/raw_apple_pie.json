@@ -6,7 +6,7 @@
     },
     "components": {
       "minecraft:icon": "ham:raw_apple_pie",
-      "minecraft:hover_text_color": "light_purple"
+      "minecraft:hover_text_color": "aqua"
     }
   }
 }

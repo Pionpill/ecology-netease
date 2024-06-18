@@ -10,13 +10,13 @@ SAUSAGE = {
   "tag": (ItemTag.SIMPLE, ItemTag.MEAT),
   "hidden_effect": None,
   "food": {
-    "nutrition": 4,
-    "saturation": FoodSaturation.GOOD,
+    "nutrition": 3,
+    "saturation": FoodSaturation.MAX,
     "can_eat": True,
     "effect": ({
         "name": EffectType.STRENGTH,
         "chance": 1,
-        "duration": 30,
+        "duration": 15,
         "amplifier": 0
     },)
   }
@@ -31,7 +31,7 @@ RAW_SAUSAGE = {
   "tag": (ItemTag.SIMPLE, ItemTag.MEAT, ItemTag.RAW),
   "hidden_effect": None,
   "food": {
-    "nutrition": 4,
+    "nutrition": 3,
     "saturation": FoodSaturation.POOR,
     "can_eat": False,
   }

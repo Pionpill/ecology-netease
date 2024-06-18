@@ -1,6 +1,6 @@
 {
   "parent": "bake",
-  "sortnum": 15100,
+  "sortnum": 101,
   "icon": "textures/items/foods/pie/cheese_pie.png",
   "title": "起司派",
   "pages": [

@@ -16,7 +16,7 @@ BUNS = {
     "effect": ({
         "name": EffectType.STRENGTH,
         "chance": 1,
-        "duration": 60,
+        "duration": 10,
         "amplifier": 0
     },)
   }

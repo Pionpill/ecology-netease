@@ -1,6 +1,6 @@
 {
   "parent": "bake",
-  "sortnum": 15102,
+  "sortnum": 102,
   "icon": "textures/items/foods/pie/apple_pie.png",
   "title": "苹果派",
   "pages": [

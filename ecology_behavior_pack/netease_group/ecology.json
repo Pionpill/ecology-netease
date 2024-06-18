@@ -74,7 +74,7 @@
       ]
     },
     {
-      "group_name": "itemGroup.name.ham.seasoning_powder",
+      "group_name": "itemGroup.name.ham.spices",
       "icon": "ham:seasoning",
       "list": ["ham:salt", "ham:seasoning", "ham:chili_powder"]
     },

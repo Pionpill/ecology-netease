@@ -6,7 +6,8 @@
     },
     "components": {
       "minecraft:icon": "ham:sweet_milk",
-      "minecraft:use_animation": "eat"
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "white"
     }
   }
 }

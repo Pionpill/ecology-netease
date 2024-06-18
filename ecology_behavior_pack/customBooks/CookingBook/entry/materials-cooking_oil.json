@@ -1,6 +1,6 @@
 {
   "parent": "materials",
-  "sortnum": 12201,
+  "sortnum": 600,
   "icon": "textures/items/materials/cooking_oil.png",
   "title": "食用油",
   "pages": [

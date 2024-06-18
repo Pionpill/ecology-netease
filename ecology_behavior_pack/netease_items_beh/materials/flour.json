@@ -9,7 +9,7 @@
     "components": {
       "minecraft:max_stack_size": 64,
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l原材料\n§r§a小麦类最重要原材料"
+        "value": "§f--------------------\n§6§l原材料\n§r§3品质: §5\n§r§f--------------------\n§7小麦类最重要原材料"
       }
     }
   }

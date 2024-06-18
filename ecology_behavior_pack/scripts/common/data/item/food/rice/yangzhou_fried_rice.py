@@ -2,7 +2,7 @@ from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
 YANGZHOU_FRIED_RICE = {
-  "quality": ItemQuality.EPIC,
+  "quality": ItemQuality.RARE,
   "source": {
     ItemSource.WORKBENCH: ("ham:pan",),
   },

@@ -1,6 +1,6 @@
 {
-  "title": "§l简易食物",
-  "content": "§r§8● §0简易食物\n§r§8● §0高级食材的原材料",
+  "title": "§l简易食品",
+  "content": "§r§8● §0简单烹饪获取的食物\n§r§8● §0高级食材的原材料",
   "isLocked": false,
   "icon": "textures/items/foods/simple/buns.png",
   "sortnum": 200

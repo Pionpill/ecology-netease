@@ -11,20 +11,20 @@
       "minecraft:use_duration": 32,
       "minecraft:food": {
         "nutrition": 9,
-        "saturation_modifier": "max",
+        "saturation_modifier": "good",
         "can_always_eat": false,
         "effects": [
           {
-            "name": "haste",
+            "name": "strength",
             "chance": 1.0,
-            "duration": 180,
+            "duration": 60,
             "amplifier": 0
           }
         ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·炒饭\n§r§3品质: §5●●●\n§3饥饿: §5●●●●●○\n§f--------------------\n§2■ 下矿，下矿！"
+        "value": "§f--------------------\n§6§l食物·炒饭\n§r§3品质: §5\n§3饥饿: §5 X 8\n§r§f--------------------\n§a■ 力量Ⅰ 60s"
       }
     }
   }

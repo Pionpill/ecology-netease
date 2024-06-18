@@ -11,12 +11,12 @@
       "minecraft:use_duration": 32,
       "minecraft:food": {
         "nutrition": 9,
-        "saturation_modifier": "good",
+        "saturation_modifier": "normal",
         "can_always_eat": false
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·炒饭\n§r§3品质: §5●●\n§3饥饿: §5●●●●○"
+        "value": "§f--------------------\n§6§l食物·炒饭\n§r§3品质: §5\n§3饥饿: §5 X 9\n§r§f--------------------\n§7■ 最简单的炒饭"
       }
     }
   }

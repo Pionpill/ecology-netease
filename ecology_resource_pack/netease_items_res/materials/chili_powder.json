@@ -6,7 +6,7 @@
     },
     "components": {
       "minecraft:icon": "ham:chili_powder",
-      "minecraft:hover_text_color": "yellow"
+      "minecraft:hover_text_color": "white"
     }
   }
 }

@@ -12,10 +12,18 @@
       "minecraft:food": {
         "nutrition": 10,
         "saturation_modifier": "good",
-        "can_always_eat": false
+        "can_always_eat": false,
+        "effects": [
+          {
+            "name": "strength",
+            "chance": 1.0,
+            "duration": 45,
+            "amplifier": 0
+          }
+        ]
       },
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l快餐\n§r§3品质: §5●●\n§3饥饿: §5●●●●●"
+        "value": "§f--------------------\n§6§l食物·快餐\n§r§3品质: §5\n§3饥饿: §5 X 5\n§r§f--------------------\n§a■ 力量Ⅰ 45s"
       }
     }
   }

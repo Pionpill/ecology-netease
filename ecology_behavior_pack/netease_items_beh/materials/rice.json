@@ -10,7 +10,7 @@
       "minecraft:max_stack_size": 64,
       "minecraft:use_duration": 64,
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l原材料\n§r§a最重要的主食之一\n§7蒸笼加工为米饭"
+        "value": "§f--------------------\n§6§l原材料\n§r§3品质: §5\n§r§f--------------------\n§7最重要的主食之一\n§7蒸笼加工为米饭"
       }
     }
   }

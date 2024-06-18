@@ -2,7 +2,7 @@ from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
 FLOUR = {
-  "quality": ItemQuality.UNCOMMON,
+  "quality": ItemQuality.COMMON,
   "source": {
     ItemSource.WORKBENCH: ("ham:mill",),
   },

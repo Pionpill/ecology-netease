@@ -1,6 +1,6 @@
 {
   "parent": "simple",
-  "sortnum": 12103,
+  "sortnum": 300,
   "icon": "textures/items/foods/simple/sausage.png",
   "title": "香肠",
   "pages": [

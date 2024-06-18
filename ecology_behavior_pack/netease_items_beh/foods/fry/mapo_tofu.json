@@ -17,14 +17,14 @@
           {
             "name": "speed",
             "chance": 1.0,
-            "duration": 120,
+            "duration": 60,
             "amplifier": 0
           }
         ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l川菜\n§r§3品质: §5●●●\n§3饥饿: §5●●●\n§f--------------------\n§a+ 加速"
+        "value": "§f--------------------\n§6§l食物·炒菜\n§r§3品质: §5\n§3饥饿: §5 X 6\n§r§f--------------------\n§a■ 迅捷Ⅰ 120s"
       }
     }
   }

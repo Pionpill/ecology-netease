@@ -1,6 +1,6 @@
 {
   "parent": "materials",
-  "sortnum": 10000,
+  "sortnum": 101,
   "icon": "textures/items/materials/salt.png",
   "title": "盐",
   "pages": [

@@ -6,7 +6,7 @@
     },
     "components": {
       "minecraft:icon": "ham:starch",
-      "minecraft:hover_text_color": "white"
+      "minecraft:hover_text_color": "yellow"
     }
   }
 }

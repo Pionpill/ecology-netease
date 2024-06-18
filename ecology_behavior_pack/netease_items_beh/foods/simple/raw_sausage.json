@@ -10,7 +10,7 @@
       "minecraft:max_stack_size": 64,
       "minecraft:use_duration": 32,
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l简易食品\n§r§3品质: §5●●\n§f--------------------\n§a可以煎一下食用"
+        "value": "§f--------------------\n§6§l简易食品\n§r§3品质: §5\n§r§f--------------------\n§7■ 多种加工方式"
       }
     }
   }

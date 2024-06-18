@@ -1,6 +1,6 @@
 {
   "title": "§l材料",
-  "content": "§r§8● §0材料合成配方",
+  "content": "§r§8● §0材料合成配方\n§r§8● §0香料: 烹饪必备的调味品，不提供饱食度\n§r§8● §0农产品: 农业加工产品，需要进一步烹饪",
   "isLocked": false,
   "icon": "textures/items/materials/chili_powder.png",
   "sortnum": 100

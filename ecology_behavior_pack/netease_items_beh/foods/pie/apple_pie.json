@@ -7,23 +7,23 @@
       "category": "ecology"
     },
     "components": {
-      "minecraft:max_stack_size": 16,
+      "minecraft:max_stack_size": 32,
       "minecraft:use_duration": 32,
       "minecraft:food": {
         "nutrition": 10,
-        "saturation_modifier": "good",
+        "saturation_modifier": "normal",
         "can_always_eat": false,
         "effects": [
           {
             "name": "regeneration",
             "chance": 1.0,
-            "duration": 30,
+            "duration": 45,
             "amplifier": 0
           }
         ]
       },
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l派类食品\n§r§3品质: §5●●●●\n§3饥饿: §5●●●●●\n§f--------------------\n§a+ 生命恢复"
+        "value": "§f--------------------\n§6§l食物·派类\n§r§3品质: §5\n§3饥饿: §5 X 10\n§r§f--------------------\n§a■ 生命恢复Ⅰ 45s"
       }
     }
   }

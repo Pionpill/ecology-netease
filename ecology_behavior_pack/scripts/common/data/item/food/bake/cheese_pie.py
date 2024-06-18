@@ -10,13 +10,13 @@ CHEESE_PIE = {
   "tag": (ItemTag.BAKE, ItemTag.PIE),
   "hidden_effect": None,
   "food": {
-    "nutrition": 8,
+    "nutrition": 6,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": True,
     "effect": ({
         "name": EffectType.HASTE,
         "chance": 1,
-        "duration": 90,
+        "duration": 60,
         "amplifier": 0
     },)
   }
@@ -29,10 +29,5 @@ RAW_CHEESE_PIE = {
   },
   "category": ItemCategory.FOOD,
   "tag": (ItemTag.BAKE, ItemTag.PIE),
-  "hidden_effect": None,
-  "food": {
-    "nutrition": 8,
-    "saturation": FoodSaturation.POOR,
-    "can_eat": False
-  }
+  "hidden_effect": None
 }

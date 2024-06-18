@@ -50,9 +50,12 @@ class Item(object):
         return self._GetField('quality')
     
     def GetSource(self, sourceType=None):
-        # type: (str | None) -> dict[str, tuple[str, ...]]
-        key = ('source', sourceType) if sourceType else 'source'
-        return self._GetField(key)
+        # type: (str | None) -> dict[str, tuple[str, ...]] | None
+        try:
+            key = ('source', sourceType) if sourceType else 'source'
+            key = ('source', sourceType) if sourceType else 'source'
+        except AddonDataFieldError:
+            return None
     
     def GetCategory(self):
         # type: () -> int

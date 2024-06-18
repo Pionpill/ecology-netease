@@ -1,6 +1,6 @@
 {
   "parent": "simple",
-  "sortnum": 11101,
+  "sortnum": 101,
   "icon": "textures/items/foods/simple/mantou.png",
   "title": "馒头",
   "pages": [

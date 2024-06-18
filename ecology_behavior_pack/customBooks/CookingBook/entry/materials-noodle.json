@@ -1,6 +1,6 @@
 {
   "parent": "materials",
-  "sortnum": 11111,
+  "sortnum": 501,
   "icon": "textures/items/materials/noodle.png",
   "title": "面条",
   "pages": [

@@ -11,12 +11,12 @@ PORK_SAUCE_NOODLES = {
   "hidden_effect": None,
   "food": {
     "nutrition": 8,
-    "saturation": FoodSaturation.NORMAL,
+    "saturation": FoodSaturation.GOOD,
     "can_eat": True,
     "effect": ({
       "name": EffectType.STRENGTH,
       "chance": 1,
-      "duration": 30,
+      "duration": 45,
       "amplifier": 0
     },)
   }

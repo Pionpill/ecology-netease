@@ -39,7 +39,7 @@ class ItemTag(object):
     SAUCES = 'sauces' # 酱料
     FUEL = 'fuel' # 燃料
     RICE = 'rice' # 米饭
-    SIMPLE = 'simple' # 简易食物
+    SIMPLE = 'simple' # 简易食品
     BAKE = 'bake' # 烘焙工艺
     PIE = 'pie' # 派
     RAW = 'raw' # 生食
@@ -70,7 +70,7 @@ class ItemTag(object):
         SAUCES: '酱料',
         FUEL: '燃料',
         RICE: '米饭',
-        SIMPLE: '简易食物',
+        SIMPLE: '简易食品',
         BAKE: '烘焙工艺',
         PIE: '派',
         RAW: '生食',

@@ -11,12 +11,12 @@ MAPO_TOFU = {
   "hidden_effect": None,
   "food": {
     "nutrition": 6,
-    "saturation": FoodSaturation.GOOD,
+    "saturation": FoodSaturation.NORMAL,
     "can_eat": True,
     "effect": ({
       "name": EffectType.SPEED,
       "chance": 1,
-      "duration": 60,
+      "duration": 120,
       "amplifier": 0
     },)
   }

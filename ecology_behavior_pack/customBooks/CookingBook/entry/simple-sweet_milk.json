@@ -1,6 +1,6 @@
 {
   "parent": "simple",
-  "sortnum": 12201,
+  "sortnum": 200,
   "icon": "textures/items/foods/simple/sweet_milk.png",
   "title": "甜牛奶",
   "pages": [

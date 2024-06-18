@@ -2,13 +2,13 @@
   "node_ID": "ham-ecology-food-simple",
   "parent_node": "ham-ecology-food",
   "depend_parent": false,
-  "title": "简易食物",
+  "title": "简易食品",
   "unfinished_icon": "textures/items/foods/simple/bread",
   "finished_icon": "textures/items/foods/simple/bread",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "简易食物",
+  "node_description": "简易食品",
   "reward": [
     {
       "function_name": "",

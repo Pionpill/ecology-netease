@@ -69,6 +69,8 @@ class ItemInfoPage(BaseTextPage):
 
         sourceText = ''
         source = self._item.GetSource()
+        if source is None:
+            return ''
         for (sourceType, sources) in source.items():
             sourceText += "{}: ".format(ItemSource.GetChinese(sourceType))
             cnFunc = cnFuncDict.get(sourceType, self.__GetItemOrBlockCn)
@@ -78,16 +80,17 @@ class ItemInfoPage(BaseTextPage):
         return sourceText
     
     def __GetContentOfFood(self):
+        levelList = ['Ⅰ', 'Ⅱ', 'Ⅲ', 'Ⅳ', 'Ⅴ']
         food = self._item.GetFood()
         foodText = ''
         if food:
             nutrition = food.GetNutrition() if __DEV__ else food.GetEatNutrition()
             if food.CanEat and nutrition != 0:
                 foodText += '饥饿:  X {0}\n'.format(nutrition)
-            effects = food.GetEffects()
-            if effects:
-                cnEffects = [effect.GetChinese() for effect in effects]
-                foodText += '效果: {0}\n'.format('、'.join(cnEffects))
+            effects = food.GetEffects() or []
+            for index, effect in enumerate(effects):
+                foodText += '效果: ' if index == 0 else '      '
+                foodText += effect.GetChinese() + levelList[effect.GetAmplifier()] + ' ' + str(effect.GetDuration()) + 's\n'
         hiddenEffect = self._item.GetHiddenEffects()
         if hiddenEffect:
             cnEffects = [EffectType.GetChinese(effect) for effect in hiddenEffect]

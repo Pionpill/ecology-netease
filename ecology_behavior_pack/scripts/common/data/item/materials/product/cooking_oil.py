@@ -1,7 +1,7 @@
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
 COOKING_OIL = {
-  "quality": ItemQuality.UNCOMMON,
+  "quality": ItemQuality.COMMON,
   "source": {
     ItemSource.WORKBENCH: ("ham:squeezer",),
   },

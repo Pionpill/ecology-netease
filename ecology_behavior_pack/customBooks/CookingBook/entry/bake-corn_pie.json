@@ -1,6 +1,6 @@
 {
   "parent": "bake",
-  "sortnum": 15101,
+  "sortnum": 100,
   "icon": "textures/items/foods/pie/corn_pie.png",
   "title": "玉米派",
   "pages": [

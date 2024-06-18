@@ -1,6 +1,6 @@
 {
   "parent": "simple",
-  "sortnum": 10002,
+  "sortnum": 201,
   "icon": "textures/items/foods/simple/cheese.png",
   "title": "奶酪",
   "pages": [

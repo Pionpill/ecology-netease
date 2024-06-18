@@ -11,7 +11,7 @@ BURGER = {
   "hidden_effect": None,
   "food": {
     "nutrition": 14,
-    "saturation": FoodSaturation.MAX,
+    "saturation": FoodSaturation.GOOD,
     "can_eat": True,
     "effect": (
       {

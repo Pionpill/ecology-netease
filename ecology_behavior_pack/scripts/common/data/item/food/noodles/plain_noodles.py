@@ -1,4 +1,3 @@
-from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
 PLAIN_NOODLES = {

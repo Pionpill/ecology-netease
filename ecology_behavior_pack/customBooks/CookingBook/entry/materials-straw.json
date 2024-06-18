@@ -1,6 +1,6 @@
 {
   "parent": "materials",
-  "sortnum": 10001,
+  "sortnum": 100,
   "icon": "textures/items/materials/straw.png",
   "title": "秸秆",
   "pages": [

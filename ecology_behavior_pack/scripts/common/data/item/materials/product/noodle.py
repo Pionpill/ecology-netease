@@ -7,8 +7,8 @@ NOODLE = {
     ItemSource.WORKBENCH: ("ham:cooking_table",),
   },
   "category": ItemCategory.MATERIAL,
-  "tag": (ItemTag.PRODUCT),
-  "hidden_effect": (EffectType.STRENGTH,),
+  "tag": (ItemTag.PRODUCT,),
+  "hidden_effect": None,
   "food": {
     "nutrition": 3,
     "saturation": FoodSaturation.NORMAL,

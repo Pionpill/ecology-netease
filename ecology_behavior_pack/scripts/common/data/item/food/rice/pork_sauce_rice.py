@@ -16,7 +16,7 @@ PORK_SAUCE_RICE = {
     "effect": ({
       "name": EffectType.STRENGTH,
       "chance": 1,
-      "duration": 45,
+      "duration": 60,
       "amplifier": 0
     },)
   }

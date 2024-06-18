@@ -1,6 +1,6 @@
 {
   "parent": "materials",
-  "sortnum": 12100,
+  "sortnum": 1000,
   "icon": "textures/items/materials/ground_pork.png",
   "title": "肉糜",
   "pages": [

@@ -16,7 +16,7 @@ APPLE_PIE = {
     "effect": ({
         "name": EffectType.REGENERATION,
         "chance": 1,
-        "duration": 60,
+        "duration": 45,
         "amplifier": 0
     },)
   }
@@ -29,10 +29,5 @@ RAW_APPLE_PIE = {
   },
   "category": ItemCategory.FOOD,
   "tag": (ItemTag.BAKE, ItemTag.PIE),
-  "hidden_effect": None,
-  "food": {
-    "nutrition": 10,
-    "saturation": FoodSaturation.POOR,
-    "can_eat": False
-  }
+  "hidden_effect": None
 }
