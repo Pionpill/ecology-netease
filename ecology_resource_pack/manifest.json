@@ -5,7 +5,7 @@
     "description": "锤子工坊生态模组",
     "uuid": "e64d4f9f-d476-4f29-aa2b-ef9e1f8cb9c8",
     "version": [1, 0, 2],
-    "min_engine_version": [1, 16, 0]
+    "min_engine_version": [1, 18, 0]
   },
   "modules": [
     {
