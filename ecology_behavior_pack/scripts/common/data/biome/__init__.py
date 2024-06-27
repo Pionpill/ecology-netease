@@ -128,7 +128,7 @@ BIOME_DATA = {
     "savanna": { 
         "name_cn": "热带草原", 
         "temperature": 24, 
-        "rainfall": 0, 
+        "rainfall": 20, # 0
         "dimension": "overworld",
         "tags": ("savanna") 
     }, 
@@ -184,7 +184,7 @@ BIOME_DATA = {
     "savanna_plateau": { 
         "name_cn": "热带高原", 
         "temperature": 20, 
-        "rainfall": 0, 
+        "rainfall": 20, # 0
         "dimension": "overworld",
         "tags": ("savanna", "plateau") 
     }, 
@@ -205,7 +205,7 @@ BIOME_DATA = {
     "mesa_plateau": { 
         "name_cn": "恶地高原", 
         "temperature": 40, 
-        "rainfall": 0, 
+        "rainfall": 10, # 0
         "dimension": "overworld",
         "tags": ("mesa", "plateau") 
     }, 
@@ -254,7 +254,7 @@ BIOME_DATA = {
     "desert_mutated": { 
         "name_cn": "沙漠湖泊", 
         "temperature": 40, 
-        "rainfall": 0, 
+        "rainfall": 10, # 0
         "dimension": "overworld",
         "tags": ("desert") 
     }, 
@@ -303,7 +303,7 @@ BIOME_DATA = {
     "legacy_frozen_ocean": { 
         "name_cn": "遗产冻洋", 
         "temperature": 12, 
-        "rainfall": 0, 
+        "rainfall": 10, # 0
         "dimension": "overworld",
         "tags": ("frozen", "ocean") 
     }, 
@@ -324,7 +324,7 @@ BIOME_DATA = {
     "mesa": { 
         "name_cn": "恶地", 
         "temperature": 40, 
-        "rainfall": 0, 
+        "rainfall": 10, # 0 
         "dimension": "overworld",
         "tags": ("mesa") 
     }, 
@@ -345,14 +345,14 @@ BIOME_DATA = {
     "savanna_mutated": { 
         "name_cn": "破碎的热带草原", 
         "temperature": 24, 
-        "rainfall": 0, 
+        "rainfall": 20, # 0
         "dimension": "overworld",
         "tags": ("savanna", "mutated") 
     }, 
     "savanna_plateau_mutated": { 
         "name_cn": "破碎的热带高原", 
         "temperature": 20, 
-        "rainfall": 0, 
+        "rainfall": 20, # 0
         "dimension": "overworld",
         "tags": ("savanna", "plateau", "mutated") 
     }, 
@@ -499,7 +499,7 @@ BIOME_DATA = {
     "mesa_plateau_stone": { 
         "name_cn": "繁茂的恶地高原", 
         "temperature": 40, 
-        "rainfall": 0, 
+        "rainfall": 10, # 0
         "dimension": "overworld",
         "tags": ("mesa", "plateau", "rare", "stone") 
     }, 
@@ -555,14 +555,14 @@ BIOME_DATA = {
     "mesa_plateau_stone_mutated": { 
         "name_cn": "繁茂的恶地高原变种", 
         "temperature": 40, 
-        "rainfall": 0, 
+        "rainfall": 10, # 0
         "dimension": "overworld",
         "tags": ("mesa", "plateau", "rare", "mutated", "stone") 
     }, 
     "mesa_plateau_mutated": { 
         "name_cn": "恶地高原变种", 
         "temperature": 40, 
-        "rainfall": 0, 
+        "rainfall": 10, # 0
         "dimension": "overworld",
         "tags": ("mesa", "mutated", "plateau") 
     }, 
@@ -580,9 +580,30 @@ BIOME_DATA = {
         "dimension": "overworld",
         "tags": ("mountains", "cold", "grove") 
     },
+    "deep_dark": {
+        "name_cn": "黑暗之域", 
+        "temperature": 16, 
+        "rainfall": 40, 
+        "dimension": "overworld",
+        "tags": ("overworld") 
+    },
+    "mangrove_swamp": {
+        "name_cn": "红树林沼泽", 
+        "temperature": 16, 
+        "rainfall": 90, 
+        "dimension": "overworld",
+        "tags": ("overworld", "swamp") 
+    },
+    "cherry_grove": {
+        "name_cn": "樱花树林", 
+        "temperature": 10, 
+        "rainfall": 80, 
+        "dimension": "overworld",
+        "tags": ("overworld", "forest") 
+    },
     "overworld": {
         "name_cn": "主世界", 
-        "temperature": 20, 
+        "temperature": 10, 
         "rainfall": 60, 
         "dimension": "overworld",
         "tags": ("overworld") 
