@@ -53,6 +53,9 @@
       },
       "netease:listen_block_remove": {
         "value": true
+      },
+      "netease:custom_tips": {
+        "value": "§f--------------------\n§7压制农作物"
       }
     }
   }

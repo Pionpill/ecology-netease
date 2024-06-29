@@ -53,6 +53,9 @@
       },
       "netease:listen_block_remove": {
         "value": true
+      },
+      "netease:custom_tips": {
+        "value": "§f--------------------\n§7油煎食物，需要放置在炉子上"
       }
     }
   }
