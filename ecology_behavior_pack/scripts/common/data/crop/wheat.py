@@ -5,15 +5,15 @@ WHEAT = {
     "grow": {
         "stage": (
             {
-                "tick": 12,
+                "tick": 17,
                 "height": (8, 32)
             },
             {
-                "tick": 12,
+                "tick": 17,
                 "height": (21, 32)
             },
             {
-                "tick": 13,
+                "tick": 17,
                 "height": (26, 32)
             },
             {
@@ -48,7 +48,7 @@ WHEAT = {
         {
             "name": "ham:wheat_plant",
             "chance": 100,
-            "count": 1.5
+            "count": 2
         },
         {
             "name": "ham:wheat_seeds",

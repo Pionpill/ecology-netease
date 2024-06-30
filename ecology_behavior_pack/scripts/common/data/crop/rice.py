@@ -5,15 +5,15 @@ RICE = {
     "grow": {
         "stage": (
             {
-                "tick": 13,
+                "tick": 25,
                 "height": (12, 32)
             },
             {
-                "tick": 13,
+                "tick": 25,
                 "height": (30, 32)
             },
             {
-                "tick": 14,
+                "tick": 25,
                 "height": (38, 32)
             },
             {
@@ -48,7 +48,7 @@ RICE = {
         {
             "name": "ham:rice_plant",
             "chance": 100,
-            "count": 1.75
+            "count": 3.5
         },
         {
             "name": "ham:rice_seeds",
