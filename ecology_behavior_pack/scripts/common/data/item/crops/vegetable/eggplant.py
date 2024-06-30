@@ -1,10 +1,12 @@
+from scripts.common.enum import BiomeTag
 from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
 EGGPLANT = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.CROP: ("ham:eggplant",)
+    ItemSource.CROP: ("ham:eggplant",),
+    ItemSource.WILD: (BiomeTag.FOREST)
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.VEGETABLE, ItemTag.SOLANUM),

@@ -175,6 +175,9 @@
     "ham:tomato": {
       "textures": "textures/items/crops/vegetable/tomato"
     },
+    "ham:bok_choy": {
+      "textures": "textures/items/crops/vegetable/bok_choy"
+    },
     "ham:tomato_egg_noodles": {
       "textures": "textures/items/foods/noodles/tomato_egg_noodles"
     },

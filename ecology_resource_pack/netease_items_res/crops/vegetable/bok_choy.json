@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:bok_choy"
+    },
+    "components": {
+      "minecraft:icon": "ham:bok_choy",
+      "minecraft:hover_text_color": "white"
+    }
+  }
+}

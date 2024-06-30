@@ -94,7 +94,13 @@
     {
       "group_name": "itemGroup.name.ham.vegetable",
       "icon": "ham:tomato",
-      "list": ["ham:eggplant", "ham:lettuce", "ham:onion", "ham:tomato"]
+      "list": [
+        "ham:eggplant",
+        "ham:lettuce",
+        "ham:bok_choy",
+        "ham:onion",
+        "ham:tomato"
+      ]
     },
     {
       "group_name": "itemGroup.name.ham.mushroom",

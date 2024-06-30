@@ -1,0 +1,22 @@
+{
+  "parent": "vegetable",
+  "sortnum": 202,
+  "icon": "textures/items/crops/vegetable/bok_choy.png",
+  "title": "小青菜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:bok_choy"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:bok_choy"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "小青菜",
+      "itemName": "ham:bok_choy"
+    }
+  ]
+}

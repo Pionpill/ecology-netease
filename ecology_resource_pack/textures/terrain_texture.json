@@ -175,6 +175,15 @@
     "ham:potato_stage_3": {
       "textures": "textures/blocks/crops/potato/potato_stage_3"
     },
+    "ham:bok_choy_leaf_small": {
+      "textures": "textures/blocks/crops/bok_choy/bok_choy_leaf_small"
+    },
+    "ham:bok_choy_leaf_tiny": {
+      "textures": "textures/blocks/crops/bok_choy/bok_choy_leaf_tiny"
+    },
+    "ham:bok_choy_leaf": {
+      "textures": "textures/blocks/crops/bok_choy/bok_choy_leaf"
+    },
     "ham:mix_plank": {
       "textures": "textures/blocks/workbenches/mix_plank"
     },
