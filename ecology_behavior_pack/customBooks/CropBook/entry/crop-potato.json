@@ -1,0 +1,27 @@
+{
+  "parent": "crop",
+  "sortnum": 120,
+  "icon": "textures/items/crops/crop/potato.png",
+  "title": "土豆",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:potato"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:potato"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "土豆",
+      "itemName": "ham:potato"
+    },
+    {
+      "subtitle": "转换为原版土豆",
+      "type": "ham:cookRecipePage",
+      "recipeId": "minecraft:potato"
+    }
+  ]
+}

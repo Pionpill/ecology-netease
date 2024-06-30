@@ -1,7 +1,7 @@
 FRYER_DATA = {
     "minecraft:apple": "minecraft:apple",
     "ham:fries": {
-        "material": "minecraft:potato",
+        "material": "ham:potato",
         "result": "ham:fries",
     },
 }

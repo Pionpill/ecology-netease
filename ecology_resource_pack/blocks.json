@@ -192,6 +192,22 @@
     "netease_model": "ham:tomato_stage_3",
     "sound": "grass"
   },
+  "ham:potato_stage_0": {
+    "netease_model": "ham:potato_stage_0",
+    "sound": "grass"
+  },
+  "ham:potato_stage_1": {
+    "netease_model": "ham:potato_stage_1",
+    "sound": "grass"
+  },
+  "ham:potato_stage_2": {
+    "netease_model": "ham:potato_stage_2",
+    "sound": "grass"
+  },
+  "ham:potato_stage_3": {
+    "netease_model": "ham:potato_stage_3",
+    "sound": "grass"
+  },
   "ham:weed": {
     "netease_model": "ham:weed",
     "sound": "grass",

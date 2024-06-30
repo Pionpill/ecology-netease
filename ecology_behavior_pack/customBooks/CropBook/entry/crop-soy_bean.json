@@ -1,6 +1,6 @@
 {
   "parent": "crop",
-  "sortnum": 103,
+  "sortnum": 110,
   "icon": "textures/items/crops/crop/soy_bean.png",
   "title": "大豆",
   "pages": [

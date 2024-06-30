@@ -10,6 +10,7 @@ from scripts.common.data.crop.rice import RICE
 from scripts.common.data.crop.scallion import SCALLION
 from scripts.common.data.crop.soy_bean import SOYBEAN
 from scripts.common.data.crop.tomato import TOMATO
+from scripts.common.data.crop.potato import POTATO
 from scripts.common.data.crop.weed import WEED
 from scripts.common.data.crop.weed_tall import WEED_TALL
 
@@ -28,6 +29,7 @@ CROP_DATA = {
     "ham:tomato": TOMATO,
     "ham:weed": WEED,
     "ham:weed_tall": WEED_TALL,
+    "ham:potato": POTATO,
 }
 
 __all__ = ['CROP_DATA']

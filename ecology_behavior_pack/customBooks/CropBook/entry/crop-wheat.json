@@ -17,6 +17,11 @@
       "type": "ham:itemInfoPage",
       "subtitle": "小麦",
       "itemName": "ham:wheat_plant"
+    },
+    {
+      "subtitle": "转换为原版小麦",
+      "type": "ham:cookRecipePage",
+      "recipeId": "minecraft:wheat"
     }
   ]
 }

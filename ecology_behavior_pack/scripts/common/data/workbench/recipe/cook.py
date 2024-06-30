@@ -227,4 +227,18 @@ COOK_DATA = {
         "fixed_material": (1, 1, 0, 2),
         "result": "ham:hot_dog", # 12
     },
+    "minecraft:wheat": {
+        "material": {
+            4: "ham:wheat_plant",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": "minecraft:wheat", # 2
+    },
+    "minecraft:potato": {
+        "material": {
+            4: "ham:potato",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": "minecraft:potato", # 2
+    },
 }

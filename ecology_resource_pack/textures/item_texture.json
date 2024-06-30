@@ -169,6 +169,9 @@
     "ham:tofu": {
       "textures": "textures/items/materials/tofu"
     },
+    "ham:potato": {
+      "textures": "textures/items/crops/crop/potato"
+    },
     "ham:tomato": {
       "textures": "textures/items/crops/vegetable/tomato"
     },
