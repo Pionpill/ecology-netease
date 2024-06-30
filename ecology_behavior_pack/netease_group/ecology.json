@@ -99,7 +99,9 @@
         "ham:lettuce",
         "ham:bok_choy",
         "ham:onion",
-        "ham:tomato"
+        "ham:tomato",
+        "ham:white_broccoli",
+        "ham:broccoli"
       ]
     },
     {

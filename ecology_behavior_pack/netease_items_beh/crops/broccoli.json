@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:broccoli",
+      "register_to_create_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:max_stack_size": 32,
+      "minecraft:use_duration": 32,
+      "netease:customtips": {
+        "value": "§f--------------------\n§6§l食材\n§r§3品质: §5\n§r§f--------------------\n§r§7花菜植株极小概率掉落"
+      }
+    }
+  }
+}

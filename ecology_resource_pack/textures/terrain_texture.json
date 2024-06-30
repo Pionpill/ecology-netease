@@ -184,6 +184,21 @@
     "ham:bok_choy_leaf": {
       "textures": "textures/blocks/crops/bok_choy/bok_choy_leaf"
     },
+    "ham:broccoli_branch": {
+      "textures": "textures/blocks/crops/broccoli/broccoli_branch"
+    },
+    "ham:broccoli_leaf_big": {
+      "textures": "textures/blocks/crops/broccoli/broccoli_leaf_big"
+    },
+    "ham:broccoli_leaf_small": {
+      "textures": "textures/blocks/crops/broccoli/broccoli_leaf_small"
+    },
+    "ham:broccoli_leaf_tiny": {
+      "textures": "textures/blocks/crops/broccoli/broccoli_leaf_tiny"
+    },
+    "ham:broccoli_leaf": {
+      "textures": "textures/blocks/crops/broccoli/broccoli_leaf"
+    },
     "ham:mix_plank": {
       "textures": "textures/blocks/workbenches/mix_plank"
     },

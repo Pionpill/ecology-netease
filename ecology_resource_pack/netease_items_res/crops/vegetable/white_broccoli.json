@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:white_broccoli"
+    },
+    "components": {
+      "minecraft:icon": "ham:white_broccoli",
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

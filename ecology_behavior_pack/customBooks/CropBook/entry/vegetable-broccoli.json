@@ -1,0 +1,27 @@
+{
+  "parent": "vegetable",
+  "sortnum": 210,
+  "icon": "textures/items/crops/vegetable/white_broccoli.png",
+  "title": "花菜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:white_broccoli"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:white_broccoli"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "花菜",
+      "itemName": "ham:white_broccoli"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "西兰花",
+      "itemName": "ham:broccoli"
+    }
+  ]
+}

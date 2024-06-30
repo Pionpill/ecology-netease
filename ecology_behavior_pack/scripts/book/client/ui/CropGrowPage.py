@@ -76,7 +76,7 @@ class CropGrowPage(TitlePage):
         for loot in loots:
             itemData = {"item": loot.itemName, "data": 0}
             comp = getattr(self, '_fruitHighlightComp' + str(self.__fruitIndex + 1))
-            if loot.chance == 100 and self.__fruitIndex < 3:
+            if self.__fruitIndex < 3:
                 comp.SetDataBeforeShow([itemData])
                 self.__fruitIndex += 1
                 continue

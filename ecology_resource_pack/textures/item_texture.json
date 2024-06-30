@@ -175,6 +175,12 @@
     "ham:tomato": {
       "textures": "textures/items/crops/vegetable/tomato"
     },
+    "ham:broccoli": {
+      "textures": "textures/items/crops/vegetable/broccoli"
+    },
+    "ham:white_broccoli": {
+      "textures": "textures/items/crops/vegetable/white_broccoli"
+    },
     "ham:bok_choy": {
       "textures": "textures/items/crops/vegetable/bok_choy"
     },
