@@ -5,8 +5,8 @@
       "identifier": "ham:lettuce-scatter_feature"
     },
     "places_feature": "ham:lettuce-block_feature",
-    "iterations": 3,
-    "scatter_chance": 5,
+    "iterations": 2,
+    "scatter_chance": 4,
     "x": {
       "distribution": "uniform",
       "extent": [0, 7]
