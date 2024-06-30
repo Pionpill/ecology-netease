@@ -1,11 +1,11 @@
-from scripts.common.data.item.crops.crop import CORN, RICE_PLANT, SOY_BEAN
+from scripts.common.data.item.crops.crop import CORN, WHEAT_PLANT, RICE_PLANT, SOY_BEAN
 from scripts.common.data.item.crops.fungi import LENTINULA
 from scripts.common.data.item.crops.spices import CHILI, HERB
 from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO
 
 from scripts.common.data.item.materials.fuel import STRAW
 from scripts.common.data.item.materials.ore import SALT
-from scripts.common.data.item.materials.product import BUTTER, COOKING_OIL, DOUGH, FLOUR, GROUND_PORK, NOODLE, SALAD, STARCH, TOFU, RICE
+from scripts.common.data.item.materials.product import BUTTER, COOKING_OIL, DOUGH, FLOUR, GROUND_PORK, NOODLE, SALAD, STARCH, TOFU, RICE, WHEAT
 from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING
 
 from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK, BEEF_PATTIES, RAW_BEEF_PATTIES
@@ -18,6 +18,7 @@ from scripts.common.data.item.food.rice import EGG_FIRED_RICE, PORK_SAUCE_RICE, 
 
 ITEM_DATA = {
     "ham:corn": CORN,
+    "ham:wheat_plant": WHEAT_PLANT,
     "ham:rice_plant": RICE_PLANT,
     "ham:soy_bean": SOY_BEAN,
     "ham:lentinula": LENTINULA,
@@ -43,6 +44,7 @@ ITEM_DATA = {
     "ham:chili_powder": CHILI_POWDER,
     "ham:seasoning": SEASONING,
     "ham:rice": RICE,
+    "ham:wheat": WHEAT,
 
     "ham:cheese": CHEESE,
     "ham:bread": BREAD,

@@ -1,0 +1,22 @@
+{
+  "parent": "crop",
+  "sortnum": 100,
+  "icon": "textures/items/crops/crop/wheat_plant.png",
+  "title": "小麦",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:wheat"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:wheat"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "小麦",
+      "itemName": "ham:wheat_plant"
+    }
+  ]
+}

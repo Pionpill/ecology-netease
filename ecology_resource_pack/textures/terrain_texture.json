@@ -115,6 +115,18 @@
     "ham:rice_stage_3": {
       "textures": "textures/blocks/crops/rice/rice_stage_3"
     },
+    "ham:wheat_stage_0": {
+      "textures": "textures/blocks/crops/wheat/wheat_stage_0"
+    },
+    "ham:wheat_stage_1": {
+      "textures": "textures/blocks/crops/wheat/wheat_stage_1"
+    },
+    "ham:wheat_stage_2": {
+      "textures": "textures/blocks/crops/wheat/wheat_stage_2"
+    },
+    "ham:wheat_stage_3": {
+      "textures": "textures/blocks/crops/wheat/wheat_stage_3"
+    },
     "ham:soy_bean_core": {
       "textures": "textures/blocks/crops/soy_bean/soy_bean_core"
     },

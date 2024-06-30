@@ -1,6 +1,6 @@
 {
   "parent": "crop",
-  "sortnum": 101,
+  "sortnum": 102,
   "icon": "textures/items/crops/crop/corn.png",
   "title": "玉米",
   "pages": [

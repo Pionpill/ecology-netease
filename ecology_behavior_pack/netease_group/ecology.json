@@ -81,7 +81,14 @@
     {
       "group_name": "itemGroup.name.ham.crop",
       "icon": "ham:rice_plant",
-      "list": ["ham:rice_plant", "ham:rice_seeds", "ham:corn", "ham:soy_bean"]
+      "list": [
+        "ham:rice_plant",
+        "ham:rice_seeds",
+        "ham:wheat_plant",
+        "ham:wheat_seeds",
+        "ham:corn",
+        "ham:soy_bean"
+      ]
     },
     {
       "group_name": "itemGroup.name.ham.vegetable",
@@ -103,6 +110,7 @@
       "icon": "ham:rice",
       "list": [
         "ham:rice",
+        "ham:wheat",
         "ham:dough",
         "ham:cooking_oil",
         "ham:flour",

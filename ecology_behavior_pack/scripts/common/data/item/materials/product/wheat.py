@@ -1,13 +1,13 @@
 from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
-RICE_PLANT = {
-  "quality": ItemQuality.UNCOMMON,
+WHEAT = {
+  "quality": ItemQuality.COMMON,
   "source": {
-    ItemSource.CROP: ("ham:rice",)
+    ItemSource.WORKBENCH: ("ham:mill",),
   },
-  "category": ItemCategory.CROPS,
-  "tag": (ItemTag.CROP, ItemTag.CEREAL, ItemTag.WATER),
+  "category": ItemCategory.MATERIAL,
+  "tag": (ItemTag.PRODUCT, ItemTag.WHEAT),
   "hidden_effect": None,
   "food": {
     "nutrition": 3,

@@ -5,6 +5,7 @@ from scripts.common.data.crop.herb import HERB
 from scripts.common.data.crop.lentinula import LENTINULA
 from scripts.common.data.crop.lettuce import LETTUCE
 from scripts.common.data.crop.onion import ONION
+from scripts.common.data.crop.wheat import WHEAT
 from scripts.common.data.crop.rice import RICE
 from scripts.common.data.crop.scallion import SCALLION
 from scripts.common.data.crop.soy_bean import SOYBEAN
@@ -21,6 +22,7 @@ CROP_DATA = {
     "ham:lettuce": LETTUCE,
     "ham:onion": ONION,
     "ham:rice": RICE,
+    "ham:wheat": WHEAT,
     "ham:scallion": SCALLION,
     "ham:soy_bean": SOYBEAN,
     "ham:tomato": TOMATO,

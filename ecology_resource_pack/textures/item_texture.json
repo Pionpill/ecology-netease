@@ -136,6 +136,15 @@
     "ham:rice_seeds": {
       "textures": "textures/items/crops/crop/rice_seeds"
     },
+    "ham:wheat": {
+      "textures": "textures/items/crops/crop/wheat"
+    },
+    "ham:wheat_plant": {
+      "textures": "textures/items/crops/crop/wheat_plant"
+    },
+    "ham:wheat_seeds": {
+      "textures": "textures/items/crops/crop/wheat_seeds"
+    },
     "ham:salad": {
       "textures": "textures/items/materials/salad"
     },

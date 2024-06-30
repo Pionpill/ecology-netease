@@ -10,7 +10,7 @@ RICE = {
   "tag": (ItemTag.PRODUCT, ItemTag.RICE),
   "hidden_effect": None,
   "food": {
-    "nutrition": 4,
+    "nutrition": 3,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": False,
     "effect": None

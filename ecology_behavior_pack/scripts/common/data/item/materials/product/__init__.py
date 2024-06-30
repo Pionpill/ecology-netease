@@ -8,5 +8,6 @@ from scripts.common.data.item.materials.product.salad import SALAD
 from scripts.common.data.item.materials.product.starch import STARCH
 from scripts.common.data.item.materials.product.tofu import TOFU
 from scripts.common.data.item.materials.product.rice import RICE
+from scripts.common.data.item.materials.product.wheat import WHEAT
 
-__all__ = ['BUTTER', 'COOKING_OIL', 'DOUGH', 'FLOUR', 'GROUND_PORK', 'NOODLE', 'SALAD', 'STARCH', 'TOFU', 'RICE']
+__all__ = ['BUTTER', 'COOKING_OIL', 'DOUGH', 'FLOUR', 'GROUND_PORK', 'NOODLE', 'SALAD', 'STARCH', 'TOFU', 'RICE', 'WHEAT']

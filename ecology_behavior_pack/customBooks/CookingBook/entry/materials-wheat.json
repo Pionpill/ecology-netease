@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 300,
+  "icon": "textures/items/crops/crop/wheat.png",
+  "title": "小麦",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:wheat"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:wheat",
+      "subtitle": "制作·石磨"
+    }
+  ]
+}

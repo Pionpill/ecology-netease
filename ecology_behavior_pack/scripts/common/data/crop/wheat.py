@@ -1,23 +1,23 @@
-RICE = {
+WHEAT = {
     "beta": True,
-    "seed": 'ham:rice_seeds',
-    "blockPrefix": 'ham:rice',
+    "seed": 'ham:wheat_seeds',
+    "blockPrefix": 'ham:wheat',
     "grow": {
         "stage": (
             {
-                "tick": 13,
-                "height": (12, 32)
+                "tick": 12,
+                "height": (8, 32)
+            },
+            {
+                "tick": 12,
+                "height": (21, 32)
             },
             {
                 "tick": 13,
+                "height": (26, 32)
+            },
+            {
                 "height": (30, 32)
-            },
-            {
-                "tick": 14,
-                "height": (38, 32)
-            },
-            {
-                "height": (42, 32)
             }
         ),
         "harvest": {
@@ -25,11 +25,11 @@ RICE = {
             "stage": 3
         },
         "temperature": {
-            "suit": (20, 35),
-            "can": (10, 40)
+            "suit": (10, 25),
+            "can": (0, 30)
         },
         "rainfall": {
-            "suit": (40, 100),
+            "suit": (40, 80),
             "can": (20, 100)
         },
         "brightness": {
@@ -37,21 +37,21 @@ RICE = {
             "can": (5, 15)
         },
         "fertility": {
-            "min": 120,
-            "sensitivity": 130,
+            "min": 90,
+            "sensitivity": 100,
             "type": ["dirt"]
         },
-        "rain_multiply": 2,
+        "rain_multiply": 1.5,
         "period": "sun"
     },
     "loot": (
         {
-            "name": "ham:rice_plant",
+            "name": "ham:wheat_plant",
             "chance": 100,
-            "count": 1.75
+            "count": 1.5
         },
         {
-            "name": "ham:rice_seeds",
+            "name": "ham:wheat_seeds",
             "chance": 100,
             "count": 1.5
         },

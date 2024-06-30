@@ -1,0 +1,103 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "cubes": [
+          {
+            "origin": [-17, -1, 5],
+            "pivot": [-9, 7, 5],
+            "rotation": [0, 0, 0],
+            "size": [16, 16, 0],
+            "uv": {
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-15, -1, 9],
+            "pivot": [-7, 7, 9],
+            "rotation": [0, 60, 0],
+            "size": [16, 16, 0],
+            "uv": {
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-19, -1, 9],
+            "pivot": [-11, 7, 9],
+            "rotation": [0, -60, 0],
+            "size": [16, 16, 0],
+            "uv": {
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-23, -1, 6],
+            "pivot": [-15, 7, 6],
+            "rotation": [0, 102.5, 0],
+            "size": [10, 12, 0],
+            "uv": {
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [20, 24]
+              }
+            }
+          },
+          {
+            "origin": [-8.608421423339845, -1, 9.974334584121433],
+            "pivot": [-4.608421423339847, 7, 9.974334584121433],
+            "rotation": [0, 7.5, 0],
+            "size": [9.0, 12, 0.0],
+            "uv": {
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [18, 24]
+              }
+            }
+          },
+          {
+            "origin": [-15.108421423339845, -1, 2.9743345841214337],
+            "pivot": [-9.608421423339847, 7, 2.974334584121433],
+            "rotation": [0, -105, 0],
+            "size": [10.5, 12, 0.0],
+            "uv": {
+              "south": {
+                "texture": 0,
+                "uv": [11, 0],
+                "uv_size": [21, 24]
+              }
+            }
+          }
+        ],
+        "name": "root",
+        "pivot": [-9, 7, 9],
+        "rotation": [0, -45, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:wheat_stage_1",
+      "textures": ["ham:wheat_stage_1"],
+      "textures_descriptions": [
+        {
+          "length": 32,
+          "width": 32
+        }
+      ],
+      "use_ao": true
+    }
+  }
+}

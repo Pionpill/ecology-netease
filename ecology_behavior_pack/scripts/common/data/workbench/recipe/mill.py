@@ -26,7 +26,17 @@ MILL_DATA = {
         "result": {
             0: {
                 "newItemName": "ham:rice",
-                "count": 2,
+                "count": 1,
+            },
+            1: "ham:straw",
+        }
+    },
+    "ham:wheat": {
+        "material": "ham:wheat_plant",
+        "result": {
+            0: {
+                "newItemName": "ham:wheat",
+                "count": 1,
             },
             1: "ham:straw",
         }
@@ -39,7 +49,7 @@ MILL_DATA = {
         }
     },
     "ham:flour": {
-        "material": "minecraft:wheat",
+        "material": "ham:wheat",
         "result": {
             "newItemName": "ham:flour",
             "count": 1,
