@@ -1,7 +1,7 @@
 BROCCOLI = {
     "beta": True,
     "seed": 'ham:white_broccoli',
-    "blockPrefix": 'ham:broccoli',
+    "blockPrefix": 'ham:white_broccoli',
     "grow": {
         "stage": (
             {
