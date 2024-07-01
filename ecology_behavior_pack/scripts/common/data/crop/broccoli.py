@@ -30,7 +30,7 @@ BROCCOLI = {
         },
         "rainfall": {
             "suit": (60, 80),
-            "can": (40, 100)
+            "can": (30, 100)
         },
         "brightness": {
             "suit": (9, 15),
