@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:button_mushroom"
+    },
+    "components": {
+      "minecraft:icon": "ham:button_mushroom",
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

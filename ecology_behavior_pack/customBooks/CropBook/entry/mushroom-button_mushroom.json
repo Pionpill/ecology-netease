@@ -1,0 +1,22 @@
+{
+  "parent": "mushroom",
+  "sortnum": 301,
+  "icon": "textures/items/crops/mushroom/button_mushroom.png",
+  "title": "口菇",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:button_mushroom"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:button_mushroom"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "口菇",
+      "itemName": "ham:button_mushroom"
+    }
+  ]
+}

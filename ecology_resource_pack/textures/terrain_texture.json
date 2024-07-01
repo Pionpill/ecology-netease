@@ -100,6 +100,9 @@
     "ham:lentinula_core": {
       "textures": "textures/blocks/crops/lentinula/lentinula_core"
     },
+    "ham:button_mushroom_core": {
+      "textures": "textures/blocks/crops/button_mushroom/button_mushroom_core"
+    },
     "ham:rice_leaf": {
       "textures": "textures/blocks/crops/rice/rice_leaf"
     },

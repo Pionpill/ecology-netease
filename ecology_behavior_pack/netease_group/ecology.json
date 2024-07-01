@@ -107,7 +107,7 @@
     {
       "group_name": "itemGroup.name.ham.mushroom",
       "icon": "ham:lentinula",
-      "list": ["ham:lentinula"]
+      "list": ["ham:lentinula", "ham:button_mushroom"]
     },
     {
       "group_name": "itemGroup.name.ham.seasoning",

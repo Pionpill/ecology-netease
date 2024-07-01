@@ -3,6 +3,7 @@ from scripts.common.data.crop.corn import CORN
 from scripts.common.data.crop.eggplant import EGGPLANT
 from scripts.common.data.crop.herb import HERB
 from scripts.common.data.crop.lentinula import LENTINULA
+from scripts.common.data.crop.button_mushroom import BUTTON_MUSHROOM
 from scripts.common.data.crop.lettuce import LETTUCE
 from scripts.common.data.crop.onion import ONION
 from scripts.common.data.crop.wheat import WHEAT
@@ -22,6 +23,7 @@ CROP_DATA = {
     "ham:corn": CORN,
     "ham:eggplant": EGGPLANT,
     "ham:lentinula": LENTINULA,
+    "ham:button_mushroom": BUTTON_MUSHROOM,
     "ham:lettuce": LETTUCE,
     "ham:onion": ONION,
     "ham:rice": RICE,

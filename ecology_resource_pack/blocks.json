@@ -132,6 +132,22 @@
     "netease_model": "ham:lentinula_stage_3",
     "sound": "grass"
   },
+  "ham:button_mushroom_stage_0": {
+    "netease_model": "ham:button_mushroom_stage_0",
+    "sound": "grass"
+  },
+  "ham:button_mushroom_stage_1": {
+    "netease_model": "ham:button_mushroom_stage_1",
+    "sound": "grass"
+  },
+  "ham:button_mushroom_stage_2": {
+    "netease_model": "ham:button_mushroom_stage_2",
+    "sound": "grass"
+  },
+  "ham:button_mushroom_stage_3": {
+    "netease_model": "ham:button_mushroom_stage_3",
+    "sound": "grass"
+  },
   "ham:soy_bean_stage_0": {
     "netease_model": "ham:soy_bean_stage_0",
     "sound": "grass"

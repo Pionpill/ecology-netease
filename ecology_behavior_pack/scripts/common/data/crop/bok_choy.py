@@ -1,5 +1,5 @@
 BOK_CHOY = {
-    "beta": True,
+    "beta": False,
     "seed": 'ham:bok_choy',
     "blockPrefix": 'ham:bok_choy',
     "grow": {

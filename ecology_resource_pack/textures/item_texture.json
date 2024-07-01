@@ -163,6 +163,9 @@
     "ham:lentinula": {
       "textures": "textures/items/crops/mushroom/lentinula"
     },
+    "ham:button_mushroom": {
+      "textures": "textures/items/crops/mushroom/button_mushroom"
+    },
     "ham:soy_bean": {
       "textures": "textures/items/crops/crop/soy_bean"
     },

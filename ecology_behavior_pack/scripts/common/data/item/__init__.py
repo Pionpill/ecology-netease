@@ -1,5 +1,5 @@
 from scripts.common.data.item.crops.crop import CORN, WHEAT_PLANT, RICE_PLANT, SOY_BEAN, POTATO
-from scripts.common.data.item.crops.fungi import LENTINULA
+from scripts.common.data.item.crops.fungi import LENTINULA, BUTTON_MUSHROOM
 from scripts.common.data.item.crops.spices import CHILI, HERB
 from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO, BOK_CHOY, BROCCOLI, WHITE_BROCCOLI
 
@@ -23,6 +23,7 @@ ITEM_DATA = {
     "ham:soy_bean": SOY_BEAN,
     "ham:potato": POTATO,
     "ham:lentinula": LENTINULA,
+    "ham:button_mushroom": BUTTON_MUSHROOM,
     "ham:chili": CHILI,
     "ham:herb": HERB,
     "ham:eggplant": EGGPLANT,
