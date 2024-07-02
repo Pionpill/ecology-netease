@@ -58,6 +58,9 @@
     "ham:eggplant": {
       "textures": "textures/items/crops/vegetable/eggplant"
     },
+    "ham:cabbage": {
+      "textures": "textures/items/crops/vegetable/cabbage"
+    },
     "ham:flour": {
       "textures": "textures/items/materials/flour"
     },

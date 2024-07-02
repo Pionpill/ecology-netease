@@ -14,7 +14,7 @@ BROCCOLI = {
   "food": {
     "nutrition": 0.5,
     "saturation": FoodSaturation.POOR,
-    "can_eat": True
+    "can_eat": False
   }
 }
 
@@ -30,6 +30,6 @@ WHITE_BROCCOLI = {
   "food": {
     "nutrition": 0.5,
     "saturation": FoodSaturation.POOR,
-    "can_eat": True
+    "can_eat": False
   }
 }

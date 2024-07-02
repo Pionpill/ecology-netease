@@ -1,0 +1,22 @@
+{
+  "parent": "vegetable",
+  "sortnum": 211,
+  "icon": "textures/items/crops/vegetable/cabbage.png",
+  "title": "卷心菜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:cabbage"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:cabbage"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "卷心菜",
+      "itemName": "ham:cabbage"
+    }
+  ]
+}

@@ -14,6 +14,7 @@ from scripts.common.data.crop.tomato import TOMATO
 from scripts.common.data.crop.potato import POTATO
 from scripts.common.data.crop.bok_choy import BOK_CHOY
 from scripts.common.data.crop.broccoli import BROCCOLI
+from scripts.common.data.crop.cabbage import CABBAGE
 from scripts.common.data.crop.weed import WEED
 from scripts.common.data.crop.weed_tall import WEED_TALL
 
@@ -36,6 +37,7 @@ CROP_DATA = {
     "ham:potato": POTATO,
     "ham:bok_choy": BOK_CHOY,
     "ham:white_broccoli": BROCCOLI,
+    "ham:cabbage": CABBAGE,
 }
 
 __all__ = ['CROP_DATA']

@@ -1,7 +1,7 @@
 from scripts.common.data.item.crops.crop import CORN, WHEAT_PLANT, RICE_PLANT, SOY_BEAN, POTATO
 from scripts.common.data.item.crops.fungi import LENTINULA, BUTTON_MUSHROOM
 from scripts.common.data.item.crops.spices import CHILI, HERB
-from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO, BOK_CHOY, BROCCOLI, WHITE_BROCCOLI
+from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO, BOK_CHOY, BROCCOLI, WHITE_BROCCOLI, CABBAGE
 
 from scripts.common.data.item.materials.fuel import STRAW
 from scripts.common.data.item.materials.ore import SALT
@@ -50,6 +50,7 @@ ITEM_DATA = {
     "ham:wheat": WHEAT,
     "ham:broccoli": BROCCOLI,
     "ham:white_broccoli": WHITE_BROCCOLI,
+    "ham:cabbage": CABBAGE,
 
     "ham:cheese": CHEESE,
     "ham:bread": BREAD,
