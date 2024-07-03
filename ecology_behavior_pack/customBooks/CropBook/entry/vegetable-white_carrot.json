@@ -1,0 +1,22 @@
+{
+  "parent": "vegetable",
+  "sortnum": 221,
+  "icon": "textures/items/crops/vegetable/white_carrot.png",
+  "title": "白萝卜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:white_carrot"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:white_carrot"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "白萝卜",
+      "itemName": "ham:white_carrot"
+    }
+  ]
+}

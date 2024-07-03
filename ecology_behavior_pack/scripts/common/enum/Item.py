@@ -47,6 +47,7 @@ class ItemTag(object):
     BURGER = 'burger' # 汉堡
     FRY = 'fry' # 炒菜
     NOODLE = 'noodle' # 面食
+    CARROT = 'carrot' # 萝卜
 
     cnNameDict = {
         CROP: '粮食',
@@ -78,6 +79,7 @@ class ItemTag(object):
         BURGER: '汉堡',
         FRY: '炒菜',
         NOODLE: '面食',
+        CARROT: '萝卜',
     }
 
     @staticmethod

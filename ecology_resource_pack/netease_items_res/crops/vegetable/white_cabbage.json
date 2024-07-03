@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:white_cabbage"
+    },
+    "components": {
+      "minecraft:icon": "ham:white_cabbage",
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

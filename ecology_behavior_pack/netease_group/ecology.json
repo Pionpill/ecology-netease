@@ -102,7 +102,10 @@
         "ham:tomato",
         "ham:white_broccoli",
         "ham:broccoli",
-        "ham:cabbage"
+        "ham:cabbage",
+        "ham:white_cabbage",
+        "ham:carrot",
+        "ham:white_carrot"
       ]
     },
     {

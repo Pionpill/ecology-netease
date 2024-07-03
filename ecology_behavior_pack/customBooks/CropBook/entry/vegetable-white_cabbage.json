@@ -1,0 +1,22 @@
+{
+  "parent": "vegetable",
+  "sortnum": 212,
+  "icon": "textures/items/crops/vegetable/white_cabbage.png",
+  "title": "大白菜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:white_cabbage"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:white_cabbage"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "大白菜",
+      "itemName": "ham:white_cabbage"
+    }
+  ]
+}

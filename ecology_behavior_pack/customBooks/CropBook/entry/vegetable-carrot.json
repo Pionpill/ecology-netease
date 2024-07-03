@@ -1,0 +1,27 @@
+{
+  "parent": "vegetable",
+  "sortnum": 220,
+  "icon": "textures/items/crops/vegetable/carrot.png",
+  "title": "胡萝卜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:carrot"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:carrot"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "胡萝卜",
+      "itemName": "ham:carrot"
+    },
+    {
+      "subtitle": "转换为原版胡萝卜",
+      "type": "ham:cookRecipePage",
+      "recipeId": "minecraft:carrot"
+    }
+  ]
+}

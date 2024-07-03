@@ -241,4 +241,11 @@ COOK_DATA = {
         "fixed_material": (0, 0, 0, 0),
         "result": "minecraft:potato", # 2
     },
+    "minecraft:carrot": {
+        "material": {
+            4: "ham:carrot",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": "minecraft:carrot", # 1.5
+    },
 }

@@ -3,7 +3,7 @@ from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
 CABBAGE = {
-  "quality": ItemQuality.COMMON,
+  "quality": ItemQuality.UNCOMMON,
   "source": {
     ItemSource.CROP: ("ham:cabbage",),
     ItemSource.WILD: (BiomeTag.PLAINS,),
@@ -14,6 +14,6 @@ CABBAGE = {
   "food": {
     "nutrition": 1,
     "saturation": FoodSaturation.POOR,
-    "can_eat": False
+    "can_eat": True
   }
 }

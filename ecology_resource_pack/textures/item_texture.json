@@ -181,6 +181,15 @@
     "ham:tomato": {
       "textures": "textures/items/crops/vegetable/tomato"
     },
+    "ham:carrot": {
+      "textures": "textures/items/crops/vegetable/carrot"
+    },
+    "ham:white_cabbage": {
+      "textures": "textures/items/crops/vegetable/white_cabbage"
+    },
+    "ham:white_carrot": {
+      "textures": "textures/items/crops/vegetable/white_carrot"
+    },
     "ham:broccoli": {
       "textures": "textures/items/crops/vegetable/broccoli"
     },
