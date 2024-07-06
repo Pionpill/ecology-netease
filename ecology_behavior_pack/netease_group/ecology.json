@@ -88,6 +88,8 @@
         "ham:wheat_seeds",
         "ham:corn",
         "ham:soy_bean",
+        "ham:red_bean",
+        "ham:green_bean",
         "ham:potato"
       ]
     },

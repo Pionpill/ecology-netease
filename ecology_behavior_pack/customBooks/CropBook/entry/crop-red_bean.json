@@ -1,0 +1,22 @@
+{
+  "parent": "crop",
+  "sortnum": 111,
+  "icon": "textures/items/crops/crop/red_bean.png",
+  "title": "红豆",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:red_bean"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:red_bean"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "红豆",
+      "itemName": "ham:red_bean"
+    }
+  ]
+}

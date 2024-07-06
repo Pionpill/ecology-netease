@@ -1,0 +1,22 @@
+{
+  "parent": "crop",
+  "sortnum": 112,
+  "icon": "textures/items/crops/crop/green_bean.png",
+  "title": "绿豆",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:green_bean"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:green_bean"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "绿豆",
+      "itemName": "ham:green_bean"
+    }
+  ]
+}

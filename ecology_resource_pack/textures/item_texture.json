@@ -184,6 +184,12 @@
     "ham:soy_bean": {
       "textures": "textures/items/crops/crop/soy_bean"
     },
+    "ham:red_bean": {
+      "textures": "textures/items/crops/crop/red_bean"
+    },
+    "ham:green_bean": {
+      "textures": "textures/items/crops/crop/green_bean"
+    },
     "ham:tofu": {
       "textures": "textures/items/materials/tofu"
     },

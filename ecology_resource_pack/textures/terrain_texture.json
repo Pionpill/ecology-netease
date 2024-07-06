@@ -163,6 +163,30 @@
     "ham:soy_bean_stage_3": {
       "textures": "textures/blocks/crops/soy_bean/soy_bean_stage_3"
     },
+    "ham:red_bean_core": {
+      "textures": "textures/blocks/crops/red_bean/red_bean_core"
+    },
+    "ham:red_bean_stage_1": {
+      "textures": "textures/blocks/crops/red_bean/red_bean_stage_1"
+    },
+    "ham:red_bean_stage_2": {
+      "textures": "textures/blocks/crops/red_bean/red_bean_stage_2"
+    },
+    "ham:red_bean_stage_3": {
+      "textures": "textures/blocks/crops/red_bean/red_bean_stage_3"
+    },
+    "ham:green_bean_core": {
+      "textures": "textures/blocks/crops/green_bean/green_bean_core"
+    },
+    "ham:green_bean_stage_1": {
+      "textures": "textures/blocks/crops/green_bean/green_bean_stage_1"
+    },
+    "ham:green_bean_stage_2": {
+      "textures": "textures/blocks/crops/green_bean/green_bean_stage_2"
+    },
+    "ham:green_bean_stage_3": {
+      "textures": "textures/blocks/crops/green_bean/green_bean_stage_3"
+    },
     "ham:scallion_core": {
       "textures": "textures/blocks/crops/scallion/scallion_core"
     },

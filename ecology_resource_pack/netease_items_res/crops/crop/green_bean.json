@@ -2,10 +2,10 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:soy_bean"
+      "identifier": "ham:green_bean"
     },
     "components": {
-      "minecraft:icon": "ham:soy_bean",
+      "minecraft:icon": "ham:green_bean",
       "minecraft:hover_text_color": "yellow"
     }
   }

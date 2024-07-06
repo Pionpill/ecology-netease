@@ -22,6 +22,8 @@ from scripts.common.data.crop.carrot import CARROT
 from scripts.common.data.crop.white_carrot import WHITE_CARROT
 from scripts.common.data.crop.cabbage import CABBAGE
 from scripts.common.data.crop.white_cabbage import WHITE_CABBAGE
+from scripts.common.data.crop.green_bean import GREEN_BEAN
+from scripts.common.data.crop.red_bean import RED_BEAN
 from scripts.common.data.crop.weed import WEED
 from scripts.common.data.crop.weed_tall import WEED_TALL
 
@@ -42,6 +44,8 @@ CROP_DATA = {
     "ham:wheat": WHEAT,
     "ham:scallion": SCALLION,
     "ham:soy_bean": SOYBEAN,
+    "ham:green_bean": GREEN_BEAN,
+    "ham:red_bean": RED_BEAN,
     "ham:tomato": TOMATO,
     "ham:weed": WEED,
     "ham:weed_tall": WEED_TALL,
