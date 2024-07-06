@@ -45,11 +45,21 @@ MATSUTAKE = {
         "rain_multiply": 1,
         "period": "none",
     },
-    "loot": (
-        {
+    "loot": {
+        1: {
+            "name": "ham:matsutake",
+            "chance": 100,
+            "count": 2
+        },
+        2: {
+            "name": "ham:matsutake",
+            "chance": 100,
+            "count": 4
+        },
+        3: {
             "name": "ham:matsutake",
             "chance": 100,
             "count": 7
         },
-    )
+    }
 }

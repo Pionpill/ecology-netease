@@ -45,11 +45,16 @@ BUTTON_MUSHROOM = {
         "rain_multiply": 2,
         "period": "none",
     },
-    "loot": (
-        {
+    "loot": {
+        2: {
+            "name": "ham:button_mushroom",
+            "chance": 100,
+            "count": 2
+        },
+        3: {
             "name": "ham:button_mushroom",
             "chance": 100,
             "count": 4
         },
-    )
+    }
 }

@@ -41,11 +41,16 @@ DICTYOPHORA = {
         "rain_multiply": 1,
         "period": "none",
     },
-    "loot": (
-        {
+    "loot": {
+        1: {
+            "name": "ham:dictyophora",
+            "chance": 100,
+            "count": 2
+        },
+        2: {
             "name": "ham:dictyophora",
             "chance": 100,
             "count": 5
         },
-    )
+    }
 }
