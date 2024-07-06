@@ -1,0 +1,22 @@
+{
+  "parent": "mushroom",
+  "sortnum": 305,
+  "icon": "textures/items/crops/mushroom/dictyophora.png",
+  "title": "竹荪",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:dictyophora"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:dictyophora"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "竹荪",
+      "itemName": "ham:dictyophora"
+    }
+  ]
+}

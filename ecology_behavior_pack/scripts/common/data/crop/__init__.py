@@ -4,6 +4,10 @@ from scripts.common.data.crop.eggplant import EGGPLANT
 from scripts.common.data.crop.herb import HERB
 from scripts.common.data.crop.lentinula import LENTINULA
 from scripts.common.data.crop.button_mushroom import BUTTON_MUSHROOM
+from scripts.common.data.crop.dictyophora import DICTYOPHORA
+from scripts.common.data.crop.enoki import ENOKI
+from scripts.common.data.crop.matsutake import MATSUTAKE
+from scripts.common.data.crop.wood_ear import WOOD_EAR
 from scripts.common.data.crop.lettuce import LETTUCE
 from scripts.common.data.crop.onion import ONION
 from scripts.common.data.crop.wheat import WHEAT
@@ -28,6 +32,10 @@ CROP_DATA = {
     "ham:eggplant": EGGPLANT,
     "ham:lentinula": LENTINULA,
     "ham:button_mushroom": BUTTON_MUSHROOM,
+    "ham:dictyophora": DICTYOPHORA,
+    "ham:enoki": ENOKI,
+    "ham:matsutake": MATSUTAKE,
+    "ham:wood_ear": WOOD_EAR,
     "ham:lettuce": LETTUCE,
     "ham:onion": ONION,
     "ham:rice": RICE,

@@ -1,0 +1,22 @@
+{
+  "parent": "mushroom",
+  "sortnum": 304,
+  "icon": "textures/items/crops/mushroom/wood_ear.png",
+  "title": "木耳",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:wood_ear"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:wood_ear"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "木耳",
+      "itemName": "ham:wood_ear"
+    }
+  ]
+}

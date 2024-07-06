@@ -111,7 +111,14 @@
     {
       "group_name": "itemGroup.name.ham.mushroom",
       "icon": "ham:lentinula",
-      "list": ["ham:lentinula", "ham:button_mushroom"]
+      "list": [
+        "ham:lentinula",
+        "ham:button_mushroom",
+        "ham:dictyophora",
+        "ham:enoki",
+        "ham:matsutake",
+        "ham:wood_ear"
+      ]
     },
     {
       "group_name": "itemGroup.name.ham.seasoning",

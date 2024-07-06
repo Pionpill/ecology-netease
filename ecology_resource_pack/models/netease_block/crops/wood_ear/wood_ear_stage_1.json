@@ -1,0 +1,301 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "name": "fungus",
+        "pivot": [-8, 0, 8],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-12.0, 3, 3],
+            "pivot": [-11, 3, 3],
+            "rotation": [0, -90, 0],
+            "size": [3.5, 1, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3.5, 1]
+              }
+            }
+          },
+          {
+            "origin": [-11.25, 0.5, 5.75],
+            "pivot": [-9.5, 1, 5.75],
+            "rotation": [0, -89.9999982924527, 90],
+            "size": [3.5, 1.0, 0.0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3.5, 1]
+              }
+            }
+          },
+          {
+            "origin": [-11.25, 1.5, 10.75],
+            "pivot": [-9.5, 2, 10.75],
+            "rotation": [0, -89.9999982924527, 90],
+            "size": [3.5, 1.0, 0.0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3.5, 1]
+              }
+            }
+          },
+          {
+            "origin": [-15.25, 1.5, 11.75],
+            "pivot": [-13.5, 2, 11.75],
+            "rotation": [0, -89.99999879258174, -89.99999999999989],
+            "size": [3.5, 1.0, 0.0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3.5, 1]
+              }
+            }
+          },
+          {
+            "origin": [-15.25, 0.5, 4.75],
+            "pivot": [-13.5, 1, 4.75],
+            "rotation": [0, -89.99999879258174, -89.99999999999989],
+            "size": [3.5, 2.0, 0.0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 2.5],
+                "uv_size": [3.5, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-13.0, 3, 12],
+            "pivot": [-12, 3, 12],
+            "rotation": [0, -90, 0],
+            "size": [3.5, 1, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3.5, 1]
+              }
+            }
+          },
+          {
+            "origin": [-12.5, 3, 7.5],
+            "pivot": [-11.5, 3, 7.5],
+            "rotation": [0, -90, 0],
+            "size": [3.5, 2, 0.0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 2.5],
+                "uv_size": [3.5, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-13, 0, 0],
+            "pivot": [-16, 0, 16],
+            "rotation": [0, 0, 0],
+            "size": [3, 3, 16],
+            "uv": {
+              "down": {
+                "texture": 1,
+                "uv": [3, 0],
+                "uv_size": [-3, 16]
+              },
+              "east": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              },
+              "north": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "south": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "up": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [3, 16]
+              },
+              "west": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              }
+            }
+          }
+        ],
+        "name": "left",
+        "parent": "fungus",
+        "pivot": [-8, 0, 8],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-6, 0, 0],
+            "pivot": [-16, 0, 16],
+            "rotation": [0, 0, 0],
+            "size": [3, 3, 16],
+            "uv": {
+              "down": {
+                "texture": 1,
+                "uv": [3, 0],
+                "uv_size": [-3, 16]
+              },
+              "east": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              },
+              "north": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "south": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [3, 3]
+              },
+              "up": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [3, 16]
+              },
+              "west": {
+                "texture": 1,
+                "uv": [0, 0],
+                "uv_size": [16, 3]
+              }
+            }
+          },
+          {
+            "origin": [-5.0, 3, 3],
+            "pivot": [-4, 3, 3],
+            "rotation": [0, -90, 0],
+            "size": [3.5, 2, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 2.5],
+                "uv_size": [3.5, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-4.25, 0.5, 5.75],
+            "pivot": [-2.5, 1, 5.75],
+            "rotation": [0, -89.9999982924527, 90],
+            "size": [3.5, 1.0, 0.0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3.5, 1]
+              }
+            }
+          },
+          {
+            "origin": [-4.25, 1.5, 10.75],
+            "pivot": [-2.5, 2, 10.75],
+            "rotation": [0, -89.9999982924527, 90],
+            "size": [3.5, 1.0, 0.0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3.5, 1]
+              }
+            }
+          },
+          {
+            "origin": [-8.25, 1.5, 11.75],
+            "pivot": [-6.5, 2, 11.75],
+            "rotation": [0, -89.99999879258174, -89.99999999999989],
+            "size": [3.5, 2.0, 0.0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 2.5],
+                "uv_size": [3.5, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-8.25, 0.5, 4.75],
+            "pivot": [-6.5, 1, 4.75],
+            "rotation": [0, -89.99999879258174, -89.99999999999989],
+            "size": [3.5, 1.0, 0.0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3.5, 1]
+              }
+            }
+          },
+          {
+            "origin": [-6.0, 3, 12],
+            "pivot": [-5, 3, 12],
+            "rotation": [0, -90, 0],
+            "size": [3.5, 2, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 2.5],
+                "uv_size": [3.5, 2.0]
+              }
+            }
+          },
+          {
+            "origin": [-5.5, 3, 7.5],
+            "pivot": [-4.5, 3, 7.5],
+            "rotation": [0, -90, 0],
+            "size": [3.5, 1, 0.0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [3.5, 1]
+              }
+            }
+          }
+        ],
+        "name": "right",
+        "parent": "fungus",
+        "pivot": [-16, 0, 16],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:wood_ear_stage_1",
+      "textures": ["ham:wood_ear", "ham:rotten_wood"],
+      "textures_descriptions": [
+        {
+          "length": 8,
+          "width": 8
+        },
+        {
+          "length": 32,
+          "width": 32
+        }
+      ],
+      "use_ao": true
+    }
+  }
+}

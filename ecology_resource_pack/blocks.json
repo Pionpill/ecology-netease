@@ -304,6 +304,58 @@
     "netease_model": "ham:white_broccoli_stage_3",
     "sound": "grass"
   },
+  "ham:matsutake_stage_0": {
+    "netease_model": "ham:matsutake_stage_0",
+    "sound": "grass"
+  },
+  "ham:matsutake_stage_1": {
+    "netease_model": "ham:matsutake_stage_1",
+    "sound": "grass"
+  },
+  "ham:matsutake_stage_2": {
+    "netease_model": "ham:matsutake_stage_2",
+    "sound": "grass"
+  },
+  "ham:matsutake_stage_3": {
+    "netease_model": "ham:matsutake_stage_3",
+    "sound": "grass"
+  },
+  "ham:dictyophora_stage_0": {
+    "netease_model": "ham:dictyophora_stage_0",
+    "sound": "grass"
+  },
+  "ham:dictyophora_stage_1": {
+    "netease_model": "ham:dictyophora_stage_1",
+    "sound": "grass"
+  },
+  "ham:dictyophora_stage_2": {
+    "netease_model": "ham:dictyophora_stage_2",
+    "sound": "grass"
+  },
+  "ham:wood_ear_stage_0": {
+    "netease_model": "ham:wood_ear_stage_0",
+    "sound": "grass"
+  },
+  "ham:wood_ear_stage_1": {
+    "netease_model": "ham:wood_ear_stage_1",
+    "sound": "grass"
+  },
+  "ham:wood_ear_stage_2": {
+    "netease_model": "ham:wood_ear_stage_2",
+    "sound": "grass"
+  },
+  "ham:enoki_stage_0": {
+    "netease_model": "ham:enoki_stage_0",
+    "sound": "grass"
+  },
+  "ham:enoki_stage_1": {
+    "netease_model": "ham:enoki_stage_1",
+    "sound": "grass"
+  },
+  "ham:enoki_stage_2": {
+    "netease_model": "ham:enoki_stage_2",
+    "sound": "grass"
+  },
   "ham:bok_choy_stage_0": {
     "netease_model": "ham:bok_choy_stage_0",
     "sound": "grass"

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "ham:dictyophora-scatter_feature"
+    },
+    "places_feature": "ham:dictyophora-block_feature",
+    "iterations": 1,
+    "scatter_chance": 3,
+    "x": {
+      "distribution": "uniform",
+      "extent": [0, 7]
+    },
+    "y": 0,
+    "z": {
+      "distribution": "uniform",
+      "extent": [0, 7]
+    }
+  }
+}

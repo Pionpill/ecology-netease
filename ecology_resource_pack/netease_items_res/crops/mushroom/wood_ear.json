@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:wood_ear"
+    },
+    "components": {
+      "minecraft:icon": "ham:wood_ear",
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

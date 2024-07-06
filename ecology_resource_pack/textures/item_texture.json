@@ -169,6 +169,18 @@
     "ham:button_mushroom": {
       "textures": "textures/items/crops/mushroom/button_mushroom"
     },
+    "ham:dictyophora": {
+      "textures": "textures/items/crops/mushroom/dictyophora"
+    },
+    "ham:enoki": {
+      "textures": "textures/items/crops/mushroom/enoki"
+    },
+    "ham:matsutake": {
+      "textures": "textures/items/crops/mushroom/matsutake"
+    },
+    "ham:wood_ear": {
+      "textures": "textures/items/crops/mushroom/wood_ear"
+    },
     "ham:soy_bean": {
       "textures": "textures/items/crops/crop/soy_bean"
     },

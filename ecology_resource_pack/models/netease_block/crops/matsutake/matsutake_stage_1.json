@@ -1,0 +1,611 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "name": "tricholoma_matsutake",
+        "pivot": [-9, 0, 8],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-5, 0, 7],
+            "pivot": [0, 0, 3],
+            "rotation": [0, 0, 0],
+            "size": [1, 3, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [12, 0],
+                "uv_size": [-2, 2]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 2]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              }
+            }
+          },
+          {
+            "origin": [-5, 3, 7],
+            "pivot": [-3.5, 0, 7.5],
+            "rotation": [0, 0, 0],
+            "size": [1, 1, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [2, 0],
+                "uv_size": [-2, 2]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [2, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [2, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [2, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [2, 2]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [2, 2]
+              }
+            }
+          }
+        ],
+        "name": "7",
+        "parent": "tricholoma_matsutake",
+        "pivot": [-3, 0, 10],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-9.5, 4, 7.5],
+            "pivot": [-8, 0, 8],
+            "rotation": [0, 0, 0],
+            "size": [2.0, 2, 2.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [4, 0],
+                "uv_size": [-4, 4]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              }
+            }
+          },
+          {
+            "origin": [-9, 0, 8],
+            "pivot": [-8, 0, 8],
+            "rotation": [0, 0, 0],
+            "size": [1, 4, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [12, 0],
+                "uv_size": [-2, 2]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 2]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              }
+            }
+          }
+        ],
+        "name": "6",
+        "parent": "tricholoma_matsutake",
+        "pivot": [-4, 0, 3],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-14.5, 4, 2.5],
+            "pivot": [-13, 0, 3],
+            "rotation": [0, 0, 0],
+            "size": [2.0, 1, 2.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [4, 0],
+                "uv_size": [-4, 4]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              }
+            }
+          },
+          {
+            "origin": [-14, 0, 3],
+            "pivot": [-13, 0, 3],
+            "rotation": [0, 0, 0],
+            "size": [1, 4, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [12, 0],
+                "uv_size": [-2, 2]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 2]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              }
+            }
+          }
+        ],
+        "name": "5",
+        "parent": "tricholoma_matsutake",
+        "pivot": [-13, 0, 3],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-5.5, 4, 2.5],
+            "pivot": [-4, 0, 3],
+            "rotation": [0, 0, 0],
+            "size": [2.0, 2, 2.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [4, 0],
+                "uv_size": [-4, 4]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              }
+            }
+          },
+          {
+            "origin": [-5, 0, 3],
+            "pivot": [-4, 0, 3],
+            "rotation": [0, 0, 0],
+            "size": [1, 4, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [12, 0],
+                "uv_size": [-2, 2]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 2]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              }
+            }
+          }
+        ],
+        "name": "4",
+        "parent": "tricholoma_matsutake",
+        "pivot": [-4, 0, 3],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-11, 0, 5],
+            "pivot": [-6, 0, 1],
+            "rotation": [0, 0, 0],
+            "size": [1, 3, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [12, 0],
+                "uv_size": [-2, 2]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 2]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              }
+            }
+          },
+          {
+            "origin": [-11, 3, 5],
+            "pivot": [-9.5, 0, 5.5],
+            "rotation": [0, 0, 0],
+            "size": [1, 1, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [2, 0],
+                "uv_size": [-2, 2]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [2, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [2, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [2, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [2, 2]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [2, 2]
+              }
+            }
+          }
+        ],
+        "name": "3",
+        "parent": "tricholoma_matsutake",
+        "pivot": [-9, 0, 8],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-13.5, 3, 11.5],
+            "pivot": [-12, 0, 12],
+            "rotation": [0, 0, 0],
+            "size": [2.0, 1, 2.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [4, 0],
+                "uv_size": [-4, 4]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              }
+            }
+          },
+          {
+            "origin": [-13, 0, 12],
+            "pivot": [-12, 0, 12],
+            "rotation": [0, 0, 0],
+            "size": [1, 3, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [12, 0],
+                "uv_size": [-2, 2]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 2]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 6]
+              }
+            }
+          }
+        ],
+        "name": "2",
+        "parent": "tricholoma_matsutake",
+        "pivot": [-12, 0, 12],
+        "rotation": [0, 0, 0]
+      },
+      {
+        "cubes": [
+          {
+            "origin": [-6.5, 4, 11.5],
+            "pivot": [-5, 0, 12],
+            "rotation": [0, 0, 0],
+            "size": [2.0, 1, 2.0],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [4, 0],
+                "uv_size": [-4, 4]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 4]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [4, 2]
+              }
+            }
+          },
+          {
+            "origin": [-6, 0, 12],
+            "pivot": [-5, 0, 12],
+            "rotation": [0, 0, 0],
+            "size": [1, 4, 1],
+            "uv": {
+              "down": {
+                "texture": 0,
+                "uv": [12, 0],
+                "uv_size": [-2, 2]
+              },
+              "east": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "north": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "south": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              },
+              "up": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 2]
+              },
+              "west": {
+                "texture": 0,
+                "uv": [10, 0],
+                "uv_size": [2, 8]
+              }
+            }
+          }
+        ],
+        "name": "1",
+        "parent": "tricholoma_matsutake",
+        "pivot": [-5, 0, 12],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:matsutake_stage_1",
+      "textures": ["ham:matsutake"],
+      "textures_descriptions": [
+        {
+          "length": 16,
+          "width": 16
+        }
+      ],
+      "use_ao": true
+    }
+  }
+}

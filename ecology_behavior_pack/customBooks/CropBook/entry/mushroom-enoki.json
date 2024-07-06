@@ -1,0 +1,22 @@
+{
+  "parent": "mushroom",
+  "sortnum": 302,
+  "icon": "textures/items/crops/mushroom/enoki.png",
+  "title": "金针菇",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:enoki"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:enoki"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "金针菇",
+      "itemName": "ham:enoki"
+    }
+  ]
+}

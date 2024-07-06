@@ -94,6 +94,27 @@
     "ham:onion_core": {
       "textures": "textures/blocks/crops/onion/onion_core"
     },
+    "ham:dictyophora_core": {
+      "textures": "textures/blocks/crops/dictyophora/dictyophora_core"
+    },
+    "ham:dictyophora_out": {
+      "textures": "textures/blocks/crops/dictyophora/dictyophora_out"
+    },
+    "ham:matsutake": {
+      "textures": "textures/blocks/crops/matsutake/matsutake"
+    },
+    "ham:wood_ear": {
+      "textures": "textures/blocks/crops/wood_ear/wood_ear"
+    },
+    "ham:enoki_stage_0": {
+      "textures": "textures/blocks/crops/enoki/enoki_stage_0"
+    },
+    "ham:enoki_stage_1": {
+      "textures": "textures/blocks/crops/enoki/enoki_stage_1"
+    },
+    "ham:enoki_stage_2": {
+      "textures": "textures/blocks/crops/enoki/enoki_stage_2"
+    },
     "ham:rotten_wood": {
       "textures": "textures/blocks/crops/rotten_wood"
     },

@@ -1,5 +1,5 @@
 from scripts.common.data.item.crops.crop import CORN, WHEAT_PLANT, RICE_PLANT, SOY_BEAN, POTATO
-from scripts.common.data.item.crops.fungi import LENTINULA, BUTTON_MUSHROOM
+from scripts.common.data.item.crops.fungi import LENTINULA, BUTTON_MUSHROOM, DICTYOPHORA, ENOKI, MATSUTAKE, WOOD_EAR
 from scripts.common.data.item.crops.spices import CHILI, HERB
 from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO, BOK_CHOY, BROCCOLI, WHITE_BROCCOLI, CABBAGE, WHITE_CABBAGE, CARROT, WHITE_CARROT
 
@@ -24,6 +24,10 @@ ITEM_DATA = {
     "ham:potato": POTATO,
     "ham:lentinula": LENTINULA,
     "ham:button_mushroom": BUTTON_MUSHROOM,
+    "ham:dictyophora": DICTYOPHORA,
+    "ham:enoki": ENOKI,
+    "ham:matsutake": MATSUTAKE,
+    "ham:wood_ear": WOOD_EAR,
     "ham:chili": CHILI,
     "ham:herb": HERB,
     "ham:eggplant": EGGPLANT,

@@ -1,0 +1,22 @@
+{
+  "parent": "mushroom",
+  "sortnum": 305,
+  "icon": "textures/items/crops/mushroom/matsutake.png",
+  "title": "松茸",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:matsutake"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:matsutake"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "松茸",
+      "itemName": "ham:matsutake"
+    }
+  ]
+}
