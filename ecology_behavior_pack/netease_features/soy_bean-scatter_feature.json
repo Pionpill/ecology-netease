@@ -2,9 +2,9 @@
   "format_version": "1.13.0",
   "minecraft:scatter_feature": {
     "description": {
-      "identifier": "ham:corn-scatter_feature"
+      "identifier": "ham:soy_bean-scatter_feature"
     },
-    "places_feature": "ham:corn-block_feature",
+    "places_feature": "ham:soy_bean-block_feature",
     "iterations": 1,
     "scatter_chance": 3,
     "x": {

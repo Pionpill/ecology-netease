@@ -32,7 +32,8 @@ class ItemTag(object):
     PRODUCT = 'product' # 农产品
     DAIRY = 'dairy' # 乳制品
     OIL = 'oil' # 油
-    SOY = 'soy' # 豆制品
+    SOY = 'soy' # 黄豆制品
+    BEAN = 'bean' # 豆制品
     WHEAT = 'wheat' # 小麦制品
     PORK = 'pork' # 猪肉制品
     MEAT = 'meat' # 肉食
@@ -63,7 +64,8 @@ class ItemTag(object):
         ORE: '矿物质',
         PRODUCT: '农产品',
         DAIRY: '乳制品',
-        SOY: '豆制品',
+        SOY: '黄豆制品',
+        BEAN: '豆制品',
         OIL: '油',
         WHEAT: '谷物制品',
         MEAT: '肉制品',
