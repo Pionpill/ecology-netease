@@ -6,7 +6,7 @@ SOY_BEAN = {
     ItemSource.CROP: ("ham:soy_bean",)
   },
   "category": ItemCategory.CROPS,
-  "tag": (ItemTag.CROP, ItemTag.CEREAL, ItemTag.SOY),
+  "tag": (ItemTag.CROP, ItemTag.CEREAL, ItemTag.SOY, ItemTag.BEAN),
   "hidden_effect": None,
   "food": {
     "nutrition": 1.5,
