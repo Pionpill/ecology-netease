@@ -1,0 +1,22 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:taro",
+      "register_to_create_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:use_duration": 32,
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation_modifier": "normal",
+        "can_always_eat": false
+      },
+      "netease:customtips": {
+        "value": "§f--------------------\n§6§l种子·粮食\n§r§3生长: §b7-8d ☀\n§r§3温度: §b10~15℃―30~40℃\n§r§3湿度: §b40~60%-80~100%\n§r§f--------------------\n§2■ 土壤肥力敏感度较高\n§7■ 土壤肥力要求较高\n§r§f--------------------\n§6§l食材\n§r§3品质: §5 \n§3饥饿: §5 X 2"
+      }
+    }
+  }
+}

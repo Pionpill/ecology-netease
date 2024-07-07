@@ -8,7 +8,7 @@ POTATO = {
     ItemSource.WILD: (BiomeTag.TAIGA, BiomeTag.FOREST)
   },
   "category": ItemCategory.CROPS,
-  "tag": (ItemTag.CROP),
+  "tag": (ItemTag.CROP,),
   "hidden_effect": None,
   "food": {
     "nutrition": 2,

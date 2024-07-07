@@ -90,7 +90,11 @@
         "ham:soy_bean",
         "ham:red_bean",
         "ham:green_bean",
-        "ham:potato"
+        "ham:potato",
+        "ham:sweet_potato",
+        "ham:peanut",
+        "ham:taro",
+        "ham:yam"
       ]
     },
     {
@@ -125,7 +129,14 @@
     {
       "group_name": "itemGroup.name.ham.seasoning",
       "icon": "ham:herb",
-      "list": ["ham:herb", "ham:herb_seeds", "ham:chili", "ham:scallion"]
+      "list": [
+        "ham:herb",
+        "ham:herb_seeds",
+        "ham:chili",
+        "ham:scallion",
+        "ham:garlic",
+        "ham:ginger"
+      ]
     },
     {
       "group_name": "itemGroup.name.ham.crop_product",

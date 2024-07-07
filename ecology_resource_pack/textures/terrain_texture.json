@@ -307,6 +307,105 @@
     "ham:white_carrot_leaf_small": {
       "textures": "textures/blocks/crops/white_carrot/white_carrot_leaf_small"
     },
+    "ham:ginger_core": {
+      "textures": "textures/blocks/crops/ginger/ginger_core"
+    },
+    "ham:ginger_stage_0": {
+      "textures": "textures/blocks/crops/ginger/ginger_stage_0"
+    },
+    "ham:ginger_stage_1": {
+      "textures": "textures/blocks/crops/ginger/ginger_stage_1"
+    },
+    "ham:ginger_stage_2": {
+      "textures": "textures/blocks/crops/ginger/ginger_stage_2"
+    },
+    "ham:ginger_stage_3": {
+      "textures": "textures/blocks/crops/ginger/ginger_stage_3"
+    },
+    "ham:garlic_core": {
+      "textures": "textures/blocks/crops/garlic/garlic_core"
+    },
+    "ham:garlic_stage_0": {
+      "textures": "textures/blocks/crops/garlic/garlic_stage_0"
+    },
+    "ham:garlic_stage_1": {
+      "textures": "textures/blocks/crops/garlic/garlic_stage_1"
+    },
+    "ham:garlic_stage_2": {
+      "textures": "textures/blocks/crops/garlic/garlic_stage_2"
+    },
+    "ham:garlic_stage_3": {
+      "textures": "textures/blocks/crops/garlic/garlic_stage_3"
+    },
+    "ham:peanut_stage_0": {
+      "textures": "textures/blocks/crops/peanut/peanut_stage_0"
+    },
+    "ham:peanut_stage_1": {
+      "textures": "textures/blocks/crops/peanut/peanut_stage_1"
+    },
+    "ham:peanut_stage_2": {
+      "textures": "textures/blocks/crops/peanut/peanut_stage_2"
+    },
+    "ham:peanut_stage_3": {
+      "textures": "textures/blocks/crops/peanut/peanut_stage_3"
+    },
+    "ham:sweet_potato_core": {
+      "textures": "textures/blocks/crops/sweet_potato/sweet_potato_core"
+    },
+    "ham:sweet_potato_leaf_small": {
+      "textures": "textures/blocks/crops/sweet_potato/sweet_potato_leaf_small"
+    },
+    "ham:sweet_potato_leaf": {
+      "textures": "textures/blocks/crops/sweet_potato/sweet_potato_leaf"
+    },
+    "ham:sweet_potato_stage_0": {
+      "textures": "textures/blocks/crops/sweet_potato/sweet_potato_stage_0"
+    },
+    "ham:sweet_potato_stage_1": {
+      "textures": "textures/blocks/crops/sweet_potato/sweet_potato_stage_1"
+    },
+    "ham:sweet_potato_stage_2": {
+      "textures": "textures/blocks/crops/sweet_potato/sweet_potato_stage_2"
+    },
+    "ham:sweet_potato_stage_3": {
+      "textures": "textures/blocks/crops/sweet_potato/sweet_potato_stage_3"
+    },
+    "ham:taro_fruit": {
+      "textures": "textures/blocks/crops/taro/taro_fruit"
+    },
+    "ham:taro_leaf_big": {
+      "textures": "textures/blocks/crops/taro/taro_leaf_big"
+    },
+    "ham:taro_leaf_small": {
+      "textures": "textures/blocks/crops/taro/taro_leaf_small"
+    },
+    "ham:taro_leaf": {
+      "textures": "textures/blocks/crops/taro/taro_leaf"
+    },
+    "ham:taro_stem": {
+      "textures": "textures/blocks/crops/taro/taro_stem"
+    },
+    "ham:yam_core": {
+      "textures": "textures/blocks/crops/yam/yam_core"
+    },
+    "ham:yam_leaf_small": {
+      "textures": "textures/blocks/crops/yam/yam_leaf_small"
+    },
+    "ham:yam_leaf": {
+      "textures": "textures/blocks/crops/yam/yam_leaf"
+    },
+    "ham:yam_stage_0": {
+      "textures": "textures/blocks/crops/yam/yam_stage_0"
+    },
+    "ham:yam_stage_1": {
+      "textures": "textures/blocks/crops/yam/yam_stage_1"
+    },
+    "ham:yam_stage_2": {
+      "textures": "textures/blocks/crops/yam/yam_stage_2"
+    },
+    "ham:yam_stage_3": {
+      "textures": "textures/blocks/crops/yam/yam_stage_3"
+    },
     "ham:mix_plank": {
       "textures": "textures/blocks/workbenches/mix_plank"
     },

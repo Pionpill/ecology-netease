@@ -1,0 +1,20 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "ham:garlic-scatter_feature"
+    },
+    "places_feature": "ham:garlic-block_feature",
+    "iterations": 1,
+    "scatter_chance": 2,
+    "x": {
+      "distribution": "uniform",
+      "extent": [0, 7]
+    },
+    "y": 0,
+    "z": {
+      "distribution": "uniform",
+      "extent": [0, 7]
+    }
+  }
+}

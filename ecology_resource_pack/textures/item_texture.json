@@ -217,6 +217,24 @@
     "ham:bok_choy": {
       "textures": "textures/items/crops/vegetable/bok_choy"
     },
+    "ham:garlic": {
+      "textures": "textures/items/crops/seasoning/garlic"
+    },
+    "ham:ginger": {
+      "textures": "textures/items/crops/seasoning/ginger"
+    },
+    "ham:peanut": {
+      "textures": "textures/items/crops/crop/peanut"
+    },
+    "ham:sweet_potato": {
+      "textures": "textures/items/crops/crop/sweet_potato"
+    },
+    "ham:taro": {
+      "textures": "textures/items/crops/crop/taro"
+    },
+    "ham:yam": {
+      "textures": "textures/items/crops/crop/yam"
+    },
     "ham:tomato_egg_noodles": {
       "textures": "textures/items/foods/noodles/tomato_egg_noodles"
     },

@@ -1,0 +1,77 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "cubes": [
+          {
+            "origin": [-12, -1, 0],
+            "pivot": [-7, -1, 8],
+            "rotation": [0, 0, 0],
+            "size": [0, 16, 16],
+            "uv": {
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [8, 8]
+              }
+            }
+          },
+          {
+            "origin": [-13, -1, -1],
+            "pivot": [-8, -1, 7],
+            "rotation": [0, 90, 0],
+            "size": [0, 16, 16],
+            "uv": {
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [8, 8]
+              }
+            }
+          },
+          {
+            "origin": [-14, -1, 0],
+            "pivot": [-9, -1, 8],
+            "rotation": [0, 180, 0],
+            "size": [0, 16, 16],
+            "uv": {
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [8, 8]
+              }
+            }
+          },
+          {
+            "origin": [-13, -1, 1],
+            "pivot": [-8, -1, 9],
+            "rotation": [0, -90, 0],
+            "size": [0, 16, 16],
+            "uv": {
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [8, 8]
+              }
+            }
+          }
+        ],
+        "name": "bone3",
+        "pivot": [-8, -1, 8],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:ginger_stage_1",
+      "textures": ["ham:ginger_stage_1"],
+      "textures_descriptions": [
+        {
+          "length": 32,
+          "width": 32
+        }
+      ],
+      "use_ao": true
+    }
+  }
+}

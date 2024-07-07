@@ -1,0 +1,22 @@
+{
+  "parent": "seasoning",
+  "sortnum": 503,
+  "icon": "textures/items/crops/seasoning/garlic.png",
+  "title": "大蒜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:garlic"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:garlic"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "大蒜",
+      "itemName": "ham:garlic"
+    }
+  ]
+}

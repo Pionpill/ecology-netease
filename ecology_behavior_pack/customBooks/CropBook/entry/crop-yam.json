@@ -1,0 +1,22 @@
+{
+  "parent": "crop",
+  "sortnum": 123,
+  "icon": "textures/items/crops/crop/yam.png",
+  "title": "山药",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:yam"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:yam"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "山药",
+      "itemName": "ham:yam"
+    }
+  ]
+}

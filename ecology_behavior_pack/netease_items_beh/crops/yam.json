@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:yam",
+      "register_to_create_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:use_duration": 32,
+      "netease:customtips": {
+        "value": "§f--------------------\n§6§l种子·粮食\n§r§3生长: §b6-7d ☀\n§r§3温度: §b10~20℃―35~40℃\n§r§3湿度: §b30~50%-70~90%\n§r§f--------------------\n§6§l食材\n§r§3品质: §5"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "parent": "crop",
+  "sortnum": 122,
+  "icon": "textures/items/crops/crop/taro.png",
+  "title": "芋头",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:taro"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:taro"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "芋头",
+      "itemName": "ham:taro"
+    }
+  ]
+}

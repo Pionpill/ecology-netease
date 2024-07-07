@@ -1,0 +1,103 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "cubes": [
+          {
+            "origin": [-8, -0.9999999999999996, 6],
+            "pivot": [-8, 4, 11],
+            "rotation": [0, 180, 0],
+            "size": [0, 16.0, 16],
+            "uv": {
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-2, -0.9999999999999996, 6],
+            "pivot": [-2, 4, 11],
+            "rotation": [0, 180, 0],
+            "size": [0, 16.0, 16],
+            "uv": {
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-14, -0.9999999999999996, 6],
+            "pivot": [-14, 4, 11],
+            "rotation": [0, 180, 0],
+            "size": [0, 16.0, 16],
+            "uv": {
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-8, -0.9999999999999996, 0],
+            "pivot": [-8, 7, 8],
+            "rotation": [0, -90, 0],
+            "size": [0, 16.0, 16],
+            "uv": {
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-14, -0.9999999999999996, 8.881784197001252e-16],
+            "pivot": [-8, 7, 8],
+            "rotation": [0, -90, 0],
+            "size": [0, 16.0, 16.0],
+            "uv": {
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-2, -0.9999999999999996, 0],
+            "pivot": [-8, 7, 8],
+            "rotation": [0, -90, 0],
+            "size": [0, 16.0, 16],
+            "uv": {
+              "east": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          }
+        ],
+        "name": "root",
+        "pivot": [-8, 0, 8],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:garlic_stage_1",
+      "textures": ["ham:garlic_stage_1"],
+      "textures_descriptions": [
+        {
+          "length": 32,
+          "width": 32
+        }
+      ],
+      "use_ao": true
+    }
+  }
+}

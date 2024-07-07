@@ -400,6 +400,98 @@
     "netease_model": "ham:bok_choy_stage_2",
     "sound": "grass"
   },
+  "ham:garlic_stage_0": {
+    "netease_model": "ham:garlic_stage_0",
+    "sound": "grass"
+  },
+  "ham:garlic_stage_1": {
+    "netease_model": "ham:garlic_stage_1",
+    "sound": "grass"
+  },
+  "ham:garlic_stage_2": {
+    "netease_model": "ham:garlic_stage_2",
+    "sound": "grass"
+  },
+  "ham:ginger_stage_0": {
+    "netease_model": "ham:ginger_stage_0",
+    "sound": "grass"
+  },
+  "ham:ginger_stage_1": {
+    "netease_model": "ham:ginger_stage_1",
+    "sound": "grass"
+  },
+  "ham:ginger_stage_2": {
+    "netease_model": "ham:ginger_stage_2",
+    "sound": "grass"
+  },
+  "ham:ginger_stage_3": {
+    "netease_model": "ham:ginger_stage_3",
+    "sound": "grass"
+  },
+  "ham:peanut_stage_0": {
+    "netease_model": "ham:peanut_stage_0",
+    "sound": "grass"
+  },
+  "ham:peanut_stage_1": {
+    "netease_model": "ham:peanut_stage_1",
+    "sound": "grass"
+  },
+  "ham:peanut_stage_2": {
+    "netease_model": "ham:peanut_stage_2",
+    "sound": "grass"
+  },
+  "ham:peanut_stage_3": {
+    "netease_model": "ham:peanut_stage_3",
+    "sound": "grass"
+  },
+  "ham:sweet_potato_stage_0": {
+    "netease_model": "ham:sweet_potato_stage_0",
+    "sound": "grass"
+  },
+  "ham:sweet_potato_stage_1": {
+    "netease_model": "ham:sweet_potato_stage_1",
+    "sound": "grass"
+  },
+  "ham:sweet_potato_stage_2": {
+    "netease_model": "ham:sweet_potato_stage_2",
+    "sound": "grass"
+  },
+  "ham:sweet_potato_stage_3": {
+    "netease_model": "ham:sweet_potato_stage_3",
+    "sound": "grass"
+  },
+  "ham:taro_stage_0": {
+    "netease_model": "ham:taro_stage_0",
+    "sound": "grass"
+  },
+  "ham:taro_stage_1": {
+    "netease_model": "ham:taro_stage_1",
+    "sound": "grass"
+  },
+  "ham:taro_stage_2": {
+    "netease_model": "ham:taro_stage_2",
+    "sound": "grass"
+  },
+  "ham:taro_stage_3": {
+    "netease_model": "ham:taro_stage_3",
+    "sound": "grass"
+  },
+  "ham:yam_stage_0": {
+    "netease_model": "ham:yam_stage_0",
+    "sound": "grass"
+  },
+  "ham:yam_stage_1": {
+    "netease_model": "ham:yam_stage_1",
+    "sound": "grass"
+  },
+  "ham:yam_stage_2": {
+    "netease_model": "ham:yam_stage_2",
+    "sound": "grass"
+  },
+  "ham:yam_stage_3": {
+    "netease_model": "ham:yam_stage_3",
+    "sound": "grass"
+  },
   "ham:weed": {
     "netease_model": "ham:weed",
     "sound": "grass",

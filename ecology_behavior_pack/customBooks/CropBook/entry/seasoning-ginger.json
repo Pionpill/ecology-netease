@@ -1,0 +1,22 @@
+{
+  "parent": "seasoning",
+  "sortnum": 504,
+  "icon": "textures/items/crops/seasoning/ginger.png",
+  "title": "生姜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:ginger"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:ginger"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "生姜",
+      "itemName": "ham:ginger"
+    }
+  ]
+}

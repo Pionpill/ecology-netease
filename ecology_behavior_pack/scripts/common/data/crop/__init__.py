@@ -24,6 +24,12 @@ from scripts.common.data.crop.cabbage import CABBAGE
 from scripts.common.data.crop.white_cabbage import WHITE_CABBAGE
 from scripts.common.data.crop.green_bean import GREEN_BEAN
 from scripts.common.data.crop.red_bean import RED_BEAN
+from scripts.common.data.crop.garlic import GARLIC
+from scripts.common.data.crop.ginger import GINGER
+from scripts.common.data.crop.peanut import PEANUT
+from scripts.common.data.crop.sweet_potato import SWEET_POTATO
+from scripts.common.data.crop.taro import TARO
+from scripts.common.data.crop.yam import YAM
 from scripts.common.data.crop.weed import WEED
 from scripts.common.data.crop.weed_tall import WEED_TALL
 
@@ -56,6 +62,12 @@ CROP_DATA = {
     "ham:white_carrot": WHITE_CARROT,
     "ham:cabbage": CABBAGE,
     "ham:white_cabbage": WHITE_CABBAGE,
+    "ham:garlic": GARLIC,
+    "ham:ginger": GINGER,
+    "ham:peanut": PEANUT,
+    "ham:sweet_potato": SWEET_POTATO,
+    "ham:taro": TARO,
+    "ham:yam": YAM,
 }
 
 __all__ = ['CROP_DATA']

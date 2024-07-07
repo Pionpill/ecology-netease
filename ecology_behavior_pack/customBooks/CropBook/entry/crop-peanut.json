@@ -1,0 +1,22 @@
+{
+  "parent": "crop",
+  "sortnum": 115,
+  "icon": "textures/items/crops/crop/peanut.png",
+  "title": "花生",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:peanut"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:peanut"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "花生",
+      "itemName": "ham:peanut"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
-from scripts.common.data.item.crops.crop import CORN, WHEAT_PLANT, RICE_PLANT, SOY_BEAN, RED_BEAN, GREEN_BEAN, POTATO
+from scripts.common.data.item.crops.crop import CORN, WHEAT_PLANT, RICE_PLANT, SOY_BEAN, RED_BEAN, GREEN_BEAN, POTATO, SWEET_POTATO, PEANUT, TARO, YAM
 from scripts.common.data.item.crops.fungi import LENTINULA, BUTTON_MUSHROOM, DICTYOPHORA, ENOKI, MATSUTAKE, WOOD_EAR
-from scripts.common.data.item.crops.spices import CHILI, HERB
+from scripts.common.data.item.crops.spices import CHILI, HERB, GARLIC, GINGER
 from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO, BOK_CHOY, BROCCOLI, WHITE_BROCCOLI, CABBAGE, WHITE_CABBAGE, CARROT, WHITE_CARROT
 
 from scripts.common.data.item.materials.fuel import STRAW
@@ -24,6 +24,10 @@ ITEM_DATA = {
     "ham:red_bean": RED_BEAN,
     "ham:green_bean": GREEN_BEAN,
     "ham:potato": POTATO,
+    "ham:sweet_potato": SWEET_POTATO,
+    "ham:peanut": PEANUT,
+    "ham:taro": TARO,
+    "ham:yam": YAM,
     "ham:lentinula": LENTINULA,
     "ham:button_mushroom": BUTTON_MUSHROOM,
     "ham:dictyophora": DICTYOPHORA,
@@ -32,6 +36,8 @@ ITEM_DATA = {
     "ham:wood_ear": WOOD_EAR,
     "ham:chili": CHILI,
     "ham:herb": HERB,
+    "ham:garlic": GARLIC,
+    "ham:ginger": GINGER,
     "ham:eggplant": EGGPLANT,
     "ham:lettuce": LETTUCE,
     "ham:onion": ONION,
