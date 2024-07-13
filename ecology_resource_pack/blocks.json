@@ -492,6 +492,138 @@
     "netease_model": "ham:yam_stage_3",
     "sound": "grass"
   },
+  "ham:celery_stage_0": {
+    "netease_model": "ham:celery_stage_0",
+    "sound": "grass"
+  },
+  "ham:celery_stage_1": {
+    "netease_model": "ham:celery_stage_1",
+    "sound": "grass"
+  },
+  "ham:celery_stage_2": {
+    "netease_model": "ham:celery_stage_2",
+    "sound": "grass"
+  },
+  "ham:leek_stage_0": {
+    "netease_model": "ham:leek_stage_0",
+    "sound": "grass"
+  },
+  "ham:leek_stage_1": {
+    "netease_model": "ham:leek_stage_1",
+    "sound": "grass"
+  },
+  "ham:leek_stage_2": {
+    "netease_model": "ham:leek_stage_2",
+    "sound": "grass"
+  },
+  "ham:pea_stage_0": {
+    "netease_model": "ham:pea_stage_0",
+    "sound": "grass"
+  },
+  "ham:pea_stage_1": {
+    "netease_model": "ham:pea_stage_1",
+    "sound": "grass"
+  },
+  "ham:pea_stage_2": {
+    "netease_model": "ham:pea_stage_2",
+    "sound": "grass"
+  },
+  "ham:pea_stage_3": {
+    "netease_model": "ham:pea_stage_3",
+    "sound": "grass"
+  },
+  "ham:pepper_stage_0": {
+    "netease_model": "ham:pepper_stage_0",
+    "sound": "grass"
+  },
+  "ham:pepper_stage_1": {
+    "netease_model": "ham:pepper_stage_1",
+    "sound": "grass"
+  },
+  "ham:pepper_stage_2": {
+    "netease_model": "ham:pepper_stage_2",
+    "sound": "grass"
+  },
+  "ham:pepper_stage_3": {
+    "netease_model": "ham:pepper_stage_3",
+    "sound": "grass"
+  },
+  "ham:rape_flower_stage_0": {
+    "netease_model": "ham:rape_flower_stage_0",
+    "sound": "grass"
+  },
+  "ham:rape_flower_stage_1": {
+    "netease_model": "ham:rape_flower_stage_1",
+    "sound": "grass"
+  },
+  "ham:rape_flower_stage_2": {
+    "netease_model": "ham:rape_flower_stage_2",
+    "sound": "grass"
+  },
+  "ham:rape_flower_stage_3": {
+    "netease_model": "ham:rape_flower_stage_3",
+    "sound": "grass"
+  },
+  "ham:sorghum_stage_0": {
+    "netease_model": "ham:sorghum_stage_0",
+    "sound": "grass"
+  },
+  "ham:sorghum_stage_1": {
+    "netease_model": "ham:sorghum_stage_1",
+    "sound": "grass"
+  },
+  "ham:sorghum_stage_2": {
+    "netease_model": "ham:sorghum_stage_2",
+    "sound": "grass"
+  },
+  "ham:sorghum_stage_3": {
+    "netease_model": "ham:sorghum_stage_3",
+    "sound": "grass"
+  },
+  "ham:spinach_stage_0": {
+    "netease_model": "ham:spinach_stage_0",
+    "sound": "grass"
+  },
+  "ham:spinach_stage_1": {
+    "netease_model": "ham:spinach_stage_1",
+    "sound": "grass"
+  },
+  "ham:spinach_stage_2": {
+    "netease_model": "ham:spinach_stage_2",
+    "sound": "grass"
+  },
+  "ham:strawberry_stage_0": {
+    "netease_model": "ham:strawberry_stage_0",
+    "sound": "grass"
+  },
+  "ham:strawberry_stage_1": {
+    "netease_model": "ham:strawberry_stage_1",
+    "sound": "grass"
+  },
+  "ham:strawberry_stage_2": {
+    "netease_model": "ham:strawberry_stage_2",
+    "sound": "grass"
+  },
+  "ham:strawberry_stage_3": {
+    "netease_model": "ham:strawberry_stage_3",
+    "sound": "grass"
+  },
+  "ham:sugarcane_stage_0": {
+    "netease_model": "ham:sugarcane_stage_0",
+    "sound": "grass"
+  },
+  "ham:sugarcane_stage_1": {
+    "netease_model": "ham:sugarcane_stage_1",
+    "sound": "grass"
+  },
+  "ham:sugarcane_stage_2": {
+    "netease_model": "ham:sugarcane_stage_2",
+    "sound": "grass"
+  },
+  "ham:sugarcane_stage_3": {
+    "netease_model": "ham:sugarcane_stage_3",
+    "sound": "grass"
+  },
   "ham:weed": {
     "netease_model": "ham:weed",
     "sound": "grass",

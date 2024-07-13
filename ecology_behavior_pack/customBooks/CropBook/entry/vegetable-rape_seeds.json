@@ -1,0 +1,22 @@
+{
+  "parent": "vegetable",
+  "sortnum": 230,
+  "icon": "textures/items/crops/vegetable/rape_seeds.png",
+  "title": "油菜籽",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:rape_flower"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:rape_flower"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "油菜籽",
+      "itemName": "ham:rape_seeds"
+    }
+  ]
+}

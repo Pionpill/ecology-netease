@@ -702,8 +702,8 @@
       ],
       "textures_descriptions": [
         {
-          "length": 32,
-          "width": 32
+          "length": 16,
+          "width": 16
         },
         {
           "length": 16,

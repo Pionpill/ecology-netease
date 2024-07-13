@@ -1,0 +1,66 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "cubes": [
+          {
+            "origin": [-8.75, -1, 8],
+            "pivot": [-8, -1, 8],
+            "rotation": [-45.00000000000001, 47.5, -1.8831265732453712e-14],
+            "size": [1.5, 2.5, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 1.5],
+                "uv_size": [1.5, 2.5]
+              }
+            }
+          },
+          {
+            "origin": [-9.25, -1, 8],
+            "pivot": [-8, -1, 8],
+            "rotation": [45, 0, 0],
+            "size": [2.5, 3, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [2, 1],
+                "uv_size": [2.5, 3]
+              }
+            }
+          },
+          {
+            "origin": [-9.25, -1, 8],
+            "pivot": [-8, -1, 8],
+            "rotation": [
+              -132.5000000000004, 65.00000000000041, -179.9999999999999
+            ],
+            "size": [2.5, 3, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [2, 1],
+                "uv_size": [2.5, 3]
+              }
+            }
+          }
+        ],
+        "name": "bone",
+        "pivot": [-7.5, -1, 8.5],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:strawberry_stage_0",
+      "textures": ["ham:strawberry_core"],
+      "textures_descriptions": [
+        {
+          "length": 16,
+          "width": 16
+        }
+      ],
+      "use_ao": true
+    }
+  }
+}

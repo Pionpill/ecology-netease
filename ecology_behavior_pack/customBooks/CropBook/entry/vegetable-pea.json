@@ -1,0 +1,22 @@
+{
+  "parent": "vegetable",
+  "sortnum": 230,
+  "icon": "textures/items/crops/vegetable/pea.png",
+  "title": "豌豆",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:pea"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:pea"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "豌豆",
+      "itemName": "ham:pea"
+    }
+  ]
+}

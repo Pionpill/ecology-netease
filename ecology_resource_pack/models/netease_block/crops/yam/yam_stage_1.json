@@ -287,8 +287,8 @@
       "textures": ["ham:yam_stage_1", "ham:yam_leaf_small", "ham:yam_leaf"],
       "textures_descriptions": [
         {
-          "length": 32,
-          "width": 32
+          "length": 16,
+          "width": 16
         },
         {
           "length": 16,

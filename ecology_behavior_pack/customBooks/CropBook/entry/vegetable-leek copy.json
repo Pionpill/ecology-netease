@@ -1,0 +1,22 @@
+{
+  "parent": "vegetable",
+  "sortnum": 224,
+  "icon": "textures/items/crops/vegetable/spinach.png",
+  "title": "菠菜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:spinach"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:spinach"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "菠菜",
+      "itemName": "ham:spinach"
+    }
+  ]
+}

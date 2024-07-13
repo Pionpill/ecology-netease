@@ -1,0 +1,22 @@
+{
+  "parent": "vegetable",
+  "sortnum": 202,
+  "icon": "textures/items/crops/vegetable/pepper.png",
+  "title": "青椒",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:pepper"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:pepper"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "青椒",
+      "itemName": "ham:pepper"
+    }
+  ]
+}

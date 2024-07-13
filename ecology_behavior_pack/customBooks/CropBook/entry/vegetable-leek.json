@@ -1,0 +1,22 @@
+{
+  "parent": "vegetable",
+  "sortnum": 223,
+  "icon": "textures/items/crops/vegetable/leek.png",
+  "title": "韭菜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:leek"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:leek"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "韭菜",
+      "itemName": "ham:leek"
+    }
+  ]
+}

@@ -19,6 +19,7 @@ class ItemCategory(object):
 class ItemTag(object):
     CROP = 'crop' # 粮食
     VEGETABLE = 'vegetable' # 蔬菜
+    FRUIT = 'fruit' # 水果
     FUNGI = 'fungi' # 菌类
     SPICES = 'spices' # 香料
     SEASONING = 'seasoning' # 调料
@@ -53,6 +54,7 @@ class ItemTag(object):
     cnNameDict = {
         CROP: '粮食',
         VEGETABLE: '蔬菜',
+        FRUIT: '水果',
         FUNGI: '菌类',
         SPICES: '香料',
         SEASONING: '调料',

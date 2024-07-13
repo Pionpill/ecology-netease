@@ -406,6 +406,87 @@
     "ham:yam_stage_3": {
       "textures": "textures/blocks/crops/yam/yam_stage_3"
     },
+    "ham:leek_stage_0": {
+      "textures": "textures/blocks/crops/leek/leek_stage_0"
+    },
+    "ham:leek_stage_1": {
+      "textures": "textures/blocks/crops/leek/leek_stage_1"
+    },
+    "ham:leek_stage_2": {
+      "textures": "textures/blocks/crops/leek/leek_stage_2"
+    },
+    "ham:pea_stage_0": {
+      "textures": "textures/blocks/crops/pea/pea_stage_0"
+    },
+    "ham:pea_stage_1": {
+      "textures": "textures/blocks/crops/pea/pea_stage_1"
+    },
+    "ham:pea_stage_2": {
+      "textures": "textures/blocks/crops/pea/pea_stage_2"
+    },
+    "ham:pea_stage_3": {
+      "textures": "textures/blocks/crops/pea/pea_stage_3"
+    },
+    "ham:pepper_core": {
+      "textures": "textures/blocks/crops/pepper/pepper_core"
+    },
+    "ham:pepper_leaf_big": {
+      "textures": "textures/blocks/crops/pepper/pepper_leaf_big"
+    },
+    "ham:pepper_leaf_small": {
+      "textures": "textures/blocks/crops/pepper/pepper_leaf_small"
+    },
+    "ham:pepper_leaf": {
+      "textures": "textures/blocks/crops/pepper/pepper_leaf"
+    },
+    "ham:rape_flower_leaf_big": {
+      "textures": "textures/blocks/crops/rape_flower/rape_flower_leaf_big"
+    },
+    "ham:rape_flower_leaf": {
+      "textures": "textures/blocks/crops/rape_flower/rape_flower_leaf"
+    },
+    "ham:rape_flower_stage_2": {
+      "textures": "textures/blocks/crops/rape_flower/rape_flower_stage_2"
+    },
+    "ham:rape_flower_stage_3": {
+      "textures": "textures/blocks/crops/rape_flower/rape_flower_stage_3"
+    },
+    "ham:celery_leaf_big": {
+      "textures": "textures/blocks/crops/celery/celery_leaf_big"
+    },
+    "ham:celery_leaf_small": {
+      "textures": "textures/blocks/crops/celery/celery_leaf_small"
+    },
+    "ham:celery_leaf_tiny": {
+      "textures": "textures/blocks/crops/celery/celery_leaf_tiny"
+    },
+    "ham:sorghum_flower_small": {
+      "textures": "textures/blocks/crops/sorghum/sorghum_flower_small"
+    },
+    "ham:sorghum_flower": {
+      "textures": "textures/blocks/crops/sorghum/sorghum_flower"
+    },
+    "ham:sorghum_leaf": {
+      "textures": "textures/blocks/crops/sorghum/sorghum_leaf"
+    },
+    "ham:spinach_leaf_big": {
+      "textures": "textures/blocks/crops/spinach/spinach_leaf_big"
+    },
+    "ham:spinach_leaf_small": {
+      "textures": "textures/blocks/crops/spinach/spinach_leaf_small"
+    },
+    "ham:spinach_leaf_tiny": {
+      "textures": "textures/blocks/crops/spinach/spinach_leaf_tiny"
+    },
+    "ham:strawberry_core": {
+      "textures": "textures/blocks/crops/strawberry/strawberry_core"
+    },
+    "ham:sugarcane_core": {
+      "textures": "textures/blocks/crops/sugarcane/sugarcane_core"
+    },
+    "ham:sugarcane_leaf": {
+      "textures": "textures/blocks/crops/sugarcane/sugarcane_leaf"
+    },
     "ham:mix_plank": {
       "textures": "textures/blocks/workbenches/mix_plank"
     },

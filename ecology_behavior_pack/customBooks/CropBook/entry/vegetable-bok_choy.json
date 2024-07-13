@@ -1,6 +1,6 @@
 {
   "parent": "vegetable",
-  "sortnum": 202,
+  "sortnum": 220,
   "icon": "textures/items/crops/vegetable/bok_choy.png",
   "title": "小青菜",
   "pages": [

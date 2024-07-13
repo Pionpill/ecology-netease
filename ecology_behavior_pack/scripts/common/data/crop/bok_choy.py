@@ -38,7 +38,7 @@ BOK_CHOY = {
             "type": ["dirt"]
         },
         "rain_multiply": 1.5,
-        "period": "none"
+        "period": "sun"
     },
     "loot": {
         1: {

@@ -1,7 +1,8 @@
-from scripts.common.data.item.crops.crop import CORN, WHEAT_PLANT, RICE_PLANT, SOY_BEAN, RED_BEAN, GREEN_BEAN, POTATO, SWEET_POTATO, PEANUT, TARO, YAM
+from scripts.common.data.item.crops.crop import CORN, WHEAT_PLANT, RICE_PLANT, SOY_BEAN, RED_BEAN, GREEN_BEAN, POTATO, SWEET_POTATO, PEANUT, TARO, YAM, SORGHUM
+from scripts.common.data.item.crops.fruit import SUGARCANE, STRAWBERRY
 from scripts.common.data.item.crops.fungi import LENTINULA, BUTTON_MUSHROOM, DICTYOPHORA, ENOKI, MATSUTAKE, WOOD_EAR
 from scripts.common.data.item.crops.spices import CHILI, HERB, GARLIC, GINGER
-from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO, BOK_CHOY, BROCCOLI, WHITE_BROCCOLI, CABBAGE, WHITE_CABBAGE, CARROT, WHITE_CARROT
+from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO, BOK_CHOY, BROCCOLI, WHITE_BROCCOLI, CABBAGE, WHITE_CABBAGE, CARROT, WHITE_CARROT, CELERY, LEEK, PEA, PEPPER, RAPE_SEEDS, SPINACH 
 
 from scripts.common.data.item.materials.fuel import STRAW
 from scripts.common.data.item.materials.ore import SALT
@@ -28,6 +29,11 @@ ITEM_DATA = {
     "ham:peanut": PEANUT,
     "ham:taro": TARO,
     "ham:yam": YAM,
+    "ham:sorghum": SORGHUM,
+    
+    "ham:sugarcane": SUGARCANE,
+    "ham:strawberry": STRAWBERRY,
+
     "ham:lentinula": LENTINULA,
     "ham:button_mushroom": BUTTON_MUSHROOM,
     "ham:dictyophora": DICTYOPHORA,
@@ -47,6 +53,12 @@ ITEM_DATA = {
     "ham:white_cabbage": WHITE_CABBAGE,
     "ham:carrot": CARROT,
     "ham:white_carrot": WHITE_CARROT,
+    "ham:celery": CELERY,
+    "ham:leek": LEEK,
+    "ham:pea": PEA,
+    "ham:pepper": PEPPER,
+    "ham:rape_seeds": RAPE_SEEDS,
+    "ham:spinach": SPINACH,
 
     "ham:straw": STRAW,
     "ham:salt": SALT,

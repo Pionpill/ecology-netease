@@ -30,6 +30,15 @@ from scripts.common.data.crop.peanut import PEANUT
 from scripts.common.data.crop.sweet_potato import SWEET_POTATO
 from scripts.common.data.crop.taro import TARO
 from scripts.common.data.crop.yam import YAM
+from scripts.common.data.crop.celery import CELERY
+from scripts.common.data.crop.leek import LEEK
+from scripts.common.data.crop.pea import PEA
+from scripts.common.data.crop.pepper import PEPPER
+from scripts.common.data.crop.rape_flower import RAPE_FLOWER
+from scripts.common.data.crop.sorghum import SORGHUM
+from scripts.common.data.crop.spinach import SPINACH
+from scripts.common.data.crop.strawberry import STRAWBERRY
+from scripts.common.data.crop.sugarcane import SUGARCANE
 from scripts.common.data.crop.weed import WEED
 from scripts.common.data.crop.weed_tall import WEED_TALL
 
@@ -68,6 +77,15 @@ CROP_DATA = {
     "ham:sweet_potato": SWEET_POTATO,
     "ham:taro": TARO,
     "ham:yam": YAM,
+    "ham:celery": CELERY,
+    "ham:leek": LEEK,
+    "ham:pea": PEA,
+    "ham:pepper": PEPPER,
+    "ham:rape_flower": RAPE_FLOWER,
+    "ham:sorghum": SORGHUM,
+    "ham:spinach": SPINACH,
+    "ham:strawberry": STRAWBERRY,
+    "ham:sugarcane": SUGARCANE,
 }
 
 __all__ = ['CROP_DATA']

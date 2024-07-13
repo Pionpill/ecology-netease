@@ -7,6 +7,9 @@
     "ham:banana": {
       "textures": "textures/items/crops/fruit/banana"
     },
+    "ham:strawberry": {
+      "textures": "textures/items/crops/fruit/strawberry"
+    },
     "ham:beef_patties": {
       "textures": "textures/items/foods/simple/beef_patties"
     },
@@ -49,6 +52,9 @@
     "ham:corn": {
       "textures": "textures/items/crops/crop/corn"
     },
+    "ham:sorghum": {
+      "textures": "textures/items/crops/crop/sorghum"
+    },
     "ham:corn_pie": {
       "textures": "textures/items/foods/pie/corn_pie"
     },
@@ -60,6 +66,27 @@
     },
     "ham:cabbage": {
       "textures": "textures/items/crops/vegetable/cabbage"
+    },
+    "ham:celery": {
+      "textures": "textures/items/crops/vegetable/celery"
+    },
+    "ham:leek": {
+      "textures": "textures/items/crops/vegetable/leek"
+    },
+    "ham:pea": {
+      "textures": "textures/items/crops/vegetable/pea"
+    },
+    "ham:pepper": {
+      "textures": "textures/items/crops/vegetable/pepper"
+    },
+    "ham:rape_seeds": {
+      "textures": "textures/items/crops/vegetable/rape_seeds"
+    },
+    "ham:spinach": {
+      "textures": "textures/items/crops/vegetable/spinach"
+    },
+    "ham:sugarcane": {
+      "textures": "textures/items/crops/fruit/sugarcane"
     },
     "ham:flour": {
       "textures": "textures/items/materials/flour"

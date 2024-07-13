@@ -9,5 +9,6 @@ from scripts.common.data.item.crops.crop.sweet_potato import SWEET_POTATO
 from scripts.common.data.item.crops.crop.peanut import PEANUT
 from scripts.common.data.item.crops.crop.taro import TARO
 from scripts.common.data.item.crops.crop.yam import YAM
+from scripts.common.data.item.crops.crop.sorghum import SORGHUM
 
-__all__ = ['CORN', 'WHEAT_PLANT','RICE_PLANT', 'SOY_BEAN', 'RED_BEAN', 'GREEN_BEAN', 'POTATO', 'SWEET_POTATO', 'PEANUT', 'TARO', 'YAM']
+__all__ = ['CORN', 'WHEAT_PLANT','RICE_PLANT', 'SOY_BEAN', 'RED_BEAN', 'GREEN_BEAN', 'POTATO', 'SWEET_POTATO', 'PEANUT', 'TARO', 'YAM', 'SORGHUM']

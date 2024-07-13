@@ -1,0 +1,22 @@
+{
+  "parent": "fruit",
+  "sortnum": 231,
+  "icon": "textures/items/crops/fruit/sugarcane.png",
+  "title": "甘蔗",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:sugarcane"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:sugarcane"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "甘蔗",
+      "itemName": "ham:sugarcane"
+    }
+  ]
+}

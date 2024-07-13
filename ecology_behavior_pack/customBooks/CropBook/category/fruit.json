@@ -1,0 +1,7 @@
+{
+  "title": "§l水果",
+  "content": "§r§8● §0水果可以生吃，也可以提供各种buff\n§r§8● §r几乎所有水果都包含隐形BUFF，需要和粮食/调料搭配激发它们的隐藏属性\n§r§8● §r隐藏属性激发机制尚在开发中",
+  "isLocked": false,
+  "icon": "textures/items/crops/fruit/strawberry.png",
+  "sortnum": 15
+}

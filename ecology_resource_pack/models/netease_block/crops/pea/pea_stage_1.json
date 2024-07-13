@@ -1,0 +1,103 @@
+{
+  "format_version": "1.13.0",
+  "netease:block_geometry": {
+    "bones": [
+      {
+        "cubes": [
+          {
+            "origin": [-16, -1, 12],
+            "pivot": [-8, -1, 8],
+            "rotation": [0, 0, 0],
+            "size": [16, 16, 0],
+            "uv": {
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-16, -1, 4],
+            "pivot": [-8, -1, 8],
+            "rotation": [0, 0, 0],
+            "size": [16, 16, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-16, -1, 8],
+            "pivot": [-8, -1, 12],
+            "rotation": [0, 0, 0],
+            "size": [16, 16, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-16, -1, 4],
+            "pivot": [-8, -1, 8],
+            "rotation": [0, -90, 0],
+            "size": [16, 16, 0],
+            "uv": {
+              "north": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-16, -1, 12],
+            "pivot": [-8, -1, 8],
+            "rotation": [0, -90, 0],
+            "size": [16, 16, 0],
+            "uv": {
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          },
+          {
+            "origin": [-12, -1, 12],
+            "pivot": [-4, -1, 8],
+            "rotation": [0, -90, 0],
+            "size": [16, 16, 0],
+            "uv": {
+              "south": {
+                "texture": 0,
+                "uv": [0, 0],
+                "uv_size": [32, 32]
+              }
+            }
+          }
+        ],
+        "name": "root",
+        "pivot": [-16, -1, 16],
+        "rotation": [0, 0, 0]
+      }
+    ],
+    "description": {
+      "identifier": "ham:pea_stage_1",
+      "textures": ["ham:pea_stage_1"],
+      "textures_descriptions": [
+        {
+          "length": 32,
+          "width": 32
+        }
+      ],
+      "use_ao": true
+    }
+  }
+}

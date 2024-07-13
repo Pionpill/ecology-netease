@@ -94,7 +94,8 @@
         "ham:sweet_potato",
         "ham:peanut",
         "ham:taro",
-        "ham:yam"
+        "ham:yam",
+        "ham:sorghum"
       ]
     },
     {
@@ -111,8 +112,19 @@
         "ham:cabbage",
         "ham:white_cabbage",
         "ham:carrot",
-        "ham:white_carrot"
+        "ham:white_carrot",
+        "ham:celery",
+        "ham:leek",
+        "ham:pea",
+        "ham:pepper",
+        "ham:rape_seeds",
+        "ham:spinach"
       ]
+    },
+    {
+      "group_name": "itemGroup.name.ham.fruit",
+      "icon": "ham:strawberry",
+      "list": ["ham:strawberry", "ham:sugarcane"]
     },
     {
       "group_name": "itemGroup.name.ham.mushroom",

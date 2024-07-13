@@ -1,0 +1,22 @@
+{
+  "parent": "vegetable",
+  "sortnum": 222,
+  "icon": "textures/items/crops/vegetable/celery.png",
+  "title": "芹菜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:celery"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:celery"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "芹菜",
+      "itemName": "ham:celery"
+    }
+  ]
+}
