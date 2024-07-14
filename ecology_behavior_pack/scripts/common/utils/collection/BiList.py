@@ -2,8 +2,9 @@ from scripts.common import logger
 
 class BiList(object):
     """双向映射，列表实现，适用于少量数据"""
-    def __init__(self):
+    def __init__(self, allowDuplicateValues = False):
         object.__init__(self)
+        self.__allowDuplicateValues = allowDuplicateValues
         self.__keyList = []
         self.__valueList = []
 
@@ -12,10 +13,10 @@ class BiList(object):
 
     def Set(self, key, value):
         if key in self.__keyList:
-            logger.error('双向映射键不能重复')
+            logger.error('双向映射键不能重复 {}'.format(key))
             return False
-        if value in self.__valueList:
-            logger.error('双向映射值不能重复')
+        if value in self.__valueList and not self.__allowDuplicateValues:
+            logger.error('双向映射值不能重复 {}'.format(value))
             return False
         self.__keyList.append(key)
         self.__valueList.append(value)

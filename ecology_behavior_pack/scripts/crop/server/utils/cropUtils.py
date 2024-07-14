@@ -6,7 +6,7 @@ from scripts.common.data.crop import CROP_DATA
 
 seedList = [] # type: list[str]
 seedPrefixList = [] # type: list[str]
-seedPlaceBlockDict = BiList()
+seedPlaceBlockDict = BiList(True)
 
 def __InitSeedList():
     def GetDefaultPrefix(seedName):
