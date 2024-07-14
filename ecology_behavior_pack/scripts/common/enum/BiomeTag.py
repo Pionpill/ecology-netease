@@ -42,6 +42,7 @@ class BiomeTag(object):
     DRIPSTONE_CAVES= 'dripstone_caves'
     SHORE = 'shore'
     SAVANNA = 'savanna'
+    SWAMP = 'swamp'
 
     cnNameDict = {
         FOREST: '森林',
@@ -85,7 +86,8 @@ class BiomeTag(object):
         FROZEN_PEAKS: '冰封山峰',
         DRIPSTONE_CAVES: '溶洞',
         SHORE: '岸边',
-        SAVANNA: '沼泽',
+        SAVANNA: '草原',
+        SWAMP: '沼泽',
     }
 
     @staticmethod

@@ -13,12 +13,17 @@
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "extreme_hills"
+              "value": "hills"
             },
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "hills"
+              "value": "mountain"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountains"
             }
           ]
         }
