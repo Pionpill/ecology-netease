@@ -5,7 +5,7 @@
       "identifier": "ham:grill"
     },
     "tags": ["crafting_table"],
-    "pattern": ["AAA", "A A"],
+    "pattern": ["AAA"],
     "key": {
       "A": {
         "item": "minecraft:iron_ingot"

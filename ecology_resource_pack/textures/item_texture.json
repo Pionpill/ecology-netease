@@ -1,131 +1,23 @@
 {
   "resource_pack_name": "ecology_resource_pack",
   "texture_data": {
-    "ham:apple_pie": {
-      "textures": "textures/items/foods/pie/apple_pie"
+    "ham:magnifier": {
+      "textures": "textures/items/tools/magnifier"
     },
-    "ham:banana": {
-      "textures": "textures/items/crops/fruit/banana"
+    "ham:cooking_book": {
+      "textures": "textures/items/books/cooking_book"
     },
-    "ham:beef_patties": {
-      "textures": "textures/items/foods/simple/beef_patties"
+    "ham:crop_book": {
+      "textures": "textures/items/books/crop_book"
     },
-    "ham:bread": {
-      "textures": "textures/items/foods/simple/bread"
-    },
-    "ham:raw_buns": {
-      "textures": "textures/items/foods/simple/raw_buns"
-    },
-    "ham:buns": {
-      "textures": "textures/items/foods/simple/buns"
-    },
-    "ham:burger": {
-      "textures": "textures/items/foods/fast_food/burger"
-    },
-    "ham:burger_simple": {
-      "textures": "textures/items/foods/fast_food/burger_simple"
-    },
-    "ham:butter": {
-      "textures": "textures/items/materials/butter"
-    },
-    "ham:cheese": {
-      "textures": "textures/items/foods/simple/cheese"
-    },
-    "ham:cheese_pie": {
-      "textures": "textures/items/foods/pie/cheese_pie"
-    },
-    "ham:chili_powder": {
-      "textures": "textures/items/materials/chili_powder"
-    },
-    "ham:cooked_rice": {
-      "textures": "textures/items/foods/rice/cooked_rice"
-    },
-    "ham:cooking_oil": {
-      "textures": "textures/items/materials/cooking_oil"
-    },
-    "ham:straw": {
-      "textures": "textures/items/materials/straw"
+    "ham:guide_book": {
+      "textures": "textures/items/books/guide_book"
     },
     "ham:corn": {
       "textures": "textures/items/crops/crop/corn"
     },
-    "ham:corn_pie": {
-      "textures": "textures/items/foods/pie/corn_pie"
-    },
-    "ham:egg_fired_rice": {
-      "textures": "textures/items/foods/rice/egg_fired_rice"
-    },
-    "ham:eggplant": {
-      "textures": "textures/items/crops/vegetable/eggplant"
-    },
-    "ham:flour": {
-      "textures": "textures/items/materials/flour"
-    },
-    "ham:dough": {
-      "textures": "textures/items/materials/dough"
-    },
-    "ham:starch": {
-      "textures": "textures/items/materials/starch"
-    },
-    "ham:fries": {
-      "textures": "textures/items/foods/fast_food/fries"
-    },
-    "ham:ground_pork": {
-      "textures": "textures/items/materials/ground_pork"
-    },
-    "ham:herb": {
-      "textures": "textures/items/crops/seasoning/herb"
-    },
-    "ham:herb_seeds": {
-      "textures": "textures/items/crops/seasoning/herb_seeds"
-    },
-    "ham:hot_dog": {
-      "textures": "textures/items/foods/fast_food/hot_dog"
-    },
-    "ham:lettuce": {
-      "textures": "textures/items/crops/vegetable/lettuce"
-    },
-    "ham:mantou": {
-      "textures": "textures/items/foods/simple/mantou"
-    },
-    "ham:sweet_milk": {
-      "textures": "textures/items/foods/simple/sweet_milk"
-    },
-    "ham:mapo_tofu": {
-      "textures": "textures/items/foods/fry/mapo_tofu"
-    },
-    "ham:noodle": {
-      "textures": "textures/items/materials/noodle"
-    },
-    "ham:onion": {
-      "textures": "textures/items/crops/vegetable/onion"
-    },
-    "ham:chili": {
-      "textures": "textures/items/crops/seasoning/chili"
-    },
-    "ham:plain_noodles": {
-      "textures": "textures/items/foods/noodles/plain_noodles"
-    },
-    "ham:pork_sauce_noodles": {
-      "textures": "textures/items/foods/noodles/pork_sauce_noodles"
-    },
-    "ham:pork_sauce_rice": {
-      "textures": "textures/items/foods/rice/pork_sauce_rice"
-    },
-    "ham:raw_apple_pie": {
-      "textures": "textures/items/foods/pie/raw_apple_pie"
-    },
-    "ham:raw_beef_patties": {
-      "textures": "textures/items/materials/raw_beef_patties"
-    },
-    "ham:raw_cheese_pie": {
-      "textures": "textures/items/foods/pie/raw_cheese_pie"
-    },
-    "ham:raw_corn_pie": {
-      "textures": "textures/items/foods/pie/raw_corn_pie"
-    },
-    "ham:raw_sausage": {
-      "textures": "textures/items/materials/raw_sausage"
+    "ham:potato": {
+      "textures": "textures/items/crops/crop/potato"
     },
     "ham:rice": {
       "textures": "textures/items/crops/crop/rice"
@@ -145,53 +37,161 @@
     "ham:wheat_seeds": {
       "textures": "textures/items/crops/crop/wheat_seeds"
     },
+    "ham:soy_bean": {
+      "textures": "textures/items/crops/crop/soy_bean"
+    },
+    "ham:banana": {
+      "textures": "textures/items/crops/fruit/banana"
+    },
+    "ham:lentinula": {
+      "textures": "textures/items/crops/mushroom/lentinula"
+    },
+    "ham:chili": {
+      "textures": "textures/items/crops/seasoning/chili"
+    },
+    "ham:herb": {
+      "textures": "textures/items/crops/seasoning/herb"
+    },
+    "ham:herb_seeds": {
+      "textures": "textures/items/crops/seasoning/herb_seeds"
+    },
+    "ham:scallion": {
+      "textures": "textures/items/crops/seasoning/scallion"
+    },
+    "ham:eggplant": {
+      "textures": "textures/items/crops/vegetable/eggplant"
+    },
+    "ham:lettuce": {
+      "textures": "textures/items/crops/vegetable/lettuce"
+    },
+    "ham:onion": {
+      "textures": "textures/items/crops/vegetable/onion"
+    },
+    "ham:tomato": {
+      "textures": "textures/items/crops/vegetable/tomato"
+    },
+    "ham:butter": {
+      "textures": "textures/items/materials/butter"
+    },
+    "ham:chili_powder": {
+      "textures": "textures/items/materials/chili_powder"
+    },
+    "ham:cooking_oil": {
+      "textures": "textures/items/materials/cooking_oil"
+    },
+    "ham:dough": {
+      "textures": "textures/items/materials/dough"
+    },
+    "ham:flour": {
+      "textures": "textures/items/materials/flour"
+    },
+    "ham:ground_pork": {
+      "textures": "textures/items/materials/ground_pork"
+    },
+    "ham:noodle": {
+      "textures": "textures/items/materials/noodle"
+    },
     "ham:salad": {
       "textures": "textures/items/materials/salad"
     },
     "ham:salt": {
       "textures": "textures/items/materials/salt"
     },
-    "ham:sausage": {
-      "textures": "textures/items/foods/simple/sausage"
-    },
-    "ham:scallion": {
-      "textures": "textures/items/crops/seasoning/scallion"
-    },
     "ham:seasoning": {
       "textures": "textures/items/materials/seasoning"
     },
-    "ham:lentinula": {
-      "textures": "textures/items/crops/mushroom/lentinula"
+    "ham:starch": {
+      "textures": "textures/items/materials/starch"
     },
-    "ham:soy_bean": {
-      "textures": "textures/items/crops/crop/soy_bean"
+    "ham:straw": {
+      "textures": "textures/items/materials/straw"
     },
     "ham:tofu": {
       "textures": "textures/items/materials/tofu"
     },
-    "ham:potato": {
-      "textures": "textures/items/crops/crop/potato"
+    "ham:raw_beef_patties": {
+      "textures": "textures/items/foods/simple/raw_beef_patties"
     },
-    "ham:tomato": {
-      "textures": "textures/items/crops/vegetable/tomato"
+    "ham:beef_patties": {
+      "textures": "textures/items/foods/simple/beef_patties"
     },
-    "ham:tomato_egg_noodles": {
-      "textures": "textures/items/foods/noodles/tomato_egg_noodles"
+    "ham:raw_sausage": {
+      "textures": "textures/items/foods/simple/raw_sausage"
+    },
+    "ham:sausage": {
+      "textures": "textures/items/foods/simple/sausage"
+    },
+    "ham:raw_buns": {
+      "textures": "textures/items/foods/simple/raw_buns"
+    },
+    "ham:buns": {
+      "textures": "textures/items/foods/simple/buns"
+    },
+    "ham:bread": {
+      "textures": "textures/items/foods/simple/bread"
+    },
+    "ham:cheese": {
+      "textures": "textures/items/foods/simple/cheese"
+    },
+    "ham:mantou": {
+      "textures": "textures/items/foods/simple/mantou"
+    },
+    "ham:sweet_milk": {
+      "textures": "textures/items/foods/simple/sweet_milk"
+    },
+    "ham:raw_apple_pie": {
+      "textures": "textures/items/foods/pie/raw_apple_pie"
+    },
+    "ham:apple_pie": {
+      "textures": "textures/items/foods/pie/apple_pie"
+    },
+    "ham:raw_cheese_pie": {
+      "textures": "textures/items/foods/pie/raw_cheese_pie"
+    },
+    "ham:cheese_pie": {
+      "textures": "textures/items/foods/pie/cheese_pie"
+    },
+    "ham:raw_corn_pie": {
+      "textures": "textures/items/foods/pie/raw_corn_pie"
+    },
+    "ham:corn_pie": {
+      "textures": "textures/items/foods/pie/corn_pie"
+    },
+    "ham:fries": {
+      "textures": "textures/items/foods/fast_food/fries"
+    },
+    "ham:hot_dog": {
+      "textures": "textures/items/foods/fast_food/hot_dog"
+    },
+    "ham:burger": {
+      "textures": "textures/items/foods/fast_food/burger"
+    },
+    "ham:burger_simple": {
+      "textures": "textures/items/foods/fast_food/burger_simple"
+    },
+    "ham:cooked_rice": {
+      "textures": "textures/items/foods/rice/cooked_rice"
+    },
+    "ham:egg_fired_rice": {
+      "textures": "textures/items/foods/rice/egg_fired_rice"
+    },
+    "ham:pork_sauce_rice": {
+      "textures": "textures/items/foods/rice/pork_sauce_rice"
     },
     "ham:yangzhou_fried_rice": {
       "textures": "textures/items/foods/rice/yangzhou_fried_rice"
     },
-    "ham:cooking_book": {
-      "textures": "textures/items/books/cooking_book"
+    "ham:mapo_tofu": {
+      "textures": "textures/items/foods/fry/mapo_tofu"
     },
-    "ham:guide_book": {
-      "textures": "textures/items/books/guide_book"
+    "ham:plain_noodles": {
+      "textures": "textures/items/foods/noodles/plain_noodles"
     },
-    "ham:crop_book": {
-      "textures": "textures/items/books/crop_book"
+    "ham:pork_sauce_noodles": {
+      "textures": "textures/items/foods/noodles/pork_sauce_noodles"
     },
-    "ham:magnifier": {
-      "textures": "textures/items/tools/magnifier"
+    "ham:tomato_egg_noodles": {
+      "textures": "textures/items/foods/noodles/tomato_egg_noodles"
     }
   },
   "texture_name": "atlas.items"

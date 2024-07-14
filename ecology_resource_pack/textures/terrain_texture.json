@@ -1,6 +1,9 @@
 {
   "resource_pack_name": "ecology_resource_pack",
   "texture_data": {
+    "ham:salt_ore": {
+      "textures": "textures/blocks/ore/salt_ore"
+    },
     "ham:anvil": {
       "textures": "textures/blocks/workbenches/anvil"
     },
@@ -18,6 +21,36 @@
     },
     "ham:cooking_table_side": {
       "textures": "textures/blocks/workbenches/cooking_table_side"
+    },
+    "ham:mix_plank": {
+      "textures": "textures/blocks/workbenches/mix_plank"
+    },
+    "ham:oak_planks": {
+      "textures": "textures/blocks/workbenches/oak_planks"
+    },
+    "ham:oil": {
+      "textures": "textures/blocks/workbenches/oil"
+    },
+    "ham:smooth_stone": {
+      "textures": "textures/blocks/workbenches/smooth_stone"
+    },
+    "ham:spruce_planks": {
+      "textures": "textures/blocks/workbenches/spruce_planks"
+    },
+    "ham:steel_pan_side": {
+      "textures": "textures/blocks/workbenches/steel_pan_side"
+    },
+    "ham:stove_above": {
+      "textures": "textures/blocks/workbenches/stove_above"
+    },
+    "ham:stove_front": {
+      "textures": "textures/blocks/workbenches/stove_front"
+    },
+    "ham:stove_side": {
+      "textures": "textures/blocks/workbenches/stove_side"
+    },
+    "ham:water": {
+      "textures": "textures/blocks/workbenches/water"
     },
     "ham:chili_branch": {
       "textures": "textures/blocks/crops/chili/chili_branch"
@@ -175,36 +208,6 @@
     "ham:potato_stage_3": {
       "textures": "textures/blocks/crops/potato/potato_stage_3"
     },
-    "ham:mix_plank": {
-      "textures": "textures/blocks/workbenches/mix_plank"
-    },
-    "ham:oak_planks": {
-      "textures": "textures/blocks/workbenches/oak_planks"
-    },
-    "ham:oil": {
-      "textures": "textures/blocks/workbenches/oil"
-    },
-    "ham:smooth_stone": {
-      "textures": "textures/blocks/workbenches/smooth_stone"
-    },
-    "ham:spruce_planks": {
-      "textures": "textures/blocks/workbenches/spruce_planks"
-    },
-    "ham:steel_pan_side": {
-      "textures": "textures/blocks/workbenches/steel_pan_side"
-    },
-    "ham:stove_above": {
-      "textures": "textures/blocks/workbenches/stove_above"
-    },
-    "ham:stove_front": {
-      "textures": "textures/blocks/workbenches/stove_front"
-    },
-    "ham:stove_side": {
-      "textures": "textures/blocks/workbenches/stove_side"
-    },
-    "ham:water": {
-      "textures": "textures/blocks/workbenches/water"
-    },
     "ham:weed": {
       "textures": "textures/blocks/crops/weed/weed"
     },
@@ -216,9 +219,6 @@
     },
     "ham:weed_huge": {
       "textures": "textures/blocks/crops/weed/weed_huge"
-    },
-    "ham:salt_ore": {
-      "textures": "textures/blocks/ore/salt_ore"
     }
   },
   "texture_name": "atlas.terrain"
