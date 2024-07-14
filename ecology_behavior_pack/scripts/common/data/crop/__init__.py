@@ -81,6 +81,7 @@ CROP_DATA = {
     "ham:leek": LEEK,
     "ham:pea": PEA,
     "ham:pepper": PEPPER,
+    "ham:rape": RAPE_FLOWER,
     "ham:rape_flower": RAPE_FLOWER,
     "ham:sorghum": SORGHUM,
     "ham:spinach": SPINACH,

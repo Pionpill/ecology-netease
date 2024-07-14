@@ -65,10 +65,10 @@ def GetSeedKey(blockOrItemName):
     else:
         return blockOrItemName
 
-def GetBlockStageDict(blockOrItemName, stageId):
+def GetBlockStageDict(blockPrefix, stageId = 0):
     # type: (str, int) -> dict
     """获取种植后作物方块字典"""
-    return {"name": GetSeedKey(blockOrItemName) + '_stage_' + str(stageId), "aux": 0}
+    return {"name": blockPrefix + '_stage_' + str(stageId), "aux": 0}
 
 def __GetBlockPrefix(blockName):
     # type: (str) -> str

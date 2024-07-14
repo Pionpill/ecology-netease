@@ -70,7 +70,8 @@ class CropService(object):
             msgComp = CropService.GetMsgManager(playerId)
             msgComp.NotifyErrorMessage('玩家手上不存在种子。')
             return False
-        plantBlockDict = cropUtils.GetBlockStageDict(seedName, 0)
+        blockPrefix = CropService.__GetCrop(seedName).GetBlockPrefix()
+        plantBlockDict = cropUtils.GetBlockStageDict(blockPrefix)
         plantPosition = selectPosition if cropUtils.GetReplaceBlock(seedName) else positionUtils.GetAbovePosition(selectPosition) 
         plantResult = blockInfoComp.SetBlockNew(plantPosition, plantBlockDict, dimensionId = dimensionId)
         if not plantResult:
