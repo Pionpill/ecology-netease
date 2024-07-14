@@ -9,7 +9,7 @@
       "itemName": "ham:butter"
     },
     {
-      "type": "ham:cookRecipePage",
+      "type": "ham:squeezerRecipePage",
       "subtitle": "制作·压制机",
       "recipeId": "ham:butter"
     }

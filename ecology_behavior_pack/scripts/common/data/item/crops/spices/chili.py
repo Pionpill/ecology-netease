@@ -1,10 +1,11 @@
-from scripts.common.enum import EffectType
+from scripts.common.enum import BiomeTag, EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
 CHILI = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.CROP: ("ham:chili",)
+    ItemSource.CROP: ("ham:chili",),
+    ItemSource.WILD: (BiomeTag.FOREST,),
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.SEASONING, ItemTag.SPICES, ItemTag.CAPSICUM),

@@ -1,5 +1,4 @@
-from scripts.common.enum import BiomeTag
-from scripts.common.enum import EffectType
+from scripts.common.enum import BiomeTag, EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
 ONION = {

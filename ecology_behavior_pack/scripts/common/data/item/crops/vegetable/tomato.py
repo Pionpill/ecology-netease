@@ -6,7 +6,7 @@ TOMATO = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
     ItemSource.CROP: ("ham:tomato",),
-    ItemSource.WILD: (BiomeTag.HILLS, BiomeTag.EXTREME_HILLS)
+    ItemSource.WILD: (BiomeTag.HILLS, BiomeTag.MOUNTAIN, BiomeTag.MOUNTAINS)
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.VEGETABLE, ItemTag.SOLANUM),
