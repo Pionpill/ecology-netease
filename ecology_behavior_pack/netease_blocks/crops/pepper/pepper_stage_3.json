@@ -2,7 +2,7 @@
   "format_version": "1.16",
   "minecraft:block": {
     "description": {
-      "identifier": "ham:pea_stage_3",
+      "identifier": "ham:pepper_stage_3",
       "register_to_creative_menu": false,
       "base_block": "custom_crop_block"
     },

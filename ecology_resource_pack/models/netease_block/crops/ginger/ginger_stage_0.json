@@ -67,8 +67,8 @@
       "textures": ["ham:ginger_stage_0"],
       "textures_descriptions": [
         {
-          "length": 32,
-          "width": 32
+          "length": 8,
+          "width": 8
         }
       ],
       "use_ao": true
