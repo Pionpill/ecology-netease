@@ -163,8 +163,9 @@ class EcologyManager(object):
         blockState = blockStateComp.GetBlockNew(belowPosition, self.dimensionId)
         if blockState is None:
             return 0
-        if blockState.get("name") == 'minecraft:farmland' and blockState.get("axu") == 1:
-            return 0.6
+        aux = blockState.get("aux") or 0
+        if blockState.get("name") == 'minecraft:farmland' and aux > 1:
+            return 60
         return 0
     
     def __GetAdjustRainfallOfWeather(self):
