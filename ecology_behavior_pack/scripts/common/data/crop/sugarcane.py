@@ -25,8 +25,8 @@ SUGARCANE = {
             "stage": 3
         },
         "temperature": {
-            "suit": (20, 30),
-            "can": (15, 40)
+            "suit": (25, 35),
+            "can": (15, 45)
         },
         "rainfall": {
             "suit": (50, 80),
