@@ -1,0 +1,12 @@
+{
+  "parent": "develop",
+  "sortnum": 1,
+  "icon": "textures/items/books/guide_book.png",
+  "title": "北岸",
+  "pages": [
+    {
+      "type": "textPage",
+      "content": "§8● §r负责人\n§8● §r游戏ID: 锤子工坊_；北岸_本岸\n§8● §r开发，美工，测试，杂役\n§8● §r锤子工坊独裁者，BUG之源，什么时候能安心写代码?"
+    }
+  ]
+}

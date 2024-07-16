@@ -1,6 +1,6 @@
 {
   "title": "§l调料",
-  "content": "§r§8● §0调料不提供饥饿值，通常也不包含隐形BUFF\n§r§8● §r调料可以激发出食物的隐藏属性",
+  "content": "§r§8● §0调料不提供饥饿值，通常也不包含隐形BUFF\n§r§8● §r通常调料需要进一步加工",
   "isLocked": false,
   "icon": "textures/items/crops/seasoning/herb.png",
   "sortnum": 30

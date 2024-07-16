@@ -1,6 +1,6 @@
 {
   "title": "§l蔬菜",
-  "content": "§r§8● §0蔬菜可以提供各种buff\n§r§8● §r几乎所有蔬菜都包含隐形BUFF，需要和粮食/调料搭配激发它们的隐藏属性\n§r§8● §r隐藏属性激发机制尚在开发中",
+  "content": "§r§8● §0蔬菜可以提供各种buff\n§r§8● §r几乎所有蔬菜都包含隐形BUFF，需要和粮食/调料搭配激发它们的隐藏属性\n§r§8● §r蔬菜种植难度不一\n§r§8● §r叶片类蔬菜需要对应的种子种植，其他蔬菜则直接通过果实种植",
   "isLocked": false,
   "icon": "textures/items/crops/vegetable/tomato.png",
   "sortnum": 10

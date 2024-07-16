@@ -1,0 +1,12 @@
+{
+  "parent": "develop",
+  "sortnum": 3,
+  "icon": "textures/items/books/guide_book.png",
+  "title": "纸鹤",
+  "pages": [
+    {
+      "type": "textPage",
+      "content": "§8● §r创作成员\n§8● §r游戏ID: 纸鹤SaMa哟\n§8● §r美工\n§8● §r负责部分作物建模"
+    }
+  ]
+}

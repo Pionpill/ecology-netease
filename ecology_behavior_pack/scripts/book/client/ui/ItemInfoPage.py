@@ -43,9 +43,9 @@ class ItemInfoPage(BaseTextPage):
     def _GetContent(self):
         """❗️根据物品信息"""
         basic = self.__GetContentOfBasic()
-        source = self.__GetContentOfSource()
         food = self.__GetContentOfFood()
-        return basic + source + food
+        source = self.__GetContentOfSource()
+        return basic + food + source
         
     def __GetContentOfBasic(self):
         quality = self._item.GetQuality()

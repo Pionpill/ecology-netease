@@ -1,0 +1,12 @@
+{
+  "parent": "develop",
+  "sortnum": 5,
+  "icon": "textures/items/books/guide_book.png",
+  "title": "小黑龙",
+  "pages": [
+    {
+      "type": "textPage",
+      "content": "§8● §r创作成员\n§8● §r美工\n§8● §r负责部分作物建模"
+    }
+  ]
+}
