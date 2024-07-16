@@ -74,8 +74,14 @@ class CropServerSystem(ServerSystem):
             self.__HandleCropStageTick(args)
 
     def OnBlockRemove(self, args):
-        posKey = (args['x'], args['y'], args['z'], args['dimension']) # type: tuple[int, int, int, int]
+        position = (args['x'], args['y'], args['z'])
+        dimension = args['dimension']
+        posKey = position + (dimension,) # type: tuple[int, int, int, int]
         if not engineUtils.coolDown(posKey, 0.2, blockRemoveCoolDownDict):
+            return
+        cropManager = CropService.GetCropManager(position, dimension)
+        if cropManager.growBlockRemove:
+            cropManager.growBlockRemove = False
             return
         # 作物销毁
         if cropUtils.IsCropBlock(args['fullName']):
