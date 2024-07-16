@@ -53,7 +53,7 @@ class Item(object):
         # type: (str | None) -> dict[str, tuple[str, ...]] | None
         try:
             key = ('source', sourceType) if sourceType else 'source'
-            key = ('source', sourceType) if sourceType else 'source'
+            return self._GetField(key)
         except AddonDataFieldError:
             return None
     
