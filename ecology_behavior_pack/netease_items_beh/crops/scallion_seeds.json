@@ -2,20 +2,15 @@
   "format_version": "1.16.0",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:lettuce",
+      "identifier": "ham:scallion_seeds",
       "register_to_create_menu": true,
       "category": "ecology"
     },
     "components": {
       "minecraft:max_stack_size": 64,
       "minecraft:use_duration": 32,
-      "minecraft:food": {
-        "nutrition": 0.5,
-        "saturation_modifier": "low",
-        "can_always_eat": false
-      },
       "netease:customtips": {
-        "value": "§6§l食材\n§r§3品质: §5"
+        "value": "§f--------------------\n§6§l种子·佐料\n§r§3生长: §b2-3d ☀\n§r§3温度: §b0~15℃―25~35℃\n§r§3湿度: §b15~40%-80~100%\n§r§f--------------------\n§a■ 多个阶段可收获\n§7■ 成熟后植株较高"
       }
     }
   }

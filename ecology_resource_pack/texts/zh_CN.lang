@@ -25,9 +25,11 @@ item.ham:chili.name=辣椒
 item.ham:herb.name=香草
 item.ham:herb_seeds.name=香草种子
 item.ham:scallion.name=葱
+item.ham:scallion_seeds.name=葱种子
 
 item.ham:eggplant.name=茄子
 item.ham:lettuce.name=生菜
+item.ham:lettuce_seeds.name=生菜种子
 item.ham:onion.name=洋葱
 item.ham:tomato.name=番茄
 

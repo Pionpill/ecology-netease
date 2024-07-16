@@ -94,7 +94,13 @@
     {
       "group_name": "itemGroup.name.ham.vegetable",
       "icon": "ham:tomato",
-      "list": ["ham:eggplant", "ham:lettuce", "ham:onion", "ham:tomato"]
+      "list": [
+        "ham:eggplant",
+        "ham:lettuce",
+        "ham:lettuce_seeds",
+        "ham:onion",
+        "ham:tomato"
+      ]
     },
     {
       "group_name": "itemGroup.name.ham.mushroom",
@@ -104,7 +110,13 @@
     {
       "group_name": "itemGroup.name.ham.seasoning",
       "icon": "ham:herb",
-      "list": ["ham:herb", "ham:herb_seeds", "ham:chili", "ham:scallion"]
+      "list": [
+        "ham:herb",
+        "ham:herb_seeds",
+        "ham:chili",
+        "ham:scallion",
+        "ham:scallion_seeds"
+      ]
     },
     {
       "group_name": "itemGroup.name.ham.crop_product",
