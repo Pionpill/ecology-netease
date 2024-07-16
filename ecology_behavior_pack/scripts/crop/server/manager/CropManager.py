@@ -45,6 +45,8 @@ class CropManager(object):
         self.ecology = EcologyFacade.GetEcologyManager(position, dimensionId)
         # 右键和左键方块都可以收获作物，该变量用于防止收获多次
         self.lastHarvestTime = None
+        # 作物生长替换原本方块会触发 BlockRemoveServerEvent 事件，用于标记是否为生长导致
+        self.growBlockRemove = False
 
     def CanGrow(self):
         """判断能否生长"""
@@ -101,6 +103,7 @@ class CropManager(object):
         blockHarvestCount = cropEntityData['harvestCount'] or 0
         nextBlockName = self.GetCropBlockName(self.__GetStage() + 1)
         nextBlock = {"name": nextBlockName, "aux": 0}
+        self.growBlockRemove = True
         blockInfoComp.SetBlockNew(self.position, nextBlock, dimensionId=self.dimensionId)
         cropEntityData = self.__GetCropEntityData()
         if cropEntityData is None:

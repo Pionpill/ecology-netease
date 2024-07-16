@@ -1,6 +1,6 @@
 LETTUCE = {
     "beta": True,
-    "seed": 'ham:lettuce',
+    "seed": 'ham:lettuce_seeds',
     "blockPrefix": 'ham:lettuce',
     "grow": {
         "stage": (
@@ -46,10 +46,17 @@ LETTUCE = {
             "chance": 100,
             "count": 2
         },
-        2: {
-            "name": "ham:lettuce",
-            "chance": 100,
-            "count": 4
-        },
+        2: (
+            {
+                "name": "ham:lettuce",
+                "chance": 100,
+                "count": 4
+            }, 
+            {
+                "name": "ham:lettuce_seeds",
+                "chance": 100,
+                "count": 1.5
+            }
+        ),
     }
 }

@@ -1,6 +1,6 @@
 SCALLION = {
     "beta": True,
-    "seed": 'ham:scallion',
+    "seed": 'ham:scallion_seeds',
     "blockPrefix": 'ham:scallion',
     "grow": {
         "stage": (
@@ -50,10 +50,17 @@ SCALLION = {
             "chance": 100,
             "count": 2
         },
-        3: {
-            "name": "ham:scallion",
-            "chance": 100,
-            "count": 4
-        },
+        3: (
+            {
+                "name": "ham:scallion",
+                "chance": 100,
+                "count": 4
+            },
+            {
+                "name": "ham:scallion_seeds",
+                "chance": 100,
+                "count": 1.5
+            }
+        )
     }
 }

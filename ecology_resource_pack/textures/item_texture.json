@@ -97,6 +97,12 @@
     "ham:scallion": {
       "textures": "textures/items/crops/seasoning/scallion"
     },
+    "ham:scallion_seeds": {
+      "textures": "textures/items/crops/seasoning/scallion_seeds"
+    },
+    "ham:lettuce_seeds": {
+      "textures": "textures/items/crops/vegetable/lettuce_seeds"
+    },
     "ham:tomato": {
       "textures": "textures/items/crops/vegetable/tomato"
     },

@@ -104,6 +104,7 @@
       "list": [
         "ham:eggplant",
         "ham:lettuce",
+        "ham:lettuce_seeds",
         "ham:bok_choy",
         "ham:onion",
         "ham:tomato",
@@ -146,6 +147,7 @@
         "ham:herb_seeds",
         "ham:chili",
         "ham:scallion",
+        "ham:scallion_seeds",
         "ham:garlic",
         "ham:ginger"
       ]
