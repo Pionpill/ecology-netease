@@ -1,6 +1,6 @@
 BROCCOLI = {
     "beta": False,
-    "seed": 'ham:white_broccoli',
+    "seed": 'ham:white_broccoli_seeds',
     "blockPrefix": 'ham:white_broccoli',
     "grow": {
         "stage": (
@@ -54,6 +54,11 @@ BROCCOLI = {
             "name": "ham:broccoli",
             "chance": 10,
             "count": 1
-        }
+        },
+        {
+            "name": "ham:white_broccoli_seeds",
+            "chance": 100,
+            "count": 1.5
+        },
     )
 }

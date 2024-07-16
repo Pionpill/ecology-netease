@@ -1,6 +1,6 @@
 {
   "parent": "vegetable",
-  "sortnum": 224,
+  "sortnum": 226,
   "icon": "textures/items/crops/vegetable/spinach.png",
   "title": "菠菜",
   "pages": [

@@ -48,9 +48,11 @@ item.ham:lettuce_seeds.name=生菜种子
 item.ham:onion.name=洋葱
 item.ham:tomato.name=番茄
 item.ham:cabbage.name=卷心菜
+item.ham:cabbage_seeds.name=卷心菜种子
 item.ham:carrot.name=胡萝卜
 item.ham:white_carrot.name=白萝卜
 item.ham:white_cabbage.name=大白菜
+item.ham:white_cabbage_seeds.name=大白菜种子
 
 
 item.ham:butter.name=黄油
@@ -68,14 +70,19 @@ item.ham:potato.name=土豆
 item.ham:tomato.name=番茄
 item.ham:broccoli.name=西兰花
 item.ham:white_broccoli.name=花菜
+item.ham:white_broccoli_seeds.name=花菜种子
 item.ham:bok_choy.name=小青菜
+item.ham:bok_choy_seeds.name=小青菜种子
 item.ham:celery.name=芹菜
+item.ham:celery_seeds.name=芹菜种子
 item.ham:leek.name=韭菜
+item.ham:leek_seeds.name=韭菜种子
 item.ham:pea.name=豌豆
 item.ham:pepper.name=青椒
 item.ham:rape_seeds.name=油菜籽
 item.ham:sorghum.name=高粱
 item.ham:spinach.name=菠菜
+item.ham:spinach_seeds.name=菠菜种子
 
 item.ham:starch.name=淀粉
 item.ham:straw.name=秸秆

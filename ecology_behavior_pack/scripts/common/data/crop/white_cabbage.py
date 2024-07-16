@@ -1,6 +1,6 @@
 WHITE_CABBAGE = {
     "beta": False,
-    "seed": 'ham:white_cabbage',
+    "seed": 'ham:white_cabbage_seeds',
     "blockPrefix": 'ham:white_cabbage',
     "grow": {
         "stage": (
@@ -50,5 +50,10 @@ WHITE_CABBAGE = {
             "chance": 100,
             "count": 2
         },
+        {
+            "name": "ham:white_cabbage_seeds",
+            "chance": 100,
+            "count": 1.5
+        }
     )
 }

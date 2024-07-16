@@ -1,6 +1,6 @@
 {
   "parent": "vegetable",
-  "sortnum": 223,
+  "sortnum": 225,
   "icon": "textures/items/crops/vegetable/leek.png",
   "title": "韭菜",
   "pages": [

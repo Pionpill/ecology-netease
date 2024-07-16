@@ -1,6 +1,6 @@
 BOK_CHOY = {
     "beta": False,
-    "seed": 'ham:bok_choy',
+    "seed": 'ham:bok_choy_seeds',
     "blockPrefix": 'ham:bok_choy',
     "grow": {
         "stage": (
@@ -46,10 +46,17 @@ BOK_CHOY = {
             "chance": 100,
             "count": 2
         },
-        2: {
+        2: (
+            {
             "name": "ham:bok_choy",
             "chance": 100,
             "count": 3
-        },
+            },
+            {
+            "name": "ham:bok_choy_seeds",
+            "chance": 100,
+            "count": 1.5
+            },
+        ),
     }
 }

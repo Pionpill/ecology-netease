@@ -1,6 +1,6 @@
 {
   "parent": "vegetable",
-  "sortnum": 210,
+  "sortnum": 204,
   "icon": "textures/items/crops/vegetable/white_broccoli.png",
   "title": "花菜",
   "pages": [

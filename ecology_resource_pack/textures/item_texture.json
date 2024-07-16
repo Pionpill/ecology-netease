@@ -25,11 +25,20 @@
     "ham:cabbage": {
       "textures": "textures/items/crops/vegetable/cabbage"
     },
+    "ham:cabbage_seeds": {
+      "textures": "textures/items/crops/vegetable/cabbage_seeds"
+    },
     "ham:celery": {
       "textures": "textures/items/crops/vegetable/celery"
     },
+    "ham:celery_seeds": {
+      "textures": "textures/items/crops/vegetable/celery_seeds"
+    },
     "ham:leek": {
       "textures": "textures/items/crops/vegetable/leek"
+    },
+    "ham:leek_seeds": {
+      "textures": "textures/items/crops/vegetable/leek_seeds"
     },
     "ham:pea": {
       "textures": "textures/items/crops/vegetable/pea"
@@ -42,6 +51,9 @@
     },
     "ham:spinach": {
       "textures": "textures/items/crops/vegetable/spinach"
+    },
+    "ham:spinach_seeds": {
+      "textures": "textures/items/crops/vegetable/spinach_seeds"
     },
     "ham:sugarcane": {
       "textures": "textures/items/crops/fruit/sugarcane"
@@ -178,6 +190,9 @@
     "ham:white_cabbage": {
       "textures": "textures/items/crops/vegetable/white_cabbage"
     },
+    "ham:white_cabbage_seeds": {
+      "textures": "textures/items/crops/vegetable/white_cabbage_seeds"
+    },
     "ham:white_carrot": {
       "textures": "textures/items/crops/vegetable/white_carrot"
     },
@@ -187,8 +202,14 @@
     "ham:white_broccoli": {
       "textures": "textures/items/crops/vegetable/white_broccoli"
     },
+    "ham:white_broccoli_seeds": {
+      "textures": "textures/items/crops/vegetable/white_broccoli_seeds"
+    },
     "ham:bok_choy": {
       "textures": "textures/items/crops/vegetable/bok_choy"
+    },
+    "ham:bok_choy_seeds": {
+      "textures": "textures/items/crops/vegetable/bok_choy_seeds"
     },
     "ham:garlic": {
       "textures": "textures/items/crops/seasoning/garlic"

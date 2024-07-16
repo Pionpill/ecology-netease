@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:spinach_seeds"
+    },
+    "components": {
+      "minecraft:icon": "ham:spinach_seeds",
+      "minecraft:hover_text_color": "white"
+    }
+  }
+}

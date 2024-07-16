@@ -1,6 +1,6 @@
 SPINACH = {
     "beta": False,
-    "seed": 'ham:spinach',
+    "seed": 'ham:spinach_seeds',
     "blockPrefix": 'ham:spinach',
     "grow": {
         "stage": (
@@ -46,10 +46,17 @@ SPINACH = {
             "chance": 100,
             "count": 2
         },
-        2: {
-            "name": "ham:spinach",
-            "chance": 100,
-            "count": 3.5
-        },
+        2: (
+            {
+                "name": "ham:spinach",
+                "chance": 100,
+                "count": 3.5
+            },
+            {
+                "name": "ham:spinach_seeds",
+                "chance": 100,
+                "count": 1.5
+            }
+        )
     }
 }

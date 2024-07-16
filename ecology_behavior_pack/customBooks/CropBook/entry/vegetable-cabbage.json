@@ -1,6 +1,6 @@
 {
   "parent": "vegetable",
-  "sortnum": 211,
+  "sortnum": 220,
   "icon": "textures/items/crops/vegetable/cabbage.png",
   "title": "卷心菜",
   "pages": [

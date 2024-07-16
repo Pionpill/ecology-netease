@@ -1,6 +1,6 @@
 {
   "parent": "vegetable",
-  "sortnum": 230,
+  "sortnum": 240,
   "icon": "textures/items/crops/vegetable/rape_seeds.png",
   "title": "油菜籽",
   "pages": [

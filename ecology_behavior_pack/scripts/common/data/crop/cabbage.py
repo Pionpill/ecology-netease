@@ -1,6 +1,6 @@
 CABBAGE = {
     "beta": False,
-    "seed": 'ham:cabbage',
+    "seed": 'ham:cabbage_seeds',
     "blockPrefix": 'ham:cabbage',
     "grow": {
         "stage": (
@@ -49,6 +49,11 @@ CABBAGE = {
             "name": "ham:cabbage",
             "chance": 100,
             "count": 3
+        },
+        {
+            "name": "ham:cabbage_seeds",
+            "chance": 100,
+            "count": 1.5
         },
     )
 }

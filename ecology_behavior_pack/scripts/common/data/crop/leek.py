@@ -1,6 +1,6 @@
 LEEK = {
     "beta": False,
-    "seed": 'ham:leek',
+    "seed": 'ham:leek_seeds',
     "blockPrefix": 'ham:leek',
     "grow": {
         "stage": (
@@ -47,10 +47,17 @@ LEEK = {
             "chance": 100,
             "count": 2
         },
-        2: {
-            "name": "ham:leek",
-            "chance": 100,
-            "count": 5
-        },
+        2: (
+            {
+                "name": "ham:leek",
+                "chance": 100,
+                "count": 5
+            },
+            {
+                "name": "ham:leek_seeds",
+                "chance": 100,
+                "count": 1.5
+            }
+        ),
     }
 }

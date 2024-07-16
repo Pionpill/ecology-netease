@@ -1,6 +1,6 @@
 {
   "parent": "vegetable",
-  "sortnum": 220,
+  "sortnum": 211,
   "icon": "textures/items/crops/vegetable/carrot.png",
   "title": "胡萝卜",
   "pages": [

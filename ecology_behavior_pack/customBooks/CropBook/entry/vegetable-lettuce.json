@@ -1,6 +1,6 @@
 {
   "parent": "vegetable",
-  "sortnum": 221,
+  "sortnum": 223,
   "icon": "textures/items/crops/vegetable/lettuce.png",
   "title": "生菜",
   "pages": [

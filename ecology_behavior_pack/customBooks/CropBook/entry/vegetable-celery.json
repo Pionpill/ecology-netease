@@ -1,6 +1,6 @@
 {
   "parent": "vegetable",
-  "sortnum": 222,
+  "sortnum": 224,
   "icon": "textures/items/crops/vegetable/celery.png",
   "title": "芹菜",
   "pages": [

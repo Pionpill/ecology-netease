@@ -1,6 +1,6 @@
 CELERY = {
     "beta": False,
-    "seed": 'ham:celery',
+    "seed": 'ham:celery_seeds',
     "blockPrefix": 'ham:celery',
     "grow": {
         "stage": (
@@ -46,10 +46,17 @@ CELERY = {
             "chance": 100,
             "count": 5
         },
-        2: {
-            "name": "ham:celery",
-            "chance": 100,
-            "count": 10
-        },
+        2: (
+            {
+                "name": "ham:celery",
+                "chance": 100,
+                "count": 10
+            },
+            {
+                "name": "ham:celery_seeds",
+                "chance": 100,
+                "count": 1.5
+            },
+        ),
     }
 }
