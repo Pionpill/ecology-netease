@@ -1,6 +1,6 @@
 {
   "title": "§l粮食",
-  "content": "§r§8● §0粮食能提供极高的饱食度\n§r§8● §r粮食的泛用性极广，大部分食物都需要至少一个粮食作为基础食材\n§r§8● §r粮食的饱食度同时决定了食物BUFF的持续时间",
+  "content": "§r§8● §0粮食能提供极高的饱食度\n§r§8● §r粮食的泛用性极广，大部分食物都主要至少一种粮食作为基本食材\n§r§8● §r粮食的种植难度较为简单\n§r§8● §r粮食的饱食度同时决定了食物BUFF的持续时间",
   "isLocked": false,
   "icon": "textures/items/crops/crop/rice_plant.png",
   "sortnum": 1

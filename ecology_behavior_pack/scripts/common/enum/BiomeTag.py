@@ -68,7 +68,7 @@ class BiomeTag(object):
         WARM: '温带',
         MUTATED: '变种',
         BAMBOO: '竹林',
-        MOUNTAINS: '高山',
+        MOUNTAINS: '群山',
         MOUNTAIN: '高山',
         MEGA: '巨型',
         GROVE: '雪林',
