@@ -1,8 +1,8 @@
 {
   "node_ID": "ham-ecology-farm",
   "title": "图签-作物",
-  "unfinished_icon": "textures/items/crops/seasoning/herb_seeds",
-  "finished_icon": "textures/items/crops/seasoning/herb_seeds",
+  "unfinished_icon": "textures/items/crops/crop/wheat_seeds",
+  "finished_icon": "textures/items/crops/crop/wheat_seeds",
   "use_default_icon_background": true,
   "window_background": "textures/blocks/farmland_wet",
   "goal_details": {},

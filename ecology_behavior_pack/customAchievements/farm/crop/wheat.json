@@ -1,18 +1,18 @@
 {
-  "node_ID": "ham-ecology-farm-crop",
-  "parent_node": "ham-ecology-farm",
+  "node_ID": "ham-ecology-farm-wheat_plant",
+  "parent_node": "ham-ecology-farm-crop",
   "depend_parent": false,
-  "title": "主粮",
+  "title": "小麦",
   "unfinished_icon": "textures/items/crops/crop/wheat_plant",
   "finished_icon": "textures/items/crops/crop/wheat_plant",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "主粮",
+  "node_description": "小麦",
   "reward": [
     {
       "function_name": "",
-      "name_space": "ham:crop",
+      "name_space": "ham:wheat",
       "data": {
         "EXP": 50,
         "string": "农艺经验"
