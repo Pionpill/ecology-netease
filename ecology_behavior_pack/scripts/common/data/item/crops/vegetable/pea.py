@@ -12,7 +12,7 @@ PEA = {
   "tag": (ItemTag.VEGETABLE,),
   "hidden_effect": [EffectType.HASTE],
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": True
   }

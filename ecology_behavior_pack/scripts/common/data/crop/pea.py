@@ -48,7 +48,7 @@ PEA = {
         {
             "name": "ham:pea",
             "chance": 100,
-            "count": 6
+            "count": 4
         },
     )
 }

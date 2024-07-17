@@ -48,7 +48,7 @@ CARROT = {
         {
             "name": "ham:carrot",
             "chance": 100,
-            "count": 5
+            "count": 3
         },
     )
 }

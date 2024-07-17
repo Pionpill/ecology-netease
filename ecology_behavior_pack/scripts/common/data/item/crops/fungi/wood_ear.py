@@ -10,9 +10,10 @@ WOOD_EAR = {
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.FUNGI,),
+  "effect": [EffectType.POISON],
   "hidden_effect": [EffectType.SPEED],
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.POOR,
     "can_eat": False
   }

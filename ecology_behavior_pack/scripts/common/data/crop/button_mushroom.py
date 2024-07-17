@@ -54,7 +54,7 @@ BUTTON_MUSHROOM = {
         3: {
             "name": "ham:button_mushroom",
             "chance": 100,
-            "count": 4
+            "count": 3
         },
     }
 }

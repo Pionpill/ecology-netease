@@ -12,7 +12,7 @@ SUGARCANE = {
   "tag": (ItemTag.FRUIT, ),
   "hidden_effect": [EffectType.INSTANT_HEALTH],
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.POOR,
     "can_eat": True
   }

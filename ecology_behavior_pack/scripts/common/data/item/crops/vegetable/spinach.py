@@ -12,7 +12,7 @@ SPINACH = {
   "tag": (ItemTag.VEGETABLE, ItemTag.GREEN),
   "hidden_effect": [EffectType.ABSORPTION],
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.POOR,
     "can_eat": True
   }

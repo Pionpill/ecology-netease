@@ -44,13 +44,13 @@ CELERY = {
         1: {
             "name": "ham:celery",
             "chance": 100,
-            "count": 5
+            "count": 3
         },
         2: (
             {
                 "name": "ham:celery",
                 "chance": 100,
-                "count": 10
+                "count": 6
             },
             {
                 "name": "ham:celery_seeds",

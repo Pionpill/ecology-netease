@@ -48,7 +48,7 @@ SORGHUM = {
         {
             "name": "ham:sorghum",
             "chance": 100,
-            "count": 4
+            "count": 5
         },
     )
 }

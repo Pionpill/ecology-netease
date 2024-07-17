@@ -9,8 +9,13 @@
     "components": {
       "minecraft:max_stack_size": 32,
       "minecraft:use_duration": 32,
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation_modifier": "normal",
+        "can_always_eat": false
+      },
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食材\n§r§3品质: §5\n§r§f--------------------\n§r§7花菜植株极小概率掉落"
+        "value": "§f--------------------\n§6§l食材\n§r§3品质: §5 §3饥饿: §5\n§r§f--------------------\n§r§7花菜植株极小概率掉落"
       }
     }
   }

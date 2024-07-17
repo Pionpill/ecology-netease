@@ -50,7 +50,7 @@ SPINACH = {
             {
                 "name": "ham:spinach",
                 "chance": 100,
-                "count": 3.5
+                "count": 3
             },
             {
                 "name": "ham:spinach_seeds",

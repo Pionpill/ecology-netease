@@ -10,9 +10,10 @@ BUTTON_MUSHROOM = {
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.FUNGI,),
+  "effect": [EffectType.POISON],
   "hidden_effect": [EffectType.JUMP_BOOST],
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.POOR,
     "can_eat": False
   }

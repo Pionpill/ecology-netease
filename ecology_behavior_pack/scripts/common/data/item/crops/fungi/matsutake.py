@@ -10,6 +10,7 @@ MATSUTAKE = {
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.FUNGI,),
+  "effect": [EffectType.POISON],
   "hidden_effect": [EffectType.REGENERATION],
   "food": {
     "nutrition": 1,

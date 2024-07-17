@@ -12,7 +12,7 @@ CARROT = {
   "tag": (ItemTag.VEGETABLE, ItemTag.CARROT),
   "hidden_effect": [EffectType.NIGHT_VISION],
   "food": {
-    "nutrition": 1.5,
+    "nutrition": 2,
     "saturation": FoodSaturation.LOW,
     "can_eat": True
   }

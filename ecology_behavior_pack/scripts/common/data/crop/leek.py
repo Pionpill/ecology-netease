@@ -51,7 +51,7 @@ LEEK = {
             {
                 "name": "ham:leek",
                 "chance": 100,
-                "count": 5
+                "count": 4
             },
             {
                 "name": "ham:leek_seeds",

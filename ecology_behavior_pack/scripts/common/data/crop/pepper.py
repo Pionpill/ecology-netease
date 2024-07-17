@@ -49,7 +49,7 @@ PEPPER = {
         {
             "name": "ham:pepper",
             "chance": 100,
-            "count": 4
+            "count": 3
         },
     )
 }

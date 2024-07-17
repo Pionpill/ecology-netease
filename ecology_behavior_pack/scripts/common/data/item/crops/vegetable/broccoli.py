@@ -12,7 +12,7 @@ BROCCOLI = {
   "tag": (ItemTag.VEGETABLE,),
   "hidden_effect": [EffectType.RESISTANCE, EffectType.HEALTH_BOOST],
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.POOR,
     "can_eat": False
   }
@@ -28,7 +28,7 @@ WHITE_BROCCOLI = {
   "tag": (ItemTag.VEGETABLE,),
   "hidden_effect": [EffectType.RESISTANCE],
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.POOR,
     "can_eat": False
   }

@@ -46,7 +46,7 @@ WOOD_EAR = {
         {
             "name": "ham:wood_ear",
             "chance": 100,
-            "count": 5
+            "count": 3
         },
         {
             "name": "ham:rotten_wood",

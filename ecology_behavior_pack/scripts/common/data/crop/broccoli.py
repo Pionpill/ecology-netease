@@ -48,7 +48,7 @@ BROCCOLI = {
         {
             "name": "ham:white_broccoli",
             "chance": 100,
-            "count": 5
+            "count": 3
         },
         {
             "name": "ham:broccoli",

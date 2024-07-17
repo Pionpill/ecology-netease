@@ -48,7 +48,7 @@ SUGARCANE = {
         {
             "name": "ham:sugarcane",
             "chance": 100,
-            "count": 11
+            "count": 6
         },
     )
 }

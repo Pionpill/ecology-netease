@@ -12,7 +12,7 @@ PEPPER = {
   "tag": (ItemTag.VEGETABLE, ItemTag.CAPSICUM),
   "hidden_effect": [EffectType.SPEED],
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": True
   }

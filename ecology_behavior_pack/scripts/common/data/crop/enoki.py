@@ -50,7 +50,7 @@ ENOKI = {
         2: {
             "name": "ham:enoki",
             "chance": 100,
-            "count": 5
+            "count": 3
         },
     }
 }

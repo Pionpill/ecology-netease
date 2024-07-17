@@ -12,7 +12,7 @@ LEEK = {
   "tag": (ItemTag.VEGETABLE, ItemTag.GREEN),
   "hidden_effect": None,
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.POOR,
     "can_eat": True
   }
