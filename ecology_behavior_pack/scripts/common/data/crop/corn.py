@@ -50,5 +50,10 @@ CORN = {
             "chance": 100,
             "count": 6
         },
+        {
+            "name": "ham:straw",
+            "chance": 100,
+            "count": 1
+        },
     )
 }
