@@ -31,4 +31,18 @@ STEW_DATA = {
         },
         "result": "ham:tomato_egg_noodles"
     },
+    "ham:cooked_corn": {
+        "material": {
+            0: "ham:corn",
+            1: "ham:corn",
+            2: "ham:corn",
+            3: "ham:corn",
+            4: "ham:corn",
+            5: "ham:corn",
+        },
+        "result": {
+            "newItemName": "ham:cooked_corn", 
+            "count": 3,
+        }
+    },
 }

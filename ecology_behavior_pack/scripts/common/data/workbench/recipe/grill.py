@@ -21,5 +21,15 @@ GRILL_DATA = {
             "newItemName": "ham:sausage", 
             "count": 1,
         }
-    }
+    },
+    "ham:cooked_corn": {
+        "material": {
+            "newItemName": "ham:corn", 
+            "count": 2,
+        },
+        "result": {
+            "newItemName": "ham:cooked_corn", 
+            "count": 2,
+        }
+    },
 }

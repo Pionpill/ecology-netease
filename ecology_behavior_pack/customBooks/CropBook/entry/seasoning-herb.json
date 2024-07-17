@@ -17,6 +17,12 @@
       "type": "ham:itemInfoPage",
       "subtitle": "香草",
       "itemName": "ham:herb"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:seasoning",
+      "subtitle": "制作·调料·石磨",
+      "content": "研磨为调料"
     }
   ]
 }

@@ -25,4 +25,14 @@ STEAMER_DATA = {
         "material": "ham:rice",
         "result": "ham:cooked_rice"
     },
+    "ham:cooked_corn": {
+        "material": {
+            "newItemName": "ham:corn", 
+            "count": 6,
+        },
+        "result": {
+            "newItemName": "ham:cooked_corn", 
+            "count": 6,
+        }
+    },
 }

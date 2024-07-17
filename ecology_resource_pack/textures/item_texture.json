@@ -115,6 +115,9 @@
     "ham:tofu": {
       "textures": "textures/items/materials/tofu"
     },
+    "ham:cooked_corn": {
+      "textures": "textures/items/foods/simple/cooked_corn"
+    },
     "ham:raw_beef_patties": {
       "textures": "textures/items/foods/simple/raw_beef_patties"
     },

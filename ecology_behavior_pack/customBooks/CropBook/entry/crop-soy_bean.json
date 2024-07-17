@@ -17,6 +17,12 @@
       "type": "ham:itemInfoPage",
       "subtitle": "黄豆",
       "itemName": "ham:soy_bean"
+    },
+    {
+      "subtitle": "制作·食用油·压制机",
+      "type": "ham:squeezerRecipePage",
+      "recipeId": "ham:cooking_oil-soy_bean",
+      "content": "食用玉米制作食用油，产量一般"
     }
   ]
 }

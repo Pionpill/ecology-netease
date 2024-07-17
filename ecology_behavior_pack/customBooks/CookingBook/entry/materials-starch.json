@@ -10,8 +10,13 @@
     },
     {
       "type": "ham:millRecipePage",
-      "recipeId": "ham:starch",
-      "subtitle": "制作·石磨"
+      "recipeId": "ham:starch-potato",
+      "subtitle": "制作·土豆·石磨"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:starch-rice",
+      "subtitle": "制作·大米·石磨"
     }
   ]
 }
