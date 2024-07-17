@@ -19,9 +19,28 @@
       "itemName": "ham:wheat_plant"
     },
     {
-      "subtitle": "转换为原版小麦",
       "type": "ham:cookRecipePage",
-      "recipeId": "minecraft:wheat"
+      "subtitle": "转换为原版小麦",
+      "recipeId": "minecraft:wheat",
+      "content": "在原版工作台，背包中也可合成"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "subtitle": "制作·面粉·石磨",
+      "recipeId": "ham:flour",
+      "content": "小麦制品几乎都需要先磨成面粉再加工"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·面团·厨务台",
+      "recipeId": "ham:dough",
+      "content": "加水合成面团"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·面条·厨务台",
+      "recipeId": "ham:noodle",
+      "content": "开启面食！"
     }
   ]
 }

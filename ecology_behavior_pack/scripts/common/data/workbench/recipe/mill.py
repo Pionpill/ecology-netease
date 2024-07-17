@@ -41,8 +41,15 @@ MILL_DATA = {
             1: "ham:straw",
         }
     },
-    "ham:starch": {
+    "ham:starch-rice": {
         "material": "ham:rice",
+        "result": {
+            "newItemName": "ham:starch",
+            "count": 2,
+        }
+    },
+    "ham:starch-potato": {
+        "material": "ham:potato",
         "result": {
             "newItemName": "ham:starch",
             "count": 2,

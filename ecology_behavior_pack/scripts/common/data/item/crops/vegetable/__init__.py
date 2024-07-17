@@ -1,7 +1,6 @@
 from scripts.common.data.item.crops.vegetable.eggplant import EGGPLANT
 from scripts.common.data.item.crops.vegetable.lettuce import LETTUCE
 from scripts.common.data.item.crops.vegetable.onion import ONION
-from scripts.common.data.item.crops.vegetable.scallion import SCALLION
 from scripts.common.data.item.crops.vegetable.tomato import TOMATO
 from scripts.common.data.item.crops.vegetable.bok_choy import BOK_CHOY
 from scripts.common.data.item.crops.vegetable.broccoli import BROCCOLI, WHITE_BROCCOLI
@@ -17,4 +16,4 @@ from scripts.common.data.item.crops.vegetable.rape_seeds import RAPE_SEEDS
 from scripts.common.data.item.crops.vegetable.spinach import SPINACH
 from scripts.common.data.item.crops.vegetable.beet import BEET_LEAF, BEET_ROOT
 
-__all__ = ['EGGPLANT', 'LETTUCE', 'ONION', 'SCALLION', 'TOMATO', 'BOK_CHOY', 'BROCCOLI', 'WHITE_BROCCOLI', 'CABBAGE', 'WHITE_CABBAGE', 'CARROT', 'WHITE_CARROT', 'CELERY', 'LEEK', 'PEA', 'PEPPER', 'RAPE_SEEDS', 'SPINACH', 'BEET_ROOT', 'BEET_LEAF']
+__all__ = ['EGGPLANT', 'LETTUCE', 'ONION', 'TOMATO', 'BOK_CHOY', 'BROCCOLI', 'WHITE_BROCCOLI', 'CABBAGE', 'WHITE_CABBAGE', 'CARROT', 'WHITE_CARROT', 'CELERY', 'LEEK', 'PEA', 'PEPPER', 'RAPE_SEEDS', 'SPINACH', 'BEET_ROOT', 'BEET_LEAF']

@@ -49,7 +49,7 @@ EGGPLANT = {
         {
             "name": "ham:eggplant",
             "chance": 100,
-            "count": 2
+            "count": 3
         },
     )
 }

@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-farm-rice_plant",
-  "parent_node": "ham-ecology-farm-corn",
+  "parent_node": "ham-ecology-farm-wheat_plant",
   "depend_parent": false,
   "title": "稻米",
   "unfinished_icon": "textures/items/crops/crop/rice_plant",

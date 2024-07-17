@@ -8,10 +8,11 @@ SCALLION = {
     ItemSource.WILD: (BiomeTag.FOREST,),
   },
   "category": ItemCategory.CROPS,
-  "tag": (ItemTag.VEGETABLE, ItemTag.ALLIUM),
+  "tag": (ItemTag.SEASONING, ItemTag.ALLIUM),
+  "effect": (EffectType.NAUSEA,),
   "hidden_effect": (EffectType.ABSORPTION,),
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.LOW,
     "can_eat": True
   }

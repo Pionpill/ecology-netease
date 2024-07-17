@@ -28,15 +28,15 @@ SQUEEZER_DATA = {
         "material": {
             0: {
                 "newItemName": "ham:soy_bean", 
-                "count": 2,
+                "count": 3,
             },
             1: {
                 "newItemName": "ham:soy_bean", 
-                "count": 2,
+                "count": 3,
             },
             2: {
                 "newItemName": "ham:soy_bean", 
-                "count": 2,
+                "count": 3,
             },
         },
         "result": {
@@ -48,15 +48,15 @@ SQUEEZER_DATA = {
         "material": {
             0: {
                 "newItemName": "ham:corn", 
-                "count": 2,
+                "count": 3,
             },
             1: {
                 "newItemName": "ham:corn", 
-                "count": 2,
+                "count": 3,
             },
             2: {
                 "newItemName": "ham:corn", 
-                "count": 2,
+                "count": 3,
             },
         },
         "result": {

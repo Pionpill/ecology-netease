@@ -46,6 +46,7 @@
       "group_name": "itemGroup.name.ham.simple_food",
       "icon": "ham:buns",
       "list": [
+        "ham:cooked_corn",
         "ham:cooked_rice",
         "ham:bread",
         "ham:cheese",

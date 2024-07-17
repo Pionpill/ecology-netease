@@ -89,6 +89,9 @@ item.ham:spinach_seeds.name=菠菜种子
 item.ham:starch.name=淀粉
 item.ham:straw.name=秸秆
 item.ham:tofu.name=豆腐
+
+
+item.ham:cooked_corn.name=熟玉米
 item.ham:raw_beef_patties.name=生牛肉饼
 item.ham:beef_patties.name=熟牛肉饼
 item.ham:raw_buns.name=生包子

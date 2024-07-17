@@ -1,8 +1,8 @@
 from scripts.common.data.item.crops.crop import CORN, WHEAT_PLANT, RICE_PLANT, SOY_BEAN, RED_BEAN, GREEN_BEAN, POTATO, SWEET_POTATO, PEANUT, TARO, YAM, SORGHUM
 from scripts.common.data.item.crops.fruit import SUGARCANE, STRAWBERRY
 from scripts.common.data.item.crops.fungi import LENTINULA, BUTTON_MUSHROOM, DICTYOPHORA, ENOKI, MATSUTAKE, WOOD_EAR
-from scripts.common.data.item.crops.spices import CHILI, HERB, GARLIC, GINGER
-from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO, BOK_CHOY, BROCCOLI, WHITE_BROCCOLI, CABBAGE, WHITE_CABBAGE, CARROT, WHITE_CARROT, CELERY, LEEK, PEA, PEPPER, RAPE_SEEDS, SPINACH, BEET_ROOT, BEET_LEAF
+from scripts.common.data.item.crops.spices import CHILI, HERB, GARLIC, GINGER, SCALLION
+from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, TOMATO, BOK_CHOY, BROCCOLI, WHITE_BROCCOLI, CABBAGE, WHITE_CABBAGE, CARROT, WHITE_CARROT, CELERY, LEEK, PEA, PEPPER, RAPE_SEEDS, SPINACH, BEET_ROOT, BEET_LEAF
 
 from scripts.common.data.item.materials.fuel import STRAW
 from scripts.common.data.item.materials.ore import SALT

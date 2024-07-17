@@ -12,7 +12,7 @@ EGGPLANT = {
   "tag": (ItemTag.VEGETABLE, ItemTag.SOLANUM),
   "hidden_effect": [EffectType.POISON, EffectType.REGENERATION],
   "food": {
-    "nutrition": 1.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.POOR,
     "can_eat": True,
     "effect": (

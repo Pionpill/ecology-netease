@@ -1,17 +1,16 @@
-from scripts.common.enum import BiomeTag
+from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
-CORN = {
+COOKED_CORN = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.CROP: ("ham:corn",),
-    ItemSource.WILD: (BiomeTag.PLAINS, BiomeTag.FLOWER_FOREST)
+    ItemSource.WORKBENCH: ("ham:baking_furnace", "ham:grill", "ham:food_steamer", "ham:stew_pot"),
   },
-  "category": ItemCategory.CROPS,
-  "tag": (ItemTag.CROP, ItemTag.CEREAL),
+  "category": ItemCategory.FOOD,
+  "tag": (ItemTag.SIMPLE,),
   "hidden_effect": None,
   "food": {
-    "nutrition": 1,
+    "nutrition": 3,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": True,
     "effect": None

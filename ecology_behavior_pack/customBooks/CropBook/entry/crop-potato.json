@@ -21,7 +21,14 @@
     {
       "subtitle": "转换为原版土豆",
       "type": "ham:cookRecipePage",
-      "recipeId": "minecraft:potato"
+      "recipeId": "minecraft:potato",
+      "content": "在原版工作台，背包中也可合成"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "subtitle": "制作·淀粉·石磨",
+      "recipeId": "ham:starch-potato",
+      "content": "土豆研磨为淀粉\n产量高"
     }
   ]
 }

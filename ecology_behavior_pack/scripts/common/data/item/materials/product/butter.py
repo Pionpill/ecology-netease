@@ -9,7 +9,7 @@ BUTTER = {
   "tag": (ItemTag.PRODUCT, ItemTag.DAIRY),
   "hidden_effect": None,
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": False,
     "effect": None

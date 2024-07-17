@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:lettuce",
+      "identifier": "ham:cooked_corn",
       "register_to_create_menu": true,
       "category": "ecology"
     },
@@ -10,12 +10,12 @@
       "minecraft:max_stack_size": 64,
       "minecraft:use_duration": 32,
       "minecraft:food": {
-        "nutrition": 1,
-        "saturation_modifier": "low",
+        "nutrition": 3,
+        "saturation_modifier": "normal",
         "can_always_eat": false
       },
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食材\n§r§3品质: §5 §3饥饿: §5"
+        "value": "§f--------------------\n§6§l简易食品\n§r§3品质: §5\n§3饥饿: §5 X 3\n§r§f--------------------\n§7■ 适合充饥"
       }
     }
   }

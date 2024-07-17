@@ -17,6 +17,32 @@
       "type": "ham:itemInfoPage",
       "subtitle": "玉米",
       "itemName": "ham:corn"
+    },
+    {
+      "subtitle": "制作·食用油·压制机",
+      "type": "ham:squeezerRecipePage",
+      "recipeId": "ham:cooking_oil-corn",
+      "content": "食用玉米制作食用油，产量一般"
+    },
+    {
+      "type": "ham:steamerRecipePage",
+      "recipeId": "ham:cooked_corn",
+      "subtitle": "制作·熟玉米·蒸笼"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:cooked_corn",
+      "subtitle": "制作·熟玉米·煮锅"
+    },
+    {
+      "type": "ham:bakeRecipePage",
+      "recipeId": "ham:cooked_corn",
+      "subtitle": "制作·熟玉米·烘焙炉"
+    },
+    {
+      "type": "ham:grillRecipePage",
+      "recipeId": "ham:cooked_corn",
+      "subtitle": "制作·熟玉米·烧烤架"
     }
   ]
 }

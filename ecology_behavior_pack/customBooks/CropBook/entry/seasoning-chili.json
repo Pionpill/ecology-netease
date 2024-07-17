@@ -17,6 +17,12 @@
       "type": "ham:itemInfoPage",
       "subtitle": "辣椒",
       "itemName": "ham:chili"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:chili_powder",
+      "subtitle": "制作·辣椒粉·石磨",
+      "content": "研磨为辣椒粉"
     }
   ]
 }

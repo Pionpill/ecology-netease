@@ -17,6 +17,24 @@
       "type": "ham:itemInfoPage",
       "subtitle": "大米",
       "itemName": "ham:rice_plant"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "subtitle": "制作·面粉·石磨",
+      "recipeId": "ham:rice",
+      "content": "水稻制品几乎都需要脱谷为大米"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "subtitle": "制作·淀粉·石磨",
+      "recipeId": "ham:starch-rice",
+      "content": "大米继续研磨为淀粉\n产量一般"
+    },
+    {
+      "type": "ham:steamerRecipePage",
+      "recipeId": "ham:cooked_rice",
+      "subtitle": "制作·熟米饭·蒸笼",
+      "content": "大米蒸熟后可直接食用"
     }
   ]
 }

@@ -10,7 +10,7 @@ CHEESE = {
   "tag": (ItemTag.SIMPLE, ItemTag.DAIRY),
   "hidden_effect": (EffectType.HASTE,),
   "food": {
-    "nutrition": 3,
+    "nutrition": 2,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": True,
     "effect": None
