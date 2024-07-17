@@ -17,6 +17,18 @@
       "type": "ham:itemInfoPage",
       "subtitle": "高粱",
       "itemName": "ham:sorghum"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "subtitle": "制作·面粉·石磨",
+      "recipeId": "ham:flour-sorghum",
+      "content": "高粱可以制为面粉\n产量一般，不及小麦"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·糖·厨务台",
+      "recipeId": "ham:sugar-sorghum",
+      "content": "高粱可以制糖\n产量很低，远不及甘蔗和甜菜"
     }
   ]
 }

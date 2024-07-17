@@ -1,6 +1,6 @@
 MILL_DATA = {
     "minecraft:apple": "minecraft:apple",
-    "ham:seasoning": {
+    "ham:seasoning-herb": {
         "material": {
             "newItemName": "ham:herb",
             "count": 3,
@@ -11,6 +11,30 @@ MILL_DATA = {
                 "count": 3,
             },
             1: "ham:straw"
+        }
+    },
+    "ham:seasoning-garlic": {
+        "material": {
+            "newItemName": "ham:garlic",
+            "count": 3,
+        },
+        "result": {
+            0: {
+                "newItemName": "ham:seasoning",
+                "count": 2,
+            },
+        }
+    },
+    "ham:seasoning-ginger": {
+        "material": {
+            "newItemName": "ham:ginger",
+            "count": 3,
+        },
+        "result": {
+            0: {
+                "newItemName": "ham:seasoning",
+                "count": 2,
+            },
         }
     },
     "ham:chili_powder": {
@@ -55,11 +79,36 @@ MILL_DATA = {
             "count": 2,
         }
     },
-    "ham:flour": {
+    "ham:starch-sweet_potato": {
+        "material": "ham:sweet_potato",
+        "result": {
+            "newItemName": "ham:starch",
+            "count": 2,
+        }
+    },
+    "ham:starch-taro": {
+        "material": "ham:taro",
+        "result": "ham:starch"
+    },
+    "ham:starch-yam": {
+        "material": "ham:yam",
+        "result": "ham:starch"
+    },
+    "ham:flour-wheat": {
         "material": "ham:wheat",
         "result": {
             "newItemName": "ham:flour",
             "count": 1,
+        }
+    },
+    "ham:flour-sorghum": {
+        "material":  {
+            "newItemName": "ham:sorghum",
+            "count": 3,
+        },
+        "result": {
+            "newItemName": "ham:flour",
+            "count": 2,
         }
     }
 }

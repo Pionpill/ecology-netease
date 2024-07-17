@@ -17,6 +17,12 @@
       "type": "ham:itemInfoPage",
       "subtitle": "油菜籽",
       "itemName": "ham:rape_seeds"
+    },
+    {
+      "subtitle": "制作·食用油·压制机",
+      "type": "ham:squeezerRecipePage",
+      "recipeId": "ham:cooking_oil-rape_seeds",
+      "content": "制作食用油，产量高"
     }
   ]
 }

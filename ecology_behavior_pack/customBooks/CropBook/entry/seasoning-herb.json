@@ -20,7 +20,7 @@
     },
     {
       "type": "ham:millRecipePage",
-      "recipeId": "ham:seasoning",
+      "recipeId": "ham:seasoning-herb",
       "subtitle": "制作·调料·石磨",
       "content": "研磨为调料"
     }

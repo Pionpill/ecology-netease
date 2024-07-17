@@ -11,12 +11,32 @@
     {
       "type": "ham:millRecipePage",
       "recipeId": "ham:starch-potato",
-      "subtitle": "制作·土豆·石磨"
+      "subtitle": "制作·土豆·石磨",
+      "content": "土豆制淀粉\n产量高"
     },
     {
       "type": "ham:millRecipePage",
       "recipeId": "ham:starch-rice",
-      "subtitle": "制作·大米·石磨"
+      "subtitle": "制作·大米·石磨",
+      "content": "大米制淀粉\n产量高"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:starch-sweet_potato",
+      "subtitle": "制作·红薯·石磨",
+      "content": "红薯制淀粉\n产量高"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:starch-taro",
+      "subtitle": "制作·芋头·石磨",
+      "content": "芋头制淀粉\n产量一般"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:starch-yam",
+      "subtitle": "制作·山药·石磨",
+      "content": "山药制淀粉\n产量一般"
     }
   ]
 }

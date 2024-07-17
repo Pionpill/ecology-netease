@@ -7,7 +7,7 @@ from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, T
 from scripts.common.data.item.materials.fuel import STRAW
 from scripts.common.data.item.materials.ore import SALT
 from scripts.common.data.item.materials.product import BUTTER, COOKING_OIL, DOUGH, FLOUR, GROUND_PORK, NOODLE, SALAD, STARCH, TOFU, RICE, WHEAT
-from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING
+from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING, SUGAR
 
 from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK, BEEF_PATTIES, RAW_BEEF_PATTIES
 from scripts.common.data.item.food.bake import RAW_APPLE_PIE, APPLE_PIE, RAW_CORN_PIE, CORN_PIE, RAW_CHEESE_PIE, CHEESE_PIE
@@ -75,6 +75,7 @@ ITEM_DATA = {
     "ham:tofu": TOFU,
     "ham:chili_powder": CHILI_POWDER,
     "ham:seasoning": SEASONING,
+    "ham:sugar": SUGAR,
     "ham:rice": RICE,
     "ham:wheat": WHEAT,
     "ham:broccoli": BROCCOLI,

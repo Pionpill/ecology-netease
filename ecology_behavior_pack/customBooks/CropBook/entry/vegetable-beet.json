@@ -22,6 +22,18 @@
       "type": "ham:itemInfoPage",
       "subtitle": "甜菜叶",
       "itemName": "ham:beet_leaf"
+    },
+    {
+      "subtitle": "转换为原版甜菜根",
+      "type": "ham:cookRecipePage",
+      "recipeId": "minecraft:beetroot",
+      "content": "在原版工作台，背包中也可合成"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·糖·厨务台",
+      "recipeId": "ham:sugar-beet_root",
+      "content": "甜菜制糖，产量高"
     }
   ]
 }

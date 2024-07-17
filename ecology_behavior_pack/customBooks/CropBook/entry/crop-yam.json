@@ -17,6 +17,12 @@
       "type": "ham:itemInfoPage",
       "subtitle": "山药",
       "itemName": "ham:yam"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "subtitle": "制作·淀粉·石磨",
+      "recipeId": "ham:starch-yam",
+      "content": "研磨为淀粉\n产量一般"
     }
   ]
 }

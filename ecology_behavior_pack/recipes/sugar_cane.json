@@ -1,0 +1,18 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "ham:sugar_cane"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "ham:sugarcane"
+      }
+    ],
+    "result": {
+      "item": "minecraft:sugar_cane",
+      "count": 1
+    }
+  }
+}

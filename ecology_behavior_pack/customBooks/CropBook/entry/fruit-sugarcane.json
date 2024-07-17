@@ -17,6 +17,18 @@
       "type": "ham:itemInfoPage",
       "subtitle": "甘蔗",
       "itemName": "ham:sugarcane"
+    },
+    {
+      "subtitle": "转换为原版甘蔗",
+      "type": "ham:cookRecipePage",
+      "recipeId": "minecraft:sugar_cane",
+      "content": "在原版工作台，背包中也可合成"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·糖·厨务台",
+      "recipeId": "ham:sugar-sugarcane",
+      "content": "高粱制糖，产量高"
     }
   ]
 }

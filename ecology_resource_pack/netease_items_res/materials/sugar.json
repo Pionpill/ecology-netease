@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:sugar"
+    },
+    "components": {
+      "minecraft:icon": "ham:sugar",
+      "minecraft:hover_text_color": "white"
+    }
+  }
+}

@@ -17,6 +17,12 @@
       "type": "ham:itemInfoPage",
       "subtitle": "芋头",
       "itemName": "ham:taro"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "subtitle": "制作·淀粉·石磨",
+      "recipeId": "ham:starch-taro",
+      "content": "研磨为淀粉\n产量一般"
     }
   ]
 }

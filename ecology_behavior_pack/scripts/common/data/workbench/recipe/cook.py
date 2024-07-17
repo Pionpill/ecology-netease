@@ -227,6 +227,42 @@ COOK_DATA = {
         "fixed_material": (1, 1, 0, 2),
         "result": "ham:hot_dog", # 12
     },
+    "ham:sugar-sorghum": {
+        "material": {
+            3: "ham:sorghum",
+            4: "ham:sorghum",
+            5: "ham:sorghum",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:sugar", 
+            "count": 3, # 饥饿 1
+        }
+    },
+    "ham:sugar-beet_root": {
+        "material": {
+            3: "ham:beet_root",
+            4: "ham:beet_root",
+            5: "ham:beet_root",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:sugar", 
+            "count": 3, # 饥饿 1
+        }
+    },
+    "ham:sugar-sugarcane": {
+        "material": {
+            3: "ham:sugarcane",
+            4: "ham:sugarcane",
+            5: "ham:sugarcane",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:sugar", 
+            "count": 3, # 饥饿 1
+        }
+    },
     "minecraft:wheat": {
         "material": {
             4: "ham:wheat_plant",
@@ -247,5 +283,41 @@ COOK_DATA = {
         },
         "fixed_material": (0, 0, 0, 0),
         "result": "minecraft:carrot", # 1.5
+    },
+    "minecraft:beetroot": {
+        "material": {
+            4: "ham:beet_root",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": "minecraft:beetroot", # 1.5
+    },
+    "minecraft:sugar_cane": {
+        "material": {
+            4: "ham:sugarcane",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": "minecraft:sugar_cane", # 1.5
+    },
+    "minecraft:sugar": {
+        "material": {
+            4: "ham:sugar",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": "minecraft:sugar", # 1.5
+    },
+    "minecraft:paper": {
+        "material": {
+            0: "ham:straw",
+            1: "ham:straw",
+            2: "ham:straw",
+            3: "ham:straw",
+            4: "minecraft:water_bucket",
+            5: "ham:straw",
+            6: "ham:straw",
+            7: "ham:straw",
+            8: "ham:straw",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": "minecraft:paper", # 1.5
     },
 }

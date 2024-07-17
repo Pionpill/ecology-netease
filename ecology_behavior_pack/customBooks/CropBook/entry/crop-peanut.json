@@ -17,6 +17,12 @@
       "type": "ham:itemInfoPage",
       "subtitle": "花生",
       "itemName": "ham:peanut"
+    },
+    {
+      "subtitle": "制作·食用油·压制机",
+      "type": "ham:squeezerRecipePage",
+      "recipeId": "ham:cooking_oil-peanut",
+      "content": "花生制作食用油，产量一般"
     }
   ]
 }

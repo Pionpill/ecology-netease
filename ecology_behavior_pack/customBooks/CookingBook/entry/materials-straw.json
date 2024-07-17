@@ -7,6 +7,12 @@
     {
       "type": "ham:itemInfoPage",
       "itemName": "ham:straw"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·纸·厨务台",
+      "recipeId": "minecraft:paper",
+      "content": "桔梗鞣制为纸"
     }
   ]
 }

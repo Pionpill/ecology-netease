@@ -10,8 +10,21 @@
     },
     {
       "type": "ham:millRecipePage",
-      "recipeId": "ham:seasoning",
-      "subtitle": "制作·石磨"
+      "recipeId": "ham:seasoning-herb",
+      "subtitle": "制作·石磨",
+      "content": "香草制备，产量高"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:seasoning-garlic",
+      "subtitle": "制作·石磨",
+      "content": "大蒜制备，产量低"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:seasoning-ginger",
+      "subtitle": "制作·石磨",
+      "content": "生姜制备，产量低"
     }
   ]
 }

@@ -17,6 +17,12 @@
       "type": "ham:itemInfoPage",
       "subtitle": "红薯",
       "itemName": "ham:sweet_potato"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "subtitle": "制作·淀粉·石磨",
+      "recipeId": "ham:starch-sweet_potato",
+      "content": "红薯研磨为淀粉\n产量高"
     }
   ]
 }

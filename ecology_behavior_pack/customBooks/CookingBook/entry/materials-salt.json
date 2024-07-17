@@ -6,7 +6,8 @@
   "pages": [
     {
       "type": "ham:itemInfoPage",
-      "itemName": "ham:salt"
+      "itemName": "ham:salt",
+      "content": "通过地下盐矿获取"
     }
   ]
 }

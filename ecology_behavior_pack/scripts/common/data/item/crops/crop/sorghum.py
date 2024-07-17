@@ -11,7 +11,7 @@ SORGHUM = {
   "tag": (ItemTag.CROP, ItemTag.CEREAL),
   "hidden_effect": None,
   "food": {
-    "nutrition": 1,
+    "nutrition": 3,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": True,
     "effect": None

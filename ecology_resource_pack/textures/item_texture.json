@@ -121,6 +121,9 @@
     "ham:butter": {
       "textures": "textures/items/materials/butter"
     },
+    "ham:sugar": {
+      "textures": "textures/items/materials/sugar"
+    },
     "ham:chili_powder": {
       "textures": "textures/items/materials/chili_powder"
     },

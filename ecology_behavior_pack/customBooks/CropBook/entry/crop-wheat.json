@@ -33,7 +33,7 @@
     {
       "type": "ham:millRecipePage",
       "subtitle": "制作·面粉·石磨",
-      "recipeId": "ham:flour",
+      "recipeId": "ham:flour-wheat",
       "content": "小麦制品几乎都需要先磨成面粉再加工"
     },
     {

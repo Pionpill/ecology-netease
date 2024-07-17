@@ -16,7 +16,26 @@
     {
       "subtitle": "制作·压制机",
       "type": "ham:squeezerRecipePage",
-      "recipeId": "ham:cooking_oil-corn"
+      "recipeId": "ham:cooking_oil-rape_seeds",
+      "content": "油菜制油\n产量高"
+    },
+    {
+      "subtitle": "制作·压制机",
+      "type": "ham:squeezerRecipePage",
+      "recipeId": "ham:cooking_oil-corn",
+      "content": "玉米制油\n产量中等"
+    },
+    {
+      "subtitle": "制作·压制机",
+      "type": "ham:squeezerRecipePage",
+      "recipeId": "ham:cooking_oil-peanut",
+      "content": "花生制油\n产量中等"
+    },
+    {
+      "subtitle": "制作·压制机",
+      "type": "ham:squeezerRecipePage",
+      "recipeId": "ham:cooking_oil-soy_bean",
+      "content": "大豆制油\n产量中等"
     }
   ]
 }

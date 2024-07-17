@@ -17,6 +17,12 @@
       "type": "ham:itemInfoPage",
       "subtitle": "生姜",
       "itemName": "ham:ginger"
+    },
+    {
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:seasoning-ginger",
+      "subtitle": "制作·调料·石磨",
+      "content": "研磨为调料"
     }
   ]
 }

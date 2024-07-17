@@ -64,4 +64,23 @@ SQUEEZER_DATA = {
             "count": 2,
         }
     },
+    "ham:cooking_oil-peanut": {
+        "material": {
+            0: "ham:peanut",
+            1: "ham:peanut",
+            2: "ham:peanut",
+        },
+        "result": "ham:cooking_oil"
+    },
+    "ham:cooking_oil-rape_seeds": {
+        "material": {
+            0: "ham:rape_seeds",
+            1: "ham:rape_seeds",
+            2: "ham:rape_seeds",
+        },
+        "result": {
+            "newItemName": "ham:cooking_oil", 
+            "count": 3,
+        }
+    },
 }

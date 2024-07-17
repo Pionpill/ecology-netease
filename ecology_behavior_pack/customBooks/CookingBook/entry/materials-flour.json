@@ -11,7 +11,14 @@
     {
       "subtitle": "制作·石磨",
       "type": "ham:millRecipePage",
-      "recipeId": "ham:flour"
+      "recipeId": "ham:flour-wheat",
+      "content": "小麦制面粉\n产量高"
+    },
+    {
+      "subtitle": "制作·石磨",
+      "type": "ham:millRecipePage",
+      "recipeId": "ham:flour-sorghum",
+      "content": "高粱制面粉\n产量一般"
     }
   ]
 }

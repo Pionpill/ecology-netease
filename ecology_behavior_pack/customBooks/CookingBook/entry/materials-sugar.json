@@ -1,0 +1,36 @@
+{
+  "parent": "materials",
+  "sortnum": 102,
+  "icon": "textures/items/materials/sugar.png",
+  "title": "糖",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:sugar"
+    },
+    {
+      "subtitle": "转换为原版糖",
+      "type": "ham:cookRecipePage",
+      "recipeId": "minecraft:sugar",
+      "content": "在原版工作台，背包中也可合成"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·糖·厨务台",
+      "recipeId": "ham:sugar-sugarcane",
+      "content": "高粱制糖，产量高"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·糖·厨务台",
+      "recipeId": "ham:sugar-beet_root",
+      "content": "甜菜制糖，产量高"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·糖·厨务台",
+      "recipeId": "ham:sugar-sorghum",
+      "content": "高粱可以制糖\n产量很低，远不及甘蔗和甜菜"
+    }
+  ]
+}

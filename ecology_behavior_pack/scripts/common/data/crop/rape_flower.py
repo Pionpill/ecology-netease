@@ -50,5 +50,10 @@ RAPE_FLOWER = {
             "chance": 100,
             "count": 4
         },
+        {
+            "name": "ham:straw",
+            "chance": 100,
+            "count": 1
+        },
     )
 }
