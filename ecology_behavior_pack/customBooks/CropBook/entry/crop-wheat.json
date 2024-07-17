@@ -26,6 +26,12 @@
     },
     {
       "type": "ham:millRecipePage",
+      "subtitle": "制作·小麦·石磨",
+      "recipeId": "ham:wheat",
+      "content": "小麦制品几乎都需要脱谷处理"
+    },
+    {
+      "type": "ham:millRecipePage",
       "subtitle": "制作·面粉·石磨",
       "recipeId": "ham:flour",
       "content": "小麦制品几乎都需要先磨成面粉再加工"
