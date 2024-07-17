@@ -592,6 +592,18 @@
     "netease_model": "ham:spinach_stage_2",
     "sound": "grass"
   },
+  "ham:beet_stage_0": {
+    "netease_model": "ham:beet_stage_0",
+    "sound": "grass"
+  },
+  "ham:beet_stage_1": {
+    "netease_model": "ham:beet_stage_1",
+    "sound": "grass"
+  },
+  "ham:beet_stage_2": {
+    "netease_model": "ham:beet_stage_2",
+    "sound": "grass"
+  },
   "ham:strawberry_stage_0": {
     "netease_model": "ham:strawberry_stage_0",
     "sound": "grass"

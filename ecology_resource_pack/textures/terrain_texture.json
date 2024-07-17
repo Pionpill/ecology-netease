@@ -520,6 +520,18 @@
     "ham:sugarcane_leaf": {
       "textures": "textures/blocks/crops/sugarcane/sugarcane_leaf"
     },
+    "ham:beet_core": {
+      "textures": "textures/blocks/crops/beet/beet_core"
+    },
+    "ham:beet_leaf_big": {
+      "textures": "textures/blocks/crops/beet/beet_leaf_big"
+    },
+    "ham:beet_leaf_small": {
+      "textures": "textures/blocks/crops/beet/beet_leaf_small"
+    },
+    "ham:beet_leaf": {
+      "textures": "textures/blocks/crops/beet/beet_leaf"
+    },
     "ham:weed": {
       "textures": "textures/blocks/crops/weed/weed"
     },

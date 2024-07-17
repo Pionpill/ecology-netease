@@ -1,0 +1,27 @@
+{
+  "parent": "vegetable",
+  "sortnum": 213,
+  "icon": "textures/items/crops/vegetable/beet_root.png",
+  "title": "甜菜",
+  "pages": [
+    {
+      "type": "ham:cropGrowPage",
+      "seedKey": "ham:beet"
+    },
+    {
+      "type": "ham:cropInfoPage",
+      "subtitle": "生长条件",
+      "seedKey": "ham:beet_root"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "甜菜根",
+      "itemName": "ham:beet_root"
+    },
+    {
+      "type": "ham:itemInfoPage",
+      "subtitle": "甜菜叶",
+      "itemName": "ham:beet_leaf"
+    }
+  ]
+}

@@ -1,3 +1,4 @@
+from scripts.common.data.crop.beet import BEET
 from scripts.common.data.crop.chili import CHILI
 from scripts.common.data.crop.corn import CORN
 from scripts.common.data.crop.eggplant import EGGPLANT
@@ -55,6 +56,8 @@ CROP_DATA = {
     "ham:wood_ear": WOOD_EAR,
     "ham:lettuce": LETTUCE,
     "ham:onion": ONION,
+    "ham:beet": BEET,
+    "ham:beet_root": BEET,
     "ham:rice": RICE,
     "ham:wheat": WHEAT,
     "ham:scallion": SCALLION,

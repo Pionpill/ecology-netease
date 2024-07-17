@@ -211,6 +211,12 @@
     "ham:bok_choy_seeds": {
       "textures": "textures/items/crops/vegetable/bok_choy_seeds"
     },
+    "ham:beet_leaf": {
+      "textures": "textures/items/crops/vegetable/beet_leaf"
+    },
+    "ham:beet_root": {
+      "textures": "textures/items/crops/vegetable/beet_root"
+    },
     "ham:garlic": {
       "textures": "textures/items/crops/seasoning/garlic"
     },
