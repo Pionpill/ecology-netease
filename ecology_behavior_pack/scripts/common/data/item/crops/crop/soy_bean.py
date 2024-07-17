@@ -11,7 +11,7 @@ SOY_BEAN = {
   "tag": (ItemTag.CROP, ItemTag.CEREAL, ItemTag.SOY, ItemTag.BEAN),
   "hidden_effect": None,
   "food": {
-    "nutrition": 1.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": False,
     "effect": None

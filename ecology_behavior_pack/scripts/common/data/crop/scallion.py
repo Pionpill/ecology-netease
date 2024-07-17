@@ -54,7 +54,7 @@ SCALLION = {
             {
                 "name": "ham:scallion",
                 "chance": 100,
-                "count": 4
+                "count": 3
             },
             {
                 "name": "ham:scallion_seeds",

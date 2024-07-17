@@ -48,7 +48,7 @@ CORN = {
         {
             "name": "ham:corn",
             "chance": 100,
-            "count": 4
+            "count": 6
         },
     )
 }

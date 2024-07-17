@@ -10,7 +10,7 @@ SWEET_MILK = {
   "tag": (ItemTag.SIMPLE, ItemTag.DAIRY),
   "hidden_effect": None,
   "food": {
-    "nutrition": 0.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": True,
     "effect": None

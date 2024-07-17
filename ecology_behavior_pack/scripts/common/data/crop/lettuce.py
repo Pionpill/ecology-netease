@@ -50,7 +50,7 @@ LETTUCE = {
             {
                 "name": "ham:lettuce",
                 "chance": 100,
-                "count": 4
+                "count": 3
             }, 
             {
                 "name": "ham:lettuce_seeds",

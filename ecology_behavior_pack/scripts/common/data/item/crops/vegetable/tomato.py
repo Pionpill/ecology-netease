@@ -12,7 +12,7 @@ TOMATO = {
   "tag": (ItemTag.VEGETABLE, ItemTag.SOLANUM),
   "hidden_effect": (EffectType.REGENERATION,),
   "food": {
-    "nutrition": 1.5,
+    "nutrition": 1,
     "saturation": FoodSaturation.NORMAL,
     "can_eat": True
   }

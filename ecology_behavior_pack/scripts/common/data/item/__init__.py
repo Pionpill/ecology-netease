@@ -1,7 +1,7 @@
 from scripts.common.data.item.crops.crop import CORN, WHEAT_PLANT, RICE_PLANT, SOY_BEAN, POTATO
 from scripts.common.data.item.crops.fungi import LENTINULA
-from scripts.common.data.item.crops.spices import CHILI, HERB
-from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, SCALLION, TOMATO
+from scripts.common.data.item.crops.spices import CHILI, HERB, SCALLION
+from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, TOMATO
 
 from scripts.common.data.item.materials.fuel import STRAW
 from scripts.common.data.item.materials.ore import SALT
