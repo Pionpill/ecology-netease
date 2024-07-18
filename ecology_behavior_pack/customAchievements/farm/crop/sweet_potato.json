@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-sweet_potato",
+  "parent_node": "ham-ecology-farm-potato",
+  "depend_parent": false,
+  "title": "红薯",
+  "unfinished_icon": "textures/items/crops/crop/sweet_potato",
+  "finished_icon": "textures/items/crops/crop/sweet_potato",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "红薯",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:sweet_potato",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

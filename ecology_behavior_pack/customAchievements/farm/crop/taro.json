@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-taro",
+  "parent_node": "ham-ecology-farm-potato",
+  "depend_parent": false,
+  "title": "芋头",
+  "unfinished_icon": "textures/items/crops/crop/taro",
+  "finished_icon": "textures/items/crops/crop/taro",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "芋头",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:taro",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

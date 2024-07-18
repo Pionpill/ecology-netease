@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-beet_root",
+  "parent_node": "ham-ecology-farm-onion",
+  "depend_parent": false,
+  "title": "甜菜根",
+  "unfinished_icon": "textures/items/crops/vegetable/beet_root",
+  "finished_icon": "textures/items/crops/vegetable/beet_root",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "甜菜根",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

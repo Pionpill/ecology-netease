@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-celery",
+  "parent_node": "ham-ecology-farm-bok_choy",
+  "depend_parent": false,
+  "title": "芹菜",
+  "unfinished_icon": "textures/items/crops/vegetable/celery",
+  "finished_icon": "textures/items/crops/vegetable/celery",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "芹菜",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

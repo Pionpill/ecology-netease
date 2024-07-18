@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-green_bean",
+  "parent_node": "ham-ecology-farm-soy_bean",
+  "depend_parent": false,
+  "title": "绿豆",
+  "unfinished_icon": "textures/items/crops/crop/green_bean",
+  "finished_icon": "textures/items/crops/crop/green_bean",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "绿豆",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:green_bean",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

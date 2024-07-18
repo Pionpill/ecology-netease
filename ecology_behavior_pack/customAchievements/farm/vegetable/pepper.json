@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-pepper",
+  "parent_node": "ham-ecology-farm-eggplant",
+  "depend_parent": false,
+  "title": "青椒",
+  "unfinished_icon": "textures/items/crops/vegetable/pepper",
+  "finished_icon": "textures/items/crops/vegetable/pepper",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "青椒",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

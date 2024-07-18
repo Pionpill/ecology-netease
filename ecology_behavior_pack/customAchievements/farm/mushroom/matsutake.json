@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-matsutake",
+  "parent_node": "ham-ecology-farm-mushroom",
+  "depend_parent": false,
+  "title": "松茸",
+  "unfinished_icon": "textures/items/crops/mushroom/matsutake",
+  "finished_icon": "textures/items/crops/mushroom/matsutake",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "松茸",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

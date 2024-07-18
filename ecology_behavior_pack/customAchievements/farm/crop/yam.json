@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-yam",
+  "parent_node": "ham-ecology-farm-potato",
+  "depend_parent": false,
+  "title": "山药",
+  "unfinished_icon": "textures/items/crops/crop/yam",
+  "finished_icon": "textures/items/crops/crop/yam",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "山药",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:yam",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

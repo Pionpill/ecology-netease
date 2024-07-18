@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-dictyophora",
+  "parent_node": "ham-ecology-farm-matsutake",
+  "depend_parent": false,
+  "title": "竹荪",
+  "unfinished_icon": "textures/items/crops/mushroom/dictyophora",
+  "finished_icon": "textures/items/crops/mushroom/dictyophora",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "竹荪",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

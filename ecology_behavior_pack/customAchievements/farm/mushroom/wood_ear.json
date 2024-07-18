@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-wood_ear",
+  "parent_node": "ham-ecology-farm-enoki",
+  "depend_parent": false,
+  "title": "木耳",
+  "unfinished_icon": "textures/items/crops/mushroom/wood_ear",
+  "finished_icon": "textures/items/crops/mushroom/wood_ear",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "木耳",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

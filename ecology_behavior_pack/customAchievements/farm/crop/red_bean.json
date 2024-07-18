@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-farm-red_bean",
+  "parent_node": "ham-ecology-farm-green_bean",
+  "depend_parent": false,
+  "title": "红豆",
+  "unfinished_icon": "textures/items/crops/crop/red_bean",
+  "finished_icon": "textures/items/crops/crop/red_bean",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "红豆",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:red_bean",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}
