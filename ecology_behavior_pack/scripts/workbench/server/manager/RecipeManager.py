@@ -1,6 +1,6 @@
 from scripts.common import logger
 from scripts.common.data.workbench.slot import SLOT_DATA
-from scripts.common.entity import GetRecipe
+from scripts.common.entity import GetItem, GetRecipe
 from scripts.common.utils import itemUtils
 
 
@@ -58,4 +58,17 @@ class RecipeManager(object):
         if workbenchItemCount is None or recipeItemCount is None:
             logger.error('匹配配方时，工作台或匹配物品数量为空，这是一个程序BUG')
             return False
-        return itemUtils.IsSameItem(recipeItemDict, workbenchItemDict) and workbenchItemCount >= recipeItemCount
+        if recipeItemCount > workbenchItemCount:
+            return False
+        recipeItemName = recipeItemDict.get("newItemName", "") # type: str
+        # 标签匹配
+        if "ham-tag:" in recipeItemName:
+            logger.debug(recipeItemName)
+            workbenchItem = GetItem(workbenchItemDict.get("newItemName", ""))
+            if workbenchItem is None:
+                return False
+            workbenchItemTags = workbenchItem.GetTags()
+            recipeTag = recipeItemName.replace("ham-tag:", "")
+            return recipeTag in workbenchItemTags
+        return itemUtils.IsSameItem(recipeItemDict, workbenchItemDict)
+        
