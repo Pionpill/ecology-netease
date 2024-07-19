@@ -41,6 +41,7 @@ class Food(object):
 class Item(object):
     """物品数据"""
     cacheMap = {}
+    tagMap = {} # type: dict[str, list[str]]
 
     def __init__(self, name):
         self.name = name
@@ -108,3 +109,22 @@ class Item(object):
             return None
         Item.cacheMap[itemName] = item
         return item
+    
+    @staticmethod
+    def GetItemNameListByTag(tag):
+        # type: (str) -> list[str] | None
+        if len(Item.tagMap) == 0:
+            Item.__InitTagMap()
+        return Item.tagMap.get(tag)
+
+    @staticmethod
+    def __InitTagMap():
+        """初始化标签字典"""
+        for itemName in ITEM_DATA.keys():
+            item = Item.FromItemName(itemName)
+            if item is None:
+                continue
+            for tag in item.GetTags():
+                Item.tagMap.setdefault(tag, []).append(itemName)
+            del Item.cacheMap[itemName]
+
