@@ -94,19 +94,24 @@ class Recipe(object):
         # 值是 str，说明值就是结果槽物品名，例如: "minecraft:apple": "minecraft:apple"
         if isinstance(recipe, str):
             return {
-                type + '_slot0': itemUtils.GetItemDict(itemName = recipe)
+                'material_slot0': itemUtils.GetItemDict(itemName = recipe)
             }
         materialOrResultDict = recipe.get(type)
         if materialOrResultDict is None:
             return {
                 type + '_slot0': itemUtils.GetItemDict(itemDict = recipe)
             }
-        # 槽值是 str，说明值就是结果物品
-        if isinstance(materialOrResultDict, str):
-            return {type + '_slot0': itemUtils.GetItemDict(materialOrResultDict)}
-        # 仅一个物品，默认槽位为 0
-        if materialOrResultDict.get('newItemName'):
-            return {type + '_slot0': itemUtils.GetItemDict(itemDict = materialOrResultDict)} # type: ignore
+        
+        # 仅一个物品
+        if not isinstance(materialOrResultDict, dict) or materialOrResultDict.get('newItemName') is not None:
+            return {type + '_slot0': Recipe.__FormatItem(materialOrResultDict)}
+        
+        # 格式化槽位，支持 str，dict，tuple 三种模式
+        outDict = {}
+        for slotIndex, item in materialOrResultDict.items():
+            outDict[type + '_slot' + str(slotIndex)] = Recipe.__FormatItem(item)
+            
+        # 格式化固定槽位
         outDict = {type + '_slot' + str(slotIndex) : itemUtils.GetItemDict(itemName = item) if isinstance(item, str) else itemUtils.GetItemDict(itemDict = item) for slotIndex, item in materialOrResultDict.items()}
         if type == 'material' and self.__fixedMaterialItems:
             fixedMaterial = recipe.get("fixed_material", tuple([0] * len(self.__fixedMaterialItems)))
@@ -115,6 +120,21 @@ class Recipe(object):
                     continue
                 outDict["fixed_material_slot"+str(slotIndex)] = itemUtils.GetItemDict(self.__fixedMaterialItems[slotIndex], 0, count)
         return outDict # type: ignore
+
+    @staticmethod
+    def __FormatItem(item):
+        # type: (str | tuple | dict) -> dict
+        if isinstance(item, str):
+            return itemUtils.GetItemDict(itemName = item)
+        if isinstance(item, tuple):
+            itemDict = {
+                "newItemName": item[0],
+                "count": item[1],
+                "newAuxValue": item[2] if len(item) > 2 else 0,
+            }
+            return itemUtils.GetItemDict(itemDict = itemDict)
+        if isinstance(item, dict):
+            return itemUtils.GetItemDict(itemDict = item)
 
     @staticmethod
     def FromBlockName(blockName):
