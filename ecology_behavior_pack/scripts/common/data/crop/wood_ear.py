@@ -48,10 +48,10 @@ WOOD_EAR = {
             "chance": 100,
             "count": 3
         },
-        {
-            "name": "ham:rotten_wood",
-            "chance": 75,
-            "count": 1
-        },
+        # {
+        #     "name": "ham:rotten_wood",
+        #     "chance": 75,
+        #     "count": 1
+        # },
     )
 }
