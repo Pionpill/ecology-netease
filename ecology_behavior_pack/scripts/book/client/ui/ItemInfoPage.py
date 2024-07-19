@@ -1,13 +1,12 @@
 import mod.client.extraClientApi as clientApi
 
 from scripts.common.modConfig import __DEV__
-from scripts.common.entity import Effect
 from scripts.common.enum import BiomeTag, EffectType
-from scripts.common.enum.Item import ItemCategory, ItemQuality, ItemSource, ItemTag
+from scripts.common.enum.Item import ItemQuality, ItemSource, ItemTag
 from scripts.common.error import AddonDataError
 from scripts.book.client.ui.base import BaseTextPage
 from scripts.common import logger
-from scripts.common.entity import Item, GetItem
+from scripts.common.entity import Item
 
 levelId = clientApi.GetLevelId()
 engineCompFactory = clientApi.GetEngineCompFactory()
@@ -28,7 +27,7 @@ class ItemInfoPage(BaseTextPage):
     def _SetDataBeforeShow(self):
         itemName = self.data.get('itemName') # type: str
         self._itemName = itemName
-        self._item = GetItem(itemName) # type: Item # type: ignore
+        self._item = Item.FromItemName(itemName) # type: Item # type: ignore
         if not self._item:
             raise AddonDataError('不存在作物数据{}，这是一个程序BUG'.format(itemName))
         

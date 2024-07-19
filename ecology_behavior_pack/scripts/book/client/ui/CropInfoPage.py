@@ -3,7 +3,7 @@ import math
 from scripts.book.client.ui.base import BaseTextPage
 from scripts.common import logger
 from scripts.common.enum import Period, LandTag
-from scripts.common.entity import Crop, GetCrop
+from scripts.common.entity import Crop
 from scripts.common.error import AddonDataError
 
 
@@ -18,7 +18,7 @@ class CropInfoPage(BaseTextPage):
     def _GetContent(self):
         """❗️根据作物生长信息"""
         seedKey = self.data.get('seedKey')
-        self._crop = GetCrop(seedKey) # type: Crop # type: ignore
+        self._crop = Crop.FromSeedKey(seedKey) # type: Crop # type: ignore
         if not self._crop:
             raise AddonDataError('不存在作物数据{}，这是一个程序BUG'.format(seedKey))
         

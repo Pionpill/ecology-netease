@@ -5,6 +5,8 @@ from scripts.common.utils import itemUtils
 
 
 class Recipe(object):
+    cacheMap = {} # type: dict[str, Recipe]
+
     def __init__(self, blockName):
         # type: (str) -> None
         object.__init__(self)
@@ -112,4 +114,19 @@ class Recipe(object):
                 if count == 0:
                     continue
                 outDict["fixed_material_slot"+str(slotIndex)] = itemUtils.GetItemDict(self.__fixedMaterialItems[slotIndex], 0, count)
-        return outDict
+        return outDict # type: ignore
+
+    @staticmethod
+    def FromBlockName(blockName):
+        # type: (str) -> Recipe | None
+        """获取生态实例，单例模式"""
+        recipe = Recipe.cacheMap.get(blockName)
+        if recipe is not None:
+            return recipe
+        try:
+            recipe = Recipe(blockName)
+        except AddonDataError as e:
+            logger.warn(e.message)
+            return None
+        Recipe.cacheMap[blockName] = recipe
+        return recipe

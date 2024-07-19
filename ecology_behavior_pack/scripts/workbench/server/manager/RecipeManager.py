@@ -1,13 +1,14 @@
+from scripts.common.entity import Item
 from scripts.common import logger
 from scripts.common.data.workbench.slot import SLOT_DATA
-from scripts.common.entity import GetItem, GetRecipe
+from scripts.common.entity import Recipe
 from scripts.common.utils import itemUtils
 
 
 class RecipeManager(object):
     def __init__(self, blockName):
         object.__init__(self)
-        recipe = GetRecipe(blockName)
+        recipe = Recipe.FromBlockName(blockName)
         if recipe is None:
             return
         self.__recipe = recipe
@@ -63,8 +64,7 @@ class RecipeManager(object):
         recipeItemName = recipeItemDict.get("newItemName", "") # type: str
         # 标签匹配
         if "ham-tag:" in recipeItemName:
-            logger.debug(recipeItemName)
-            workbenchItem = GetItem(workbenchItemDict.get("newItemName", ""))
+            workbenchItem = Item.FromItemName(workbenchItemDict.get("newItemName", ""))
             if workbenchItem is None:
                 return False
             workbenchItemTags = workbenchItem.GetTags()

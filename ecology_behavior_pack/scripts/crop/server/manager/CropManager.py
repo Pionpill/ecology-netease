@@ -7,7 +7,7 @@ import mod.server.extraServerApi as serverApi
 
 from scripts.common.enum import Period
 from scripts.common import logger
-from scripts.common.entity import GetCrop, GetLand
+from scripts.common.entity import Crop, Land
 from scripts.common.utils import itemUtils
 from scripts.common.utils import mathUtils
 from scripts.common.utils import positionUtils
@@ -36,10 +36,10 @@ class CropManager(object):
         self.RenewLandInfo()
         if not self.cropBlockName:
             return
-        cropKey = cropUtils.GetSeedKey(self.cropBlockName)
-        crop = GetCrop(cropKey)
+        seedKey = cropUtils.GetSeedKey(self.cropBlockName)
+        crop = Crop.FromSeedKey(seedKey)
         if crop is None:
-            logger.error('无法通过 {} 获取作物实例'.format(cropKey))
+            logger.error('无法通过 {} 获取作物实例'.format(seedKey))
             return
         self.crop = crop
         self.ecology = EcologyFacade.GetEcologyManager(position, dimensionId)
@@ -246,7 +246,7 @@ class CropManager(object):
         landInfo = blockInfoComp.GetBlockNew(landPosition, self.dimensionId)
         self.landName = landInfo.get('name')
         self.landAux = landInfo.get('aux')
-        self.land = GetLand(self.landName) if self.landName else None
+        self.land = Land.FromBlockName(self.landName) if self.landName else None
 
     def GetGrowInfo(self):
         ecologyInfo =self.ecology.GetDynamicEcology()

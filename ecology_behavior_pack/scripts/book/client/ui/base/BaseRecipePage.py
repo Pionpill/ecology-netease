@@ -2,7 +2,7 @@ import mod.client.extraClientApi as clientApi
 
 from scripts.book.client.ui.components import ArrowImgComp, SlotComp
 from scripts.common import logger
-from scripts.common.entity import GetRecipe
+from scripts.common.entity import Recipe
 from scripts.common.error import AddonDataError
 from scripts.common.utils import mathUtils
 
@@ -22,7 +22,7 @@ class BaseRecipePage(TitlePage):
         TitlePage.__init__(self, size, position) # type: ignore
         self._blockName = blockName
 
-        recipe = GetRecipe(self._blockName)
+        recipe = Recipe.FromBlockName(self._blockName)
         if recipe is None:
             return
         self._recipe = recipe

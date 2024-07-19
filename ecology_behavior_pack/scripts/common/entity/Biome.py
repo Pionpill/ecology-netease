@@ -7,6 +7,8 @@ from scripts.common import logger
 
 
 class Biome(object):
+    cacheMap = {}
+
     def __init__(self, data):
         # type: (dict) -> None
         """
@@ -56,7 +58,7 @@ class Biome(object):
         return "=================\n生物群系信息: {0} ({1})\n温度: {2}℃\n湿度: {3}％\n=================".format(self.biomeName, self.GetCNName(), self.GetTemperature(), self.GetRainfall())
 
     @staticmethod
-    def FromBiomeName(biomeName):
+    def FromData(biomeName):
         # type: (str) -> Biome
         """通过生态名从数据库中获取"""
         data = BIOME_DATA.get(biomeName)
@@ -67,3 +69,18 @@ class Biome(object):
             raise AddonDataError('{}: 不存在对应的生态数据'.format(biomeName))
         data['name'] = biomeName
         return Biome(data)
+    
+    @staticmethod
+    def FromBiomeName(biomeName):
+        # type: (str) -> Biome | None
+        """获取生态实例，单例模式"""
+        biome = Biome.cacheMap.get(biomeName)
+        if biome is not None:
+            return biome
+        try:
+            biome = Biome.FromData(biomeName)
+        except AddonDataError as e:
+            logger.warn(e.message)
+            return None
+        Biome.cacheMap[biomeName] = biome
+        return biome
