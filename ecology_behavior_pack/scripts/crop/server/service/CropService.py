@@ -1,7 +1,7 @@
 import mod.server.extraServerApi as serverApi
 
 from scripts.common import logger
-from scripts.common.entity import Crop, GetCrop, GetLand
+from scripts.common.entity import Crop, Land
 from scripts.common.error import AddonDevelopError
 from scripts.common.utils import mathUtils, positionUtils
 from scripts.crop.server.manager import CropManager, CropMsgManager
@@ -131,7 +131,7 @@ class CropService(object):
         :param playerId: 玩家id，用于发消息
         """
         crop = CropService.__GetCrop(blockOrSeedName)
-        land = GetLand(landBlockName)
+        land = Land.FromBlockName(landBlockName)
         if land is None:
             return CropService.__NotifyPlantFailMsg(playerId, PlantFailReason.LAND_UNABLE)
         cropTags = crop.GetGrowLandType()
@@ -148,8 +148,8 @@ class CropService(object):
     def __GetCrop(blockOrItemName):
         # type: (str) -> Crop
         """获取 Crop 对象"""
-        cropKey = cropUtils.GetSeedKey(blockOrItemName)
-        crop = GetCrop(cropKey)
+        seedKey = cropUtils.GetSeedKey(blockOrItemName)
+        crop = Crop.FromSeedKey(seedKey)
         if crop is None:
             raise AddonDevelopError('自定义作物 {} 未找到对应的数据'.format(blockOrItemName))
         return crop

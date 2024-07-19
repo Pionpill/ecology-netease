@@ -44,6 +44,8 @@ class LootInfo(object):
         return LootInfo(itemName, chance, count)
 
 class Crop(object):
+    cacheMap = {} # type: dict[str, Crop]
+
     def __init__(self, seedKey):
         # type: (str) -> None 
         self.seedName = seedKey
@@ -219,3 +221,18 @@ class Crop(object):
         """
         realData = data or self.__data
         return dataUtils.GetField(key, realData, self.seedName, defaultValue)
+    
+    @staticmethod
+    def FromSeedKey(seedKey):
+        # type: (str) -> Crop | None
+        """获取作物实例，单例模式"""
+        crop = Crop.cacheMap.get(seedKey)
+        if crop is not None:
+            return crop
+        try:
+            crop = Crop(seedKey)
+        except AddonDataError as e:
+            logger.error(e.message)
+            return None
+        Crop.cacheMap[seedKey] = crop
+        return crop

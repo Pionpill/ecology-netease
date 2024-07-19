@@ -5,6 +5,8 @@ from scripts.common.data.land import LAND_DATA
 
 
 class Land(object):
+    cacheMap = {} # type: dict[str, Land]
+
     def __init__(self, blockName):
         data = LAND_DATA.get(blockName)
         if data is None:
@@ -37,3 +39,18 @@ class Land(object):
     @staticmethod
     def GetBlocksByTag(tag):
         return [key for key, value in LAND_DATA.items() if tag in value["tag"]]
+    
+    @staticmethod
+    def FromBlockName(blockName):
+        # type: (str) -> Land | None
+        """获取土地实例，单例模式"""
+        land = Land.cacheMap.get(blockName)
+        if land is not None:
+            return land
+        try:
+            land = Land(blockName)
+        except AddonDataError as e:
+            logger.warn(e.message)
+            return None
+        Land.cacheMap[blockName] = land
+        return land

@@ -2,7 +2,7 @@ import mod.client.extraClientApi as clientApi
 
 from scripts.book.client.ui.components import ArrowImgComp, SlotComp
 from scripts.common import logger
-from scripts.common.entity import GetRecipe
+from scripts.common.entity import Item, Recipe
 from scripts.common.error import AddonDataError
 from scripts.common.utils import mathUtils
 
@@ -22,7 +22,7 @@ class BaseRecipePage(TitlePage):
         TitlePage.__init__(self, size, position) # type: ignore
         self._blockName = blockName
 
-        recipe = GetRecipe(self._blockName)
+        recipe = Recipe.FromBlockName(self._blockName)
         if recipe is None:
             return
         self._recipe = recipe
@@ -77,7 +77,15 @@ class BaseRecipePage(TitlePage):
 
         for key, slotComp in self._slotDict.items():
             itemDict = recipeSlotItems.get(key)
-            itemData = [{"item": itemDict['newItemName'], "data": itemDict['newAuxValue']}] if itemDict else []
+            itemData = []
+            if itemDict and "ham-tag:" not in itemDict['newItemName']:
+                itemData = [{"item": itemDict['newItemName'], "data": itemDict['newAuxValue']}]
+            # 标签轮询
+            if itemDict and "ham-tag:" in itemDict['newItemName']:
+                itemTag = itemDict['newItemName'].replace("ham-tag:", "")
+                tagItems = Item.GetItemNameListByTag(itemTag)
+                if tagItems is not None:
+                    itemData = [{"item": itemName, "data": 0} for itemName in tagItems]
             count = (itemDict['count'] if itemDict['count'] > 1 else '') if itemDict else ''
             slotComp.SetDataBeforeShow(itemData, count)
 

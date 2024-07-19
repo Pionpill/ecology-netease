@@ -7,7 +7,7 @@ import mod.server.extraServerApi as serverApi
 from scripts.ecology.server.service.FrameService import FrameService
 from scripts.common import logger
 from scripts.common.utils import positionUtils
-from scripts.common.entity import Biome, GetBiome
+from scripts.common.entity import Biome
 from scripts.ecology.server.entity import DynamicEcology, FixedEcology
 
 levelId = serverApi.GetLevelId()
@@ -30,7 +30,7 @@ class EcologyManager(object):
         # type: (tuple[int, int, int], int) -> None
         object.__init__(self)
         self.biomeName = biomeComp.GetBiomeName(position, dimensionId)
-        biome = GetBiome(self.biomeName)
+        biome = Biome.FromBiomeName(self.biomeName)
         if biome is None:
             logger.error('未查找到 {} 相关的数据，这是一个程序 bug，请报告给开发者群：712936357'.format(self.biomeName))
             return
@@ -111,7 +111,7 @@ class EcologyManager(object):
         rainfallSum = 0.0
         biomeCount = 0
         for biomeName, count in biomesDict.items():
-            biome = Biome.FromBiomeName(biomeName)
+            biome = Biome.FromData(biomeName)
             temperatureSum += biome.GetTemperature() * count
             rainfallSum += biome.GetRainfall() * count
             biomeCount += count

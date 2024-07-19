@@ -52,10 +52,10 @@ LENTINULA = {
             "chance": 100,
             "count": 3
         },
-        {
-            "name": "ham:rotten_wood",
-            "chance": 75,
-            "count": 1
-        },
+        # { FIXME 禁止右键使用时掉落
+        #     "name": "ham:rotten_wood",
+        #     "chance": 75,
+        #     "count": 1
+        # },
     )
 }

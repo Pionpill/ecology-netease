@@ -1,7 +1,7 @@
 import mod.client.extraClientApi as clientApi
 
 from scripts.common import logger
-from scripts.common.entity import GetCrop, GetLand, Land
+from scripts.common.entity import Crop, Land
 from scripts.common.error import AddonDataError
 
 bookManager = clientApi.GetBookManager()
@@ -58,7 +58,7 @@ class CropGrowPage(TitlePage):
         
         self.SetTitleData()
         seedKey = self.data.get('seedKey')
-        self._crop = GetCrop(seedKey)
+        self._crop = Crop.FromSeedKey(seedKey)
         if not self._crop:
             raise AddonDataError('不存在作物数据{}，这是一个程序BUG'.format(seedKey))
 
@@ -95,7 +95,7 @@ class CropGrowPage(TitlePage):
             comp = getattr(self, '_landHighlightComp' + str(self.__landIndex + 1))
             landData = []
             for landName in Land.GetBlocksByTag(landType):
-                land = GetLand(landName)
+                land = Land.FromBlockName(landName)
                 if land is None:
                     continue
                 if land.GetFertility() >= self._crop.GetGrowFertilityMin():

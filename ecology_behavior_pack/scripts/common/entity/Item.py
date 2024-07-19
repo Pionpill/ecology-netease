@@ -1,5 +1,7 @@
 import math
-from scripts.common.entity import Effect
+from scripts.common import logger
+from scripts.common.error import AddonDataError
+from scripts.common.entity.Effect import Effect
 from scripts.common.enum.Item import FoodSaturation
 from scripts.common.data.item import ITEM_DATA
 from scripts.common.error import AddonDataFieldError
@@ -38,6 +40,9 @@ class Food(object):
 
 class Item(object):
     """物品数据"""
+    cacheMap = {}
+    tagMap = {} # type: dict[str, list[str]]
+
     def __init__(self, name):
         self.name = name
         data = ITEM_DATA.get(self.name)
@@ -89,3 +94,37 @@ class Item(object):
         """
         realData = data or self.__data
         return dataUtils.GetField(key, realData, self.name, defaultValue)
+    
+    @staticmethod
+    def FromItemName(itemName):
+        # type: (str) -> Item | None
+        """获取物品实例，单例模式"""
+        item = Item.cacheMap.get(itemName)
+        if item is not None:
+            return item
+        try:
+            item = Item(itemName)
+        except AddonDataError as e:
+            logger.warn(e.message)
+            return None
+        Item.cacheMap[itemName] = item
+        return item
+    
+    @staticmethod
+    def GetItemNameListByTag(tag):
+        # type: (str) -> list[str] | None
+        if len(Item.tagMap) == 0:
+            Item.__InitTagMap()
+        return Item.tagMap.get(tag)
+
+    @staticmethod
+    def __InitTagMap():
+        """初始化标签字典"""
+        for itemName in ITEM_DATA.keys():
+            item = Item.FromItemName(itemName)
+            if item is None:
+                continue
+            for tag in item.GetTags():
+                Item.tagMap.setdefault(tag, []).append(itemName)
+            del Item.cacheMap[itemName]
+
