@@ -79,12 +79,12 @@ class CropServerSystem(ServerSystem):
         posKey = position + (dimension,) # type: tuple[int, int, int, int]
         if not engineUtils.coolDown(posKey, 0.2, blockRemoveCoolDownDict):
             return
-        cropManager = CropService.GetCropManager(position, dimension)
-        if cropManager.growBlockRemove:
-            cropManager.growBlockRemove = False
-            return
         # 作物销毁
         if cropUtils.IsCropBlock(args['fullName']):
+            cropManager = CropService.GetCropManager(position, dimension)
+            if cropManager.growBlockRemove:
+                cropManager.growBlockRemove = False
+                return
             self.__HandleCropRemove(args)
 
     def OnServerBlockUse(self, args):
