@@ -20,13 +20,7 @@ BAKE_DATA = {
         "result": "ham:cheese_pie",
     },
     "ham:cooked_corn": {
-        "material": {
-            "newItemName": "ham:corn", 
-            "count": 2,
-        },
-        "result": {
-            "newItemName": "ham:cooked_corn", 
-            "count": 2,
-        }
+        "material": ("ham:corn", 2),
+        "result": ("ham:cooked_corn", 2),
     },
 }
