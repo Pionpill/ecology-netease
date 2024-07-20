@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 107,
+  "icon": "textures/items/foods/porridge/vegetable_pork_porridge.png",
+  "title": "青菜瘦肉粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:vegetable_pork_porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:vegetable_pork_porridge"
+    }
+  ]
+}

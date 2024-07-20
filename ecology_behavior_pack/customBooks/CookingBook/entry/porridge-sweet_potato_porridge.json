@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 103,
+  "icon": "textures/items/foods/porridge/sweet_potato_porridge.png",
+  "title": "红薯粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:sweet_potato_porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:sweet_potato_porridge"
+    }
+  ]
+}

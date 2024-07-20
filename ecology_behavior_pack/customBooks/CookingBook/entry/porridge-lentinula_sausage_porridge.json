@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 111,
+  "icon": "textures/items/foods/porridge/lentinula_sausage_porridge.png",
+  "title": "香菇火腿粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:lentinula_sausage_porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:lentinula_sausage_porridge"
+    }
+  ]
+}

@@ -10,7 +10,7 @@ SAUSAGE = {
   "tag": (ItemTag.SIMPLE, ItemTag.MEAT),
   "hidden_effect": None,
   "food": {
-    "nutrition": 3,
+    "nutrition": 5,
     "saturation": FoodSaturation.MAX,
     "can_eat": True,
     "effect": ({

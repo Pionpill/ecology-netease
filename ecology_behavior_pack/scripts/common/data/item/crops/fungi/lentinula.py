@@ -10,7 +10,7 @@ LENTINULA = {
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.FUNGI,),
   "effect": [EffectType.POISON],
-  "hidden_effect": [EffectType.NAUSEA, EffectType.LEVITATION],
+  "hidden_effect": [EffectType.NAUSEA],
   "food": {
     "nutrition": 1,
     "saturation": FoodSaturation.POOR,

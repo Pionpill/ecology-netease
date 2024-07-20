@@ -1,0 +1,22 @@
+{
+  "node_ID": "ham-ecology-porridge",
+  "title": "图签-食物-粥",
+  "unfinished_icon": "textures/items/foods/porridge/porridge",
+  "finished_icon": "textures/items/foods/porridge/porridge",
+  "use_default_icon_background": true,
+  "window_background": "textures/blocks/brick",
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 大米",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 20,
+        "string": "烹饪食物"
+      }
+    }
+  ],
+  "is_hidden": false
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:yam_fish_porridge"
+    },
+    "components": {
+      "minecraft:icon": "ham:yam_fish_porridge",
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "aqua"
+    }
+  }
+}

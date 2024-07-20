@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 105,
+  "icon": "textures/items/foods/porridge/sorghum_porridge.png",
+  "title": "高粱粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:sorghum_porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:sorghum_porridge"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 101,
+  "icon": "textures/items/foods/porridge/green_bean_porridge.png",
+  "title": "绿豆粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:green_bean_porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:green_bean_porridge"
+    }
+  ]
+}

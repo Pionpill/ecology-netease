@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-vegetable_pork_porridge",
+  "parent_node": "ham-ecology-vegetable_porridge",
+  "depend_parent": false,
+  "title": "§e青菜瘦肉粥",
+  "unfinished_icon": "textures/items/foods/porridge/vegetable_pork_porridge",
+  "finished_icon": "textures/items/foods/porridge/vegetable_pork_porridge",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 大米，肉糜，青菜\n调料: 盐",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

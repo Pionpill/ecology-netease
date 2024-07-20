@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 110,
+  "icon": "textures/items/foods/porridge/yam_fish_porridge.png",
+  "title": "山药鱼片粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:yam_fish_porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:yam_fish_porridge"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 112,
+  "icon": "textures/items/foods/porridge/tomato_beef_porridge.png",
+  "title": "番茄牛肉粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:tomato_beef_porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:tomato_beef_porridge"
+    }
+  ]
+}

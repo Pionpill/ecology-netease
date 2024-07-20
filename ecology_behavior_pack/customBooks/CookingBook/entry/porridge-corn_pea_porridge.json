@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 109,
+  "icon": "textures/items/foods/porridge/corn_pea_porridge.png",
+  "title": "玉米豌豆粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:corn_pea_porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:corn_pea_porridge"
+    }
+  ]
+}

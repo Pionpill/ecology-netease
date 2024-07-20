@@ -1,0 +1,23 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:sorghum_porridge",
+      "register_to_create_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:use_duration": 32,
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation_modifier": "normal",
+        "can_always_eat": false
+      },
+      "using_converts_to": "bowl",
+      "netease:customtips": {
+        "value": "§f--------------------\n§6§l食物·粥\n§r§3品质: §5\n§3饥饿: §5 X 4\n§r§f--------------------\n§7■ 高粱与豆子混合熬制"
+      }
+    }
+  }
+}

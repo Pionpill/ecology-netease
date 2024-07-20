@@ -34,6 +34,26 @@
       ]
     },
     {
+      "group_name": "itemGroup.name.ham.porridge",
+      "icon": "ham:porridge",
+      "list": [
+        "ham:porridge",
+        "ham:green_bean_porridge",
+        "ham:red_bean_porridge",
+        "ham:sweet_potato_porridge",
+        "ham:vegetable_porridge",
+        "ham:sorghum_porridge",
+        "ham:sweet_potato_yam_porridge",
+        "ham:vegetable_pork_porridge",
+        "ham:red_bean_taro_porridge",
+        "ham:corn_pea_porridge",
+        "ham:yam_fish_porridge",
+        "ham:lentinula_sausage_porridge",
+        "ham:tomato_beef_porridge",
+        "ham:broccoli_porridge"
+      ]
+    },
+    {
       "group_name": "itemGroup.name.ham.noodles",
       "icon": "ham:tomato_egg_noodles",
       "list": [

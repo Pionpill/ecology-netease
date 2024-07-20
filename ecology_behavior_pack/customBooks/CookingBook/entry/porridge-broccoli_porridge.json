@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 113,
+  "icon": "textures/items/foods/porridge/broccoli_porridge.png",
+  "title": "西兰花玉米粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:broccoli_porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:broccoli_porridge"
+    }
+  ]
+}

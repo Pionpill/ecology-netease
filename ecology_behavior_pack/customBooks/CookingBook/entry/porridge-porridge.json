@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 100,
+  "icon": "textures/items/foods/porridge/porridge.png",
+  "title": "清粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:porridge"
+    }
+  ]
+}

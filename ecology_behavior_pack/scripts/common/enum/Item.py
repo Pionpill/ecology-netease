@@ -48,8 +48,11 @@ class ItemTag(object):
     FAST = 'fast' # 快餐
     BURGER = 'burger' # 汉堡
     FRY = 'fry' # 炒菜
+    PORRIDGE = 'porridge' # 粥
     NOODLE = 'noodle' # 面食
     CARROT = 'carrot' # 萝卜
+    FISH = 'fish' # 鱼
+    COOKED_FISH = 'cooked_fish' # 熟鱼
 
     cnNameDict = {
         CROP: '粮食',
@@ -82,8 +85,11 @@ class ItemTag(object):
         FAST: '快餐',
         BURGER: '汉堡',
         FRY: '炒菜',
+        PORRIDGE: '粥',
         NOODLE: '面食',
         CARROT: '萝卜',
+        FISH: '鱼',
+        COOKED_FISH: '熟鱼',
     }
 
     @staticmethod

@@ -1,0 +1,17 @@
+{
+  "parent": "porridge",
+  "sortnum": 108,
+  "icon": "textures/items/foods/porridge/red_bean_taro_porridge.png",
+  "title": "红豆芋头粥",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:red_bean_taro_porridge"
+    },
+    {
+      "subtitle": "煮粥",
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:red_bean_taro_porridge"
+    }
+  ]
+}

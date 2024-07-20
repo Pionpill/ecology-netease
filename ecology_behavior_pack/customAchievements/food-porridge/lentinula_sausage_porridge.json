@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-lentinula_sausage_porridge",
+  "parent_node": "ham-ecology-porridge",
+  "depend_parent": false,
+  "title": "§b香菇火腿粥",
+  "unfinished_icon": "textures/items/foods/porridge/lentinula_sausage_porridge",
+  "finished_icon": "textures/items/foods/porridge/lentinula_sausage_porridge",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 大米，香菇，生香肠，肉糜\n调料: 盐，葱\n效果: 力量",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

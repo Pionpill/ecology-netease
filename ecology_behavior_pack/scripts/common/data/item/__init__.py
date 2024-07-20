@@ -9,7 +9,9 @@ from scripts.common.data.item.materials.ore import SALT
 from scripts.common.data.item.materials.product import BUTTER, COOKING_OIL, DOUGH, FLOUR, GROUND_PORK, NOODLE, SALAD, STARCH, TOFU, RICE, WHEAT
 from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING, SUGAR
 
+from scripts.common.data.item.food.vanilla import COD, SALMON, TROPICAL, COOKED_SALMON, COOKED_COD, COOKED_TROPICAL
 from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK, BEEF_PATTIES, RAW_BEEF_PATTIES
+from scripts.common.data.item.food.porridge import PORRIDGE, GREEN_BEAN_PORRIDGE, RED_BEAN_PORRIDGE, SWEET_POTATO_PORRIDGE, VEGETABLE_PORRIDGE, SORGHUM_PORRIDGE, SWEET_POTATO_YAM_PORRIDGE, VEGETABLE_PORK_PORRIDGE, RED_BEAN_TARO_PORRIDGE, CORN_PEA_PORRIDGE, YAM_FISH_PORRIDGE, LENTINULA_SAUSAGE_PORRIDGE, TOMATO_BEEF_PORRIDGE, BROCCOLI_PORRIDGE
 from scripts.common.data.item.food.bake import RAW_APPLE_PIE, APPLE_PIE, RAW_CORN_PIE, CORN_PIE, RAW_CHEESE_PIE, CHEESE_PIE
 from scripts.common.data.item.food.fast import FRIES, BURGER_SIMPLE, BURGER, HOT_DOG
 from scripts.common.data.item.food.fry import MAPO_TOFU
@@ -18,6 +20,13 @@ from scripts.common.data.item.food.rice import EGG_FIRED_RICE, PORK_SAUCE_RICE, 
 
 
 ITEM_DATA = {
+    "minecraft:cod": COD,
+    "minecraft:cooked_cod": COOKED_COD,
+    "minecraft:salmon": SALMON,
+    "minecraft:cooked_salmon": COOKED_SALMON,
+    "minecraft:tropical": TROPICAL,
+    "minecraft:cooked_tropical": COOKED_TROPICAL,
+    
     "ham:corn": CORN,
     "ham:wheat_plant": WHEAT_PLANT,
     "ham:rice_plant": RICE_PLANT,
@@ -91,6 +100,21 @@ ITEM_DATA = {
     "ham:sausage": SAUSAGE,
     "ham:raw_sausage": RAW_SAUSAGE,
     "ham:sweet_milk": SWEET_MILK,
+
+    "ham:porridge": PORRIDGE, 
+    "ham:green_bean_porridge": GREEN_BEAN_PORRIDGE, 
+    "ham:red_bean_porridge": RED_BEAN_PORRIDGE, 
+    "ham:sweet_potato_porridge": SWEET_POTATO_PORRIDGE, 
+    "ham:vegetable_porridge": VEGETABLE_PORRIDGE, 
+    "ham:sorghum_porridge": SORGHUM_PORRIDGE, 
+    "ham:sweet_potato_yam_porridge": SWEET_POTATO_YAM_PORRIDGE, 
+    "ham:vegetable_pork_porridge": VEGETABLE_PORK_PORRIDGE, 
+    "ham:red_bean_taro_porridge": RED_BEAN_TARO_PORRIDGE, 
+    "ham:corn_pea_porridge": CORN_PEA_PORRIDGE, 
+    "ham:yam_fish_porridge": YAM_FISH_PORRIDGE, 
+    "ham:lentinula_sausage_porridge": LENTINULA_SAUSAGE_PORRIDGE, 
+    "ham:tomato_beef_porridge": TOMATO_BEEF_PORRIDGE, 
+    "ham:broccoli_porridge": BROCCOLI_PORRIDGE,
 
     "ham:raw_apple_pie": RAW_APPLE_PIE,
     "ham:apple_pie": APPLE_PIE,

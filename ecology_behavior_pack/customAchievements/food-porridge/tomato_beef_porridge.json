@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-tomato_beef_porridge",
+  "parent_node": "ham-ecology-lentinula_sausage_porridge",
+  "depend_parent": false,
+  "title": "§b番茄牛肉粥",
+  "unfinished_icon": "textures/items/foods/porridge/tomato_beef_porridge",
+  "finished_icon": "textures/items/foods/porridge/tomato_beef_porridge",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 大米，番茄，牛肉\n调料: 盐，葱，姜\n效果: 力量，瞬间治疗",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

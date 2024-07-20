@@ -265,6 +265,48 @@
     "ham:sweet_milk": {
       "textures": "textures/items/foods/simple/sweet_milk"
     },
+    "ham:porridge": {
+      "textures": "textures/items/foods/porridge/porridge"
+    },
+    "ham:green_bean_porridge": {
+      "textures": "textures/items/foods/porridge/green_bean_porridge"
+    },
+    "ham:red_bean_porridge": {
+      "textures": "textures/items/foods/porridge/red_bean_porridge"
+    },
+    "ham:sweet_potato_porridge": {
+      "textures": "textures/items/foods/porridge/sweet_potato_porridge"
+    },
+    "ham:vegetable_porridge": {
+      "textures": "textures/items/foods/porridge/vegetable_porridge"
+    },
+    "ham:sorghum_porridge": {
+      "textures": "textures/items/foods/porridge/sorghum_porridge"
+    },
+    "ham:sweet_potato_yam_porridge": {
+      "textures": "textures/items/foods/porridge/sweet_potato_yam_porridge"
+    },
+    "ham:vegetable_pork_porridge": {
+      "textures": "textures/items/foods/porridge/vegetable_pork_porridge"
+    },
+    "ham:red_bean_taro_porridge": {
+      "textures": "textures/items/foods/porridge/red_bean_taro_porridge"
+    },
+    "ham:corn_pea_porridge": {
+      "textures": "textures/items/foods/porridge/corn_pea_porridge"
+    },
+    "ham:yam_fish_porridge": {
+      "textures": "textures/items/foods/porridge/yam_fish_porridge"
+    },
+    "ham:lentinula_sausage_porridge": {
+      "textures": "textures/items/foods/porridge/lentinula_sausage_porridge"
+    },
+    "ham:tomato_beef_porridge": {
+      "textures": "textures/items/foods/porridge/tomato_beef_porridge"
+    },
+    "ham:broccoli_porridge": {
+      "textures": "textures/items/foods/porridge/broccoli_porridge"
+    },
     "ham:raw_apple_pie": {
       "textures": "textures/items/foods/pie/raw_apple_pie"
     },

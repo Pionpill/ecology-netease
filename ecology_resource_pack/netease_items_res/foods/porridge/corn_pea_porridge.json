@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:corn_pea_porridge"
+    },
+    "components": {
+      "minecraft:icon": "ham:corn_pea_porridge",
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "aqua"
+    }
+  }
+}
