@@ -112,7 +112,6 @@ class Recipe(object):
             outDict[type + '_slot' + str(slotIndex)] = Recipe.__FormatItem(item)
             
         # 格式化固定槽位
-        outDict = {type + '_slot' + str(slotIndex) : itemUtils.GetItemDict(itemName = item) if isinstance(item, str) else itemUtils.GetItemDict(itemDict = item) for slotIndex, item in materialOrResultDict.items()}
         if type == 'material' and self.__fixedMaterialItems:
             fixedMaterial = recipe.get("fixed_material", tuple([0] * len(self.__fixedMaterialItems)))
             for slotIndex, count in enumerate(fixedMaterial):
