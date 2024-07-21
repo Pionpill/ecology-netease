@@ -1,22 +1,22 @@
 {
-  "parent": "bake",
+  "parent": "pie",
   "sortnum": 101,
-  "icon": "textures/items/foods/pie/cheese_pie.png",
-  "title": "起司派",
+  "icon": "textures/items/foods/pie/sweet_potato_pie.png",
+  "title": "红薯派",
   "pages": [
     {
       "type": "ham:itemInfoPage",
-      "itemName": "ham:cheese_pie"
+      "itemName": "ham:sweet_potato_pie"
     },
     {
       "subtitle": "制作·生食",
       "type": "ham:cookRecipePage",
-      "recipeId": "ham:raw_cheese_pie"
+      "recipeId": "ham:raw_sweet_potato_pie"
     },
     {
       "subtitle": "制作·烘焙",
       "type": "ham:bakeRecipePage",
-      "recipeId": "ham:cheese_pie"
+      "recipeId": "ham:sweet_potato_pie"
     }
   ]
 }

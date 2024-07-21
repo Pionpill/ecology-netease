@@ -1,0 +1,22 @@
+{
+  "parent": "pie",
+  "sortnum": 100,
+  "icon": "textures/items/foods/pie/corn_pie.png",
+  "title": "玉米派",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:corn_pie"
+    },
+    {
+      "subtitle": "制作·生食",
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:raw_corn_pie"
+    },
+    {
+      "subtitle": "制作·烘焙",
+      "type": "ham:bakeRecipePage",
+      "recipeId": "ham:corn_pie"
+    }
+  ]
+}

@@ -10,12 +10,12 @@
       "minecraft:max_stack_size": 64,
       "minecraft:use_duration": 32,
       "minecraft:food": {
-        "nutrition": 7,
-        "saturation_modifier": "normal",
+        "nutrition": 5,
+        "saturation_modifier": "good",
         "can_always_eat": false
       },
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·派类\n§r§3品质: §5\n§3饥饿: §5 X 7"
+        "value": "§f--------------------\n§6§l食物·派类\n§r§3品质: §5\n§3饥饿: §5 X 5"
       }
     }
   }

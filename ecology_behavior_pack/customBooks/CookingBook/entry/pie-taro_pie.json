@@ -1,22 +1,22 @@
 {
-  "parent": "bake",
-  "sortnum": 100,
-  "icon": "textures/items/foods/pie/corn_pie.png",
-  "title": "玉米派",
+  "parent": "pie",
+  "sortnum": 102,
+  "icon": "textures/items/foods/pie/taro_pie.png",
+  "title": "香芋派",
   "pages": [
     {
       "type": "ham:itemInfoPage",
-      "itemName": "ham:corn_pie"
+      "itemName": "ham:taro_pie"
     },
     {
       "subtitle": "制作·生食",
       "type": "ham:cookRecipePage",
-      "recipeId": "ham:raw_corn_pie"
+      "recipeId": "ham:raw_taro_pie"
     },
     {
       "subtitle": "制作·烘焙",
       "type": "ham:bakeRecipePage",
-      "recipeId": "ham:corn_pie"
+      "recipeId": "ham:taro_pie"
     }
   ]
 }

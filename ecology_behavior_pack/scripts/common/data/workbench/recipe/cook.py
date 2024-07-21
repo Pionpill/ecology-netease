@@ -1,7 +1,118 @@
 from scripts.common.enum.Item import ItemTag
 
+COOK_PIE_DATA = {
+    "ham:raw_corn_pie": {
+        "material": {
+            4: ("ham:butter", 2),
+            6: ("ham:corn", 3),
+            7: ("ham:dough", 4),
+            8: ("ham:corn", 3),
+        },
+        "fixed_material": (1, 1, 1, 1),
+        "result": ("ham:raw_corn_pie", 6), # 5
+    },
+    "ham:raw_sweet_potato_pie": {
+        "material": {
+            4: ("ham:butter", 2),
+            6: "ham:sweet_potato",
+            7: ("ham:dough", 4),
+            8: "ham:sweet_potato",
+        },
+        "fixed_material": (1, 1, 1, 1),
+        "result": ("ham:raw_sweet_potato_pie", 6), # 5
+    },
+    "ham:raw_taro_pie": {
+        "material": {
+            4: ("ham:butter", 2),
+            6: "ham:taro",
+            7: ("ham:dough", 4), 
+            8: "ham:taro",
+        },
+        "fixed_material": (1, 1, 1, 1),
+        "result": ("ham:raw_taro_pie", 6), # 5
+    },
+    "ham:raw_cheese_pie": {
+        "material": {
+            4: ("ham:butter", 3),
+            6: ("ham:cheese", 3),
+            7: ("ham:dough", 4),
+            8: ("minecraft:egg", 3),
+        },
+        "fixed_material": (1, 3, 2, 1),
+        "result": ("ham:raw_cheese_pie", 6), # 7
+    },
+    "ham:raw_carrot_pie": {
+        "material": {
+            4: ("ham:butter", 3),
+            6: ("ham:carrot", 6),
+            7: ("ham:dough", 4),
+            8: ("minecraft:egg", 3),
+        },
+        "fixed_material": (1, 3, 2, 1),
+        "result": ("ham:raw_carrot_pie", 6), # 7
+    },
+    "ham:raw_strawberry_pie": {
+        "material": {
+            4: ("ham:butter", 3),
+            6: ("ham:strawberry", 6),
+            7: ("ham:dough", 4),
+            8: ("minecraft:egg", 3),
+        },
+        "fixed_material": (1, 3, 2, 1),
+        "result": ("ham:raw_strawberry_pie", 6), # 7
+    },
+    "ham:raw_apple_pie": {
+        "material": {
+            4: ("ham:butter", 3),
+            6: ("minecraft:apple", 4),
+            7: ("ham:dough", 4),
+            8: ("minecraft:egg", 3),
+        },
+        "fixed_material": (1, 3, 2, 1),
+        "result": ("ham:raw_apple_pie", 6), # 7
+    },
+    "ham:raw_potato_beef_pie": {
+        "material": {
+            1: ("ham:butter", 3),
+            3: "ham:corn_soup",
+            4: "ham:onion",
+            5: "ham:cheese",
+            6: ("minecraft:beef", 2),
+            7: ("ham:dough", 4),
+            8: ("ham:potato", 3),
+        },
+        "fixed_material": (3, 1, 3, 3),
+        "result": ("ham:raw_potato_beef_pie", 6) # 9
+    },
+    "ham:raw_mushroom_pork_pie": {
+        "material": {
+            1: ("ham:butter", 3),
+            3: ("ham:salad", 2),
+            4: "ham:onion",
+            5: "ham:cheese",
+            6: ("ham:ground_pork", 2),
+            7: ("ham:dough", 4),
+            8: "ham:mushroom_soup",
+        },
+        "fixed_material": (3, 1, 3, 3),
+        "result": ("ham:raw_mushroom_pork_pie", 6) # 9
+    },
+    "ham:raw_corn_chicken_pie": {
+        "material": {
+            1: ("ham:butter", 3),
+            3: ("ham:pea", 3),
+            4: ("ham:sweet_milk", 3),
+            5: "ham:cheese",
+            6: ("minecraft:chicken", 2),
+            7: ("ham:dough", 4),
+            8: "ham:corn_soup",
+        },
+        "fixed_material": (3, 1, 3, 3),
+        "result": ("ham:raw_corn_chicken_pie", 6) # 9
+    },
+}
 
-COOK_DATA = {
+COOK_COMMON_DATA = {
     "minecraft:apple": {
         "material": {
             4: "minecraft:apple"
@@ -121,65 +232,6 @@ COOK_DATA = {
         "result": {
             "newItemName": "ham:raw_buns", 
             "count": 9,
-        },
-    },
-    "ham:raw_cheese_pie": {
-        "material": {
-            1: "ham:butter",
-            3: "ham:cheese",
-            4: "minecraft:egg",
-            5: "ham:cheese",
-            6: "ham:dough",
-            7: "ham:dough",
-            8: "ham:dough",
-        },
-        "fixed_material": (1, 3, 1, 1),
-        "result": {
-            "newItemName": "ham:raw_cheese_pie", 
-            "count": 4,
-        },
-    },
-    "ham:raw_corn_pie": {
-        "material": {
-            1: "ham:cheese",
-            3: {
-                "newItemName": "ham:corn",
-                "count": 2
-            },
-            4: "ham:butter",
-            5: {
-                "newItemName": "ham:corn",
-                "count": 2
-            },
-            6: "ham:dough",
-            7: "ham:dough",
-            8: "ham:dough",
-        },
-        "fixed_material": (1, 3, 1, 1),
-        "result": {
-            "newItemName": "ham:raw_corn_pie", 
-            "count": 4,
-        },
-    },
-    "ham:raw_apple_pie": {
-        "material": {
-            0: "minecraft:egg",
-            1: "ham:butter",
-            2: "minecraft:egg",
-            3: "ham:cheese",
-            4: {
-                "newItemName": "minecraft:apple",
-                "count": 4
-            },
-            5: "ham:cheese",
-            6: "ham:dough",
-            7: "ham:dough",
-            8: "ham:dough",
-        },
-        "fixed_material": (1, 3, 1, 1),
-        "result": {
-            "newItemName": "ham:raw_apple_pie", 
-            "count": 4,
         },
     },
     "ham:burger_simple": {
@@ -331,3 +383,5 @@ COOK_DATA = {
         "result": "minecraft:paper", # 1.5
     },
 }
+
+COOK_DATA = dict(COOK_COMMON_DATA, **COOK_PIE_DATA)

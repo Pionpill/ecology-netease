@@ -10,8 +10,8 @@ CHEESE_PIE = {
   "tag": (ItemTag.BAKE, ItemTag.PIE),
   "hidden_effect": None,
   "food": {
-    "nutrition": 6,
-    "saturation": FoodSaturation.NORMAL,
+    "nutrition": 7,
+    "saturation": FoodSaturation.GOOD,
     "can_eat": True,
     "effect": ({
         "name": EffectType.HASTE,
@@ -28,6 +28,6 @@ RAW_CHEESE_PIE = {
     ItemSource.WORKBENCH: ("ham:cooking_table"),
   },
   "category": ItemCategory.FOOD,
-  "tag": (ItemTag.BAKE, ItemTag.PIE),
+  "tag": (ItemTag.RAW_PIE,),
   "hidden_effect": None
 }

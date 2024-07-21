@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:taro_pie"
+    },
+    "components": {
+      "minecraft:icon": "ham:taro_pie",
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

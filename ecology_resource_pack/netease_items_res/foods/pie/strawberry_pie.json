@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:strawberry_pie"
+    },
+    "components": {
+      "minecraft:icon": "ham:strawberry_pie",
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "aqua"
+    }
+  }
+}

@@ -10,8 +10,8 @@ APPLE_PIE = {
   "tag": (ItemTag.BAKE, ItemTag.PIE),
   "hidden_effect": None,
   "food": {
-    "nutrition": 10,
-    "saturation": FoodSaturation.NORMAL,
+    "nutrition": 7,
+    "saturation": FoodSaturation.GOOD,
     "can_eat": True,
     "effect": ({
         "name": EffectType.REGENERATION,
@@ -28,6 +28,6 @@ RAW_APPLE_PIE = {
     ItemSource.WORKBENCH: ("ham:cooking_table"),
   },
   "category": ItemCategory.FOOD,
-  "tag": (ItemTag.BAKE, ItemTag.PIE),
+  "tag": (ItemTag.RAW_PIE,),
   "hidden_effect": None
 }

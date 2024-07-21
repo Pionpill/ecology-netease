@@ -1,0 +1,22 @@
+{
+  "parent": "pie",
+  "sortnum": 121,
+  "icon": "textures/items/foods/pie/mushroom_pork_pie.png",
+  "title": "口菇肉糜派",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:mushroom_pork_pie"
+    },
+    {
+      "subtitle": "制作·生食",
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:raw_mushroom_pork_pie"
+    },
+    {
+      "subtitle": "制作·烘焙",
+      "type": "ham:bakeRecipePage",
+      "recipeId": "ham:mushroom_pork_pie"
+    }
+  ]
+}

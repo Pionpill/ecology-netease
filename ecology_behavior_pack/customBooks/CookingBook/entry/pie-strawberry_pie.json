@@ -1,0 +1,22 @@
+{
+  "parent": "pie",
+  "sortnum": 112,
+  "icon": "textures/items/foods/pie/strawberry_pie.png",
+  "title": "草莓派",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:strawberry_pie"
+    },
+    {
+      "subtitle": "制作·生食",
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:raw_strawberry_pie"
+    },
+    {
+      "subtitle": "制作·烘焙",
+      "type": "ham:bakeRecipePage",
+      "recipeId": "ham:strawberry_pie"
+    }
+  ]
+}

@@ -313,6 +313,12 @@
     "ham:apple_pie": {
       "textures": "textures/items/foods/pie/apple_pie"
     },
+    "ham:raw_carrot_pie": {
+      "textures": "textures/items/foods/pie/raw_carrot_pie"
+    },
+    "ham:carrot_pie": {
+      "textures": "textures/items/foods/pie/carrot_pie"
+    },
     "ham:raw_cheese_pie": {
       "textures": "textures/items/foods/pie/raw_cheese_pie"
     },
@@ -324,6 +330,42 @@
     },
     "ham:corn_pie": {
       "textures": "textures/items/foods/pie/corn_pie"
+    },
+    "ham:raw_corn_chicken_pie": {
+      "textures": "textures/items/foods/pie/raw_corn_chicken_pie"
+    },
+    "ham:corn_chicken_pie": {
+      "textures": "textures/items/foods/pie/corn_chicken_pie"
+    },
+    "ham:raw_mushroom_pork_pie": {
+      "textures": "textures/items/foods/pie/raw_mushroom_pork_pie"
+    },
+    "ham:mushroom_pork_pie": {
+      "textures": "textures/items/foods/pie/mushroom_pork_pie"
+    },
+    "ham:raw_potato_beef_pie": {
+      "textures": "textures/items/foods/pie/raw_potato_beef_pie"
+    },
+    "ham:potato_beef_pie": {
+      "textures": "textures/items/foods/pie/potato_beef_pie"
+    },
+    "ham:raw_strawberry_pie": {
+      "textures": "textures/items/foods/pie/raw_strawberry_pie"
+    },
+    "ham:strawberry_pie": {
+      "textures": "textures/items/foods/pie/strawberry_pie"
+    },
+    "ham:raw_sweet_potato_pie": {
+      "textures": "textures/items/foods/pie/raw_sweet_potato_pie"
+    },
+    "ham:sweet_potato_pie": {
+      "textures": "textures/items/foods/pie/sweet_potato_pie"
+    },
+    "ham:raw_taro_pie": {
+      "textures": "textures/items/foods/pie/raw_taro_pie"
+    },
+    "ham:taro_pie": {
+      "textures": "textures/items/foods/pie/taro_pie"
     },
     "ham:fries": {
       "textures": "textures/items/foods/fast_food/fries"

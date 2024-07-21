@@ -9,12 +9,26 @@
       "group_name": "itemGroup.name.ham.pie",
       "icon": "ham:apple_pie",
       "list": [
-        "ham:raw_cheese_pie",
-        "ham:cheese_pie",
-        "ham:raw_corn_pie",
         "ham:corn_pie",
+        "ham:sweet_potato_pie",
+        "ham:taro_pie",
+        "ham:cheese_pie",
+        "ham:carrot_pie",
+        "ham:apple_pie",
+        "ham:strawberry_pie",
+        "ham:potato_beef_pie",
+        "ham:mushroom_pork_pie",
+        "ham:corn_chicken_pie",
+        "ham:raw_corn_pie",
+        "ham:raw_sweet_potato_pie",
+        "ham:raw_taro_pie",
+        "ham:raw_cheese_pie",
+        "ham:raw_carrot_pie",
         "ham:raw_apple_pie",
-        "ham:apple_pie"
+        "ham:raw_strawberry_pie",
+        "ham:raw_potato_beef_pie",
+        "ham:raw_mushroom_pork_pie",
+        "ham:raw_corn_chicken_pie"
       ]
     },
     {

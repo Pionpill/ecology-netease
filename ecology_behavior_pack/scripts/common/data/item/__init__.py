@@ -12,7 +12,7 @@ from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING, S
 from scripts.common.data.item.food.vanilla import COD, SALMON, TROPICAL, COOKED_SALMON, COOKED_COD, COOKED_TROPICAL
 from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK, BEEF_PATTIES, RAW_BEEF_PATTIES
 from scripts.common.data.item.food.porridge import PORRIDGE, GREEN_BEAN_PORRIDGE, RED_BEAN_PORRIDGE, SWEET_POTATO_PORRIDGE, VEGETABLE_PORRIDGE, SORGHUM_PORRIDGE, SWEET_POTATO_YAM_PORRIDGE, VEGETABLE_PORK_PORRIDGE, RED_BEAN_TARO_PORRIDGE, CORN_PEA_PORRIDGE, YAM_FISH_PORRIDGE, LENTINULA_SAUSAGE_PORRIDGE, TOMATO_BEEF_PORRIDGE, BROCCOLI_PORRIDGE
-from scripts.common.data.item.food.pie import RAW_APPLE_PIE, APPLE_PIE, RAW_CORN_PIE, CORN_PIE, RAW_CHEESE_PIE, CHEESE_PIE
+from scripts.common.data.item.food.pie import APPLE_PIE, RAW_APPLE_PIE, CARROT_PIE, RAW_CARROT_PIE, CORN_CHICKEN_PIE, RAW_CORN_CHICKEN_PIE, MUSHROOM_PORK_PIE, RAW_MUSHROOM_PORK_PIE, POTATO_BEEF_PIE, RAW_POTATO_BEEF_PIE, STRAWBERRY_PIE, RAW_STRAWBERRY_PIE, SWEET_POTATO_PIE, RAW_SWEET_POTATO_PIE, TARO_PIE, RAW_TARO_PIE, CHEESE_PIE, RAW_CHEESE_PIE, CORN_PIE, RAW_CORN_PIE
 from scripts.common.data.item.food.fast import FRIES, BURGER_SIMPLE, BURGER, HOT_DOG
 from scripts.common.data.item.food.fry import MAPO_TOFU
 from scripts.common.data.item.food.noodles import PLAIN_NOODLES, PORK_SAUCE_NOODLES, TOMATO_EGG_NOODLES
@@ -118,6 +118,20 @@ ITEM_DATA = {
 
     "ham:raw_apple_pie": RAW_APPLE_PIE,
     "ham:apple_pie": APPLE_PIE,
+    "ham:raw_carrot_pie": RAW_CARROT_PIE,
+    "ham:carrot_pie": CARROT_PIE,
+    "ham:raw_corn_chicken_pie": RAW_CORN_CHICKEN_PIE,
+    "ham:corn_chicken_pie": CORN_CHICKEN_PIE,
+    "ham:raw_mushroom_pork_pie": RAW_MUSHROOM_PORK_PIE,
+    "ham:mushroom_pork_pie": MUSHROOM_PORK_PIE,
+    "ham:raw_sweet_potato_pie": RAW_SWEET_POTATO_PIE,
+    "ham:sweet_potato_pie": SWEET_POTATO_PIE,
+    "ham:raw_potato_beef_pie": RAW_POTATO_BEEF_PIE,
+    "ham:potato_beef_pie": POTATO_BEEF_PIE,
+    "ham:raw_strawberry_pie": RAW_STRAWBERRY_PIE,
+    "ham:strawberry_pie": STRAWBERRY_PIE,
+    "ham:raw_taro_pie": RAW_TARO_PIE,
+    "ham:taro_pie": TARO_PIE,
     "ham:raw_corn_pie": RAW_CORN_PIE,
     "ham:corn_pie": CORN_PIE,
     "ham:raw_cheese_pie": RAW_CHEESE_PIE,

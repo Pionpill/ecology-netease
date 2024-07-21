@@ -1,0 +1,22 @@
+{
+  "parent": "pie",
+  "sortnum": 110,
+  "icon": "textures/items/foods/pie/cheese_pie.png",
+  "title": "奶酪派",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:cheese_pie"
+    },
+    {
+      "subtitle": "制作·生食",
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:raw_cheese_pie"
+    },
+    {
+      "subtitle": "制作·烘焙",
+      "type": "ham:bakeRecipePage",
+      "recipeId": "ham:cheese_pie"
+    }
+  ]
+}
