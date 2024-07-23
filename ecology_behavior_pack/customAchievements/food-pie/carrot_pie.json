@@ -8,7 +8,7 @@
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "食材: 面团，胡萝卜，鸡蛋\n调料: 黄油",
+  "node_description": "食材: 面团，胡萝卜，鸡蛋\n调料: 黄油\n工作台: 厨务台, 烘焙炉",
   "reward": [
     {
       "function_name": "",

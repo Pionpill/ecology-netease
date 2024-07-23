@@ -151,6 +151,21 @@
     "ham:seasoning": {
       "textures": "textures/items/materials/seasoning"
     },
+    "ham:chili_pack": {
+      "textures": "textures/items/materials/chili_pack"
+    },
+    "ham:meal_pack": {
+      "textures": "textures/items/materials/meal_pack"
+    },
+    "ham:mushroom_pack": {
+      "textures": "textures/items/materials/mushroom_pack"
+    },
+    "ham:simple_pack": {
+      "textures": "textures/items/materials/simple_pack"
+    },
+    "ham:tomato_pack": {
+      "textures": "textures/items/materials/tomato_pack"
+    },
     "ham:starch": {
       "textures": "textures/items/materials/starch"
     },
@@ -373,11 +388,20 @@
     "ham:hot_dog": {
       "textures": "textures/items/foods/fast_food/hot_dog"
     },
-    "ham:burger": {
-      "textures": "textures/items/foods/fast_food/burger"
+    "ham:onion_ring": {
+      "textures": "textures/items/foods/fast_food/onion_ring"
     },
-    "ham:burger_simple": {
-      "textures": "textures/items/foods/fast_food/burger_simple"
+    "ham:chicken_burger": {
+      "textures": "textures/items/foods/fast_food/chicken_burger"
+    },
+    "ham:cod_burger": {
+      "textures": "textures/items/foods/fast_food/cod_burger"
+    },
+    "ham:beef_burger": {
+      "textures": "textures/items/foods/fast_food/beef_burger"
+    },
+    "ham:double_beef_burger": {
+      "textures": "textures/items/foods/fast_food/double_beef_burger"
     },
     "ham:cooked_rice": {
       "textures": "textures/items/foods/rice/cooked_rice"

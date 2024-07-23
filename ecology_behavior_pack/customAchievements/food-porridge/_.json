@@ -7,7 +7,7 @@
   "window_background": "textures/blocks/brick",
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "食材: 大米",
+  "node_description": "食材: 大米\n工作台: 煮锅",
   "reward": [
     {
       "function_name": "",

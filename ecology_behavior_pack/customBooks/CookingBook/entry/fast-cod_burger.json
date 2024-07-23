@@ -1,0 +1,17 @@
+{
+  "parent": "fast",
+  "sortnum": 302,
+  "icon": "textures/items/foods/fast_food/cod_burger.png",
+  "title": "鳕鱼堡",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:cod_burger"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:cod_burger",
+      "subtitle": "制作·厨务台"
+    }
+  ]
+}

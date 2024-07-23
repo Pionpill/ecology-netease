@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-cod_burger",
+  "parent_node": "ham-ecology-chicken_burger",
+  "depend_parent": false,
+  "title": "§b鳕鱼堡",
+  "unfinished_icon": "textures/items/foods/fast_food/cod_burger",
+  "finished_icon": "textures/items/foods/fast_food/cod_burger",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 番茄，全麦面包，熟鱼，奶酪\n工作台: 厨务台",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

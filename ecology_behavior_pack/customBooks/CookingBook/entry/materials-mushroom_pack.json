@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 12004,
+  "icon": "textures/items/materials/mushroom_pack.png",
+  "title": "番茄料包",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:mushroom_pack"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·厨务台",
+      "recipeId": "ham:mushroom_pack"
+    }
+  ]
+}

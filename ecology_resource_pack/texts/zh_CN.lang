@@ -59,6 +59,12 @@ item.ham:beet_leaf.name=甜菜叶
 
 item.ham:butter.name=黄油
 item.ham:sugar.name=糖
+itemGroup.name.ham.seasoning_pack=料理包
+item.ham:chili_pack.name=辣味料包
+item.ham:meal_pack.name=荤菜料包
+item.ham:simple_pack.name=简易料包
+item.ham:tomato_pack.name=番茄料包
+item.ham:mushroom_pack.name=菌菇料包
 item.ham:chili_powder.name=辣椒粉
 item.ham:cooking_oil.name=食用油
 item.ham:dough.name=面团
@@ -119,9 +125,12 @@ item.ham:lentinula_sausage_porridge.name=香菇火腿粥
 item.ham:tomato_beef_porridge.name=番茄牛肉粥
 item.ham:broccoli_porridge.name=西兰花玉米粥
 
-item.ham:burger.name=汉堡
-item.ham:burger_simple.name=简易汉堡
 item.ham:fries.name=薯条
+item.ham:onion_ring.name=洋葱圈
+item.ham:chicken_burger.name=鸡肉堡
+item.ham:cod_burger.name=鳕鱼堡
+item.ham:beef_burger.name=牛肉堡
+item.ham:double_beef_burger.name=双层牛肉堡
 item.ham:hot_dog.name=热狗
 
 item.ham:mapo_tofu.name=麻婆豆腐

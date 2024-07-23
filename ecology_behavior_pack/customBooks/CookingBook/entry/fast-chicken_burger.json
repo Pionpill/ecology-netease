@@ -1,0 +1,17 @@
+{
+  "parent": "fast",
+  "sortnum": 301,
+  "icon": "textures/items/foods/fast_food/chicken_burger.png",
+  "title": "鸡肉堡",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:chicken_burger"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:chicken_burger",
+      "subtitle": "制作·厨务台"
+    }
+  ]
+}

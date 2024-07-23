@@ -8,7 +8,7 @@
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "食材: 大米，番茄，牛肉\n调料: 盐，葱，姜\n效果: 力量，瞬间治疗",
+  "node_description": "食材: 大米，番茄，牛肉\n调料: 盐，葱，姜\n效果: 力量，瞬间治疗\n工作台: 煮锅",
   "reward": [
     {
       "function_name": "",

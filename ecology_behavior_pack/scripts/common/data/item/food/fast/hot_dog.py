@@ -17,7 +17,7 @@ HOT_DOG = {
       {
         "name": EffectType.STRENGTH,
         "chance": 1,
-        "duration": 30,
+        "duration": 45,
         "amplifier": 0
       },
     )

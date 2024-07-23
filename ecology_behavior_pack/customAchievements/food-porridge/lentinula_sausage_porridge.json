@@ -8,7 +8,7 @@
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "食材: 大米，香菇，生香肠，肉糜\n调料: 盐，葱\n效果: 力量",
+  "node_description": "食材: 大米，香菇，生香肠，肉糜\n调料: 盐，葱\n效果: 力量\n工作台: 煮锅",
   "reward": [
     {
       "function_name": "",

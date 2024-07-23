@@ -1,0 +1,17 @@
+{
+  "parent": "fast",
+  "sortnum": 300,
+  "icon": "textures/items/foods/fast_food/beef_burger.png",
+  "title": "牛肉堡",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:beef_burger"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:beef_burger",
+      "subtitle": "制作·厨务台"
+    }
+  ]
+}

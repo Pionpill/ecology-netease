@@ -7,13 +7,13 @@ from scripts.common.data.item.crops.vegetable import EGGPLANT, LETTUCE, ONION, T
 from scripts.common.data.item.materials.fuel import STRAW
 from scripts.common.data.item.materials.ore import SALT
 from scripts.common.data.item.materials.product import BUTTER, COOKING_OIL, DOUGH, FLOUR, GROUND_PORK, NOODLE, SALAD, STARCH, TOFU, RICE, WHEAT
-from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING, SUGAR
+from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING, SUGAR, SIMPLE_PACK, MEAL_PACK, TOMATO_PACK, MUSHROOM_PACK, CHILI_PACK
 
 from scripts.common.data.item.food.vanilla import COD, SALMON, TROPICAL, COOKED_SALMON, COOKED_COD, COOKED_TROPICAL
 from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK, BEEF_PATTIES, RAW_BEEF_PATTIES
 from scripts.common.data.item.food.porridge import PORRIDGE, GREEN_BEAN_PORRIDGE, RED_BEAN_PORRIDGE, SWEET_POTATO_PORRIDGE, VEGETABLE_PORRIDGE, SORGHUM_PORRIDGE, SWEET_POTATO_YAM_PORRIDGE, VEGETABLE_PORK_PORRIDGE, RED_BEAN_TARO_PORRIDGE, CORN_PEA_PORRIDGE, YAM_FISH_PORRIDGE, LENTINULA_SAUSAGE_PORRIDGE, TOMATO_BEEF_PORRIDGE, BROCCOLI_PORRIDGE
 from scripts.common.data.item.food.pie import APPLE_PIE, RAW_APPLE_PIE, CARROT_PIE, RAW_CARROT_PIE, CORN_CHICKEN_PIE, RAW_CORN_CHICKEN_PIE, MUSHROOM_PORK_PIE, RAW_MUSHROOM_PORK_PIE, POTATO_BEEF_PIE, RAW_POTATO_BEEF_PIE, STRAWBERRY_PIE, RAW_STRAWBERRY_PIE, SWEET_POTATO_PIE, RAW_SWEET_POTATO_PIE, TARO_PIE, RAW_TARO_PIE, CHEESE_PIE, RAW_CHEESE_PIE, CORN_PIE, RAW_CORN_PIE
-from scripts.common.data.item.food.fast import FRIES, BURGER_SIMPLE, BURGER, HOT_DOG
+from scripts.common.data.item.food.fast import FRIES, ONION_RING, BEEF_BURGER, CHICKEN_BURGER, COD_BURGER,  DOUBLE_BEEF_BURGER, HOT_DOG
 from scripts.common.data.item.food.fry import MAPO_TOFU
 from scripts.common.data.item.food.noodles import PLAIN_NOODLES, PORK_SAUCE_NOODLES, TOMATO_EGG_NOODLES
 from scripts.common.data.item.food.rice import EGG_FIRED_RICE, PORK_SAUCE_RICE, YANGZHOU_FRIED_RICE
@@ -85,6 +85,11 @@ ITEM_DATA = {
     "ham:chili_powder": CHILI_POWDER,
     "ham:seasoning": SEASONING,
     "ham:sugar": SUGAR,
+    "ham:simple_pack": SIMPLE_PACK, 
+    "ham:meal_pack": MEAL_PACK, 
+    "ham:tomato_pack": TOMATO_PACK, 
+    "ham:mushroom_pack": MUSHROOM_PACK, 
+    "ham:chili_pack": CHILI_PACK,
     "ham:rice": RICE,
     "ham:wheat": WHEAT,
     "ham:broccoli": BROCCOLI,
@@ -140,8 +145,11 @@ ITEM_DATA = {
     "ham:raw_beef_patties": RAW_BEEF_PATTIES,
 
     "ham:fries": FRIES,
-    "ham:burger_simple": BURGER_SIMPLE,
-    "ham:burger": BURGER,
+    "ham:onion_ring": ONION_RING, 
+    "ham:beef_burger": BEEF_BURGER, 
+    "ham:chicken_burger": CHICKEN_BURGER, 
+    "ham:cod_burger": COD_BURGER, 
+    "ham:double_beef_burger": DOUBLE_BEEF_BURGER,
     "ham:hot_dog": HOT_DOG,
 
     "ham:mapo_tofu": MAPO_TOFU,

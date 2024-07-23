@@ -8,7 +8,7 @@
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "食材: 红豆\n调料: 糖",
+  "node_description": "食材: 红豆\n调料: 糖\n工作台: 煮锅",
   "reward": [
     {
       "function_name": "",

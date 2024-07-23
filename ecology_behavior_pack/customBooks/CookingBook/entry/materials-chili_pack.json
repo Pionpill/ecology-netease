@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 12002,
+  "icon": "textures/items/materials/chili_pack.png",
+  "title": "辣味料包",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:chili_pack"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·厨务台",
+      "recipeId": "ham:chili_pack"
+    }
+  ]
+}

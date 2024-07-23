@@ -112,6 +112,68 @@ COOK_PIE_DATA = {
     },
 }
 
+COOK_FAST_DATA = {
+    "ham:cod_burger": {
+        "material": {
+            1: "ham:bread", # 3
+            3: "ham:cheese", # 2
+            4: ("ham:cooked_cod", 2), # 6
+            5: "ham:tomato", # 1
+            7: "ham:bread", # 3
+        },
+        "fixed_material": (1, 0, 0, 2),
+        "result": ("ham:beef_burger", 2), # 7
+    },
+    "ham:chicken_burger": {
+        "material": {
+            1: "ham:bread", # 3
+            3: ("ham:lettuce", 2), # 1
+            4: ("ham:cooked_chicken", 2), # 6
+            5: "ham:tomato", # 1
+            7: "ham:bread", # 3
+        },
+        "fixed_material": (1, 0, 0, 2),
+        "result": ("ham:beef_burger", 2), # 7
+    },
+    "ham:beef_burger": {
+        "material": {
+            1: "ham:bread", # 3
+            3: ("ham:salad", 2), # 1
+            4: ("ham:beef_patties", 2), # 5
+            5: "ham:tomato", # 1
+            7: "ham:bread", # 3
+        },
+        "fixed_material": (1, 0, 0, 2),
+        "result": ("ham:beef_burger", 2), # 7
+    },
+    "ham:double_beef_burger": {
+        "material": {
+            0: "ham:lettuce", # 1
+            1: "ham:bread", # 3
+            2: "ham:onion", # 1
+            3: ("ham:cheese", 2), # 2
+            4: ("ham:beef_patties", 5), # 5
+            5: "ham:tomato", # 1
+            6: "ham:salad", # 1
+            7: "ham:bread", # 3
+            8: "ham:salad", # 1
+        },
+        "fixed_material": (1, 0, 0, 2),
+        "result": ("ham:double_beef_burger", 2), # 12
+    },
+    "ham:hot_dog": {
+        "material": {
+            1: "ham:lettuce",
+            3: "ham:bread",
+            4: "ham:sausage",
+            5: "ham:bread",
+            7: "ham:salad",
+        },
+        "fixed_material": (1, 1, 0, 2),
+        "result": "ham:hot_dog", # 12
+    },
+}
+
 COOK_COMMON_DATA = {
     "minecraft:apple": {
         "material": {
@@ -234,61 +296,6 @@ COOK_COMMON_DATA = {
             "count": 9,
         },
     },
-    "ham:burger_simple": {
-        "material": {
-            1: "ham:bread",
-            3: {
-                "newItemName": "ham:cheese",
-                "count": 2
-            },
-            4: {
-                "newItemName": "ham:beef_patties",
-                "count": 2
-            },
-            5: "ham:tomato",
-            7: "ham:bread",
-        },
-        "fixed_material": (1, 0, 0, 2),
-        "result": {
-            "newItemName": "ham:burger_simple", 
-            "count": 2, # 饥饿 10
-        },
-    },
-    "ham:burger": {
-        "material": {
-            0: "ham:lettuce",
-            1: "ham:bread",
-            2: "ham:onion",
-            3: {
-                "newItemName": "ham:cheese",
-                "count": 2
-            },
-            4: {
-                "newItemName": "ham:beef_patties",
-                "count": 2
-            },
-            5: "ham:tomato",
-            6: "ham:salad",
-            7: "ham:bread",
-            8: "ham:salad",
-        },
-        "fixed_material": (1, 0, 0, 2),
-        "result": {
-            "newItemName": "ham:burger", 
-            "count": 2, # 饥饿 14
-        },
-    },
-    "ham:hot_dog": {
-        "material": {
-            1: "ham:lettuce",
-            3: "ham:bread",
-            4: "ham:sausage",
-            5: "ham:bread",
-            7: "ham:salad",
-        },
-        "fixed_material": (1, 1, 0, 2),
-        "result": "ham:hot_dog", # 12
-    },
     "ham:sugar-sorghum": {
         "material": {
             3: "ham:sorghum",
@@ -382,6 +389,49 @@ COOK_COMMON_DATA = {
         "fixed_material": (0, 0, 0, 0),
         "result": "minecraft:paper", # 1.5
     },
+    "ham:simple_pack": {
+        "material": {
+            4: "ham:scallion"
+        },
+        "fixed_material": (1, 0, 0, 1),
+        "result": "ham:simple_pack"
+    },
+    "ham:meal_pack": {
+        "material": {
+            3: "ham:ginger",
+            4: "ham:scallion",
+            5: "ham:garlic",
+        },
+        "fixed_material": (1, 0, 0, 1),
+        "result": "ham:meal_pack"
+    },
+    "ham:tomato_pack": {
+        "material": {
+            3: "ham:tomato",
+            4: "ham:scallion",
+            5: "ham:garlic",
+        },
+        "fixed_material": (1, 1, 0, 1),
+        "result": "ham:tomato_pack"
+    },
+    "ham:mushroom_pack": {
+        "material": {
+            3: "ham:lentinula",
+            4: "ham:scallion",
+            5: "ham:garlic",
+        },
+        "fixed_material": (1, 0, 0, 1),
+        "result": "ham:mushroom_pack"
+    },
+    "ham:chili_pack": {
+        "material": {
+            3: "ham:chili_powder",
+            4: "ham:scallion",
+            5: "ham:garlic",
+        },
+        "fixed_material": (1, 0, 0, 1),
+        "result": "ham:chili_pack"
+    },
 }
 
-COOK_DATA = dict(COOK_COMMON_DATA, **COOK_PIE_DATA)
+COOK_DATA = {k: v for d in (COOK_COMMON_DATA, COOK_PIE_DATA, COOK_FAST_DATA) for k, v in d.items()}

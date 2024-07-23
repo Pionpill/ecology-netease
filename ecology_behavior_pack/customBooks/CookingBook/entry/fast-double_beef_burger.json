@@ -1,0 +1,17 @@
+{
+  "parent": "fast",
+  "sortnum": 400,
+  "icon": "textures/items/foods/fast_food/double_beef_burger.png",
+  "title": "双层牛肉堡",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:double_beef_burger"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "recipeId": "ham:double_beef_burger",
+      "subtitle": "制作·厨务台"
+    }
+  ]
+}

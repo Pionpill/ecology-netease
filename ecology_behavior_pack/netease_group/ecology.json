@@ -96,8 +96,27 @@
     },
     {
       "group_name": "itemGroup.name.ham.fast_food",
-      "icon": "ham:burger",
-      "list": ["ham:burger_simple", "ham:burger", "ham:fries", "ham:hot_dog"]
+      "icon": "ham:double_beef_burger",
+      "list": [
+        "ham:fries",
+        "ham:onion_ring",
+        "ham:hot_dog",
+        "ham:beef_burger",
+        "ham:chicken_burger",
+        "ham:cod_burger",
+        "ham:double_beef_burger"
+      ]
+    },
+    {
+      "group_name": "itemGroup.name.ham.seasoning_pack",
+      "icon": "ham:tomato_pack",
+      "list": [
+        "ham:simple_pack",
+        "ham:meal_pack",
+        "ham:chili_pack",
+        "ham:mushroom_pack",
+        "ham:tomato_pack"
+      ]
     },
     {
       "group_name": "itemGroup.name.ham.fried_rice",

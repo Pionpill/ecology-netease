@@ -1,0 +1,17 @@
+{
+  "parent": "fast",
+  "sortnum": 101,
+  "icon": "textures/items/foods/fast_food/onion_ring.png",
+  "title": "洋葱圈",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:onion_ring"
+    },
+    {
+      "type": "ham:fryerRecipePage",
+      "recipeId": "ham:onion_ring",
+      "subtitle": "制作·炸锅"
+    }
+  ]
+}

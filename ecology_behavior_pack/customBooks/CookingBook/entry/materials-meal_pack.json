@@ -1,0 +1,17 @@
+{
+  "parent": "materials",
+  "sortnum": 12001,
+  "icon": "textures/items/materials/meal_pack.png",
+  "title": "简易料包",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:meal_pack"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "制作·厨务台",
+      "recipeId": "ham:meal_pack"
+    }
+  ]
+}
