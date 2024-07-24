@@ -5,7 +5,7 @@ from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, 
 BOK_CHOY = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.CROP: ("ham:boy_choy",),
+    ItemSource.CROP: ("ham:bok_choy",),
     ItemSource.WILD: (BiomeTag.FOREST,)
   },
   "category": ItemCategory.CROPS,

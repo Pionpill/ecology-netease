@@ -1,0 +1,17 @@
+{
+  "parent": "fry",
+  "sortnum": 204,
+  "icon": "textures/items/foods/fry/garlic_lettuce.png",
+  "title": "蒜蓉生菜",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:garlic_lettuce"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:garlic_lettuce",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "fry",
+  "sortnum": 214,
+  "icon": "textures/items/foods/fry/scallion_mutton.png",
+  "title": "葱爆牛肉",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:scallion_mutton"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:scallion_mutton",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

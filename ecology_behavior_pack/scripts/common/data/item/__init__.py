@@ -14,7 +14,7 @@ from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, 
 from scripts.common.data.item.food.porridge import PORRIDGE, GREEN_BEAN_PORRIDGE, RED_BEAN_PORRIDGE, SWEET_POTATO_PORRIDGE, VEGETABLE_PORRIDGE, SORGHUM_PORRIDGE, SWEET_POTATO_YAM_PORRIDGE, VEGETABLE_PORK_PORRIDGE, RED_BEAN_TARO_PORRIDGE, CORN_PEA_PORRIDGE, YAM_FISH_PORRIDGE, LENTINULA_SAUSAGE_PORRIDGE, TOMATO_BEEF_PORRIDGE, BROCCOLI_PORRIDGE
 from scripts.common.data.item.food.pie import APPLE_PIE, RAW_APPLE_PIE, CARROT_PIE, RAW_CARROT_PIE, CORN_CHICKEN_PIE, RAW_CORN_CHICKEN_PIE, MUSHROOM_PORK_PIE, RAW_MUSHROOM_PORK_PIE, POTATO_BEEF_PIE, RAW_POTATO_BEEF_PIE, STRAWBERRY_PIE, RAW_STRAWBERRY_PIE, SWEET_POTATO_PIE, RAW_SWEET_POTATO_PIE, TARO_PIE, RAW_TARO_PIE, CHEESE_PIE, RAW_CHEESE_PIE, CORN_PIE, RAW_CORN_PIE
 from scripts.common.data.item.food.fast import FRIES, ONION_RING, BEEF_BURGER, CHICKEN_BURGER, COD_BURGER,  DOUBLE_BEEF_BURGER, HOT_DOG
-from scripts.common.data.item.food.fry import MAPO_TOFU
+from scripts.common.data.item.food.fry import CELERY_BEEF, FRY_BOK_CHOY, FRY_BROCCOLI, FRY_CABBAGE, FRY_MATSUTAKE, GARLIC_LETTUCE, LEEK_EGG, ONION_POTATO, PEANUT_SPINACH, PEPPER_PORK, PORK_EGGPLANT, SCALLION_MUTTON, TOMATO_EGG
 from scripts.common.data.item.food.noodles import PLAIN_NOODLES, PORK_SAUCE_NOODLES, TOMATO_EGG_NOODLES
 from scripts.common.data.item.food.rice import EGG_FIRED_RICE, PORK_SAUCE_RICE, YANGZHOU_FRIED_RICE
 
@@ -152,7 +152,19 @@ ITEM_DATA = {
     "ham:double_beef_burger": DOUBLE_BEEF_BURGER,
     "ham:hot_dog": HOT_DOG,
 
-    "ham:mapo_tofu": MAPO_TOFU,
+    "ham:celery_beef": CELERY_BEEF, 
+    "ham:fry_bok_choy": FRY_BOK_CHOY, 
+    "ham:fry_broccoli": FRY_BROCCOLI, 
+    "ham:fry_cabbage": FRY_CABBAGE, 
+    "ham:fry_matsutake": FRY_MATSUTAKE, 
+    "ham:garlic_lettuce": GARLIC_LETTUCE, 
+    "ham:leek_egg": LEEK_EGG, 
+    "ham:onion_potato": ONION_POTATO, 
+    "ham:peanut_spinach": PEANUT_SPINACH, 
+    "ham:pepper_pork": PEPPER_PORK, 
+    "ham:pork_eggplant": PORK_EGGPLANT, 
+    "ham:scallion_mutton": SCALLION_MUTTON, 
+    "ham:tomato_egg": TOMATO_EGG,
 
     "ham:plain_noodles": PLAIN_NOODLES,
     "ham:pork_sauce_noodles": PORK_SAUCE_NOODLES,

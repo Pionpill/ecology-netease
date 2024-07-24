@@ -1,0 +1,17 @@
+{
+  "parent": "fry",
+  "sortnum": 213,
+  "icon": "textures/items/foods/fry/pepper_pork.png",
+  "title": "青椒炒肉丝",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:pepper_pork"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:pepper_pork",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

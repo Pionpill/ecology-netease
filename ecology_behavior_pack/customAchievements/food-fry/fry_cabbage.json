@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-fry_cabbage",
+  "parent_node": "ham-ecology-fry_broccoli",
+  "depend_parent": false,
+  "title": "§b手撕包菜",
+  "unfinished_icon": "textures/items/foods/fry/fry_cabbage",
+  "finished_icon": "textures/items/foods/fry/fry_cabbage",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 卷心菜\n调料: 辣椒，大葱，大蒜\n工作台: 平底锅",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

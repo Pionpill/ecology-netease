@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:pork_eggplant"
+    },
+    "components": {
+      "minecraft:icon": "ham:pork_eggplant",
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "light_purple"
+    }
+  }
+}

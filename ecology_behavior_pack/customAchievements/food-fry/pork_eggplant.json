@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-pork_eggplant",
+  "parent_node": "ham-ecology-fry_matsutake",
+  "depend_parent": false,
+  "title": "§d肉末茄子",
+  "unfinished_icon": "textures/items/foods/fry/pork_eggplant",
+  "finished_icon": "textures/items/foods/fry/pork_eggplant",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 茄子，肉糜\n调料: 淀粉，荤菜料包\n工作台: 平底锅",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "fry",
+  "sortnum": 210,
+  "icon": "textures/items/foods/fry/peanut_spinach.png",
+  "title": "开胃菠菜",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:peanut_spinach"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:peanut_spinach",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

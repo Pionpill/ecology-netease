@@ -1,0 +1,17 @@
+{
+  "parent": "fry",
+  "sortnum": 100,
+  "icon": "textures/items/foods/fry/leek_egg.png",
+  "title": "韭菜鸡蛋",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:leek_egg"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:leek_egg",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

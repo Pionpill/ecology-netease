@@ -6,7 +6,7 @@ LETTUCE = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
     ItemSource.CROP: ("ham:lettuce",),
-    ItemSource.WILD: (BiomeTag.FOREST)
+    ItemSource.WILD: (BiomeTag.FOREST,)
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.VEGETABLE, ItemTag.GREEN),

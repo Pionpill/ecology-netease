@@ -128,6 +128,24 @@
       ]
     },
     {
+      "group_name": "itemGroup.name.ham.fry",
+      "icon": "ham:leek_egg",
+      "list": [
+        "ham:leek_egg",
+        "ham:fry_bok_choy",
+        "ham:fry_broccoli",
+        "ham:fry_cabbage",
+        "ham:garlic_lettuce",
+        "ham:onion_potato",
+        "ham:tomato_egg",
+        "ham:peanut_spinach",
+        "ham:pork_eggplant",
+        "ham:pepper_pork",
+        "ham:scallion_mutton",
+        "ham:celery_beef"
+      ]
+    },
+    {
       "group_name": "itemGroup.name.ham.spices",
       "icon": "ham:seasoning",
       "list": ["ham:salt", "ham:seasoning", "ham:sugar", "ham:chili_powder"]

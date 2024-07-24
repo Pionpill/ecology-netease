@@ -1,0 +1,31 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:fry_cabbage",
+      "register_to_create_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "minecraft:use_duration": 32,
+      "minecraft:food": {
+        "nutrition": 8,
+        "saturation_modifier": "normal",
+        "can_always_eat": false,
+        "effects": [
+          {
+            "name": "resistance",
+            "chance": 1.0,
+            "duration": 90,
+            "amplifier": 0
+          }
+        ]
+      },
+      "using_converts_to": "bowl",
+      "netease:customtips": {
+        "value": "§f--------------------\n§6§l食物·炒菜\n§r§3品质: §5\n§3饥饿: §5 X 8\n§r§f--------------------\n§a■ 抗性提升Ⅰ 90s"
+      }
+    }
+  }
+}

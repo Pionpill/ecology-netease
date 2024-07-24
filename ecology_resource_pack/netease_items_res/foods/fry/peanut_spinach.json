@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:peanut_spinach"
+    },
+    "components": {
+      "minecraft:icon": "ham:peanut_spinach",
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "light_purple"
+    }
+  }
+}

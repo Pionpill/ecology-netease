@@ -1,16 +1,16 @@
 {
   "parent": "fry",
-  "sortnum": 13110,
-  "icon": "textures/items/foods/fry/mapo_tofu.png",
-  "title": "麻婆豆腐",
+  "sortnum": 215,
+  "icon": "textures/items/foods/fry/celery_beef.png",
+  "title": "芹菜牛肉",
   "pages": [
     {
       "type": "ham:itemInfoPage",
-      "itemName": "ham:mapo_tofu"
+      "itemName": "ham:celery_beef"
     },
     {
       "type": "ham:panRecipePage",
-      "recipeId": "ham:mapo_tofu",
+      "recipeId": "ham:celery_beef",
       "subtitle": "制作·平底锅"
     }
   ]

@@ -2,29 +2,29 @@
   "format_version": "1.16.0",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:mapo_tofu",
+      "identifier": "ham:fry_matsutake",
       "register_to_create_menu": true,
       "category": "ecology"
     },
     "components": {
-      "minecraft:max_stack_size": 64,
+      "minecraft:max_stack_size": 32,
       "minecraft:use_duration": 32,
       "minecraft:food": {
-        "nutrition": 6,
+        "nutrition": 7,
         "saturation_modifier": "normal",
         "can_always_eat": false,
         "effects": [
           {
-            "name": "speed",
+            "name": "regeneration",
             "chance": 1.0,
             "duration": 60,
-            "amplifier": 0
+            "amplifier": 2
           }
         ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·炒菜\n§r§3品质: §5\n§3饥饿: §5 X 6\n§r§f--------------------\n§a■ 迅捷Ⅰ 120s"
+        "value": "§f--------------------\n§6§l食物·炒菜\n§r§3品质: §5\n§3饥饿: §5 X 7\n§r§f--------------------\n§a■ 生命恢复Ⅲ 60s"
       }
     }
   }

@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-scallion_mutton",
+  "parent_node": "ham-ecology-pepper_pork",
+  "depend_parent": false,
+  "title": "§d葱爆羊肉",
+  "unfinished_icon": "textures/items/foods/fry/scallion_mutton",
+  "finished_icon": "textures/items/foods/fry/scallion_mutton",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 羊肉\n调料: 葱，荤菜料包\n工作台: 平底锅",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

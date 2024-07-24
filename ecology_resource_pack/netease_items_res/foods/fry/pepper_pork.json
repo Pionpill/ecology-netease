@@ -2,12 +2,12 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:mapo_tofu"
+      "identifier": "ham:pepper_pork"
     },
     "components": {
-      "minecraft:icon": "ham:mapo_tofu",
+      "minecraft:icon": "ham:pepper_pork",
       "minecraft:use_animation": "eat",
-      "minecraft:hover_text_color": "aqua"
+      "minecraft:hover_text_color": "light_purple"
     }
   }
 }

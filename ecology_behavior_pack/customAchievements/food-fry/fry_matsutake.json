@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-fry_matsutake",
+  "parent_node": "ham-ecology-peanut_spinach",
+  "depend_parent": false,
+  "title": "§d香煎松茸",
+  "unfinished_icon": "textures/items/foods/fry/fry_matsutake",
+  "finished_icon": "textures/items/foods/fry/fry_matsutake",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 松茸\n调料: 葱\n工作台: 平底锅",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

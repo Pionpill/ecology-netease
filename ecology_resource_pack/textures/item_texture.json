@@ -415,8 +415,44 @@
     "ham:yangzhou_fried_rice": {
       "textures": "textures/items/foods/rice/yangzhou_fried_rice"
     },
-    "ham:mapo_tofu": {
-      "textures": "textures/items/foods/fry/mapo_tofu"
+    "ham:celery_beef": {
+      "textures": "textures/items/foods/fry/celery_beef"
+    },
+    "ham:fry_bok_choy": {
+      "textures": "textures/items/foods/fry/fry_bok_choy"
+    },
+    "ham:fry_broccoli": {
+      "textures": "textures/items/foods/fry/fry_broccoli"
+    },
+    "ham:fry_cabbage": {
+      "textures": "textures/items/foods/fry/fry_cabbage"
+    },
+    "ham:fry_matsutake": {
+      "textures": "textures/items/foods/fry/fry_matsutake"
+    },
+    "ham:garlic_lettuce": {
+      "textures": "textures/items/foods/fry/garlic_lettuce"
+    },
+    "ham:leek_egg": {
+      "textures": "textures/items/foods/fry/leek_egg"
+    },
+    "ham:onion_potato": {
+      "textures": "textures/items/foods/fry/onion_potato"
+    },
+    "ham:peanut_spinach": {
+      "textures": "textures/items/foods/fry/peanut_spinach"
+    },
+    "ham:pepper_pork": {
+      "textures": "textures/items/foods/fry/pepper_pork"
+    },
+    "ham:pork_eggplant": {
+      "textures": "textures/items/foods/fry/pork_eggplant"
+    },
+    "ham:scallion_mutton": {
+      "textures": "textures/items/foods/fry/scallion_mutton"
+    },
+    "ham:tomato_egg": {
+      "textures": "textures/items/foods/fry/tomato_egg"
     },
     "ham:plain_noodles": {
       "textures": "textures/items/foods/noodles/plain_noodles"

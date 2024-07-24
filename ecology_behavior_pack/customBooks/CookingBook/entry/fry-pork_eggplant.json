@@ -1,0 +1,17 @@
+{
+  "parent": "fry",
+  "sortnum": 212,
+  "icon": "textures/items/foods/fry/pork_eggplant.png",
+  "title": "肉末茄子",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:pork_eggplant"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:pork_eggplant",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

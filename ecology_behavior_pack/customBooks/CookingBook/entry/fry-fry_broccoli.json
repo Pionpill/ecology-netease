@@ -1,0 +1,17 @@
+{
+  "parent": "fry",
+  "sortnum": 202,
+  "icon": "textures/items/foods/fry/fry_broccoli.png",
+  "title": "干锅花菜",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:fry_broccoli"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:fry_broccoli",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

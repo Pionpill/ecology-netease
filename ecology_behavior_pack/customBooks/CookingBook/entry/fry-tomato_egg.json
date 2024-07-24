@@ -1,0 +1,17 @@
+{
+  "parent": "fry",
+  "sortnum": 206,
+  "icon": "textures/items/foods/fry/tomato_egg.png",
+  "title": "番茄炒蛋",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:tomato_egg"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:tomato_egg",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

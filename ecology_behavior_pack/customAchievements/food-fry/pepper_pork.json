@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-pepper_pork",
+  "parent_node": "ham-ecology-pork_eggplant",
+  "depend_parent": false,
+  "title": "§d青椒炒肉丝",
+  "unfinished_icon": "textures/items/foods/fry/pepper_pork",
+  "finished_icon": "textures/items/foods/fry/pepper_pork",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 猪肉，青椒\n调料: 辣椒，荤菜料包\n工作台: 平底锅",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}
