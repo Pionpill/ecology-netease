@@ -171,11 +171,28 @@ item.ham:potato_beef_pie.name=土豆牛肉派
 item.ham:plain_noodles.name=素面
 item.ham:pork_sauce_noodles.name=肉酱面
 item.ham:tomato_egg_noodles.name=番茄鸡蛋面
+item.ham:beef_noodles.name=牛肉面
+item.ham:borsch_noodles.name=罗松汤面
+item.ham:chili_beef_noodles.name=红烧牛肉面
+item.ham:corn_thick_noodles.name=玉米浓汤面
+item.ham:mushroom_thick_noodles.name=口菇浓汤面
+item.ham:lentinula_chicken_noodles.name=香菇炖鸡面
+item.ham:hen_chicken_noodles.name=老母鸡汤面
+item.ham:seafood_noodles.name=海鲜拉面
+item.ham:tonkotsu_noodles.name=豚骨拉面
+
 
 item.ham:cooked_rice.name=熟米饭
 item.ham:egg_fired_rice.name=蛋炒饭
 item.ham:pork_sauce_rice.name=肉酱炒饭
-item.ham:yangzhou_fried_rice.name=扬州炒饭
+item.ham:curry_pork_rice.name=咖喱猪排饭
+item.ham:kelp_rice.name=海苔拌饭
+item.ham:onion_beef_rice.name=洋葱牛腩饭
+item.ham:tomato_egg_rice.name=番茄鸡蛋饭
+item.ham:tomato_pork_sauce_rice.name=番茄肉末滑蛋饭
+
+item.ham:corn_thick_soup.name=玉米浓汤
+item.ham:mushroom_thick_soup.name=口菇浓汤
 
 
 tile.ham:baking_furnace.name=烘焙炉
@@ -200,6 +217,7 @@ itemGroup.name.ham.simple_food=食物·简易
 itemGroup.name.ham.fast_food=食物·快餐
 itemGroup.name.ham.fried_rice=食物·炒饭
 itemGroup.name.ham.fry=食物·炒菜
+itemGroup.name.ham.soup=食物·汤
 itemGroup.name.ham.spices=调料·香料
 itemGroup.name.ham.crop=作物·主粮
 itemGroup.name.ham.fruit=作物·水果

@@ -2,12 +2,12 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:yangzhou_fried_rice"
+      "identifier": "ham:curry_pork_rice"
     },
     "components": {
-      "minecraft:icon": "ham:yangzhou_fried_rice",
+      "minecraft:icon": "ham:curry_pork_rice",
       "minecraft:use_animation": "eat",
-      "minecraft:hover_text_color": "aqua"
+      "minecraft:hover_text_color": "light_purple"
     }
   }
 }

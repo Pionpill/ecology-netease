@@ -1,7 +1,7 @@
 from scripts.common.enum import EffectType
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemTag
 
-TROPICAL = {
+TROPICAL_FISH = {
   "quality": ItemQuality.UNCOMMON,
   "source": {},
   "category": ItemCategory.FOOD,

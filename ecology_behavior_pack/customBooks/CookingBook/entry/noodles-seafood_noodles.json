@@ -1,0 +1,17 @@
+{
+  "parent": "noodles",
+  "sortnum": 106,
+  "icon": "textures/items/foods/noodles/seafood_noodles.png",
+  "title": "海鲜面",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:seafood_noodles"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:seafood_noodles",
+      "subtitle": "制作·煮锅"
+    }
+  ]
+}

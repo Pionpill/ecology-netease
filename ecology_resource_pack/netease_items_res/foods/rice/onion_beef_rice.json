@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:onion_beef_rice"
+    },
+    "components": {
+      "minecraft:icon": "ham:onion_beef_rice",
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "light_purple"
+    }
+  }
+}

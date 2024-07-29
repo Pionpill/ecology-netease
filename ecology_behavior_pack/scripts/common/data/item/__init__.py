@@ -9,14 +9,15 @@ from scripts.common.data.item.materials.ore import SALT
 from scripts.common.data.item.materials.product import BUTTER, COOKING_OIL, DOUGH, FLOUR, GROUND_PORK, NOODLE, SALAD, STARCH, TOFU, RICE, WHEAT
 from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING, SUGAR, SIMPLE_PACK, MEAL_PACK, TOMATO_PACK, MUSHROOM_PACK, CHILI_PACK
 
-from scripts.common.data.item.food.vanilla import COD, SALMON, TROPICAL, COOKED_SALMON, COOKED_COD, COOKED_TROPICAL
+from scripts.common.data.item.food.vanilla import COD, SALMON, TROPICAL_FISH, COOKED_SALMON, COOKED_COD, COOKED_TROPICAL
 from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK, BEEF_PATTIES, RAW_BEEF_PATTIES
 from scripts.common.data.item.food.porridge import PORRIDGE, GREEN_BEAN_PORRIDGE, RED_BEAN_PORRIDGE, SWEET_POTATO_PORRIDGE, VEGETABLE_PORRIDGE, SORGHUM_PORRIDGE, SWEET_POTATO_YAM_PORRIDGE, VEGETABLE_PORK_PORRIDGE, RED_BEAN_TARO_PORRIDGE, CORN_PEA_PORRIDGE, YAM_FISH_PORRIDGE, LENTINULA_SAUSAGE_PORRIDGE, TOMATO_BEEF_PORRIDGE, BROCCOLI_PORRIDGE
 from scripts.common.data.item.food.pie import APPLE_PIE, RAW_APPLE_PIE, CARROT_PIE, RAW_CARROT_PIE, CORN_CHICKEN_PIE, RAW_CORN_CHICKEN_PIE, MUSHROOM_PORK_PIE, RAW_MUSHROOM_PORK_PIE, POTATO_BEEF_PIE, RAW_POTATO_BEEF_PIE, STRAWBERRY_PIE, RAW_STRAWBERRY_PIE, SWEET_POTATO_PIE, RAW_SWEET_POTATO_PIE, TARO_PIE, RAW_TARO_PIE, CHEESE_PIE, RAW_CHEESE_PIE, CORN_PIE, RAW_CORN_PIE
 from scripts.common.data.item.food.fast import FRIES, ONION_RING, BEEF_BURGER, CHICKEN_BURGER, COD_BURGER,  DOUBLE_BEEF_BURGER, HOT_DOG
 from scripts.common.data.item.food.fry import CELERY_BEEF, FRY_BOK_CHOY, FRY_BROCCOLI, FRY_CABBAGE, FRY_MATSUTAKE, GARLIC_LETTUCE, LEEK_EGG, ONION_POTATO, PEANUT_SPINACH, PEPPER_PORK, PORK_EGGPLANT, SCALLION_MUTTON, TOMATO_EGG
-from scripts.common.data.item.food.noodles import PLAIN_NOODLES, PORK_SAUCE_NOODLES, TOMATO_EGG_NOODLES
-from scripts.common.data.item.food.rice import EGG_FIRED_RICE, PORK_SAUCE_RICE, YANGZHOU_FRIED_RICE
+from scripts.common.data.item.food.noodles import PLAIN_NOODLES, TOMATO_EGG_NOODLES, PORK_SAUCE_NOODLES, BEEF_NOODLES, BORSCH_NOODLES, CHILI_BEEF_NOODLES, CORN_THICK_NOODLES, HEN_CHICKEN_NOODLES, LENTINULA_CHICKEN_NOODLES, MUSHROOM_THICK_NOODLES, SEAFOOD_NOODLES, TONKOTSU_NOODLES
+from scripts.common.data.item.food.rice import EGG_FIRED_RICE, PORK_SAUCE_RICE, CURRY_PORK_RICE, KELP_RICE, ONION_BEEF_RICE, TOMATO_EGG_RICE, TOMATO_PORK_SAUCE_RICE
+from scripts.common.data.item.food.soup import MUSHROOM_THICK_SOUP, CORN_THICK_SOUP
 
 
 ITEM_DATA = {
@@ -24,7 +25,7 @@ ITEM_DATA = {
     "minecraft:cooked_cod": COOKED_COD,
     "minecraft:salmon": SALMON,
     "minecraft:cooked_salmon": COOKED_SALMON,
-    "minecraft:tropical": TROPICAL,
+    "minecraft:tropical_fish": TROPICAL_FISH,
     "minecraft:cooked_tropical": COOKED_TROPICAL,
     
     "ham:corn": CORN,
@@ -169,8 +170,24 @@ ITEM_DATA = {
     "ham:plain_noodles": PLAIN_NOODLES,
     "ham:pork_sauce_noodles": PORK_SAUCE_NOODLES,
     "ham:tomato_egg_noodles": TOMATO_EGG_NOODLES,
+    "ham:beef_noodles": BEEF_NOODLES, 
+    "ham:borsch_noodles": BORSCH_NOODLES, 
+    "ham:chili_beef_noodles": CHILI_BEEF_NOODLES, 
+    "ham:corn_thick_noodles": CORN_THICK_NOODLES, 
+    "ham:hen_chicken_noodles": HEN_CHICKEN_NOODLES, 
+    "ham:lentinula_chicken_noodles": LENTINULA_CHICKEN_NOODLES, 
+    "ham:mushroom_thick_noodles": MUSHROOM_THICK_NOODLES, 
+    "ham:seafood_noodles": SEAFOOD_NOODLES, 
+    "ham:tonkotsu_noodles": TONKOTSU_NOODLES,
 
     "ham:egg_fired_rice": EGG_FIRED_RICE,
     "ham:pork_sauce_rice": PORK_SAUCE_RICE,
-    "ham:yangzhou_fried_rice": YANGZHOU_FRIED_RICE
+    "ham:curry_pork_rice": CURRY_PORK_RICE,
+    "ham:kelp_rice": KELP_RICE,
+    "ham:onion_beef_rice": ONION_BEEF_RICE,
+    "ham:tomato_egg_rice": TOMATO_EGG_RICE,
+    "ham:tomato_pork_sauce_rice": TOMATO_PORK_SAUCE_RICE,
+
+    "ham:mushroom_thick_soup": MUSHROOM_THICK_SOUP, 
+    "ham:corn_thick_soup": CORN_THICK_SOUP
 }

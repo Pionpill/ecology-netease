@@ -74,7 +74,7 @@ COOK_PIE_DATA = {
     "ham:raw_potato_beef_pie": {
         "material": {
             1: ("ham:butter", 3),
-            3: "ham:corn_soup",
+            3: "ham:corn_thick_soup",
             4: "ham:onion",
             5: "ham:cheese",
             6: ("minecraft:beef", 2),
@@ -92,7 +92,7 @@ COOK_PIE_DATA = {
             5: "ham:cheese",
             6: ("ham:ground_pork", 2),
             7: ("ham:dough", 4),
-            8: "ham:mushroom_soup",
+            8: "ham:mushroom_thick_soup",
         },
         "fixed_material": (3, 1, 3, 3),
         "result": ("ham:raw_mushroom_pork_pie", 6) # 9
@@ -105,7 +105,7 @@ COOK_PIE_DATA = {
             5: "ham:cheese",
             6: ("minecraft:chicken", 2),
             7: ("ham:dough", 4),
-            8: "ham:corn_soup",
+            8: "ham:corn_thick_soup",
         },
         "fixed_material": (3, 1, 3, 3),
         "result": ("ham:raw_corn_chicken_pie", 6) # 9

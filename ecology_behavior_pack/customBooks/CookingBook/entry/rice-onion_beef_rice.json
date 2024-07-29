@@ -1,0 +1,17 @@
+{
+  "parent": "rice",
+  "sortnum": 141,
+  "icon": "textures/items/foods/rice/onion_beef_rice.png",
+  "title": "洋葱牛腩饭",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:onion_beef_rice"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:onion_beef_rice",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

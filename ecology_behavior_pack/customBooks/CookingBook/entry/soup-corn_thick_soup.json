@@ -1,0 +1,17 @@
+{
+  "parent": "soup",
+  "sortnum": 300,
+  "icon": "textures/items/foods/soup/corn_thick_soup.png",
+  "title": "玉米浓汤",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:corn_thick_soup"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:corn_thick_soup",
+      "subtitle": "制作·厨务台"
+    }
+  ]
+}

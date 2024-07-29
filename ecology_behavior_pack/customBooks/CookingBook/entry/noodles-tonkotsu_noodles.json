@@ -1,0 +1,17 @@
+{
+  "parent": "noodles",
+  "sortnum": 111,
+  "icon": "textures/items/foods/noodles/tonkotsu_noodles.png",
+  "title": "豚骨拉面",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:tonkotsu_noodles"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:tonkotsu_noodles",
+      "subtitle": "制作·煮锅"
+    }
+  ]
+}

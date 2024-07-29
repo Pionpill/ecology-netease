@@ -1,0 +1,17 @@
+{
+  "parent": "rice",
+  "sortnum": 130,
+  "icon": "textures/items/foods/rice/kelp_rice.png",
+  "title": "海苔拌饭",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:kelp_rice"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:kelp_rice",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

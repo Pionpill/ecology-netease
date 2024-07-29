@@ -134,8 +134,7 @@ STEW_PORRIDGE_DATA = {
     },
 }
 
-STEW_COMMON_DATA = {
-    "minecraft:apple": "minecraft:apple",
+STEW_NOODLE_DATA = {
     "ham:plain_noodles": {
         "material": {
             0: "ham:salt",
@@ -167,6 +166,126 @@ STEW_COMMON_DATA = {
         },
         "result": "ham:tomato_egg_noodles"
     },
+    "ham:beef_noodles": {
+        "material": {
+            0: "ham:scallion",
+            1: "ham:meal_pack",
+            3: "ham:carrot", # 1
+            4: "ham:noodle", # 3
+            5: "minecraft:beef", # 3
+        },
+        "result": "ham:beef_noodles" # 9
+    },
+    "ham:borsch_noodles": {
+        "material": {
+            0: "ham:carrot", # 1
+            1: "ham:tomato_pack",
+            2: "ham:celery",
+            3: "ham:potato", # 2
+            4: "ham:noodle", # 3
+            5: "minecraft:beef", # 3
+        },
+        "result": "ham:borsch_noodles" # 11
+    },
+    "ham:chili_beef_noodles": {
+        "material": {
+            0: "ham-tag:" + ItemTag.GREEN, # 1
+            1: "ham:chili_pack",
+            2: "minecraft:egg", # 1
+            3: "ham:carrot", # 1
+            4: "ham:noodle", # 3
+            5: "minecraft:beef", # 3
+        },
+        "result": "ham:chili_beef_noodles" # 11
+    },
+    "ham:corn_thick_noodles": {
+        "material": {
+            1: "ham:pea", # 1
+            3: "ham:corn", # 1
+            4: "ham:noodle", # 3
+            5: "ham:corn_thick_soup", # 3
+        },
+        "result": "ham:corn_thick_noodles" # 10
+    },
+    "ham:mushroom_thick_noodles": {
+        "material": {
+            1: "ham-tag:" + ItemTag.GREEN, # 1
+            3: "ham:ground_pork", # 3
+            4: "ham:noodle", # 3
+            5: "ham:mushroom_thick_soup", # 3
+        },
+        "result": "ham:mushroom_thick_noodles" # 12
+    },
+    "ham:hen_chicken_noodles": {
+        "material": {
+            1: "ham:mushroom_pack",
+            2: "ham:dictyophora", # 1
+            3: "minecraft:egg", # 1
+            4: "ham:noodle", # 3
+            5: "minecraft:chicken", # 3
+        },
+        "result": "ham:hen_chicken_noodles" # 10
+    },
+    "ham:lentinula_chicken_noodles": {
+        "material": {
+            1: "ham:mushroom_pack",
+            3: "ham:lentinula", # 1
+            4: "ham:noodle", # 3
+            5: "minecraft:chicken", # 3
+        },
+        "result": "ham:lentinula_chicken_noodles" # 9
+    },
+    "ham:seafood_noodles": {
+        "material": {
+            0: "ham:wood_ear", # 1
+            1: "ham:meal_pack",
+            2: "ham:tofu", # 1
+            3: "minecraft:egg", # 1
+            4: "ham:noodle", # 3
+            5: "ham-tag:" + ItemTag.FISH, # 3
+        },
+        "result": "ham:seafood_noodles" # 11
+    },
+    "ham:tonkotsu_noodles": {
+        "material": {
+            0: "ham:wood_ear", # 1
+            1: "ham:meal_pack",
+            2: "ham:corn", # 1
+            3: "minecraft:egg", # 1
+            4: "ham:noodle", # 3
+            5: "minecraft:porkchop", # 3
+        },
+        "result": "ham:tonkotsu_noodles" # 11
+    },
+}
+
+STEW_SOUP_DATA = {
+    "ham:corn_thick_soup": {
+        "material": {
+            0: "ham:sausage", # 3
+            1: "ham:butter", # 1
+            2: "ham:sweet_milk", # 1
+            3: "ham:onion", # 1
+            4: "ham:corn", # 1
+            5: "ham:potato", # 1
+        },
+        "result": ("ham:corn_thick_soup", 3) # 3
+    },
+    "ham:mushroom_thick_soup": {
+        "material": {
+            0: "ham:sausage", # 3
+            1: "ham:butter", # 1
+            2: ("ham:sweet_milk", 2), # 1
+            3: "ham:button_mushroom", # 1
+            4: "ham:flour", # 3
+            5: "ham:button_mushroom", # 1
+        },
+        "result": ("ham:mushroom_thick_soup", 4) # 3
+    },
+}
+
+STEW_COMMON_DATA = {
+    "minecraft:apple": "minecraft:apple",
     "ham:cooked_corn": {
         "material": {
             0: "ham:corn",
@@ -183,4 +302,4 @@ STEW_COMMON_DATA = {
     },
 }
 
-STEW_DATA = dict(STEW_PORRIDGE_DATA, **STEW_COMMON_DATA)
+STEW_DATA = {k: v for d in (STEW_PORRIDGE_DATA, STEW_NOODLE_DATA, STEW_SOUP_DATA, STEW_COMMON_DATA) for k, v in d.items()}

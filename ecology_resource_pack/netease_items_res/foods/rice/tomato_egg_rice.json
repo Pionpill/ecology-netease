@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:tomato_egg_rice"
+    },
+    "components": {
+      "minecraft:icon": "ham:tomato_egg_rice",
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

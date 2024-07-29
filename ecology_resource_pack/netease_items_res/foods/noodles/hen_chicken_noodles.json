@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:hen_chicken_noodles"
+    },
+    "components": {
+      "minecraft:icon": "ham:hen_chicken_noodles",
+      "minecraft:use_animation": "eat",
+      "minecraft:hover_text_color": "light_purple"
+    }
+  }
+}

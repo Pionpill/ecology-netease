@@ -7,10 +7,12 @@
     "enoki",
     "levelname",
     "mantou",
-    "matsutake",
     "mapo",
+    "matsutake",
     "molang",
+    "porkchop",
     "sortnum",
+    "tonkotsu",
     "yangzhou"
   ],
   "editor.formatOnSave": true,

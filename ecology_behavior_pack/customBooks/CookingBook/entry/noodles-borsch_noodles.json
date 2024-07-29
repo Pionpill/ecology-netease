@@ -1,0 +1,17 @@
+{
+  "parent": "noodles",
+  "sortnum": 112,
+  "icon": "textures/items/foods/noodles/borsch_noodles.png",
+  "title": "罗宋汤",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:borsch_noodles"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:borsch_noodles",
+      "subtitle": "制作·煮锅"
+    }
+  ]
+}

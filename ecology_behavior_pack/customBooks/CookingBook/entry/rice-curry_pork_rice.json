@@ -1,0 +1,17 @@
+{
+  "parent": "rice",
+  "sortnum": 140,
+  "icon": "textures/items/foods/rice/curry_pork_rice.png",
+  "title": "咖喱猪排饭",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:curry_pork_rice"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:curry_pork_rice",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

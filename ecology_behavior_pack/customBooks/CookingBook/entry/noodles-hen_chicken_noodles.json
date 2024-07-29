@@ -1,0 +1,17 @@
+{
+  "parent": "noodles",
+  "sortnum": 105,
+  "icon": "textures/items/foods/noodles/hen_chicken_noodles.png",
+  "title": "老母鸡汤面",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:hen_chicken_noodles"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:hen_chicken_noodles",
+      "subtitle": "制作·煮锅"
+    }
+  ]
+}

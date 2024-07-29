@@ -1,0 +1,17 @@
+{
+  "parent": "soup",
+  "sortnum": 301,
+  "icon": "textures/items/foods/soup/mushroom_thick_soup.png",
+  "title": "口菇浓汤",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:mushroom_thick_soup"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:mushroom_thick_soup",
+      "subtitle": "制作·厨务台"
+    }
+  ]
+}

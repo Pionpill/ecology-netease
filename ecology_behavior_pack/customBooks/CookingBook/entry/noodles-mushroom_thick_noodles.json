@@ -1,0 +1,17 @@
+{
+  "parent": "noodles",
+  "sortnum": 107,
+  "icon": "textures/items/foods/noodles/mushroom_thick_noodles.png",
+  "title": "口菇浓汤面",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:mushroom_thick_noodles"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:mushroom_thick_noodles",
+      "subtitle": "制作·煮锅"
+    }
+  ]
+}

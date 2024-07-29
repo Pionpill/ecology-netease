@@ -1,0 +1,17 @@
+{
+  "parent": "rice",
+  "sortnum": 142,
+  "icon": "textures/items/foods/rice/tomato_pork_sauce_rice.png",
+  "title": "番茄肉末滑蛋饭",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:tomato_pork_sauce_rice"
+    },
+    {
+      "type": "ham:panRecipePage",
+      "recipeId": "ham:tomato_pork_sauce_rice",
+      "subtitle": "制作·平底锅"
+    }
+  ]
+}

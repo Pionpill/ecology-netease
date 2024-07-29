@@ -73,7 +73,16 @@
       "list": [
         "ham:plain_noodles",
         "ham:pork_sauce_noodles",
-        "ham:tomato_egg_noodles"
+        "ham:tomato_egg_noodles",
+        "ham:beef_noodles",
+        "ham:lentinula_chicken_noodles",
+        "ham:hen_chicken_noodles",
+        "ham:seafood_noodles",
+        "ham:mushroom_thick_noodles",
+        "ham:corn_thick_noodles",
+        "ham:chili_beef_noodles",
+        "ham:borsch_noodles",
+        "ham:tonkotsu_noodles"
       ]
     },
     {
@@ -120,12 +129,21 @@
     },
     {
       "group_name": "itemGroup.name.ham.fried_rice",
-      "icon": "ham:egg_fired_rice",
+      "icon": "ham:tomato_egg_rice",
       "list": [
         "ham:egg_fired_rice",
+        "ham:tomato_egg_rice",
+        "ham:kelp_rice",
         "ham:pork_sauce_rice",
-        "ham:yangzhou_fried_rice"
+        "ham:tomato_pork_sauce_rice",
+        "ham:onion_beef_rice",
+        "ham:curry_pork_rice"
       ]
+    },
+    {
+      "group_name": "itemGroup.name.ham.soup",
+      "icon": "ham:corn_thick_soup",
+      "list": ["ham:mushroom_thick_soup", "ham:corn_thick_soup"]
     },
     {
       "group_name": "itemGroup.name.ham.fry",

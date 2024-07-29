@@ -1,0 +1,17 @@
+{
+  "parent": "noodles",
+  "sortnum": 110,
+  "icon": "textures/items/foods/noodles/chili_beef_noodles.png",
+  "title": "红烧牛肉面",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:chili_beef_noodles"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:chili_beef_noodles",
+      "subtitle": "制作·煮锅"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "noodles",
+  "sortnum": 103,
+  "icon": "textures/items/foods/noodles/beef_noodles.png",
+  "title": "牛肉面",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:beef_noodles"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:beef_noodles",
+      "subtitle": "制作·煮锅"
+    }
+  ]
+}

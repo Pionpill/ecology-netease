@@ -1,3 +1,6 @@
+from scripts.common.enum.Item import ItemTag
+
+
 PAN_FRY_DATA = {
     "ham:leek_egg": {
         "material": {
@@ -127,30 +130,7 @@ PAN_FRY_DATA = {
     },
 }
 
-PAN_COMMON_DATA = {
-    "minecraft:apple": "minecraft:apple",
-    "ham:beef_patties": {
-        "material": {
-            "newItemName": "ham:raw_beef_patties",
-            "count": 1,
-        },
-        "fixed_material": (1, 0, 0, 1),
-        "result": {
-            "newItemName": "ham:beef_patties", 
-            "count": 1,
-        }
-    },
-    "ham:sausage": {
-        "material": {
-            "newItemName": "ham:raw_sausage",
-            "count": 1,
-        },
-        "fixed_material": (0, 0, 0, 0),
-        "result": {
-            "newItemName": "ham:sausage", 
-            "count": 1,
-        }
-    },
+PAN_RICE_DATA = {
     "ham:egg_fired_rice": {
         "material": {
             1: {
@@ -201,39 +181,87 @@ PAN_COMMON_DATA = {
             "count": 1,
         }
     },
-    "ham:yangzhou_fried_rice": {
+    "ham:curry_pork_rice": {
         "material": {
-            0: {
-                "newItemName": "ham:lentinula",
-                "count": 1,
-            },
-            1: {
-                "newItemName": "ham:corn",
-                "count": 2,
-            },
-            2: {
-                "newItemName": "ham:scallion",
-                "count": 1,
-            },
-            3: {
-                "newItemName": "ham:sausage",
-                "count": 2,
-            },
-            4: {
-                "newItemName": "ham:cooked_rice",
-                "count": 2,
-            },
-            5: {
-                "newItemName": "minecraft:egg",
-                "count": 3,
-            }
+            0: "ham-tag:" + ItemTag.GREEN, # 1
+            1: "minecraft:egg", # 1
+            2: "ham:carrot", # 1
+            3: "ham:potato", # 2
+            4: "ham:cooked_rice", # 4
+            5: "minecraft:porkchop" # 3
         },
         "fixed_material": (1, 0, 1, 1),
-        "result": {
-            "newItemName": "ham:yangzhou_fried_rice", 
-            "count": 2,
-        }
-    }
+        "result": "ham:curry_pork_rice" # 16
+    },
+    "ham:kelp_rice": {
+        "material": {
+            1: "ham:corn", # 1
+            3: "ham:pea", # 1
+            4: "ham:cooked_rice", # 4
+            5: "ham:sausage" # 3
+        },
+        "fixed_material": (1, 0, 1, 1),
+        "result": "ham:kelp_rice" # 13
+    },
+    "ham:onion_beef_rice": {
+        "material": {
+            0: "ham:eggplant", # 1
+            1: "minecraft:egg", # 1
+            2: "ham:broccoli", # 1
+            3: "ham:onion", # 1
+            4: "ham:cooked_rice", # 4
+            5: "minecraft:beef" # 3
+        },
+        "fixed_material": (1, 0, 1, 1),
+        "result": "ham:onion_beef_rice" # 15
+    },
+    "ham:tomato_egg_rice": {
+        "material": {
+            3: "ham:tomato", # 1
+            4: "ham:cooked_rice", # 4
+            5: ("minecraft:egg", 2) # 1
+        },
+        "fixed_material": (1, 0, 1, 1),
+        "result": "ham:tomato_egg_rice" # 11
+    },
+    "ham:tomato_pork_sauce_rice": {
+        "material": {
+            0: "ham:pea", # 1
+            1: "ham:ground_pork", # 3
+            2: "ham:corn", # 1
+            3: "ham:tomato", # 1
+            4: "ham:cooked_rice", # 4
+            5: ("minecraft:egg", 2) # 1
+        },
+        "fixed_material": (1, 0, 1, 1),
+        "result": "ham:tomato_pork_sauce_rice" # 16
+    },
 }
 
-PAN_DATA = {k: v for d in (PAN_COMMON_DATA, PAN_FRY_DATA) for k, v in d.items()}
+PAN_COMMON_DATA = {
+    "minecraft:apple": "minecraft:apple",
+    "ham:beef_patties": {
+        "material": {
+            "newItemName": "ham:raw_beef_patties",
+            "count": 1,
+        },
+        "fixed_material": (1, 0, 0, 1),
+        "result": {
+            "newItemName": "ham:beef_patties", 
+            "count": 1,
+        }
+    },
+    "ham:sausage": {
+        "material": {
+            "newItemName": "ham:raw_sausage",
+            "count": 1,
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:sausage", 
+            "count": 1,
+        }
+    },
+}
+
+PAN_DATA = {k: v for d in (PAN_COMMON_DATA, PAN_FRY_DATA, PAN_RICE_DATA) for k, v in d.items()}

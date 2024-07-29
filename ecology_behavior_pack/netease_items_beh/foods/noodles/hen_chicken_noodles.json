@@ -1,0 +1,43 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ham:hen_chicken_noodles",
+      "register_to_create_menu": true,
+      "category": "ecology"
+    },
+    "components": {
+      "minecraft:max_stack_size": 32,
+      "minecraft:use_duration": 32,
+      "minecraft:food": {
+        "nutrition": 10,
+        "saturation_modifier": "max",
+        "can_always_eat": false,
+        "effects": [
+          {
+            "name": "strength",
+            "chance": 1.0,
+            "duration": 180,
+            "amplifier": 2
+          },
+          {
+            "name": "regeneration",
+            "chance": 1.0,
+            "duration": 30,
+            "amplifier": 0
+          },
+          {
+            "name": "health_boost",
+            "chance": 1.0,
+            "duration": 1,
+            "amplifier": 0
+          }
+        ]
+      },
+      "using_converts_to": "bowl",
+      "netease:customtips": {
+        "value": "§f--------------------\n§6§l食物·汤面\n§r§3品质: §5\n§3饥饿: §5 X 10\n§r§f--------------------\n§a■ 力量Ⅲ 180s\n§a■ 生命恢复Ⅰ 30s\n生命提升"
+      }
+    }
+  }
+}

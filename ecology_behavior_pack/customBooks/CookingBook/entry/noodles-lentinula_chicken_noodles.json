@@ -1,0 +1,17 @@
+{
+  "parent": "noodles",
+  "sortnum": 104,
+  "icon": "textures/items/foods/noodles/lentinula_chicken_noodles.png",
+  "title": "香菇炖鸡面",
+  "pages": [
+    {
+      "type": "ham:itemInfoPage",
+      "itemName": "ham:lentinula_chicken_noodles"
+    },
+    {
+      "type": "ham:stewRecipePage",
+      "recipeId": "ham:lentinula_chicken_noodles",
+      "subtitle": "制作·煮锅"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:item": {
     "description": {
-      "identifier": "ham:yangzhou_fried_rice",
+      "identifier": "ham:lentinula_chicken_noodles",
       "register_to_create_menu": true,
       "category": "ecology"
     },
@@ -10,21 +10,27 @@
       "minecraft:max_stack_size": 64,
       "minecraft:use_duration": 32,
       "minecraft:food": {
-        "nutrition": 14,
-        "saturation_modifier": "good",
+        "nutrition": 9,
+        "saturation_modifier": "max",
         "can_always_eat": false,
         "effects": [
           {
             "name": "strength",
             "chance": 1.0,
-            "duration": 120,
+            "duration": 90,
             "amplifier": 1
+          },
+          {
+            "name": "regeneration",
+            "chance": 1.0,
+            "duration": 15,
+            "amplifier": 0
           }
         ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·炒饭\n§r§3品质: §5\n§3饥饿: §5 X 14\n§r§f--------------------\n§a■ 力量Ⅰ 120s"
+        "value": "§f--------------------\n§6§l食物·汤面\n§r§3品质: §5\n§3饥饿: §5 X 10\n§r§f--------------------\n§a■ 力量Ⅱ 90s\n§a■ 生命恢复Ⅰ 15s"
       }
     }
   }
