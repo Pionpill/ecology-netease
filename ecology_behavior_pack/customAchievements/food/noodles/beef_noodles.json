@@ -1,14 +1,14 @@
 {
-  "node_ID": "ham-ecology-food-pork_sauce_noodles",
+  "node_ID": "ham-ecology-food-beef_noodles",
   "parent_node": "ham-ecology-food-plain_noodles",
   "depend_parent": false,
-  "title": "§b肉酱面",
-  "unfinished_icon": "textures/items/foods/noodles/pork_sauce_noodles",
-  "finished_icon": "textures/items/foods/noodles/pork_sauce_noodles",
+  "title": "§b牛肉面",
+  "unfinished_icon": "textures/items/foods/noodles/beef_noodles",
+  "finished_icon": "textures/items/foods/noodles/beef_noodles",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "食材: 面条，肉糜，香菇\n调料: 荤菜料包\n效果: 力量\n工作台: 煮锅",
+  "node_description": "食材: 面条，胡萝卜，牛肉\n调料: 荤菜料包\n效果: 力量\n工作台: 煮锅",
   "reward": [
     {
       "function_name": "",

@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-food-hen_chicken_noodles",
+  "parent_node": "ham-ecology-food-lentinula_chicken_noodles",
+  "depend_parent": false,
+  "title": "§d老母鸡汤面",
+  "unfinished_icon": "textures/items/foods/noodles/hen_chicken_noodles",
+  "finished_icon": "textures/items/foods/noodles/hen_chicken_noodles",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 面条，鸡肉，鸡蛋，松茸\n调料: 菌菇料包\n效果: 力量，生命恢复，生命提升\n工作台: 煮锅",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

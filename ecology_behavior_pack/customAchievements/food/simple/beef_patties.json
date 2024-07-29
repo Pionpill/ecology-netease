@@ -1,6 +1,6 @@
 {
-  "node_ID": "ham-ecology-food-beef_patties",
-  "parent_node": "ham-ecology-food-sausage",
+  "node_ID": "ham-ecology-beef_patties",
+  "parent_node": "ham-ecology-sausage",
   "depend_parent": false,
   "title": "熟牛肉饼",
   "unfinished_icon": "textures/items/foods/simple/beef_patties",
@@ -8,7 +8,7 @@
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "熟牛肉饼",
+  "node_description": "食材: 牛肉\n工作台: 厨务台",
   "reward": [
     {
       "function_name": "",

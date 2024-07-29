@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-hot_dog",
-  "parent_node": "ham-ecology-fast",
+  "parent_node": "ham-ecology-fries",
   "depend_parent": false,
   "title": "§b热狗",
   "unfinished_icon": "textures/items/foods/fast_food/hot_dog",

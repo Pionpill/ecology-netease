@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-onion_beef_rice",
+  "parent_node": "ham-ecology-pork_sauce_rice",
+  "depend_parent": false,
+  "title": "§d洋葱牛腩饭",
+  "unfinished_icon": "textures/items/foods/rice/onion_beef_rice",
+  "finished_icon": "textures/items/foods/rice/onion_beef_rice",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材:熟米饭，洋葱，牛肉，鸡蛋，茄子\n效果: 力量，伤害吸收\n工作台: 平底锅",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

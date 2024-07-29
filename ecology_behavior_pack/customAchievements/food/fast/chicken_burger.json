@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-chicken_burger",
-  "parent_node": "ham-ecology-fast",
+  "parent_node": "ham-ecology-fries",
   "depend_parent": false,
   "title": "§b鸡肉堡",
   "unfinished_icon": "textures/items/foods/fast_food/chicken_burger",

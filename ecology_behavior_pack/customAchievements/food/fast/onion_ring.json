@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-onion_ring",
-  "parent_node": "ham-ecology-fast",
+  "parent_node": "ham-ecology-fries",
   "depend_parent": false,
   "title": "§e洋葱圈",
   "unfinished_icon": "textures/items/foods/fast_food/onion_ring",

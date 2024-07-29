@@ -1,6 +1,6 @@
 {
-  "node_ID": "ham-ecology-food-mantou",
-  "parent_node": "ham-ecology-food-simple",
+  "node_ID": "ham-ecology-mantou",
+  "parent_node": "ham-ecology-bread",
   "depend_parent": false,
   "title": "馒头",
   "unfinished_icon": "textures/items/foods/simple/mantou",
@@ -8,7 +8,7 @@
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "馒头",
+  "node_description": "食材: 面团\n工作台: 蒸笼",
   "reward": [
     {
       "function_name": "",

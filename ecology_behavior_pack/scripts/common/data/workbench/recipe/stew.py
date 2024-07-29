@@ -137,18 +137,14 @@ STEW_PORRIDGE_DATA = {
 STEW_NOODLE_DATA = {
     "ham:plain_noodles": {
         "material": {
-            0: "ham:salt",
-            1: "ham:scallion",
-            2: "ham:seasoning",
+            1: "ham:simple_pack",
             4: "ham:noodle"
         },
         "result": "ham:plain_noodles"
     },
     "ham:pork_sauce_noodles": {
         "material": {
-            0: "ham:salt",
-            1: "ham:scallion",
-            2: "ham:seasoning",
+            1: "ham:meal_pack",
             3: "ham:ground_pork",
             4: "ham:noodle",
             5: "ham:lentinula",
@@ -157,9 +153,7 @@ STEW_NOODLE_DATA = {
     },
     "ham:tomato_egg_noodles": {
         "material": {
-            0: "ham:salt",
-            1: "ham:scallion",
-            2: "ham:seasoning",
+            1: "ham:tomato_pack",
             3: "ham:tomato",
             4: "ham:noodle",
             5: "minecraft:egg",
@@ -168,7 +162,6 @@ STEW_NOODLE_DATA = {
     },
     "ham:beef_noodles": {
         "material": {
-            0: "ham:scallion",
             1: "ham:meal_pack",
             3: "ham:carrot", # 1
             4: "ham:noodle", # 3

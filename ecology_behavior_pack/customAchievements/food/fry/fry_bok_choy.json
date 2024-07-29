@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-fry_bok_choy",
-  "parent_node": "ham-ecology-fry",
+  "parent_node": "ham-ecology-leek_egg",
   "depend_parent": false,
   "title": "§b清炒小青菜",
   "unfinished_icon": "textures/items/foods/fry/fry_bok_choy",

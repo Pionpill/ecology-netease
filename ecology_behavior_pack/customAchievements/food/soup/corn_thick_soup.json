@@ -1,14 +1,14 @@
 {
-  "node_ID": "ham-ecology-food-simple",
+  "node_ID": "ham-ecology-corn_thick_soup",
   "parent_node": "ham-ecology-food",
   "depend_parent": false,
-  "title": "简易食品",
-  "unfinished_icon": "textures/items/foods/simple/bread",
-  "finished_icon": "textures/items/foods/simple/bread",
+  "title": "§b玉米浓汤",
+  "unfinished_icon": "textures/items/foods/soup/corn_thick_soup",
+  "finished_icon": "textures/items/foods/soup/corn_thick_soup",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "简易食品",
+  "node_description": "食材:玉米，洋葱，土豆，香肠，牛奶\n调料: 黄油\n效果: 迅捷\n工作台: 煮锅",
   "reward": [
     {
       "function_name": "",

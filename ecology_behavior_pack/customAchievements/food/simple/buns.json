@@ -1,6 +1,6 @@
 {
-  "node_ID": "ham-ecology-food-buns",
-  "parent_node": "ham-ecology-food-mantou",
+  "node_ID": "ham-ecology-buns",
+  "parent_node": "ham-ecology-mantou",
   "depend_parent": false,
   "title": "包子",
   "unfinished_icon": "textures/items/foods/simple/buns",
@@ -8,7 +8,7 @@
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "包子",
+  "node_description": "食材: 肉末，葱，面团\n工作台: 厨务台",
   "reward": [
     {
       "function_name": "",

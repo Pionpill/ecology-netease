@@ -1,6 +1,6 @@
 {
-  "node_ID": "ham-ecology-food-cheese",
-  "parent_node": "ham-ecology-food-simple",
+  "node_ID": "ham-ecology-cheese",
+  "parent_node": "ham-ecology-sweet_milk",
   "depend_parent": false,
   "title": "奶酪",
   "unfinished_icon": "textures/items/foods/simple/cheese",
@@ -8,7 +8,7 @@
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "奶酪",
+  "node_description": "食材: 甜牛奶\n工作台: 压制机",
   "reward": [
     {
       "function_name": "",

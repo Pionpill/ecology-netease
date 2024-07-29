@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-curry_pork_rice",
+  "parent_node": "ham-ecology-pork_sauce_rice",
+  "depend_parent": false,
+  "title": "§d咖喱猪排饭",
+  "unfinished_icon": "textures/items/foods/rice/curry_pork_rice",
+  "finished_icon": "textures/items/foods/rice/curry_pork_rice",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材:熟米饭，猪肉，土豆，胡萝卜，鸡蛋，青菜\n效果: 急迫\n工作台: 平底锅",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

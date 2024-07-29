@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-sweet_potato_pie",
-  "parent_node": "ham-ecology-pie",
+  "parent_node": "ham-ecology-taro_pie",
   "depend_parent": false,
   "title": "§e红薯派",
   "unfinished_icon": "textures/items/foods/pie/sweet_potato_pie",

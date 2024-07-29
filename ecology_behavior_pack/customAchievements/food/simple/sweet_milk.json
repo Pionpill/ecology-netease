@@ -1,6 +1,6 @@
 {
-  "node_ID": "ham-ecology-food-sweet_milk",
-  "parent_node": "ham-ecology-food-simple",
+  "node_ID": "ham-ecology-sweet_milk",
+  "parent_node": "ham-ecology-bread",
   "depend_parent": false,
   "title": "甜牛奶",
   "unfinished_icon": "textures/items/foods/simple/sweet_milk",
@@ -8,7 +8,7 @@
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "甜牛奶",
+  "node_description": "食材: 牛奶，糖\n工作台: 厨务台",
   "reward": [
     {
       "function_name": "",

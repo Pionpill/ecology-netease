@@ -1,0 +1,23 @@
+{
+  "node_ID": "ham-ecology-food-chili_beef_noodles",
+  "parent_node": "ham-ecology-food-beef_noodles",
+  "depend_parent": false,
+  "title": "§d红烧牛肉面",
+  "unfinished_icon": "textures/items/foods/noodles/chili_beef_noodles",
+  "finished_icon": "textures/items/foods/noodles/chili_beef_noodles",
+  "use_default_icon_background": true,
+  "goal_details": {},
+  "goal_number": 1,
+  "node_description": "食材: 面条，胡萝卜，牛肉，鸡蛋，青菜\n调料: 辣味料包\n效果: 力量，迅捷\n工作台: 煮锅",
+  "reward": [
+    {
+      "function_name": "",
+      "name_space": "ham:crop",
+      "data": {
+        "EXP": 50,
+        "string": "农艺经验"
+      }
+    }
+  ],
+  "is_hidden": false
+}

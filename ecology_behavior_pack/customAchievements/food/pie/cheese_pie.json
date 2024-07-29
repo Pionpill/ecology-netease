@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-cheese_pie",
-  "parent_node": "ham-ecology-pie",
+  "parent_node": "ham-ecology-taro_pie",
   "depend_parent": false,
   "title": "§b奶酪派",
   "unfinished_icon": "textures/items/foods/pie/cheese_pie",

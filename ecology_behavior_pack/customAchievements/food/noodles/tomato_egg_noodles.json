@@ -2,13 +2,13 @@
   "node_ID": "ham-ecology-food-tomato_egg_noodles",
   "parent_node": "ham-ecology-food-plain_noodles",
   "depend_parent": false,
-  "title": "番茄鸡蛋面",
+  "title": "§b番茄鸡蛋面",
   "unfinished_icon": "textures/items/foods/noodles/tomato_egg_noodles",
   "finished_icon": "textures/items/foods/noodles/tomato_egg_noodles",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "番茄鸡蛋面",
+  "node_description": "食材: 面条，鸡蛋，番茄\n调料: 番茄料包\n效果: 生命恢复\n工作台: 煮锅",
   "reward": [
     {
       "function_name": "",

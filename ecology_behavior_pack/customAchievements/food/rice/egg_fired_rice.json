@@ -1,14 +1,14 @@
 {
-  "node_ID": "ham-ecology-food-egg_fired_rice",
-  "parent_node": "ham-ecology-food-rice",
+  "node_ID": "ham-ecology-egg_fired_rice",
+  "parent_node": "ham-ecology-food",
   "depend_parent": false,
-  "title": "蛋炒饭",
+  "title": "§e蛋炒饭",
   "unfinished_icon": "textures/items/foods/rice/egg_fired_rice",
   "finished_icon": "textures/items/foods/rice/egg_fired_rice",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "蛋炒饭",
+  "node_description": "食材:熟米饭，鸡蛋\n调料: 葱\n工作台: 平底锅",
   "reward": [
     {
       "function_name": "",

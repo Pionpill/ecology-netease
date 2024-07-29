@@ -10,7 +10,7 @@ KELP_RICE = {
   "tag": (ItemTag.RICE,),
   "hidden_effect": None,
   "food": {
-    "nutrition": 13,
+    "nutrition": 11,
     "saturation": FoodSaturation.GOOD,
     "can_eat": True,
     "effect": ({

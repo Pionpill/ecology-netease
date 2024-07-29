@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-corn_chicken_pie",
-  "parent_node": "ham-ecology-pie",
+  "parent_node": "ham-ecology-taro_pie",
   "depend_parent": false,
   "title": "§d玉米鸡肉派",
   "unfinished_icon": "textures/items/foods/pie/corn_chicken_pie",

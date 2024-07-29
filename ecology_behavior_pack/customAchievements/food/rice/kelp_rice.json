@@ -1,14 +1,14 @@
 {
-  "node_ID": "ham-ecology-pork_sauce_rice",
+  "node_ID": "ham-ecology-kelp_rice",
   "parent_node": "ham-ecology-egg_fired_rice",
   "depend_parent": false,
-  "title": "§b肉酱饭",
-  "unfinished_icon": "textures/items/foods/rice/pork_sauce_rice",
-  "finished_icon": "textures/items/foods/rice/pork_sauce_rice",
+  "title": "§b海苔拌饭",
+  "unfinished_icon": "textures/items/foods/rice/kelp_rice",
+  "finished_icon": "textures/items/foods/rice/kelp_rice",
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "食材:熟米饭，香菇，肉末\n调料: 葱\n效果: 力量\n工作台: 平底锅",
+  "node_description": "食材:熟米饭，干海苔，玉米，豌豆\n效果: 水下呼吸\n工作台: 平底锅",
   "reward": [
     {
       "function_name": "",

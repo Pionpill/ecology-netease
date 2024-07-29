@@ -198,10 +198,10 @@ PAN_RICE_DATA = {
             1: "ham:corn", # 1
             3: "ham:pea", # 1
             4: "ham:cooked_rice", # 4
-            5: "ham:sausage" # 3
+            5: "ham:dried_kelp" # 1
         },
         "fixed_material": (1, 0, 1, 1),
-        "result": "ham:kelp_rice" # 13
+        "result": "ham:kelp_rice" # 11
     },
     "ham:onion_beef_rice": {
         "material": {

@@ -1,6 +1,6 @@
 {
-  "node_ID": "ham-ecology-food-sausage",
-  "parent_node": "ham-ecology-food-simple",
+  "node_ID": "ham-ecology-sausage",
+  "parent_node": "ham-ecology-bread",
   "depend_parent": false,
   "title": "熟香肠",
   "unfinished_icon": "textures/items/foods/simple/sausage",
@@ -8,7 +8,7 @@
   "use_default_icon_background": true,
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "熟香肠",
+  "node_description": "食材: 肉末，淀粉\n工作台: 厨务台",
   "reward": [
     {
       "function_name": "",

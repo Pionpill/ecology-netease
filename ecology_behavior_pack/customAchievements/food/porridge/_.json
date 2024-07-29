@@ -1,13 +1,15 @@
 {
-  "node_ID": "ham-ecology-fry",
-  "title": "图签-食物-炒菜",
-  "unfinished_icon": "textures/items/foods/fry/leek_egg",
-  "finished_icon": "textures/items/foods/fry/leek_egg",
+  "node_ID": "ham-ecology-porridge",
+  "parent_node": "ham-ecology-food",
+  "depend_parent": false,
+  "title": "白粥",
+  "unfinished_icon": "textures/items/foods/porridge/porridge",
+  "finished_icon": "textures/items/foods/porridge/porridge",
   "use_default_icon_background": true,
   "window_background": "textures/blocks/brick",
   "goal_details": {},
   "goal_number": 1,
-  "node_description": "食材: 韭菜，鸡蛋\n工作台: 平底锅",
+  "node_description": "食材: 大米\n工作台: 煮锅",
   "reward": [
     {
       "function_name": "",

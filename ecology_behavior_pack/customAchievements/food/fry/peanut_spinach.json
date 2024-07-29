@@ -1,6 +1,6 @@
 {
   "node_ID": "ham-ecology-peanut_spinach",
-  "parent_node": "ham-ecology-fry",
+  "parent_node": "ham-ecology-leek_egg",
   "depend_parent": false,
   "title": "§d开胃菠菜",
   "unfinished_icon": "textures/items/foods/fry/peanut_spinach",
