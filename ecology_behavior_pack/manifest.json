@@ -3,7 +3,7 @@
   "header": {
     "name": "生态",
     "description": "锤子工坊生态模组",
-    "uuid": "88588aae-5f22-40e4-b441-1a2bceab1cb3",
+    "uuid": "bf0cfa10-5776-4f0d-9109-c31f7dcd9fe5",
     "version": [1, 0, 3],
     "min_engine_version": [1, 18, 0]
   },
@@ -11,13 +11,13 @@
     {
       "description": "锤子工坊生态模组",
       "type": "data",
-      "uuid": "9764ef25-a846-4eaa-8c8f-a01d10a6e43e",
+      "uuid": "176e3807-befb-41c6-a7ce-ed9b4bb8bdf0",
       "version": [1, 0, 3]
     }
   ],
   "dependencies": [
     {
-      "uuid": "e64d4f9f-d476-4f29-aa2b-ef9e1f8cb9c8",
+      "uuid": "7ce68122-7cab-4019-a361-598cc25fca35",
       "version": [1, 0, 3]
     }
   ],
