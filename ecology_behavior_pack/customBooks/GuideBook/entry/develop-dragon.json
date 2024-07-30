@@ -1,6 +1,6 @@
 {
   "parent": "develop",
-  "sortnum": 5,
+  "sortnum": 7,
   "icon": "textures/items/books/guide_book.png",
   "title": "小黑龙",
   "pages": [

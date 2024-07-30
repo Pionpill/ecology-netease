@@ -1,0 +1,12 @@
+{
+  "parent": "develop",
+  "sortnum": 5,
+  "icon": "textures/items/books/guide_book.png",
+  "title": "雨墨",
+  "pages": [
+    {
+      "type": "textPage",
+      "content": "§8● §r创作成员\n§8● §r游戏ID: 雨墨凌枫\n§8● §r美工\n§8● §r负责部分贴图美工"
+    }
+  ]
+}
