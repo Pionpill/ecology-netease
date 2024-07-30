@@ -18,13 +18,13 @@ DOUBLE_BEEF_BURGER = {
         "name": EffectType.STRENGTH,
         "chance": 1,
         "duration": 180,
-        "amplifier": 0
+        "amplifier": 1
       },
       {
         "name": EffectType.ABSORPTION,
         "chance": 1,
         "duration": 180,
-        "amplifier": 0
+        "amplifier": 1
       },
     )
   }

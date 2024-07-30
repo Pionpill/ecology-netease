@@ -18,13 +18,13 @@
             "name": "strength",
             "chance": 1.0,
             "duration": 60,
-            "amplifier": 0
+            "amplifier": 1
           },
           {
             "name": "absorption",
             "chance": 1.0,
             "duration": 30,
-            "amplifier": 0
+            "amplifier": 1
           }
         ]
       },
