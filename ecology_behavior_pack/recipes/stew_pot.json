@@ -5,7 +5,7 @@
       "identifier": "ham:stew_pot"
     },
     "tags": ["crafting_table"],
-    "pattern": ["A A", "AAA"],
+    "pattern": [" A ", "A A", "AAA"],
     "key": {
       "A": {
         "item": "minecraft:iron_ingot"
