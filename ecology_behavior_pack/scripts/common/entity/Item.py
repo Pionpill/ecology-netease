@@ -104,7 +104,7 @@ class Item(object):
             return item
         try:
             item = Item(itemName)
-        except AddonDataError as e:
+        except (AddonDataError, AddonDataFieldError) as e:
             logger.warn(e.message)
             return None
         Item.cacheMap[itemName] = item
