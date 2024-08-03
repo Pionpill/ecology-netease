@@ -122,7 +122,7 @@ COOK_FAST_DATA = {
             7: "ham:bread", # 3
         },
         "fixed_material": (1, 0, 0, 2),
-        "result": ("ham:beef_burger", 2), # 7
+        "result": ("ham:cod_burger", 2), # 7
     },
     "ham:chicken_burger": {
         "material": {
@@ -133,7 +133,7 @@ COOK_FAST_DATA = {
             7: "ham:bread", # 3
         },
         "fixed_material": (1, 0, 0, 2),
-        "result": ("ham:beef_burger", 2), # 7
+        "result": ("ham:chicken_burger", 2), # 7
     },
     "ham:beef_burger": {
         "material": {
