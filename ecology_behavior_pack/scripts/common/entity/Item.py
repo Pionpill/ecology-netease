@@ -68,7 +68,7 @@ class Item(object):
     
     def GetTags(self):
         # type: () -> tuple[str,]
-        return self._GetField('tag')
+        return self._GetField('tag', ())
 
     def GetHiddenEffects(self):
         # type: () -> tuple[Effect,] | None
