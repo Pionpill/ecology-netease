@@ -117,7 +117,7 @@ COOK_FAST_DATA = {
         "material": {
             1: "ham:bread", # 3
             3: "ham:cheese", # 2
-            4: ("ham:cooked_cod", 2), # 6
+            4: ("minecraft:cooked_cod", 2), # 6
             5: "ham:tomato", # 1
             7: "ham:bread", # 3
         },
@@ -128,7 +128,7 @@ COOK_FAST_DATA = {
         "material": {
             1: "ham:bread", # 3
             3: ("ham:lettuce", 2), # 1
-            4: ("ham:cooked_chicken", 2), # 6
+            4: ("minecraft:cooked_chicken", 2), # 6
             5: "ham:tomato", # 1
             7: "ham:bread", # 3
         },
