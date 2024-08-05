@@ -13,6 +13,16 @@
             {
               "test": "has_biome_tag",
               "operator": "==",
+              "value": "mountain"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountains"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
               "value": "bamboo"
             },
             {

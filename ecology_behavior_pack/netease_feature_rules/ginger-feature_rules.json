@@ -24,6 +24,11 @@
               "test": "has_biome_tag",
               "operator": "==",
               "value": "hills"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "extreme_hills"
             }
           ]
         }

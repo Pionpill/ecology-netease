@@ -1,9 +1,11 @@
+from scripts.common.enum import BiomeTag
 from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, ItemSource, ItemTag
 
 RED_BEAN = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.CROP: ("ham:red_bean",)
+    ItemSource.CROP: ("ham:red_bean",),
+    ItemSource.WILD: (BiomeTag.MOUNTAIN, BiomeTag.MOUNTAINS, BiomeTag.BAMBOO, BiomeTag.HILLS)
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.CROP, ItemTag.CEREAL, ItemTag.BEAN),
