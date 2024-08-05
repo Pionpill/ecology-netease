@@ -80,9 +80,9 @@ class FurnaceManager(BaseWorkbenchManager):
                 self._SetItem('liquid_slot0', liquidMaterialDict)
                 self.blockEntityData['liquid'] = 20
             self.shouldRefresh = True
-        if self.blockName in ['ham:food_steamer', 'ham:stew_pot'] and liquidMaterialDict['newItemName'] == 'minecraft:water_bucket' and self.blockEntityData['liquid_slot1'] is None and liquidCount <= 15:
+        if self.blockName in ['ham:food_steamer', 'ham:stew_pot'] and liquidMaterialDict['newItemName'] == 'minecraft:water_bucket' and self.blockEntityData['liquid_slot1'] is None and liquidCount <= 10:
             # 水表更新
-            self.blockEntityData['liquid'] = liquidCount + 5
+            self.blockEntityData['liquid'] = liquidCount + 10
             self._SetItem('liquid_slot0', None)
             self._SetItem('liquid_slot1', itemUtils.GetItemDict('minecraft:bucket'))
             self.shouldRefresh = True
