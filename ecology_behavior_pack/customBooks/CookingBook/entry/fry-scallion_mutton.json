@@ -2,7 +2,7 @@
   "parent": "fry",
   "sortnum": 214,
   "icon": "textures/items/foods/fry/scallion_mutton.png",
-  "title": "葱爆牛肉",
+  "title": "葱爆羊肉",
   "pages": [
     {
       "type": "ham:itemInfoPage",
