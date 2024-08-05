@@ -44,7 +44,7 @@ class ItemInfoPage(BaseTextPage):
         basic = self.__GetContentOfBasic()
         food = self.__GetContentOfFood()
         source = self.__GetContentOfSource()
-        context = self.data.get('content')
+        context = self.data.get('content') or ""
         return basic + food + source + context
         
     def __GetContentOfBasic(self):
