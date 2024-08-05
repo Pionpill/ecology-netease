@@ -18,5 +18,20 @@ WEED_TALL = {
             "chance": 2,
             "count": 1
         },
+        {
+            "name": "ham:ginger",
+            "chance": 1,
+            "count": 1
+        },
+        {
+            "name": "ham:red_bean",
+            "chance": 1,
+            "count": 1
+        },
+        {
+            "name": "ham:peanut",
+            "chance": 1,
+            "count": 1
+        },
     )
 }
