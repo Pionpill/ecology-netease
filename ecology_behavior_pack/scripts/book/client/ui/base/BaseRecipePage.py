@@ -71,7 +71,7 @@ class BaseRecipePage(TitlePage):
 
         self.SetTitleData()
         self.arrow.SetDataBeforeShow()
-        self.content.SetDataBeforeShow(self.data.get('content'), bookConfig.TextSize.content)
+        self.content.SetDataBeforeShow(self.data.get('content') or "", bookConfig.TextSize.content)
         recipeId = self.data.get('recipeId')
         recipeSlotItems = self._recipe.GetFormatRecipe(recipeId)
 
