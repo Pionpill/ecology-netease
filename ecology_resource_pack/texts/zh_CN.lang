@@ -43,6 +43,7 @@ item.ham:ground_pork.name=肉糜
 item.ham:noodle.name=面条
 item.ham:salad.name=沙拉
 item.ham:salt.name=盐
+tile.ham:salt_ore.name=盐矿石
 item.ham:seasoning.name=调料
 item.ham:starch.name=淀粉
 item.ham:straw.name=秸秆
