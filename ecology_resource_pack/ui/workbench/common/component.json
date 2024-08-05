@@ -61,10 +61,10 @@
     "uv_size": [0, 0],
     "visible": true
   },
-  "bowl_sketch": {
+  "bowl_sketch_img": {
     "alpha": 1,
-    "anchor_from": "right_middle",
-    "anchor_to": "right_middle",
+    "anchor_from": "center",
+    "anchor_to": "center",
     "clip_direction": "left",
     "clip_offset": [0, 0],
     "clip_ratio": 0,
@@ -74,7 +74,7 @@
     "grayscale": false,
     "is_new_nine_slice": false,
     "keep_ratio": true,
-    "layer": 10,
+    "layer": 4,
     "max_size": [0, 0],
     "min_size": [0, 0],
     "nine_slice_buttom": 0,
@@ -82,10 +82,10 @@
     "nine_slice_right": 0,
     "nine_slice_top": 0,
     "nineslice_size": [0, 0, 0, 0],
-    "offset": [-30, 0],
+    "offset": [0, 0],
     "priority": 0,
     "propagate_alpha": false,
-    "size": [25, 25],
+    "size": [16, 16],
     "texture": "textures/ui/bowl_sketch",
     "type": "image",
     "uv": [0, 0],
@@ -163,6 +163,37 @@
     "propagate_alpha": false,
     "size": [16, 16],
     "texture": "textures/ui/cooking_oil_edge",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "bucket_sketch_img": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 4,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 16],
+    "texture": "textures/ui/bucket_sketch",
     "type": "image",
     "uv": [0, 0],
     "uv_size": [0, 0],
@@ -638,7 +669,7 @@
         "item_renderer@component.item_renderer": {}
       },
       {
-        "bowl_edge_img@component.bowl_edge_img": {}
+        "bowl_sketch_img@component.bowl_sketch_img": {}
       }
     ],
     "enabled": true,
@@ -678,7 +709,87 @@
         "item_renderer@component.item_renderer": {}
       },
       {
-        "bucket_edge_img@component.bucket_edge_img": {}
+        "bucket_sketch_img@component.bucket_sketch_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [18, 18],
+    "type": "panel",
+    "visible": true
+  },
+  "item_slot_straw": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "selected_image@component.selected_image": {}
+      },
+      {
+        "item_button@component.item_button": {}
+      },
+      {
+        "count_label@component.count_label": {}
+      },
+      {
+        "durability_bar@component.progress_bar": {
+          "offset": [0, 5],
+          "size": ["70.0%+0.0px", "7.0%+0.0px"]
+        }
+      },
+      {
+        "item_renderer@component.item_renderer": {}
+      },
+      {
+        "straw_sketch_img@component.straw_sketch_img": {}
+      }
+    ],
+    "enabled": true,
+    "layer": 0,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [18, 18],
+    "type": "panel",
+    "visible": true
+  },
+  "item_slot_nugget": {
+    "alpha": 1,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_offset": [0, 0],
+    "clips_children": false,
+    "controls": [
+      {
+        "selected_image@component.selected_image": {}
+      },
+      {
+        "item_button@component.item_button": {}
+      },
+      {
+        "count_label@component.count_label": {}
+      },
+      {
+        "durability_bar@component.progress_bar": {
+          "offset": [0, 5],
+          "size": ["70.0%+0.0px", "7.0%+0.0px"]
+        }
+      },
+      {
+        "item_renderer@component.item_renderer": {}
+      },
+      {
+        "nugget_sketch_img@component.nugget_sketch_img": {}
       }
     ],
     "enabled": true,
@@ -740,9 +851,7 @@
     "clips_children": false,
     "controls": [
       {
-        "item_renderer@component.item_renderer_pan": {
-          "visible": true
-        }
+        "item_renderer@component.item_renderer_pan": {}
       },
       {
         "item_cell@component.pan_img": {
@@ -1295,6 +1404,68 @@
     "propagate_alpha": false,
     "size": [16, 16],
     "texture": "textures/ui/salt_edge",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "straw_sketch_img": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0.0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 4,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 16],
+    "texture": "textures/ui/straw_sketch",
+    "type": "image",
+    "uv": [0, 0],
+    "uv_size": [0, 0],
+    "visible": true
+  },
+  "nugget_sketch_img": {
+    "alpha": 1.0,
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "clip_direction": "left",
+    "clip_offset": [0, 0],
+    "clip_ratio": 0.0,
+    "clips_children": false,
+    "enabled": true,
+    "fill": false,
+    "grayscale": false,
+    "is_new_nine_slice": false,
+    "keep_ratio": true,
+    "layer": 4,
+    "max_size": [0, 0],
+    "min_size": [0, 0],
+    "nine_slice_buttom": 0,
+    "nine_slice_left": 0,
+    "nine_slice_right": 0,
+    "nine_slice_top": 0,
+    "nineslice_size": [0, 0, 0, 0],
+    "offset": [0, 0],
+    "priority": 0,
+    "propagate_alpha": false,
+    "size": [16, 16],
+    "texture": "textures/ui/nugget_sketch",
     "type": "image",
     "uv": [0, 0],
     "uv_size": [0, 0],

@@ -273,7 +273,7 @@
         }
       },
       {
-        "fuel_slot0@component.item_slot": {
+        "fuel_slot0@component.item_slot_straw": {
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
           "offset": [82, 0]
@@ -319,7 +319,7 @@
         }
       },
       {
-        "liquid_slot0@component.item_slot": {
+        "liquid_slot0@component.item_slot_bucket": {
           "anchor_from": "top_left",
           "anchor_to": "top_left"
         }
@@ -358,7 +358,7 @@
         }
       },
       {
-        "fuel_slot0@component.item_slot": {
+        "fuel_slot0@component.item_slot_straw": {
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
           "offset": [82, 0]
@@ -404,7 +404,7 @@
         }
       },
       {
-        "liquid_slot0@component.item_slot": {
+        "liquid_slot0@component.item_slot_cooking_oil": {
           "anchor_from": "top_left",
           "anchor_to": "top_left"
         }
@@ -441,7 +441,7 @@
         }
       },
       {
-        "fuel_slot0@component.item_slot": {
+        "fuel_slot0@component.item_slot_straw": {
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left"
         }
@@ -489,7 +489,7 @@
     "clips_children": false,
     "controls": [
       {
-        "fuel_slot0@component.item_slot": {
+        "fuel_slot0@component.item_slot_straw": {
           "anchor_from": "bottom_middle",
           "anchor_to": "bottom_middle"
         }
@@ -632,7 +632,7 @@
         }
       },
       {
-        "fuel_slot0@component.item_slot": {
+        "fuel_slot0@component.item_slot_nugget": {
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
           "offset": [28, 0]
@@ -809,7 +809,7 @@
         }
       },
       {
-        "fuel_slot0@component.item_slot": {
+        "fuel_slot0@component.item_slot_straw": {
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": [7.0, 54.0]
@@ -889,7 +889,7 @@
         }
       },
       {
-        "fuel_slot0@component.item_slot": {
+        "fuel_slot0@component.item_slot_nugget": {
           "anchor_from": "bottom_left",
           "anchor_to": "bottom_left",
           "offset": [68, 0]
@@ -997,7 +997,7 @@
         }
       },
       {
-        "fuel_slot0@component.item_slot": {
+        "fuel_slot0@component.item_slot_straw": {
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": [55.0, 44.0]
@@ -1018,7 +1018,7 @@
         }
       },
       {
-        "liquid_slot0@component.item_slot": {
+        "liquid_slot0@component.item_slot_bucket": {
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": [0.0, 0.0]
