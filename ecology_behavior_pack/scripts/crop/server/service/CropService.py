@@ -23,7 +23,8 @@ class CropService(object):
         # type: (tuple[int, int, int], int) -> CropManager
         posKey = position + (dimensionId,)
         cropMgr = CropService.cropMgrDict.get(posKey)
-        if cropMgr is not None:
+        blockName = blockInfoComp.GetBlockNew(position, dimensionId).get('name')
+        if cropMgr is not None and cropUtils.IsSameCropBlock(cropMgr.cropBlockName or '1', blockName or '2'):
             return cropMgr
         cropMgr = CropManager(position, dimensionId)
         CropService.cropMgrDict[posKey] = cropMgr
