@@ -2,7 +2,7 @@
   "parent": "materials",
   "sortnum": 12004,
   "icon": "textures/items/materials/mushroom_pack.png",
-  "title": "番茄料包",
+  "title": "菌菇料包",
   "pages": [
     {
       "type": "ham:itemInfoPage",

@@ -4,7 +4,7 @@ from scripts.common.enum.Item import ItemCategory, ItemQuality, ItemSource, Item
 SIMPLE_PACK = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
-    ItemSource.WORKBENCH: ("ham:cook",)
+    ItemSource.WORKBENCH: ("ham:cooking_table",)
   },
   "category": ItemCategory.MATERIAL,
   "tag": (ItemTag.SEASONING, ItemTag.SPICES),

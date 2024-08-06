@@ -2,7 +2,7 @@
   "parent": "materials",
   "sortnum": 12001,
   "icon": "textures/items/materials/meal_pack.png",
-  "title": "简易料包",
+  "title": "荤菜料包",
   "pages": [
     {
       "type": "ham:itemInfoPage",
