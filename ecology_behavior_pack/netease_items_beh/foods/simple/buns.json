@@ -15,15 +15,15 @@
         "can_always_eat": false,
         "effects": [
           {
-            "name": "strength",
+            "name": "haste",
             "chance": 1,
-            "duration": 10,
+            "duration": 30,
             "amplifier": 0
           }
         ]
       },
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l简易食品\n§r§3品质: §5\n§3饥饿: §5 X 6\n§r§f--------------------\n§a■ 力量Ⅰ 10s"
+        "value": "§f--------------------\n§6§l简易食品\n§r§3品质: §5\n§3饥饿: §5 X 6\n§r§f--------------------\n§a■ 急迫Ⅰ 30s"
       }
     }
   }

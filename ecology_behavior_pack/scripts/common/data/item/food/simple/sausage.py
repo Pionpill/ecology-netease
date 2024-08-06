@@ -14,9 +14,9 @@ SAUSAGE = {
     "saturation": FoodSaturation.MAX,
     "can_eat": True,
     "effect": ({
-        "name": EffectType.STRENGTH,
+        "name": EffectType.HASTE,
         "chance": 1,
-        "duration": 15,
+        "duration": 90,
         "amplifier": 0
     },)
   }

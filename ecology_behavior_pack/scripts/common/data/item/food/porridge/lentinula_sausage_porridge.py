@@ -15,11 +15,17 @@ LENTINULA_SAUSAGE_PORRIDGE = {
     "can_eat": True,
     "effect": (
       {
-        "name": EffectType.STRENGTH,
+        "name": EffectType.HASTE,
         "chance": 1,
-        "duration": 30,
+        "duration": 90,
         "amplifier": 0
       },
+      {
+        "name": EffectType.LEVITATION,
+        "chance": 1,
+        "duration": 90,
+        "amplifier": 0
+      }
     )
   }
 }

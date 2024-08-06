@@ -15,9 +15,9 @@
         "can_always_eat": false,
         "effects": [
           {
-            "name": "strength",
+            "name": "haste",
             "chance": 1.0,
-            "duration": 180,
+            "duration": 300,
             "amplifier": 1
           },
           {
@@ -36,7 +36,7 @@
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·汤面\n§r§3品质: §5\n§3饥饿: §5 X 11\n§r§f--------------------\n§a■ 力量Ⅱ 180s\n§a■ 生命恢复Ⅱ 90s\n§a■ 迅捷Ⅱ 300s"
+        "value": "§f--------------------\n§6§l食物·汤面\n§r§3品质: §5\n§3饥饿: §5 X 11\n§r§f--------------------\n§a■ 急迫Ⅱ 300s\n§a■ 生命恢复Ⅱ 90s\n§a■ 迅捷Ⅱ 300s"
       }
     }
   }

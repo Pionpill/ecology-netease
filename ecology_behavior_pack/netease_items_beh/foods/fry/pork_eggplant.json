@@ -21,16 +21,16 @@
             "amplifier": 1
           },
           {
-            "name": "strength",
+            "name": "haste",
             "chance": 1.0,
-            "duration": 120,
+            "duration": 200,
             "amplifier": 1
           }
         ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·炒菜\n§r§3品质: §5\n§3饥饿: §5 X 9\n§r§f--------------------\n§a■ 生命恢复Ⅱ 60s\n§a■ 力量Ⅱ 120s"
+        "value": "§f--------------------\n§6§l食物·炒菜\n§r§3品质: §5\n§3饥饿: §5 X 9\n§r§f--------------------\n§a■ 生命恢复Ⅱ 60s\n§a■ 急迫Ⅱ 200s"
       }
     }
   }

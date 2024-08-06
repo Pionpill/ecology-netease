@@ -14,9 +14,9 @@ TONKOTSU_NOODLES = {
     "saturation": FoodSaturation.MAX,
     "can_eat": True,
     "effect": ({
-      "name": EffectType.STRENGTH,
+      "name": EffectType.HASTE,
       "chance": 1,
-      "duration": 180,
+      "duration": 300,
       "amplifier": 1
     },{
       "name": EffectType.REGENERATION,

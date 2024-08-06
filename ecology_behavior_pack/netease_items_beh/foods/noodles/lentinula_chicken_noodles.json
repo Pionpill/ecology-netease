@@ -25,12 +25,18 @@
             "chance": 1.0,
             "duration": 15,
             "amplifier": 0
+          },
+          {
+            "name": "levitation",
+            "chance": 1.0,
+            "duration": 90,
+            "amplifier": 0
           }
         ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·汤面\n§r§3品质: §5\n§3饥饿: §5 X 10\n§r§f--------------------\n§a■ 力量Ⅱ 90s\n§a■ 生命恢复Ⅰ 15s"
+        "value": "§f--------------------\n§6§l食物·汤面\n§r§3品质: §5\n§3饥饿: §5 X 10\n§r§f--------------------\n§a■ 力量Ⅱ 90s\n§a■ 生命恢复Ⅰ 15s\n§a■ 漂浮 90s"
       }
     }
   }

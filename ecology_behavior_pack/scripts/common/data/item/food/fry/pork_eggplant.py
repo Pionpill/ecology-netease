@@ -21,9 +21,9 @@ PORK_EGGPLANT = {
         "amplifier": 1
       },
       {
-        "name": EffectType.STRENGTH,
+        "name": EffectType.HASTE,
         "chance": 1,
-        "duration": 120,
+        "duration": 200,
         "amplifier": 1
       },
     )

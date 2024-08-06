@@ -14,9 +14,9 @@ PORK_SAUCE_NOODLES = {
     "saturation": FoodSaturation.GOOD,
     "can_eat": True,
     "effect": ({
-      "name": EffectType.STRENGTH,
+      "name": EffectType.HASTE,
       "chance": 1,
-      "duration": 45,
+      "duration": 120,
       "amplifier": 0
     },)
   }

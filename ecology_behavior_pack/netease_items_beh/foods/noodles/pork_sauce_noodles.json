@@ -15,16 +15,16 @@
         "can_always_eat": false,
         "effects": [
           {
-            "name": "strength",
+            "name": "haste",
             "chance": 1.0,
-            "duration": 30,
+            "duration": 120,
             "amplifier": 0
           }
         ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·汤面\n§r§3品质: §5\n§3饥饿: §5 X 8\n§r§f--------------------\n§a■ 力量Ⅰ 30s"
+        "value": "§f--------------------\n§6§l食物·汤面\n§r§3品质: §5\n§3饥饿: §5 X 8\n§r§f--------------------\n§a■ 急迫Ⅰ 120s"
       }
     }
   }

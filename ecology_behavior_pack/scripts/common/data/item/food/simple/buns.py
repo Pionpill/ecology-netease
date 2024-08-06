@@ -14,9 +14,9 @@ BUNS = {
     "saturation": FoodSaturation.GOOD,
     "can_eat": True,
     "effect": ({
-        "name": EffectType.STRENGTH,
+        "name": EffectType.HASTE,
         "chance": 1,
-        "duration": 10,
+        "duration": 30,
         "amplifier": 0
     },)
   }

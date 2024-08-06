@@ -23,6 +23,11 @@ LENTINULA_CHICKEN_NOODLES = {
       "chance": 1,
       "duration": 15,
       "amplifier": 0
+    },{
+      "name": EffectType.LEVITATION,
+      "chance": 1,
+      "duration": 90,
+      "amplifier": 0
     })
   }
 }
