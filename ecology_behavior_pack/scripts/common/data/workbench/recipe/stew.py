@@ -117,7 +117,7 @@ STEW_PORRIDGE_DATA = {
             2: "ham:scallion",
             3: "ham:tomato",
             4: ("ham:rice", 3),
-            5: "ham:beef",
+            5: "minecraft:beef",
         },
         "result": ("ham:tomato_beef_porridge", 5) # 6
     },
