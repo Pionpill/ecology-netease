@@ -21,7 +21,7 @@ class CropMsgManager(BaseMsgManager):
             self._NotifyOneWarningMessage('必须种植在 §c{} §6上'.format(blockName))
             return
         if reason == PlantFailReason.LAND_UNABLE:
-            self._NotifyOneWarningMessage('方块不可种植任何作物')
+            # self._NotifyOneWarningMessage('方块不可种植任何作物') # 提示过于常见，临时删除
             return
         if reason == PlantFailReason.LAND_FERTILITY:
             self._NotifyOneWarningMessage('土地肥力不足\n土壤肥力: {}\n作物最低肥力要求: {}'.format(params.get('land'), params.get('crop')))
