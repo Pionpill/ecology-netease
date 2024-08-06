@@ -68,7 +68,7 @@ PAN_FRY_DATA = {
             5: "ham:onion", # 1
         },
         "fixed_material": (1, 0, 1, 1), # 2
-        "result": "ham:peanut_spinach", # 8
+        "result": "ham:onion_potato", # 8
     },
     "ham:peanut_spinach": {
         "material": {
@@ -198,7 +198,7 @@ PAN_RICE_DATA = {
             1: "ham:corn", # 1
             3: "ham:pea", # 1
             4: "ham:cooked_rice", # 4
-            5: "ham:dried_kelp" # 1
+            5: "minecraft:dried_kelp" # 1
         },
         "fixed_material": (1, 0, 1, 1),
         "result": "ham:kelp_rice" # 11
