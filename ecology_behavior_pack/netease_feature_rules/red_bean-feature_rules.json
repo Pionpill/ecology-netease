@@ -23,12 +23,12 @@
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "bamboo"
+              "value": "hills"
             },
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "hills"
+              "value": "swamp"
             }
           ]
         }

@@ -5,7 +5,7 @@ RED_BEAN = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
     ItemSource.CROP: ("ham:red_bean",),
-    ItemSource.WILD: (BiomeTag.MOUNTAIN, BiomeTag.MOUNTAINS, BiomeTag.BAMBOO, BiomeTag.HILLS)
+    ItemSource.WILD: (BiomeTag.MOUNTAIN, BiomeTag.MOUNTAINS, BiomeTag.HILLS, BiomeTag.SWAMP)
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.CROP, ItemTag.CEREAL, ItemTag.BEAN),

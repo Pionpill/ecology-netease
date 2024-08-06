@@ -13,12 +13,27 @@
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "bamboo"
+              "value": "mountain"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "mountains"
             },
             {
               "test": "has_biome_tag",
               "operator": "==",
               "value": "hills"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "swamp"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "taiga"
             }
           ]
         }
