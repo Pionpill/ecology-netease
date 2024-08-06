@@ -6,7 +6,7 @@ GINGER = {
   "quality": ItemQuality.UNCOMMON,
   "source": {
     ItemSource.CROP: ("ham:ginger",),
-    ItemSource.WILD: (BiomeTag.MOUNTAIN, BiomeTag.MOUNTAINS, BiomeTag.HILLS, BiomeTag.EXTREME_HILLS)
+    ItemSource.WILD: (BiomeTag.MOUNTAIN, BiomeTag.MOUNTAINS, BiomeTag.HILLS, BiomeTag.EXTREME_HILLS, BiomeTag.TAIGA)
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.SEASONING, ItemTag.SPICES),

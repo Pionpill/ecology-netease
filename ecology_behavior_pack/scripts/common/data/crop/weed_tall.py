@@ -29,6 +29,11 @@ WEED_TALL = {
             "count": 1
         },
         {
+            "name": "ham:green_bean",
+            "chance": 1,
+            "count": 1
+        },
+        {
             "name": "ham:peanut",
             "chance": 1,
             "count": 1
