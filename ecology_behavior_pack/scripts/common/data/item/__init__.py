@@ -8,7 +8,7 @@ from scripts.common.data.item.materials.ore import SALT
 from scripts.common.data.item.materials.product import BUTTER, COOKING_OIL, DOUGH, FLOUR, GROUND_PORK, NOODLE, SALAD, STARCH, TOFU, RICE, WHEAT
 from scripts.common.data.item.materials.spices import CHILI_POWDER, SEASONING
 
-from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK, BEEF_PATTIES, RAW_BEEF_PATTIES
+from scripts.common.data.item.food.simple import CHEESE, BREAD, BUNS, RAW_BUNS, COOKED_RICE, COOKED_CORN, MANTOU, SAUSAGE, RAW_SAUSAGE, SWEET_MILK, BEEF_PATTIES, RAW_BEEF_PATTIES
 from scripts.common.data.item.food.bake import RAW_APPLE_PIE, APPLE_PIE, RAW_CORN_PIE, CORN_PIE, RAW_CHEESE_PIE, CHEESE_PIE
 from scripts.common.data.item.food.fast import FRIES, BURGER_SIMPLE, BURGER, HOT_DOG
 from scripts.common.data.item.food.fry import MAPO_TOFU
@@ -51,6 +51,7 @@ ITEM_DATA = {
     "ham:bread": BREAD,
     "ham:buns": BUNS,
     "ham:raw_buns": RAW_BUNS,
+    "ham:cooked_corn": COOKED_CORN,
     "ham:cooked_rice": COOKED_RICE,
     "ham:mantou": MANTOU,
     "ham:sausage": SAUSAGE,
