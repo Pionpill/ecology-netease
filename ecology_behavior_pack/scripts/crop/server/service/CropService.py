@@ -98,6 +98,12 @@ class CropService(object):
             selectBlockName = blockInfoComp.GetBlockNew(selectPosition, dimensionId).get('name')
             if selectBlockName != replaceBlockName and selectBlockName and seedName != cropUtils.GetSeedKey(selectBlockName):
                 return CropService.__NotifyPlantFailMsg(playerId, PlantFailReason.REPLACE_BLOCK, {'crop': replaceBlockName})
+        else:
+            # 判断上方是否为空气
+            abovePosition = positionUtils.GetAbovePosition(selectPosition)
+            blockName = blockInfoComp.GetBlockNew(abovePosition, dimensionId).get('name')
+            if (blockName != 'minecraft:air'):
+                return False
         landPosition = positionUtils.GetBelowPosition(selectPosition) if replaceBlockName else selectPosition
         landBlockInfo = blockInfoComp.GetBlockNew(landPosition, dimensionId)
         landName = landBlockInfo.get('name')
