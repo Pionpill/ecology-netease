@@ -122,8 +122,12 @@ class Crop(object):
     def GetGrowHarvestStage(self):
         # type: () -> tuple[int, ...]
         """获取可收获的状态，返回一个元组"""
-        stage = self._GetField(("grow", "harvest", "stage"))
-        return stage if isinstance(stage, tuple) else (stage,)
+        stage = self._GetField("loot") 
+        if isinstance(stage, tuple):
+            return (self.GetGrowStageLength() - 1,)
+        if isinstance(stage, dict):
+            return tuple(list(stage.keys()))
+        return ()
 
     def GetGrowHarvestReturn(self):
         # type: () -> int

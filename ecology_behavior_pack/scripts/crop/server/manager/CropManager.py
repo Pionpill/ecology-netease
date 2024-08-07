@@ -121,7 +121,7 @@ class CropManager(object):
         收获作物
         
         :param remove: 是否删除作物，否则尝试多次收获
-        :param loot: 是否生成凋落物
+        :param loot: 是否生成掉落物
         """
         now = time()
         # 防止重复收获
