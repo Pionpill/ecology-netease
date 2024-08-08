@@ -4,7 +4,7 @@ from scripts.common.enum.Item import FoodSaturation, ItemCategory, ItemQuality, 
 BEEF_PATTIES = {
   "quality": ItemQuality.RARE,
   "source": {
-    ItemSource.WORKBENCH: ("ham:pan", "ham:food_steamer", "ham:grill"),
+    ItemSource.WORKBENCH: ("ham:pan", "ham:grill"),
   },
   "category": ItemCategory.FOOD,
   "tag": (ItemTag.SIMPLE, ItemTag.MEAT),

@@ -74,6 +74,10 @@ def IsSameCropBlock(cropBlock1, cropBlock2):
     # type: (str, str) -> bool
     return cropBlock1.split('_stage_')[0] == cropBlock2.split('_stage_')[0]
 
+def IsSameCropBlock(cropBlock1, cropBlock2):
+    # type: (str, str) -> bool
+    return cropBlock1.split('_stage_')[0] == cropBlock2.split('_stage_')[0]
+
 def __GetBlockPrefix(blockName):
     # type: (str) -> str
     return '_'.join(blockName.split('_')[:-2]) if 'stage' in blockName else blockName

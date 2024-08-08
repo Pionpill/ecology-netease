@@ -20,7 +20,10 @@ STEAMER_DATA = {
             "count": 4,
         }
     },
-    "ham:sausage": "ham:raw_sausage",
+    "ham:sausage": {
+        "material": "ham:raw_sausage",
+        "result": "ham:sausage"
+    },
     "ham:cooked_rice": {
         "material": "ham:rice",
         "result": "ham:cooked_rice"
