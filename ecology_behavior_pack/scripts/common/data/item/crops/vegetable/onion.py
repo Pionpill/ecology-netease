@@ -5,7 +5,7 @@ ONION = {
   "quality": ItemQuality.RARE,
   "source": {
     ItemSource.CROP: ("ham:onion",),
-    ItemSource.WILD: (BiomeTag.TAIGA)
+    ItemSource.WILD: (BiomeTag.TAIGA,)
   },
   "category": ItemCategory.CROPS,
   "tag": (ItemTag.VEGETABLE, ItemTag.ALLIUM),
