@@ -17,7 +17,7 @@ BROCCOLI_PORRIDGE = {
       {
         "name": EffectType.HEALTH_BOOST,
         "chance": 1,
-        "duration": 1,
+        "duration": 120,
         "amplifier": 0
       },
       {

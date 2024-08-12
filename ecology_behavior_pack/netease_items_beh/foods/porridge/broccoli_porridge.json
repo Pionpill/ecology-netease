@@ -12,11 +12,25 @@
       "minecraft:food": {
         "nutrition": 6,
         "saturation_modifier": "normal",
-        "can_always_eat": false
+        "can_always_eat": false,
+        "effects": [
+          {
+            "name": "health_boost",
+            "chance": 1.0,
+            "duration": 120,
+            "amplifier": 0
+          },
+          {
+            "name": "resistance",
+            "chance": 1.0,
+            "duration": 120,
+            "amplifier": 0
+          }
+        ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l食物·粥\n§r§3品质: §5\n§3饥饿: §5 X 6\n§r§f--------------------\n§a■ 生命提升\n§a■ 抗性提升Ⅰ 120s\n§7■ 非常健康"
+        "value": "§f--------------------\n§6§l食物·粥\n§r§3品质: §5\n§3饥饿: §5 X 6\n§r§f--------------------\n§a■ 生命提升Ⅰ 120s\n§a■ 抗性提升Ⅰ 120s\n§7■ 非常健康"
       }
     }
   }

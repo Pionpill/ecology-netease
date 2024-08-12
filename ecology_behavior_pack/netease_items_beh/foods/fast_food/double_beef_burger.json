@@ -17,19 +17,19 @@
           {
             "name": "strength",
             "chance": 1.0,
-            "duration": 60,
+            "duration": 180,
             "amplifier": 1
           },
           {
             "name": "absorption",
             "chance": 1.0,
-            "duration": 30,
+            "duration": 180,
             "amplifier": 1
           }
         ]
       },
       "netease:customtips": {
-        "value": "§f--------------------\n§6§l快餐\n§r§3品质: §5\n§3饥饿: §5 X 14\n§r§f--------------------\n§a■ 力量Ⅰ 180s\n§a■ 伤害吸收Ⅰ 180s"
+        "value": "§f--------------------\n§6§l快餐\n§r§3品质: §5\n§3饥饿: §5 X 14\n§r§f--------------------\n§a■ 力量Ⅱ 180s\n§a■ 伤害吸收Ⅱ 180s"
       }
     }
   }

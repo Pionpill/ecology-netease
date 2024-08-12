@@ -12,7 +12,15 @@
       "minecraft:food": {
         "nutrition": 7,
         "saturation_modifier": "normal",
-        "can_always_eat": false
+        "can_always_eat": false,
+        "effects": [
+          {
+            "name": "regeneration",
+            "chance": 1.0,
+            "duration": 20,
+            "amplifier": 0
+          }
+        ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {

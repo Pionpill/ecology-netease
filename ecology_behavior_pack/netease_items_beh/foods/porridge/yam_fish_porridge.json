@@ -12,7 +12,21 @@
       "minecraft:food": {
         "nutrition": 5,
         "saturation_modifier": "good",
-        "can_always_eat": false
+        "can_always_eat": false,
+        "effects": [
+          {
+            "name": "water_breathing",
+            "chance": 1.0,
+            "duration": 120,
+            "amplifier": 0
+          },
+          {
+            "name": "instant_health",
+            "chance": 1.0,
+            "duration": 15,
+            "amplifier": 0
+          }
+        ]
       },
       "using_converts_to": "bowl",
       "netease:customtips": {
