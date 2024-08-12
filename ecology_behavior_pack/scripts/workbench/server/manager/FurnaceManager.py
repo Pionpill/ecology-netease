@@ -90,9 +90,9 @@ class FurnaceManager(BaseWorkbenchManager):
     def __ResultWareTick(self):
         resultWareItem = self.blockEntityData['result_ware_slot']
         wareItem = self.blockEntityData['ware_slot']
-        if not self.resultWareCount or not resultWareItem or not wareItem:
-            return
         resultItem = self.blockEntityData['result_slot0']
+        if not self.resultWareCount or not resultWareItem or not wareItem or (resultItem and not itemUtils.IsSameItem(resultWareItem, resultItem)):
+            return
 
         maxStackSize = itemComp.GetItemBasicInfo(resultItem["newItemName"], resultItem["newAuxValue"]).get("maxStackSize") if resultItem else 64
         if resultItem and resultItem['count'] >= maxStackSize:
