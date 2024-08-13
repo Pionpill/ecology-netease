@@ -174,7 +174,132 @@ COOK_FAST_DATA = {
     },
 }
 
-COOK_COMMON_DATA = {
+COOK_MATERIAL_DATA = {
+    "ham:dough": {
+        "material": {
+            0: "ham:flour",
+            1: "ham:flour",
+            2: "ham:flour",
+            3: "ham:flour",
+            4: "minecraft:water_bucket",
+            5: "ham:flour",
+            6: "ham:flour",
+            7: "ham:flour",
+            8: "ham:flour",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:dough", 
+            "count": 6,
+        },
+    },
+    "ham:noodle": {
+        "material": {
+            0: "ham:dough",
+            2: "ham:dough",
+            3: "ham:dough",
+            5: "ham:dough",
+            6: "ham:dough",
+            8: "ham:dough",
+        },
+        "fixed_material": (2, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:noodle", 
+            "count": 8,
+        },
+    },
+    "ham:salad": {
+        "material": {
+            4: "minecraft:egg",
+        },
+        "fixed_material": (0, 1, 3, 0),
+        "result": {
+            "newItemName": "ham:salad", 
+            "count": 6,
+        },
+    },
+    "ham:sugar-sorghum": {
+        "material": {
+            3: "ham:sorghum",
+            4: "ham:sorghum",
+            5: "ham:sorghum",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:sugar", 
+            "count": 3, # 饥饿 1
+        }
+    },
+    "ham:sugar-beet_root": {
+        "material": {
+            3: "ham:beet_root",
+            4: "ham:beet_root",
+            5: "ham:beet_root",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:sugar", 
+            "count": 3, # 饥饿 1
+        }
+    },
+    "ham:sugar-sugarcane": {
+        "material": {
+            3: "ham:sugarcane",
+            4: "ham:sugarcane",
+            5: "ham:sugarcane",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": {
+            "newItemName": "ham:sugar", 
+            "count": 3, # 饥饿 1
+        }
+    },
+    "ham:simple_pack": {
+        "material": {
+            4: "ham:scallion"
+        },
+        "fixed_material": (1, 0, 0, 1),
+        "result": "ham:simple_pack"
+    },
+    "ham:meal_pack": {
+        "material": {
+            3: "ham:ginger",
+            4: "ham:scallion",
+            5: "ham:garlic",
+        },
+        "fixed_material": (1, 0, 0, 1),
+        "result": "ham:meal_pack"
+    },
+    "ham:tomato_pack": {
+        "material": {
+            3: "ham:tomato",
+            4: "ham:scallion",
+            5: "ham:garlic",
+        },
+        "fixed_material": (1, 1, 0, 1),
+        "result": "ham:tomato_pack"
+    },
+    "ham:mushroom_pack": {
+        "material": {
+            3: "ham:lentinula",
+            4: "ham:scallion",
+            5: "ham:garlic",
+        },
+        "fixed_material": (1, 0, 0, 1),
+        "result": "ham:mushroom_pack"
+    },
+    "ham:chili_pack": {
+        "material": {
+            3: "ham:chili_powder",
+            4: "ham:scallion",
+            5: "ham:garlic",
+        },
+        "fixed_material": (1, 0, 0, 1),
+        "result": "ham:chili_pack"
+    },
+}
+
+COOK_SIMPLE_DATA = {
     "ham:ground_pork": {
         "material": {
             3: "minecraft:porkchop",
@@ -221,49 +346,6 @@ COOK_COMMON_DATA = {
             "count": 3,
         },
     },
-    "ham:dough": {
-        "material": {
-            0: "ham:flour",
-            1: "ham:flour",
-            2: "ham:flour",
-            3: "ham:flour",
-            4: "minecraft:water_bucket",
-            5: "ham:flour",
-            6: "ham:flour",
-            7: "ham:flour",
-            8: "ham:flour",
-        },
-        "fixed_material": (0, 0, 0, 0),
-        "result": {
-            "newItemName": "ham:dough", 
-            "count": 6,
-        },
-    },
-    "ham:noodle": {
-        "material": {
-            0: "ham:dough",
-            2: "ham:dough",
-            3: "ham:dough",
-            5: "ham:dough",
-            6: "ham:dough",
-            8: "ham:dough",
-        },
-        "fixed_material": (2, 0, 0, 0),
-        "result": {
-            "newItemName": "ham:noodle", 
-            "count": 8,
-        },
-    },
-    "ham:salad": {
-        "material": {
-            4: "minecraft:egg",
-        },
-        "fixed_material": (0, 1, 3, 0),
-        "result": {
-            "newItemName": "ham:salad", 
-            "count": 6,
-        },
-    },
     "ham:raw_buns": {
         "material": {
             0: "ham:dough",
@@ -282,42 +364,9 @@ COOK_COMMON_DATA = {
             "count": 9,
         },
     },
-    "ham:sugar-sorghum": {
-        "material": {
-            3: "ham:sorghum",
-            4: "ham:sorghum",
-            5: "ham:sorghum",
-        },
-        "fixed_material": (0, 0, 0, 0),
-        "result": {
-            "newItemName": "ham:sugar", 
-            "count": 3, # 饥饿 1
-        }
-    },
-    "ham:sugar-beet_root": {
-        "material": {
-            3: "ham:beet_root",
-            4: "ham:beet_root",
-            5: "ham:beet_root",
-        },
-        "fixed_material": (0, 0, 0, 0),
-        "result": {
-            "newItemName": "ham:sugar", 
-            "count": 3, # 饥饿 1
-        }
-    },
-    "ham:sugar-sugarcane": {
-        "material": {
-            3: "ham:sugarcane",
-            4: "ham:sugarcane",
-            5: "ham:sugarcane",
-        },
-        "fixed_material": (0, 0, 0, 0),
-        "result": {
-            "newItemName": "ham:sugar", 
-            "count": 3, # 饥饿 1
-        }
-    },
+}
+
+COOK_CONVERSION_DATA = {
     "minecraft:wheat": {
         "material": {
             4: "ham:wheat_plant",
@@ -373,51 +422,8 @@ COOK_COMMON_DATA = {
             8: "ham:straw",
         },
         "fixed_material": (0, 0, 0, 0),
-        "result": "minecraft:paper", # 1.5
-    },
-    "ham:simple_pack": {
-        "material": {
-            4: "ham:scallion"
-        },
-        "fixed_material": (1, 0, 0, 1),
-        "result": "ham:simple_pack"
-    },
-    "ham:meal_pack": {
-        "material": {
-            3: "ham:ginger",
-            4: "ham:scallion",
-            5: "ham:garlic",
-        },
-        "fixed_material": (1, 0, 0, 1),
-        "result": "ham:meal_pack"
-    },
-    "ham:tomato_pack": {
-        "material": {
-            3: "ham:tomato",
-            4: "ham:scallion",
-            5: "ham:garlic",
-        },
-        "fixed_material": (1, 1, 0, 1),
-        "result": "ham:tomato_pack"
-    },
-    "ham:mushroom_pack": {
-        "material": {
-            3: "ham:lentinula",
-            4: "ham:scallion",
-            5: "ham:garlic",
-        },
-        "fixed_material": (1, 0, 0, 1),
-        "result": "ham:mushroom_pack"
-    },
-    "ham:chili_pack": {
-        "material": {
-            3: "ham:chili_powder",
-            4: "ham:scallion",
-            5: "ham:garlic",
-        },
-        "fixed_material": (1, 0, 0, 1),
-        "result": "ham:chili_pack"
+        "result": ("minecraft:paper", 8),
     },
 }
 
-COOK_DATA = {k: v for d in (COOK_COMMON_DATA, COOK_PIE_DATA, COOK_FAST_DATA) for k, v in d.items()}
+COOK_DATA = {k: v for d in (COOK_CONVERSION_DATA, COOK_SIMPLE_DATA, COOK_MATERIAL_DATA, COOK_PIE_DATA, COOK_FAST_DATA) for k, v in d.items()}

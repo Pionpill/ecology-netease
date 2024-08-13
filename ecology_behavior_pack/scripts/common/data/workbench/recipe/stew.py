@@ -277,7 +277,7 @@ STEW_SOUP_DATA = {
     },
 }
 
-STEW_COMMON_DATA = {
+STEW_SIMPLE_DATA = {
     "ham:cooked_corn": {
         "material": {
             0: "ham:corn",
@@ -287,11 +287,8 @@ STEW_COMMON_DATA = {
             4: "ham:corn",
             5: "ham:corn",
         },
-        "result": {
-            "newItemName": "ham:cooked_corn", 
-            "count": 3,
-        }
+        "result": ("ham:cooked_corn", 6),
     },
 }
 
-STEW_DATA = {k: v for d in (STEW_PORRIDGE_DATA, STEW_NOODLE_DATA, STEW_SOUP_DATA, STEW_COMMON_DATA) for k, v in d.items()}
+STEW_DATA = {k: v for d in (STEW_PORRIDGE_DATA, STEW_NOODLE_DATA, STEW_SOUP_DATA, STEW_SIMPLE_DATA) for k, v in d.items()}

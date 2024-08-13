@@ -41,7 +41,7 @@ BAKE_PIE_DATA = {
     },
 }
 
-BAKE_COMMON_DATA = {
+BAKE_SIMPLE_DATA = {
     "ham:bread": {
         "material": "ham:dough",
         "result": {
@@ -55,4 +55,4 @@ BAKE_COMMON_DATA = {
     },
 }
 
-BAKE_DATA = dict(BAKE_COMMON_DATA, **BAKE_PIE_DATA)
+BAKE_DATA = dict(BAKE_SIMPLE_DATA, **BAKE_PIE_DATA)

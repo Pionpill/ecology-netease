@@ -238,7 +238,7 @@ PAN_RICE_DATA = {
     },
 }
 
-PAN_COMMON_DATA = {
+PAN_SIMPLE_DATA = {
     "ham:beef_patties": {
         "material": {
             "newItemName": "ham:raw_beef_patties",
@@ -263,4 +263,4 @@ PAN_COMMON_DATA = {
     },
 }
 
-PAN_DATA = {k: v for d in (PAN_COMMON_DATA, PAN_FRY_DATA, PAN_RICE_DATA) for k, v in d.items()}
+PAN_DATA = {k: v for d in (PAN_SIMPLE_DATA, PAN_FRY_DATA, PAN_RICE_DATA) for k, v in d.items()}
