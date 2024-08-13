@@ -42,7 +42,6 @@ BAKE_PIE_DATA = {
 }
 
 BAKE_COMMON_DATA = {
-    "minecraft:apple": "minecraft:apple",
     "ham:bread": {
         "material": "ham:dough",
         "result": {

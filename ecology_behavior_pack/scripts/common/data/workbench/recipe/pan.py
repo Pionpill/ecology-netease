@@ -239,7 +239,6 @@ PAN_RICE_DATA = {
 }
 
 PAN_COMMON_DATA = {
-    "minecraft:apple": "minecraft:apple",
     "ham:beef_patties": {
         "material": {
             "newItemName": "ham:raw_beef_patties",

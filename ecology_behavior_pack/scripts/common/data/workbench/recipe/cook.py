@@ -175,20 +175,6 @@ COOK_FAST_DATA = {
 }
 
 COOK_COMMON_DATA = {
-    "minecraft:apple": {
-        "material": {
-            4: "minecraft:apple"
-        },
-        "fixed_material": (1, 0, 0, 0),
-        "result": "minecraft:apple",
-    },
-    "minecraft-tag:apple": {
-        "material": {
-            4: "ham-tag:" + ItemTag.CROP
-        },
-        "fixed_material": (0, 0, 0, 0),
-        "result": "minecraft:apple",
-    },
     "ham:ground_pork": {
         "material": {
             3: "minecraft:porkchop",

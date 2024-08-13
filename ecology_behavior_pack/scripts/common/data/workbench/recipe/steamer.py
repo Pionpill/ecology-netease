@@ -1,5 +1,4 @@
 STEAMER_DATA = {
-    "minecraft:apple": "minecraft:apple",
     "ham:buns": {
         "material": {
             "newItemName": "ham:raw_buns",

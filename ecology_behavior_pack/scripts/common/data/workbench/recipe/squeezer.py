@@ -1,5 +1,4 @@
 SQUEEZER_DATA = {
-    "minecraft:apple": "minecraft:apple",
     "ham:butter": {
         "material": {
             1: "ham:sweet_milk",

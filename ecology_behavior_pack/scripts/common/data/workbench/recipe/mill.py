@@ -1,5 +1,4 @@
 MILL_DATA = {
-    "minecraft:apple": "minecraft:apple",
     "ham:seasoning-herb": {
         "material": {
             "newItemName": "ham:herb",

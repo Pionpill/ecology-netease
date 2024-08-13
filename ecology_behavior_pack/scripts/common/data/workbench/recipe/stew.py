@@ -278,7 +278,6 @@ STEW_SOUP_DATA = {
 }
 
 STEW_COMMON_DATA = {
-    "minecraft:apple": "minecraft:apple",
     "ham:cooked_corn": {
         "material": {
             0: "ham:corn",
