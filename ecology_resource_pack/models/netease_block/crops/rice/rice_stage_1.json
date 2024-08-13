@@ -42,44 +42,6 @@
                 "uv_size": [22, 32]
               }
             }
-          },
-          {
-            "origin": [-16, -1, 0],
-            "pivot": [-8, -1, 8],
-            "rotation": [0, 0, 0],
-            "size": [16, 1, 16],
-            "uv": {
-              "down": {
-                "texture": 1,
-                "uv": [0, 0],
-                "uv_size": [32, 32]
-              },
-              "east": {
-                "texture": 1,
-                "uv": [0, 0],
-                "uv_size": [32, 2]
-              },
-              "north": {
-                "texture": 1,
-                "uv": [0, 0],
-                "uv_size": [32, 2]
-              },
-              "south": {
-                "texture": 1,
-                "uv": [0, 0],
-                "uv_size": [32, 2]
-              },
-              "up": {
-                "texture": 1,
-                "uv": [32, 32],
-                "uv_size": [-32, -32]
-              },
-              "west": {
-                "texture": 1,
-                "uv": [0, 0],
-                "uv_size": [32, 2]
-              }
-            }
           }
         ],
         "name": "root",
@@ -89,7 +51,7 @@
     ],
     "description": {
       "identifier": "ham:rice_stage_1",
-      "textures": ["ham:rice_stage_1", "ham:water"],
+      "textures": ["ham:rice_stage_1"],
       "textures_descriptions": [
         {
           "length": 32,
