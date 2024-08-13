@@ -15,8 +15,14 @@
     },
     {
       "type": "ham:itemInfoPage",
-      "subtitle": "大米",
+      "subtitle": "麦穗",
       "itemName": "ham:rice_plant"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "转换为种子",
+      "recipeId": "ham:rice_seeds",
+      "content": "可以将水稻转换为种子"
     },
     {
       "type": "ham:millRecipePage",

@@ -367,6 +367,20 @@ COOK_SIMPLE_DATA = {
 }
 
 COOK_CONVERSION_DATA = {
+    "ham:wheat_seeds": {
+        "material": {
+            0: "ham:wheat_plant",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": ("ham:wheat_seeds", 3),
+    },
+    "ham:rice_seeds": {
+        "material": {
+            0: "ham:rice_plant",
+        },
+        "fixed_material": (0, 0, 0, 0),
+        "result": ("ham:rice_seeds", 3),
+    },
     "minecraft:wheat": {
         "material": {
             4: "ham:wheat_plant",

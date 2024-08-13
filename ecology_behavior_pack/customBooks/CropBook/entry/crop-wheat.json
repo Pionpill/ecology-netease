@@ -15,8 +15,14 @@
     },
     {
       "type": "ham:itemInfoPage",
-      "subtitle": "小麦",
+      "subtitle": "麦穗",
       "itemName": "ham:wheat_plant"
+    },
+    {
+      "type": "ham:cookRecipePage",
+      "subtitle": "转换为种子",
+      "recipeId": "ham:wheat_seeds",
+      "content": "可以将麦穗转换为种子"
     },
     {
       "type": "ham:cookRecipePage",
