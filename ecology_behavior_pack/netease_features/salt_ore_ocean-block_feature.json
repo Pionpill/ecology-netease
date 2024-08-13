@@ -2,9 +2,9 @@
   "format_version": "1.13.0",
   "minecraft:ore_feature": {
     "description": {
-      "identifier": "ham:salt_ore-block_feature"
+      "identifier": "ham:salt_ore_ocean-block_feature"
     },
-    "count": 4,
+    "count": 7,
     "places_block": "ham:salt_ore",
     "may_replace": [
       {

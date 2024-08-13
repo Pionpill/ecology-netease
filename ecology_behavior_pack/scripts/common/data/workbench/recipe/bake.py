@@ -42,6 +42,10 @@ BAKE_PIE_DATA = {
 }
 
 BAKE_SIMPLE_DATA = {
+    "ham:salt-kelp": {
+        "material": "minecraft:dried_kelp",
+        "result": "ham:salt",
+    },
     "ham:bread": {
         "material": "ham:dough",
         "result": {

@@ -7,7 +7,12 @@
     {
       "type": "ham:itemInfoPage",
       "itemName": "ham:salt",
-      "content": "获取方式：下矿"
+      "content": "获取方式：下矿\n在海底往往能挖到更多"
+    },
+    {
+      "subtitle": "海带制盐",
+      "type": "ham:bakeRecipePage",
+      "recipeId": "ham:salt-kelp"
     }
   ]
 }

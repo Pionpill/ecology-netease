@@ -133,8 +133,14 @@ class CropManager(object):
         if canGrow:
             harvestStages = self.crop.GetGrowHarvestStage()
             stage = self.__GetStage()
-            if stage not in harvestStages:
+            if stage not in harvestStages and not remove:
                 return False
+            
+        if remove and self.__GetStage() == 0 and canGrow:
+            seedName = self.crop.GetSeedName()
+            seedDict = itemUtils.GetItemDict(seedName, 0, 1)
+            itemComp.SpawnItemToLevel(seedDict,  self.dimensionId, self.position)
+            return True
 
         self.lastHarvestTime = now
         if loot:
