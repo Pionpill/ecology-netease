@@ -2,7 +2,7 @@
   "parent": "noodles",
   "sortnum": 112,
   "icon": "textures/items/foods/noodles/borsch_noodles.png",
-  "title": "罗宋汤",
+  "title": "罗宋汤面",
   "pages": [
     {
       "type": "ham:itemInfoPage",

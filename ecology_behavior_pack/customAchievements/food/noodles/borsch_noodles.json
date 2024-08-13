@@ -2,7 +2,7 @@
   "node_ID": "ham-ecology-food-borsch_noodles",
   "parent_node": "ham-ecology-food-tomato_egg_noodles",
   "depend_parent": false,
-  "title": "§d罗松汤面",
+  "title": "§d罗宋汤面",
   "unfinished_icon": "textures/items/foods/noodles/borsch_noodles",
   "finished_icon": "textures/items/foods/noodles/borsch_noodles",
   "use_default_icon_background": true,
