@@ -23,4 +23,8 @@ BAKE_DATA = {
         "material": ("ham:corn", 2),
         "result": ("ham:cooked_corn", 2),
     },
+    "ham:salt-kelp": {
+        "material": "minecraft:dried_kelp",
+        "result": "ham:salt",
+    },
 }

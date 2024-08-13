@@ -8,6 +8,11 @@
       "type": "ham:itemInfoPage",
       "itemName": "ham:salt",
       "content": "获取方式：下矿"
+    },
+    {
+      "subtitle": "海带制盐",
+      "type": "ham:bakeRecipePage",
+      "recipeId": "ham:salt-kelp"
     }
   ]
 }
