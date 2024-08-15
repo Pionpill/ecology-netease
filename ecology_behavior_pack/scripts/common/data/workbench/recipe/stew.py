@@ -42,7 +42,7 @@ STEW_DATA = {
         },
         "result": {
             "newItemName": "ham:cooked_corn", 
-            "count": 3,
+            "count": 6,
         }
     },
 }

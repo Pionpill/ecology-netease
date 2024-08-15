@@ -3,14 +3,14 @@ MILL_DATA = {
     "ham:seasoning": {
         "material": {
             "newItemName": "ham:herb",
-            "count": 3,
+            "count": 4,
         },
         "result": {
             0: {
                 "newItemName": "ham:seasoning",
-                "count": 3,
+                "count": 4,
             },
-            1: "ham:straw"
+            1: ("ham:straw", 2)
         }
     },
     "ham:chili_powder": {
