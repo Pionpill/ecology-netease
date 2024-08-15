@@ -6,7 +6,8 @@
   "pages": [
     {
       "type": "ham:itemInfoPage",
-      "itemName": "ham:straw"
+      "itemName": "ham:straw",
+      "content": "可以作为生态模组或原版熔炉燃料"
     },
     {
       "type": "ham:cookRecipePage",
