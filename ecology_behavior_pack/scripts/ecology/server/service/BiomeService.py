@@ -1,10 +1,9 @@
 import time
 import mod.server.extraServerApi as serverApi
 
-from scripts.ecology.server.entity.Ecology import DynamicEcology
+from scripts.ecology.server.entity import Biome, DynamicEcology
 from scripts.ecology.server.manager import EcologyManager
 from scripts.common import logger
-from scripts.common.entity import Biome
     
 levelId = serverApi.GetLevelId()
 biomeComp = serverApi.GetEngineCompFactory().CreateBiome(levelId)
@@ -29,6 +28,7 @@ class BiomeService(object):
         posKey = position + (dimensionId,)
         ecologyMgrTuple = BiomeService.ecologyMgrDict.get(posKey)
         if ecologyMgrTuple is not None:
+            # TODO 改为定期刷新
             BiomeService.ecologyMgrDict[posKey] = (ecologyMgrTuple[0], int(time.time()))
             BiomeService.__RefreshEcologyMgrDict()
             return ecologyMgrTuple[0]
