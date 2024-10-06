@@ -1,2 +1,2 @@
 HammerWorkshop's Ecology Addon
-版本: v1.0.5
+版本: v1.0.6
