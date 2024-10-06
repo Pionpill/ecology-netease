@@ -7,10 +7,10 @@ import mod.server.extraServerApi as serverApi
 from scripts.ecology.server.service.FrameService import FrameService
 from scripts.common import logger
 from scripts.common.utils import positionUtils
-from scripts.common.entity import Biome
-from scripts.ecology.server.entity import DynamicEcology, FixedEcology
+from scripts.ecology.server.entity import Biome, DynamicEcology, FixedEcology
 
 levelId = serverApi.GetLevelId()
+gameComp = serverApi.GetEngineCompFactory().CreateGame(levelId)
 engineCompFactory = serverApi.GetEngineCompFactory()
 biomeComp = engineCompFactory.CreateBiome(levelId)
 blockInfoComp = engineCompFactory.CreateBlockInfo(levelId)
@@ -29,56 +29,40 @@ class EcologyManager(object):
     def __init__(self, position, dimensionId):
         # type: (tuple[int, int, int], int) -> None
         object.__init__(self)
-        self.biomeName = biomeComp.GetBiomeName(position, dimensionId)
-        biome = Biome.FromBiomeName(self.biomeName)
-        if biome is None:
-            logger.error('未查找到 {} 相关的数据，这是一个程序 bug，请报告给开发者群：712936357'.format(self.biomeName))
-            return
-        self.biome = biome
-        self.position = position
-        self.dimensionId = dimensionId
-        self.adjustTemperatureOfAltitude = self.__GetAdjustTemperatureOfAltitude()
-        self.fixedEcologyInfo = self.__GetFixedEcologyInfo()
+        self.__biomeName = biomeComp.GetBiomeName(position, dimensionId)
+        self.__biome = Biome.FromBiomeName(self.__biomeName)
+        self.__position = position
+        self.__dimensionId = dimensionId
+        self.__fixedEcologyInfo = self.__GetFixedEcologyInfo()
 
     def GetBiomeInfo(self):
         """获取生物群系信息"""
-        return self.biome
+        return self.__biome
 
     def GetDynamicEcology(self):
         """获取动态生态信息"""
-        adjustTemperature = self.fixedEcologyInfo.GetAvgTemperature() + self.__CalculateAdjustTemperature()
-        adjustRainfall = max(self.fixedEcologyInfo.GetAvgRainfall(), self.__CalculateAdjustRainfall())
+        adjustTemperature = self.__fixedEcologyInfo.GetAvgTemperature() + self.__CalculateAdjustTemperature()
+        adjustRainfall = max(self.__fixedEcologyInfo.GetAvgRainfall(), self.__CalculateAdjustRainfall())
         data = {
-            'name': self.biomeName,
-            'name_cn': self.biome.GetCNName(),
-            'temperature': self.biome.GetTemperature(),
             'temperature_adjust': adjustTemperature,
-            'rainfall': self.biome.GetRainfall(),
-            'rainfall_adjust': adjustRainfall,
-            'tags': self.biome.GetTags()
+            'rainfall_adjust': adjustRainfall
         }
-        return DynamicEcology(data)
+        return DynamicEcology(self.__biomeName, data)
 
     def __GetFixedEcologyInfo(self):
         """获取静态生态信息"""
         avgTemperature, avgRainfall = self.__ExpandAndCalculateMeanBiomeInfo()
         data = {
-            'name': self.biomeName,
-            'name_cn': self.biome.GetCNName(),
-            'temperature': self.biome.GetTemperature(),
             'temperature_avg': avgTemperature,
-            'rainfall': self.biome.GetRainfall(),
-            'rainfall_avg': avgRainfall,
-            'tags': self.biome.GetTags()
+            'rainfall_avg': avgRainfall
         }
-        fixedEcology = FixedEcology(data)
-        self.fixedEcologyInfo = fixedEcology
+        fixedEcology = FixedEcology(self.__biomeName, data)
         return fixedEcology
 
     def __ExpandAndCalculateMeanBiomeInfo(self):
-        """差异扩展均值算法"""
+        """⚡差异扩展均值算法"""
         neighborBiomes = self.__GetNeighborBiomeName(16, True)
-        neighborBiomes[self.biomeName] = 1 if self.biomeName not in neighborBiomes else neighborBiomes[self.biomeName] + 1
+        neighborBiomes[self.__biomeName] = 1 if self.__biomeName not in neighborBiomes else neighborBiomes[self.__biomeName] + 1
         avgTuple = (0, 0) # type: tuple[float, float]
         if len(neighborBiomes) == 1:
             avgTuple = self.__GetAvgBiomeInfo(neighborBiomes)
@@ -91,11 +75,11 @@ class EcologyManager(object):
 
     def __CalculateAdjustTemperature(self):
         """获取调整温度: 相加"""
-        # self.adjustTemperatureOfAltitude
+        altitudeAdjust = self.__GetAdjustTemperatureOfAltitude()
         DayAdjust = self.__GetAdjustTemperatureOfDay()
         WeatherAdjust = self.__GetAdjustTemperatureOfWeather()
         RandomAdjust = self.__GetAdjustTemperatureOfRandom()
-        return self.adjustTemperatureOfAltitude + DayAdjust + WeatherAdjust + RandomAdjust
+        return altitudeAdjust + DayAdjust + WeatherAdjust + RandomAdjust
     
     def __CalculateAdjustRainfall(self):
         """获取调整温度: 取最大值"""
@@ -111,7 +95,7 @@ class EcologyManager(object):
         rainfallSum = 0.0
         biomeCount = 0
         for biomeName, count in biomesDict.items():
-            biome = Biome.FromData(biomeName)
+            biome = Biome.FromBiomeName(biomeName)
             temperatureSum += biome.GetTemperature() * count
             rainfallSum += biome.GetRainfall() * count
             biomeCount += count
@@ -128,20 +112,20 @@ class EcologyManager(object):
         """
         neighborPosArray = None
         if (detail == False):
-            neighborPosArray = positionUtils.GetNearbyPosition(self.position, distance, 'cube', 'point')
+            neighborPosArray = positionUtils.GetNearbyPosition(self.__position, distance, 'cube', 'point')
         else:
-            pointNeighborArray = positionUtils.GetNearbyPosition(self.position, distance, 'cube', 'point')
-            vertexNeighborArray = positionUtils.GetNearbyPosition(self.position, distance, 'cube', 'vertex')
+            pointNeighborArray = positionUtils.GetNearbyPosition(self.__position, distance, 'cube', 'point')
+            vertexNeighborArray = positionUtils.GetNearbyPosition(self.__position, distance, 'cube', 'vertex')
             neighborPosArray = pointNeighborArray + vertexNeighborArray
         biomeMap = {}
         for neighborPos in neighborPosArray:
-            biomeName = biomeComp.GetBiomeName(neighborPos, self.dimensionId)
+            biomeName = biomeComp.GetBiomeName(neighborPos, self.__dimensionId)
             biomeMap[biomeName] = 1 if biomeName not in biomeMap else biomeMap[biomeName] + 1
         return biomeMap
 
     def __GetAdjustTemperatureOfDay(self):
         """根据当前时间获取温度偏移量，晚上冷，中午热"""
-        dayFrame = FrameService.GetDayFrame(self.dimensionId)
+        dayFrame = FrameService.GetDayFrame(self.__dimensionId)
         sinValue = math.sin((2 * math.pi) *  ((dayFrame + TEMPERATURE_ADJUST_FRAME) / float(FrameService.FRAME_PER_MC_DAY)))
         return TEMPERATURE_RANGE_DAY * sinValue
     
@@ -150,17 +134,20 @@ class EcologyManager(object):
         return -5 if weatherComp.IsRaining() else 0
     
     def __GetAdjustTemperatureOfAltitude(self):
-        """根据海拔获取温度偏移量，海拔每偏移1，温度上升0.1"""
-        return (MIDDLE_HEIGHT - self.position[1]) * 0.05
+        """根据海拔获取温度偏移量，海拔每偏移1，温度上升0.05"""
+        return (MIDDLE_HEIGHT - self.__position[1]) * 0.05
 
     def __GetAdjustTemperatureOfRandom(self):
-        """温度随机偏移"""
+        """
+        温度随机偏移
+        TODO 统一到风力计算中
+        """
         return 2 * random.uniform(-1, 1)
     
     def __GetAdjustRainfallOfLand(self):
         """根据底部方块获取湿度"""
-        belowPosition = positionUtils.GetBelowPosition(self.position)
-        blockState = blockStateComp.GetBlockNew(belowPosition, self.dimensionId)
+        belowPosition = positionUtils.GetBelowPosition(self.__position)
+        blockState = blockStateComp.GetBlockNew(belowPosition, self.__dimensionId)
         if blockState is None:
             return 0
         aux = blockState.get("aux") or 0

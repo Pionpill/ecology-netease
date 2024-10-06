@@ -4,7 +4,7 @@
     "name": "生态",
     "description": "锤子工坊生态模组",
     "uuid": "bf0cfa10-5776-4f0d-9109-c31f7dcd9fe5",
-    "version": [1, 0, 5],
+    "version": [1, 0, 6],
     "min_engine_version": [1, 18, 0]
   },
   "modules": [
@@ -12,13 +12,13 @@
       "description": "锤子工坊生态模组",
       "type": "data",
       "uuid": "176e3807-befb-41c6-a7ce-ed9b4bb8bdf0",
-      "version": [1, 0, 5]
+      "version": [1, 0, 6]
     }
   ],
   "dependencies": [
     {
       "uuid": "7ce68122-7cab-4019-a361-598cc25fca35",
-      "version": [1, 0, 5]
+      "version": [1, 0, 6]
     }
   ],
   "capabilities": ["raytraced"]
